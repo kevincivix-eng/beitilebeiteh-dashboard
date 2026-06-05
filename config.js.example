@@ -1,0 +1,3 @@
+// Airtable Configuration - DO NOT COMMIT
+const AIRTABLE_API_KEY = 'YOUR_API_KEY_HERE';
+

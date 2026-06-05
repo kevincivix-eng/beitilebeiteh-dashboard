@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מביתי לביתך · דשבורד מעקב</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <button class="menu-toggle" id="menuToggle" aria-label="תפריט">☰</button>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <img src="assets/img/logo-vertical-pink.svg" alt="מביתי לביתך" />
+    </div>
+    <nav class="nav">
+      <a class="nav__item" href="#home" data-view="home"><span class="nav__icon">🗺️</span> דף הבית</a>
+      <a class="nav__item" href="#movement" data-view="movement"><span class="nav__icon">🔀</span> תנועות במרחב</a>
+      <a class="nav__item" href="#items" data-view="items"><span class="nav__icon">📦</span> ניתוח חפצים</a>
+      <a class="nav__item" href="#members" data-view="members"><span class="nav__icon">📈</span> משתתפים בזמן</a>
+      <a class="nav__item" href="#items-time" data-view="items-time"><span class="nav__icon">📅</span> חפצים בזמן</a>
+      <a class="nav__item" href="#weights" data-view="weights"><span class="nav__icon">⚖️</span> ניתוח משקלים</a>
+    </nav>
+    <div class="sidebar__footer">
+      <span id="lastUpdated">—</span>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <!-- HOME -->
+    <section class="view" id="view-home">
+      <header class="view__head">
+        <h1>מיפוי העברות פריטים במרחב</h1>
+        <p>זרימת המסירות בין יישובי הנגב המזרחי</p>
+      </header>
+      <div class="kpi-strip" id="homeKpis"></div>
+      <div class="card card--map">
+        <div id="map"></div>
+        <div class="map-legend" id="mapLegend"></div>
+      </div>
+    </section>
+
+    <!-- MOVEMENT -->
+    <section class="view" id="view-movement" hidden>
+      <header class="view__head">
+        <h1>ניתוח תנועות במרחב</h1>
+        <p>זרימת מסירות בין יישובי מוצא ויעד</p>
+      </header>
+      <div class="kpi-strip" id="movementKpis"></div>
+      <div class="grid grid--2">
+        <div class="card">
+          <h3 class="card__title">זרימת מסירות (מוצא → יעד)</h3>
+          <div id="sankey" class="sankey-wrap"></div>
+        </div>
+        <div class="card">
+          <h3 class="card__title">סוג תנועה</h3>
+          <canvas id="movementPie"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITEMS -->
+    <section class="view" id="view-items" hidden>
+      <header class="view__head">
+        <h1>ניתוח חפצים</h1>
+        <p>פילוח חפצים מועברים לפי קטגוריות</p>
+      </header>
+      <div class="grid grid--2">
+        <div class="card"><h3 class="card__title">כמות לפי קטגוריה</h3><canvas id="catBar"></canvas></div>
+        <div class="card"><h3 class="card__title">15 החפצים המובילים</h3><canvas id="topItemsBar"></canvas></div>
+      </div>
+    </section>
+
+    <!-- MEMBERS TIMELINE -->
+    <section class="view" id="view-members" hidden>
+      <header class="view__head">
+        <h1>פילוח משתתפים על ציר הזמן</h1>
+        <p>מצטרפים חדשים וחברים מצטבר</p>
+      </header>
+      <div class="kpi-strip" id="membersKpis"></div>
+      <div class="card"><canvas id="membersChart"></canvas></div>
+    </section>
+
+    <!-- ITEMS TIMELINE -->
+    <section class="view" id="view-items-time" hidden>
+      <header class="view__head">
+        <h1>חפצים מועברים על ציר הזמן</h1>
+        <p>פריטים שנמסרו בכל שבוע לפי קטגוריה</p>
+      </header>
+      <div class="card"><canvas id="itemsTimeChart"></canvas></div>
+    </section>
+
+    <!-- WEIGHTS -->
+    <section class="view" id="view-weights" hidden>
+      <header class="view__head">
+        <h1>ניתוח משקלים</h1>
+        <p>סך החיסכון הישיר בפסולת מוטמנת</p>
+      </header>
+      <div class="kpi-strip" id="weightsKpis"></div>
+      <div class="grid grid--2">
+        <div class="card"><h3 class="card__title">משקל לפי קטגוריה (טון)</h3><canvas id="weightCatBar"></canvas></div>
+        <div class="card"><h3 class="card__title">משקל לפי עיר מוצא (טון)</h3><canvas id="weightCityBar"></canvas></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Libraries -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+
+  <!-- App -->
+  <script src="assets/js/views/map.js"></script>
+  <script src="assets/js/views/movement.js"></script>
+  <script src="assets/js/views/items.js"></script>
+  <script src="assets/js/views/members-time.js"></script>
+  <script src="assets/js/views/items-time.js"></script>
+  <script src="assets/js/views/weights.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
