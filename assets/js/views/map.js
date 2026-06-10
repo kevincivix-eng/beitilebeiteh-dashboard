@@ -31,18 +31,23 @@ const MapView = (() => {
   const checkThickness = (c, r) =>
     r === 'low' ? c <= 10 : r === 'medium' ? c > 10 && c <= 50 : r === 'high' ? c > 50 : true;
 
-  function curvedPath(start, end, offset) {
+  // Quadratic bezier anchored EXACTLY at the two city points; only the middle
+  // bows out (to the right of travel direction) so A→B and B→A separate while
+  // both endpoints still touch their markers precisely.
+  function curvedPath(start, end, curvature) {
     const [lat1, lng1] = start, [lat2, lng2] = end;
     const dx = lng2 - lng1, dy = lat2 - lat1;
     const len = Math.hypot(dx, dy);
     if (len === 0) return [start, end];
-    const oLat1 = lat1 + (-dx / len) * offset, oLng1 = lng1 + (dy / len) * offset;
-    const oLat2 = lat2 + (-dx / len) * offset, oLng2 = lng2 + (dy / len) * offset;
-    const cLat = (oLat1 + oLat2) / 2 + -dx * 0.15, cLng = (oLng1 + oLng2) / 2 + dy * 0.15;
+    // perpendicular (right normal) unit vector, scaled by distance for a gentle arc
+    const nLat = (-dx / len) * len * curvature;
+    const nLng = (dy / len) * len * curvature;
+    const cLat = (lat1 + lat2) / 2 + nLat;
+    const cLng = (lng1 + lng2) / 2 + nLng;
     const pts = [];
     for (let t = 0; t <= 1.0001; t += 0.05) {
       const a = (1 - t) * (1 - t), b = 2 * (1 - t) * t, c = t * t;
-      pts.push([a * oLat1 + b * cLat + c * oLat2, a * oLng1 + b * cLng + c * oLng2]);
+      pts.push([a * lat1 + b * cLat + c * lat2, a * lng1 + b * cLng + c * lng2]);
     }
     return pts;
   }
@@ -74,7 +79,7 @@ const MapView = (() => {
         return;
       }
 
-      const latlngs = curvedPath([start.lat, start.lng], [end.lat, end.lng], 0.012);
+      const latlngs = curvedPath([start.lat, start.lng], [end.lat, end.lng], 0.18);
       const base = L.polyline(latlngs, { color, weight: getWeight(fl.count), opacity: 0.8, lineCap: 'round' })
         .addTo(map)
         .bindTooltip(tip, { sticky: true, direction: 'top', className: 'custom-tooltip' });
