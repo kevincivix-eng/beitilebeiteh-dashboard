@@ -1,4 +1,6 @@
-/* Home view: Leaflet flow map + KPI strip. Geometry reused from original repo. */
+/* Home view: Leaflet flow map + KPI strip.
+   Restores the original map behaviour (inbound/outbound toggle, animated flow
+   lines, thickness + location filters, auto-zoom) in the new brand styling. */
 const MapView = (() => {
   const locations = {
     'אל קסום': { lat: 31.28444, lng: 34.91611 },
@@ -16,15 +18,18 @@ const MapView = (() => {
     'באר שבע': { lat: 31.2518, lng: 34.7913 },
   };
 
-  // Brand-tinted per-origin colors (pinks & greens rotation)
+  // Brand-tinted per-location colors (pinks & greens rotation)
   const palette = ['#da91bf', '#4e724d', '#c46ca6', '#7fa37e', '#a85a8c', '#6b8f6a',
-    '#e8b6d6', '#9bbf9a', '#cf7fb6', '#5c7d5b', '#b863a0', '#8aae89', '#d49cc6'];
+    '#e0a3cf', '#9bbf9a', '#cf7fb6', '#5c7d5b', '#b863a0', '#8aae89', '#d49cc6'];
   const locColors = {};
-  Object.keys(locations).forEach((k, i) => (locColors[k] = palette[i % palette.length]));
 
-  let map, flows = [], state = { origin: null };
+  let map, flows = [];
+  const filters = { location: null, thickness: null, viewMode: 'outbound' };
 
-  function getWeight(c) { return c <= 10 ? 3 : c <= 50 ? 7 : 13; }
+  const getWeight = (c) => (c <= 10 ? 4 : c <= 50 ? 8 : 14);
+  const getColor = (k) => locColors[k] || '#9b8fa6';
+  const checkThickness = (c, r) =>
+    r === 'low' ? c <= 10 : r === 'medium' ? c > 10 && c <= 50 : r === 'high' ? c > 50 : true;
 
   function curvedPath(start, end, offset) {
     const [lat1, lng1] = start, [lat2, lng2] = end;
@@ -43,46 +48,118 @@ const MapView = (() => {
   }
 
   function drawFlows() {
+    const bounds = [];
     flows.forEach((fl) => {
       (fl.layers || []).forEach((l) => map.removeLayer(l));
       fl.layers = [];
-      if (state.origin && fl.from !== state.origin) return;
-      const a = locations[fl.from], b = locations[fl.to];
-      if (!a || !b) return;
-      const color = locColors[fl.from] || '#999';
-      const weight = getWeight(fl.count);
+    });
+
+    flows.forEach((fl) => {
+      const outbound = filters.viewMode === 'outbound';
+      const srcKey = outbound ? fl.from : fl.to;
+      const dstKey = outbound ? fl.to : fl.from;
+      const start = locations[srcKey], end = locations[dstKey];
+      if (!start || !end) return;
+      bounds.push([start.lat, start.lng], [end.lat, end.lng]);
+
+      const color = getColor(outbound ? fl.from : fl.to);
+      const tip = `<div class="popup-title">${fl.from} &larr; ${fl.to}</div><div class="popup-stat">העברות: <strong>${fl.count}</strong></div>`;
+
+      // Self-loop → ring marker
       if (fl.from === fl.to) {
-        const m = L.circleMarker([a.lat, a.lng], {
-          radius: 6 + Math.min(fl.count / 8, 18), color, fillColor: color,
-          fillOpacity: 0.25, weight: 2,
-        }).bindPopup(`<div class="popup-title">${fl.from} → ${fl.to}</div>${fl.count} מסירות`);
-        m.addTo(map); fl.layers.push(m);
+        const circle = L.circleMarker([start.lat, start.lng], {
+          radius: 9 + getWeight(fl.count), color, fill: false, weight: getWeight(fl.count) / 2, opacity: 0.85,
+        }).addTo(map).bindTooltip(tip, { sticky: true, direction: 'top', className: 'custom-tooltip' });
+        fl.layers.push(circle);
         return;
       }
-      const path = curvedPath([a.lat, a.lng], [b.lat, b.lng], 0.012);
-      const line = L.polyline(path, { color, weight, opacity: 0.78, lineCap: 'round' })
-        .bindPopup(`<div class="popup-title">${fl.from} → ${fl.to}</div>${fl.count} מסירות`);
-      line.addTo(map); fl.layers.push(line);
+
+      const latlngs = curvedPath([start.lat, start.lng], [end.lat, end.lng], 0.012);
+      const base = L.polyline(latlngs, { color, weight: getWeight(fl.count), opacity: 0.8, lineCap: 'round' })
+        .addTo(map)
+        .bindTooltip(tip, { sticky: true, direction: 'top', className: 'custom-tooltip' });
+      fl.layers.push(base);
+
+      // animated dash always moves physically from→to
+      const anim = L.polyline(outbound ? latlngs : latlngs.slice().reverse(), {
+        color: '#fff', weight: Math.max(2, getWeight(fl.count) / 3), opacity: 0.7,
+        dashArray: '8, 60', className: 'flow-anim',
+      }).addTo(map);
+      fl.layers.push(anim);
     });
+
+    updateMapVisibility();
+    if (bounds.length) {
+      const b = L.latLngBounds(bounds);
+      if (b.isValid()) map.fitBounds(b, { padding: [50, 50] });
+    }
+  }
+
+  function updateMapVisibility() {
+    flows.forEach((fl) => {
+      if (!fl.layers) return;
+      const loc = filters.viewMode === 'outbound' ? fl.from : fl.to;
+      const visible = (!filters.location || loc === filters.location) &&
+        (!filters.thickness || checkThickness(fl.count, filters.thickness));
+      fl.layers.forEach((l) => (visible ? l.addTo(map) : map.removeLayer(l)));
+    });
+    updateLegendUI();
+  }
+
+  function updateLegendUI() {
+    document.querySelectorAll('#mapLegend .legend-item[data-type="location"]').forEach((it) => {
+      const on = filters.location === it.dataset.value;
+      it.classList.toggle('active-filter', on);
+      it.style.opacity = filters.location && !on ? '0.4' : '1';
+    });
+    document.querySelectorAll('#mapLegend .legend-item[data-type="thickness"]').forEach((it) => {
+      const on = filters.thickness === it.dataset.value;
+      it.classList.toggle('active-filter', on);
+      it.style.opacity = filters.thickness && !on ? '0.4' : '1';
+    });
+    const reset = document.getElementById('mapReset');
+    if (reset) reset.style.display = filters.location || filters.thickness ? 'block' : 'none';
   }
 
   function buildLegend() {
+    const origins = Object.keys(locColors);
     const el = document.getElementById('mapLegend');
-    const origins = [...new Set(flows.map((f) => f.from))].sort();
-    el.innerHTML = '<h4>סינון לפי יישוב מוצא</h4>' +
-      origins.map((o) =>
-        `<div class="legend-item" data-o="${o}"><span class="legend-dot" style="background:${locColors[o]}"></span>${o}</div>`
-      ).join('') +
-      `<div class="legend-item" data-o="" style="margin-top:6px;font-weight:700"><span class="legend-dot" style="background:var(--ink)"></span>הצג הכל</div>`;
+    el.innerHTML = `
+      <div class="legend-mode">
+        <span class="legend-mode__label" id="mapModeLabel">מוצא החפץ</span>
+        <button class="legend-mode__btn" id="mapModeBtn" title="החלפת כיוון">↗︎ יוצא</button>
+      </div>
+      <h4>מקרא (לחץ לסינון)</h4>
+      ${origins.map((o) => `
+        <div class="legend-item" data-type="location" data-value="${o}">
+          <span class="legend-dot" style="background:${locColors[o]}"></span><span>${o}</span>
+        </div>`).join('')}
+      <hr class="legend-hr">
+      <h4>עובי קו (כמות)</h4>
+      <div class="legend-item" data-type="thickness" data-value="low"><span class="legend-dot" style="height:3px"></span><span>1–10</span></div>
+      <div class="legend-item" data-type="thickness" data-value="medium"><span class="legend-dot" style="height:6px"></span><span>11–50</span></div>
+      <div class="legend-item" data-type="thickness" data-value="high"><span class="legend-dot" style="height:10px"></span><span>50+</span></div>
+      <div id="mapReset" class="legend-reset">נקה סינון</div>`;
+
     el.querySelectorAll('.legend-item').forEach((it) =>
       it.addEventListener('click', () => {
-        const o = it.dataset.o || null;
-        state.origin = state.origin === o ? null : o;
-        el.querySelectorAll('.legend-item').forEach((x) =>
-          (x.style.opacity = !state.origin || x.dataset.o === state.origin || x.dataset.o === '' ? '1' : '0.4'));
-        drawFlows();
+        const t = it.dataset.type, v = it.dataset.value;
+        if (t === 'location') filters.location = filters.location === v ? null : v;
+        else filters.thickness = filters.thickness === v ? null : v;
+        updateMapVisibility();
       })
     );
+    document.getElementById('mapReset').addEventListener('click', () => {
+      filters.location = null; filters.thickness = null; updateMapVisibility();
+    });
+    document.getElementById('mapModeBtn').addEventListener('click', () => {
+      filters.viewMode = filters.viewMode === 'outbound' ? 'inbound' : 'outbound';
+      filters.location = null;
+      const out = filters.viewMode === 'outbound';
+      document.getElementById('mapModeLabel').textContent = out ? 'מוצא החפץ' : 'יעד החפץ';
+      document.getElementById('mapModeBtn').textContent = out ? '↗︎ יוצא' : '↙︎ נכנס';
+      drawFlows();
+    });
   }
 
   function init(data) {
@@ -95,6 +172,8 @@ const MapView = (() => {
       kpiCard(fmt(k.cities), 'יישובים פעילים');
 
     flows = (data.flows || []).map((f) => ({ ...f }));
+    const origins = [...new Set(flows.map((f) => f.from))].sort();
+    origins.forEach((o, i) => (locColors[o] = palette[i % palette.length]));
 
     map = L.map('map', { center: [31.22, 34.92], zoom: 10, zoomControl: false });
     L.control.zoom({ position: 'topleft' }).addTo(map);
@@ -114,8 +193,8 @@ const MapView = (() => {
       }).addTo(map);
     });
 
-    drawFlows();
     buildLegend();
+    drawFlows();
     setTimeout(() => map.invalidateSize(), 200);
   }
 

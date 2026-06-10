@@ -114,13 +114,35 @@ html, body {
   border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow);
   font-size: 12px; max-width: 200px; max-height: 50%; overflow:auto;
 }
-.map-legend h4 { margin: 0 0 8px; font-size: 13px; color: var(--green); }
+.map-legend h4 { margin: 6px 0 8px; font-size: 13px; color: var(--green); }
 .legend-item {
-  display: flex; align-items: center; gap: 8px; padding: 3px 4px;
-  cursor: pointer; border-radius: 6px; transition: opacity .15s;
+  display: flex; align-items: center; gap: 8px; padding: 3px 6px;
+  cursor: pointer; border-radius: 6px; transition: opacity .15s, background .15s;
 }
 .legend-item:hover { background: var(--pink-soft); }
-.legend-dot { width: 12px; height: 4px; border-radius: 2px; flex-shrink: 0; }
+.legend-item.active-filter { background: var(--pink-soft); font-weight: 700; box-shadow: inset 3px 0 0 var(--pink); }
+.legend-dot { width: 26px; height: 4px; border-radius: 2px; flex-shrink: 0; background: var(--muted); }
+.legend-hr { border: 0; border-top: 1px solid var(--line); margin: 10px 0 4px; }
+
+/* legend: inbound/outbound toggle */
+.legend-mode { display: flex; flex-direction: column; gap: 6px; align-items: stretch; padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+.legend-mode__label { font-size: 12px; font-weight: 700; color: var(--green); text-align: center; }
+.legend-mode__btn {
+  border: 1px solid var(--line); background: var(--cream); color: var(--ink);
+  border-radius: 10px; padding: 6px 10px; cursor: pointer; font-family: 'Heebo', sans-serif;
+  font-size: 13px; font-weight: 600; transition: all .2s;
+}
+.legend-mode__btn:hover { background: var(--pink); color: #fff; border-color: var(--pink); }
+.legend-reset {
+  display: none; margin-top: 10px; text-align: center; cursor: pointer;
+  color: var(--pink-deep); font-size: 12px; text-decoration: underline;
+}
+
+/* animated flow dash */
+@keyframes dash-anim { to { stroke-dashoffset: -100; } }
+.flow-anim { animation: dash-anim 1.5s linear infinite; pointer-events: none; }
+.popup-stat { font-size: 13px; color: var(--ink); margin-top: 2px; }
+.custom-tooltip { direction: rtl; text-align: right; }
 
 .location-label {
   color: var(--ink); font-size: 11px; font-weight: 700;
