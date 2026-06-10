@@ -15,6 +15,12 @@ const API_KEY = process.env.AIRTABLE_API_KEY;
 const BASE_ID = 'appOPXerkRuO4YH1D';
 const DATA_DIR = path.join(__dirname, '..', 'data');
 
+// Microsoft Graph (SharePoint Excel — membership tracking)
+const MS_TENANT = process.env.MS_TENANT_ID;
+const MS_CLIENT = process.env.MS_CLIENT_ID;
+const MS_SECRET = process.env.MS_CLIENT_SECRET;
+const XLSX_SHARE_URL = process.env.SHAREPOINT_XLSX_URL;
+
 if (!API_KEY) {
   console.error('❌ AIRTABLE_API_KEY missing.');
   process.exit(1);
@@ -51,6 +57,64 @@ function fetchTable(table, fields) {
 const f = (r, k) => r.fields[k];
 const firstVal = (v) => (Array.isArray(v) ? v[0] : v);
 
+/**
+ * Fetch membership tracking from the org's SharePoint Excel via Microsoft Graph
+ * (app-only / client-credentials). Returns { members, latest, series } or null
+ * if Graph isn't configured / reachable (build then keeps the committed snapshot).
+ */
+async function fetchMembers() {
+  if (!MS_TENANT || !MS_CLIENT || !MS_SECRET || !XLSX_SHARE_URL) {
+    console.warn('⚠️ Graph not configured — skipping live members refresh.');
+    return null;
+  }
+  try {
+    // 1. token (client credentials)
+    const tokRes = await fetch(`https://login.microsoftonline.com/${MS_TENANT}/oauth2/v2.0/token`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: MS_CLIENT, client_secret: MS_SECRET,
+        scope: 'https://graph.microsoft.com/.default', grant_type: 'client_credentials',
+      }),
+    });
+    const tok = (await tokRes.json()).access_token;
+    if (!tok) throw new Error('no Graph token');
+
+    // 2. resolve share link → download xlsx
+    const shareId = 'u!' + Buffer.from(XLSX_SHARE_URL).toString('base64')
+      .replace(/=+$/, '').replace(/\//g, '_').replace(/\+/g, '-');
+    const dl = await fetch(`https://graph.microsoft.com/v1.0/shares/${shareId}/driveItem/content`, {
+      headers: { Authorization: `Bearer ${tok}` },
+    });
+    if (!dl.ok) throw new Error(`download ${dl.status}`);
+    const buf = Buffer.from(await dl.arrayBuffer());
+
+    // 3. parse "דף מסכם" sheet
+    const XLSX = require('xlsx');
+    const wb = XLSX.read(buf, { type: 'buffer', cellDates: true });
+    const ws = wb.Sheets['דף מסכם'];
+    const rows = XLSX.utils.sheet_to_json(ws, { header: 1, blankrows: false });
+    // cols: 0 שבוע | 1 יום | 2 מצטרפים | 3 עוזבים | 4 בקבוצה | 5 מצטבר
+    const series = [];
+    rows.slice(1).forEach((r) => {
+      const d = r[1];
+      if (!(d instanceof Date) || isNaN(d)) return;
+      series.push({
+        date: d.toISOString().slice(0, 10),
+        joined: r[2] ?? null, left: r[3] ?? null,
+        inGroup: r[4] ?? null, cumulative: r[5] ?? null,
+      });
+    });
+    const withCum = series.filter((s) => s.cumulative != null);
+    const latest = withCum[withCum.length - 1] || null;
+    console.log(`✅ Members from SharePoint: ${series.length} rows, latest cumulative=${latest?.cumulative}`);
+    return { members: latest?.cumulative ?? null, latest, series };
+  } catch (e) {
+    console.warn('⚠️ Members fetch failed (keeping snapshot):', e.message);
+    return null;
+  }
+}
+
 (async () => {
   console.log('⏳ Fetching Airtable…');
   const events = await fetchTable('EVENT', [
@@ -68,6 +132,9 @@ const firstVal = (v) => (Array.isArray(v) ? v[0] : v);
     'תאריך העברה',
   ]);
   console.log(`✅ EVENT: ${events.length}, חפצים מועברים: ${items.length}`);
+
+  // ---- membership tracking (SharePoint Excel via Graph) ----
+  const membersData = await fetchMembers();
 
   // ---- flows.json (origin -> each destination) ----
   const flowMap = {};
@@ -101,6 +168,7 @@ const firstVal = (v) => (Array.isArray(v) ? v[0] : v);
     weightTon: Math.round((totalWeightKg / 1000) * 100) / 100,
     people: totalPeople,
     cities: cities.size,
+    members: membersData?.members ?? null, // latest cumulative joiners (SharePoint)
     updated: new Date().toISOString(),
   };
 
@@ -176,6 +244,19 @@ const firstVal = (v) => (Array.isArray(v) ? v[0] : v);
     fs.writeFileSync(path.join(DATA_DIR, name), JSON.stringify(obj));
     console.log(`📝 ${name}`);
   };
+  // members.json — refresh from SharePoint when available; else keep the
+  // committed snapshot (and backfill kpis.members from it so the card stays populated).
+  if (membersData?.series?.length) {
+    write('members.json', membersData.series);
+  } else if (kpis.members == null) {
+    try {
+      const prev = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'members.json'), 'utf8'));
+      const lastCum = [...prev].reverse().find((r) => r.cumulative != null);
+      if (lastCum) kpis.members = lastCum.cumulative;
+      console.log(`↩︎ kept members.json snapshot (members=${kpis.members})`);
+    } catch { /* no snapshot yet */ }
+  }
+
   write('kpis.json', kpis);
   write('flows.json', flows);
   write('categories.json', { categories, topItems });

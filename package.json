@@ -1,0 +1,12 @@
+{
+  "name": "beitilebeiteh-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build pipeline for the מביתי לביתך dashboard",
+  "scripts": {
+    "build": "node build/fetch_data.js"
+  },
+  "dependencies": {
+    "xlsx": "0.18.5"
+  }
+}

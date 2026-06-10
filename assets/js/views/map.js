@@ -170,10 +170,11 @@ const MapView = (() => {
   function init(data) {
     const k = data.kpis || {};
     document.getElementById('homeKpis').innerHTML =
-      kpiCard(fmt(k.deliveries), 'מסירות', true) +
-      kpiCard(fmt(k.items), 'פריטים שנמסרו') +
-      kpiCard(fmt(k.weightTon) + ' טון', 'משקל כולל', true) +
-      kpiCard(fmt(k.people), 'נהנים') +
+      (k.members != null ? kpiCard(fmt(k.members), 'מספר משתתפות', true) : '') +
+      kpiCard(fmt(k.deliveries), 'מסירות') +
+      kpiCard(fmt(k.items), 'פריטים שנמסרו', true) +
+      kpiCard(fmt(k.weightTon) + ' טון', 'משקל כולל') +
+      kpiCard(fmt(k.people), 'נהנים', true) +
       kpiCard(fmt(k.cities), 'יישובים פעילים');
 
     flows = (data.flows || []).map((f) => ({ ...f }));
