@@ -110,7 +110,7 @@ html, body {
 /* Home view fills the viewport so the map reaches the bottom edge of the page */
 .main { padding-bottom: 0; }
 .view { padding-bottom: 48px; }
-#view-home {
+#view-home:not([hidden]) {
   display: flex; flex-direction: column;
   height: calc(100vh - 32px); padding-bottom: 0;
 }
