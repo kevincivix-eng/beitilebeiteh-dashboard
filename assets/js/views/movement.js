@@ -7,10 +7,34 @@ const MovementView = (() => {
     const totalMoves = flows.reduce((s, f) => s + f.count, 0);
     const intra = flows.filter((f) => f.from === f.to).reduce((s, f) => s + f.count, 0);
     const inter = totalMoves - intra;
+    const pct = (n) => (totalMoves ? Math.round((n / totalMoves) * 100) : 0);
     document.getElementById('movementKpis').innerHTML =
       kpiCard(fmt(totalMoves), 'סך תנועות', true) +
-      kpiCard(fmt(inter), 'תנועות בין-יישוביות') +
-      kpiCard(fmt(intra), 'תנועות תוך-יישוביות', true);
+      kpiCard(`${fmt(inter)} · ${pct(inter)}%`, 'תנועות בין-יישוביות') +
+      kpiCard(`${fmt(intra)} · ${pct(intra)}%`, 'תנועות תוך-יישוביות', true);
+
+    // Inline plugin: always render the percentage on each slice.
+    const pctLabels = {
+      id: 'pctLabels',
+      afterDatasetsDraw(chart) {
+        const { ctx } = chart;
+        const meta = chart.getDatasetMeta(0);
+        const total = chart.data.datasets[0].data.reduce((a, b) => a + b, 0) || 1;
+        ctx.save();
+        ctx.font = '700 15px Heebo, sans-serif';
+        ctx.fillStyle = '#fff';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        meta.data.forEach((arc, i) => {
+          const v = chart.data.datasets[0].data[i];
+          if (!v) return;
+          const p = Math.round((v / total) * 100);
+          const { x, y } = arc.tooltipPosition();
+          ctx.fillText(p + '%', x, y);
+        });
+        ctx.restore();
+      },
+    };
 
     // Pie
     new Chart(document.getElementById('movementPie'), {
@@ -21,8 +45,16 @@ const MovementView = (() => {
       },
       options: {
         responsive: true,
-        plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 14 } } } },
+        plugins: {
+          legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 14 } } },
+          tooltip: {
+            callbacks: {
+              label: (c) => `${c.label}: ${fmt(c.parsed)} (${Math.round((c.parsed / totalMoves) * 100)}%)`,
+            },
+          },
+        },
       },
+      plugins: [pctLabels],
     });
 
     drawSankey(flows.filter((f) => f.from !== f.to)); // sankey excludes self-loops
