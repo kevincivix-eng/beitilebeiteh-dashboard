@@ -105,14 +105,23 @@ html, body {
 .card__title { margin: 0 0 16px; font-size: 16px; font-weight: 700; color: var(--ink); }
 .card canvas { max-height: 360px; }
 .card--map { padding: 0; overflow: hidden; position: relative; }
-#map { height: 62vh; min-height: 460px; width: 100%; background: var(--cream); }
+#map { height: 100%; min-height: 0; width: 100%; background: var(--cream); }
+
+/* Home view fills the viewport so the map reaches the bottom edge of the page */
+.main { padding-bottom: 0; }
+.view { padding-bottom: 48px; }
+#view-home {
+  display: flex; flex-direction: column;
+  height: calc(100vh - 32px); padding-bottom: 0;
+}
+#view-home .card--map { flex: 1; min-height: 0; }
 
 /* ---------- Map legend ---------- */
 .map-legend {
   position: absolute; bottom: 16px; left: 16px; z-index: 600;
   background: rgba(255,255,255,.92); backdrop-filter: blur(4px);
   border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow);
-  font-size: 12px; max-width: 200px; max-height: 50%; overflow:auto;
+  font-size: 12px; max-width: 200px;
 }
 .map-legend h4 { margin: 6px 0 8px; font-size: 13px; color: var(--green); }
 .legend-item {
@@ -170,6 +179,10 @@ html, body {
   .sidebar { transform: translateX(100%); transition: transform .25s; }
   .sidebar.open { transform: translateX(0); }
   .sidebar__scrim.show { display: block; }
-  .main { margin-right: 0; padding: 70px 18px 36px; }
+  .main { margin-right: 0; padding: 70px 18px 0; }
+  #view-home { height: auto; }
+  #view-home .card--map { flex: none; }
+  #map { height: 70vh; min-height: 380px; }
+  .map-legend { max-height: 60%; overflow: auto; }
   .view__head h1 { font-size: 22px; }
 }

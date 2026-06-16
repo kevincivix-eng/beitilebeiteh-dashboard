@@ -23,8 +23,44 @@ const MapView = (() => {
     '#e0a3cf', '#9bbf9a', '#cf7fb6', '#5c7d5b', '#b863a0', '#8aae89', '#d49cc6'];
   const locColors = {};
 
-  let map, flows = [];
+  let map, flows = [], kpiData = {};
   const filters = { location: null, thickness: null, viewMode: 'outbound' };
+
+  const HOME_SUBTITLE = 'זרימת המסירות בין יישובי הנגב המזרחי';
+
+  // Render the home KPI strip — global totals, or scoped to a single city when
+  // a location filter is active on the map. When scoped, the numbers follow the
+  // map's direction toggle: outbound = items the city sent, inbound = received.
+  function renderKpis(loc) {
+    const k = kpiData || {};
+    const entry = loc && k.byCity ? k.byCity[loc] : null;
+    const inbound = filters.viewMode === 'inbound';
+    // entry may be the new {out,in} shape or (legacy) a flat object
+    const c = entry ? (entry.out ? entry[inbound ? 'in' : 'out'] : entry) : null;
+    const el = document.getElementById('homeKpis');
+    if (!el) return;
+    if (c) {
+      el.innerHTML =
+        kpiCard(fmt(c.deliveries), inbound ? 'מסירות שהתקבלו' : 'מסירות שיצאו') +
+        kpiCard(fmt(c.items), inbound ? 'פריטים שהתקבלו' : 'פריטים שנמסרו', true) +
+        // weight is only meaningful on the outbound side (origin-based measure)
+        (inbound ? '' : kpiCard(fmt(c.weightTon) + ' טון', 'משקל שנמסר')) +
+        kpiCard(fmt(c.people), 'נהנים', true) +
+        kpiCard(fmt(c.partners), inbound ? 'יישובי מוצא' : 'יישובי יעד');
+    } else {
+      el.innerHTML =
+        (k.members != null ? kpiCard(fmt(k.members), 'מספר משתתפות', true) : '') +
+        kpiCard(fmt(k.deliveries), 'מסירות') +
+        kpiCard(fmt(k.items), 'פריטים שנמסרו', true) +
+        kpiCard(fmt(k.weightTon) + ' טון', 'משקל כולל') +
+        kpiCard(fmt(k.people), 'נהנים', true) +
+        kpiCard(fmt(k.cities), 'יישובים פעילים');
+    }
+    const sub = document.querySelector('#view-home .view__head p');
+    if (sub) sub.textContent = loc
+      ? `מציג נתונים עבור: ${loc} (${inbound ? 'פריטים נכנסים' : 'פריטים יוצאים'})`
+      : HOME_SUBTITLE;
+  }
 
   const getWeight = (c) => (c <= 10 ? 4 : c <= 50 ? 8 : 14);
   const getColor = (k) => locColors[k] || '#9b8fa6';
@@ -109,6 +145,7 @@ const MapView = (() => {
       fl.layers.forEach((l) => (visible ? l.addTo(map) : map.removeLayer(l)));
     });
     updateLegendUI();
+    renderKpis(filters.location);
   }
 
   function updateLegendUI() {
@@ -126,16 +163,25 @@ const MapView = (() => {
     if (reset) reset.style.display = filters.location || filters.thickness ? 'block' : 'none';
   }
 
+  // Cities shown in the legend depend on direction: origins when looking at
+  // outbound flows, destinations when looking at inbound — so receiving-only
+  // cities (e.g. חברון) are selectable in inbound mode.
+  function legendCities() {
+    const out = filters.viewMode === 'outbound';
+    return [...new Set(flows.map((f) => (out ? f.from : f.to)))].sort();
+  }
+
   function buildLegend() {
-    const origins = Object.keys(locColors);
+    const out = filters.viewMode === 'outbound';
+    const cities = legendCities();
     const el = document.getElementById('mapLegend');
     el.innerHTML = `
       <div class="legend-mode">
-        <span class="legend-mode__label" id="mapModeLabel">מוצא החפץ</span>
-        <button class="legend-mode__btn" id="mapModeBtn" title="החלפת כיוון">↗︎ יוצא</button>
+        <span class="legend-mode__label" id="mapModeLabel">${out ? 'מוצא החפץ' : 'יעד החפץ'}</span>
+        <button class="legend-mode__btn" id="mapModeBtn" title="החלפת כיוון">${out ? '↗︎ יוצא' : '↙︎ נכנס'}</button>
       </div>
       <h4>מקרא (לחץ לסינון)</h4>
-      ${origins.map((o) => `
+      ${cities.map((o) => `
         <div class="legend-item" data-type="location" data-value="${o}">
           <span class="legend-dot" style="background:${locColors[o]}"></span><span>${o}</span>
         </div>`).join('')}
@@ -160,26 +206,18 @@ const MapView = (() => {
     document.getElementById('mapModeBtn').addEventListener('click', () => {
       filters.viewMode = filters.viewMode === 'outbound' ? 'inbound' : 'outbound';
       filters.location = null;
-      const out = filters.viewMode === 'outbound';
-      document.getElementById('mapModeLabel').textContent = out ? 'מוצא החפץ' : 'יעד החפץ';
-      document.getElementById('mapModeBtn').textContent = out ? '↗︎ יוצא' : '↙︎ נכנס';
+      buildLegend(); // rebuild location list for the new direction
       drawFlows();
     });
   }
 
   function init(data) {
-    const k = data.kpis || {};
-    document.getElementById('homeKpis').innerHTML =
-      (k.members != null ? kpiCard(fmt(k.members), 'מספר משתתפות', true) : '') +
-      kpiCard(fmt(k.deliveries), 'מסירות') +
-      kpiCard(fmt(k.items), 'פריטים שנמסרו', true) +
-      kpiCard(fmt(k.weightTon) + ' טון', 'משקל כולל') +
-      kpiCard(fmt(k.people), 'נהנים', true) +
-      kpiCard(fmt(k.cities), 'יישובים פעילים');
+    kpiData = data.kpis || {};
+    renderKpis(null);
 
     flows = (data.flows || []).map((f) => ({ ...f }));
-    const origins = [...new Set(flows.map((f) => f.from))].sort();
-    origins.forEach((o, i) => (locColors[o] = palette[i % palette.length]));
+    const allCities = [...new Set(flows.flatMap((f) => [f.from, f.to]))].sort();
+    allCities.forEach((c, i) => (locColors[c] = palette[i % palette.length]));
 
     map = L.map('map', { center: [31.22, 34.92], zoom: 10, zoomControl: false });
     L.control.zoom({ position: 'topleft' }).addTo(map);
@@ -193,7 +231,12 @@ const MapView = (() => {
       const loc = locations[key];
       L.circleMarker([loc.lat, loc.lng], {
         radius: 5, fillColor: BRAND.green, color: '#fff', weight: 2, fillOpacity: 0.9,
-      }).addTo(map).bindPopup(`<div class="popup-title">${key}</div>`);
+      }).addTo(map)
+        .bindTooltip(key, { direction: 'top', className: 'custom-tooltip' })
+        .on('click', () => {
+          filters.location = filters.location === key ? null : key;
+          updateMapVisibility();
+        });
       L.marker([loc.lat, loc.lng], {
         icon: L.divIcon({ className: 'location-label', html: key, iconSize: [90, 18], iconAnchor: [45, -8] }),
       }).addTo(map);

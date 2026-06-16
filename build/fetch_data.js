@@ -130,6 +130,7 @@ async function fetchMembers() {
     'משקל חפץ כפול כמות',
     'עיר מוצא',
     'תאריך העברה',
+    'העברות',
   ]);
   console.log(`✅ EVENT: ${events.length}, חפצים מועברים: ${items.length}`);
 
@@ -171,6 +172,64 @@ async function fetchMembers() {
     members: membersData?.members ?? null, // latest cumulative joiners (SharePoint)
     updated: new Date().toISOString(),
   };
+
+  // ---- per-city directional breakdown (drives the home-page map filter) ----
+  // For each city we compute OUTgoing (city is origin) and INcoming (city is
+  // destination) stats separately, so the KPI strip stays correct when the map
+  // direction toggle is flipped. Items/weight are joined item→event→destination
+  // (items only carry עיר מוצא, but each item links to its delivery via 'העברות',
+  // and the delivery carries 'לאן נמסרת'). Multi-destination deliveries split the
+  // item totals evenly across their destinations.
+  const itemsByEvent = {};
+  items.forEach((r) => {
+    const evs = f(r, 'העברות') || [];
+    const qty = f(r, 'כמות') || 0;
+    const w = f(r, 'משקל חפץ כפול כמות') || 0;
+    (Array.isArray(evs) ? evs : [evs]).forEach((id) => {
+      const a = itemsByEvent[id] || (itemsByEvent[id] = { items: 0, weightKg: 0 });
+      a.items += qty; a.weightKg += w;
+    });
+  });
+
+  const cityDir = {};
+  const ensureDir = (c) =>
+    (cityDir[c] = cityDir[c] || {
+      out: { deliveries: 0, people: 0, items: 0, weightKg: 0, partners: new Set() },
+      in: { deliveries: 0, people: 0, items: 0, weightKg: 0, partners: new Set() },
+    });
+  events.forEach((r) => {
+    const from = (f(r, 'מאיפה יוצאת המסירה') || '').trim();
+    let dests = f(r, 'לאן נמסרת') || [];
+    if (typeof dests === 'string') dests = dests.split(',').map((d) => d.trim());
+    dests = dests.map((d) => (d || '').trim()).filter(Boolean);
+    const ppl = f(r, 'אנשים שמועבר עליהם') || 0;
+    const agg = itemsByEvent[r.id] || { items: 0, weightKg: 0 };
+
+    if (from) {
+      const s = ensureDir(from).out;
+      s.deliveries += 1; s.people += ppl; s.items += agg.items; s.weightKg += agg.weightKg;
+      dests.forEach((d) => { if (d !== from) s.partners.add(d); });
+    }
+    const n = dests.length || 1;
+    dests.forEach((d) => {
+      const s = ensureDir(d).in;
+      s.deliveries += 1; s.people += ppl;
+      s.items += agg.items / n; s.weightKg += agg.weightKg / n;
+      if (from && from !== d) s.partners.add(from);
+    });
+  });
+
+  const packDir = (s) => ({
+    deliveries: s.deliveries,
+    people: s.people,
+    items: Math.round(s.items),
+    weightTon: Math.round((s.weightKg / 1000) * 100) / 100,
+    partners: s.partners.size,
+  });
+  kpis.byCity = {};
+  Object.entries(cityDir).forEach(([c, d]) => {
+    kpis.byCity[c] = { out: packDir(d.out), in: packDir(d.in) };
+  });
 
   // ---- categories.json (by קטגוריה לBI) + top items ----
   const catMap = {};
