@@ -163,6 +163,21 @@ html, body {
 
 .sankey-wrap { width: 100%; overflow-x: auto; }
 .sankey-wrap text { font-family: 'Heebo', sans-serif; font-size: 12px; fill: var(--ink); }
+.sankey-label {
+  font-size: 13px; font-weight: 600; fill: var(--ink);
+  paint-order: stroke; stroke: #fff; stroke-width: 3px; stroke-linejoin: round;
+}
+.sankey-head {
+  font-size: 13px; font-weight: 900; fill: var(--green);
+  paint-order: stroke; stroke: #fff; stroke-width: 3px;
+}
+
+/* Movement layout: sankey wide, pie compact */
+.movement-grid { grid-template-columns: 1.9fr 1fr; align-items: start; }
+.movement-grid .card--pie canvas { max-height: 280px; }
+@media (max-width: 880px) {
+  .movement-grid { grid-template-columns: 1fr; }
+}
 
 /* ---------- Mobile ---------- */
 .menu-toggle {
