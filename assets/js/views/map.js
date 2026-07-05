@@ -18,9 +18,7 @@ const MapView = (() => {
     'באר שבע': { lat: 31.2518, lng: 34.7913 },
   };
 
-  // Brand-tinted per-location colors (pinks & greens rotation)
-  const palette = ['#da91bf', '#4e724d', '#c46ca6', '#7fa37e', '#a85a8c', '#6b8f6a',
-    '#e0a3cf', '#9bbf9a', '#cf7fb6', '#5c7d5b', '#b863a0', '#8aae89', '#d49cc6'];
+  // Per-council colours come from the shared palette (councilColor in app.js)
   const locColors = {};
 
   let map, flows = [], kpiData = {};
@@ -217,7 +215,7 @@ const MapView = (() => {
 
     flows = (data.flows || []).map((f) => ({ ...f }));
     const allCities = [...new Set(flows.flatMap((f) => [f.from, f.to]))].sort();
-    allCities.forEach((c, i) => (locColors[c] = palette[i % palette.length]));
+    allCities.forEach((c) => (locColors[c] = councilColor(c)));
 
     map = L.map('map', { center: [31.22, 34.92], zoom: 10, zoomControl: false });
     L.control.zoom({ position: 'topleft' }).addTo(map);
@@ -230,7 +228,7 @@ const MapView = (() => {
       if (!active.has(key)) return;
       const loc = locations[key];
       L.circleMarker([loc.lat, loc.lng], {
-        radius: 5, fillColor: BRAND.green, color: '#fff', weight: 2, fillOpacity: 0.9,
+        radius: 5, fillColor: councilColor(key), color: '#fff', weight: 2, fillOpacity: 0.9,
       }).addTo(map)
         .bindTooltip(key, { direction: 'top', className: 'custom-tooltip' })
         .on('click', () => {

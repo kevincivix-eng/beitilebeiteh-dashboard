@@ -18,7 +18,7 @@ const WeightsView = (() => {
     const city = (w.byCity || []).filter((c) => c.ton > 0);
     new Chart(document.getElementById('weightCityBar'), {
       type: 'bar',
-      data: { labels: city.map((c) => c.name), datasets: [{ label: 'טון', data: city.map((c) => c.ton), backgroundColor: BRAND.pink, borderRadius: 6 }] },
+      data: { labels: city.map((c) => c.name), datasets: [{ label: 'טון', data: city.map((c) => c.ton), backgroundColor: city.map((c) => councilColor(c.name)), borderRadius: 6 }] },
       options: opts(true),
     });
   }

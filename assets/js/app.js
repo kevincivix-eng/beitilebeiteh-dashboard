@@ -23,6 +23,38 @@ const BRAND = {
   cats: ['#da91bf', '#4e724d', '#c46ca6', '#7fa37e', '#e8b6d6', '#9bbf9a', '#a85a8c', '#6b8f6a', '#f0cfe5', '#3f5c3e'],
 };
 
+// Per-council brand palette — each municipality keeps its colour consistently
+// across every view that breaks data down by council (map, sankey, weights…).
+const COUNCIL_COLORS = {
+  'ערערה בנגב': '#8f3d77',
+  'חורה': '#6a8769',
+  'רהט': '#5f1b4d',
+  'כסיפה': '#97af94',
+  'תל שבע': '#b86aa1',
+  'שגב שלום': '#5d605c',
+  'לקיה': '#929990',
+  'נווה מדבר': '#d49bbe',
+  'באר שבע': '#eec7de',
+  'אל קסום': '#4c4c4d',
+  // councils not in the supplied palette — consistent brand-toned fallbacks
+  'חברון': '#a8577f',
+  'ערד': '#7d9b7a',
+  'אופקים': '#c08fb4',
+  'להבים': '#bcae9e',
+  'אחר': '#b3aeb6',
+};
+const COUNCIL_FALLBACK = '#9b8fa6';
+// normalize a few known short/spelling variants to the canonical data names
+const COUNCIL_ALIASES = {
+  'ערערה': 'ערערה בנגב',
+  'שגב': 'שגב שלום',
+  'אל קאסום': 'אל קסום',
+};
+function councilColor(name) {
+  const key = COUNCIL_ALIASES[(name || '').trim()] || (name || '').trim();
+  return COUNCIL_COLORS[key] || COUNCIL_FALLBACK;
+}
+
 const fmt = (n) => (n == null ? '—' : n.toLocaleString('he-IL'));
 
 function kpiCard(val, label, green) {

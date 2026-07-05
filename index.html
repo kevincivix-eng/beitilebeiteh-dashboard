@@ -61,7 +61,13 @@
       <div class="kpi-strip" id="movementKpis"></div>
       <div class="grid movement-grid">
         <div class="card">
-          <h3 class="card__title">זרימת מסירות (מוצא → יעד)</h3>
+          <div class="card__head">
+            <h3 class="card__title">זרימת מסירות (מוצא → יעד)</h3>
+            <div class="seg-toggle" id="sankeyMetric">
+              <button class="seg-btn active" data-metric="moves">תנועות</button>
+              <button class="seg-btn" data-metric="items">מספר חפצים</button>
+            </div>
+          </div>
           <div id="sankey" class="sankey-wrap"></div>
         </div>
         <div class="card card--pie">

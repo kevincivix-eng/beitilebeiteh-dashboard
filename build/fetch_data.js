@@ -191,6 +191,23 @@ async function fetchMembers() {
     });
   });
 
+  // ---- item count per flow (origin -> destination) for the sankey toggle ----
+  // Items are attributed to the delivery's destination(s); multi-destination
+  // deliveries split the item total evenly, mirroring the per-city logic.
+  const flowItemsMap = {};
+  events.forEach((r) => {
+    const from = (f(r, 'מאיפה יוצאת המסירה') || '').trim();
+    if (!from) return;
+    let dests = f(r, 'לאן נמסרת') || [];
+    if (typeof dests === 'string') dests = dests.split(',').map((d) => d.trim());
+    dests = dests.map((d) => (d || '').trim()).filter(Boolean);
+    if (!dests.length) return;
+    const agg = itemsByEvent[r.id] || { items: 0 };
+    const share = agg.items / dests.length;
+    dests.forEach((to) => { const key = `${from}|${to}`; flowItemsMap[key] = (flowItemsMap[key] || 0) + share; });
+  });
+  flows.forEach((fl) => { fl.items = Math.round(flowItemsMap[`${fl.from}|${fl.to}`] || 0); });
+
   const cityDir = {};
   const ensureDir = (c) =>
     (cityDir[c] = cityDir[c] || {
