@@ -31,6 +31,7 @@
       <a class="nav__item" href="#members" data-view="members"><span class="nav__icon">📈</span> משתתפים בזמן</a>
       <a class="nav__item" href="#items-time" data-view="items-time"><span class="nav__icon">📅</span> חפצים בזמן</a>
       <a class="nav__item" href="#weights" data-view="weights"><span class="nav__icon">⚖️</span> ניתוח משקלים</a>
+      <a class="nav__item" href="#social" data-view="social"><span class="nav__icon">📣</span> רשתות חברתיות</a>
     </nav>
     <div class="sidebar__footer">
       <span id="lastUpdated">—</span>
@@ -120,6 +121,56 @@
         <div class="card"><h3 class="card__title">משקל לפי עיר מוצא (טון)</h3><canvas id="weightCityBar"></canvas></div>
       </div>
     </section>
+    <!-- SOCIAL -->
+    <section class="view" id="view-social" hidden>
+      <header class="view__head">
+        <h1>רשתות חברתיות</h1>
+        <p>ביצועי השיווק בפייסבוק, אינסטגרם וטיקטוק</p>
+      </header>
+      <div class="seg-toggle seg-toggle--tabs" id="socialTabs">
+        <button class="seg-btn active" data-tab="overview">סקירה כללית</button>
+        <button class="seg-btn" data-tab="facebook">פייסבוק</button>
+        <button class="seg-btn" data-tab="instagram">אינסטגרם</button>
+        <button class="seg-btn" data-tab="tiktok">טיקטוק</button>
+      </div>
+      <div id="socialDemoNote" class="demo-note" hidden>⚠️ נתוני דמו — החיבור ל-Meta עדיין לא הוגדר</div>
+
+      <!-- overview -->
+      <div class="social-tab" id="socialTab-overview">
+        <div class="kpi-strip" id="socialKpis"></div>
+        <div class="grid grid--2">
+          <div class="card"><h3 class="card__title">עוקבים לאורך זמן</h3><canvas id="socialFollowersChart"></canvas></div>
+          <div class="card"><h3 class="card__title">רשתות מול המיזם: מעורבות שבועית · מצטרפות · מסירות</h3><canvas id="socialVsOrgChart"></canvas></div>
+        </div>
+      </div>
+
+      <!-- facebook -->
+      <div class="social-tab" id="socialTab-facebook" hidden>
+        <div class="kpi-strip" id="fbKpis"></div>
+        <div class="grid grid--2">
+          <div class="card"><h3 class="card__title">פוסטים אחרונים</h3><div class="post-list" id="fbRecent"></div></div>
+          <div class="card"><h3 class="card__title">הפוסטים המובילים (לפי מעורבות)</h3><div class="post-list" id="fbTop"></div></div>
+        </div>
+      </div>
+
+      <!-- instagram -->
+      <div class="social-tab" id="socialTab-instagram" hidden>
+        <div class="kpi-strip" id="igKpis"></div>
+        <div class="grid grid--2">
+          <div class="card"><h3 class="card__title">פרסומים אחרונים</h3><div class="post-list" id="igRecent"></div></div>
+          <div class="card"><h3 class="card__title">הפרסומים המובילים (לפי מעורבות)</h3><div class="post-list" id="igTop"></div></div>
+        </div>
+      </div>
+
+      <!-- tiktok -->
+      <div class="social-tab" id="socialTab-tiktok" hidden>
+        <div class="card social-soon">
+          <span class="social-soon__icon">🎵</span>
+          <h3>טיקטוק — בקרוב</h3>
+          <p>החיבור לנתוני טיקטוק יתווסף בשלב הבא.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Libraries -->
@@ -135,6 +186,7 @@
   <script src="assets/js/views/members-time.js"></script>
   <script src="assets/js/views/items-time.js"></script>
   <script src="assets/js/views/weights.js"></script>
+  <script src="assets/js/views/social.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 

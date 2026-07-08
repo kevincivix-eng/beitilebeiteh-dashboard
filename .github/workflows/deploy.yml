@@ -32,13 +32,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fetch fresh data (Airtable + SharePoint members)
+      - name: Fetch fresh data (Airtable + SharePoint + Meta social)
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
           MS_TENANT_ID: ${{ secrets.MS_TENANT_ID }}
           MS_CLIENT_ID: ${{ secrets.MS_CLIENT_ID }}
           MS_CLIENT_SECRET: ${{ secrets.MS_CLIENT_SECRET }}
           SHAREPOINT_XLSX_URL: ${{ secrets.SHAREPOINT_XLSX_URL }}
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+          META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
         run: node build/fetch_data.js
 
       - uses: actions/configure-pages@v4

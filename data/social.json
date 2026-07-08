@@ -1,0 +1,24 @@
+{
+  "demo": true,
+  "updated": null,
+  "facebook": {
+    "page": { "followers": 3120, "reach28": 41200, "engagement28": 2890, "pageViews28": 1240 },
+    "posts": [
+      { "id": "fb1", "date": "2026-07-01", "text": "חלוקת ריהוט גדולה בערערה בנגב — תודה לכל המתנדבות! 🚚💚", "link": "https://facebook.com", "image": null, "reach": 5200, "likes": 214, "comments": 32, "shares": 41, "engagement": 287 },
+      { "id": "fb2", "date": "2026-06-24", "text": "הצטרפו אלינו! מעבירים חפצים יד שנייה בין משפחות בנגב 🌸", "link": "https://facebook.com", "image": null, "reach": 3900, "likes": 156, "comments": 18, "shares": 27, "engagement": 201 },
+      { "id": "fb3", "date": "2026-06-17", "text": "סיכום חודש: 96 מסירות, 12 טון של חפצים שמצאו בית חדש", "link": "https://facebook.com", "image": null, "reach": 6800, "likes": 302, "comments": 45, "shares": 66, "engagement": 413 },
+      { "id": "fb4", "date": "2026-06-10", "text": "מחפשות מתנדבות עם רכב גדול לאזור כסיפה 🚗", "link": "https://facebook.com", "image": null, "reach": 2100, "likes": 87, "comments": 24, "shares": 19, "engagement": 130 },
+      { "id": "fb5", "date": "2026-06-03", "text": "סיפור מרגש: הספה שעברה שלוש משפחות ❤️", "link": "https://facebook.com", "image": null, "reach": 7400, "likes": 389, "comments": 58, "shares": 84, "engagement": 531 }
+    ]
+  },
+  "instagram": {
+    "account": { "followers": 2480, "reach28": 28700, "engagement28": 2140, "profileViews28": 890 },
+    "media": [
+      { "id": "ig1", "date": "2026-07-02", "type": "REEL", "text": "יום בחיי מתנדבת 🎥", "link": "https://instagram.com", "image": null, "reach": 8900, "plays": 12400, "likes": 431, "comments": 27, "saves": 38, "shares": 55, "engagement": 551 },
+      { "id": "ig2", "date": "2026-06-26", "type": "IMAGE", "text": "לפני ואחרי: חדר ילדים שהתמלא 🌈", "link": "https://instagram.com", "image": null, "reach": 4100, "likes": 268, "comments": 19, "saves": 22, "shares": 31, "engagement": 340 },
+      { "id": "ig3", "date": "2026-06-19", "type": "CAROUSEL_ALBUM", "text": "10 תמונות מהחלוקה בחורה 📸", "link": "https://instagram.com", "image": null, "reach": 3600, "likes": 194, "comments": 12, "saves": 15, "shares": 18, "engagement": 239 },
+      { "id": "ig4", "date": "2026-06-12", "type": "REEL", "text": "איך זה עובד? מהתרומה עד המסירה 🚚", "link": "https://instagram.com", "image": null, "reach": 11200, "plays": 15800, "likes": 587, "comments": 41, "saves": 64, "shares": 92, "engagement": 784 }
+    ]
+  },
+  "tiktok": null
+}

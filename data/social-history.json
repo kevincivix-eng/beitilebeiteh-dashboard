@@ -1,0 +1,11 @@
+[
+  { "date": "2026-05-10", "demo": true, "fb_followers": 2870, "fb_reach": 1150, "fb_engagement": 84, "ig_followers": 2140, "ig_reach": 820, "ig_engagement": 61 },
+  { "date": "2026-05-17", "demo": true, "fb_followers": 2905, "fb_reach": 1290, "fb_engagement": 97, "ig_followers": 2190, "ig_reach": 940, "ig_engagement": 72 },
+  { "date": "2026-05-24", "demo": true, "fb_followers": 2950, "fb_reach": 1420, "fb_engagement": 108, "ig_followers": 2240, "ig_reach": 1010, "ig_engagement": 79 },
+  { "date": "2026-05-31", "demo": true, "fb_followers": 2990, "fb_reach": 1370, "fb_engagement": 101, "ig_followers": 2300, "ig_reach": 1080, "ig_engagement": 85 },
+  { "date": "2026-06-07", "demo": true, "fb_followers": 3025, "fb_reach": 1510, "fb_engagement": 118, "ig_followers": 2350, "ig_reach": 1150, "ig_engagement": 91 },
+  { "date": "2026-06-14", "demo": true, "fb_followers": 3055, "fb_reach": 1480, "fb_engagement": 112, "ig_followers": 2390, "ig_reach": 1120, "ig_engagement": 88 },
+  { "date": "2026-06-21", "demo": true, "fb_followers": 3080, "fb_reach": 1620, "fb_engagement": 127, "ig_followers": 2430, "ig_reach": 1240, "ig_engagement": 96 },
+  { "date": "2026-06-28", "demo": true, "fb_followers": 3100, "fb_reach": 1550, "fb_engagement": 120, "ig_followers": 2455, "ig_reach": 1190, "ig_engagement": 93 },
+  { "date": "2026-07-05", "demo": true, "fb_followers": 3120, "fb_reach": 1680, "fb_engagement": 134, "ig_followers": 2480, "ig_reach": 1310, "ig_engagement": 102 }
+]

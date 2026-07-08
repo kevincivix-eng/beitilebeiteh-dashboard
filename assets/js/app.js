@@ -9,6 +9,7 @@ const App = {
     members: () => MembersView.init(App.data),
     'items-time': () => ItemsTimeView.init(App.data),
     weights: () => WeightsView.init(App.data),
+    social: () => SocialView.init(App.data),
   },
 };
 
@@ -62,7 +63,7 @@ function kpiCard(val, label, green) {
 }
 
 async function loadData() {
-  const files = ['kpis', 'flows', 'categories', 'weights', 'items-timeline', 'members'];
+  const files = ['kpis', 'flows', 'categories', 'weights', 'items-timeline', 'members', 'social', 'social-history'];
   const results = await Promise.all(
     files.map((f) => fetch(`data/${f}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null))
   );

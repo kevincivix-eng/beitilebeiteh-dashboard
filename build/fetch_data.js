@@ -21,6 +21,12 @@ const MS_CLIENT = process.env.MS_CLIENT_ID;
 const MS_SECRET = process.env.MS_CLIENT_SECRET;
 const XLSX_SHARE_URL = process.env.SHAREPOINT_XLSX_URL;
 
+// Meta Graph API (Facebook Page + Instagram — social analytics)
+const META_TOKEN = process.env.META_PAGE_TOKEN;
+const META_PAGE = process.env.META_PAGE_ID;
+const META_IG = process.env.META_IG_USER_ID;
+const GRAPH = 'https://graph.facebook.com/v21.0';
+
 if (!API_KEY) {
   console.error('❌ AIRTABLE_API_KEY missing.');
   process.exit(1);
@@ -115,6 +121,125 @@ async function fetchMembers() {
   }
 }
 
+/**
+ * Fetch Facebook Page + Instagram analytics via the Meta Graph API (app-only
+ * Page/System-User token). Returns { facebook, instagram } or null if not
+ * configured. Also merges a daily snapshot into data/social-history.json so we
+ * build our own long-term history beyond Meta's ~93-day insights window.
+ */
+async function fetchSocial() {
+  if (!META_TOKEN || !META_PAGE) {
+    console.warn('⚠️ Meta not configured — keeping social snapshot.');
+    return null;
+  }
+  const g = async (path, params = {}) => {
+    const q = new URLSearchParams({ access_token: META_TOKEN, ...params });
+    const res = await fetch(`${GRAPH}/${path}?${q}`);
+    const j = await res.json();
+    if (j.error) throw new Error(`${path}: ${j.error.message}`);
+    return j;
+  };
+  const sum = (arr, k) => (arr || []).reduce((s, x) => s + (x[k] || 0), 0);
+  const insightVal = (data, name) => {
+    const m = (data || []).find((d) => d.name === name);
+    const v = m && m.values && m.values[m.values.length - 1];
+    return v ? v.value : 0;
+  };
+  const insight28 = (data, name) => {
+    const m = (data || []).find((d) => d.name === name);
+    return m ? sum(m.values, 'value') : 0;
+  };
+
+  try {
+    // ---- Facebook page ----
+    let facebook = null;
+    // followers: try followers_count, fall back to fan_count only if it errors
+    let pg = await g(`${META_PAGE}`, { fields: 'followers_count,fan_count,name' }).catch(() => null);
+    if (!pg || pg.error) pg = await g(`${META_PAGE}`, { fields: 'fan_count,name' }).catch(() => ({}));
+    // page-level insights need read_insights — optional, zeros if unavailable
+    const pIns = await g(`${META_PAGE}/insights`, {
+      metric: 'page_impressions,page_post_engagements,page_views_total', period: 'days_28',
+    }).catch(() => ({ data: [] }));
+    // posts WITH per-post reach (needs read_insights); fall back to posts without it
+    let fbPostsRaw = await g(`${META_PAGE}/posts`, {
+      fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true),insights.metric(post_impressions)',
+      limit: '15',
+    }).catch(() => null);
+    if (!fbPostsRaw || fbPostsRaw.error) {
+      fbPostsRaw = await g(`${META_PAGE}/posts`, {
+        fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true)',
+        limit: '15',
+      }).catch(() => ({ data: [] }));
+    }
+    const fbPosts = (fbPostsRaw.data || []).map((p) => {
+      const reach = insightVal(p.insights && p.insights.data, 'post_impressions');
+      const likes = p.reactions && p.reactions.summary ? p.reactions.summary.total_count : 0;
+      const comments = p.comments && p.comments.summary ? p.comments.summary.total_count : 0;
+      const shares = p.shares ? p.shares.count : 0;
+      return {
+        id: p.id, date: (p.created_time || '').slice(0, 10), text: p.message || '',
+        link: p.permalink_url, image: p.full_picture || null,
+        reach, likes, comments, shares, engagement: likes + comments + shares,
+      };
+    });
+    facebook = {
+      page: {
+        followers: pg.followers_count || pg.fan_count || 0,
+        reach28: insight28(pIns.data, 'page_impressions'),
+        engagement28: insight28(pIns.data, 'page_post_engagements'),
+        pageViews28: insight28(pIns.data, 'page_views_total'),
+      },
+      posts: fbPosts,
+    };
+
+    // ---- Instagram ----
+    let instagram = null;
+    if (META_IG) {
+      const ig = await g(`${META_IG}`, { fields: 'followers_count,media_count,username' });
+      const igIns = await g(`${META_IG}/insights`, {
+        metric: 'reach,profile_views,accounts_engaged', period: 'days_28', metric_type: 'total_value',
+      }).catch(() => ({ data: [] }));
+      const igMediaRaw = await g(`${META_IG}/media`, {
+        fields: 'caption,media_type,permalink,thumbnail_url,media_url,timestamp,like_count,comments_count,insights.metric(reach,saved,shares)',
+        limit: '12',
+      }).catch(() => ({ data: [] }));
+      const igMedia = (igMediaRaw.data || []).map((m) => {
+        const ins = (m.insights && m.insights.data) || [];
+        const reach = insightVal(ins, 'reach');
+        const saves = insightVal(ins, 'saved');
+        const shares = insightVal(ins, 'shares');
+        const likes = m.like_count || 0, comments = m.comments_count || 0;
+        return {
+          id: m.id, date: (m.timestamp || '').slice(0, 10), type: m.media_type,
+          text: m.caption || '', link: m.permalink,
+          image: m.thumbnail_url || m.media_url || null,
+          reach, likes, comments, saves, shares, engagement: likes + comments + saves + shares,
+        };
+      });
+      const igTotal = (name) => {
+        const m = (igIns.data || []).find((d) => d.name === name);
+        return m ? (m.total_value ? m.total_value.value : sum(m.values, 'value')) : 0;
+      };
+      instagram = {
+        account: {
+          followers: ig.followers_count || 0,
+          reach28: igTotal('reach'),
+          engagement28: igTotal('accounts_engaged'),
+          profileViews28: igTotal('profile_views'),
+        },
+        media: igMedia,
+      };
+    }
+
+    console.log(`✅ Social: FB followers=${facebook.page.followers}, posts=${facebook.posts.length}` +
+      (instagram ? `; IG followers=${instagram.account.followers}, media=${instagram.media.length}` : ''));
+    return { updated: new Date().toISOString(), facebook, instagram, tiktok: null };
+  } catch (e) {
+    console.warn('⚠️ Social fetch failed (keeping snapshot):', e.message);
+    return null;
+  }
+}
+
 (async () => {
   console.log('⏳ Fetching Airtable…');
   const events = await fetchTable('EVENT', [
@@ -136,6 +261,9 @@ async function fetchMembers() {
 
   // ---- membership tracking (SharePoint Excel via Graph) ----
   const membersData = await fetchMembers();
+
+  // ---- social analytics (Meta Graph API) ----
+  const socialData = await fetchSocial();
 
   // ---- flows.json (origin -> each destination) ----
   const flowMap = {};
@@ -331,6 +459,32 @@ async function fetchMembers() {
       if (lastCum) kpis.members = lastCum.cumulative;
       console.log(`↩︎ kept members.json snapshot (members=${kpis.members})`);
     } catch { /* no snapshot yet */ }
+  }
+
+  // social.json — refresh from Meta when available; else keep committed snapshot.
+  // Also append a daily snapshot to social-history.json (our own long-term series).
+  if (socialData) {
+    write('social.json', socialData);
+    try {
+      const histPath = path.join(DATA_DIR, 'social-history.json');
+      let hist = [];
+      try { hist = JSON.parse(fs.readFileSync(histPath, 'utf8')); } catch { /* first run */ }
+      hist = hist.filter((h) => !h.demo);
+      const fbP = socialData.facebook?.page || {};
+      const igA = socialData.instagram?.account || {};
+      const today = new Date().toISOString().slice(0, 10);
+      const row = {
+        date: today,
+        fb_followers: fbP.followers || 0, fb_reach: fbP.reach28 || 0, fb_engagement: fbP.engagement28 || 0,
+        ig_followers: igA.followers || 0, ig_reach: igA.reach28 || 0, ig_engagement: igA.engagement28 || 0,
+      };
+      const i = hist.findIndex((h) => h.date === today);
+      if (i >= 0) hist[i] = row; else hist.push(row);
+      hist.sort((a, b) => a.date.localeCompare(b.date));
+      write('social-history.json', hist);
+    } catch (e) { console.warn('⚠️ social-history update failed:', e.message); }
+  } else {
+    console.log('↩︎ kept social.json / social-history.json snapshot');
   }
 
   write('kpis.json', kpis);
