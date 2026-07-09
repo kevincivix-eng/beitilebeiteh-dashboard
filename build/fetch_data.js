@@ -128,10 +128,13 @@ async function fetchMembers() {
  * build our own long-term history beyond Meta's ~93-day insights window.
  */
 async function fetchSocial() {
-  if (!META_TOKEN || !META_PAGE) {
+  if (!META_TOKEN) {
     console.warn('⚠️ Meta not configured — keeping social snapshot.');
     return null;
   }
+  // A Page access token resolves to its own page via `me`, so we don't need the
+  // page id (avoids ID-mismatch errors). META_PAGE stays optional/for reference.
+  const FB = 'me';
   const g = async (path, params = {}) => {
     const q = new URLSearchParams({ access_token: META_TOKEN, ...params });
     const res = await fetch(`${GRAPH}/${path}?${q}`);
@@ -155,22 +158,22 @@ async function fetchSocial() {
     // ---- Facebook page ----
     let facebook = null;
     // followers: try followers_count, fall back to fan_count only if it errors
-    let pgRaw = await g(`${META_PAGE}`, { fields: 'followers_count,fan_count,name' }).catch((e) => ({ error: { message: e.message } }));
+    let pgRaw = await g(`${FB}`, { fields: 'followers_count,fan_count,name' }).catch((e) => ({ error: { message: e.message } }));
     if (pgRaw.error) console.warn('⚠️ FB page info error:', pgRaw.error.message);
-    let pg = pgRaw.error ? await g(`${META_PAGE}`, { fields: 'fan_count,name' }).catch(() => ({})) : pgRaw;
+    let pg = pgRaw.error ? await g(`${FB}`, { fields: 'fan_count,name' }).catch(() => ({})) : pgRaw;
     console.log(`ℹ️ FB page resolved: name=${pg.name || '(none)'} followers=${pg.followers_count ?? pg.fan_count ?? 'n/a'}`);
     // page-level insights need read_insights — optional, zeros if unavailable
-    const pIns = await g(`${META_PAGE}/insights`, {
+    const pIns = await g(`${FB}/insights`, {
       metric: 'page_impressions,page_post_engagements,page_views_total', period: 'days_28',
     }).catch(() => ({ data: [] }));
     // posts WITH per-post reach (needs read_insights); fall back to posts without it
-    let fbPostsRaw = await g(`${META_PAGE}/posts`, {
+    let fbPostsRaw = await g(`${FB}/posts`, {
       fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true),insights.metric(post_impressions)',
       limit: '15',
     }).catch((e) => ({ error: { message: e.message } }));
     if (!fbPostsRaw || fbPostsRaw.error) {
       if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB posts (with insights) error:', fbPostsRaw.error.message);
-      fbPostsRaw = await g(`${META_PAGE}/posts`, {
+      fbPostsRaw = await g(`${FB}/posts`, {
         fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true)',
         limit: '15',
       }).catch((e) => { console.warn('⚠️ FB posts fallback error:', e.message); return { data: [] }; });
