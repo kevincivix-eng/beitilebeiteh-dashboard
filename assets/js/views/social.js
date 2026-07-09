@@ -22,10 +22,11 @@ const SocialView = (() => {
     const thumb = p.image
       ? `<img src="${p.image}" alt="" loading="lazy" />`
       : (net === 'instagram' ? '📸' : '📘');
-    const m = (icon, v) => (v != null ? `<span>${icon} <b>${fmt(v)}</b></span>` : '');
+    const m = (icon, v, suf) => (v != null ? `<span>${icon} <b>${fmt(v)}${suf || ''}</b></span>` : '');
     const meta = [
-      m('👁', p.reach), m('▶️', p.plays), m('❤️', p.likes),
-      m('💬', p.comments), m('🔖', p.saves), m('🔁', p.shares),
+      m('👁', p.reach), m('▶️', p.plays || p.videoViews), m('⏱', p.avgWatchSec, ' שנ׳'),
+      m('❤️', p.likes), m('💬', p.comments), m('🔖', p.saves),
+      m('🔁', p.shares), m('🖱', p.clicks),
     ].filter(Boolean).join('');
     const rate = (p.reach && p.engagement != null) ? ` · ${engRate(p.engagement, p.reach)}% מעורבות` : '';
     return `<a class="post-card" href="${p.link || '#'}" target="_blank" rel="noopener">

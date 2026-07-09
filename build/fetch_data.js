@@ -173,31 +173,43 @@ async function fetchSocial() {
     const pViews = await g(`${pageId}/insights`, {
       metric: 'page_views_total', period: 'day',
     }).catch(() => ({ data: [] }));
-    // Try the rich fields (reactions/comments summary + reach); they need
-    // pages_read_user_content + read_insights. If unavailable, fall back to the
-    // basic fields (text/image/date/shares/link) that work with what we have.
-    let rich = true;
-    let fbPostsRaw = await g(`${pageId}/posts`, {
-      fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true)',
-      limit: '15',
-    }).catch((e) => ({ error: { message: e.message } }));
+    // Three tiers, degrading gracefully:
+    //  ins   = reactions/comments + per-post insights (clicks + video metrics)
+    //  rich  = reactions/comments only
+    //  basic = text/image/date/shares only
+    // (post reach/impressions are deprecated in v21, so not requested.)
+    const RICH = 'created_time,message,permalink_url,full_picture,status_type,shares,reactions.summary(true),comments.summary(true)';
+    const INS = RICH + ',insights.metric(post_clicks,post_video_views,post_video_avg_time_watched)';
+    let tier = 'ins';
+    let fbPostsRaw = await g(`${pageId}/posts`, { fields: INS, limit: '15' }).catch((e) => ({ error: { message: e.message } }));
+    if (!fbPostsRaw || fbPostsRaw.error) {
+      if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB posts+insights unavailable:', fbPostsRaw.error.message);
+      tier = 'rich';
+      fbPostsRaw = await g(`${pageId}/posts`, { fields: RICH, limit: '15' }).catch((e) => ({ error: { message: e.message } }));
+    }
     if (!fbPostsRaw || fbPostsRaw.error) {
       if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB rich posts unavailable:', fbPostsRaw.error.message);
-      rich = false;
+      tier = 'basic';
       fbPostsRaw = await g(`${pageId}/posts`, {
-        fields: 'created_time,message,permalink_url,full_picture,shares',
-        limit: '15',
+        fields: 'created_time,message,permalink_url,full_picture,shares', limit: '15',
       }).catch((e) => { console.warn('⚠️ FB posts error:', e.message); return { data: [] }; });
     }
+    const rich = tier !== 'basic';
     const fbPosts = (fbPostsRaw.data || []).map((p) => {
       const likes = rich && p.reactions && p.reactions.summary ? p.reactions.summary.total_count : null;
       const comments = rich && p.comments && p.comments.summary ? p.comments.summary.total_count : null;
       const shares = p.shares ? p.shares.count : 0;
+      const ins = (p.insights && p.insights.data) || [];
+      const clicks = tier === 'ins' ? insightVal(ins, 'post_clicks') : null;
+      const vv = tier === 'ins' ? insightVal(ins, 'post_video_views') : 0;
+      const avgMs = tier === 'ins' ? insightVal(ins, 'post_video_avg_time_watched') : 0;
       return {
         id: p.id, date: (p.created_time || '').slice(0, 10), text: p.message || '',
         link: p.permalink_url, image: p.full_picture || null,
-        reach: null, likes, comments, shares,
-        // engagement = full sum when we have it, else shares as a proxy for ranking
+        type: p.status_type || null,
+        reach: null, likes, comments, shares, clicks,
+        videoViews: vv > 0 ? vv : null,
+        avgWatchSec: avgMs > 0 ? Math.round(avgMs / 100) / 10 : null,
         engagement: rich ? (likes || 0) + (comments || 0) + shares : shares,
       };
     });
