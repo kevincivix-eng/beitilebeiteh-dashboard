@@ -44,10 +44,14 @@ const SocialView = (() => {
     const posts = src ? (src.posts || src.media || []) : [];
     const kpiEl = document.getElementById(net === 'facebook' ? 'fbKpis' : 'igKpis');
     if (acct) {
+      const totalEng = posts.reduce((s, p) => s + (p.engagement || 0), 0);
+      const avg = posts.length ? Math.round(totalEng / posts.length) : 0;
       kpiEl.innerHTML =
         kpiCard(fmt(acct.followers), 'עוקבים', true) +
-        kpiCard(fmt(acct.reach28), 'Reach (28 ימים)') +
-        kpiCard(fmt(acct.engagement28), 'מעורבות (28 ימים)', true) +
+        (acct.reach28 != null ? kpiCard(fmt(acct.reach28), 'Reach (28 ימים)') : '') +
+        (acct.engagement28 ? kpiCard(fmt(acct.engagement28), 'מעורבות (28 ימים)', true) : '') +
+        (acct.pageViews28 ? kpiCard(fmt(acct.pageViews28), 'צפיות בעמוד') : '') +
+        kpiCard(fmt(avg), 'ממוצע מעורבות לפוסט', true) +
         kpiCard(fmt(posts.length), 'פוסטים אחרונים');
     } else {
       kpiEl.innerHTML = kpiCard('—', 'אין נתונים');
@@ -65,13 +69,15 @@ const SocialView = (() => {
     const fb = s.facebook || {}, ig = s.instagram || {};
     const fbA = fb.page || {}, igA = ig.account || {};
     const followers = (fbA.followers || 0) + (igA.followers || 0);
-    const reach = (fbA.reach28 || 0) + (igA.reach28 || 0);
     const eng = (fbA.engagement28 || 0) + (igA.engagement28 || 0);
+    const allPosts = [...(fb.posts || []), ...(ig.media || [])];
+    const totalPostEng = allPosts.reduce((s, p) => s + (p.engagement || 0), 0);
+    const avgEng = allPosts.length ? Math.round(totalPostEng / allPosts.length) : 0;
     document.getElementById('socialKpis').innerHTML =
       kpiCard(fmt(followers), 'סה"כ עוקבים', true) +
-      kpiCard(fmt(reach), 'Reach כולל (28 ימים)') +
-      kpiCard(fmt(eng), 'מעורבות כוללת (28 ימים)', true) +
-      kpiCard(engRate(eng, reach) + '%', 'שיעור מעורבות');
+      (eng ? kpiCard(fmt(eng), 'מעורבות (28 ימים)') : '') +
+      kpiCard(fmt(avgEng), 'ממוצע מעורבות לפוסט', true) +
+      kpiCard(fmt(allPosts.length), 'פוסטים אחרונים');
 
     const hist = data.socialhistory || [];
     const labels = hist.map((h) => shortDate(h.date));

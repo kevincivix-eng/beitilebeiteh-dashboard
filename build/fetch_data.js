@@ -165,9 +165,13 @@ async function fetchSocial() {
     // differently (and more permissively) than /me/posts.
     const pageId = pg.id || META_PAGE || FB;
     console.log(`ℹ️ FB page resolved: name=${pg.name || '(none)'} id=${pageId} followers=${pg.followers_count ?? pg.fan_count ?? 'n/a'}`);
-    // page-level insights need read_insights — optional, zeros if unavailable
+    // page-level insights (needs read_insights). page_impressions/reach are
+    // deprecated in v21; page_post_engagements + page_views_total still work.
     const pIns = await g(`${pageId}/insights`, {
-      metric: 'page_impressions,page_post_engagements,page_views_total', period: 'days_28',
+      metric: 'page_post_engagements', period: 'days_28',
+    }).catch(() => ({ data: [] }));
+    const pViews = await g(`${pageId}/insights`, {
+      metric: 'page_views_total', period: 'day',
     }).catch(() => ({ data: [] }));
     // Try the rich fields (reactions/comments summary + reach); they need
     // pages_read_user_content + read_insights. If unavailable, fall back to the
@@ -200,9 +204,9 @@ async function fetchSocial() {
     facebook = {
       page: {
         followers: pg.followers_count || pg.fan_count || 0,
-        reach28: insight28(pIns.data, 'page_impressions'),
+        reach28: null, // page reach/impressions deprecated in Graph v21
         engagement28: insight28(pIns.data, 'page_post_engagements'),
-        pageViews28: insight28(pIns.data, 'page_views_total'),
+        pageViews28: insight28(pViews.data, 'page_views_total'),
       },
       posts: fbPosts,
     };
