@@ -151,11 +151,14 @@ async function fetchSocial() {
   };
 
   try {
+    console.log(`ℹ️ Meta cfg: pageId=${META_PAGE}, tokenLen=${(META_TOKEN || '').length}, igId=${META_IG || '(none)'}`);
     // ---- Facebook page ----
     let facebook = null;
     // followers: try followers_count, fall back to fan_count only if it errors
-    let pg = await g(`${META_PAGE}`, { fields: 'followers_count,fan_count,name' }).catch(() => null);
-    if (!pg || pg.error) pg = await g(`${META_PAGE}`, { fields: 'fan_count,name' }).catch(() => ({}));
+    let pgRaw = await g(`${META_PAGE}`, { fields: 'followers_count,fan_count,name' }).catch((e) => ({ error: { message: e.message } }));
+    if (pgRaw.error) console.warn('⚠️ FB page info error:', pgRaw.error.message);
+    let pg = pgRaw.error ? await g(`${META_PAGE}`, { fields: 'fan_count,name' }).catch(() => ({})) : pgRaw;
+    console.log(`ℹ️ FB page resolved: name=${pg.name || '(none)'} followers=${pg.followers_count ?? pg.fan_count ?? 'n/a'}`);
     // page-level insights need read_insights — optional, zeros if unavailable
     const pIns = await g(`${META_PAGE}/insights`, {
       metric: 'page_impressions,page_post_engagements,page_views_total', period: 'days_28',
@@ -164,12 +167,13 @@ async function fetchSocial() {
     let fbPostsRaw = await g(`${META_PAGE}/posts`, {
       fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true),insights.metric(post_impressions)',
       limit: '15',
-    }).catch(() => null);
+    }).catch((e) => ({ error: { message: e.message } }));
     if (!fbPostsRaw || fbPostsRaw.error) {
+      if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB posts (with insights) error:', fbPostsRaw.error.message);
       fbPostsRaw = await g(`${META_PAGE}/posts`, {
         fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true)',
         limit: '15',
-      }).catch(() => ({ data: [] }));
+      }).catch((e) => { console.warn('⚠️ FB posts fallback error:', e.message); return { data: [] }; });
     }
     const fbPosts = (fbPostsRaw.data || []).map((p) => {
       const reach = insightVal(p.insights && p.insights.data, 'post_impressions');
