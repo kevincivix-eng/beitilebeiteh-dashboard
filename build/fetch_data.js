@@ -169,27 +169,32 @@ async function fetchSocial() {
     const pIns = await g(`${pageId}/insights`, {
       metric: 'page_impressions,page_post_engagements,page_views_total', period: 'days_28',
     }).catch(() => ({ data: [] }));
-    // posts WITH per-post reach (needs read_insights); fall back to posts without it
+    // Try the rich fields (reactions/comments summary + reach); they need
+    // pages_read_user_content + read_insights. If unavailable, fall back to the
+    // basic fields (text/image/date/shares/link) that work with what we have.
+    let rich = true;
     let fbPostsRaw = await g(`${pageId}/posts`, {
-      fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true),insights.metric(post_impressions)',
+      fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true)',
       limit: '15',
     }).catch((e) => ({ error: { message: e.message } }));
     if (!fbPostsRaw || fbPostsRaw.error) {
-      if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB posts (with insights) error:', fbPostsRaw.error.message);
+      if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB rich posts unavailable:', fbPostsRaw.error.message);
+      rich = false;
       fbPostsRaw = await g(`${pageId}/posts`, {
-        fields: 'created_time,message,permalink_url,full_picture,shares,reactions.summary(true),comments.summary(true)',
+        fields: 'created_time,message,permalink_url,full_picture,shares',
         limit: '15',
-      }).catch((e) => { console.warn('⚠️ FB posts fallback error:', e.message); return { data: [] }; });
+      }).catch((e) => { console.warn('⚠️ FB posts error:', e.message); return { data: [] }; });
     }
     const fbPosts = (fbPostsRaw.data || []).map((p) => {
-      const reach = insightVal(p.insights && p.insights.data, 'post_impressions');
-      const likes = p.reactions && p.reactions.summary ? p.reactions.summary.total_count : 0;
-      const comments = p.comments && p.comments.summary ? p.comments.summary.total_count : 0;
+      const likes = rich && p.reactions && p.reactions.summary ? p.reactions.summary.total_count : null;
+      const comments = rich && p.comments && p.comments.summary ? p.comments.summary.total_count : null;
       const shares = p.shares ? p.shares.count : 0;
       return {
         id: p.id, date: (p.created_time || '').slice(0, 10), text: p.message || '',
         link: p.permalink_url, image: p.full_picture || null,
-        reach, likes, comments, shares, engagement: likes + comments + shares,
+        reach: null, likes, comments, shares,
+        // engagement = full sum when we have it, else shares as a proxy for ranking
+        engagement: rich ? (likes || 0) + (comments || 0) + shares : shares,
       };
     });
     facebook = {

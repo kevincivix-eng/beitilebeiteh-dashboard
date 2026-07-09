@@ -22,21 +22,18 @@ const SocialView = (() => {
     const thumb = p.image
       ? `<img src="${p.image}" alt="" loading="lazy" />`
       : (net === 'instagram' ? '📸' : '📘');
-    const plays = p.plays ? `<span>▶️ <b>${fmt(p.plays)}</b></span>` : '';
-    const saves = p.saves != null ? `<span>🔖 <b>${fmt(p.saves)}</b></span>` : '';
+    const m = (icon, v) => (v != null ? `<span>${icon} <b>${fmt(v)}</b></span>` : '');
+    const meta = [
+      m('👁', p.reach), m('▶️', p.plays), m('❤️', p.likes),
+      m('💬', p.comments), m('🔖', p.saves), m('🔁', p.shares),
+    ].filter(Boolean).join('');
+    const rate = (p.reach && p.engagement != null) ? ` · ${engRate(p.engagement, p.reach)}% מעורבות` : '';
     return `<a class="post-card" href="${p.link || '#'}" target="_blank" rel="noopener">
       <div class="post-card__thumb">${thumb}</div>
       <div class="post-card__body">
         <p class="post-card__text">${(p.text || '—').replace(/</g, '&lt;')}</p>
-        <div class="post-card__meta">
-          <span>👁 <b>${fmt(p.reach)}</b></span>
-          ${plays}
-          <span>❤️ <b>${fmt(p.likes)}</b></span>
-          <span>💬 <b>${fmt(p.comments)}</b></span>
-          ${saves}
-          <span>מעורבות <b>${fmt(p.engagement)}</b></span>
-        </div>
-        <div class="post-card__date">${shortDate(p.date)} · ${engRate(p.engagement, p.reach)}% מעורבות</div>
+        <div class="post-card__meta">${meta || '<span>—</span>'}</div>
+        <div class="post-card__date">${shortDate(p.date)}${rate}</div>
       </div>
     </a>`;
   }
