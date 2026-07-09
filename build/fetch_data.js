@@ -173,13 +173,20 @@ async function fetchSocial() {
     const pViews = await g(`${pageId}/insights`, {
       metric: 'page_views_total', period: 'day',
     }).catch(() => ({ data: [] }));
+    // daily follower growth (demographics like country/city/age are deprecated in v21)
+    const pFollows = await g(`${pageId}/insights`, {
+      metric: 'page_daily_follows_unique', period: 'day',
+    }).catch(() => ({ data: [] }));
+    const followsSeries = (((pFollows.data || [])[0] || {}).values || [])
+      .map((v) => ({ date: (v.end_time || '').slice(0, 10), follows: v.value || 0 }))
+      .filter((x) => x.date);
     // Three tiers, degrading gracefully:
     //  ins   = reactions/comments + per-post insights (clicks + video metrics)
     //  rich  = reactions/comments only
     //  basic = text/image/date/shares only
     // (post reach/impressions are deprecated in v21, so not requested.)
     const RICH = 'created_time,message,permalink_url,full_picture,status_type,shares,reactions.summary(true),comments.summary(true)';
-    const INS = RICH + ',insights.metric(post_clicks,post_video_views,post_video_avg_time_watched)';
+    const INS = RICH + ',insights.metric(post_clicks,post_video_views,post_video_avg_time_watched,post_video_view_time,post_reactions_by_type_total)';
     let tier = 'ins';
     let fbPostsRaw = await g(`${pageId}/posts`, { fields: INS, limit: '15' }).catch((e) => ({ error: { message: e.message } }));
     if (!fbPostsRaw || fbPostsRaw.error) {
@@ -203,22 +210,28 @@ async function fetchSocial() {
       const clicks = tier === 'ins' ? insightVal(ins, 'post_clicks') : null;
       const vv = tier === 'ins' ? insightVal(ins, 'post_video_views') : 0;
       const avgMs = tier === 'ins' ? insightVal(ins, 'post_video_avg_time_watched') : 0;
+      const viewMs = tier === 'ins' ? insightVal(ins, 'post_video_view_time') : 0;
+      const reactObj = tier === 'ins' ? insightVal(ins, 'post_reactions_by_type_total') : null;
       return {
-        id: p.id, date: (p.created_time || '').slice(0, 10), text: p.message || '',
-        link: p.permalink_url, image: p.full_picture || null,
+        id: p.id, date: (p.created_time || '').slice(0, 10), ts: p.created_time || null,
+        text: p.message || '', link: p.permalink_url, image: p.full_picture || null,
         type: p.status_type || null,
         reach: null, likes, comments, shares, clicks,
+        reactions: reactObj && typeof reactObj === 'object' ? reactObj : null,
         videoViews: vv > 0 ? vv : null,
         avgWatchSec: avgMs > 0 ? Math.round(avgMs / 100) / 10 : null,
+        watchMin: viewMs > 0 ? Math.round(viewMs / 60000) : null,
         engagement: rich ? (likes || 0) + (comments || 0) + shares : shares,
       };
     });
     facebook = {
+      followsSeries,
       page: {
         followers: pg.followers_count || pg.fan_count || 0,
         reach28: null, // page reach/impressions deprecated in Graph v21
         engagement28: insight28(pIns.data, 'page_post_engagements'),
         pageViews28: insight28(pViews.data, 'page_views_total'),
+        newFollows28: followsSeries.reduce((s, x) => s + x.follows, 0),
       },
       posts: fbPosts,
     };

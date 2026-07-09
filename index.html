@@ -147,6 +147,11 @@
       <!-- facebook -->
       <div class="social-tab" id="socialTab-facebook" hidden>
         <div class="kpi-strip" id="fbKpis"></div>
+        <div class="grid grid--2" style="margin-bottom:22px">
+          <div class="card"><h3 class="card__title">מעורבות ממוצעת לפי סוג תוכן</h3><canvas id="fbTypeChart"></canvas></div>
+          <div class="card"><h3 class="card__title">מתי הכי כדאי לפרסם (לפי יום)</h3><canvas id="fbWeekdayChart"></canvas></div>
+        </div>
+        <div class="card" id="fbFollowsWrap" style="margin-bottom:22px"><h3 class="card__title">גידול עוקבים יומי</h3><canvas id="fbFollowsChart"></canvas></div>
         <div class="grid grid--2">
           <div class="card"><h3 class="card__title">פוסטים אחרונים</h3><div class="post-list" id="fbRecent"></div></div>
           <div class="card"><h3 class="card__title">הפוסטים המובילים (לפי מעורבות)</h3><div class="post-list" id="fbTop"></div></div>
