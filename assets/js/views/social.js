@@ -66,7 +66,7 @@ const SocialView = (() => {
         kpiCard(fmt(acct.followers), 'עוקבים', true) +
         (acct.reach28 != null ? kpiCard(fmt(acct.reach28), 'Reach (28 ימים)') : '') +
         (acct.engagement28 ? kpiCard(fmt(acct.engagement28), 'מעורבות (28 ימים)', true) : '') +
-        (acct.pageViews28 ? kpiCard(fmt(acct.pageViews28), 'צפיות בעמוד') : '') +
+        (acct.profileVisits28 ? kpiCard(fmt(acct.profileVisits28), 'כניסות לפרופיל (28 ימים)') : '') +
         (acct.newFollows28 != null ? kpiCard(fmt(acct.newFollows28), 'עוקבים חדשים (28 ימים)') : '') +
         kpiCard(fmt(avg), 'ממוצע מעורבות לפוסט', true) +
         kpiCard(fmt(posts.length), 'פוסטים אחרונים');

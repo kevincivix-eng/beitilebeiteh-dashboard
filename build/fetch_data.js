@@ -171,7 +171,7 @@ async function fetchSocial() {
       metric: 'page_post_engagements', period: 'days_28',
     }).catch(() => ({ data: [] }));
     const pViews = await g(`${pageId}/insights`, {
-      metric: 'page_views_total', period: 'day',
+      metric: 'page_views_total', period: 'days_28', // profile visits over 28 days
     }).catch(() => ({ data: [] }));
     // daily follower growth (demographics like country/city/age are deprecated in v21)
     const pFollows = await g(`${pageId}/insights`, {
@@ -229,8 +229,9 @@ async function fetchSocial() {
       page: {
         followers: pg.followers_count || pg.fan_count || 0,
         reach28: null, // page reach/impressions deprecated in Graph v21
-        engagement28: insight28(pIns.data, 'page_post_engagements'),
-        pageViews28: insight28(pViews.data, 'page_views_total'),
+        // days_28 metrics are rolling 28-day totals — take the latest value, not a sum
+        engagement28: insightVal(pIns.data, 'page_post_engagements'),
+        profileVisits28: insightVal(pViews.data, 'page_views_total'),
         newFollows28: followsSeries.reduce((s, x) => s + x.follows, 0),
       },
       posts: fbPosts,
