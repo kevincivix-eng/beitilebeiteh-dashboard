@@ -512,9 +512,19 @@ async function fetchSocial() {
     write('social.json', socialData);
     try {
       const histPath = path.join(DATA_DIR, 'social-history.json');
+      // CI builds into the Pages artifact and does NOT commit data back, so the
+      // repo copy is only the demo seed. To accumulate our own daily series,
+      // start from the LAST PUBLISHED history on the live site, then append today.
       let hist = [];
-      try { hist = JSON.parse(fs.readFileSync(histPath, 'utf8')); } catch { /* first run */ }
-      hist = hist.filter((h) => !h.demo);
+      try {
+        const live = await fetch('https://kevincivix-eng.github.io/beitilebeiteh-dashboard/data/social-history.json', { cache: 'no-store' });
+        if (live.ok) hist = await live.json();
+        console.log(`↪︎ social-history: loaded ${hist.length} rows from live site`);
+      } catch { /* live not reachable */ }
+      if (!hist.length) {
+        try { hist = JSON.parse(fs.readFileSync(histPath, 'utf8')); } catch { /* first run */ }
+      }
+      hist = (Array.isArray(hist) ? hist : []).filter((h) => !h.demo);
       const fbP = socialData.facebook?.page || {};
       const igA = socialData.instagram?.account || {};
       const today = new Date().toISOString().slice(0, 10);
