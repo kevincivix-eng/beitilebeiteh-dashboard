@@ -150,18 +150,22 @@ const SocialView = (() => {
       kpiCard(fmt(allPosts.length), 'פוסטים אחרונים');
 
     const hist = data.socialhistory || [];
-    const labels = hist.map((h) => shortDate(h.date));
+    // Prefer the real 90-day daily trends from Meta; fall back to the accumulating
+    // snapshot history only if the trend isn't available yet.
+    const fTrend = (fb.followerTrend && fb.followerTrend.length >= 2) ? fb.followerTrend : null;
+    const followerData = fTrend
+      ? fTrend.map((x) => ({ date: x.date, fb: x.followers }))
+      : hist.map((h) => ({ date: h.date, fb: h.fb_followers }));
     charts.push(new Chart(document.getElementById('socialFollowersChart'), {
       type: 'line',
       data: {
-        labels,
+        labels: followerData.map((x) => shortDate(x.date)),
         datasets: [
-          { label: 'פייסבוק', data: hist.map((h) => h.fb_followers), borderColor: '#4267B2', backgroundColor: '#4267B233', tension: 0.35, fill: true },
-          { label: 'אינסטגרם', data: hist.map((h) => h.ig_followers), borderColor: BRAND.pinkDeep, backgroundColor: BRAND.pink + '33', tension: 0.35, fill: true },
+          { label: 'פייסבוק', data: followerData.map((x) => x.fb), borderColor: '#4267B2', backgroundColor: '#4267B233', tension: 0.35, fill: true, pointRadius: followerData.length > 20 ? 0 : 3, borderWidth: 2 },
         ],
       },
       options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo' } } } },
-        scales: { x: { ticks: { font: { family: 'Heebo' } } }, y: { ticks: { font: { family: 'Heebo' } } } } },
+        scales: { x: { ticks: { font: { family: 'Heebo' }, maxTicksLimit: 8 } }, y: { ticks: { font: { family: 'Heebo' } } } } },
     }));
 
     // social engagement vs project (registered members + weekly items delivered)
@@ -178,20 +182,25 @@ const SocialView = (() => {
       const row = (tl.weeks || []).find((w) => w.week === wk);
       return row ? Object.values(row.values).reduce((a, b) => a + b, 0) : 0;
     };
+    const engTrend = (fb.engagementTrend && fb.engagementTrend.length >= 2) ? fb.engagementTrend : null;
+    const vsRows = engTrend
+      ? engTrend.map((x) => ({ date: x.date, eng: x.engagement }))
+      : hist.map((h) => ({ date: h.date, eng: (h.fb_engagement || 0) + (h.ig_engagement || 0) }));
+    const many = vsRows.length > 20;
     charts.push(new Chart(document.getElementById('socialVsOrgChart'), {
       data: {
-        labels,
+        labels: vsRows.map((x) => shortDate(x.date)),
         datasets: [
-          { type: 'line', label: 'מעורבות ברשתות (שבועי)', data: hist.map((h) => (h.fb_engagement || 0) + (h.ig_engagement || 0)), borderColor: BRAND.pink, backgroundColor: BRAND.pink, tension: 0.35, yAxisID: 'y' },
-          { type: 'line', label: 'משתתפות רשומות (מצטבר)', data: hist.map((h) => memAt(h.date)), borderColor: BRAND.green, backgroundColor: BRAND.green, tension: 0.35, yAxisID: 'y1' },
-          { type: 'bar', label: 'פריטים שנמסרו (שבועי)', data: hist.map((h) => itemsAt(h.date)), backgroundColor: BRAND.green + '55', yAxisID: 'y1', borderRadius: 5 },
+          { type: 'line', label: 'מעורבות ברשתות (יומי)', data: vsRows.map((x) => x.eng), borderColor: BRAND.pink, backgroundColor: BRAND.pink, tension: 0.35, yAxisID: 'y', pointRadius: many ? 0 : 3, borderWidth: 2 },
+          { type: 'line', label: 'משתתפות רשומות (מצטבר)', data: vsRows.map((x) => memAt(x.date)), borderColor: BRAND.green, backgroundColor: BRAND.green, tension: 0.35, yAxisID: 'y1', pointRadius: many ? 0 : 3, borderWidth: 2, spanGaps: true },
+          { type: 'bar', label: 'פריטים שנמסרו (שבועי)', data: vsRows.map((x) => itemsAt(x.date)), backgroundColor: BRAND.green + '55', yAxisID: 'y1', borderRadius: 5 },
         ],
       },
       options: {
         responsive: true,
         plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } },
         scales: {
-          x: { ticks: { font: { family: 'Heebo' } } },
+          x: { ticks: { font: { family: 'Heebo' }, maxTicksLimit: 8 } },
           y: { position: 'right', title: { display: true, text: 'מעורבות', font: { family: 'Heebo' } }, ticks: { font: { family: 'Heebo' } } },
           y1: { position: 'left', grid: { drawOnChartArea: false }, title: { display: true, text: 'מיזם', font: { family: 'Heebo' } }, ticks: { font: { family: 'Heebo' } } },
         },

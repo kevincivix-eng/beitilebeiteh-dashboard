@@ -173,13 +173,22 @@ async function fetchSocial() {
     const pViews = await g(`${pageId}/insights`, {
       metric: 'page_views_total', period: 'days_28', // profile visits over 28 days
     }).catch(() => ({ data: [] }));
-    // daily follower growth (demographics like country/city/age are deprecated in v21)
-    const pFollows = await g(`${pageId}/insights`, {
-      metric: 'page_daily_follows_unique', period: 'day',
-    }).catch(() => ({ data: [] }));
-    const followsSeries = (((pFollows.data || [])[0] || {}).values || [])
-      .map((v) => ({ date: (v.end_time || '').slice(0, 10), follows: v.value || 0 }))
+    // daily follower growth + engagement over the last 90 days, so trend charts
+    // have real history immediately (demographics/reach are deprecated in v21).
+    const since = Math.floor((Date.now() - 90 * 864e5) / 1000);
+    const until = Math.floor(Date.now() / 1000);
+    const seriesOf = (res) => (((res.data || [])[0] || {}).values || [])
+      .map((v) => ({ date: (v.end_time || '').slice(0, 10), value: v.value || 0 }))
       .filter((x) => x.date);
+    const pFollows = await g(`${pageId}/insights`, {
+      metric: 'page_daily_follows_unique', period: 'day', since, until,
+    }).catch(() => ({ data: [] }));
+    const pEngDaily = await g(`${pageId}/insights`, {
+      metric: 'page_post_engagements', period: 'day', since, until,
+    }).catch(() => ({ data: [] }));
+    const followsDaily = seriesOf(pFollows);
+    const followsSeries = followsDaily.map((x) => ({ date: x.date, follows: x.value }));
+    const engagementTrend = seriesOf(pEngDaily).map((x) => ({ date: x.date, engagement: x.value }));
     // Three tiers, degrading gracefully:
     //  ins   = reactions/comments + per-post insights (clicks + video metrics)
     //  rich  = reactions/comments only
@@ -224,8 +233,20 @@ async function fetchSocial() {
         engagement: rich ? (likes || 0) + (comments || 0) + shares : shares,
       };
     });
+    // reconstruct a daily follower trend by walking today's count backward
+    // through the daily net-follow series.
+    const followersNow = pg.followers_count || pg.fan_count || 0;
+    const followerTrend = [];
+    let cum = followersNow;
+    for (let k = followsDaily.length - 1; k >= 0; k--) {
+      followerTrend[k] = { date: followsDaily[k].date, followers: cum };
+      cum -= followsDaily[k].value;
+    }
+
     facebook = {
       followsSeries,
+      followerTrend,
+      engagementTrend,
       page: {
         followers: pg.followers_count || pg.fan_count || 0,
         reach28: null, // page reach/impressions deprecated in Graph v21
