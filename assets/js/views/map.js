@@ -219,8 +219,11 @@ const MapView = (() => {
 
     map = L.map('map', { center: [31.22, 34.92], zoom: 10, zoomControl: false });
     L.control.zoom({ position: 'topleft' }).addTo(map);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19,
+    // CARTO's free basemap tiles now require an API key (they show an
+    // "API KEY REQUIRED" watermark without one) — use Esri's light gray
+    // canvas instead, a free no-key basemap with a similar light aesthetic.
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      attribution: '&copy; OpenStreetMap &copy; Esri', maxZoom: 19, maxNativeZoom: 16,
     }).addTo(map);
 
     const active = new Set(flows.flatMap((f) => [f.from, f.to]));
