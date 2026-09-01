@@ -120,6 +120,38 @@ const SocialView = (() => {
       options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } }, scales: { x: { ticks: { font: { family: 'Heebo' } } }, y: { position: 'right', ticks: { font: { family: 'Heebo' } } }, y1: { position: 'left', grid: { drawOnChartArea: false }, ticks: { font: { family: 'Heebo' }, precision: 0 } } } },
     }));
 
+    // engagement breakdown by post date — net (not cumulative) likes/comments/
+    // shares/clicks per publish date, taken straight from each post's own numbers.
+    const byDate = {};
+    posts.forEach((p) => {
+      if (!p.date) return;
+      const row = byDate[p.date] = byDate[p.date] || { likes: 0, comments: 0, shares: 0, clicks: 0 };
+      row.likes += p.likes || 0;
+      row.comments += p.comments || 0;
+      row.shares += p.shares || 0;
+      row.clicks += p.clicks || 0;
+    });
+    const dates = Object.keys(byDate).sort();
+    if (dates.length) {
+      charts.push(new Chart(document.getElementById('fbEngagementByDateChart'), {
+        type: 'line',
+        data: {
+          labels: dates.map((d) => shortDate(d)),
+          datasets: [
+            { label: 'לייקים', data: dates.map((d) => byDate[d].likes), borderColor: BRAND.pink, backgroundColor: BRAND.pink, tension: 0.3 },
+            { label: 'תגובות', data: dates.map((d) => byDate[d].comments), borderColor: BRAND.green, backgroundColor: BRAND.green, tension: 0.3 },
+            { label: 'שיתופים', data: dates.map((d) => byDate[d].shares), borderColor: BRAND.pinkDeep, backgroundColor: BRAND.pinkDeep, tension: 0.3 },
+            { label: 'קליקים', data: dates.map((d) => byDate[d].clicks), borderColor: BRAND.ink, backgroundColor: BRAND.ink, tension: 0.3, borderDash: [4, 3] },
+          ].map((ds) => ({ ...ds, borderWidth: 2, pointRadius: dates.length > 20 ? 0 : 3 })),
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } },
+          scales: { x: { ticks: { font: { family: 'Heebo' }, maxTicksLimit: 10 } }, y: { ticks: { font: { family: 'Heebo' }, precision: 0 } } },
+        },
+      }));
+    }
+
     // daily follower growth
     const fs = (fb.followsSeries || []).filter((x) => x.date);
     const host = document.getElementById('fbFollowsWrap');
