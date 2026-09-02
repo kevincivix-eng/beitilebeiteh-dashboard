@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
  * Stages 3+4 — enrich listings with catalog weights, then aggregate into
- * dashboard-shaped JSON under data/experimental/.
+ * dashboard-shaped JSON under data/whatsapp/.
  *
  * SAFETY: reads data/kpis.json + data/weights.json (live, read-only) purely to
- * build the merged volume view. It never writes outside data/experimental/ and
+ * build the merged volume view. It never writes outside data/whatsapp/ and
  * never contacts Airtable.
  *
  * Usage: node build/whatsapp/build-exp.js
@@ -13,7 +13,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
-const EXP = path.join(ROOT, 'data', 'experimental');
+const EXP = path.join(ROOT, 'data', 'whatsapp');
 const LIVE = path.join(ROOT, 'data');
 
 const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, 'catalog.json'), 'utf8'));
@@ -221,7 +221,7 @@ function main() {
   // ------------------------------------------------------------------ write
   const w = (name, obj) => {
     fs.writeFileSync(path.join(EXP, name), JSON.stringify(obj, null, 1));
-    console.log(`📝 data/experimental/${name}`);
+    console.log(`📝 data/whatsapp/${name}`);
   };
   w('kpis.json', kpis);
   w('categories.json', { categories, topItems });

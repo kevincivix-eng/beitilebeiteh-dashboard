@@ -47,9 +47,16 @@
         <p>זרימת המסירות בין יישובי הנגב המזרחי</p>
       </header>
       <div class="kpi-strip" id="homeKpis"></div>
-      <div class="card card--map">
+      <div class="seg-toggle seg-toggle--tabs" id="homeTabs">
+        <button class="seg-btn active" data-tab="flow">מסלולי מסירה</button>
+        <button class="seg-btn" data-tab="volume">כמויות לפי יישוב</button>
+      </div>
+      <div class="card card--map" id="homeFlowPane">
         <div id="map"></div>
         <div class="map-legend" id="mapLegend"></div>
+      </div>
+      <div class="card card--map" id="homeVolumePane" hidden>
+        <div id="volumeMap"></div>
       </div>
     </section>
 

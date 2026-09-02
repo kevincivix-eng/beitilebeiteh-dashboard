@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build numbered contact sheets from data/experimental/vision-todo.json so a
+Build numbered contact sheets from data/whatsapp/vision-todo.json so a
 vision pass can identify many listings per image instead of one at a time.
 
 Each sheet is a 4x3 grid of 12 photos, every cell labelled with its global
@@ -14,7 +14,7 @@ import sys
 from PIL import Image, ImageDraw
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
-TODO = os.path.join(ROOT, 'data', 'experimental', 'vision-todo.json')
+TODO = os.path.join(ROOT, 'data', 'whatsapp', 'vision-todo.json')
 OUT = sys.argv[1] if len(sys.argv) > 1 else '/tmp/wa-sheets'
 
 COLS, ROWS = 4, 3

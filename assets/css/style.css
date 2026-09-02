@@ -115,6 +115,15 @@ html, body {
   height: calc(100vh - 32px); padding-bottom: 0;
 }
 #view-home .card--map { flex: 1; min-height: 0; }
+#view-home .card--map[hidden] { display: none; }
+#view-home .seg-toggle--tabs { margin-bottom: 12px; align-self: flex-start; }
+#volumeMap { height: 100%; min-height: 0; width: 100%; background: var(--cream); }
+.vol-row { display: flex; justify-content: space-between; gap: 18px; font-size: 13px; padding: 3px 0; }
+.vol-row b { font-variant-numeric: tabular-nums; }
+.vol-note {
+  background: rgba(255,255,255,.92); border: 1px solid var(--line); border-radius: 8px;
+  padding: 5px 9px; font-size: 11px; color: var(--muted);
+}
 
 /* ---------- Map legend ---------- */
 .map-legend {
@@ -260,7 +269,7 @@ html, body {
   .main { margin-right: 0; padding: 70px 18px 0; }
   #view-home { height: auto; }
   #view-home .card--map { flex: none; }
-  #map { height: 70vh; min-height: 380px; }
+  #map, #volumeMap { height: 70vh; min-height: 380px; }
   .map-legend { max-height: 60%; overflow: auto; }
   .view__head h1 { font-size: 22px; }
 }

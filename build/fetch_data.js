@@ -8,6 +8,7 @@
  * CI: token provided via GitHub Actions secret.
  */
 const fs = require('fs');
+const { mergeWhatsApp } = require('./merge_whatsapp');
 const path = require('path');
 const https = require('https');
 
@@ -563,11 +564,16 @@ async function fetchSocial() {
     console.log('↩︎ kept social.json / social-history.json snapshot');
   }
 
-  write('kpis.json', kpis);
+  // Fold in the WhatsApp-derived numbers so the published data is one combined
+  // history. Must happen here, not by editing data/*.json: this build overwrites
+  // those files on every run, so an edit would be wiped by the next deploy.
+  const merged = mergeWhatsApp({ kpis, categories, topItems, weights, itemsTimeline });
+
+  write('kpis.json', merged.kpis);
   write('flows.json', flows);
-  write('categories.json', { categories, topItems });
-  write('weights.json', weights);
-  write('items-timeline.json', itemsTimeline);
+  write('categories.json', { categories: merged.categories, topItems: merged.topItems });
+  write('weights.json', merged.weights);
+  write('items-timeline.json', merged.itemsTimeline);
 
   console.log('\n✅ Done.', JSON.stringify(kpis));
 })().catch((e) => {

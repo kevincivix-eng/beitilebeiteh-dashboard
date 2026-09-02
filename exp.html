@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ניסוי וואטסאפ · מביתי לביתך</title>
+  <title>ביקורת נתוני וואטסאפ · מביתי לביתך</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
@@ -46,8 +46,8 @@
 <body>
   <main class="main">
     <header class="view__head">
-      <h1>ניסוי: נתוני וואטסאפ</h1>
-      <p>מסלול מקביל לבדיקה — <b>אינו נוגע בנתונים החיים של הדשבורד</b></p>
+      <h1>ביקורת: נתוני וואטסאפ</h1>
+      <p>עמוד בקרה לנתונים שמוזגו לדשבורד — כל פרסום מול הטקסט המקורי</p>
     </header>
 
     <div class="exp-banner" id="banner">טוען…</div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="card" style="margin-bottom:22px">
-      <h3 class="card__title">נפח לפי עיר מוצא — היסטוריה (Airtable) + חדש (וואטסאפ)</h3>
+      <h3 class="card__title">נפח לפי עיר מוצא — פילוח מקורות (לבקרה בלבד)</h3>
       <div id="volume"></div>
     </div>
 
@@ -186,7 +186,7 @@
     async function load() {
       const [kpis, cats, weights, volume, items] = await Promise.all([
         'kpis', 'categories', 'weights', 'volume', 'wa-items',
-      ].map((f) => fetch(`data/experimental/${f}.json`).then((r) => r.json())));
+      ].map((f) => fetch(`data/whatsapp/${f}.json`).then((r) => r.json())));
 
       el('banner').innerHTML =
         `<b>מקור:</b> 3 קבוצות וואטסאפ · <b>תקופה:</b> ${kpis.period.from} → ${kpis.period.to} · `

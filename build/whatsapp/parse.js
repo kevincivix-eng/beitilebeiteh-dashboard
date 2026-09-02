@@ -4,7 +4,7 @@
  *
  * READ-ONLY with respect to every live data source: this script only reads the
  * chat exports + media folders under whatsapp/, and writes a single file to
- * data/experimental/. It never touches Airtable or data/*.json.
+ * data/whatsapp/. It never touches Airtable or data/*.json.
  *
  * The three groups mirror each other imperfectly, so a listing posted to all
  * three must collapse to ONE record. Dedupe uses three signals, unioned
@@ -21,7 +21,7 @@ const crypto = require('crypto');
 
 const ROOT = path.join(__dirname, '..', '..');
 const WA_DIR = path.join(ROOT, 'whatsapp');
-const OUT_DIR = path.join(ROOT, 'data', 'experimental');
+const OUT_DIR = path.join(ROOT, 'data', 'whatsapp');
 
 // Everything before this date is ignored (currently a no-op: the exports start
 // 8.6.2026, but the cutoff is part of the agreed spec).
@@ -377,7 +377,7 @@ function main() {
   console.log(`   blacklisted boilerplate hashes: ${stats.blacklistedHashes}`);
   console.log(`   posted in 1 group: ${inGroups[1]} | 2 groups: ${inGroups[2]} | all 3: ${inGroups[3]}`);
   console.log(`   clusters needing manual review (>3 blocks): ${out.coverage.needsReview}`);
-  console.log(`📝 data/experimental/wa-blocks.json`);
+  console.log(`📝 data/whatsapp/wa-blocks.json`);
 }
 
 main();

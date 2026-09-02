@@ -10,7 +10,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
-const EXP = path.join(ROOT, 'data', 'experimental');
+const EXP = path.join(ROOT, 'data', 'whatsapp');
 const WA = path.join(ROOT, 'whatsapp');
 
 // group number -> media folder
@@ -57,4 +57,4 @@ fs.writeFileSync(path.join(EXP, 'vision-todo.json'), JSON.stringify({
 const noPhoto = listings.filter((l) => l.isListing && l.unidentified).length - targets.length;
 console.log(`✅ ${targets.length} photo-only listings queued for vision`);
 if (noPhoto) console.log(`   (${noPhoto} unidentified listings have no usable still image — video only or missing)`);
-console.log('📝 data/experimental/vision-todo.json');
+console.log('📝 data/whatsapp/vision-todo.json');

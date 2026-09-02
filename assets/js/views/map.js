@@ -209,6 +209,85 @@ const MapView = (() => {
     });
   }
 
+
+  // ---------------------------------------------------------------- volume tab
+  // Second home tab. The flow map answers "what moved between which councils";
+  // this one answers "how much came out of each council". They need separate
+  // maps because the WhatsApp source records only an item's ORIGIN — there is
+  // no destination to draw a line to — so its volume is invisible on the flow
+  // map even though it is part of the same combined totals.
+  let volumeMap = null;
+
+  function drawVolumeMap() {
+    if (volumeMap) { setTimeout(() => volumeMap.invalidateSize(), 60); return; }
+
+    volumeMap = L.map('volumeMap', { center: [31.22, 34.92], zoom: 10, zoomControl: false });
+    L.control.zoom({ position: 'topleft' }).addTo(volumeMap);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      attribution: '&copy; OpenStreetMap &copy; Esri', maxZoom: 19, maxNativeZoom: 16,
+    }).addTo(volumeMap);
+
+    const byCity = (kpiData && kpiData.byCity) || {};
+    const rows = Object.entries(byCity)
+      .map(([name, v]) => ({ name, ...(v.out || {}) }))
+      .filter((r) => r.deliveries > 0);
+    const placed = rows.filter((r) => locations[r.name]);
+    const offMap = rows.filter((r) => !locations[r.name]).map((r) => r.name);
+    const max = Math.max(...placed.map((r) => r.deliveries), 1);
+
+    placed.forEach((r) => {
+      const loc = locations[r.name];
+      const color = councilColor(r.name);
+      // area ∝ deliveries, so the radius follows the square root
+      const radius = 9 + Math.sqrt(r.deliveries / max) * 40;
+      L.circleMarker([loc.lat, loc.lng], {
+        radius, color, weight: 2, fillColor: color, fillOpacity: 0.45,
+      }).addTo(volumeMap)
+        .bindTooltip(`${r.name} · ${fmt(r.deliveries)} מסירות`, { direction: 'top', className: 'custom-tooltip' })
+        .bindPopup(
+          `<div class="popup-title">${r.name}</div>`
+          + `<div class="vol-row"><span>מסירות</span><b>${fmt(r.deliveries)}</b></div>`
+          + `<div class="vol-row"><span>חפצים</span><b>${fmt(r.items)}</b></div>`
+          + `<div class="vol-row"><span>משקל</span><b>${fmt(r.weightTon)} טון</b></div>`
+        );
+      L.marker([loc.lat, loc.lng], {
+        icon: L.divIcon({ className: 'location-label', html: r.name, iconSize: [90, 18], iconAnchor: [45, -8] }),
+      }).addTo(volumeMap);
+    });
+
+    const pts = placed.map((r) => [locations[r.name].lat, locations[r.name].lng]);
+    if (pts.length) volumeMap.fitBounds(L.latLngBounds(pts).pad(0.3));
+    // councils with no coordinates would otherwise vanish without a trace
+    if (offMap.length) {
+      L.control({ position: 'bottomleft' }).onAdd = null;
+      const note = L.control({ position: 'bottomleft' });
+      note.onAdd = () => {
+        const d = L.DomUtil.create('div', 'vol-note');
+        d.innerHTML = `ללא מיקום על המפה: ${offMap.join(', ')}`;
+        return d;
+      };
+      note.addTo(volumeMap);
+    }
+    setTimeout(() => volumeMap.invalidateSize(), 120);
+  }
+
+  function wireTabs() {
+    const tabs = document.getElementById('homeTabs');
+    if (!tabs) return;
+    tabs.addEventListener('click', (e) => {
+      const btn = e.target.closest('.seg-btn');
+      if (!btn) return;
+      [...tabs.querySelectorAll('.seg-btn')].forEach((b) => b.classList.toggle('active', b === btn));
+      const volume = btn.dataset.tab === 'volume';
+      document.getElementById('homeFlowPane').hidden = volume;
+      document.getElementById('homeVolumePane').hidden = !volume;
+      const legend = document.getElementById('mapLegend');
+      if (legend) legend.hidden = volume;
+      if (volume) drawVolumeMap();
+      else setTimeout(() => map && map.invalidateSize(), 60);
+    });
+  }
+
   function init(data) {
     kpiData = data.kpis || {};
     renderKpis(null);
@@ -245,6 +324,7 @@ const MapView = (() => {
 
     buildLegend();
     drawFlows();
+    wireTabs();
     setTimeout(() => map.invalidateSize(), 200);
   }
 

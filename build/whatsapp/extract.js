@@ -6,7 +6,7 @@
  * City resolution is fully deterministic (regex map + inheritance).
  * Item extraction is lexicon-driven: build/whatsapp/lexicon.json maps Arabic
  * phrases to Hebrew item names. Anything the lexicon cannot resolve is written
- * to data/experimental/wa-unresolved.json for an LLM pass, whose results are
+ * to data/whatsapp/wa-unresolved.json for an LLM pass, whose results are
  * folded back into the lexicon — so re-runs stay deterministic and cheap.
  *
  * Usage: node build/whatsapp/extract.js
@@ -15,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
-const EXP = path.join(ROOT, 'data', 'experimental');
+const EXP = path.join(ROOT, 'data', 'whatsapp');
 
 const cities = JSON.parse(fs.readFileSync(path.join(__dirname, 'cities.json'), 'utf8')).map
   .map((c) => ({ he: c.he, res: c.patterns.map((p) => new RegExp(p, 'i')) }));
@@ -242,7 +242,7 @@ function main() {
   console.log(`      from photo (vision): ${fromVision}`);
   console.log(`   excluded as not-an-item by vision: ${visionNotItem}`);
   console.log(`   still unidentified: ${unresolved.length} (${pct(unresolved.length)}%)`);
-  console.log('📝 data/experimental/wa-listings.json + wa-unresolved.json');
+  console.log('📝 data/whatsapp/wa-listings.json + wa-unresolved.json');
 }
 
 main();
