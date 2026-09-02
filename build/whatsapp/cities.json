@@ -1,0 +1,19 @@
+{
+  "_comment": "Arabic (dialect + formal) spellings → canonical Hebrew council names. Hebrew names must match COUNCIL_COLORS in assets/js/app.js. Patterns are matched case-insensitively as regexes against the listing text.",
+  "map": [
+    { "he": "רהט", "patterns": ["رهط", "راهط", "رهــط"] },
+    { "he": "ערערה בנגב", "patterns": ["عرعر[هة]", "العرعر", "الهواشل[هة]", "هواشله", "عرعرة النقب", "ערערה"] },
+    { "he": "תל שבע", "patterns": ["تل ?السبع", "تل ?سبع", "ابو ?سبيتان", "תל שבע"] },
+    { "he": "כסיפה", "patterns": ["كسيف[هة]", "כסיפה"] },
+    { "he": "חורה", "patterns": ["حور[هة]", "חורה"] },
+    { "he": "לקיה", "patterns": ["اللقي[هة]", "لقي[هة]", "לקיה"] },
+    { "he": "שגב שלום", "patterns": ["شقيب", "شقيب السلام", "שגב שלום"] },
+    { "he": "באר שבע", "patterns": ["بئر ?السبع", "بير ?السبع", "באר שבע"] },
+    { "he": "נווה מדבר", "patterns": ["ابو ?تلول", "نوي ?مدبار", "بير ?هداج", "נווה מדבר"] },
+    { "he": "אל קסום", "patterns": ["القسوم", "كسوم", "אל קסום"] },
+    { "he": "ערד", "patterns": ["عراد", "ערד"] },
+    { "he": "חברון", "patterns": ["الخليل", "חברון"] },
+    { "he": "להבים", "patterns": ["لهافيم", "להבים"] },
+    { "he": "דימונה", "patterns": ["ديمونا", "דימונה"] }
+  ]
+}

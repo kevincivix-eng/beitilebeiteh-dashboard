@@ -1,0 +1,20 @@
+{
+  "_comment": "The Airtable catalog mixes two kinds of unit. Most rows are ONE physical object (מקרר = one fridge, 80kg). But some rows are a CONTAINER holding many objects — 'שקית נעלים' is 8kg for a whole BAG of shoes, not per pair, and 'ספרים' is 22kg for a box of books, not per book. Counting individual objects against a container weight inflates the total enormously (25 pairs of shoes became 200kg). For every container row below, perObjectKg is the weight of ONE object inside it, so an object count can be converted to real weight.",
+  "containers": {
+    "שקית נעלים": { "perObjectKg": 0.8, "object": "זוג נעליים" },
+    "שקית בגדים": { "perObjectKg": 0.4, "object": "פריט לבוש" },
+    "ספרים": { "perObjectKg": 0.5, "object": "ספר" },
+    "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו": { "perObjectKg": 0.5, "object": "כלי" },
+    "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)": { "perObjectKg": 0.25, "object": "פריט ציוד" },
+    "שקית תכשיטים שונים": { "perObjectKg": 0.1, "object": "תכשיט" },
+    "שקית צמר לסריגה": { "perObjectKg": 0.3, "object": "גליל צמר" },
+    "שקיות ממתקים": { "perObjectKg": 0.1, "object": "שקית" },
+    "ציוד תינוק": { "perObjectKg": 0.5, "object": "פריט" },
+    "קרטונים כלי בית": { "perObjectKg": 0.5, "object": "כלי" },
+    "תיקים לנשים": { "perObjectKg": 0.5, "object": "תיק" },
+    "שימורים ואוכל יבש": { "perObjectKg": 0.7, "object": "פריט מזון" },
+    "ציוד ניקוי": { "perObjectKg": 0.7, "object": "פריט" },
+    "משחקים לילדים": { "perObjectKg": 0.6, "object": "משחק" },
+    "ציוד רפואי": { "perObjectKg": 1.0, "object": "פריט" }
+  }
+}

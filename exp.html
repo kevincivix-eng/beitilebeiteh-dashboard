@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ניסוי וואטסאפ · מביתי לביתך</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .main { margin-right: 0; }
+    .exp-banner {
+      background: #fff6e0; border: 1px solid #f0dca8; color: #8a6d1f;
+      border-radius: 12px; padding: 12px 16px; font-size: 13.5px; margin-bottom: 20px; line-height: 1.6;
+    }
+    .exp-banner b { color: #6b5410; }
+    table.qa { width: 100%; border-collapse: collapse; font-size: 13px; }
+    table.qa th, table.qa td { padding: 7px 9px; border-bottom: 1px solid var(--line); text-align: right; vertical-align: top; }
+    table.qa th { background: var(--cream); font-weight: 700; color: var(--green); position: sticky; top: 0; z-index: 1; }
+    table.qa tr:hover td { background: var(--pink-soft); }
+    .qa-wrap { max-height: 620px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
+    .raw { color: var(--muted); font-size: 12px; max-width: 380px; direction: rtl; }
+    .tag { display: inline-block; background: var(--pink-soft); color: var(--pink-deep); border-radius: 6px; padding: 1px 7px; font-size: 11px; font-weight: 700; margin: 1px; }
+    .tag--g { background: var(--green-soft); color: var(--green); }
+    .tag--w { background: #fff0d8; color: #8a6d1f; }
+    .tag--v { background: #e3eefb; color: #2c5d92; }
+    .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; align-items: center; }
+    .filters input, .filters select {
+      font-family: 'Heebo', sans-serif; font-size: 13px; padding: 7px 11px;
+      border: 1px solid var(--line); border-radius: 9px; background: #fff;
+    }
+    .bar { height: 11px; border-radius: 6px; background: var(--pink); display: inline-block; vertical-align: middle; }
+    .bar--old { background: var(--green); }
+    .muted { color: var(--muted); font-size: 12px; }
+    #volMap { height: 520px; border-radius: 12px; border: 1px solid var(--line); }
+    .leaflet-popup-content { margin: 12px 14px; font-family: 'Heebo', sans-serif; direction: rtl; }
+    .pop-h { font-weight: 900; color: var(--green); font-size: 15px; margin-bottom: 8px; }
+    .pop-row { display: flex; justify-content: space-between; gap: 18px; font-size: 13px; padding: 3px 0; }
+    .pop-row b { font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+
+<body>
+  <main class="main">
+    <header class="view__head">
+      <h1>ניסוי: נתוני וואטסאפ</h1>
+      <p>מסלול מקביל לבדיקה — <b>אינו נוגע בנתונים החיים של הדשבורד</b></p>
+    </header>
+
+    <div class="exp-banner" id="banner">טוען…</div>
+
+    <div class="kpi-strip" id="kpis"></div>
+
+    <div class="card" style="margin-bottom:22px">
+      <h3 class="card__title">מפת נפח לפי יישוב מוצא</h3>
+      <p class="muted" id="mapNote" style="margin:0 0 12px"></p>
+      <div id="volMap"></div>
+    </div>
+
+    <div class="card" style="margin-bottom:22px">
+      <h3 class="card__title">נפח לפי עיר מוצא — היסטוריה (Airtable) + חדש (וואטסאפ)</h3>
+      <div id="volume"></div>
+    </div>
+
+    <div class="grid grid--2" style="margin-bottom:22px">
+      <div class="card"><h3 class="card__title">פריטים לפי קטגוריה</h3><div id="cats"></div></div>
+      <div class="card"><h3 class="card__title">החפצים הנפוצים</h3><div id="top"></div></div>
+    </div>
+
+    <div class="card">
+      <h3 class="card__title">טבלת ביקורת — כל פרסום מול הטקסט המקורי</h3>
+      <div class="filters">
+        <input id="q" type="search" placeholder="חיפוש בטקסט / פריט…" style="min-width:220px" />
+        <select id="fCity"><option value="">כל הערים</option></select>
+        <select id="fState">
+          <option value="">הכל</option>
+          <option value="ok">זוהה פריט</option>
+          <option value="un">לא מזוהה</option>
+          <option value="vis">זוהה מהתמונה</option>
+          <option value="rev">מסומן לביקורת</option>
+        </select>
+        <span class="muted" id="count"></span>
+      </div>
+      <div class="qa-wrap">
+        <table class="qa">
+          <thead><tr>
+            <th>תאריך</th><th>עיר</th><th>פריטים</th><th>משקל</th>
+            <th>קבוצות</th><th>טקסט מקורי (ערבית)</th>
+          </tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const fmt = (n) => (n == null ? '—' : Number(n).toLocaleString('he-IL'));
+    const el = (id) => document.getElementById(id);
+
+    function kpiCard(val, label, green) {
+      return `<div class="kpi ${green ? 'kpi--green' : ''}"><div class="kpi__val">${val}</div><div class="kpi__label">${label}</div></div>`;
+    }
+
+
+    // ---------------------------------------------------------------- volume map
+    // A city-volume counterpart to the live flow map: no origin→destination
+    // lines (WhatsApp only records where an item came FROM), so each council is
+    // a circle whose AREA is proportional to the chosen measure.
+    const LOCATIONS = {
+      'אל קסום': [31.28444, 34.91611], 'חורה': [31.3004, 34.935688],
+      'כסיפה': [31.245278, 35.092778], 'לקיה': [31.324884, 34.866219],
+      'תל שבע': [31.246667, 34.856111], 'ערערה בנגב': [31.160927, 35.019757],
+      'נווה מדבר': [31.02417, 34.70417], 'רהט': [31.39547, 34.75699],
+      'שגב שלום': [31.19918, 34.83956], 'ערד': [31.2588, 35.2128],
+      'חברון': [31.5326, 35.0998], 'אופקים': [31.3147, 34.6203],
+      'באר שבע': [31.2518, 34.7913], 'להבים': [31.3708, 34.8175],
+      'דימונה': [31.0686, 35.0332],
+    };
+    const COUNCIL_COLORS = {
+      'ערערה בנגב': '#8f3d77', 'חורה': '#6a8769', 'רהט': '#5f1b4d',
+      'כסיפה': '#97af94', 'תל שבע': '#b86aa1', 'שגב שלום': '#5d605c',
+      'לקיה': '#929990', 'נווה מדבר': '#d49bbe', 'באר שבע': '#eec7de',
+      'אל קסום': '#4c4c4d', 'חברון': '#a8577f', 'ערד': '#7d9b7a',
+      'אופקים': '#c08fb4', 'להבים': '#bcae9e', 'אחר': '#b3aeb6',
+    };
+    const councilColor = (n) => COUNCIL_COLORS[(n || '').trim()] || '#9b8fa6';
+
+    let VOL = null, volMap = null, layer = null;
+    // One combined picture, sized by number of deliveries — history and
+    // WhatsApp are the same activity in different periods, so they are summed.
+    const METRIC = 'deliveries';
+    const SRC = 'total';
+
+    function volValue(city, m, s) { const b = city[s] || {}; return b[m] || 0; }
+
+    function drawMap() {
+      if (!VOL) return;
+      if (!volMap) {
+        volMap = L.map('volMap', { scrollWheelZoom: false }).setView([31.28, 34.95], 9);
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+          attribution: '&copy; OpenStreetMap &copy; Esri', maxZoom: 19, maxNativeZoom: 16,
+        }).addTo(volMap);
+      }
+      if (layer) layer.remove();
+      layer = L.layerGroup().addTo(volMap);
+
+      const placed = VOL.cities.filter((c) => LOCATIONS[c.name]);
+      const skipped = VOL.cities.filter((c) => !LOCATIONS[c.name] && volValue(c, METRIC, SRC) > 0);
+      const max = Math.max(...placed.map((c) => volValue(c, METRIC, SRC)), 1);
+
+      placed.forEach((c) => {
+        const v = volValue(c, METRIC, SRC);
+        if (!v) return;
+        // area ∝ value, so the radius follows the square root
+        const r = 8 + Math.sqrt(v / max) * 38;
+        const color = councilColor(c.name);
+        const m = L.circleMarker(LOCATIONS[c.name], {
+          radius: r, color, weight: 2, fillColor: color, fillOpacity: 0.45,
+        }).addTo(layer);
+
+        const row = (label, val) => `<div class="pop-row"><span>${label}</span><b>${val}</b></div>`;
+        const b = c[SRC] || {};
+        m.bindPopup(
+          `<div class="pop-h">${c.name}</div>`
+          + row('מסירות', fmt(b.deliveries || 0))
+          + row('חפצים', fmt(b.items || 0))
+          + row('משקל', fmt(b.ton || 0) + ' טון')
+        );
+        m.bindTooltip(`${c.name} · ${fmt(v)} מסירות`, { direction: 'top' });
+      });
+
+      el('mapNote').textContent =
+        'גודל העיגול לפי מספר המסירות · לחיצה מציגה מסירות, חפצים ומשקל · כל התקופות'
+        + (skipped.length ? ` · ללא מיקום על המפה: ${skipped.map((c) => c.name).join(', ')}` : '');
+
+      const pts = placed.filter((c) => volValue(c, METRIC, SRC) > 0).map((c) => LOCATIONS[c.name]);
+      if (pts.length) volMap.fitBounds(L.latLngBounds(pts).pad(0.35));
+    }
+
+    let ALL = [];
+
+    async function load() {
+      const [kpis, cats, weights, volume, items] = await Promise.all([
+        'kpis', 'categories', 'weights', 'volume', 'wa-items',
+      ].map((f) => fetch(`data/experimental/${f}.json`).then((r) => r.json())));
+
+      el('banner').innerHTML =
+        `<b>מקור:</b> 3 קבוצות וואטסאפ · <b>תקופה:</b> ${kpis.period.from} → ${kpis.period.to} · `
+        + `<b>${fmt(kpis.deliveries)}</b> פרסומים אחרי איחוד כפילויות.<br>`
+        + `<b>איכות:</b> רק ${kpis.unidentifiedPct}% מהפרסומים נותרו ללא זיהוי פריט. `
+        + `פרסומים שהטקסט שלהם לא תיאר את החפץ זוהו <b>מתוך התמונה</b> (מסומנים בטבלה). `
+        + (kpis.weightEstimatedPct ? `${kpis.weightEstimatedPct}% מהמשקל מבוסס הערכה (מסומן ב-*).` : 'כל המשקלים מגיעים מקטלוג "רשימת חפצים".');
+
+      el('kpis').innerHTML =
+        kpiCard(fmt(kpis.deliveries), 'מסירות (פרסומים)', true)
+        + kpiCard(fmt(kpis.items), 'פריטים שזוהו')
+        + kpiCard(fmt(kpis.weightTon) + ' טון' + (kpis.weightEstimatedPct ? '*' : ''), 'משקל', true)
+        + kpiCard(fmt(kpis.cities), 'יישובי מוצא')
+        + kpiCard(kpis.unidentifiedPct + '%', 'לא מזוהה (תמונה בלבד)', true);
+
+      // ---- volume map
+      VOL = volume;
+      drawMap();
+
+      // ---- volume: old vs new per city
+      const max = Math.max(...volume.cities.map((c) => c.total.items), 1);
+      el('volume').innerHTML = `<p class="muted">${volume.note}${volume.overlapWarning ? ' · ⚠️ ' + volume.overlapWarning : ''}</p>`
+        + '<table class="qa"><thead><tr><th>עיר</th><th>היסטוריה</th><th>חדש</th><th>סה"כ פריטים</th><th></th></tr></thead><tbody>'
+        + volume.cities.map((c) => `<tr>
+            <td><b>${c.name}</b></td>
+            <td class="muted">${fmt(c.old.items)} פריטים · ${fmt(c.old.deliveries)} מסירות</td>
+            <td class="muted">${fmt(c.new.items)} פריטים · ${fmt(c.new.deliveries)} מסירות</td>
+            <td><b>${fmt(c.total.items)}</b></td>
+            <td style="width:38%">
+              <span class="bar bar--old" style="width:${(c.old.items / max * 100).toFixed(1)}%"></span><span class="bar" style="width:${(c.new.items / max * 100).toFixed(1)}%"></span>
+            </td></tr>`).join('')
+        + '</tbody></table><p class="muted">ירוק = היסטוריה (Airtable) · ורוד = חדש (וואטסאפ)</p>';
+
+      const cmax = Math.max(...cats.categories.map((c) => c.count), 1);
+      el('cats').innerHTML = cats.categories.map((c) => `<div style="margin:6px 0">
+        <span style="display:inline-block;min-width:130px">${c.name}</span>
+        <span class="bar" style="width:${(c.count / cmax * 55).toFixed(1)}%"></span> <b>${fmt(c.count)}</b></div>`).join('');
+
+      const tmax = Math.max(...cats.topItems.map((c) => c.count), 1);
+      el('top').innerHTML = cats.topItems.map((c) => `<div style="margin:6px 0">
+        <span style="display:inline-block;min-width:150px">${c.name}</span>
+        <span class="bar" style="width:${(c.count / tmax * 45).toFixed(1)}%"></span> <b>${fmt(c.count)}</b></div>`).join('');
+
+      // ---- QA table
+      ALL = items.data;
+      const cities = [...new Set(ALL.map((l) => l.city))].sort();
+      el('fCity').innerHTML += cities.map((c) => `<option>${c}</option>`).join('');
+      render();
+    }
+
+    function render() {
+      const q = el('q').value.trim();
+      const city = el('fCity').value;
+      const state = el('fState').value;
+      const rows = ALL.filter((l) => {
+        if (city && l.city !== city) return false;
+        if (state === 'ok' && l.unidentified) return false;
+        if (state === 'un' && !l.unidentified) return false;
+        if (state === 'vis' && l.itemSource !== 'vision') return false;
+        if (state === 'rev' && !l.needsReview) return false;
+        if (q && !(l.rawText.includes(q) || l.items.some((i) => i.nameHe.includes(q)))) return false;
+        return true;
+      });
+      el('count').textContent = `${rows.length.toLocaleString('he-IL')} רשומות`;
+      el('rows').innerHTML = rows.slice(0, 400).map((l) => {
+        const kg = l.items.reduce((s, i) => s + (i.weightKg || 0), 0);
+        const est = l.items.some((i) => i.weightEstimated);
+        return `<tr>
+          <td dir="ltr">${l.date}</td>
+          <td>${l.city}${l.cityInherited ? ' <span class="tag tag--w">מוסק</span>' : ''}</td>
+          <td>${l.items.length
+            ? l.items.map((i) => {
+                // a container row counted as objects shows both readings:
+                // "שקית נעלים ×2  (25 זוג נעליים)"
+                const n = i.units != null ? i.units : i.qty;
+                const objs = i.countsObjects ? ` <span class="muted">(${i.qty} ${i.objectLabel})</span>` : '';
+                return `<span class="tag tag--g">${i.nameHe}${n > 1 ? ' ×' + n : ''}</span>${objs}`;
+              }).join('')
+              + (l.itemSource === 'vision' ? '<span class="tag tag--v">מהתמונה</span>' : '')
+            : '<span class="tag tag--w">לא מזוהה</span>'}</td>
+          <td>${kg ? fmt(Math.round(kg)) + ' ק"ג' + (est ? '*' : '') : '—'}</td>
+          <td>${l.seenInGroups.map((g) => `<span class="tag">${g}</span>`).join('')}${l.needsReview ? '<span class="tag tag--w">ביקורת</span>' : ''}</td>
+          <td class="raw">${(l.rawText || '(אין טקסט — תמונה בלבד)').slice(0, 200)}</td>
+        </tr>`;
+      }).join('') + (rows.length > 400 ? '<tr><td colspan="6" class="muted">מוצגות 400 הראשונות…</td></tr>' : '');
+    }
+
+    ['q', 'fCity', 'fState'].forEach((id) =>
+      document.addEventListener('DOMContentLoaded', () => el(id).addEventListener('input', render)));
+    document.addEventListener('DOMContentLoaded', load);
+  </script>
+</body>
+
+</html>

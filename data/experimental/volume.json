@@ -1,0 +1,280 @@
+{
+ "note": "נפח לפי עיר מוצא — איחוד ההיסטוריה (Airtable) עם הנתונים החדשים (וואטסאפ)",
+ "overlapWarning": null,
+ "periods": {
+  "old": "… → 2026-W19",
+  "new": "2026-W24 → …"
+ },
+ "cities": [
+  {
+   "name": "ערערה בנגב",
+   "old": {
+    "deliveries": 912,
+    "items": 7800,
+    "ton": 92.54
+   },
+   "new": {
+    "deliveries": 169,
+    "items": 284,
+    "ton": 4.92
+   },
+   "total": {
+    "deliveries": 1081,
+    "items": 8084,
+    "ton": 97.46
+   }
+  },
+  {
+   "name": "רהט",
+   "old": {
+    "deliveries": 76,
+    "items": 565,
+    "ton": 7.57
+   },
+   "new": {
+    "deliveries": 404,
+    "items": 681,
+    "ton": 12.97
+   },
+   "total": {
+    "deliveries": 480,
+    "items": 1246,
+    "ton": 20.54
+   }
+  },
+  {
+   "name": "חורה",
+   "old": {
+    "deliveries": 78,
+    "items": 925,
+    "ton": 6.92
+   },
+   "new": {
+    "deliveries": 59,
+    "items": 122,
+    "ton": 2.52
+   },
+   "total": {
+    "deliveries": 137,
+    "items": 1047,
+    "ton": 9.44
+   }
+  },
+  {
+   "name": "כסיפה",
+   "old": {
+    "deliveries": 64,
+    "items": 499,
+    "ton": 6.57
+   },
+   "new": {
+    "deliveries": 55,
+    "items": 100,
+    "ton": 1.52
+   },
+   "total": {
+    "deliveries": 119,
+    "items": 599,
+    "ton": 8.09
+   }
+  },
+  {
+   "name": "תל שבע",
+   "old": {
+    "deliveries": 35,
+    "items": 270,
+    "ton": 4.16
+   },
+   "new": {
+    "deliveries": 96,
+    "items": 193,
+    "ton": 2.97
+   },
+   "total": {
+    "deliveries": 131,
+    "items": 463,
+    "ton": 7.13
+   }
+  },
+  {
+   "name": "אחר",
+   "old": {
+    "deliveries": 4,
+    "items": 69,
+    "ton": 0.81
+   },
+   "new": {
+    "deliveries": 243,
+    "items": 353,
+    "ton": 5.51
+   },
+   "total": {
+    "deliveries": 247,
+    "items": 422,
+    "ton": 6.32
+   }
+  },
+  {
+   "name": "שגב שלום",
+   "old": {
+    "deliveries": 27,
+    "items": 259,
+    "ton": 3.36
+   },
+   "new": {
+    "deliveries": 41,
+    "items": 57,
+    "ton": 0.98
+   },
+   "total": {
+    "deliveries": 68,
+    "items": 316,
+    "ton": 4.34
+   }
+  },
+  {
+   "name": "לקיה",
+   "old": {
+    "deliveries": 23,
+    "items": 203,
+    "ton": 2.23
+   },
+   "new": {
+    "deliveries": 66,
+    "items": 101,
+    "ton": 1.8
+   },
+   "total": {
+    "deliveries": 89,
+    "items": 304,
+    "ton": 4.03
+   }
+  },
+  {
+   "name": "נווה מדבר",
+   "old": {
+    "deliveries": 23,
+    "items": 138,
+    "ton": 1.77
+   },
+   "new": {
+    "deliveries": 8,
+    "items": 9,
+    "ton": 0.16
+   },
+   "total": {
+    "deliveries": 31,
+    "items": 147,
+    "ton": 1.93
+   }
+  },
+  {
+   "name": "אל קסום",
+   "old": {
+    "deliveries": 7,
+    "items": 53,
+    "ton": 0.57
+   },
+   "new": {
+    "deliveries": 0,
+    "items": 0,
+    "ton": 0
+   },
+   "total": {
+    "deliveries": 7,
+    "items": 53,
+    "ton": 0.57
+   }
+  },
+  {
+   "name": "באר שבע",
+   "old": {
+    "deliveries": 7,
+    "items": 21,
+    "ton": 0.87
+   },
+   "new": {
+    "deliveries": 6,
+    "items": 7,
+    "ton": 0.12
+   },
+   "total": {
+    "deliveries": 13,
+    "items": 28,
+    "ton": 0.99
+   }
+  },
+  {
+   "name": "ערד",
+   "old": {
+    "deliveries": 3,
+    "items": 17,
+    "ton": 0.24
+   },
+   "new": {
+    "deliveries": 6,
+    "items": 11,
+    "ton": 0.3
+   },
+   "total": {
+    "deliveries": 9,
+    "items": 28,
+    "ton": 0.54
+   }
+  },
+  {
+   "name": "להבים",
+   "old": {
+    "deliveries": 1,
+    "items": 8,
+    "ton": 0.13
+   },
+   "new": {
+    "deliveries": 1,
+    "items": 1,
+    "ton": 0.01
+   },
+   "total": {
+    "deliveries": 2,
+    "items": 9,
+    "ton": 0.14
+   }
+  },
+  {
+   "name": "דימונה",
+   "old": {
+    "deliveries": 0,
+    "items": 0,
+    "ton": 0
+   },
+   "new": {
+    "deliveries": 2,
+    "items": 3,
+    "ton": 0.03
+   },
+   "total": {
+    "deliveries": 2,
+    "items": 3,
+    "ton": 0.03
+   }
+  },
+  {
+   "name": "חברון",
+   "old": {
+    "deliveries": 0,
+    "items": 0,
+    "ton": 0
+   },
+   "new": {
+    "deliveries": 0,
+    "items": 0,
+    "ton": 0
+   },
+   "total": {
+    "deliveries": 0,
+    "items": 0,
+    "ton": 0
+   }
+  }
+ ]
+}

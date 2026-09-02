@@ -1,0 +1,747 @@
+{
+ "fetched": "2026-09-01T09:36:42.824Z",
+ "source": "Airtable appOPXerkRuO4YH1D / רשימת חפצים (read-only)",
+ "count": 148,
+ "items": [
+  {
+   "name": "מדיח כלים",
+   "unitKg": 45,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "ארון נעלים",
+   "unitKg": 25,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מזרון",
+   "unitKg": 40,
+   "category": "רהיטים"
+  },
+  {
+   "name": "תיק בית ספר",
+   "unitKg": 1,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "מכונת תפירה",
+   "unitKg": 15,
+   "category": null
+  },
+  {
+   "name": "ארון תכשיטים",
+   "unitKg": 15,
+   "category": "רהיטים"
+  },
+  {
+   "name": "נברשת",
+   "unitKg": 5,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מכונת קפה",
+   "unitKg": 10,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "אקווריום עם פילטר",
+   "unitKg": 10,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "שואב אבק",
+   "unitKg": 7,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "פלטת חימום",
+   "unitKg": 5,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "מיטת תינוק",
+   "unitKg": 20,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מזוודה",
+   "unitKg": 4,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "בלנדר",
+   "unitKg": 4,
+   "category": null
+  },
+  {
+   "name": "לוחות חיפוי",
+   "unitKg": 2,
+   "category": null
+  },
+  {
+   "name": "מתלה בגדים",
+   "unitKg": 4,
+   "category": "רהיטים"
+  },
+  {
+   "name": "שולחן עבודה",
+   "unitKg": 25,
+   "category": "רהיטים"
+  },
+  {
+   "name": "פינת ישיבה",
+   "unitKg": 60,
+   "category": "רהיטים"
+  },
+  {
+   "name": "שטיחים לבית",
+   "unitKg": 10,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מיטה לתינוק",
+   "unitKg": 20,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "עריסה לתינוק",
+   "unitKg": 8,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "תנור",
+   "unitKg": 50,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "שקית תכשיטים שונים",
+   "unitKg": 2,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "טלוויזיה",
+   "unitKg": 15,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "בסיס מיטה",
+   "unitKg": 25,
+   "category": "רהיטים"
+  },
+  {
+   "name": "ברזל גבס",
+   "unitKg": 2,
+   "category": null
+  },
+  {
+   "name": "מקרר",
+   "unitKg": 80,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+   "unitKg": 5,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "מנשא לתינוק",
+   "unitKg": 0.9,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "כיסא בטיחות לרכב",
+   "unitKg": 10,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "מנות אוכל",
+   "unitKg": 5,
+   "category": "אוכל"
+  },
+  {
+   "name": "מזרן יחיד",
+   "unitKg": 20,
+   "category": null
+  },
+  {
+   "name": "ווילונות",
+   "unitKg": 2,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מזרן זוגי",
+   "unitKg": 45,
+   "category": null
+  },
+  {
+   "name": "סט ספות",
+   "unitKg": 100,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מאורר",
+   "unitKg": 4,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "מנגל פחם",
+   "unitKg": 7,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "כרטיסיות",
+   "unitKg": 0.2,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "דלת",
+   "unitKg": 20,
+   "category": "רהיטים"
+  },
+  {
+   "name": "ציוד תינוק",
+   "unitKg": 9,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "תכשיט דיקור",
+   "unitKg": 0.1,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "שולחן טלוויזיה",
+   "unitKg": 15,
+   "category": "רהיטים"
+  },
+  {
+   "name": "עדשות ראייה",
+   "unitKg": 0.1,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "עגלה לתינוק",
+   "unitKg": 12,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "מיטה זוגית",
+   "unitKg": 45,
+   "category": "רהיטים"
+  },
+  {
+   "name": "שידה לתינוק",
+   "unitKg": 45,
+   "category": "רהיטים"
+  },
+  {
+   "name": "ארון",
+   "unitKg": 130,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מזוודה",
+   "unitKg": 5,
+   "category": "רהיטים"
+  },
+  {
+   "name": "תכשיטים לבית",
+   "unitKg": 3,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מסחטת פירות",
+   "unitKg": 4,
+   "category": null
+  },
+  {
+   "name": "שקית בגדים",
+   "unitKg": 12,
+   "category": "בגדים"
+  },
+  {
+   "name": "שמיכה",
+   "unitKg": 2,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "תנור חימום",
+   "unitKg": 8,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "כרית",
+   "unitKg": 1,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "טושים",
+   "unitKg": 0.2,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "כיסא לתינוק",
+   "unitKg": 5,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "שימורים ואוכל יבש",
+   "unitKg": 10,
+   "category": "אוכל"
+  },
+  {
+   "name": "שקית נעלים",
+   "unitKg": 8,
+   "category": "בגדים"
+  },
+  {
+   "name": "מזנון לסלון",
+   "unitKg": 80,
+   "category": "רהיטים"
+  },
+  {
+   "name": "שמיכות",
+   "unitKg": 2,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "שידת מגירות למשרד",
+   "unitKg": 15,
+   "category": "רהיטים"
+  },
+  {
+   "name": "תריס",
+   "unitKg": 5,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "ארונית",
+   "unitKg": 15,
+   "category": "רהיטים"
+  },
+  {
+   "name": "כיסוי לספות",
+   "unitKg": 2,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מזרונים",
+   "unitKg": 40,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מפזר חום",
+   "unitKg": 1.5,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "ארון בגדים",
+   "unitKg": 130,
+   "category": "רהיטים"
+  },
+  {
+   "name": "ציוד ניקוי",
+   "unitKg": 6,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "קופסת אוכל קלקר",
+   "unitKg": 0.02,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "נברשת",
+   "unitKg": 5,
+   "category": "רהיטים"
+  },
+  {
+   "name": "ספרים",
+   "unitKg": 22,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "מתקן ייבוש כלים",
+   "unitKg": 1,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "ארון מטבח קטן",
+   "unitKg": 25,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מכונת כביסה",
+   "unitKg": 70,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "וילון חלון",
+   "unitKg": 1.5,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מסילות לווילון",
+   "unitKg": 2,
+   "category": null
+  },
+  {
+   "name": "משחקים לילדים",
+   "unitKg": 8,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "טוסטר",
+   "unitKg": 2,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "שולחן אוכל",
+   "unitKg": 70,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מכונת מייבש כביסה",
+   "unitKg": 40,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "סלים מעוצבים",
+   "unitKg": 2,
+   "category": "כלי מטבח"
+  },
+  {
+   "name": "קרטונים כלי בית",
+   "unitKg": 18,
+   "category": "כלי מטבח"
+  },
+  {
+   "name": "עציץ עם עץ",
+   "unitKg": 20,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "סל כביסה",
+   "unitKg": 2,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "סט ישיבה",
+   "unitKg": 100,
+   "category": "רהיטים"
+  },
+  {
+   "name": "סל קל לרכב",
+   "unitKg": 4,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "מראה",
+   "unitKg": 4,
+   "category": "רהיטים"
+  },
+  {
+   "name": "סדין זוגי",
+   "unitKg": 1,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "סיר טיגון חשמלי",
+   "unitKg": 5,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "שידת איפור",
+   "unitKg": 30,
+   "category": "רהיטים"
+  },
+  {
+   "name": "אמבטיה לתינוק",
+   "unitKg": 3,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "שקית צמר לסריגה",
+   "unitKg": 3,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "מכונת כושר",
+   "unitKg": 40,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "כיור עם שידה",
+   "unitKg": 50,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מגהץ",
+   "unitKg": 2,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "ספות",
+   "unitKg": 220,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מתקן מים",
+   "unitKg": 18,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "סאג' ללחם",
+   "unitKg": 5,
+   "category": "כלי מטבח"
+  },
+  {
+   "name": "פוכים",
+   "unitKg": 3.5,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "שקית ציוד לתינוק",
+   "unitKg": 4,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "בר מים",
+   "unitKg": 13,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "אופניים",
+   "unitKg": 17,
+   "category": null
+  },
+  {
+   "name": "גליל בד",
+   "unitKg": 30,
+   "category": null
+  },
+  {
+   "name": "מקרר דלפק",
+   "unitKg": 25,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "מדפסת",
+   "unitKg": 6,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "לוחות גבס",
+   "unitKg": 30,
+   "category": null
+  },
+  {
+   "name": "סדינים למיטה",
+   "unitKg": 3,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "שולחן סלון",
+   "unitKg": 35,
+   "category": null
+  },
+  {
+   "name": "ספריית ילדים",
+   "unitKg": 35,
+   "category": "רהיטים"
+  },
+  {
+   "name": "ציוד רפואי",
+   "unitKg": 3,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "שידה לכתיבה",
+   "unitKg": 20,
+   "category": "רהיטים"
+  },
+  {
+   "name": "אלוורה",
+   "unitKg": 5,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "דלתות",
+   "unitKg": 75,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מיטה",
+   "unitKg": 45,
+   "category": "רהיטים"
+  },
+  {
+   "name": "הליכון לתינוק",
+   "unitKg": 6,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "שואב שוטף",
+   "unitKg": 15,
+   "category": null
+  },
+  {
+   "name": "ציוד תפילה",
+   "unitKg": 1.2,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "סט מצעים וכריות",
+   "unitKg": 6,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "שקיות נייר",
+   "unitKg": 1,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מזגן נייד",
+   "unitKg": 32,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+   "unitKg": 18,
+   "category": "כלי מטבח"
+  },
+  {
+   "name": "שקיות ממתקים",
+   "unitKg": 1,
+   "category": "אוכל"
+  },
+  {
+   "name": "מחשב נייד",
+   "unitKg": 2,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "וילונות",
+   "unitKg": 3,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "שידת טלוויזיה",
+   "unitKg": 40,
+   "category": "רהיטים"
+  },
+  {
+   "name": "שולחן",
+   "unitKg": 70,
+   "category": "רהיטים"
+  },
+  {
+   "name": "שמיכת פוך",
+   "unitKg": 4,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "קרש גיהוץ",
+   "unitKg": 3,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "חיתולי תינוק",
+   "unitKg": 6,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "חלון",
+   "unitKg": 15,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מטרנה לתינוק",
+   "unitKg": 2,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "כיסאות",
+   "unitKg": 6,
+   "category": "רהיטים"
+  },
+  {
+   "name": "מזרן לישיבה",
+   "unitKg": 5,
+   "category": "רהיטים"
+  },
+  {
+   "name": "כסיויים למזונים",
+   "unitKg": 0.5,
+   "category": "ציוד כללי לבית"
+  },
+  {
+   "name": "מזרן",
+   "unitKg": 30,
+   "category": "רהיטים"
+  },
+  {
+   "name": "כיריים גז",
+   "unitKg": 10,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "חלב",
+   "unitKg": 1,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "מיקרוגל",
+   "unitKg": 15,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "נדנדה לתינוק",
+   "unitKg": 7,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "קלמר",
+   "unitKg": 0.5,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "ערכת ציוד אדריכלות ושרטוט",
+   "unitKg": 4,
+   "category": "ציוד בית ספרי"
+  },
+  {
+   "name": "כיסוי מגן לטלפון",
+   "unitKg": 0.1,
+   "category": "ציוד אישי"
+  },
+  {
+   "name": "מטבח שלם",
+   "unitKg": 600,
+   "category": "רהיטים"
+  },
+  {
+   "name": "קומקום חשמלי",
+   "unitKg": 1,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "שידת מיטה",
+   "unitKg": 18,
+   "category": null
+  },
+  {
+   "name": "תנור אפיה משולב כיריים",
+   "unitKg": 50,
+   "category": "אלקטרוניקה"
+  },
+  {
+   "name": "עגלת תינוק",
+   "unitKg": 10,
+   "category": "ילדים/תינוקות"
+  },
+  {
+   "name": "תיקים לנשים",
+   "unitKg": 3,
+   "category": "בגדים"
+  }
+ ]
+}

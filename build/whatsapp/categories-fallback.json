@@ -1,0 +1,19 @@
+{
+  "_comment": "14 rows in the Airtable catalog have no קטגוריה, so they fell into 'אחר' and skewed the category breakdown. These are display-only fallbacks used by build-exp.js — the Airtable catalog itself is never modified.",
+  "map": {
+    "שולחן סלון": "רהיטים",
+    "שידת מיטה": "רהיטים",
+    "מזרן יחיד": "רהיטים",
+    "מזרן זוגי": "רהיטים",
+    "לוחות גבס": "רהיטים",
+    "לוחות חיפוי": "רהיטים",
+    "ברזל גבס": "רהיטים",
+    "גליל בד": "ציוד כללי לבית",
+    "מסילות לווילון": "ציוד כללי לבית",
+    "מכונת תפירה": "אלקטרוניקה",
+    "בלנדר": "אלקטרוניקה",
+    "מסחטת פירות": "אלקטרוניקה",
+    "שואב שוטף": "אלקטרוניקה",
+    "אופניים": "ציוד אישי"
+  }
+}
