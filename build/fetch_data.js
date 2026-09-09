@@ -244,6 +244,15 @@ async function fetchSocial() {
       cum -= followsDaily[k].value;
     }
 
+    // Page Insights needs read_insights, which is separate from
+    // pages_read_engagement. Without it every /insights call returns an empty
+    // data array rather than an error, so the dashboard quietly shows zeros and
+    // flat charts — say so loudly instead.
+    if (!followsSeries.length && !engagementTrend.length) {
+      console.warn('⚠️ Page Insights returned nothing — token is probably missing '
+        + 'read_insights. Followers/posts still work; trends and 28-day metrics will be 0.');
+    }
+
     facebook = {
       followsSeries,
       followerTrend,
