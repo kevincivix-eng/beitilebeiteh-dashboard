@@ -13,3 +13,6 @@ EVENT-*.csv
 # Raw WhatsApp exports: ~3.8GB of media plus private phone numbers and personal
 # messages. Never commit — the parsed, redacted aggregates live in data/experimental/.
 /whatsapp/
+
+# Local-only credential helpers — never commit (they handle live tokens)
+*.local.html

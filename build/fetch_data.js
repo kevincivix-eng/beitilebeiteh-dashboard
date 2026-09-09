@@ -260,16 +260,49 @@ async function fetchSocial() {
     };
 
     // ---- Instagram ----
+    // Isolated on purpose: an Instagram problem must never discard the Facebook
+    // data we already fetched successfully. Before this guard, a bad IG id threw
+    // out of the whole social block and the dashboard silently kept a stale
+    // snapshot even though Facebook was fine.
     let instagram = null;
-    if (META_IG) {
-      const ig = await g(`${META_IG}`, { fields: 'followers_count,media_count,username' });
+    if (META_IG) try {
+      // Probe the node first so a misconfigured id gives a useful message
+      // instead of "nonexisting field (followers_count)".
+      const probe = await g(`${META_IG}`, { fields: 'id' }).catch((e) => ({ error: e.message }));
+      if (probe.error) {
+        throw new Error(`META_IG_USER_ID לא נגיש: ${probe.error}`);
+      }
+      const ig = await g(`${META_IG}`, { fields: 'followers_count,media_count,username' })
+        .catch(async (e) => {
+          // Not an IG Business account node — say what it actually is.
+          const what = await g(`${META_IG}`, { fields: 'name,username' }).catch(() => ({}));
+          throw new Error(`${e.message} — הצומת הזה אינו חשבון אינסטגרם עסקי`
+            + (what.name ? ` (נראה כמו: "${what.name}")` : ''));
+        });
+      // Account insights: 'days_28' was retired for these metrics and now errors
+      // with "(#100) periods (days_28) are incompatible with the metric (reach)".
+      // The accepted shape is period=day + metric_type=total_value, with an
+      // explicit since/until window to aggregate over — verified against the
+      // live account (reach/profile_views/accounts_engaged all return values).
+      const igSince = Math.floor((Date.now() - 28 * 864e5) / 1000);
+      const igUntil = Math.floor(Date.now() / 1000);
       const igIns = await g(`${META_IG}/insights`, {
-        metric: 'reach,profile_views,accounts_engaged', period: 'days_28', metric_type: 'total_value',
-      }).catch(() => ({ data: [] }));
-      const igMediaRaw = await g(`${META_IG}/media`, {
-        fields: 'caption,media_type,permalink,thumbnail_url,media_url,timestamp,like_count,comments_count,insights.metric(reach,saved,shares)',
-        limit: '12',
-      }).catch(() => ({ data: [] }));
+        metric: 'reach,profile_views,accounts_engaged',
+        period: 'day', metric_type: 'total_value', since: igSince, until: igUntil,
+      }).catch((e) => { console.warn('   ⚠️ IG account insights:', e.message); return { data: [] }; });
+
+      // Per-media insights are a separate permission surface from the media
+      // fields themselves, so fall back to plain media rather than losing the
+      // posts entirely when insights are refused (same tiering as the FB side).
+      const IG_MEDIA = 'caption,media_type,permalink,thumbnail_url,media_url,timestamp,like_count,comments_count';
+      let igMediaRaw = await g(`${META_IG}/media`, {
+        fields: `${IG_MEDIA},insights.metric(reach,saved,shares)`, limit: '12',
+      }).catch((e) => ({ error: { message: e.message } }));
+      if (igMediaRaw.error) {
+        console.warn('   ⚠️ IG media insights unavailable, falling back:', igMediaRaw.error.message);
+        igMediaRaw = await g(`${META_IG}/media`, { fields: IG_MEDIA, limit: '12' })
+          .catch(() => ({ data: [] }));
+      }
       const igMedia = (igMediaRaw.data || []).map((m) => {
         const ins = (m.insights && m.insights.data) || [];
         const reach = insightVal(ins, 'reach');
@@ -289,6 +322,7 @@ async function fetchSocial() {
       };
       instagram = {
         account: {
+          username: ig.username || null,
           followers: ig.followers_count || 0,
           reach28: igTotal('reach'),
           engagement28: igTotal('accounts_engaged'),
@@ -296,6 +330,9 @@ async function fetchSocial() {
         },
         media: igMedia,
       };
+    } catch (e) {
+      console.warn('⚠️ Instagram skipped (Facebook data kept):', e.message);
+      instagram = null;
     }
 
     console.log(`✅ Social: FB followers=${facebook.page.followers}, posts=${facebook.posts.length}` +
