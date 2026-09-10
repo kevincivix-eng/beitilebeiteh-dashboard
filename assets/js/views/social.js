@@ -204,8 +204,9 @@ const SocialView = (() => {
     const hasIg = followerData.some((x) => x.ig != null);
     const radius = (key) => (followerData.filter((x) => x[key] != null).length > 20 ? 0 : 3);
 
-    // Instagram (~2,200) and Facebook (~70) differ by 30x; on one axis the
-    // Facebook line would flatten onto zero, so each network gets its own axis.
+    // Both networks share one "follower count" axis on purpose. Instagram
+    // (~2,200) dwarfs Facebook (~70), so the Facebook line sits near zero —
+    // that IS the real comparison, and a second axis would hide it.
     const FB_C = '#4267B2', IG_C = '#C13584';
     const axisFont = { family: 'Heebo' };
     charts.push(new Chart(document.getElementById('socialFollowersChart'), {
@@ -216,7 +217,7 @@ const SocialView = (() => {
           { label: 'פייסבוק', data: followerData.map((x) => x.fb ?? null), yAxisID: 'y',
             borderColor: FB_C, backgroundColor: FB_C + '33', tension: 0.35, fill: !hasIg,
             pointRadius: radius('fb'), borderWidth: 2 },
-          ...(hasIg ? [{ label: 'אינסטגרם', data: followerData.map((x) => x.ig ?? null), yAxisID: 'y1',
+          ...(hasIg ? [{ label: 'אינסטגרם', data: followerData.map((x) => x.ig ?? null), yAxisID: 'y',
             borderColor: IG_C, backgroundColor: IG_C + '22', tension: 0.35, fill: false,
             pointRadius: radius('ig'), borderWidth: 2 }] : []),
         ],
@@ -227,12 +228,9 @@ const SocialView = (() => {
         plugins: { legend: { position: 'bottom', labels: { font: axisFont } } },
         scales: {
           x: { ticks: { font: axisFont, maxTicksLimit: 8 } },
-          y: { position: 'left',
-            title: { display: hasIg, text: 'פייסבוק', color: FB_C, font: axisFont },
-            ticks: { font: axisFont, color: hasIg ? FB_C : undefined } },
-          ...(hasIg ? { y1: { position: 'right', grid: { drawOnChartArea: false },
-            title: { display: true, text: 'אינסטגרם', color: IG_C, font: axisFont },
-            ticks: { font: axisFont, color: IG_C } } } : {}),
+          y: { position: 'left', beginAtZero: true,
+            title: { display: true, text: 'מספר עוקבים', font: axisFont },
+            ticks: { font: axisFont } },
         },
       },
     }));
