@@ -248,6 +248,43 @@ async function fetchSocial() {
         engagement: rich ? (likes || 0) + (comments || 0) + shares : shares,
       };
     });
+    // ---- TEMPORARY PROBE (2026-09-10): which Facebook reach replacements exist? ----
+    // page_impressions_unique / post_impressions_unique (reach) return #100 in
+    // v21. Meta moved to "views" metrics. Try each candidate on its own (one
+    // unknown metric fails the whole request) and only LOG the result — nothing
+    // is displayed until we know which ones are real. Remove once decided.
+    try {
+      const pSince = Math.floor((Date.now() - 28 * 864e5) / 1000);
+      const pUntil = Math.floor(Date.now() / 1000);
+      const describe = (res) => {
+        const m = (res.data || [])[0];
+        if (!m) return 'empty';
+        const tv = m.total_value && m.total_value.value;
+        if (tv != null) return `total_value=${tv}`;
+        const vals = (m.values || []).map((v) => v.value).filter((v) => typeof v === 'number');
+        if (!vals.length) return 'no numeric values';
+        return `${vals.length} values, last=${vals[vals.length - 1]}, sum=${vals.reduce((a, b) => a + b, 0)}`;
+      };
+      const clean = (e) => '✗ ' + e.message.replace(/^[^:]*: /, '').slice(0, 110);
+      const PAGE_CANDIDATES = ['page_total_media_view_unique', 'page_media_view', 'page_impressions_unique', 'page_impressions'];
+      for (const metric of PAGE_CANDIDATES) {
+        for (const shape of [
+          { label: 'day+range', p: { period: 'day', since: pSince, until: pUntil } },
+          { label: 'days_28', p: { period: 'days_28' } },
+        ]) {
+          const r = await g(`${pageId}/insights`, { metric, ...shape.p }).then((x) => '✓ ' + describe(x)).catch(clean);
+          console.log(`🔎 FB page ${metric} [${shape.label}]: ${r}`);
+        }
+      }
+      const POST_CANDIDATES = ['post_total_media_view_unique', 'post_media_view', 'post_impressions_unique'];
+      for (const post of (fbPostsRaw.data || []).slice(0, 2)) {
+        for (const metric of POST_CANDIDATES) {
+          const r = await g(`${post.id}/insights`, { metric }).then((x) => '✓ ' + describe(x)).catch(clean);
+          console.log(`🔎 FB post ${(post.created_time || '').slice(0, 10)} ${metric}: ${r}`);
+        }
+      }
+    } catch (e) { console.warn('🔎 FB views probe failed:', e.message); }
+
     // reconstruct a daily follower trend by walking today's count backward
     // through the daily net-follow series.
     const followersNow = pg.followers_count || pg.fan_count || 0;
