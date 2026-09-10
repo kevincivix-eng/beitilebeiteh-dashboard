@@ -39,7 +39,9 @@ const SocialView = (() => {
         .slice(0, 4).map(([k, v]) => `${REACT_EMOJI[k] || '👍'}${fmt(v)}`).join(' ')
       : '';
     const meta = [
-      m('👁', p.reach), m('▶️', p.plays || p.videoViews), m('⏱', p.avgWatchSec, ' שנ׳'),
+      p.reach != null
+        ? `<span title="${net === 'facebook' ? 'צופים ייחודיים' : 'Reach'}">👁 <b>${fmt(p.reach)}</b></span>` : '',
+      m('▶️', p.plays || p.videoViews), m('⏱', p.avgWatchSec, ' שנ׳'),
       p.watchMin != null ? `<span>🎬 <b>${fmt(p.watchMin)} דק׳</b></span>` : '',
       reacts ? `<span>${reacts}</span>` : m('❤️', p.likes),
       m('💬', p.comments), m('🔖', p.saves), m('🔁', p.shares), m('🖱', p.clicks),
@@ -64,7 +66,12 @@ const SocialView = (() => {
       const avg = posts.length ? Math.round(totalEng / posts.length) : 0;
       kpiEl.innerHTML =
         kpiCard(fmt(acct.followers), 'עוקבים', true) +
-        (acct.reach28 != null ? kpiCard(fmt(acct.reach28), 'Reach (28 ימים)') : '') +
+        // Facebook no longer reports reach; its replacement counts unique VIEWERS
+        // of the page's content — close to reach, but not the same definition,
+        // so it is labelled for what it is rather than as "Reach".
+        (acct.reach28 != null
+          ? kpiCard(fmt(acct.reach28), net === 'facebook' ? 'צופים ייחודיים (28 ימים)' : 'Reach (28 ימים)')
+          : '') +
         (acct.engagement28 ? kpiCard(fmt(acct.engagement28), 'מעורבות (28 ימים)', true) : '') +
         (acct.profileVisits28 ? kpiCard(fmt(acct.profileVisits28), 'כניסות לפרופיל (28 ימים)') : '') +
         (acct.newFollows28 != null ? kpiCard(fmt(acct.newFollows28), 'עוקבים חדשים (28 ימים)') : '') +

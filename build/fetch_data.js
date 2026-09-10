@@ -195,6 +195,9 @@ async function fetchSocial() {
     const seriesOf = (res) => (((res.data || [])[0] || {}).values || [])
       .map((v) => ({ date: dayMeasured(v.end_time), value: v.value || 0 }))
       .filter((x) => x.date);
+    const pViewers = await g(`${pageId}/insights`, {
+      metric: 'page_total_media_view_unique,page_media_view', period: 'days_28',
+    }).catch((e) => { console.warn('   ⚠️ FB page viewers:', e.message); return { data: [] }; });
     const pFollows = await g(`${pageId}/insights`, {
       metric: 'page_daily_follows_unique', period: 'day', since, until,
     }).catch(() => ({ data: [] }));
@@ -211,8 +214,21 @@ async function fetchSocial() {
     // (post reach/impressions are deprecated in v21, so not requested.)
     const RICH = 'created_time,message,permalink_url,full_picture,status_type,shares,reactions.summary(true),comments.summary(true)';
     const INS = RICH + ',insights.metric(post_clicks,post_video_views,post_video_avg_time_watched,post_video_view_time,post_reactions_by_type_total)';
-    let tier = 'ins';
-    let fbPostsRaw = await g(`${pageId}/posts`, { fields: INS, limit: '15' }).catch((e) => ({ error: { message: e.message } }));
+    // Facebook retired post reach (post_impressions_unique -> #100 in v21). Its
+    // replacement is the "views" family: post_total_media_view_unique = unique
+    // viewers (closest to reach), post_media_view = total views. Probed against
+    // the live page 2026-09-10. Tried as an extra tier so that if Meta ever
+    // rejects them, posts fall back to the existing fields rather than losing
+    // clicks/video data.
+    const INS_V = INS.replace('post_reactions_by_type_total)',
+      'post_reactions_by_type_total,post_total_media_view_unique,post_media_view)');
+    let tier = 'insv';
+    let fbPostsRaw = await g(`${pageId}/posts`, { fields: INS_V, limit: '15' }).catch((e) => ({ error: { message: e.message } }));
+    if (!fbPostsRaw || fbPostsRaw.error) {
+      if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB post viewers unavailable:', fbPostsRaw.error.message);
+      tier = 'ins';
+      fbPostsRaw = await g(`${pageId}/posts`, { fields: INS, limit: '15' }).catch((e) => ({ error: { message: e.message } }));
+    }
     if (!fbPostsRaw || fbPostsRaw.error) {
       if (fbPostsRaw && fbPostsRaw.error) console.warn('⚠️ FB posts+insights unavailable:', fbPostsRaw.error.message);
       tier = 'rich';
@@ -226,21 +242,25 @@ async function fetchSocial() {
       }).catch((e) => { console.warn('⚠️ FB posts error:', e.message); return { data: [] }; });
     }
     const rich = tier !== 'basic';
+    const hasIns = tier === 'ins' || tier === 'insv';
     const fbPosts = (fbPostsRaw.data || []).map((p) => {
       const likes = rich && p.reactions && p.reactions.summary ? p.reactions.summary.total_count : null;
       const comments = rich && p.comments && p.comments.summary ? p.comments.summary.total_count : null;
       const shares = p.shares ? p.shares.count : 0;
       const ins = (p.insights && p.insights.data) || [];
-      const clicks = tier === 'ins' ? insightVal(ins, 'post_clicks') : null;
-      const vv = tier === 'ins' ? insightVal(ins, 'post_video_views') : 0;
-      const avgMs = tier === 'ins' ? insightVal(ins, 'post_video_avg_time_watched') : 0;
-      const viewMs = tier === 'ins' ? insightVal(ins, 'post_video_view_time') : 0;
-      const reactObj = tier === 'ins' ? insightVal(ins, 'post_reactions_by_type_total') : null;
+      const clicks = hasIns ? insightVal(ins, 'post_clicks') : null;
+      const vv = hasIns ? insightVal(ins, 'post_video_views') : 0;
+      const avgMs = hasIns ? insightVal(ins, 'post_video_avg_time_watched') : 0;
+      const viewMs = hasIns ? insightVal(ins, 'post_video_view_time') : 0;
+      const reactObj = hasIns ? insightVal(ins, 'post_reactions_by_type_total') : null;
       return {
         id: p.id, date: (p.created_time || '').slice(0, 10), ts: p.created_time || null,
         text: p.message || '', link: p.permalink_url, image: p.full_picture || null,
         type: p.status_type || null,
-        reach: null, likes, comments, shares, clicks,
+        // 'reach' here = unique viewers — Facebook's replacement for post reach
+        reach: tier === 'insv' ? (insightVal(ins, 'post_total_media_view_unique') || null) : null,
+        views: tier === 'insv' ? (insightVal(ins, 'post_media_view') || null) : null,
+        likes, comments, shares, clicks,
         reactions: reactObj && typeof reactObj === 'object' ? reactObj : null,
         videoViews: vv > 0 ? vv : null,
         avgWatchSec: avgMs > 0 ? Math.round(avgMs / 100) / 10 : null,
@@ -248,43 +268,6 @@ async function fetchSocial() {
         engagement: rich ? (likes || 0) + (comments || 0) + shares : shares,
       };
     });
-    // ---- TEMPORARY PROBE (2026-09-10): which Facebook reach replacements exist? ----
-    // page_impressions_unique / post_impressions_unique (reach) return #100 in
-    // v21. Meta moved to "views" metrics. Try each candidate on its own (one
-    // unknown metric fails the whole request) and only LOG the result — nothing
-    // is displayed until we know which ones are real. Remove once decided.
-    try {
-      const pSince = Math.floor((Date.now() - 28 * 864e5) / 1000);
-      const pUntil = Math.floor(Date.now() / 1000);
-      const describe = (res) => {
-        const m = (res.data || [])[0];
-        if (!m) return 'empty';
-        const tv = m.total_value && m.total_value.value;
-        if (tv != null) return `total_value=${tv}`;
-        const vals = (m.values || []).map((v) => v.value).filter((v) => typeof v === 'number');
-        if (!vals.length) return 'no numeric values';
-        return `${vals.length} values, last=${vals[vals.length - 1]}, sum=${vals.reduce((a, b) => a + b, 0)}`;
-      };
-      const clean = (e) => '✗ ' + e.message.replace(/^[^:]*: /, '').slice(0, 110);
-      const PAGE_CANDIDATES = ['page_total_media_view_unique', 'page_media_view', 'page_impressions_unique', 'page_impressions'];
-      for (const metric of PAGE_CANDIDATES) {
-        for (const shape of [
-          { label: 'day+range', p: { period: 'day', since: pSince, until: pUntil } },
-          { label: 'days_28', p: { period: 'days_28' } },
-        ]) {
-          const r = await g(`${pageId}/insights`, { metric, ...shape.p }).then((x) => '✓ ' + describe(x)).catch(clean);
-          console.log(`🔎 FB page ${metric} [${shape.label}]: ${r}`);
-        }
-      }
-      const POST_CANDIDATES = ['post_total_media_view_unique', 'post_media_view', 'post_impressions_unique'];
-      for (const post of (fbPostsRaw.data || []).slice(0, 2)) {
-        for (const metric of POST_CANDIDATES) {
-          const r = await g(`${post.id}/insights`, { metric }).then((x) => '✓ ' + describe(x)).catch(clean);
-          console.log(`🔎 FB post ${(post.created_time || '').slice(0, 10)} ${metric}: ${r}`);
-        }
-      }
-    } catch (e) { console.warn('🔎 FB views probe failed:', e.message); }
-
     // reconstruct a daily follower trend by walking today's count backward
     // through the daily net-follow series.
     const followersNow = pg.followers_count || pg.fan_count || 0;
@@ -310,7 +293,11 @@ async function fetchSocial() {
       engagementTrend,
       page: {
         followers: pg.followers_count || pg.fan_count || 0,
-        reach28: null, // page reach/impressions deprecated in Graph v21
+        // page_impressions_unique (reach) is gone in v21; page_total_media_view_unique
+        // (28-day unique viewers) is its replacement. days_28 returns a rolling
+        // 28-day value — take the latest, never sum (that would count people twice).
+        reach28: insightVal(pViewers.data, 'page_total_media_view_unique') || null,
+        views28: insightVal(pViewers.data, 'page_media_view') || null,
         // days_28 metrics are rolling 28-day totals — take the latest value, not a sum
         engagement28: insightVal(pIns.data, 'page_post_engagements'),
         profileVisits28: insightVal(pViews.data, 'page_views_total'),
@@ -423,7 +410,7 @@ async function fetchSocial() {
       instagram = null;
     }
 
-    console.log(`✅ Social: FB followers=${facebook.page.followers}, posts=${facebook.posts.length}` +
+    console.log(`✅ Social: FB followers=${facebook.page.followers}, viewers28=${facebook.page.reach28}, posts=${facebook.posts.length}` +
       (instagram ? `; IG followers=${instagram.account.followers}, media=${instagram.media.length}, trend=${instagram.followerTrend.length}d` : ''));
     return { updated: new Date().toISOString(), facebook, instagram, tiktok: null };
   } catch (e) {
