@@ -182,24 +182,22 @@ const SocialView = (() => {
       kpiCard(fmt(allPosts.length), 'פוסטים אחרונים');
 
     const hist = data.socialhistory || [];
-    // Prefer the real 90-day daily trends from Meta; fall back to the accumulating
-    // snapshot history only if the trend isn't available yet.
-    const fTrend = (fb.followerTrend && fb.followerTrend.length >= 2) ? fb.followerTrend : null;
-    const iTrend = (ig.followerTrend && ig.followerTrend.length >= 2) ? ig.followerTrend : null;
-
-    // One row per date, Facebook and Instagram merged. The Facebook trend spans
-    // 90 days but Instagram's API only gives 30, so the Instagram line starts
-    // partway along — a gap is truthful, padding it would invent history.
+    // History is the long-running record: the build persists every
+    // reconstructed point into it, so it keeps days that have since rolled out
+    // of Meta's 90/30-day window. The live trend only fills dates the history
+    // doesn't have yet. Observed values always win over reconstructed ones.
     const byDate = new Map();
-    const put = (date, key, v) => {
-      const r = byDate.get(date) || { date };
-      r[key] = v;
-      byDate.set(date, r);
-    };
-    (fTrend || hist.map((h) => ({ date: h.date, followers: h.fb_followers })))
-      .forEach((x) => put(x.date, 'fb', x.followers));
-    (iTrend || hist.filter((h) => h.ig_followers).map((h) => ({ date: h.date, followers: h.ig_followers })))
-      .forEach((x) => put(x.date, 'ig', x.followers));
+    const fill = (points, key) => (points || []).forEach((p) => {
+      if (!p || !p.date || !(p.followers > 0)) return;
+      const r = byDate.get(p.date) || { date: p.date };
+      if (r[key] > 0) return;
+      r[key] = p.followers;
+      byDate.set(p.date, r);
+    });
+    fill(hist.map((h) => ({ date: h.date, followers: h.fb_followers })), 'fb');
+    fill(hist.map((h) => ({ date: h.date, followers: h.ig_followers })), 'ig');
+    fill(fb.followerTrend, 'fb');
+    fill(ig.followerTrend, 'ig');
     const followerData = [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
     const hasIg = followerData.some((x) => x.ig != null);
     const radius = (key) => (followerData.filter((x) => x[key] != null).length > 20 ? 0 : 3);
@@ -252,7 +250,8 @@ const SocialView = (() => {
     const engTrend = (fb.engagementTrend && fb.engagementTrend.length >= 2) ? fb.engagementTrend : null;
     const vsRows = engTrend
       ? engTrend.map((x) => ({ date: x.date, eng: x.engagement }))
-      : hist.map((h) => ({ date: h.date, eng: (h.fb_engagement || 0) + (h.ig_engagement || 0) }));
+      : hist.filter((h) => h.fb_engagement != null || h.ig_engagement != null)
+        .map((h) => ({ date: h.date, eng: (h.fb_engagement || 0) + (h.ig_engagement || 0) }));
     const many = vsRows.length > 20;
     charts.push(new Chart(document.getElementById('socialVsOrgChart'), {
       data: {

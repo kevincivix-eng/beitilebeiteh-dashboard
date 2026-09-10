@@ -9,6 +9,20 @@
  */
 const fs = require('fs');
 const { mergeWhatsApp } = require('./merge_whatsapp');
+const { mergeSocialHistory } = require('./social_history');
+
+// Meta labels a period=day insight value with the END of the day it measures:
+// end_time 2026-09-10T07:00:00+0000 is the value for Sep 9. Using end_time's
+// date as-is dated every point a day late and produced a row for tomorrow.
+// Label points by the day they measure, so reconstructed history lines up with
+// the observed daily snapshots.
+function dayMeasured(endTime) {
+  if (!endTime) return '';
+  const iso = String(endTime).replace(/([+-]\d{2})(\d{2})$/, '$1:$2'); // +0000 -> +00:00
+  const t = Date.parse(iso);
+  if (Number.isNaN(t)) return String(endTime).slice(0, 10);
+  return new Date(t - 864e5).toISOString().slice(0, 10);
+}
 const path = require('path');
 const https = require('https');
 
@@ -179,7 +193,7 @@ async function fetchSocial() {
     const since = Math.floor((Date.now() - 90 * 864e5) / 1000);
     const until = Math.floor(Date.now() / 1000);
     const seriesOf = (res) => (((res.data || [])[0] || {}).values || [])
-      .map((v) => ({ date: (v.end_time || '').slice(0, 10), value: v.value || 0 }))
+      .map((v) => ({ date: dayMeasured(v.end_time), value: v.value || 0 }))
       .filter((x) => x.date);
     const pFollows = await g(`${pageId}/insights`, {
       metric: 'page_daily_follows_unique', period: 'day', since, until,
@@ -315,7 +329,7 @@ async function fetchSocial() {
           .catch((e) => { console.warn('   ⚠️ IG follower_count:', e.message); return { data: [] }; });
       }
       const igDaily = (((igFc.data || [])[0] || {}).values || [])
-        .map((v) => ({ date: (v.end_time || '').slice(0, 10), value: v.value || 0 }))
+        .map((v) => ({ date: dayMeasured(v.end_time), value: v.value || 0 }))
         .filter((x) => x.date);
       const igFollowerTrend = [];
       let igCum = ig.followers_count || 0;
@@ -611,28 +625,30 @@ async function fetchSocial() {
       // CI builds into the Pages artifact and does NOT commit data back, so the
       // repo copy is only the demo seed. To accumulate our own daily series,
       // start from the LAST PUBLISHED history on the live site, then append today.
-      let hist = [];
-      try {
-        const live = await fetch('https://kevincivix-eng.github.io/beitilebeiteh-dashboard/data/social-history.json', { cache: 'no-store' });
-        if (live.ok) hist = await live.json();
-        console.log(`↪︎ social-history: loaded ${hist.length} rows from live site`);
-      } catch { /* live not reachable */ }
-      if (!hist.length) {
-        try { hist = JSON.parse(fs.readFileSync(histPath, 'utf8')); } catch { /* first run */ }
+      // This live copy is the ONLY place the history persists, so a transient
+      // failure here would silently truncate it to Meta's window. Retry first.
+      const LIVE_HIST = 'https://kevincivix-eng.github.io/beitilebeiteh-dashboard/data/social-history.json';
+      let hist = null;
+      for (let attempt = 1; attempt <= 3 && hist === null; attempt++) {
+        try {
+          const live = await fetch(LIVE_HIST, { cache: 'no-store' });
+          if (live.ok) hist = await live.json();
+          else console.warn(`   social-history: live fetch HTTP ${live.status} (attempt ${attempt})`);
+        } catch (e) { console.warn(`   social-history: live fetch failed (attempt ${attempt}): ${e.message}`); }
+        if (hist === null && attempt < 3) await new Promise((r) => setTimeout(r, 2000 * attempt));
       }
-      hist = (Array.isArray(hist) ? hist : []).filter((h) => !h.demo);
-      const fbP = socialData.facebook?.page || {};
-      const igA = socialData.instagram?.account || {};
+      if (hist === null) {
+        console.warn('⚠️ social-history: published history unreachable — starting from the repo copy; '
+          + "days older than Meta's window may be lost this run");
+        try { hist = JSON.parse(fs.readFileSync(histPath, 'utf8')); } catch { hist = []; }
+      } else {
+        console.log(`↪︎ social-history: loaded ${hist.length} rows from live site`);
+      }
       const today = new Date().toISOString().slice(0, 10);
-      const row = {
-        date: today,
-        fb_followers: fbP.followers || 0, fb_reach: fbP.reach28 || 0, fb_engagement: fbP.engagement28 || 0,
-        ig_followers: igA.followers || 0, ig_reach: igA.reach28 || 0, ig_engagement: igA.engagement28 || 0,
-      };
-      const i = hist.findIndex((h) => h.date === today);
-      if (i >= 0) hist[i] = row; else hist.push(row);
-      hist.sort((a, b) => a.date.localeCompare(b.date));
-      write('social-history.json', hist);
+      const merged = mergeSocialHistory(hist, socialData, today);
+      console.log(`   social-history: ${merged.hist.length} rows `
+        + `(persisted from trends: fb +${merged.filled.fb}, ig +${merged.filled.ig})`);
+      write('social-history.json', merged.hist);
     } catch (e) { console.warn('⚠️ social-history update failed:', e.message); }
   } else {
     console.log('↩︎ kept social.json / social-history.json snapshot');
