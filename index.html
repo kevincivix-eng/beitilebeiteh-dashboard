@@ -169,6 +169,13 @@
       <!-- instagram -->
       <div class="social-tab" id="socialTab-instagram" hidden>
         <div class="kpi-strip" id="igKpis"></div>
+        <div class="grid grid--2" style="margin-bottom:22px">
+          <div class="card"><h3 class="card__title"><span class="info-tip" title="המספר בסוגריים = כמה פוסטים מכל סוג. סוג שמבוסס על מעט פוסטים פחות אמין.">מעורבות ממוצעת לפי סוג תוכן<span class="info-tip__icon">ⓘ</span></span></h3><canvas id="igTypeChart"></canvas></div>
+          <div class="card"><h3 class="card__title">מתי הכי כדאי לפרסם (לפי יום)</h3><canvas id="igWeekdayChart"></canvas></div>
+        </div>
+        <div class="card" style="margin-bottom:22px"><h3 class="card__title"><span class="info-tip" title="שיעור מעורבות = (לייקים + תגובות + שמירות + שיתופים) ÷ reach × 100. כלומר: מכל 100 אנשים שראו את הפוסט, כמה הגיבו אליו. כך אפשר להשוות בין פוסטים שהגיעו לכמויות שונות של אנשים. כל עמודה היא פוסט, לפי סדר הפרסום, בצבע של סוג התוכן.">שיעור מעורבות לפי פוסט<span class="info-tip__icon">ⓘ</span></span></h3><canvas id="igRateChart"></canvas></div>
+        <div class="card" style="margin-bottom:22px"><h3 class="card__title">מעורבות נטו לפי תאריך פרסום (לייקים · תגובות · שמירות · שיתופים)</h3><canvas id="igEngagementByDateChart"></canvas></div>
+        <div class="card" id="igFollowsWrap" style="margin-bottom:22px"><h3 class="card__title">גידול עוקבים יומי</h3><canvas id="igFollowsChart"></canvas></div>
         <div class="grid grid--2">
           <div class="card"><h3 class="card__title">פרסומים אחרונים</h3><div class="post-list" id="igRecent"></div></div>
           <div class="card"><h3 class="card__title">הפרסומים המובילים (לפי מעורבות)</h3><div class="post-list" id="igTop"></div></div>

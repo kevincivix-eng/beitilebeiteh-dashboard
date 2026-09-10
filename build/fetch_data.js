@@ -368,14 +368,37 @@ async function fetchSocial() {
       // Per-media insights are a separate permission surface from the media
       // fields themselves, so fall back to plain media rather than losing the
       // posts entirely when insights are refused (same tiering as the FB side).
+      // 50 posts (was 12) so the weekday and content-type charts rest on
+      // months of posts, not a few weeks. media_product_type tells Reels
+      // (REELS) from feed videos — media_type reports both as VIDEO.
+      // Tiers fall back so a refused field costs that field, not the posts.
       const IG_MEDIA = 'caption,media_type,permalink,thumbnail_url,media_url,timestamp,like_count,comments_count';
-      let igMediaRaw = await g(`${META_IG}/media`, {
-        fields: `${IG_MEDIA},insights.metric(reach,saved,shares)`, limit: '12',
-      }).catch((e) => ({ error: { message: e.message } }));
-      if (igMediaRaw.error) {
-        console.warn('   ⚠️ IG media insights unavailable, falling back:', igMediaRaw.error.message);
-        igMediaRaw = await g(`${META_IG}/media`, { fields: IG_MEDIA, limit: '12' })
-          .catch(() => ({ data: [] }));
+      const IG_INS = 'insights.metric(reach,saved,shares)';
+      const IG_WANT = 50;
+      const igTiers = [
+        `${IG_MEDIA},media_product_type,${IG_INS}`,
+        `${IG_MEDIA},${IG_INS}`,
+        `${IG_MEDIA},media_product_type`,
+        IG_MEDIA,
+      ];
+      let igMediaRaw = { data: [] };
+      tiers: for (const fields of igTiers) {
+        // nested insights on a big page can trip "reduce the amount of data" — retry smaller
+        for (const limit of ['50', '25']) {
+          const first = await g(`${META_IG}/media`, { fields, limit }).catch((e) => ({ error: { message: e.message } }));
+          if (first.error) { console.warn(`   ⚠️ IG media [${limit}] failed:`, first.error.message); continue; }
+          const items = [...(first.data || [])];
+          let next = first.paging && first.paging.next;
+          while (next && items.length < IG_WANT) {
+            const page = await fetch(next).then((r) => r.json()).catch(() => ({}));
+            if (page.error || !page.data) break;
+            items.push(...page.data);
+            next = page.paging && page.paging.next;
+          }
+          igMediaRaw = { data: items.slice(0, IG_WANT) };
+          if (fields !== igTiers[0]) console.warn(`   ⚠️ IG media using reduced fields: ${fields}`);
+          break tiers;
+        }
       }
       const igMedia = (igMediaRaw.data || []).map((m) => {
         const ins = (m.insights && m.insights.data) || [];
@@ -384,7 +407,8 @@ async function fetchSocial() {
         const shares = insightVal(ins, 'shares');
         const likes = m.like_count || 0, comments = m.comments_count || 0;
         return {
-          id: m.id, date: (m.timestamp || '').slice(0, 10), type: m.media_type,
+          id: m.id, date: (m.timestamp || '').slice(0, 10), ts: m.timestamp || null,
+          type: m.media_type, productType: m.media_product_type || null,
           text: m.caption || '', link: m.permalink,
           image: m.thumbnail_url || m.media_url || null,
           reach, likes, comments, saves, shares, engagement: likes + comments + saves + shares,
@@ -403,8 +427,15 @@ async function fetchSocial() {
           profileViews28: igTotal('profile_views'),
         },
         followerTrend: igFollowerTrend,
+        // daily new followers — same shape as facebook.followsSeries
+        followsSeries: igDaily.map((d) => ({ date: d.date, follows: d.value })),
         media: igMedia,
       };
+      const igTypes = {};
+      igMedia.forEach((x) => { const k = x.productType === 'REELS' ? 'REELS' : x.type; igTypes[k] = (igTypes[k] || 0) + 1; });
+      console.log(`   IG media: ${igMedia.length} posts ${JSON.stringify(igTypes)}, `
+        + `with reach ${igMedia.filter((x) => x.reach > 0).length}, `
+        + `span ${igMedia.length ? igMedia[igMedia.length - 1].date + ' → ' + igMedia[0].date : '-'}`);
     } catch (e) {
       console.warn('⚠️ Instagram skipped (Facebook data kept):', e.message);
       instagram = null;

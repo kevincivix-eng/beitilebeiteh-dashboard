@@ -273,3 +273,11 @@ html, body {
   .map-legend { max-height: 60%; overflow: auto; }
   .view__head h1 { font-size: 22px; }
 }
+
+/* ---------- Hover explanations (ⓘ) on metric titles ---------- */
+.info-tip { cursor: help; }
+.info-tip__icon {
+  display: inline-block; margin-inline-start: 5px; font-size: 13px; font-weight: 400;
+  color: var(--muted); vertical-align: 1px; transition: color .15s;
+}
+.info-tip:hover .info-tip__icon { color: var(--pink-deep); }

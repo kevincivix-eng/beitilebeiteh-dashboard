@@ -15,12 +15,35 @@ const SocialView = (() => {
   const shortDate = (s) => { const d = new Date(s); return isNaN(d) ? s : d.toLocaleDateString('he-IL', { day: 'numeric', month: 'short' }); };
   const engRate = (eng, reach) => (reach ? Math.round((eng / reach) * 1000) / 10 : 0);
 
+  // Engagement rate: of the people a post reached, what share reacted to it.
+  // Lets posts with very different reach be compared on quality, not size.
+  const ER_TIP = 'שיעור מעורבות = (לייקים + תגובות + שמירות + שיתופים) ÷ reach × 100. '
+    + 'כלומר: מכל 100 אנשים שראו את התוכן, כמה הגיבו אליו. '
+    + 'כך אפשר להשוות בין פוסטים שהגיעו לכמויות שונות של אנשים.';
+  const infoTip = (text, tip) =>
+    `<span class="info-tip" title="${tip}">${text}<span class="info-tip__icon">ⓘ</span></span>`;
+  // weighted: total engagement ÷ total reach, so one tiny-reach post can't skew it
+  const weightedRate = (posts) => {
+    const withReach = posts.filter((p) => p.reach > 0);
+    const reach = withReach.reduce((a, p) => a + p.reach, 0);
+    return reach ? Math.round((withReach.reduce((a, p) => a + (p.engagement || 0), 0) / reach) * 1000) / 10 : null;
+  };
+
   let charts = [];
   const destroyCharts = () => { charts.forEach((c) => c.destroy()); charts = []; };
 
   const REACT_EMOJI = { like: '👍', love: '❤️', care: '🥰', haha: '😂', wow: '😮', sorry: '😢', anger: '😡' };
   const contentType = (p, net) => {
-    if (net === 'instagram') return p.type === 'REEL' ? 'ריל' : p.type === 'CAROUSEL_ALBUM' ? 'אלבום' : 'תמונה';
+    if (net === 'instagram') {
+      // media_type says VIDEO for Reels and feed videos alike (and never
+      // "REEL"), so every video used to be labelled "תמונה". media_product_type
+      // is what tells a Reel apart.
+      if (p.productType === 'REELS' || p.type === 'REEL') return 'ריל'; // REEL: legacy demo data
+      if (p.type === 'VIDEO') return 'וידאו';
+      if (p.type === 'CAROUSEL_ALBUM') return 'קרוסלה';
+      if (p.type === 'IMAGE') return 'תמונה';
+      return 'פוסט';
+    }
     const t = p.type || '';
     if (/video/i.test(t)) return 'וידאו';
     if (/photo/i.test(t)) return 'תמונה';
@@ -45,6 +68,8 @@ const SocialView = (() => {
       p.watchMin != null ? `<span>🎬 <b>${fmt(p.watchMin)} דק׳</b></span>` : '',
       reacts ? `<span>${reacts}</span>` : m('❤️', p.likes),
       m('💬', p.comments), m('🔖', p.saves), m('🔁', p.shares), m('🖱', p.clicks),
+      net === 'instagram' && p.reach > 0
+        ? `<span title="שיעור מעורבות">📊 <b>${engRate(p.engagement || 0, p.reach)}%</b></span>` : '',
     ].filter(Boolean).join('');
     return `<a class="post-card" href="${p.link || '#'}" target="_blank" rel="noopener">
       <div class="post-card__thumb">${thumb}</div>
@@ -76,6 +101,10 @@ const SocialView = (() => {
         (acct.profileVisits28 ? kpiCard(fmt(acct.profileVisits28), 'כניסות לפרופיל (28 ימים)') : '') +
         (acct.newFollows28 != null ? kpiCard(fmt(acct.newFollows28), 'עוקבים חדשים (28 ימים)') : '') +
         kpiCard(fmt(avg), 'ממוצע מעורבות לפוסט', true) +
+        (net === 'instagram' && weightedRate(posts) != null
+          ? kpiCard(weightedRate(posts) + '%', infoTip('שיעור מעורבות',
+            ER_TIP + ' כאן: סך המעורבות בפוסטים ÷ סך ה-reach שלהם.'))
+          : '') +
         kpiCard(fmt(posts.length), 'פוסטים אחרונים');
     } else {
       kpiEl.innerHTML = kpiCard('—', 'אין נתונים');
@@ -88,89 +117,173 @@ const SocialView = (() => {
       top.map((p) => postCard(p, net)).join('') || '<p class="post-card__date">אין פוסטים</p>';
   }
 
-  // Facebook-only insight charts: content-type comparison, posting-by-weekday,
-  // daily follower growth. Derived from the posts + followsSeries.
-  function renderFbInsights(data) {
-    const fb = (data.social || {}).facebook;
-    if (!fb) return;
-    const posts = fb.posts || [];
+  // ---- per-network insight charts: Facebook and Instagram share these builders ----
+  const TYPE_ORDER = ['ריל', 'וידאו', 'תמונה', 'קרוסלה', 'שיתוף', 'סטטוס', 'פוסט'];
+  // Resolved at call time: BRAND is defined in app.js, which loads AFTER this
+  // file — reading it while this module initialises throws and takes the
+  // whole social page down with it.
+  const typeColor = (t) => ({
+    'ריל': BRAND.pinkDeep, 'וידאו': BRAND.green, 'תמונה': BRAND.pink, 'קרוסלה': '#7fa37e',
+  })[t] || BRAND.pink;
+  const heebo = { family: 'Heebo' };
+  const mean = (a) => (a.length ? Math.round(a.reduce((x, y) => x + y, 0) / a.length) : 0);
+  const byTypeOrder = (a, b) => TYPE_ORDER.indexOf(a) - TYPE_ORDER.indexOf(b);
 
-    // content type → avg engagement
+  // content type -> average engagement. withCounts shows "(n)" posts per type
+  // and colours each type, so a type backed by 2 posts isn't read like one backed by 30.
+  function typeChart(canvasId, posts, net, withCounts) {
+    const el = document.getElementById(canvasId);
+    if (!el) return;
     const byType = {};
-    posts.forEach((p) => {
-      const t = contentType(p, 'facebook');
-      (byType[t] = byType[t] || []).push(p.engagement || 0);
-    });
-    const typeNames = Object.keys(byType);
-    charts.push(new Chart(document.getElementById('fbTypeChart'), {
+    posts.forEach((p) => { const t = contentType(p, net); (byType[t] = byType[t] || []).push(p.engagement || 0); });
+    const names = Object.keys(byType).sort(byTypeOrder);
+    charts.push(new Chart(el, {
       type: 'bar',
       data: {
-        labels: typeNames,
-        datasets: [{ label: 'ממוצע מעורבות', data: typeNames.map((t) => Math.round(byType[t].reduce((a, b) => a + b, 0) / byType[t].length)), backgroundColor: BRAND.pink, borderRadius: 6 }],
+        labels: names.map((t) => (withCounts ? `${t} (${byType[t].length})` : t)),
+        datasets: [{ label: 'ממוצע מעורבות', data: names.map((t) => mean(byType[t])),
+          backgroundColor: withCounts ? names.map((t) => typeColor(t)) : BRAND.pink, borderRadius: 6 }],
       },
-      options: { responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { family: 'Heebo' } } }, y: { ticks: { font: { family: 'Heebo' } } } } },
+      options: { responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: heebo } }, y: { ticks: { font: heebo } } } },
     }));
+  }
 
-    // posting by weekday → avg engagement (best time to post)
+  // posting weekday -> average engagement + number of posts (best time to post)
+  function weekdayChart(canvasId, posts) {
+    const el = document.getElementById(canvasId);
+    if (!el) return;
     const days = ['ראשון', 'שני', 'שלישי', 'רביעי', 'חמישי', 'שישי', 'שבת'];
     const byDay = days.map(() => []);
     posts.forEach((p) => { const d = new Date(p.ts || p.date); if (!isNaN(d)) byDay[d.getDay()].push(p.engagement || 0); });
-    charts.push(new Chart(document.getElementById('fbWeekdayChart'), {
+    charts.push(new Chart(el, {
       type: 'bar',
       data: {
         labels: days,
         datasets: [
-          { label: 'ממוצע מעורבות', data: byDay.map((a) => a.length ? Math.round(a.reduce((x, y) => x + y, 0) / a.length) : 0), backgroundColor: BRAND.green, borderRadius: 6, yAxisID: 'y' },
+          { label: 'ממוצע מעורבות', data: byDay.map(mean), backgroundColor: BRAND.green, borderRadius: 6, yAxisID: 'y' },
           { label: 'מספר פוסטים', data: byDay.map((a) => a.length), type: 'line', borderColor: BRAND.pinkDeep, backgroundColor: BRAND.pinkDeep, tension: 0.3, yAxisID: 'y1' },
         ],
       },
-      options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } }, scales: { x: { ticks: { font: { family: 'Heebo' } } }, y: { position: 'right', ticks: { font: { family: 'Heebo' } } }, y1: { position: 'left', grid: { drawOnChartArea: false }, ticks: { font: { family: 'Heebo' }, precision: 0 } } } },
+      options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } }, scales: { x: { ticks: { font: heebo } }, y: { position: 'right', ticks: { font: heebo } }, y1: { position: 'left', grid: { drawOnChartArea: false }, ticks: { font: heebo, precision: 0 } } } },
     }));
+  }
 
-    // engagement breakdown by post date — net (not cumulative) likes/comments/
-    // shares/clicks per publish date, taken straight from each post's own numbers.
+  // net (not cumulative) engagement per publish date, from each post's own numbers
+  function engByDateChart(canvasId, posts, series) {
+    const el = document.getElementById(canvasId);
+    if (!el) return;
     const byDate = {};
     posts.forEach((p) => {
       if (!p.date) return;
-      const row = byDate[p.date] = byDate[p.date] || { likes: 0, comments: 0, shares: 0, clicks: 0 };
-      row.likes += p.likes || 0;
-      row.comments += p.comments || 0;
-      row.shares += p.shares || 0;
-      row.clicks += p.clicks || 0;
+      const row = byDate[p.date] = byDate[p.date] || {};
+      series.forEach((sr) => { row[sr.key] = (row[sr.key] || 0) + (p[sr.key] || 0); });
     });
     const dates = Object.keys(byDate).sort();
-    if (dates.length) {
-      charts.push(new Chart(document.getElementById('fbEngagementByDateChart'), {
-        type: 'line',
-        data: {
-          labels: dates.map((d) => shortDate(d)),
-          datasets: [
-            { label: 'לייקים', data: dates.map((d) => byDate[d].likes), borderColor: BRAND.pink, backgroundColor: BRAND.pink, tension: 0.3 },
-            { label: 'תגובות', data: dates.map((d) => byDate[d].comments), borderColor: BRAND.green, backgroundColor: BRAND.green, tension: 0.3 },
-            { label: 'שיתופים', data: dates.map((d) => byDate[d].shares), borderColor: BRAND.pinkDeep, backgroundColor: BRAND.pinkDeep, tension: 0.3 },
-            { label: 'קליקים', data: dates.map((d) => byDate[d].clicks), borderColor: BRAND.ink, backgroundColor: BRAND.ink, tension: 0.3, borderDash: [4, 3] },
-          ].map((ds) => ({ ...ds, borderWidth: 2, pointRadius: dates.length > 20 ? 0 : 3 })),
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } },
-          scales: { x: { ticks: { font: { family: 'Heebo' }, maxTicksLimit: 10 } }, y: { ticks: { font: { family: 'Heebo' }, precision: 0 } } },
-        },
-      }));
-    }
+    if (!dates.length) return;
+    charts.push(new Chart(el, {
+      type: 'line',
+      data: {
+        labels: dates.map((d) => shortDate(d)),
+        datasets: series.map((sr) => ({
+          label: sr.label, data: dates.map((d) => byDate[d][sr.key]),
+          borderColor: sr.color, backgroundColor: sr.color, tension: 0.3, borderWidth: 2,
+          pointRadius: dates.length > 20 ? 0 : 3, ...(sr.dash ? { borderDash: sr.dash } : {}),
+        })),
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } },
+        scales: { x: { ticks: { font: heebo, maxTicksLimit: 10 } }, y: { ticks: { font: heebo, precision: 0 } } },
+      },
+    }));
+  }
 
-    // daily follower growth
-    const fs = (fb.followsSeries || []).filter((x) => x.date);
-    const host = document.getElementById('fbFollowsWrap');
-    if (fs.length) {
-      charts.push(new Chart(document.getElementById('fbFollowsChart'), {
+  // daily new followers
+  function followsChart(canvasId, hostId, series) {
+    const fs = (series || []).filter((x) => x.date);
+    const host = document.getElementById(hostId);
+    const el = document.getElementById(canvasId);
+    if (fs.length && el) {
+      charts.push(new Chart(el, {
         type: 'bar',
         data: { labels: fs.map((x) => shortDate(x.date)), datasets: [{ label: 'עוקבים חדשים ליום', data: fs.map((x) => x.follows), backgroundColor: BRAND.pink, borderRadius: 4 }] },
-        options: { responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { family: 'Heebo' } } }, y: { ticks: { font: { family: 'Heebo' }, precision: 0 } } } },
+        options: { responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: heebo } }, y: { ticks: { font: heebo, precision: 0 } } } },
       }));
     } else if (host) {
       host.innerHTML = '<p class="post-card__date">אין עדיין נתוני גידול יומי (ייאספו עם הזמן)</p>';
     }
+  }
+
+  // engagement rate per post, in publish order, one colour per content type.
+  // Stacked axes put each post's single bar at full width despite one dataset per type.
+  function rateChart(canvasId, posts, net) {
+    const el = document.getElementById(canvasId);
+    if (!el) return;
+    const rows = posts.filter((p) => p.reach > 0 && p.date)
+      .sort((a, b) => String(a.ts || a.date).localeCompare(String(b.ts || b.date)))
+      .map((p) => ({ p, t: contentType(p, net), r: engRate(p.engagement || 0, p.reach) }));
+    if (!rows.length) {
+      el.insertAdjacentHTML('afterend', '<p class="post-card__date">אין עדיין נתוני reach לפוסטים</p>');
+      return;
+    }
+    const types = [...new Set(rows.map((x) => x.t))].sort(byTypeOrder);
+    charts.push(new Chart(el, {
+      type: 'bar',
+      data: {
+        labels: rows.map((x) => shortDate(x.p.date)),
+        datasets: types.map((t) => ({
+          label: t, data: rows.map((x) => (x.t === t ? x.r : null)),
+          backgroundColor: typeColor(t), borderRadius: 4,
+        })),
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom', labels: { font: heebo } },
+          tooltip: { callbacks: { label: (c) => {
+            const row = rows[c.dataIndex];
+            return `${c.dataset.label}: ${c.parsed.y}% · reach ${fmt(row.p.reach)} · מעורבות ${fmt(row.p.engagement)}`;
+          } } },
+        },
+        scales: {
+          x: { stacked: true, ticks: { font: heebo, maxTicksLimit: 14 } },
+          y: { stacked: true, beginAtZero: true, ticks: { font: heebo, callback: (v) => v + '%' } },
+        },
+      },
+    }));
+  }
+
+  function renderFbInsights(data) {
+    const fb = (data.social || {}).facebook;
+    if (!fb) return;
+    const posts = fb.posts || [];
+    typeChart('fbTypeChart', posts, 'facebook', false);
+    weekdayChart('fbWeekdayChart', posts);
+    engByDateChart('fbEngagementByDateChart', posts, [
+      { key: 'likes', label: 'לייקים', color: BRAND.pink },
+      { key: 'comments', label: 'תגובות', color: BRAND.green },
+      { key: 'shares', label: 'שיתופים', color: BRAND.pinkDeep },
+      { key: 'clicks', label: 'קליקים', color: BRAND.ink, dash: [4, 3] },
+    ]);
+    followsChart('fbFollowsChart', 'fbFollowsWrap', fb.followsSeries);
+  }
+
+  // Instagram: the same four charts (saves instead of clicks — Instagram has no
+  // clicks) plus engagement rate, which Instagram's per-post reach makes possible.
+  function renderIgInsights(data) {
+    const ig = (data.social || {}).instagram;
+    if (!ig) return;
+    const posts = ig.media || [];
+    typeChart('igTypeChart', posts, 'instagram', true);
+    weekdayChart('igWeekdayChart', posts);
+    rateChart('igRateChart', posts, 'instagram');
+    engByDateChart('igEngagementByDateChart', posts, [
+      { key: 'likes', label: 'לייקים', color: BRAND.pink },
+      { key: 'comments', label: 'תגובות', color: BRAND.green },
+      { key: 'saves', label: 'שמירות', color: BRAND.ink },
+      { key: 'shares', label: 'שיתופים', color: BRAND.pinkDeep },
+    ]);
+    followsChart('igFollowsChart', 'igFollowsWrap', ig.followsSeries);
   }
 
   function renderOverview(data) {
@@ -293,6 +406,7 @@ const SocialView = (() => {
     renderNetwork('facebook', data);
     renderNetwork('instagram', data);
     renderFbInsights(data);
+    renderIgInsights(data);
 
     const tabs = document.getElementById('socialTabs');
     if (!tabs.dataset.wired) {
