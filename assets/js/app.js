@@ -120,3 +120,72 @@ document.addEventListener('DOMContentLoaded', async () => {
   window.addEventListener('hashchange', router);
   router();
 });
+
+/* ---------- Hover notes: any element with data-tip ----------
+   Native title tooltips proved unreliable here — they wait ~1s for the mouse to
+   rest, never appear on touch screens, and some embedded browsers don't render
+   them at all, so the ⓘ explanations were effectively invisible. One floating
+   element, shown immediately on hover, keyboard focus or tap, and kept inside
+   the viewport. */
+(() => {
+  let tipEl = null;
+  let current = null; // the element whose note is showing
+  const ensure = () => {
+    if (!tipEl) {
+      tipEl = document.createElement('div');
+      tipEl.className = 'tip-pop';
+      tipEl.setAttribute('role', 'tooltip');
+      tipEl.hidden = true;
+      document.body.appendChild(tipEl);
+    }
+    return tipEl;
+  };
+  const show = (target) => {
+    const text = target.getAttribute('data-tip');
+    if (!text) return;
+    const el = ensure();
+    current = target;
+    el.textContent = text;
+    el.hidden = false;
+    const r = target.getBoundingClientRect();
+    const pad = 8;
+    const w = el.offsetWidth, h = el.offsetHeight;
+    const left = Math.max(pad, Math.min(r.left + r.width / 2 - w / 2, window.innerWidth - w - pad));
+    let top = r.top - h - 8;
+    if (top < pad) top = r.bottom + 8; // no room above: open below
+    el.style.left = `${left}px`;
+    el.style.top = `${top}px`;
+  };
+  const hide = () => { if (tipEl) tipEl.hidden = true; current = null; };
+  const tipOf = (e) => (e.target && e.target.closest ? e.target.closest('[data-tip]') : null);
+
+  document.addEventListener('mouseover', (e) => { const t = tipOf(e); if (t) show(t); });
+  document.addEventListener('mouseout', (e) => {
+    const t = tipOf(e);
+    if (t && !t.contains(e.relatedTarget)) hide();
+  });
+  document.addEventListener('focusin', (e) => { const t = tipOf(e); if (t) show(t); });
+  document.addEventListener('focusout', (e) => { if (tipOf(e)) hide(); });
+  // touch: tapping a note opens it, tapping anywhere else closes it
+  // (notes inside links are left alone so the link still works)
+  document.addEventListener('click', (e) => {
+    const t = tipOf(e);
+    if (t && !t.closest('a')) show(t);
+    else if (!t) hide();
+  });
+  // While the page scrolls the note follows its element, closing only once the
+  // element leaves the screen. (Hiding on any scroll broke keyboard use:
+  // focusing an off-screen note scrolls it into view, which closed it at once.)
+  // capture: also catches scrolling inside inner scroll containers.
+  let raf = 0;
+  window.addEventListener('scroll', () => {
+    if (!current || !tipEl || tipEl.hidden || raf) return;
+    raf = requestAnimationFrame(() => {
+      raf = 0;
+      if (!current) return;
+      const r = current.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight || !current.isConnected) hide();
+      else show(current);
+    });
+  }, { passive: true, capture: true });
+})();

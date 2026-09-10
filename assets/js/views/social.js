@@ -21,7 +21,7 @@ const SocialView = (() => {
     + 'כלומר: מכל 100 אנשים שראו את התוכן, כמה הגיבו אליו. '
     + 'כך אפשר להשוות בין פוסטים שהגיעו לכמויות שונות של אנשים.';
   const infoTip = (text, tip) =>
-    `<span class="info-tip" title="${tip}">${text}<span class="info-tip__icon">ⓘ</span></span>`;
+    `<span class="info-tip" tabindex="0" data-tip="${tip}">${text}<span class="info-tip__icon">ⓘ</span></span>`;
   // weighted: total engagement ÷ total reach, so one tiny-reach post can't skew it
   const weightedRate = (posts) => {
     const withReach = posts.filter((p) => p.reach > 0);
@@ -63,13 +63,13 @@ const SocialView = (() => {
       : '';
     const meta = [
       p.reach != null
-        ? `<span title="${net === 'facebook' ? 'צופים ייחודיים' : 'Reach'}">👁 <b>${fmt(p.reach)}</b></span>` : '',
+        ? `<span data-tip="${net === 'facebook' ? 'צופים ייחודיים' : 'Reach'}">👁 <b>${fmt(p.reach)}</b></span>` : '',
       m('▶️', p.plays || p.videoViews), m('⏱', p.avgWatchSec, ' שנ׳'),
       p.watchMin != null ? `<span>🎬 <b>${fmt(p.watchMin)} דק׳</b></span>` : '',
       reacts ? `<span>${reacts}</span>` : m('❤️', p.likes),
       m('💬', p.comments), m('🔖', p.saves), m('🔁', p.shares), m('🖱', p.clicks),
       net === 'instagram' && p.reach > 0
-        ? `<span title="שיעור מעורבות">📊 <b>${engRate(p.engagement || 0, p.reach)}%</b></span>` : '',
+        ? `<span data-tip="שיעור מעורבות">📊 <b>${engRate(p.engagement || 0, p.reach)}%</b></span>` : '',
     ].filter(Boolean).join('');
     return `<a class="post-card" href="${p.link || '#'}" target="_blank" rel="noopener">
       <div class="post-card__thumb">${thumb}</div>

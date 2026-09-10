@@ -281,3 +281,14 @@ html, body {
   color: var(--muted); vertical-align: 1px; transition: color .15s;
 }
 .info-tip:hover .info-tip__icon { color: var(--pink-deep); }
+
+/* floating note for [data-tip] (see app.js) */
+[data-tip] { cursor: help; }
+.tip-pop {
+  position: fixed; z-index: 10000; max-width: 280px; padding: 8px 11px;
+  background: var(--ink); color: #fff; font: 400 13px/1.55 'Heebo', sans-serif;
+  border-radius: 9px; box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
+  direction: rtl; text-align: right; white-space: normal; pointer-events: none;
+}
+.tip-pop[hidden] { display: none; }
+.info-tip:focus-visible { outline: 2px solid var(--pink-deep); outline-offset: 2px; border-radius: 4px; }
