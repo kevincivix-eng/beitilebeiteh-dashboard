@@ -300,6 +300,33 @@ async function fetchSocial() {
         period: 'day', metric_type: 'total_value', since: igSince, until: igUntil,
       }).catch((e) => { console.warn('   ⚠️ IG account insights:', e.message); return { data: [] }; });
 
+      // Follower trend. Instagram exposes only daily NEW followers
+      // (follower_count, period=day) for the last 30 days, not a history of the
+      // total — so, as on the Facebook side, walk today's total backward
+      // through those daily gains. Without this the overview chart has a single
+      // history row for Instagram and draws a dot instead of a line.
+      const fcSince = Math.floor((Date.now() - 29 * 864e5) / 1000);
+      const fcParams = { metric: 'follower_count', period: 'day', since: fcSince, until: igUntil };
+      let igFc = await g(`${META_IG}/insights`, fcParams)
+        .catch((e) => ({ error: { message: e.message } }));
+      if (igFc.error) {
+        // some API versions insist on an explicit metric_type for this metric
+        igFc = await g(`${META_IG}/insights`, { ...fcParams, metric_type: 'time_series' })
+          .catch((e) => { console.warn('   ⚠️ IG follower_count:', e.message); return { data: [] }; });
+      }
+      const igDaily = (((igFc.data || [])[0] || {}).values || [])
+        .map((v) => ({ date: (v.end_time || '').slice(0, 10), value: v.value || 0 }))
+        .filter((x) => x.date);
+      const igFollowerTrend = [];
+      let igCum = ig.followers_count || 0;
+      for (let k = igDaily.length - 1; k >= 0; k--) {
+        igFollowerTrend[k] = { date: igDaily[k].date, followers: igCum };
+        igCum -= igDaily[k].value;
+      }
+      if (!igFollowerTrend.length) {
+        console.warn('   ⚠️ IG follower trend empty — follower_count returned no daily values');
+      }
+
       // Per-media insights are a separate permission surface from the media
       // fields themselves, so fall back to plain media rather than losing the
       // posts entirely when insights are refused (same tiering as the FB side).
@@ -337,6 +364,7 @@ async function fetchSocial() {
           engagement28: igTotal('accounts_engaged'),
           profileViews28: igTotal('profile_views'),
         },
+        followerTrend: igFollowerTrend,
         media: igMedia,
       };
     } catch (e) {
@@ -345,7 +373,7 @@ async function fetchSocial() {
     }
 
     console.log(`✅ Social: FB followers=${facebook.page.followers}, posts=${facebook.posts.length}` +
-      (instagram ? `; IG followers=${instagram.account.followers}, media=${instagram.media.length}` : ''));
+      (instagram ? `; IG followers=${instagram.account.followers}, media=${instagram.media.length}, trend=${instagram.followerTrend.length}d` : ''));
     return { updated: new Date().toISOString(), facebook, instagram, tiktok: null };
   } catch (e) {
     console.warn('⚠️ Social fetch failed (keeping snapshot):', e.message);

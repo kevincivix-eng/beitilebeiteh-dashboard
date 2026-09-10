@@ -185,19 +185,56 @@ const SocialView = (() => {
     // Prefer the real 90-day daily trends from Meta; fall back to the accumulating
     // snapshot history only if the trend isn't available yet.
     const fTrend = (fb.followerTrend && fb.followerTrend.length >= 2) ? fb.followerTrend : null;
-    const followerData = fTrend
-      ? fTrend.map((x) => ({ date: x.date, fb: x.followers }))
-      : hist.map((h) => ({ date: h.date, fb: h.fb_followers }));
+    const iTrend = (ig.followerTrend && ig.followerTrend.length >= 2) ? ig.followerTrend : null;
+
+    // One row per date, Facebook and Instagram merged. The Facebook trend spans
+    // 90 days but Instagram's API only gives 30, so the Instagram line starts
+    // partway along — a gap is truthful, padding it would invent history.
+    const byDate = new Map();
+    const put = (date, key, v) => {
+      const r = byDate.get(date) || { date };
+      r[key] = v;
+      byDate.set(date, r);
+    };
+    (fTrend || hist.map((h) => ({ date: h.date, followers: h.fb_followers })))
+      .forEach((x) => put(x.date, 'fb', x.followers));
+    (iTrend || hist.filter((h) => h.ig_followers).map((h) => ({ date: h.date, followers: h.ig_followers })))
+      .forEach((x) => put(x.date, 'ig', x.followers));
+    const followerData = [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
+    const hasIg = followerData.some((x) => x.ig != null);
+    const radius = (key) => (followerData.filter((x) => x[key] != null).length > 20 ? 0 : 3);
+
+    // Instagram (~2,200) and Facebook (~70) differ by 30x; on one axis the
+    // Facebook line would flatten onto zero, so each network gets its own axis.
+    const FB_C = '#4267B2', IG_C = '#C13584';
+    const axisFont = { family: 'Heebo' };
     charts.push(new Chart(document.getElementById('socialFollowersChart'), {
       type: 'line',
       data: {
         labels: followerData.map((x) => shortDate(x.date)),
         datasets: [
-          { label: 'פייסבוק', data: followerData.map((x) => x.fb), borderColor: '#4267B2', backgroundColor: '#4267B233', tension: 0.35, fill: true, pointRadius: followerData.length > 20 ? 0 : 3, borderWidth: 2 },
+          { label: 'פייסבוק', data: followerData.map((x) => x.fb ?? null), yAxisID: 'y',
+            borderColor: FB_C, backgroundColor: FB_C + '33', tension: 0.35, fill: !hasIg,
+            pointRadius: radius('fb'), borderWidth: 2 },
+          ...(hasIg ? [{ label: 'אינסטגרם', data: followerData.map((x) => x.ig ?? null), yAxisID: 'y1',
+            borderColor: IG_C, backgroundColor: IG_C + '22', tension: 0.35, fill: false,
+            pointRadius: radius('ig'), borderWidth: 2 }] : []),
         ],
       },
-      options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo' } } } },
-        scales: { x: { ticks: { font: { family: 'Heebo' }, maxTicksLimit: 8 } }, y: { ticks: { font: { family: 'Heebo' } } } } },
+      options: {
+        responsive: true,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'bottom', labels: { font: axisFont } } },
+        scales: {
+          x: { ticks: { font: axisFont, maxTicksLimit: 8 } },
+          y: { position: 'left',
+            title: { display: hasIg, text: 'פייסבוק', color: FB_C, font: axisFont },
+            ticks: { font: axisFont, color: hasIg ? FB_C : undefined } },
+          ...(hasIg ? { y1: { position: 'right', grid: { drawOnChartArea: false },
+            title: { display: true, text: 'אינסטגרם', color: IG_C, font: axisFont },
+            ticks: { font: axisFont, color: IG_C } } } : {}),
+        },
+      },
     }));
 
     // social engagement vs project (registered members + weekly items delivered)
