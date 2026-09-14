@@ -142,6 +142,29 @@ async function fetchMembers() {
  * configured. Also merges a daily snapshot into data/social-history.json so we
  * build our own long-term history beyond Meta's ~93-day insights window.
  */
+// The published social-history.json is the only place our long-running series
+// persist (CI never commits data back). Loaded once, with retries; null if it
+// could not be reached. Shared by fetchSocial (to skip days already stored)
+// and the write step (to extend it).
+const LIVE_HIST = 'https://kevincivix-eng.github.io/beitilebeiteh-dashboard/data/social-history.json';
+let publishedHistoryPromise = null;
+function loadPublishedHistory() {
+  if (!publishedHistoryPromise) {
+    publishedHistoryPromise = (async () => {
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          const live = await fetch(LIVE_HIST, { cache: 'no-store' });
+          if (live.ok) return await live.json();
+          console.warn(`   social-history: live fetch HTTP ${live.status} (attempt ${attempt})`);
+        } catch (e) { console.warn(`   social-history: live fetch failed (attempt ${attempt}): ${e.message}`); }
+        if (attempt < 3) await new Promise((r) => setTimeout(r, 2000 * attempt));
+      }
+      return null;
+    })();
+  }
+  return publishedHistoryPromise;
+}
+
 async function fetchSocial() {
   if (!META_TOKEN) {
     console.warn('⚠️ Meta not configured — keeping social snapshot.');
@@ -338,35 +361,37 @@ async function fetchSocial() {
         period: 'day', metric_type: 'total_value', since: igSince, until: igUntil,
       }).catch((e) => { console.warn('   ⚠️ IG account insights:', e.message); return { data: [] }; });
 
-      // ---- TEMPORARY PROBE (2026-09-14): can Instagram give a DAILY engagement series? ----
-      // Log-only. The overview chart needs daily engagement for FB+IG combined;
-      // Facebook has page_post_engagements per day, Instagram so far only totals.
-      try {
-        const D = 864e5;
-        const dayStart = (n) => { const t = new Date(); t.setUTCHours(0, 0, 0, 0); return Math.floor((t.getTime() - n * D) / 1000); };
-        const show = (res) => {
-          const rows = (res.data || []).map((m) => {
-            if (m.total_value) return `${m.name}=${m.total_value.value}`;
-            const v = (m.values || []).map((x) => x.value).filter((x) => typeof x === 'number');
-            return `${m.name}: ${v.length} vals, sum ${v.reduce((a, b) => a + b, 0)}`;
-          });
-          return rows.join(' | ') || 'empty';
-        };
-        const err = (e) => '✗ ' + e.message.replace(/^[^:]*: /, '').slice(0, 120);
-        const tries = [
-          ['time_series total_interactions 28d', { metric: 'total_interactions', period: 'day', metric_type: 'time_series', since: dayStart(28), until: dayStart(0) }],
-          ['plain total_interactions 28d', { metric: 'total_interactions', period: 'day', since: dayStart(28), until: dayStart(0) }],
-          ['time_series accounts_engaged 28d', { metric: 'accounts_engaged', period: 'day', metric_type: 'time_series', since: dayStart(28), until: dayStart(0) }],
-          ['1-day total_interactions,likes,comments,saves,shares @-2d', { metric: 'total_interactions,likes,comments,saves,shares', period: 'day', metric_type: 'total_value', since: dayStart(2), until: dayStart(1) }],
-          ['1-day total_interactions @-40d', { metric: 'total_interactions', period: 'day', metric_type: 'total_value', since: dayStart(40), until: dayStart(39) }],
-          ['1-day total_interactions @-85d', { metric: 'total_interactions', period: 'day', metric_type: 'total_value', since: dayStart(85), until: dayStart(84) }],
-          ['total_interactions 28d window', { metric: 'total_interactions', period: 'day', metric_type: 'total_value', since: dayStart(28), until: dayStart(0) }],
-        ];
-        for (const [label, params] of tries) {
-          const r = await g(`${META_IG}/insights`, params).then(show).catch(err);
-          console.log(`🔎 IG ${label}: ${r}`);
-        }
-      } catch (e) { console.warn('🔎 IG engagement probe failed:', e.message); }
+      // Daily engagement. Instagram has no daily series for interactions: both
+      // time_series and a multi-day window are refused or return one total. A
+      // ONE-day total_value window does work, back at least 85 days (probed
+      // 2026-09-14) — so it is one request per day. Days already stored in the
+      // published history are skipped; the last 3 are always re-fetched while
+      // their numbers can still change. First build backfills 90 days.
+      const DAY = 864e5;
+      const midnight = new Date(); midnight.setUTCHours(0, 0, 0, 0);
+      const published = (await loadPublishedHistory()) || [];
+      const stored = new Set(published.filter((r) => typeof r.ig_eng_day === 'number').map((r) => r.date));
+      const engJobs = [];
+      for (let n = 1; n <= 90; n++) { // n=0 (today) is still accumulating — skip it
+        const since = Math.floor((midnight.getTime() - n * DAY) / 1000);
+        const date = new Date(since * 1000).toISOString().slice(0, 10);
+        if (n > 3 && stored.has(date)) continue;
+        engJobs.push({ since, date });
+      }
+      const igEngagementDaily = [];
+      let engFailed = 0;
+      for (let i = 0; i < engJobs.length; i += 6) { // small batches — stay well under rate limits
+        const got = await Promise.all(engJobs.slice(i, i + 6).map((j) => g(`${META_IG}/insights`, {
+          metric: 'total_interactions', period: 'day', metric_type: 'total_value', since: j.since, until: j.since + 86400,
+        }).then((r) => {
+          const m = (r.data || [])[0];
+          return m && m.total_value && typeof m.total_value.value === 'number' ? { date: j.date, value: m.total_value.value } : null;
+        }).catch(() => { engFailed++; return null; })));
+        got.forEach((x) => { if (x) igEngagementDaily.push(x); });
+      }
+      igEngagementDaily.sort((a, b) => a.date.localeCompare(b.date));
+      console.log(`   IG daily engagement: fetched ${igEngagementDaily.length}/${engJobs.length} days `
+        + `(${90 - engJobs.length} already stored)${engFailed ? `, ${engFailed} failed` : ''}`);
 
       // Follower trend. Instagram exposes only daily NEW followers
       // (follower_count, period=day) for the last 30 days, not a history of the
@@ -457,6 +482,8 @@ async function fetchSocial() {
           profileViews28: igTotal('profile_views'),
         },
         followerTrend: igFollowerTrend,
+        // interactions per day (only the days fetched this run; history keeps the rest)
+        engagementDaily: igEngagementDaily,
         // daily new followers — same shape as facebook.followsSeries
         followsSeries: igDaily.map((d) => ({ date: d.date, follows: d.value })),
         media: igMedia,
@@ -712,16 +739,7 @@ async function fetchSocial() {
       // start from the LAST PUBLISHED history on the live site, then append today.
       // This live copy is the ONLY place the history persists, so a transient
       // failure here would silently truncate it to Meta's window. Retry first.
-      const LIVE_HIST = 'https://kevincivix-eng.github.io/beitilebeiteh-dashboard/data/social-history.json';
-      let hist = null;
-      for (let attempt = 1; attempt <= 3 && hist === null; attempt++) {
-        try {
-          const live = await fetch(LIVE_HIST, { cache: 'no-store' });
-          if (live.ok) hist = await live.json();
-          else console.warn(`   social-history: live fetch HTTP ${live.status} (attempt ${attempt})`);
-        } catch (e) { console.warn(`   social-history: live fetch failed (attempt ${attempt}): ${e.message}`); }
-        if (hist === null && attempt < 3) await new Promise((r) => setTimeout(r, 2000 * attempt));
-      }
+      let hist = await loadPublishedHistory();
       if (hist === null) {
         console.warn('⚠️ social-history: published history unreachable — starting from the repo copy; '
           + "days older than Meta's window may be lost this run");
@@ -732,7 +750,7 @@ async function fetchSocial() {
       const today = new Date().toISOString().slice(0, 10);
       const merged = mergeSocialHistory(hist, socialData, today);
       console.log(`   social-history: ${merged.hist.length} rows `
-        + `(persisted from trends: fb +${merged.filled.fb}, ig +${merged.filled.ig})`);
+        + `(persisted from trends: fb +${merged.filled.fb}, ig +${merged.filled.ig}; daily engagement updated: fb ${merged.filled.fbEng}, ig ${merged.filled.igEng})`);
       write('social-history.json', merged.hist);
     } catch (e) { console.warn('⚠️ social-history update failed:', e.message); }
   } else {

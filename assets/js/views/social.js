@@ -362,33 +362,79 @@ const SocialView = (() => {
       return cum;
     };
     const tl = data.itemsTimeline || data.itemstimeline || { weeks: [] };
+    const tlWeeks = (tl.weeks || []).map((w) => w.week).sort();
     const itemsAt = (dateStr) => {
       const wk = isoWeek(new Date(dateStr));
+      // outside the delivery data's range the count is unknown, not zero
+      if (!tlWeeks.length || wk < tlWeeks[0] || wk > tlWeeks[tlWeeks.length - 1]) return null;
       const row = (tl.weeks || []).find((w) => w.week === wk);
       return row ? Object.values(row.values).reduce((a, b) => a + b, 0) : 0;
     };
-    const engTrend = (fb.engagementTrend && fb.engagementTrend.length >= 2) ? fb.engagementTrend : null;
-    const vsRows = engTrend
-      ? engTrend.map((x) => ({ date: x.date, eng: x.engagement }))
-      : hist.filter((h) => h.fb_engagement != null || h.ig_engagement != null)
-        .map((h) => ({ date: h.date, eng: (h.fb_engagement || 0) + (h.ig_engagement || 0) }));
+
+    // Daily engagement from BOTH networks: Facebook post engagements + Instagram
+    // interactions, from the stored history plus whatever this build fetched.
+    // (This line used to be Facebook only, though labelled as all networks.)
+    const engByDate = new Map();
+    const putEng = (date, key, v) => {
+      if (!date || typeof v !== 'number') return;
+      const r = engByDate.get(date) || { date };
+      r[key] = v;
+      engByDate.set(date, r);
+    };
+    hist.forEach((h) => { putEng(h.date, 'fb', h.fb_eng_day); putEng(h.date, 'ig', h.ig_eng_day); });
+    (fb.engagementTrend || []).forEach((x) => putEng(x.date, 'fb', x.engagement));
+    (ig.engagementDaily || []).forEach((x) => putEng(x.date, 'ig', x.value));
+    const igConnected = !!s.instagram;
+    let vsRows = [...engByDate.values()].sort((a, b) => a.date.localeCompare(b.date));
+    if (vsRows.length) {
+      const last = new Date(vsRows[vsRows.length - 1].date);
+      const cutoff = new Date(last.getTime() - 89 * 864e5).toISOString().slice(0, 10);
+      vsRows = vsRows.filter((r) => r.date >= cutoff);
+    }
+    // A day missing one network's figure is left blank rather than drawn as a
+    // dip — e.g. today, whose Instagram number isn't final yet.
+    const combined = (r) => (igConnected
+      ? (typeof r.fb === 'number' && typeof r.ig === 'number' ? r.fb + r.ig : null)
+      : (typeof r.fb === 'number' ? r.fb : null));
     const many = vsRows.length > 20;
+    const heeboAxis = (text, color) => ({ display: true, text, color, font: { family: 'Heebo' } });
     charts.push(new Chart(document.getElementById('socialVsOrgChart'), {
       data: {
         labels: vsRows.map((x) => shortDate(x.date)),
         datasets: [
-          { type: 'line', label: 'מעורבות ברשתות (יומי)', data: vsRows.map((x) => x.eng), borderColor: BRAND.pink, backgroundColor: BRAND.pink, tension: 0.35, yAxisID: 'y', pointRadius: many ? 0 : 3, borderWidth: 2 },
-          { type: 'line', label: 'משתתפות רשומות (מצטבר)', data: vsRows.map((x) => memAt(x.date)), borderColor: BRAND.green, backgroundColor: BRAND.green, tension: 0.35, yAxisID: 'y1', pointRadius: many ? 0 : 3, borderWidth: 2, spanGaps: true },
-          { type: 'bar', label: 'פריטים שנמסרו (שבועי)', data: vsRows.map((x) => itemsAt(x.date)), backgroundColor: BRAND.green + '55', yAxisID: 'y1', borderRadius: 5 },
+          { type: 'line', label: igConnected ? 'מעורבות ברשתות ביום (פייסבוק + אינסטגרם)' : 'מעורבות בפייסבוק ביום',
+            data: vsRows.map(combined), borderColor: BRAND.pinkDeep, backgroundColor: BRAND.pinkDeep,
+            tension: 0.3, yAxisID: 'y', pointRadius: many ? 0 : 3, borderWidth: 2, order: 1 },
+          { type: 'line', label: 'משתתפות רשומות (מצטבר)', data: vsRows.map((x) => memAt(x.date)),
+            borderColor: BRAND.green, backgroundColor: BRAND.green, tension: 0.35, yAxisID: 'y1',
+            pointRadius: many ? 0 : 3, borderWidth: 2, spanGaps: true, order: 2 },
+          { type: 'bar', label: 'פריטים שנמסרו (בשבוע)', data: vsRows.map((x) => itemsAt(x.date)),
+            backgroundColor: '#9bbf9a88', yAxisID: 'y2', order: 3, categoryPercentage: 1, barPercentage: 1 },
         ],
       },
       options: {
         responsive: true,
-        plugins: { legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } } },
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { position: 'bottom', labels: { font: { family: 'Heebo', size: 12 } } },
+          tooltip: { callbacks: { label: (c) => {
+            if (c.datasetIndex !== 0 || c.parsed.y == null) return `${c.dataset.label}: ${fmt(c.parsed.y)}`;
+            const r = vsRows[c.dataIndex];
+            return igConnected
+              ? `מעורבות ביום: ${fmt(c.parsed.y)} (פייסבוק ${fmt(r.fb)} · אינסטגרם ${fmt(r.ig)})`
+              : `מעורבות ביום: ${fmt(c.parsed.y)}`;
+          } } },
+        },
         scales: {
           x: { ticks: { font: { family: 'Heebo' }, maxTicksLimit: 8 } },
-          y: { position: 'right', title: { display: true, text: 'מעורבות', font: { family: 'Heebo' } }, ticks: { font: { family: 'Heebo' } } },
-          y1: { position: 'left', grid: { drawOnChartArea: false }, title: { display: true, text: 'מיזם', font: { family: 'Heebo' } }, ticks: { font: { family: 'Heebo' } } },
+          // each measure on its own axis — they differ by orders of magnitude
+          // (daily engagement ~10s, weekly items ~100s, members ~10,000s)
+          y: { position: 'right', beginAtZero: true, title: heeboAxis('מעורבות ביום', BRAND.pinkDeep),
+            ticks: { font: { family: 'Heebo' }, color: BRAND.pinkDeep, precision: 0 } },
+          y2: { position: 'right', beginAtZero: true, grid: { drawOnChartArea: false }, title: heeboAxis('פריטים בשבוע', '#6b8f6a'),
+            ticks: { font: { family: 'Heebo' }, color: '#6b8f6a', precision: 0 } },
+          y1: { position: 'left', grid: { drawOnChartArea: false }, title: heeboAxis('משתתפות', BRAND.green),
+            ticks: { font: { family: 'Heebo' }, color: BRAND.green } },
         },
       },
     }));

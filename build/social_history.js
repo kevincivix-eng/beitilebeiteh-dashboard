@@ -56,9 +56,27 @@ function mergeSocialHistory(hist, socialData, today) {
     });
     return n;
   };
+  // Daily engagement: unlike reconstructed follower counts, these are Meta's own
+  // figures for that day, and recent days keep changing as late likes arrive —
+  // so a fetched value REPLACES the stored one. Days the API no longer returns
+  // simply stay as last stored.
+  const setDaily = (series, key) => {
+    let n = 0;
+    (series || []).forEach((p) => {
+      if (!p || !p.date || p.date > today || typeof p.value !== 'number') return;
+      const r = rows.get(p.date) || { date: p.date };
+      if (r[key] === p.value) return;
+      r[key] = p.value;
+      rows.set(p.date, r);
+      n++;
+    });
+    return n;
+  };
   const filled = {
     fb: fill(fb && fb.followerTrend, 'fb_followers'),
     ig: fill(ig && ig.followerTrend, 'ig_followers'),
+    fbEng: setDaily(((fb && fb.engagementTrend) || []).map((x) => ({ date: x.date, value: x.engagement })), 'fb_eng_day'),
+    igEng: setDaily(ig && ig.engagementDaily, 'ig_eng_day'),
   };
 
   const merged = [...rows.values()].sort((a, b) => a.date.localeCompare(b.date));
