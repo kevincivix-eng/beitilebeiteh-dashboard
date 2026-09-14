@@ -429,7 +429,9 @@ const SocialView = (() => {
           x: { ticks: { font: { family: 'Heebo' }, maxTicksLimit: 8 } },
           // each measure on its own axis — they differ by orders of magnitude
           // (daily engagement ~10s, weekly items ~100s, members ~10,000s)
-          y: { position: 'right', beginAtZero: true, title: heeboAxis('מעורבות ביום', BRAND.pinkDeep),
+          // min 0: Meta reports net interactions, so a day with more un-likes than
+          // likes comes back as -1 and would otherwise push the axis to -500
+          y: { position: 'right', min: 0, title: heeboAxis('מעורבות ביום', BRAND.pinkDeep),
             ticks: { font: { family: 'Heebo' }, color: BRAND.pinkDeep, precision: 0 } },
           y2: { position: 'right', beginAtZero: true, grid: { drawOnChartArea: false }, title: heeboAxis('פריטים בשבוע', '#6b8f6a'),
             ticks: { font: { family: 'Heebo' }, color: '#6b8f6a', precision: 0 } },
