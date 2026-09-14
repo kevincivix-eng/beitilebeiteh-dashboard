@@ -39,12 +39,15 @@ html, body {
   z-index: 1200;
   box-shadow: -2px 0 24px rgba(120, 90, 110, 0.05);
 }
+/* The logo spans the whole header. The header takes the logo's own cream
+   background (--cream = the SVG's background fill), so there is no white frame
+   around a smaller cream tile. */
 .sidebar__brand {
-  padding: 28px 24px 18px;
+  padding: 0;
+  background: var(--cream);
   border-bottom: 1px solid var(--line);
-  text-align: center;
 }
-.sidebar__brand img { width: 130px; height: auto; }
+.sidebar__brand img { display: block; width: 100%; height: auto; }
 
 .nav { padding: 16px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
 .nav__item {

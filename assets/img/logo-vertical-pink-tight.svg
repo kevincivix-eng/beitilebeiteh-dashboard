@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Cropped copy of logo-vertical-pink.svg: viewBox tightened around the artwork (which filled only ~45% of the original square) so it fills its sidebar tile. -->
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="217.7 217.7 406.5 406.5">
+<!-- Cropped copy of logo-vertical-pink.svg: viewBox fitted to the artwork (which filled only ~45% of the original square) so the logo can span the whole sidebar header. -->
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="210.2 230.3 421.6 381.3">
   <defs>
     <style>
       .cls-1 {
