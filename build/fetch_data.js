@@ -338,6 +338,36 @@ async function fetchSocial() {
         period: 'day', metric_type: 'total_value', since: igSince, until: igUntil,
       }).catch((e) => { console.warn('   ⚠️ IG account insights:', e.message); return { data: [] }; });
 
+      // ---- TEMPORARY PROBE (2026-09-14): can Instagram give a DAILY engagement series? ----
+      // Log-only. The overview chart needs daily engagement for FB+IG combined;
+      // Facebook has page_post_engagements per day, Instagram so far only totals.
+      try {
+        const D = 864e5;
+        const dayStart = (n) => { const t = new Date(); t.setUTCHours(0, 0, 0, 0); return Math.floor((t.getTime() - n * D) / 1000); };
+        const show = (res) => {
+          const rows = (res.data || []).map((m) => {
+            if (m.total_value) return `${m.name}=${m.total_value.value}`;
+            const v = (m.values || []).map((x) => x.value).filter((x) => typeof x === 'number');
+            return `${m.name}: ${v.length} vals, sum ${v.reduce((a, b) => a + b, 0)}`;
+          });
+          return rows.join(' | ') || 'empty';
+        };
+        const err = (e) => '✗ ' + e.message.replace(/^[^:]*: /, '').slice(0, 120);
+        const tries = [
+          ['time_series total_interactions 28d', { metric: 'total_interactions', period: 'day', metric_type: 'time_series', since: dayStart(28), until: dayStart(0) }],
+          ['plain total_interactions 28d', { metric: 'total_interactions', period: 'day', since: dayStart(28), until: dayStart(0) }],
+          ['time_series accounts_engaged 28d', { metric: 'accounts_engaged', period: 'day', metric_type: 'time_series', since: dayStart(28), until: dayStart(0) }],
+          ['1-day total_interactions,likes,comments,saves,shares @-2d', { metric: 'total_interactions,likes,comments,saves,shares', period: 'day', metric_type: 'total_value', since: dayStart(2), until: dayStart(1) }],
+          ['1-day total_interactions @-40d', { metric: 'total_interactions', period: 'day', metric_type: 'total_value', since: dayStart(40), until: dayStart(39) }],
+          ['1-day total_interactions @-85d', { metric: 'total_interactions', period: 'day', metric_type: 'total_value', since: dayStart(85), until: dayStart(84) }],
+          ['total_interactions 28d window', { metric: 'total_interactions', period: 'day', metric_type: 'total_value', since: dayStart(28), until: dayStart(0) }],
+        ];
+        for (const [label, params] of tries) {
+          const r = await g(`${META_IG}/insights`, params).then(show).catch(err);
+          console.log(`🔎 IG ${label}: ${r}`);
+        }
+      } catch (e) { console.warn('🔎 IG engagement probe failed:', e.message); }
+
       // Follower trend. Instagram exposes only daily NEW followers
       // (follower_count, period=day) for the last 30 days, not a history of the
       // total — so, as on the Facebook side, walk today's total backward
