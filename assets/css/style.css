@@ -47,7 +47,7 @@ html, body {
   background: var(--cream);
   border-bottom: 1px solid var(--line);
 }
-.sidebar__brand img { display: block; width: 140px; height: auto; margin: 0 auto; }
+.sidebar__brand img { display: block; width: 110px; height: auto; margin: 0 auto; }
 
 .nav { padding: 16px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
 .nav__item {
