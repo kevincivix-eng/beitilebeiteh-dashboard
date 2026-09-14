@@ -83,7 +83,8 @@ html, body {
 }
 .kpi {
   background: var(--card); border-radius: var(--radius);
-  padding: 20px 22px; box-shadow: var(--shadow);
+  padding: 16px 20px; box-shadow: var(--shadow);
+  container-type: inline-size;
   border: 1px solid var(--line);
   position: relative; overflow: hidden;
 }
@@ -91,8 +92,18 @@ html, body {
   content: ''; position: absolute; top: 0; right: 0;
   width: 5px; height: 100%; background: var(--pink);
 }
-.kpi__val { font-size: 32px; font-weight: 900; color: var(--green); line-height: 1; }
-.kpi__label { margin-top: 8px; font-size: 13px; color: var(--muted); font-weight: 500; }
+/* The value always stays on one line. When a value wrapped ("161.55 טון" in a
+   narrow card), its card grew and every card in the same grid row stretched to
+   match, leaving a band of empty space under the others. The size now follows
+   the card's own width (cqi) instead of a fixed 32px, and a unit is set smaller
+   than the number (see kpiCard). */
+.kpi__val {
+  font-size: clamp(20px, 23cqi, 32px); font-weight: 900; color: var(--green);
+  line-height: 1; white-space: nowrap;
+}
+.kpi__unit { font-size: .55em; font-weight: 700; margin-inline-start: 4px; }
+.kpi__val--long { font-size: clamp(18px, 20cqi, 32px); }
+.kpi__label { margin-top: 6px; font-size: 13px; color: var(--muted); font-weight: 500; }
 .kpi--green::before { background: var(--green); }
 
 /* ---------- Cards / grid ---------- */

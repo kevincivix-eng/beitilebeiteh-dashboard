@@ -59,7 +59,12 @@ function councilColor(name) {
 const fmt = (n) => (n == null ? '—' : n.toLocaleString('he-IL'));
 
 function kpiCard(val, label, green) {
-  return `<div class="kpi ${green ? 'kpi--green' : ''}"><div class="kpi__val">${val}</div><div class="kpi__label">${label}</div></div>`;
+  // "161.55 טון" -> number + smaller unit, so the value fits on one line
+  const m = String(val).match(/^([\d.,]+)\s+(\S.*)$/);
+  const v = m ? `${m[1]}<span class="kpi__unit">${m[2]}</span>` : val;
+  // very long values ("161,550 ק\"ג") step down a size so they still fit a narrow card
+  const long = String(val).replace(/<[^>]*>/g, '').length >= 10;
+  return `<div class="kpi ${green ? 'kpi--green' : ''}"><div class="kpi__val${long ? ' kpi__val--long' : ''}">${v}</div><div class="kpi__label">${label}</div></div>`;
 }
 
 async function loadData() {
