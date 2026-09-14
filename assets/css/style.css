@@ -306,3 +306,33 @@ html, body {
 }
 .tip-pop[hidden] { display: none; }
 .info-tip:focus-visible { outline: 2px solid var(--pink-deep); outline-offset: 2px; border-radius: 4px; }
+
+/* ---------- Members over time ---------- */
+.members-card { margin-bottom: 22px; }
+.members-card .card__head { flex-wrap: wrap; margin-bottom: 14px; }
+.members-card canvas { max-height: none; }
+.members-panel { position: relative; }
+.members-panel--cum { height: 240px; }
+.members-panel--new { height: 170px; margin-top: 6px; }
+.members-readout {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px;
+  font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums;
+}
+.members-readout b { color: var(--ink); font-weight: 800; }
+.members-readout__date { color: var(--ink); font-weight: 700; }
+.members-readout--cal { margin-top: 10px; }
+.members-dot { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-inline-end: 6px; vertical-align: -1px; }
+.members-dot--cum { background: var(--green); }
+.members-dot--new { background: var(--pink); }
+.members-cal { overflow-x: auto; }
+.members-cal__svg { display: block; width: 100%; min-width: 620px; height: auto; }
+.members-cal__svg rect { cursor: pointer; stroke: transparent; stroke-width: 2; }
+.members-cal__svg rect.is-on, .members-cal__svg rect:hover { stroke: var(--ink); }
+.members-cal__lbl { font-family: Heebo, sans-serif; font-size: 10px; fill: #8a8590; }
+.members-cal__legend { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--muted); }
+.members-cal__legend i { display: block; width: 13px; height: 13px; border-radius: 3px; }
+.members-cal__legend span { margin: 0 4px; }
+@media (max-width: 640px) {
+  .members-panel--cum { height: 190px; }
+  .members-panel--new { height: 140px; }
+}

@@ -101,10 +101,25 @@
     <section class="view" id="view-members" hidden>
       <header class="view__head">
         <h1>פילוח משתתפים על ציר הזמן</h1>
-        <p>מצטרפים חדשים וחברים מצטבר</p>
+        <p>סך החברים המצטבר ומצטרפים חדשים</p>
       </header>
       <div class="kpi-strip" id="membersKpis"></div>
-      <div class="card"><canvas id="membersChart"></canvas></div>
+      <div class="card members-card">
+        <div class="card__head">
+          <h3 class="card__title">צמיחה לאורך זמן</h3>
+          <div class="members-readout" id="membersReadout" aria-live="polite"></div>
+        </div>
+        <div class="members-panel members-panel--cum"><canvas id="membersCumChart" role="img" aria-label="סך חברים מצטבר לאורך זמן"></canvas></div>
+        <div class="members-panel members-panel--new"><canvas id="membersNewChart" role="img" aria-label="מצטרפים חדשים בכל יום"></canvas></div>
+      </div>
+      <div class="card members-card">
+        <div class="card__head">
+          <h3 class="card__title">לוח מצטרפים יומי</h3>
+          <div class="members-cal__legend" id="membersCalLegend"></div>
+        </div>
+        <div class="members-cal" id="membersCal" dir="ltr"></div>
+        <div class="members-readout members-readout--cal" id="membersCalReadout" aria-live="polite"></div>
+      </div>
     </section>
 
     <!-- ITEMS TIMELINE -->
