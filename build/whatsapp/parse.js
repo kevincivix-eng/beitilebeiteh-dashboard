@@ -20,14 +20,21 @@ const path = require('path');
 const crypto = require('crypto');
 
 const ROOT = path.join(__dirname, '..', '..');
-const WA_DIR = path.join(ROOT, 'whatsapp');
 const OUT_DIR = path.join(ROOT, 'data', 'whatsapp');
+
+// Export folders, oldest first. Each new dump lands in its own dated folder
+// ("whatsapp 111126") and is discovered automatically — see discoverGroups().
+// They cover different periods of the SAME groups, so group numbers repeat
+// across folders on purpose: that is what lets the dedupe treat them as one
+// timeline. Every such folder is gitignored (private numbers + media).
+const SOURCE_DIRS = ['whatsapp', 'whatsapp 111126'];
 
 // Everything before this date is ignored (currently a no-op: the exports start
 // 8.6.2026, but the cutoff is part of the agreed spec).
 const SINCE = '2025-05-01';
 
-const CHAT_FILES = ['_chat.txt', '_chat 2.txt', '_chat 3.txt'];
+// Legacy (iPhone) dump: three loose chat files, media in sibling folders.
+const LEGACY_CHATS = { '_chat.txt': 4, '_chat 2.txt': 5, '_chat 3.txt': 6 };
 
 // WhatsApp system/administrative lines — never listings.
 const SYSTEM_MARKERS = [
@@ -41,54 +48,111 @@ const SYSTEM_MARKERS = [
 ];
 
 const RESERVED_RE = /انحجز|انحجزن|انحجزو|انحجزت|احتجز/;
-// NOTE: the body may be empty (297 such headers in group 4 alone) — the line
-// ends right after "sender:". Requiring a space there made those headers fail
-// to match and get swallowed as continuation text of the previous message.
-const MSG_RE = /^‏?\[(\d{1,2})\.(\d{1,2})\.(\d{4}), (\d{1,2}):(\d{2}):(\d{2})\] ([^:]+):[ ]?([\s\S]*)$/;
-const ATTACH_RE = /<מצורף:\s*([^>]+?)\s*>/g;
+
+/* The two export formats differ in more than cosmetics:
+ *
+ *   iPhone   [12.9.2026, 13:17:44] sender: body      media: <מצורף: FILE>
+ *   Android  12.9.2026, 13:17 - sender: body         media: FILE (קובץ מצורף)
+ *
+ * Android has no seconds (so the 180s block window becomes minute-grained),
+ * and it writes "<המדיה לא נכללה>" for messages whose file was left out of the
+ * dump — the export only carries media for the most recent ~1,000 messages.
+ *
+ * NOTE on the sender split: the body may be empty (297 such headers in group 4
+ * alone) — the line ends right after "sender:". Requiring a space there made
+ * those headers fail to match and get swallowed as continuation text. The
+ * sender is taken up to the FIRST ": " rather than with [^:]+, because display
+ * names contain colons ("~ 8:8 🫂🥺♥️").
+ */
+const IOS_HDR = /^‏?\[(\d{1,2})\.(\d{1,2})\.(\d{4}), (\d{1,2}):(\d{2}):(\d{2})\] ([\s\S]*)$/;
+const AND_HDR = /^[‎‏]*(\d{1,2})\.(\d{1,2})\.(\d{4}), (\d{1,2}):(\d{2}) - ([\s\S]*)$/;
+const SENDER_RE = /^(.*?):(?: ([\s\S]*))?$/;
+const IOS_ATTACH_RE = /<מצורף:\s*([^>]+?)\s*>/g;
+const AND_ATTACH_RE = /^\s*([\w.\-]+\.\w{2,4})\s*\(קובץ מצורף\)\s*$/;
+const MEDIA_OMITTED = /<המדיה לא נכללה>|<Media omitted>/;
 
 const BLOCK_GAP_SEC = 180;      // same sender, messages this close = one listing
 const RESERVE_WINDOW_SEC = 1800; // "reserved" note counts if within 30min after
 
-// ---------------------------------------------------------------- media hashes
-/** Map every media file in the group folders to its MD5. */
-function hashMedia() {
-  const byGroup = {}; // group -> { filename: md5 }
-  const dirs = fs.readdirSync(WA_DIR)
-    .filter((d) => d.startsWith('WhatsApp Chat -') && fs.statSync(path.join(WA_DIR, d)).isDirectory());
-  dirs.forEach((d) => {
-    // group number is encoded as a keycap emoji (4️⃣/5️⃣/6️⃣) in the folder name
-    const m = d.match(/([4-9])️?⃣/);
-    const group = m ? Number(m[1]) : null;
-    if (!group) return;
-    const map = {};
-    fs.readdirSync(path.join(WA_DIR, d)).forEach((fn) => {
-      const p = path.join(WA_DIR, d, fn);
-      if (!fs.statSync(p).isFile() || fn.startsWith('.')) return;
-      map[fn] = crypto.createHash('md5').update(fs.readFileSync(p)).digest('hex');
+// ------------------------------------------------------------ source discovery
+/**
+ * Find every chat file across the export folders, with the media folder that
+ * belongs to it. Two layouts exist:
+ *   whatsapp/_chat 2.txt          + whatsapp/WhatsApp Chat - 5️⃣…/   (iPhone)
+ *   whatsapp 111126/group-5/*.txt + the same folder                 (Android)
+ * Group numbers come from the folder/file name and repeat across dumps,
+ * because they are the same WhatsApp groups at different times.
+ */
+function discoverGroups() {
+  const out = [];
+  SOURCE_DIRS.forEach((rel) => {
+    const dir = path.join(ROOT, rel);
+    if (!fs.existsSync(dir)) return;
+    const entries = fs.readdirSync(dir);
+
+    // --- iPhone layout: loose _chat*.txt + "WhatsApp Chat - N️⃣…" media dirs
+    Object.entries(LEGACY_CHATS).forEach(([file, group]) => {
+      if (!entries.includes(file)) return;
+      const mediaDir = entries
+        .map((d) => path.join(dir, d))
+        .find((d) => path.basename(d).startsWith('WhatsApp Chat -')
+          && fs.statSync(d).isDirectory()
+          && new RegExp(`${group}️?⃣`).test(path.basename(d)));
+      out.push({ group, label: `${rel}/${file}`, chat: path.join(dir, file), mediaDir, format: 'ios' });
     });
-    byGroup[group] = map;
-    console.log(`  group ${group}: ${Object.keys(map).length} media files hashed`);
+
+    // --- Android layout: one folder per group, chat + media together
+    entries.forEach((d) => {
+      const full = path.join(dir, d);
+      if (!d.startsWith('group-') || !fs.statSync(full).isDirectory()) return;
+      const chat = fs.readdirSync(full).find((f) => f.endsWith('.txt'));
+      if (!chat) return;
+      // "group-center" is a separate branch of the initiative — numbered past
+      // the main groups so it never collides with them in the dedupe.
+      const n = d === 'group-center' ? 7 : Number(d.replace('group-', ''));
+      out.push({ group: n, label: `${rel}/${d}`, chat: path.join(full, chat), mediaDir: full, format: 'android' });
+    });
   });
-  return byGroup;
+  return out;
+}
+
+// ---------------------------------------------------------------- media hashes
+/** MD5 every media file of a group folder, keyed by the filename the chat cites. */
+function hashDir(dir) {
+  const map = {};
+  if (!dir || !fs.existsSync(dir)) return map;
+  fs.readdirSync(dir).forEach((fn) => {
+    const p = path.join(dir, fn);
+    if (fn.startsWith('.') || fn.endsWith('.txt') || !fs.statSync(p).isFile()) return;
+    map[fn] = crypto.createHash('md5').update(fs.readFileSync(p)).digest('hex');
+  });
+  return map;
 }
 
 // ---------------------------------------------------------------- chat parsing
-function parseChat(file, group) {
-  const raw = fs.readFileSync(path.join(WA_DIR, file), 'utf8');
+function parseChat({ chat, group, format }) {
+  const raw = fs.readFileSync(chat, 'utf8');
+  const HDR = format === 'ios' ? IOS_HDR : AND_HDR;
   const msgs = [];
   let cur = null;
-  for (const line of raw.split('\n')) {
-    const m = MSG_RE.exec(line);
+  let sysLines = 0;
+  for (const line of raw.split(/\r?\n/)) {
+    const m = HDR.exec(line);
     if (m) {
+      const rest = format === 'ios' ? m[7] : m[6];
+      const sp = SENDER_RE.exec(rest);
+      // A header with no "sender:" is a WhatsApp notice (joins, leaves, group
+      // settings). Android writes a lot of them; they are never listings.
+      if (!sp) { sysLines++; cur = null; continue; }
       if (cur) msgs.push(cur);
-      const [, D, M, Y, hh, mm, ss] = m;
+      const [, D, M, Y, hh, mm] = m;
+      const ss = format === 'ios' ? m[6] : '00';
       cur = {
         date: `${Y}-${M.padStart(2, '0')}-${D.padStart(2, '0')}`,
         time: `${hh.padStart(2, '0')}:${mm}:${ss}`,
         sec: Number(hh) * 3600 + Number(mm) * 60 + Number(ss),
-        sender: m[7].trim(),
-        body: m[8],
+        sender: sp[1].trim(),
+        body: sp[2] || '',
       };
     } else if (cur) {
       cur.body += '\n' + line.replace(/\n$/, '');
@@ -96,10 +160,35 @@ function parseChat(file, group) {
   }
   if (cur) msgs.push(cur);
 
-  return msgs
-    .filter((x) => !SYSTEM_MARKERS.some((s) => x.body.includes(s)))
-    .filter((x) => x.date >= SINCE)
-    .map((x) => ({ ...x, group }));
+  // Pull out attached filenames while the format is still known, so the rest
+  // of the pipeline only ever sees a plain list.
+  msgs.forEach((x) => {
+    const files = [];
+    let omitted = 0;
+    if (format === 'ios') {
+      let a;
+      IOS_ATTACH_RE.lastIndex = 0;
+      while ((a = IOS_ATTACH_RE.exec(x.body)) !== null) files.push(a[1].trim());
+    } else {
+      x.body.split('\n').forEach((l) => {
+        const a = AND_ATTACH_RE.exec(stripMarks(l));
+        if (a) files.push(a[1]);
+      });
+    }
+    // Media the export left out: still evidence that something was shown,
+    // but there is no file to hash or to identify the item from.
+    if (MEDIA_OMITTED.test(x.body)) omitted = (x.body.match(MEDIA_OMITTED) || []).length;
+    x.files = files;
+    x.mediaOmitted = omitted;
+  });
+
+  return {
+    sysLines,
+    msgs: msgs
+      .filter((x) => !SYSTEM_MARKERS.some((s2) => x.body.includes(s2)))
+      .filter((x) => x.date >= SINCE)
+      .map((x) => ({ ...x, group })),
+  };
 }
 
 /**
@@ -115,7 +204,12 @@ const redact = (s) => (s || '').replace(PHONE_RE, '[טלפון]');
 
 const stripMarks = (s) => s.replace(/[‎‏]/g, '');
 const cleanText = (body) =>
-  stripMarks(body.replace(/‏?<מצורף:[^>]*>/g, '')).replace(/\s+/g, ' ').trim();
+  stripMarks(body.replace(/‏?<מצורף:[^>]*>/g, ''))
+    .split('\n')
+    .filter((l) => !AND_ATTACH_RE.test(l) && !MEDIA_OMITTED.test(l))
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 
 /** Group consecutive messages from one sender into a single listing block. */
 function toBlocks(msgs) {
@@ -137,14 +231,10 @@ function toBlocks(msgs) {
 
 function enrichBlock(b, mediaHashes) {
   b.text = b.msgs.map((m) => cleanText(m.body)).filter(Boolean).join(' ').trim();
-  const files = [];
-  b.msgs.forEach((m) => {
-    let a;
-    ATTACH_RE.lastIndex = 0;
-    while ((a = ATTACH_RE.exec(m.body)) !== null) files.push(a[1].trim());
-  });
+  const files = b.msgs.flatMap((m) => m.files || []);
   b.mediaFiles = files;
-  b.mediaCount = files.length;
+  b.mediaOmitted = b.msgs.reduce((n, m) => n + (m.mediaOmitted || 0), 0);
+  b.mediaCount = files.length + b.mediaOmitted;
   b.mediaHashes = [...new Set(files.map((f) => (mediaHashes[b.group] || {})[f]).filter(Boolean))];
   b.phones = [...new Set(
     (b.text.match(/(?:\+?972[\s\-‑]?|0)5\d[\s\-‑]?\d{3}[\s\-‑]?\d{4}/g) || [])
@@ -328,18 +418,33 @@ function dedupe(blocks) {
 
 // ---------------------------------------------------------------------- main
 function main() {
+  const sources = discoverGroups();
+  if (!sources.length) throw new Error(`no chat exports found under ${SOURCE_DIRS.join(', ')}`);
+
   console.log('⏳ hashing media…');
-  const mediaHashes = hashMedia();
+  const mediaHashes = {};
+  sources.forEach((src) => {
+    const map = hashDir(src.mediaDir);
+    // one group can be fed by several dumps (different periods) — merge them
+    mediaHashes[src.group] = Object.assign(mediaHashes[src.group] || {}, map);
+    console.log(`  ${src.label}: ${Object.keys(map).length} media files hashed`);
+  });
 
   console.log('⏳ parsing chats…');
   let allBlocks = [];
-  CHAT_FILES.forEach((file, i) => {
-    const group = i + 4; // groups are numbered 4, 5, 6
-    const msgs = parseChat(file, group);
+  const coverage = [];
+  sources.forEach((src) => {
+    const { msgs, sysLines } = parseChat(src);
     const blocks = toBlocks(msgs).map((b) => enrichBlock(b, mediaHashes));
     // a candidate listing has either real text or media attached
-    const cand = blocks.filter((b) => b.text.length >= 15 || b.mediaHashes.length > 0);
-    console.log(`  ${file} (group ${group}): ${msgs.length} content msgs → ${blocks.length} blocks → ${cand.length} candidates`);
+    const cand = blocks.filter((b) => b.text.length >= 15 || b.mediaCount > 0);
+    const dates = msgs.map((m) => m.date).sort();
+    coverage.push({ source: src.label, group: src.group, format: src.format,
+      from: dates[0] || null, to: dates[dates.length - 1] || null,
+      messages: msgs.length, candidates: cand.length });
+    console.log(`  ${src.label} (group ${src.group}, ${src.format}): ${msgs.length} msgs `
+      + `${dates[0] || '-'}→${dates[dates.length - 1] || '-'} → ${blocks.length} blocks → ${cand.length} candidates`
+      + ` [${sysLines} notices skipped]`);
     allBlocks = allBlocks.concat(cand);
   });
 
@@ -350,20 +455,25 @@ function main() {
   console.log(`⏳ deduplicating ${allBlocks.length} candidate blocks…`);
   const { listings, stats } = dedupe(allBlocks);
 
-  const inGroups = { 1: 0, 2: 0, 3: 0 };
-  listings.forEach((l) => { inGroups[l.seenInGroups.length]++; });
+  const inGroups = {};
+  listings.forEach((l) => {
+    const n = l.seenInGroups.length;
+    inGroups[n] = (inGroups[n] || 0) + 1;
+  });
 
   const out = {
     generated: new Date().toISOString(),
-    source: 'whatsapp exports (groups 4,5,6)',
+    source: `whatsapp exports (${sources.length} chats, groups ${[...new Set(sources.map((x) => x.group))].sort((a, b) => a - b).join(',')})`,
+    coverage: coverage,
     since: SINCE,
     candidateBlocks: allBlocks.length,
     listings: listings.length,
     merges: stats,
-    coverage: {
-      postedInOneGroup: inGroups[1],
-      postedInTwoGroups: inGroups[2],
-      postedInAllThree: inGroups[3],
+    spread: {
+      postedInOneGroup: inGroups[1] || 0,
+      postedInTwoGroups: inGroups[2] || 0,
+      postedInThreeOrMore: Object.entries(inGroups)
+        .filter(([n]) => Number(n) >= 3).reduce((a, [, v]) => a + v, 0),
       needsReview: listings.filter((l) => l.needsReview).length,
     },
     data: listings,
@@ -375,8 +485,8 @@ function main() {
   console.log(`\n✅ ${allBlocks.length} blocks → ${listings.length} unique listings`);
   console.log(`   merged by: media ${stats.media}, phone ${stats.phone}, text ${stats.text}`);
   console.log(`   blacklisted boilerplate hashes: ${stats.blacklistedHashes}`);
-  console.log(`   posted in 1 group: ${inGroups[1]} | 2 groups: ${inGroups[2]} | all 3: ${inGroups[3]}`);
-  console.log(`   clusters needing manual review (>3 blocks): ${out.coverage.needsReview}`);
+  console.log(`   posted in 1 group: ${inGroups[1] || 0} | 2: ${inGroups[2] || 0} | 3+: ${out.spread.postedInThreeOrMore}`);
+  console.log(`   clusters needing manual review (>3 blocks): ${out.spread.needsReview}`);
   console.log(`📝 data/whatsapp/wa-blocks.json`);
 }
 

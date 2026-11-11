@@ -11,16 +11,26 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
 const EXP = path.join(ROOT, 'data', 'whatsapp');
-const WA = path.join(ROOT, 'whatsapp');
+// Mirrors SOURCE_DIRS in parse.js: each dated dump holds its own media.
+const SOURCE_DIRS = ['whatsapp', 'whatsapp 111126'];
 
-// group number -> media folder
+// group number -> media folders (a group can be split across dumps/periods)
 const folders = {};
-fs.readdirSync(WA)
-  .filter((d) => d.startsWith('WhatsApp Chat -') && fs.statSync(path.join(WA, d)).isDirectory())
-  .forEach((d) => {
-    const m = d.match(/([4-9])️?⃣/);
-    if (m) folders[Number(m[1])] = d;
+const addFolder = (g, dir) => { (folders[g] = folders[g] || []).push(dir); };
+SOURCE_DIRS.forEach((rel) => {
+  const base = path.join(ROOT, rel);
+  if (!fs.existsSync(base)) return;
+  fs.readdirSync(base).forEach((d) => {
+    const full = path.join(base, d);
+    if (!fs.statSync(full).isDirectory()) return;
+    if (d.startsWith('WhatsApp Chat -')) {           // iPhone dump
+      const m = d.match(/([4-9])️?⃣/);
+      if (m) addFolder(Number(m[1]), full);
+    } else if (d.startsWith('group-')) {             // Android dump
+      addFolder(d === 'group-center' ? 7 : Number(d.replace('group-', '')), full);
+    }
   });
+});
 
 const blocks = JSON.parse(fs.readFileSync(path.join(EXP, 'wa-blocks.json'), 'utf8')).data;
 const byId = new Map(blocks.map((b) => [b.id, b]));
@@ -32,18 +42,18 @@ listings.filter((l) => l.isListing && l.unidentified).forEach((l) => {
   if (!b || !b.mediaFiles.length) return;
   // resolve the first existing photo (skip videos — a still frame needs ffmpeg)
   for (const g of b.seenInGroups) {
-    const dir = folders[g];
-    if (!dir) continue;
-    const photo = b.mediaFiles.find((f) => /\.(jpg|jpeg|png|webp)$/i.test(f)
-      && fs.existsSync(path.join(WA, dir, f)));
-    if (photo) {
-      targets.push({
-        id: l.id, date: l.date, city: l.city,
-        mediaCount: b.mediaCount,
-        text: l.rawText.slice(0, 80),
-        file: path.join(WA, dir, photo),
-      });
-      return;
+    for (const dir of folders[g] || []) {
+      const photo = b.mediaFiles.find((f) => /\.(jpg|jpeg|png|webp)$/i.test(f)
+        && fs.existsSync(path.join(dir, f)));
+      if (photo) {
+        targets.push({
+          id: l.id, date: l.date, city: l.city,
+          mediaCount: b.mediaCount,
+          text: l.rawText.slice(0, 80),
+          file: path.join(dir, photo),
+        });
+        return;
+      }
     }
   }
 });
