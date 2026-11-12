@@ -1,0 +1,1151 @@
+{
+ "generated": "2026-11-12T08:55:37.527Z",
+ "note": "Counted from the chat exports. Only covers days inside each chat's own window — see coverage.",
+ "totals": {
+  "joined": 5643,
+  "left": 3196,
+  "undatedJoined": 548,
+  "undatedLeft": 723
+ },
+ "coverage": [
+  {
+   "source": "whatsapp/_chat.txt",
+   "group": 4,
+   "from": "2026-06-08",
+   "to": "2026-08-31",
+   "joined": 1907,
+   "left": 1137
+  },
+  {
+   "source": "whatsapp/_chat 2.txt",
+   "group": 5,
+   "from": "2026-06-28",
+   "to": "2026-08-31",
+   "joined": 1983,
+   "left": 1182
+  },
+  {
+   "source": "whatsapp/_chat 3.txt",
+   "group": 6,
+   "from": "2026-07-15",
+   "to": "2026-08-31",
+   "joined": 1674,
+   "left": 865
+  },
+  {
+   "source": "whatsapp 111126/group-1",
+   "group": 1,
+   "from": "2025-08-18",
+   "to": "2026-11-11",
+   "joined": 8,
+   "left": 2
+  },
+  {
+   "source": "whatsapp 111126/group-2",
+   "group": 2,
+   "from": "2025-10-01",
+   "to": "2026-11-11",
+   "joined": 9,
+   "left": 0
+  },
+  {
+   "source": "whatsapp 111126/group-3",
+   "group": 3,
+   "from": "2026-02-09",
+   "to": "2026-11-11",
+   "joined": 12,
+   "left": 3
+  },
+  {
+   "source": "whatsapp 111126/group-4",
+   "group": 4,
+   "from": "2026-06-08",
+   "to": "2026-11-11",
+   "joined": 6,
+   "left": 0
+  },
+  {
+   "source": "whatsapp 111126/group-5",
+   "group": 5,
+   "from": "2026-06-28",
+   "to": "2026-11-11",
+   "joined": 12,
+   "left": 0
+  },
+  {
+   "source": "whatsapp 111126/group-6",
+   "group": 6,
+   "from": "2026-07-15",
+   "to": "2026-11-11",
+   "joined": 26,
+   "left": 2
+  },
+  {
+   "source": "whatsapp 111126/group-center",
+   "group": 7,
+   "from": "2026-09-05",
+   "to": "2026-11-11",
+   "joined": 6,
+   "left": 5
+  }
+ ],
+ "undated": [
+  {
+   "group": 4,
+   "source": "whatsapp/_chat.txt",
+   "date": "2026-06-08",
+   "kind": "joined",
+   "people": 6
+  },
+  {
+   "group": 6,
+   "source": "whatsapp/_chat 3.txt",
+   "date": "2026-07-16",
+   "kind": "joined",
+   "people": 5
+  },
+  {
+   "group": 1,
+   "source": "whatsapp 111126/group-1",
+   "date": "2026-11-11",
+   "kind": "joined",
+   "people": 87
+  },
+  {
+   "group": 1,
+   "source": "whatsapp 111126/group-1",
+   "date": "2026-11-11",
+   "kind": "left",
+   "people": 80
+  },
+  {
+   "group": 2,
+   "source": "whatsapp 111126/group-2",
+   "date": "2026-11-11",
+   "kind": "joined",
+   "people": 58
+  },
+  {
+   "group": 2,
+   "source": "whatsapp 111126/group-2",
+   "date": "2026-11-11",
+   "kind": "left",
+   "people": 106
+  },
+  {
+   "group": 3,
+   "source": "whatsapp 111126/group-3",
+   "date": "2026-11-11",
+   "kind": "joined",
+   "people": 52
+  },
+  {
+   "group": 3,
+   "source": "whatsapp 111126/group-3",
+   "date": "2026-11-11",
+   "kind": "left",
+   "people": 114
+  },
+  {
+   "group": 4,
+   "source": "whatsapp 111126/group-4",
+   "date": "2026-11-11",
+   "kind": "joined",
+   "people": 53
+  },
+  {
+   "group": 4,
+   "source": "whatsapp 111126/group-4",
+   "date": "2026-11-11",
+   "kind": "left",
+   "people": 139
+  },
+  {
+   "group": 5,
+   "source": "whatsapp 111126/group-5",
+   "date": "2026-11-11",
+   "kind": "joined",
+   "people": 55
+  },
+  {
+   "group": 5,
+   "source": "whatsapp 111126/group-5",
+   "date": "2026-11-11",
+   "kind": "left",
+   "people": 126
+  },
+  {
+   "group": 6,
+   "source": "whatsapp 111126/group-6",
+   "date": "2026-11-11",
+   "kind": "joined",
+   "people": 185
+  },
+  {
+   "group": 6,
+   "source": "whatsapp 111126/group-6",
+   "date": "2026-11-11",
+   "kind": "left",
+   "people": 144
+  },
+  {
+   "group": 7,
+   "source": "whatsapp 111126/group-center",
+   "date": "2026-11-11",
+   "kind": "joined",
+   "people": 47
+  },
+  {
+   "group": 7,
+   "source": "whatsapp 111126/group-center",
+   "date": "2026-11-11",
+   "kind": "left",
+   "people": 14
+  }
+ ],
+ "data": [
+  {
+   "date": "2026-06-08",
+   "joined": 57,
+   "left": 9,
+   "cumulative": 57,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-09",
+   "joined": 25,
+   "left": 5,
+   "cumulative": 82,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-10",
+   "joined": 9,
+   "left": 3,
+   "cumulative": 91,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-11",
+   "joined": 1,
+   "left": 1,
+   "cumulative": 92,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-12",
+   "joined": 105,
+   "left": 17,
+   "cumulative": 197,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-13",
+   "joined": 229,
+   "left": 97,
+   "cumulative": 426,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-14",
+   "joined": 139,
+   "left": 51,
+   "cumulative": 565,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-15",
+   "joined": 53,
+   "left": 35,
+   "cumulative": 618,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-16",
+   "joined": 29,
+   "left": 26,
+   "cumulative": 647,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-17",
+   "joined": 35,
+   "left": 13,
+   "cumulative": 682,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-18",
+   "joined": 17,
+   "left": 10,
+   "cumulative": 699,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-19",
+   "joined": 25,
+   "left": 17,
+   "cumulative": 724,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-20",
+   "joined": 47,
+   "left": 23,
+   "cumulative": 771,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-21",
+   "joined": 14,
+   "left": 15,
+   "cumulative": 785,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-22",
+   "joined": 20,
+   "left": 17,
+   "cumulative": 805,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-23",
+   "joined": 13,
+   "left": 13,
+   "cumulative": 818,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-24",
+   "joined": 13,
+   "left": 8,
+   "cumulative": 831,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-25",
+   "joined": 12,
+   "left": 4,
+   "cumulative": 843,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-26",
+   "joined": 510,
+   "left": 95,
+   "cumulative": 1353,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-27",
+   "joined": 52,
+   "left": 42,
+   "cumulative": 1405,
+   "groups": [
+    4
+   ]
+  },
+  {
+   "date": "2026-06-28",
+   "joined": 55,
+   "left": 34,
+   "cumulative": 1460,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-06-29",
+   "joined": 79,
+   "left": 47,
+   "cumulative": 1539,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-06-30",
+   "joined": 72,
+   "left": 31,
+   "cumulative": 1611,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-01",
+   "joined": 113,
+   "left": 54,
+   "cumulative": 1724,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-02",
+   "joined": 40,
+   "left": 33,
+   "cumulative": 1764,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-03",
+   "joined": 72,
+   "left": 40,
+   "cumulative": 1836,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-04",
+   "joined": 361,
+   "left": 87,
+   "cumulative": 2197,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-05",
+   "joined": 176,
+   "left": 113,
+   "cumulative": 2373,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-06",
+   "joined": 99,
+   "left": 82,
+   "cumulative": 2472,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-07",
+   "joined": 58,
+   "left": 43,
+   "cumulative": 2530,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-08",
+   "joined": 44,
+   "left": 37,
+   "cumulative": 2574,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-09",
+   "joined": 89,
+   "left": 46,
+   "cumulative": 2663,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-10",
+   "joined": 262,
+   "left": 95,
+   "cumulative": 2925,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-11",
+   "joined": 177,
+   "left": 94,
+   "cumulative": 3102,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-12",
+   "joined": 105,
+   "left": 53,
+   "cumulative": 3207,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-13",
+   "joined": 47,
+   "left": 40,
+   "cumulative": 3254,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-14",
+   "joined": 41,
+   "left": 43,
+   "cumulative": 3295,
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "date": "2026-07-15",
+   "joined": 35,
+   "left": 26,
+   "cumulative": 3330,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-16",
+   "joined": 109,
+   "left": 49,
+   "cumulative": 3439,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-17",
+   "joined": 56,
+   "left": 38,
+   "cumulative": 3495,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-18",
+   "joined": 111,
+   "left": 74,
+   "cumulative": 3606,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-19",
+   "joined": 182,
+   "left": 82,
+   "cumulative": 3788,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-20",
+   "joined": 61,
+   "left": 69,
+   "cumulative": 3849,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-21",
+   "joined": 68,
+   "left": 46,
+   "cumulative": 3917,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-22",
+   "joined": 46,
+   "left": 33,
+   "cumulative": 3963,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-23",
+   "joined": 11,
+   "left": 25,
+   "cumulative": 3974,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-24",
+   "joined": 36,
+   "left": 28,
+   "cumulative": 4010,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-25",
+   "joined": 49,
+   "left": 37,
+   "cumulative": 4059,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-26",
+   "joined": 18,
+   "left": 23,
+   "cumulative": 4077,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-27",
+   "joined": 50,
+   "left": 30,
+   "cumulative": 4127,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-28",
+   "joined": 25,
+   "left": 33,
+   "cumulative": 4152,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-29",
+   "joined": 17,
+   "left": 24,
+   "cumulative": 4169,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-30",
+   "joined": 84,
+   "left": 45,
+   "cumulative": 4253,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-07-31",
+   "joined": 190,
+   "left": 64,
+   "cumulative": 4443,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-01",
+   "joined": 99,
+   "left": 55,
+   "cumulative": 4542,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-02",
+   "joined": 94,
+   "left": 74,
+   "cumulative": 4636,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-03",
+   "joined": 82,
+   "left": 49,
+   "cumulative": 4718,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-04",
+   "joined": 71,
+   "left": 49,
+   "cumulative": 4789,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-05",
+   "joined": 37,
+   "left": 41,
+   "cumulative": 4826,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-06",
+   "joined": 46,
+   "left": 49,
+   "cumulative": 4872,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-07",
+   "joined": 124,
+   "left": 64,
+   "cumulative": 4996,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-08",
+   "joined": 79,
+   "left": 56,
+   "cumulative": 5075,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-09",
+   "joined": 45,
+   "left": 45,
+   "cumulative": 5120,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-10",
+   "joined": 35,
+   "left": 44,
+   "cumulative": 5155,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-11",
+   "joined": 37,
+   "left": 22,
+   "cumulative": 5192,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-12",
+   "joined": 50,
+   "left": 37,
+   "cumulative": 5242,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-13",
+   "joined": 37,
+   "left": 31,
+   "cumulative": 5279,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-14",
+   "joined": 14,
+   "left": 19,
+   "cumulative": 5293,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-15",
+   "joined": 16,
+   "left": 34,
+   "cumulative": 5309,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-16",
+   "joined": 33,
+   "left": 32,
+   "cumulative": 5342,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-17",
+   "joined": 16,
+   "left": 16,
+   "cumulative": 5358,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-18",
+   "joined": 25,
+   "left": 24,
+   "cumulative": 5383,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-19",
+   "joined": 34,
+   "left": 29,
+   "cumulative": 5417,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "joined": 10,
+   "left": 22,
+   "cumulative": 5427,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-21",
+   "joined": 11,
+   "left": 12,
+   "cumulative": 5438,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-22",
+   "joined": 6,
+   "left": 20,
+   "cumulative": 5444,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-23",
+   "joined": 5,
+   "left": 27,
+   "cumulative": 5449,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-24",
+   "joined": 25,
+   "left": 20,
+   "cumulative": 5474,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-25",
+   "joined": 23,
+   "left": 21,
+   "cumulative": 5497,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-26",
+   "joined": 7,
+   "left": 12,
+   "cumulative": 5504,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-27",
+   "joined": 8,
+   "left": 24,
+   "cumulative": 5512,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-28",
+   "joined": 7,
+   "left": 16,
+   "cumulative": 5519,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-29",
+   "joined": 9,
+   "left": 14,
+   "cumulative": 5528,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-30",
+   "joined": 16,
+   "left": 19,
+   "cumulative": 5544,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-08-31",
+   "joined": 20,
+   "left": 8,
+   "cumulative": 5564,
+   "groups": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "joined": 26,
+   "left": 1,
+   "cumulative": 5590,
+   "groups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "date": "2026-09-15",
+   "joined": 8,
+   "left": 4,
+   "cumulative": 5598,
+   "groups": [
+    1,
+    3,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "date": "2026-09-16",
+   "joined": 22,
+   "left": 1,
+   "cumulative": 5620,
+   "groups": [
+    3,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "date": "2026-09-17",
+   "joined": 2,
+   "left": 1,
+   "cumulative": 5622,
+   "groups": [
+    1,
+    5,
+    6
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "joined": 21,
+   "left": 5,
+   "cumulative": 5643,
+   "groups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  }
+ ]
+}

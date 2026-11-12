@@ -500,4 +500,7 @@ function main() {
   console.log(`📝 data/whatsapp/wa-blocks.json`);
 }
 
-main();
+// Also used by members.js, which counts the join/leave notices this file skips.
+module.exports = { discoverGroups, IOS_HDR, AND_HDR, SENDER_RE, redact, SOURCE_DIRS };
+
+if (require.main === module) main();
