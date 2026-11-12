@@ -196,11 +196,23 @@ function parseChat({ chat, group, format }) {
  * data/ is published to GitHub Pages — raw numbers must never reach an output
  * file. Dedupe still uses the real numbers, but only in memory.
  */
-// Deliberately permissive about separators: the chats use spaces, ASCII
-// hyphens, U+2011 non-breaking hyphens, dots, or nothing at all.
-const SEP = '[\\s\\-\\u2010-\\u2015.]*';
-const PHONE_RE = new RegExp(`(?:\\+?972${SEP}|0)5\\d${SEP}\\d{3}${SEP}\\d{4}`, 'g');
-const redact = (s) => (s || '').replace(PHONE_RE, '[טלפון]');
+// Donors write their number every way imaginable: with +972, with a leading
+// 0, with neither ("50-812-5191"), in Arabic-Indic digits, and split by
+// spaces, ASCII hyphens, U+2011 hyphens, dots or direction marks. Matching a
+// fixed shape missed the bare-local form and leaked real numbers into the
+// published files, so instead: pull out every run of 8-15 digits, strip the
+// separators, and redact it if what remains is an Israeli mobile number.
+const DIGIT = '[0-9\\u0660-\\u0669]';
+const SEP = '[\\s\\u00a0.\\-\\u2010-\\u2015\\u200e\\u200f\\u202a-\\u202e]*';
+const PHONE_RE = new RegExp(`\\+?${SEP}${DIGIT}(?:${SEP}${DIGIT}){7,14}`, 'g');
+const MOBILE_RE = /^(?:972)?0?5\d{8}$/;
+const asciiDigits = (s) => s.replace(/[\u0660-\u0669]/g,
+  (d) => String.fromCharCode(d.charCodeAt(0) - 0x0660 + 48)).replace(/\D/g, '');
+const asMobile = (run) => {
+  const d = asciiDigits(run);
+  return MOBILE_RE.test(d) ? '0' + d.replace(/^972/, '').replace(/^0/, '') : null;
+};
+const redact = (s) => (s || '').replace(PHONE_RE, (m) => (asMobile(m) ? '[טלפון]' : m));
 
 const stripMarks = (s) => s.replace(/[‎‏]/g, '');
 const cleanText = (body) =>
@@ -236,11 +248,9 @@ function enrichBlock(b, mediaHashes) {
   b.mediaOmitted = b.msgs.reduce((n, m) => n + (m.mediaOmitted || 0), 0);
   b.mediaCount = files.length + b.mediaOmitted;
   b.mediaHashes = [...new Set(files.map((f) => (mediaHashes[b.group] || {})[f]).filter(Boolean))];
-  b.phones = [...new Set(
-    (b.text.match(/(?:\+?972[\s\-‑]?|0)5\d[\s\-‑]?\d{3}[\s\-‑]?\d{4}/g) || [])
-      .map((p) => p.replace(/[^\d]/g, '').replace(/^972/, '0'))
-      .filter((p) => p.length === 10)
-  )];
+  // same detector as redact(), so a number that identifies a donor for the
+  // dedupe is exactly one that gets masked on the way out
+  b.phones = [...new Set((b.text.match(PHONE_RE) || []).map(asMobile).filter(Boolean))];
   b.reserved = RESERVED_RE.test(b.text);
   // Arabic token set, used for the fuzzy-text dedupe signal
   b.tokens = [...new Set(

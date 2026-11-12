@@ -2,43 +2,43 @@
  "categories": [
   {
    "name": "בגדים",
-   "count": 544,
-   "weight": 5220
+   "count": 616,
+   "weight": 5964
   },
   {
    "name": "רהיטים",
-   "count": 455,
-   "weight": 17878
+   "count": 509,
+   "weight": 22860
   },
   {
    "name": "ציוד בית ספרי",
-   "count": 451,
-   "weight": 4607
+   "count": 456,
+   "weight": 4654
   },
   {
    "name": "ילדים/תינוקות",
-   "count": 150,
-   "weight": 1059
+   "count": 167,
+   "weight": 1202
   },
   {
    "name": "ציוד כללי לבית",
-   "count": 133,
-   "weight": 401
+   "count": 155,
+   "weight": 457
   },
   {
    "name": "אלקטרוניקה",
-   "count": 112,
-   "weight": 4206
+   "count": 127,
+   "weight": 4794
   },
   {
    "name": "כלי מטבח",
-   "count": 41,
-   "weight": 406
+   "count": 46,
+   "weight": 408
   },
   {
    "name": "ציוד אישי",
-   "count": 33,
-   "weight": 37
+   "count": 35,
+   "weight": 71
   },
   {
    "name": "אוכל",
@@ -49,63 +49,63 @@
  "topItems": [
   {
    "name": "שקית בגדים",
-   "count": 463
+   "count": 523
   },
   {
    "name": "ספרים",
-   "count": 233
+   "count": 235
   },
   {
    "name": "תיק בית ספר",
-   "count": 160
-  },
-  {
-   "name": "כיסאות",
-   "count": 82
-  },
-  {
-   "name": "מיטה",
-   "count": 75
+   "count": 163
   },
   {
    "name": "שקית נעלים",
-   "count": 73
+   "count": 85
+  },
+  {
+   "name": "מיטה",
+   "count": 85
+  },
+  {
+   "name": "כיסאות",
+   "count": 84
   },
   {
    "name": "מזרן",
-   "count": 59
+   "count": 64
   },
   {
    "name": "שטיחים לבית",
-   "count": 53
-  },
-  {
-   "name": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
-   "count": 41
+   "count": 59
   },
   {
    "name": "כרית",
-   "count": 41
+   "count": 50
+  },
+  {
+   "name": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+   "count": 46
   },
   {
    "name": "שמיכה",
-   "count": 37
+   "count": 46
+  },
+  {
+   "name": "פריט לא מזוהה",
+   "count": 42
   },
   {
    "name": "עגלה לתינוק",
-   "count": 35
+   "count": 39
+  },
+  {
+   "name": "שולחן",
+   "count": 37
   },
   {
    "name": "קופסת אוכל קלקר",
    "count": 35
-  },
-  {
-   "name": "חלב",
-   "count": 31
-  },
-  {
-   "name": "שולחן",
-   "count": 30
   }
  ]
 }
