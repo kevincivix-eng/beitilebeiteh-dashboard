@@ -21,9 +21,12 @@
 const fs = require('fs');
 const path = require('path');
 const { discoverGroups, IOS_HDR, AND_HDR } = require('./parse.js');
+const { loadLive } = require('./live-source');
 
 const ROOT = path.join(__dirname, '..', '..');
 const OUT_DIR = path.join(ROOT, 'data', 'whatsapp');
+
+const SINCE_LIVE = '2025-05-01';
 
 const stripMarks = (s) => s.replace(/[‎‏‪-‮]/g, '');
 
@@ -54,7 +57,32 @@ function classify(text) {
   return null;
 }
 
+/**
+ * Membership straight from the collector.
+ *
+ * The exports could only ever report what happened while the exporting phone
+ * was already in the group, which is why everything older arrives as one
+ * undated lump ("ועוד 137 יצאו"). The collector has no such blind spot: it is
+ * in all seven groups continuously, so every join and leave is a dated event
+ * with the group it happened in.
+ */
+function liveDays(since) {
+  const live = loadLive(since);
+  const perDay = new Map();
+  for (const e of live.membership) {
+    if (e.type !== 'joined' && e.type !== 'left') continue;
+    const d = perDay.get(e.date) || { joined: 0, left: 0, groups: new Set() };
+    d[e.type] += e.count || (e.whoHashes || []).length || 1;
+    if (e.group) d.groups.add(e.group);
+    perDay.set(e.date, d);
+  }
+  return perDay;
+}
+
 function main() {
+  const liveOnly = process.argv.includes('--live-only') || process.env.WA_LIVE_ONLY === '1';
+  if (liveOnly) return mainLiveOnly();
+
   const chats = discoverGroups();
   if (!chats.length) throw new Error('no chat exports found');
 
@@ -107,6 +135,18 @@ function main() {
     console.log(`  ${src.label.padEnd(26)} ${first}→${last}  joined ${String(seen.joined).padStart(5)}  left ${String(seen.left).padStart(5)}`);
   });
 
+  // The collector's days extend the same map — they are the same events,
+  // counted from a feed that does not have the exports' blind spot.
+  const lastExport = [...perDay.keys()].sort().pop() || '0000-00-00';
+  const fromLive = liveDays(SINCE_LIVE);
+  let liveAdded = 0;
+  for (const [date, d] of fromLive) {
+    if (date <= lastExport) continue;   // the exports already covered that day
+    perDay.set(date, { ...d, live: true });
+    liveAdded++;
+  }
+  if (liveAdded) console.log(`  wa-live (collector)         ${liveAdded} day(s) after ${lastExport}`);
+
   // Daily series. "cumulative" is the running total of joins — the number the
   // dashboard shows — and intentionally ignores leavers.
   const days = [...perDay.keys()].sort();
@@ -115,7 +155,7 @@ function main() {
     const d = perDay.get(date);
     cum += d.joined;
     return { date, joined: d.joined, left: d.left, cumulative: cum,
-      groups: [...d.groups].sort((a, b) => a - b) };
+      groups: [...d.groups].sort((a, b) => a - b), ...(d.live ? { live: true } : {}) };
   });
 
   const totals = series.reduce((a, r) => ({ joined: a.joined + r.joined, left: a.left + r.left }), { joined: 0, left: 0 });
@@ -134,6 +174,45 @@ function main() {
   console.log(`\n✅ ${series.length} days with membership events`);
   console.log(`   joined ${totals.joined} | left ${totals.left} | cumulative joins ${cum}`);
   console.log(`   undated lumps (events from before a phone joined): +${lumpJoined} joined, ${lumpLeft} left`);
+  console.log('📝 data/whatsapp/members.json');
+}
+
+/**
+ * What the daily build runs. The exports are not on the build machine, so the
+ * counted days already in members.json are kept exactly as they are and only
+ * the collector's days are recomputed — the same frozen-history-plus-live-tail
+ * split the listings use.
+ */
+function mainLiveOnly() {
+  const file = path.join(OUT_DIR, 'members.json');
+  if (!fs.existsSync(file)) throw new Error('--live-only needs an existing data/whatsapp/members.json');
+  const prev = JSON.parse(fs.readFileSync(file, 'utf8'));
+
+  const kept = (prev.data || []).filter((r) => !r.live);
+  const lastExport = kept.length ? kept[kept.length - 1].date : '0000-00-00';
+  let cum = kept.length ? kept[kept.length - 1].cumulative : 0;
+
+  const added = [...liveDays(SINCE_LIVE).entries()]
+    .filter(([date]) => date > lastExport)
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([date, d]) => {
+      cum += d.joined;
+      return { date, joined: d.joined, left: d.left, cumulative: cum,
+        groups: [...d.groups].sort((a, b) => a - b), live: true };
+    });
+
+  const series = kept.concat(added);
+  const totals = series.reduce((a, r) => ({ joined: a.joined + r.joined, left: a.left + r.left }), { joined: 0, left: 0 });
+
+  fs.writeFileSync(file, JSON.stringify({
+    ...prev,
+    generated: new Date().toISOString(),
+    totals: { ...prev.totals, ...totals },
+    data: series,
+  }, null, 1));
+
+  console.log(`✅ kept ${kept.length} counted days, added ${added.length} from the collector`);
+  console.log(`   cumulative joins ${cum}`);
   console.log('📝 data/whatsapp/members.json');
 }
 

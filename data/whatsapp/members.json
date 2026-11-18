@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-18T09:20:53.148Z",
+ "generated": "2026-11-18T13:08:53.148Z",
  "note": "Counted from the chat exports. Only covers days inside each chat's own window — see coverage.",
  "totals": {
-  "joined": 13487,
-  "left": 8908,
+  "joined": 13488,
+  "left": 8911,
   "undatedJoined": 62,
   "undatedLeft": 14
  },
@@ -5236,6 +5236,18 @@
     5,
     6
    ]
+  },
+  {
+   "date": "2026-11-18",
+   "joined": 1,
+   "left": 3,
+   "cumulative": 13488,
+   "groups": [
+    2,
+    4,
+    5
+   ],
+   "live": true
   }
  ]
 }

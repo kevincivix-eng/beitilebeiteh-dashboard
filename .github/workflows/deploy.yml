@@ -41,6 +41,7 @@ jobs:
       - name: Rebuild WhatsApp listings from the live feed
         run: |
           node build/whatsapp/parse.js --live-only
+          node build/whatsapp/members.js --live-only
           node build/whatsapp/extract.js
           node build/whatsapp/build-exp.js
 
