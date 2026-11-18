@@ -11,26 +11,10 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
 const EXP = path.join(ROOT, 'data', 'whatsapp');
-// Mirrors SOURCE_DIRS in parse.js: each dated dump holds its own media.
-const SOURCE_DIRS = ['whatsapp', 'whatsapp 111126'];
-
-// group number -> media folders (a group can be split across dumps/periods)
+// Media folders come from parse.js, which already knows every dump's layout.
+const { discoverGroups } = require('./parse.js');
 const folders = {};
-const addFolder = (g, dir) => { (folders[g] = folders[g] || []).push(dir); };
-SOURCE_DIRS.forEach((rel) => {
-  const base = path.join(ROOT, rel);
-  if (!fs.existsSync(base)) return;
-  fs.readdirSync(base).forEach((d) => {
-    const full = path.join(base, d);
-    if (!fs.statSync(full).isDirectory()) return;
-    if (d.startsWith('WhatsApp Chat -')) {           // iPhone dump
-      const m = d.match(/([4-9])️?⃣/);
-      if (m) addFolder(Number(m[1]), full);
-    } else if (d.startsWith('group-')) {             // Android dump
-      addFolder(d === 'group-center' ? 7 : Number(d.replace('group-', '')), full);
-    }
-  });
-});
+discoverGroups().forEach((src) => { folders[src.group] = src.mediaDirs; });
 
 const blocks = JSON.parse(fs.readFileSync(path.join(EXP, 'wa-blocks.json'), 'utf8')).data;
 const byId = new Map(blocks.map((b) => [b.id, b]));

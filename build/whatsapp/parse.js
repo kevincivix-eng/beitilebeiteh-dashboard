@@ -27,14 +27,23 @@ const OUT_DIR = path.join(ROOT, 'data', 'whatsapp');
 // They cover different periods of the SAME groups, so group numbers repeat
 // across folders on purpose: that is what lets the dedupe treat them as one
 // timeline. Every such folder is gitignored (private numbers + media).
-const SOURCE_DIRS = ['whatsapp', 'whatsapp 111126'];
+// Oldest first. A later dump SUPERSEDES an earlier one for the same group:
+// the exports overlap in time, and two copies of one period would be counted
+// twice (the dedupe only ever merges across different groups, never within
+// one). Media folders are the exception — those accumulate from every dump,
+// because a text-only export carries no files at all.
+const SOURCE_DIRS = ['whatsapp', 'whatsapp 111126', 'whatsapp 1811'];
 
 // Everything before this date is ignored (currently a no-op: the exports start
 // 8.6.2026, but the cutoff is part of the agreed spec).
 const SINCE = '2025-05-01';
 
-// Legacy (iPhone) dump: three loose chat files, media in sibling folders.
-const LEGACY_CHATS = { '_chat.txt': 4, '_chat 2.txt': 5, '_chat 3.txt': 6 };
+// Which group a chat file belongs to is read from the export itself: the
+// group's own name starts with a keycap digit ("4️⃣من بيتي لبيتك"). File names
+// cannot be trusted — "_chat 2.txt" is group 5 in one dump and group 2 in the
+// next.
+const GROUP_IN_NAME = /([1-9])️?⃣\s*من\s*بيتي/;
+const GROUP_KEYCAP = /([1-9])️?⃣/;
 
 // WhatsApp system/administrative lines — never listings.
 const SYSTEM_MARKERS = [
@@ -70,6 +79,8 @@ const SENDER_RE = /^(.*?):(?: ([\s\S]*))?$/;
 const IOS_ATTACH_RE = /<מצורף:\s*([^>]+?)\s*>/g;
 const AND_ATTACH_RE = /^\s*([\w.\-]+\.\w{2,4})\s*\(קובץ מצורף\)\s*$/;
 const MEDIA_OMITTED = /<המדיה לא נכללה>|<Media omitted>/;
+// Text-only iPhone export: the file is gone, only the fact of it remains.
+const IOS_OMITTED = /(התמונה|הסרטון|האודיו|הקובץ|מדבקה|הודעה קולית)[^\n]{0,12}הושמט/;
 
 const BLOCK_GAP_SEC = 180;      // same sender, messages this close = one listing
 const RESERVE_WINDOW_SEC = 1800; // "reserved" note counts if within 30min after
@@ -84,53 +95,85 @@ const RESERVE_WINDOW_SEC = 1800; // "reserved" note counts if within 30min after
  * because they are the same WhatsApp groups at different times.
  */
 function discoverGroups() {
-  const out = [];
+  const chats = new Map();   // group -> newest chat found
+  const media = new Map();   // group -> [folders], from every dump
+
+  const groupOf = (text) => {
+    // The branch group is also called "1️⃣…" but is a different group
+    // ("من بيتي لبيتك المركز"), so it is numbered past the main ones.
+    if (/المركز|group-center/.test(text)) return 7;
+    const m = GROUP_IN_NAME.exec(text) || GROUP_KEYCAP.exec(text);
+    return m ? Number(m[1]) : null;
+  };
+
   SOURCE_DIRS.forEach((rel) => {
     const dir = path.join(ROOT, rel);
     if (!fs.existsSync(dir)) return;
-    const entries = fs.readdirSync(dir);
 
-    // --- iPhone layout: loose _chat*.txt + "WhatsApp Chat - N️⃣…" media dirs
-    Object.entries(LEGACY_CHATS).forEach(([file, group]) => {
-      if (!entries.includes(file)) return;
-      const mediaDir = entries
-        .map((d) => path.join(dir, d))
-        .find((d) => path.basename(d).startsWith('WhatsApp Chat -')
-          && fs.statSync(d).isDirectory()
-          && new RegExp(`${group}️?⃣`).test(path.basename(d)));
-      out.push({ group, label: `${rel}/${file}`, chat: path.join(dir, file), mediaDir, format: 'ios' });
-    });
+    const addChat = (file, mediaDir) => {
+      const head = fs.readFileSync(file, 'utf8').slice(0, 4000);
+      const format = AND_HDR.test(head.split('\n')[0]) ? 'android' : 'ios';
+      // The group's own name appears in the first lines — as the sender of the
+      // "group created" notice, or in the notice text itself.
+      const group = groupOf(head.split('\n').slice(0, 20).join('\n'))
+        || groupOf(path.basename(file))
+        || groupOf(path.basename(path.dirname(file)));
+      if (!group) { console.warn(`  ⚠️ skipped ${rel}/${path.basename(file)} — could not tell which group it is`); return; }
+      chats.set(group, { group, label: `${rel}/${path.basename(file)}`, chat: file, mediaDir, format });
+    };
 
-    // --- Android layout: one folder per group, chat + media together
-    entries.forEach((d) => {
-      const full = path.join(dir, d);
-      if (!d.startsWith('group-') || !fs.statSync(full).isDirectory()) return;
-      const chat = fs.readdirSync(full).find((f) => f.endsWith('.txt'));
-      if (!chat) return;
-      // "group-center" is a separate branch of the initiative — numbered past
-      // the main groups so it never collides with them in the dedupe.
-      const n = d === 'group-center' ? 7 : Number(d.replace('group-', ''));
-      out.push({ group: n, label: `${rel}/${d}`, chat: path.join(full, chat), mediaDir: full, format: 'android' });
+    fs.readdirSync(dir).forEach((entry) => {
+      const full = path.join(dir, entry);
+      let st; try { st = fs.statSync(full); } catch { return; }
+
+      if (st.isFile() && /^_chat.*\.txt$/i.test(entry)) { addChat(full, null); return; }
+      if (!st.isDirectory()) return;
+
+      // A media folder, a per-group folder, or both at once
+      const inner = fs.readdirSync(full);
+      const g = groupOf(entry) || (entry === 'group-center' ? 7 : null)
+        || (/^group-(\d+)$/.test(entry) ? Number(entry.replace('group-', '')) : null);
+      if (g) (media.get(g) || media.set(g, []).get(g)).push(full);
+      inner.filter((f) => f.endsWith('.txt')).forEach((f) => addChat(path.join(full, f), full));
     });
   });
-  return out;
+
+  // Every dump's media belongs to the chat that survived for that group.
+  return [...chats.values()].map((c) => ({
+    ...c,
+    mediaDirs: [...new Set([...(media.get(c.group) || []), c.mediaDir].filter(Boolean))],
+  })).sort((a, b) => a.group - b.group);
 }
 
 // ---------------------------------------------------------------- media hashes
-/** MD5 every media file of a group folder, keyed by the filename the chat cites. */
+/**
+ * MD5 every media file of a group folder.
+ *
+ * Indexed twice. By filename, for exports that cite the file by name
+ * ("<מצורף: 00000038-PHOTO-…jpg>"). And by the timestamp inside that
+ * filename, because a text-only export says nothing but "התמונה הושמטה" —
+ * the photo is still on disk from an earlier dump of the same group, and the
+ * send time is the only thing linking the two.
+ */
+const FILE_STAMP = /-(\d{4})-(\d{2})-(\d{2})-(\d{2})-(\d{2})-(\d{2})\./;
 function hashDir(dir) {
-  const map = {};
-  if (!dir || !fs.existsSync(dir)) return map;
+  const byName = {}; const byStamp = {};
+  if (!dir || !fs.existsSync(dir)) return { byName, byStamp };
   fs.readdirSync(dir).forEach((fn) => {
     const p = path.join(dir, fn);
     if (fn.startsWith('.') || fn.endsWith('.txt') || !fs.statSync(p).isFile()) return;
-    map[fn] = crypto.createHash('md5').update(fs.readFileSync(p)).digest('hex');
+    byName[fn] = crypto.createHash('md5').update(fs.readFileSync(p)).digest('hex');
+    const t = FILE_STAMP.exec(fn);
+    if (t) {
+      const key = `${t[1]}-${t[2]}-${t[3]} ${t[4]}:${t[5]}:${t[6]}`;
+      (byStamp[key] = byStamp[key] || []).push(fn);
+    }
   });
-  return map;
+  return { byName, byStamp };
 }
 
 // ---------------------------------------------------------------- chat parsing
-function parseChat({ chat, group, format }) {
+function parseChat({ chat, group, format }, byStamp = {}) {
   const raw = fs.readFileSync(chat, 'utf8');
   const HDR = format === 'ios' ? IOS_HDR : AND_HDR;
   const msgs = [];
@@ -169,6 +212,14 @@ function parseChat({ chat, group, format }) {
       let a;
       IOS_ATTACH_RE.lastIndex = 0;
       while ((a = IOS_ATTACH_RE.exec(x.body)) !== null) files.push(a[1].trim());
+      // Media stripped from this export, but kept by an earlier one: the
+      // file is named after the send time, so look it up by that.
+      const stripped = (stripMarks(x.body).match(new RegExp(IOS_OMITTED.source, 'g')) || []).length;
+      if (stripped) {
+        const pool = (byStamp[`${x.date} ${x.time}`] || []).filter((f) => !files.includes(f));
+        files.push(...pool.slice(0, stripped));
+        omitted += Math.max(0, stripped - pool.length);
+      }
     } else {
       x.body.split('\n').forEach((l) => {
         const a = AND_ATTACH_RE.exec(stripMarks(l));
@@ -407,7 +458,10 @@ function dedupe(blocks) {
       sender: redact(rep.sender),
       text: redact(rep.text),
       mediaCount: Math.max(...idxs.map((i) => blocks[i].mediaCount)),
-      mediaFiles: rep.mediaFiles,
+      // every copy's files, not just the representative's: a text-only export
+      // can win the "richest text" tie-break while carrying no photo at all,
+      // and the photo is what the vision pass is keyed on
+      mediaFiles: [...new Set(idxs.flatMap((i) => blocks[i].mediaFiles))],
       // real numbers stay in memory for dedupe only — never serialized
       phoneCount: new Set(idxs.flatMap((i) => blocks[i].phones)).size,
       reserved: idxs.some((i) => blocks[i].reserved),
@@ -432,19 +486,28 @@ function main() {
   if (!sources.length) throw new Error(`no chat exports found under ${SOURCE_DIRS.join(', ')}`);
 
   console.log('⏳ hashing media…');
-  const mediaHashes = {};
+  const mediaHashes = {};   // group -> filename -> md5
+  const mediaStamps = {};   // group -> "date time" -> [filename]
   sources.forEach((src) => {
-    const map = hashDir(src.mediaDir);
-    // one group can be fed by several dumps (different periods) — merge them
-    mediaHashes[src.group] = Object.assign(mediaHashes[src.group] || {}, map);
-    console.log(`  ${src.label}: ${Object.keys(map).length} media files hashed`);
+    mediaHashes[src.group] = mediaHashes[src.group] || {};
+    mediaStamps[src.group] = mediaStamps[src.group] || {};
+    let n = 0;
+    src.mediaDirs.forEach((dir) => {
+      const { byName, byStamp } = hashDir(dir);
+      Object.assign(mediaHashes[src.group], byName);
+      Object.entries(byStamp).forEach(([k, v]) => {
+        mediaStamps[src.group][k] = [...new Set([...(mediaStamps[src.group][k] || []), ...v])];
+      });
+      n += Object.keys(byName).length;
+    });
+    console.log(`  group ${src.group}: ${n} media files hashed from ${src.mediaDirs.length} folder(s)`);
   });
 
   console.log('⏳ parsing chats…');
   let allBlocks = [];
   const coverage = [];
   sources.forEach((src) => {
-    const { msgs, sysLines } = parseChat(src);
+    const { msgs, sysLines } = parseChat(src, mediaStamps[src.group]);
     const blocks = toBlocks(msgs).map((b) => enrichBlock(b, mediaHashes));
     // a candidate listing has either real text or media attached
     const cand = blocks.filter((b) => b.text.length >= 15 || b.mediaCount > 0);

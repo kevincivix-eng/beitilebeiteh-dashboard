@@ -13,6 +13,14 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..', '..');
+
+// Where the WhatsApp record takes over from Airtable. Airtable holds the
+// deliveries recorded up to May 2026; the chats reach back further than that
+// (group 1 opened in Aug 2025), and counting both would count that stretch
+// twice — the same listings, logged in two places. Parsing keeps the whole
+// history (the audit page and the member counts need it); only the numbers
+// that get merged into the live dashboard start here.
+const FROM = process.env.WA_FROM || '2026-06-01';
 const EXP = path.join(ROOT, 'data', 'whatsapp');
 const LIVE = path.join(ROOT, 'data');
 
@@ -49,7 +57,9 @@ const round2 = (n) => Math.round(n * 100) / 100;
 
 function main() {
   const src = JSON.parse(fs.readFileSync(path.join(EXP, 'wa-listings.json'), 'utf8'));
-  const listings = src.data.filter((l) => l.isListing);
+  const all = src.data.filter((l) => l.isListing);
+  const listings = all.filter((l) => l.date >= FROM);
+  const beforeFrom = all.length - listings.length;
 
   // ---------------------------------------------------------------- enrich
   const unknownNames = new Map();
@@ -240,6 +250,7 @@ function main() {
     console.log(`   ⚠️ names missing from catalog (${unknownNames.size}):`);
     [...unknownNames.entries()].sort((a, b) => b[1] - a[1]).forEach(([n, c]) => console.log(`      ${c}× ${n}`));
   }
+  console.log(`   period starts ${FROM} — ${beforeFrom} earlier listings left out (Airtable covers them)`);
   if (overlap) console.log(`   ⚠️ ${volume.overlapWarning}`);
 }
 

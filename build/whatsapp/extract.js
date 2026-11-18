@@ -26,8 +26,13 @@ const lexicon = fs.existsSync(lexPath) ? JSON.parse(fs.readFileSync(lexPath, 'ut
 // Items identified from the listing photos. Roughly 38% of listings are a photo
 // with only a city/phone in the caption — the text says nothing about the goods,
 // so the picture is the only evidence of what was actually passed on.
+// Keyed by the photo's filename, NOT by the listing id: ids are derived from
+// the earliest block in a cluster, so they move whenever a new export adds an
+// earlier copy of the same listing, and keying on them silently threw away
+// identifications that were already paid for. A photo filename does not move.
 const visPath = path.join(__dirname, 'vision-results.json');
 const vision = fs.existsSync(visPath) ? JSON.parse(fs.readFileSync(visPath, 'utf8')).results : {};
+const visionFor = (l) => (l.mediaFiles || []).map((f) => vision[path.basename(f)]).find(Boolean);
 
 // Compile lexicon entries once. Each entry: { ar: "regex", he: "שם עברי", qty: 1 }
 //
@@ -176,7 +181,7 @@ function main() {
     let items = ANNOUNCEMENT.test(normalizeAr(l.text)) ? [] : extractItems(l.text);
 
     // Fall back to what the photo shows when the caption named nothing.
-    const v = vision[l.id];
+    const v = visionFor(l);
     let visionUsed = false;
     if (!items.length && v) {
       if (v.notAnItem) { l.notAnItem = true; visionNotItem++; }

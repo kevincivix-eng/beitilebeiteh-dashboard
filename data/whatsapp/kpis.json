@@ -1,123 +1,131 @@
 {
  "source": "whatsapp",
  "period": {
-  "from": "2026-06-08",
-  "to": "2026-11-10"
+  "from": "2026-06-01",
+  "to": "2026-11-17"
  },
- "deliveries": 1295,
- "items": 2114,
- "weightTon": 40.41,
+ "deliveries": 2662,
+ "items": 2859,
+ "weightTon": 55.89,
  "weightEstimatedTon": 0,
  "weightEstimatedPct": 0,
- "unidentifiedListings": 42,
- "unidentifiedPct": 3,
- "cities": 13,
- "reservedCount": 290,
+ "unidentifiedListings": 911,
+ "unidentifiedPct": 34,
+ "cities": 14,
+ "reservedCount": 511,
  "byCity": {
-  "רהט": {
+  "לקיה": {
    "out": {
-    "deliveries": 453,
-    "items": 752,
-    "weightTon": 15.6,
-    "unidentified": 6
-   }
-  },
-  "חורה": {
-   "out": {
-    "deliveries": 65,
-    "items": 134,
-    "weightTon": 2.62,
-    "unidentified": 0
-   }
-  },
-  "אחר": {
-   "out": {
-    "deliveries": 279,
-    "items": 393,
-    "weightTon": 7.44,
-    "unidentified": 29
-   }
-  },
-  "ערערה בנגב": {
-   "out": {
-    "deliveries": 186,
-    "items": 306,
-    "weightTon": 5.53,
-    "unidentified": 1
+    "deliveries": 148,
+    "items": 167,
+    "weightTon": 3.16,
+    "unidentified": 42
    }
   },
   "כסיפה": {
    "out": {
-    "deliveries": 63,
-    "items": 107,
-    "weightTon": 1.72,
-    "unidentified": 3
+    "deliveries": 131,
+    "items": 170,
+    "weightTon": 2.58,
+    "unidentified": 36
+   }
+  },
+  "אחר": {
+   "out": {
+    "deliveries": 831,
+    "items": 558,
+    "weightTon": 10.24,
+    "unidentified": 460
+   }
+  },
+  "ערערה בנגב": {
+   "out": {
+    "deliveries": 299,
+    "items": 397,
+    "weightTon": 7.47,
+    "unidentified": 54
    }
   },
   "שגב שלום": {
    "out": {
-    "deliveries": 49,
-    "items": 70,
-    "weightTon": 1.09,
-    "unidentified": 0
-   }
-  },
-  "ערד": {
-   "out": {
-    "deliveries": 6,
-    "items": 11,
-    "weightTon": 0.3,
-    "unidentified": 0
-   }
-  },
-  "תל שבע": {
-   "out": {
-    "deliveries": 104,
-    "items": 202,
-    "weightTon": 3.31,
-    "unidentified": 2
-   }
-  },
-  "לקיה": {
-   "out": {
-    "deliveries": 70,
-    "items": 116,
-    "weightTon": 2.03,
-    "unidentified": 1
+    "deliveries": 101,
+    "items": 106,
+    "weightTon": 1.67,
+    "unidentified": 26
    }
   },
   "נווה מדבר": {
    "out": {
-    "deliveries": 8,
-    "items": 9,
-    "weightTon": 0.16,
+    "deliveries": 11,
+    "items": 14,
+    "weightTon": 0.39,
     "unidentified": 0
+   }
+  },
+  "רהט": {
+   "out": {
+    "deliveries": 814,
+    "items": 974,
+    "weightTon": 20.96,
+    "unidentified": 210
+   }
+  },
+  "חורה": {
+   "out": {
+    "deliveries": 113,
+    "items": 164,
+    "weightTon": 3.76,
+    "unidentified": 28
+   }
+  },
+  "ערד": {
+   "out": {
+    "deliveries": 10,
+    "items": 16,
+    "weightTon": 0.33,
+    "unidentified": 2
+   }
+  },
+  "תל שבע": {
+   "out": {
+    "deliveries": 187,
+    "items": 278,
+    "weightTon": 4.68,
+    "unidentified": 48
    }
   },
   "להבים": {
    "out": {
-    "deliveries": 1,
-    "items": 1,
-    "weightTon": 0.01,
+    "deliveries": 2,
+    "items": 4,
+    "weightTon": 0.03,
     "unidentified": 0
    }
   },
   "באר שבע": {
    "out": {
     "deliveries": 9,
-    "items": 10,
-    "weightTon": 0.57,
-    "unidentified": 0
+    "items": 7,
+    "weightTon": 0.56,
+    "unidentified": 2
    }
   },
   "דימונה": {
    "out": {
-    "deliveries": 2,
+    "deliveries": 5,
     "items": 3,
     "weightTon": 0.03,
+    "unidentified": 3
+   }
+  },
+  "חברון": {
+   "out": {
+    "deliveries": 1,
+    "items": 1,
+    "weightTon": 0.02,
     "unidentified": 0
    }
   }
  },
- "updated": "2026-11-12T07:01:59.966Z"
+ "updated": "2026-11-18T09:20:52.893Z"
 }

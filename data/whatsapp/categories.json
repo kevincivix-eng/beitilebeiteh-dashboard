@@ -2,110 +2,110 @@
  "categories": [
   {
    "name": "בגדים",
-   "count": 616,
-   "weight": 5964
+   "count": 881,
+   "weight": 8586
   },
   {
    "name": "רהיטים",
-   "count": 509,
-   "weight": 22860
+   "count": 745,
+   "weight": 31708
   },
   {
    "name": "ציוד בית ספרי",
-   "count": 456,
-   "weight": 4654
-  },
-  {
-   "name": "ילדים/תינוקות",
-   "count": 167,
-   "weight": 1202
+   "count": 533,
+   "weight": 5437
   },
   {
    "name": "ציוד כללי לבית",
-   "count": 155,
-   "weight": 457
+   "count": 205,
+   "weight": 557
+  },
+  {
+   "name": "ילדים/תינוקות",
+   "count": 199,
+   "weight": 1418
   },
   {
    "name": "אלקטרוניקה",
-   "count": 127,
-   "weight": 4794
+   "count": 180,
+   "weight": 7471
   },
   {
    "name": "כלי מטבח",
-   "count": 46,
-   "weight": 408
+   "count": 75,
+   "weight": 615
   },
   {
    "name": "ציוד אישי",
-   "count": 35,
-   "weight": 71
+   "count": 36,
+   "weight": 88
   },
   {
    "name": "אוכל",
-   "count": 3,
-   "weight": 3
+   "count": 5,
+   "weight": 13
   }
  ],
  "topItems": [
   {
+   "name": "פריט לא מזוהה",
+   "count": 911
+  },
+  {
    "name": "שקית בגדים",
-   "count": 523
+   "count": 753
   },
   {
    "name": "ספרים",
-   "count": 235
+   "count": 274
   },
   {
    "name": "תיק בית ספר",
-   "count": 163
-  },
-  {
-   "name": "שקית נעלים",
-   "count": 85
+   "count": 196
   },
   {
    "name": "מיטה",
-   "count": 85
+   "count": 124
   },
   {
-   "name": "כיסאות",
-   "count": 84
+   "name": "שקית נעלים",
+   "count": 120
   },
   {
    "name": "מזרן",
-   "count": 64
+   "count": 120
+  },
+  {
+   "name": "כיסאות",
+   "count": 99
   },
   {
    "name": "שטיחים לבית",
-   "count": 59
-  },
-  {
-   "name": "כרית",
-   "count": 50
+   "count": 75
   },
   {
    "name": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
-   "count": 46
+   "count": 75
   },
   {
    "name": "שמיכה",
-   "count": 46
+   "count": 67
   },
   {
-   "name": "פריט לא מזוהה",
-   "count": 42
+   "name": "כרית",
+   "count": 64
   },
   {
-   "name": "עגלה לתינוק",
-   "count": 39
+   "name": "מקרר",
+   "count": 47
   },
   {
    "name": "שולחן",
-   "count": 37
+   "count": 46
   },
   {
-   "name": "קופסת אוכל קלקר",
-   "count": 35
+   "name": "עגלה לתינוק",
+   "count": 41
   }
  ]
 }

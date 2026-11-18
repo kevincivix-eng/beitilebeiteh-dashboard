@@ -9,6 +9,7 @@
  */
 const fs = require('fs');
 const { mergeWhatsApp } = require('./merge_whatsapp');
+const { mergeMembers } = require('./merge_members');
 const { mergeSocialHistory } = require('./social_history');
 
 // Meta labels a period=day insight value with the END of the day it measures:
@@ -718,7 +719,11 @@ async function fetchSocial() {
   // members.json — refresh from SharePoint when available; else keep the
   // committed snapshot (and backfill kpis.members from it so the card stays populated).
   if (membersData?.series?.length) {
-    write('members.json', membersData.series);
+    // The spreadsheet stops where it stops; the chats carry the series on.
+    const m = mergeMembers(membersData.series);
+    if (m.added) console.log(`➕ members: +${m.added} days from WhatsApp after ${m.from} (cumulative ${m.cumulative})`);
+    if (m.cumulative) kpis.members = m.cumulative;
+    write('members.json', m.series);
   } else if (kpis.members == null) {
     try {
       const prev = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'members.json'), 'utf8'));

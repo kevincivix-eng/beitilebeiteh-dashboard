@@ -1,9 +1,9 @@
 {
  "note": "נפח לפי עיר מוצא — איחוד ההיסטוריה (Airtable) עם הנתונים החדשים (וואטסאפ)",
- "overlapWarning": "חפיפת תקופות: היסטוריה עד 2026-W36, חדש מ-2026-W24",
+ "overlapWarning": "חפיפת תקופות: היסטוריה עד 2026-W36, חדש מ-2026-W23",
  "periods": {
   "old": "… → 2026-W36",
-  "new": "2026-W24 → …"
+  "new": "2026-W23 → …"
  },
  "cities": [
   {
@@ -14,14 +14,14 @@
     "ton": 97.46
    },
    "new": {
-    "deliveries": 186,
-    "items": 306,
-    "ton": 5.53
+    "deliveries": 299,
+    "items": 397,
+    "ton": 7.47
    },
    "total": {
-    "deliveries": 1267,
-    "items": 8390,
-    "ton": 102.99
+    "deliveries": 1380,
+    "items": 8481,
+    "ton": 104.93
    }
   },
   {
@@ -32,14 +32,14 @@
     "ton": 20.54
    },
    "new": {
-    "deliveries": 453,
-    "items": 752,
-    "ton": 15.6
+    "deliveries": 814,
+    "items": 974,
+    "ton": 20.96
    },
    "total": {
-    "deliveries": 933,
-    "items": 1998,
-    "ton": 36.14
+    "deliveries": 1294,
+    "items": 2220,
+    "ton": 41.5
    }
   },
   {
@@ -50,14 +50,14 @@
     "ton": 9.44
    },
    "new": {
-    "deliveries": 65,
-    "items": 134,
-    "ton": 2.62
+    "deliveries": 113,
+    "items": 164,
+    "ton": 3.76
    },
    "total": {
-    "deliveries": 202,
-    "items": 1181,
-    "ton": 12.06
+    "deliveries": 250,
+    "items": 1211,
+    "ton": 13.2
    }
   },
   {
@@ -68,14 +68,14 @@
     "ton": 6.32
    },
    "new": {
-    "deliveries": 279,
-    "items": 393,
-    "ton": 7.44
+    "deliveries": 831,
+    "items": 558,
+    "ton": 10.24
    },
    "total": {
-    "deliveries": 526,
-    "items": 815,
-    "ton": 13.76
+    "deliveries": 1078,
+    "items": 980,
+    "ton": 16.56
    }
   },
   {
@@ -86,14 +86,14 @@
     "ton": 8.09
    },
    "new": {
-    "deliveries": 63,
-    "items": 107,
-    "ton": 1.72
+    "deliveries": 131,
+    "items": 170,
+    "ton": 2.58
    },
    "total": {
-    "deliveries": 182,
-    "items": 706,
-    "ton": 9.81
+    "deliveries": 250,
+    "items": 769,
+    "ton": 10.67
    }
   },
   {
@@ -104,14 +104,14 @@
     "ton": 7.13
    },
    "new": {
-    "deliveries": 104,
-    "items": 202,
-    "ton": 3.31
+    "deliveries": 187,
+    "items": 278,
+    "ton": 4.68
    },
    "total": {
-    "deliveries": 235,
-    "items": 665,
-    "ton": 10.44
+    "deliveries": 318,
+    "items": 741,
+    "ton": 11.81
    }
   },
   {
@@ -122,14 +122,14 @@
     "ton": 4.03
    },
    "new": {
-    "deliveries": 70,
-    "items": 116,
-    "ton": 2.03
+    "deliveries": 148,
+    "items": 167,
+    "ton": 3.16
    },
    "total": {
-    "deliveries": 159,
-    "items": 420,
-    "ton": 6.06
+    "deliveries": 237,
+    "items": 471,
+    "ton": 7.19
    }
   },
   {
@@ -140,14 +140,14 @@
     "ton": 4.34
    },
    "new": {
-    "deliveries": 49,
-    "items": 70,
-    "ton": 1.09
+    "deliveries": 101,
+    "items": 106,
+    "ton": 1.67
    },
    "total": {
-    "deliveries": 117,
-    "items": 386,
-    "ton": 5.43
+    "deliveries": 169,
+    "items": 422,
+    "ton": 6.01
    }
   },
   {
@@ -158,14 +158,14 @@
     "ton": 1.93
    },
    "new": {
-    "deliveries": 8,
-    "items": 9,
-    "ton": 0.16
+    "deliveries": 11,
+    "items": 14,
+    "ton": 0.39
    },
    "total": {
-    "deliveries": 39,
-    "items": 156,
-    "ton": 2.09
+    "deliveries": 42,
+    "items": 161,
+    "ton": 2.32
    }
   },
   {
@@ -194,14 +194,14 @@
     "ton": 0.54
    },
    "new": {
-    "deliveries": 6,
-    "items": 11,
-    "ton": 0.3
+    "deliveries": 10,
+    "items": 16,
+    "ton": 0.33
    },
    "total": {
-    "deliveries": 15,
-    "items": 39,
-    "ton": 0.84
+    "deliveries": 19,
+    "items": 44,
+    "ton": 0.87
    }
   },
   {
@@ -213,13 +213,13 @@
    },
    "new": {
     "deliveries": 9,
-    "items": 10,
-    "ton": 0.57
+    "items": 7,
+    "ton": 0.56
    },
    "total": {
     "deliveries": 22,
-    "items": 38,
-    "ton": 1.56
+    "items": 35,
+    "ton": 1.55
    }
   },
   {
@@ -230,14 +230,14 @@
     "ton": 0.14
    },
    "new": {
-    "deliveries": 1,
-    "items": 1,
-    "ton": 0.01
+    "deliveries": 2,
+    "items": 4,
+    "ton": 0.03
    },
    "total": {
-    "deliveries": 3,
-    "items": 10,
-    "ton": 0.15
+    "deliveries": 4,
+    "items": 13,
+    "ton": 0.17
    }
   },
   {
@@ -248,12 +248,12 @@
     "ton": 0.03
    },
    "new": {
-    "deliveries": 2,
+    "deliveries": 5,
     "items": 3,
     "ton": 0.03
    },
    "total": {
-    "deliveries": 4,
+    "deliveries": 7,
     "items": 6,
     "ton": 0.06
    }
@@ -266,14 +266,14 @@
     "ton": 0
    },
    "new": {
-    "deliveries": 0,
-    "items": 0,
-    "ton": 0
+    "deliveries": 1,
+    "items": 1,
+    "ton": 0.02
    },
    "total": {
-    "deliveries": 0,
-    "items": 0,
-    "ton": 0
+    "deliveries": 1,
+    "items": 1,
+    "ton": 0.02
    }
   }
  ]
