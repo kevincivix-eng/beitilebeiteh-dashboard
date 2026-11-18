@@ -269,7 +269,7 @@ const stripMarks = (s) => s.replace(/[‎‏]/g, '');
 const cleanText = (body) =>
   stripMarks(body.replace(/‏?<מצורף:[^>]*>/g, ''))
     .split('\n')
-    .filter((l) => !AND_ATTACH_RE.test(l) && !MEDIA_OMITTED.test(l))
+    .filter((l) => !AND_ATTACH_RE.test(l) && !MEDIA_OMITTED.test(l) && !IOS_OMITTED.test(l))
     .join(' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -348,7 +348,7 @@ const dayNum = (d) => Math.floor(Date.parse(d + 'T00:00:00Z') / 86400000);
 
 function dedupe(blocks) {
   const dsu = new DSU(blocks.length);
-  const stats = { media: 0, phone: 0, text: 0, blacklistedHashes: 0 };
+  const stats = { media: 0, phone: 0, text: 0, simultaneous: 0, blacklistedHashes: 0 };
   const mergedBy = blocks.map(() => new Set());
 
   // --- signal 1: media MD5.
@@ -430,6 +430,61 @@ function dedupe(blocks) {
     });
   });
 
+  // --- signal 4: one moderator forwarding the same listing to every group.
+  //
+  // The posts land seconds apart (median 10s), which is the only thing left to
+  // match on when a text-only export carries no filename to hash and the
+  // caption is a bare city name. Pairs are taken nearest-in-time first, and a
+  // cluster may hold AT MOST ONE block per group — that guard is what keeps a
+  // moderator's burst of several different listings from collapsing into one,
+  // since each copy can only claim a group that is still free.
+  const SIM_WINDOW_SEC = 180;
+  const groupsOf = new Map();   // dsu root -> Set(group)
+  blocks.forEach((b, i) => {
+    const r = dsu.find(i);
+    if (!groupsOf.has(r)) groupsOf.set(r, new Set());
+    groupsOf.get(r).add(b.group);
+  });
+
+  const buckets = new Map();
+  blocks.forEach((b, i) => {
+    const k = `${b.sender}|${b.date}`;
+    if (!buckets.has(k)) buckets.set(k, []);
+    buckets.get(k).push(i);
+  });
+
+  const pairs = [];
+  buckets.forEach((idxs) => {
+    const sorted = [...idxs].sort((a, b) => blocks[a].sec - blocks[b].sec);
+    for (let a = 0; a < sorted.length; a++) {
+      for (let c = a + 1; c < sorted.length; c++) {
+        const i = sorted[a]; const j = sorted[c];
+        const dt = Math.abs(blocks[i].sec - blocks[j].sec);
+        if (dt > SIM_WINDOW_SEC) break;              // sorted: no closer pair ahead
+        if (blocks[i].group === blocks[j].group) continue;
+        // same shape: a forward carries the same number of photos
+        if (blocks[i].mediaCount !== blocks[j].mediaCount) continue;
+        // if both actually say something, they must say the same thing
+        const ti = blocks[i].tokens; const tj = blocks[j].tokens;
+        if (ti.length >= 4 && tj.length >= 4 && jaccard(ti, tj) < 0.3) continue;
+        pairs.push([dt, i, j]);
+      }
+    }
+  });
+  pairs.sort((a, b) => a[0] - b[0]);
+  pairs.forEach(([, i, j]) => {
+    const ri = dsu.find(i); const rj = dsu.find(j);
+    if (ri === rj) return;
+    const gi = groupsOf.get(ri); const gj = groupsOf.get(rj);
+    for (const g of gj) if (gi.has(g)) return;       // that group is already spoken for
+    dsu.union(i, j);
+    const root = dsu.find(i);
+    const merged = new Set([...gi, ...gj]);
+    groupsOf.set(root, merged);
+    stats.simultaneous++;
+    mergedBy[i].add('time'); mergedBy[j].add('time');
+  });
+
   // --- collapse clusters into one listing each
   const clusters = new Map();
   blocks.forEach((_, i) => {
@@ -468,7 +523,11 @@ function dedupe(blocks) {
       seenInGroups: [...new Set(idxs.map((i) => blocks[i].group))].sort(),
       mergedBy: [...by].sort(),
       blockCount: idxs.length,
-      needsReview: idxs.length > 3, // suspicious cluster size -> manual check
+      // A healthy cluster holds exactly one copy per group — the same listing
+      // forwarded around. More copies than groups means some group has two,
+      // which is how an over-merge shows up (a donor's phone number matching
+      // a different listing of hers the same evening).
+      needsReview: idxs.length > new Set(idxs.map((i) => blocks[i].group)).size,
       members: idxs.map((i) => ({
         group: blocks[i].group, date: blocks[i].date, time: blocks[i].time,
         text: redact(blocks[i].text).slice(0, 200),
@@ -556,10 +615,10 @@ function main() {
   fs.writeFileSync(path.join(OUT_DIR, 'wa-blocks.json'), JSON.stringify(out, null, 1));
 
   console.log(`\n✅ ${allBlocks.length} blocks → ${listings.length} unique listings`);
-  console.log(`   merged by: media ${stats.media}, phone ${stats.phone}, text ${stats.text}`);
+  console.log(`   merged by: media ${stats.media}, phone ${stats.phone}, text ${stats.text}, same-moment ${stats.simultaneous}`);
   console.log(`   blacklisted boilerplate hashes: ${stats.blacklistedHashes}`);
   console.log(`   posted in 1 group: ${inGroups[1] || 0} | 2: ${inGroups[2] || 0} | 3+: ${out.spread.postedInThreeOrMore}`);
-  console.log(`   clusters needing manual review (>3 blocks): ${out.spread.needsReview}`);
+  console.log(`   clusters needing manual review (a group with two copies): ${out.spread.needsReview}`);
   console.log(`📝 data/whatsapp/wa-blocks.json`);
 }
 

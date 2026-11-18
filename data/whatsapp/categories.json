@@ -2,38 +2,38 @@
  "categories": [
   {
    "name": "בגדים",
-   "count": 881,
-   "weight": 8586
+   "count": 728,
+   "weight": 6870
   },
   {
    "name": "רהיטים",
-   "count": 745,
-   "weight": 31708
+   "count": 579,
+   "weight": 26267
   },
   {
    "name": "ציוד בית ספרי",
-   "count": 533,
-   "weight": 5437
-  },
-  {
-   "name": "ציוד כללי לבית",
-   "count": 205,
-   "weight": 557
+   "count": 399,
+   "weight": 3894
   },
   {
    "name": "ילדים/תינוקות",
-   "count": 199,
-   "weight": 1418
+   "count": 166,
+   "weight": 1160
+  },
+  {
+   "name": "ציוד כללי לבית",
+   "count": 151,
+   "weight": 445
   },
   {
    "name": "אלקטרוניקה",
-   "count": 180,
-   "weight": 7471
+   "count": 150,
+   "weight": 6666
   },
   {
    "name": "כלי מטבח",
-   "count": 75,
-   "weight": 615
+   "count": 60,
+   "weight": 363
   },
   {
    "name": "ציוד אישי",
@@ -48,64 +48,64 @@
  ],
  "topItems": [
   {
-   "name": "פריט לא מזוהה",
-   "count": 911
+   "name": "שקית בגדים",
+   "count": 621
   },
   {
-   "name": "שקית בגדים",
-   "count": 753
+   "name": "פריט לא מזוהה",
+   "count": 365
   },
   {
    "name": "ספרים",
-   "count": 274
+   "count": 206
   },
   {
    "name": "תיק בית ספר",
-   "count": 196
-  },
-  {
-   "name": "מיטה",
-   "count": 124
+   "count": 149
   },
   {
    "name": "שקית נעלים",
-   "count": 120
+   "count": 101
+  },
+  {
+   "name": "מיטה",
+   "count": 100
   },
   {
    "name": "מזרן",
-   "count": 120
+   "count": 80
   },
   {
    "name": "כיסאות",
-   "count": 99
+   "count": 78
   },
   {
    "name": "שטיחים לבית",
-   "count": 75
+   "count": 61
   },
   {
    "name": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
-   "count": 75
+   "count": 60
   },
   {
    "name": "שמיכה",
-   "count": 67
-  },
-  {
-   "name": "כרית",
-   "count": 64
+   "count": 58
   },
   {
    "name": "מקרר",
-   "count": 47
-  },
-  {
-   "name": "שולחן",
    "count": 46
   },
   {
+   "name": "כרית",
+   "count": 42
+  },
+  {
    "name": "עגלה לתינוק",
-   "count": 41
+   "count": 38
+  },
+  {
+   "name": "חלב",
+   "count": 36
   }
  ]
 }

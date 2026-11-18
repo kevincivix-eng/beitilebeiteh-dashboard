@@ -14,14 +14,14 @@
     "ton": 97.46
    },
    "new": {
-    "deliveries": 299,
-    "items": 397,
-    "ton": 7.47
+    "deliveries": 250,
+    "items": 319,
+    "ton": 6.42
    },
    "total": {
-    "deliveries": 1380,
-    "items": 8481,
-    "ton": 104.93
+    "deliveries": 1331,
+    "items": 8403,
+    "ton": 103.88
    }
   },
   {
@@ -32,14 +32,14 @@
     "ton": 20.54
    },
    "new": {
-    "deliveries": 814,
-    "items": 974,
-    "ton": 20.96
+    "deliveries": 544,
+    "items": 712,
+    "ton": 14.67
    },
    "total": {
-    "deliveries": 1294,
-    "items": 2220,
-    "ton": 41.5
+    "deliveries": 1024,
+    "items": 1958,
+    "ton": 35.21
    }
   },
   {
@@ -50,14 +50,14 @@
     "ton": 9.44
    },
    "new": {
-    "deliveries": 113,
-    "items": 164,
-    "ton": 3.76
+    "deliveries": 76,
+    "items": 131,
+    "ton": 2.95
    },
    "total": {
-    "deliveries": 250,
-    "items": 1211,
-    "ton": 13.2
+    "deliveries": 213,
+    "items": 1178,
+    "ton": 12.39
    }
   },
   {
@@ -68,14 +68,14 @@
     "ton": 6.32
    },
    "new": {
-    "deliveries": 831,
-    "items": 558,
-    "ton": 10.24
+    "deliveries": 554,
+    "items": 582,
+    "ton": 11.13
    },
    "total": {
-    "deliveries": 1078,
-    "items": 980,
-    "ton": 16.56
+    "deliveries": 801,
+    "items": 1004,
+    "ton": 17.45
    }
   },
   {
@@ -86,14 +86,14 @@
     "ton": 8.09
    },
    "new": {
-    "deliveries": 131,
-    "items": 170,
-    "ton": 2.58
+    "deliveries": 92,
+    "items": 119,
+    "ton": 2.11
    },
    "total": {
-    "deliveries": 250,
-    "items": 769,
-    "ton": 10.67
+    "deliveries": 211,
+    "items": 718,
+    "ton": 10.2
    }
   },
   {
@@ -104,14 +104,14 @@
     "ton": 7.13
    },
    "new": {
-    "deliveries": 187,
-    "items": 278,
-    "ton": 4.68
+    "deliveries": 126,
+    "items": 163,
+    "ton": 3.01
    },
    "total": {
-    "deliveries": 318,
-    "items": 741,
-    "ton": 11.81
+    "deliveries": 257,
+    "items": 626,
+    "ton": 10.14
    }
   },
   {
@@ -122,14 +122,14 @@
     "ton": 4.03
    },
    "new": {
-    "deliveries": 148,
-    "items": 167,
-    "ton": 3.16
+    "deliveries": 100,
+    "items": 127,
+    "ton": 2.64
    },
    "total": {
-    "deliveries": 237,
-    "items": 471,
-    "ton": 7.19
+    "deliveries": 189,
+    "items": 431,
+    "ton": 6.67
    }
   },
   {
@@ -140,14 +140,14 @@
     "ton": 4.34
    },
    "new": {
-    "deliveries": 101,
-    "items": 106,
-    "ton": 1.67
+    "deliveries": 77,
+    "items": 79,
+    "ton": 1.6
    },
    "total": {
-    "deliveries": 169,
-    "items": 422,
-    "ton": 6.01
+    "deliveries": 145,
+    "items": 395,
+    "ton": 5.94
    }
   },
   {
@@ -158,14 +158,14 @@
     "ton": 1.93
    },
    "new": {
-    "deliveries": 11,
-    "items": 14,
-    "ton": 0.39
+    "deliveries": 8,
+    "items": 10,
+    "ton": 0.24
    },
    "total": {
-    "deliveries": 42,
-    "items": 161,
-    "ton": 2.32
+    "deliveries": 39,
+    "items": 157,
+    "ton": 2.17
    }
   },
   {
@@ -195,13 +195,13 @@
    },
    "new": {
     "deliveries": 10,
-    "items": 16,
-    "ton": 0.33
+    "items": 14,
+    "ton": 0.32
    },
    "total": {
     "deliveries": 19,
-    "items": 44,
-    "ton": 0.87
+    "items": 42,
+    "ton": 0.86
    }
   },
   {
@@ -212,13 +212,13 @@
     "ton": 0.99
    },
    "new": {
-    "deliveries": 9,
-    "items": 7,
+    "deliveries": 8,
+    "items": 8,
     "ton": 0.56
    },
    "total": {
-    "deliveries": 22,
-    "items": 35,
+    "deliveries": 21,
+    "items": 36,
     "ton": 1.55
    }
   },
@@ -248,12 +248,12 @@
     "ton": 0.03
    },
    "new": {
-    "deliveries": 5,
+    "deliveries": 2,
     "items": 3,
     "ton": 0.03
    },
    "total": {
-    "deliveries": 7,
+    "deliveries": 4,
     "items": 6,
     "ton": 0.06
    }
@@ -266,14 +266,14 @@
     "ton": 0
    },
    "new": {
-    "deliveries": 1,
-    "items": 1,
-    "ton": 0.02
+    "deliveries": 2,
+    "items": 3,
+    "ton": 0.06
    },
    "total": {
-    "deliveries": 1,
-    "items": 1,
-    "ton": 0.02
+    "deliveries": 2,
+    "items": 3,
+    "ton": 0.06
    }
   }
  ]
