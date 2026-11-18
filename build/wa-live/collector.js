@@ -42,6 +42,11 @@ const logger = pino({ level: process.env.WA_LOG_LEVEL || 'warn' });
 const ts = () => new Date().toISOString().replace('T', ' ').slice(0, 19);
 const log = (...a) => console.log(ts(), ...a);
 
+const SKIP_KINDS = new Set([
+  'reactionMessage', 'pollUpdateMessage', 'senderKeyDistributionMessage',
+  'protocolMessage', 'editedMessage', 'pollCreationMessage',
+]);
+
 const MEDIA_TYPES = {
   imageMessage: 'jpg', videoMessage: 'mp4', audioMessage: 'ogg',
   documentMessage: 'bin', stickerMessage: 'webp',
@@ -117,8 +122,16 @@ async function onMessage(sock, waMsg, upsertType) {
   if (protocolMsg) return; // key shares, ephemeral settings — not content
 
   const kind = getContentType(content);
+
+  // Reactions, poll votes and the like are chatter about a listing, not the
+  // listing — storing them would pad the message count with records that carry
+  // neither an item nor a photo.
+  if (SKIP_KINDS.has(kind)) return;
+
   const media = MEDIA_TYPES[kind] ? [await captureMedia(sock, waMsg, kind)] : [];
   const { text, phoneHashes } = store.redact(textOf(waMsg.message));
+  // Nothing said and nothing shown: there is no listing here to keep.
+  if (!text.trim() && !media.length) return;
   const sender = waMsg.key?.participant || waMsg.participant || jid;
 
   store.writeMessage(group, {
