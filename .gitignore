@@ -18,3 +18,7 @@ EVENT-*.csv
 
 # Local-only credential helpers — never commit (they handle live tokens)
 *.local.html
+
+# Live collector: auth keys, raw messages and media stay on the machine that runs it
+/build/wa-live/auth/
+wa-live-data/
