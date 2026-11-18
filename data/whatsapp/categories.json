@@ -2,38 +2,38 @@
  "categories": [
   {
    "name": "בגדים",
-   "count": 728,
-   "weight": 6870
+   "count": 801,
+   "weight": 6936
   },
   {
    "name": "רהיטים",
-   "count": 579,
-   "weight": 26267
+   "count": 632,
+   "weight": 28522
   },
   {
    "name": "ציוד בית ספרי",
-   "count": 399,
-   "weight": 3894
+   "count": 441,
+   "weight": 3964
   },
   {
    "name": "ילדים/תינוקות",
-   "count": 166,
-   "weight": 1160
+   "count": 177,
+   "weight": 1216
   },
   {
    "name": "ציוד כללי לבית",
-   "count": 151,
-   "weight": 445
+   "count": 175,
+   "weight": 537
   },
   {
    "name": "אלקטרוניקה",
-   "count": 150,
-   "weight": 6666
+   "count": 165,
+   "weight": 7296
   },
   {
    "name": "כלי מטבח",
-   "count": 60,
-   "weight": 363
+   "count": 66,
+   "weight": 366
   },
   {
    "name": "ציוד אישי",
@@ -42,70 +42,70 @@
   },
   {
    "name": "אוכל",
-   "count": 5,
-   "weight": 13
+   "count": 6,
+   "weight": 14
   }
  ],
  "topItems": [
   {
    "name": "שקית בגדים",
-   "count": 621
-  },
-  {
-   "name": "פריט לא מזוהה",
-   "count": 365
+   "count": 684
   },
   {
    "name": "ספרים",
-   "count": 206
+   "count": 226
   },
   {
    "name": "תיק בית ספר",
-   "count": 149
+   "count": 164
   },
   {
-   "name": "שקית נעלים",
-   "count": 101
+   "name": "פריט לא מזוהה",
+   "count": 159
   },
   {
    "name": "מיטה",
-   "count": 100
+   "count": 110
+  },
+  {
+   "name": "שקית נעלים",
+   "count": 109
   },
   {
    "name": "מזרן",
-   "count": 80
+   "count": 88
   },
   {
    "name": "כיסאות",
-   "count": 78
-  },
-  {
-   "name": "שטיחים לבית",
-   "count": 61
+   "count": 79
   },
   {
    "name": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
-   "count": 60
+   "count": 66
+  },
+  {
+   "name": "שטיחים לבית",
+   "count": 66
   },
   {
    "name": "שמיכה",
-   "count": 58
-  },
-  {
-   "name": "מקרר",
-   "count": 46
+   "count": 66
   },
   {
    "name": "כרית",
-   "count": 42
+   "count": 50
+  },
+  {
+   "name": "מקרר",
+   "count": 48
   },
   {
    "name": "עגלה לתינוק",
-   "count": 38
+   "count": 40
   },
   {
-   "name": "חלב",
-   "count": 36
+   "name": "סט ספות",
+   "count": 37
   }
  ]
 }

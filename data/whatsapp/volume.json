@@ -15,13 +15,13 @@
    },
    "new": {
     "deliveries": 250,
-    "items": 319,
-    "ton": 6.42
+    "items": 348,
+    "ton": 6.64
    },
    "total": {
     "deliveries": 1331,
-    "items": 8403,
-    "ton": 103.88
+    "items": 8432,
+    "ton": 104.1
    }
   },
   {
@@ -33,13 +33,13 @@
    },
    "new": {
     "deliveries": 544,
-    "items": 712,
-    "ton": 14.67
+    "items": 761,
+    "ton": 15.56
    },
    "total": {
     "deliveries": 1024,
-    "items": 1958,
-    "ton": 35.21
+    "items": 2007,
+    "ton": 36.1
    }
   },
   {
@@ -51,13 +51,13 @@
    },
    "new": {
     "deliveries": 76,
-    "items": 131,
-    "ton": 2.95
+    "items": 139,
+    "ton": 3.07
    },
    "total": {
     "deliveries": 213,
-    "items": 1178,
-    "ton": 12.39
+    "items": 1186,
+    "ton": 12.51
    }
   },
   {
@@ -68,14 +68,14 @@
     "ton": 6.32
    },
    "new": {
-    "deliveries": 554,
-    "items": 582,
-    "ton": 11.13
+    "deliveries": 543,
+    "items": 665,
+    "ton": 12.18
    },
    "total": {
-    "deliveries": 801,
-    "items": 1004,
-    "ton": 17.45
+    "deliveries": 790,
+    "items": 1087,
+    "ton": 18.5
    }
   },
   {
@@ -87,13 +87,13 @@
    },
    "new": {
     "deliveries": 92,
-    "items": 119,
-    "ton": 2.11
+    "items": 124,
+    "ton": 2.25
    },
    "total": {
     "deliveries": 211,
-    "items": 718,
-    "ton": 10.2
+    "items": 723,
+    "ton": 10.34
    }
   },
   {
@@ -105,13 +105,13 @@
    },
    "new": {
     "deliveries": 126,
-    "items": 163,
-    "ton": 3.01
+    "items": 183,
+    "ton": 3.26
    },
    "total": {
     "deliveries": 257,
-    "items": 626,
-    "ton": 10.14
+    "items": 646,
+    "ton": 10.39
    }
   },
   {
@@ -123,13 +123,13 @@
    },
    "new": {
     "deliveries": 100,
-    "items": 127,
-    "ton": 2.64
+    "items": 143,
+    "ton": 3.04
    },
    "total": {
     "deliveries": 189,
-    "items": 431,
-    "ton": 6.67
+    "items": 447,
+    "ton": 7.07
    }
   },
   {
@@ -141,13 +141,13 @@
    },
    "new": {
     "deliveries": 77,
-    "items": 79,
-    "ton": 1.6
+    "items": 93,
+    "ton": 1.67
    },
    "total": {
     "deliveries": 145,
-    "items": 395,
-    "ton": 5.94
+    "items": 409,
+    "ton": 6.01
    }
   },
   {
@@ -159,13 +159,13 @@
    },
    "new": {
     "deliveries": 8,
-    "items": 10,
-    "ton": 0.24
+    "items": 11,
+    "ton": 0.26
    },
    "total": {
     "deliveries": 39,
-    "items": 157,
-    "ton": 2.17
+    "items": 158,
+    "ton": 2.19
    }
   },
   {

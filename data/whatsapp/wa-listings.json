@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-18T09:29:57.085Z",
+ "generated": "2026-11-18T09:40:06.871Z",
  "blocks": 6231,
- "listings": 3455,
- "nonListings": 2776,
+ "listings": 3444,
+ "nonListings": 2787,
  "cityResolved": 2235,
  "cityInherited": 576,
- "itemsResolved": 2329,
- "unidentified": 1126,
+ "itemsResolved": 2524,
+ "unidentified": 920,
  "lexiconEntries": 65,
  "data": [
   {
@@ -64055,9 +64055,15 @@
    "city": "חורה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שטיחים לבית",
+     "qty": 3,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -64207,9 +64213,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -64407,9 +64419,15 @@
    "city": "כסיפה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -64471,9 +64489,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 3,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -64598,9 +64622,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -64801,9 +64831,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -65317,9 +65353,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -65343,9 +65385,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שולחן עבודה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -66390,9 +66438,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -66494,9 +66548,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -67087,9 +67147,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -67114,9 +67180,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -67207,9 +67279,15 @@
    "city": "נווה מדבר",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "טלוויזיה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -67759,9 +67837,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -67819,9 +67903,15 @@
    "city": "חורה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מקרר",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -68490,9 +68580,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -68518,9 +68614,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "כיסא לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -68944,9 +69046,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "אמבטיה לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -69735,9 +69843,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "אם סלאמה",
@@ -70032,9 +70146,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -70523,9 +70643,15 @@
    "city": "חורה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -70652,9 +70778,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "נדנדה לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -70715,9 +70847,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -70829,9 +70967,15 @@
    "city": "לקיה",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -70880,9 +71024,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -70909,9 +71059,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -71037,9 +71193,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 5,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -72121,9 +72283,15 @@
    "city": "שגב שלום",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -72220,9 +72388,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -72249,9 +72423,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -72306,9 +72486,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -72504,9 +72690,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "Taimaa Ahmad",
@@ -73431,9 +73623,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -73458,9 +73656,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סט מצעים וכריות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -74017,9 +74221,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שולחן עבודה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -74049,7 +74259,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "Taimaa Ahmad",
    "seenInGroups": [
@@ -74419,9 +74629,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -74447,9 +74663,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 10,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -74695,9 +74917,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -75058,9 +75286,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -76406,9 +76640,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -76934,9 +77174,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תיק בית ספר",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -77026,9 +77272,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 5,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -77055,9 +77307,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -77209,9 +77467,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -77606,9 +77870,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -77797,9 +78067,15 @@
    "city": "תל שבע",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "וילונות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -77826,9 +78102,15 @@
    "city": "תל שבע",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מראה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -78543,9 +78825,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "כיסא לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -78964,9 +79252,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שולחן סלון",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -79518,9 +79812,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -79824,9 +80124,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "נדנדה לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -79894,9 +80200,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -81007,9 +81319,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -81259,9 +81577,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סט מצעים וכריות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -81544,9 +81868,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ציוד תינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -81753,7 +82083,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -81880,9 +82210,15 @@
    "city": "תל שבע",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תיק בית ספר",
+     "qty": 3,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -81943,9 +82279,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -82338,9 +82680,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -82483,9 +82831,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שטיחים לבית",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -82584,9 +82938,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -82650,9 +83010,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -82679,9 +83045,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -83003,9 +83375,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תנור",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -83465,9 +83843,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "בלנדר",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -83710,9 +84094,15 @@
    "city": "תל שבע",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -83897,9 +84287,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תנור",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -85190,7 +85586,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -86319,9 +86715,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -88734,9 +89136,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -88979,9 +89387,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "אמבטיה לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -89780,9 +90194,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -89831,9 +90251,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -90332,9 +90758,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שולחן אוכל",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -90529,7 +90961,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "Taimaa Ahmad",
    "seenInGroups": [
@@ -90558,7 +90990,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -91297,9 +91729,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -91363,9 +91801,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 4,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -91625,9 +92069,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 10,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -91809,9 +92259,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 10,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -92156,9 +92612,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תיקים לנשים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -92281,7 +92743,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -92813,9 +93275,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תכשיטים לבית",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -93716,7 +94184,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -94096,9 +94564,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -94454,9 +94928,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -94553,9 +95033,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -94654,9 +95140,15 @@
    "city": "חורה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 4,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -95068,9 +95560,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -95098,9 +95596,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -95164,9 +95668,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תיקים לנשים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -95421,9 +95931,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -95855,9 +96371,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -96216,9 +96738,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -96622,9 +97150,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -96881,9 +97415,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "עגלה לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -96910,9 +97450,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארונית",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -97228,9 +97774,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -98014,9 +98566,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שולחן עבודה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -98550,9 +99108,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ציוד ניקוי",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -103151,9 +103715,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -103986,9 +104556,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -104763,9 +105339,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -107312,9 +107894,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -109103,9 +109691,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -109775,9 +110369,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אמירה אלטורי",
@@ -112885,9 +113485,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -113064,7 +113670,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -113166,9 +113772,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ריהאם אבו קוש",
@@ -113268,9 +113880,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שולחן עבודה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -114670,9 +115288,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 4,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -115952,9 +116576,15 @@
    "city": "כסיפה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -116448,7 +117078,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -116726,9 +117356,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מזרן",
+     "qty": 4,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -117753,9 +118389,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "נברשת",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -117997,9 +118639,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שידת טלוויזיה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -119103,9 +119751,15 @@
    "city": "כסיפה",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מגהץ",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -119287,9 +119941,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארון מטבח קטן",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -119316,9 +119976,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -119396,9 +120062,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -119462,9 +120134,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -119492,9 +120170,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -119579,9 +120263,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -119888,9 +120578,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -121175,9 +121871,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית ציוד לבית הספר (מחברות, עטים, מחקים ועוד)",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -121228,9 +121930,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -121903,9 +122611,15 @@
    "city": "כסיפה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -124141,9 +124855,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 4,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -125254,9 +125974,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -125560,9 +126286,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 9,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -126139,9 +126871,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 4,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -126169,9 +126907,15 @@
    "city": "חורה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 8,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -126272,9 +127016,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -128286,9 +129036,15 @@
    "city": "תל שבע",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 6,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -128757,9 +129513,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -129270,9 +130032,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תיק בית ספר",
+     "qty": 10,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "Taimaa Ahmad",
@@ -129572,9 +130340,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -130515,9 +131289,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 20,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -130897,9 +131677,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תיק בית ספר",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -133022,9 +133808,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "נברשת",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -133165,9 +133957,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סטים של כלי מטבח וכלי בישול - צלחות, כוסות, סירים, וכו",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -134922,9 +135720,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -135550,9 +136354,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -136963,9 +137773,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -137164,9 +137980,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -137447,9 +138269,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תנור חימום",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -137878,9 +138706,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שמיכה",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -138653,7 +139487,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -139326,9 +140160,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -139733,9 +140573,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "חלב",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -140036,7 +140882,7 @@
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
    "sender": "פידאא חורה",
    "seenInGroups": [
@@ -140085,9 +140931,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שטיחים לבית",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -140234,9 +141086,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -140757,9 +141615,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -141540,9 +142404,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שימורים ואוכל יבש",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -143335,9 +144205,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -144282,9 +145158,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -145103,9 +145985,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -145214,9 +146102,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "משחקים לילדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -145618,9 +146512,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -146504,9 +147404,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "וילונות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -147048,9 +147954,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -147458,9 +148370,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שידת איפור",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -149930,9 +150848,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מכונת כושר",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -152118,9 +153042,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -152206,9 +153136,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -152541,9 +153477,15 @@
    "city": "כסיפה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -153994,9 +154936,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מקרר",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "אם סלאמה",
@@ -154022,9 +154970,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מזרן",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -154130,9 +155084,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -154450,9 +155410,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ספרים",
+     "qty": 3,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -155333,9 +156299,15 @@
    "city": "רהט",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -155779,9 +156751,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 16,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -156060,9 +157038,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שמיכה",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -156090,9 +157074,15 @@
    "city": "ערערה בנגב",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -157827,9 +158817,15 @@
    "city": "חורה",
    "cityInherited": true,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -159349,9 +160345,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -159653,9 +160655,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -159959,9 +160967,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -160012,9 +161026,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סט מצעים וכריות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -160941,9 +161961,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "כרית",
+     "qty": 8,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -162777,9 +163803,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 8,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -165213,9 +166245,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 8,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -166611,9 +167649,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -166946,9 +167990,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -168046,9 +169096,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "תנור",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם סלאמה",
@@ -168425,9 +169481,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 3,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -169099,9 +170161,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "כיריים גז",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -170404,9 +171472,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -170689,9 +171763,15 @@
    "city": "תל שבע",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארונית",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -171733,9 +172813,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -172337,9 +173423,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "עגלה לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -172757,9 +173849,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -173364,9 +174462,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שמיכה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -173956,9 +175060,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -173986,9 +175096,15 @@
    "city": "שגב שלום",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -174312,9 +175428,15 @@
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -174516,9 +175638,15 @@
    "city": "לקיה",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שמיכה",
+     "qty": 3,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -175018,9 +176146,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -175258,9 +176392,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",
@@ -175377,9 +176517,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -175553,9 +176699,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "קומקום חשמלי",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -175744,9 +176896,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "ראניה בלאל",
@@ -175907,9 +177065,15 @@
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": true,
    "sender": "ראניה בלאל",
@@ -176156,9 +177320,15 @@
    "city": "רהט",
    "cityInherited": false,
    "cityResolved": true,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
    "sender": "אם בקר מתנדבת מביתי לביתך",

@@ -4,78 +4,78 @@
   "from": "2026-06-01",
   "to": "2026-11-17"
  },
- "deliveries": 1851,
- "items": 2274,
- "weightTon": 45.77,
+ "deliveries": 1840,
+ "items": 2499,
+ "weightTon": 48.94,
  "weightEstimatedTon": 0,
  "weightEstimatedPct": 0,
- "unidentifiedListings": 365,
- "unidentifiedPct": 20,
+ "unidentifiedListings": 159,
+ "unidentifiedPct": 9,
  "cities": 14,
  "reservedCount": 431,
  "byCity": {
   "לקיה": {
    "out": {
     "deliveries": 100,
-    "items": 127,
-    "weightTon": 2.64,
-    "unidentified": 20
+    "items": 143,
+    "weightTon": 3.04,
+    "unidentified": 10
    }
   },
   "כסיפה": {
    "out": {
     "deliveries": 92,
-    "items": 119,
-    "weightTon": 2.11,
-    "unidentified": 13
+    "items": 124,
+    "weightTon": 2.25,
+    "unidentified": 8
    }
   },
   "אחר": {
    "out": {
-    "deliveries": 554,
-    "items": 582,
-    "weightTon": 11.13,
-    "unidentified": 144
+    "deliveries": 543,
+    "items": 665,
+    "weightTon": 12.18,
+    "unidentified": 66
    }
   },
   "ערערה בנגב": {
    "out": {
     "deliveries": 250,
-    "items": 319,
-    "weightTon": 6.42,
-    "unidentified": 43
+    "items": 348,
+    "weightTon": 6.64,
+    "unidentified": 16
    }
   },
   "נווה מדבר": {
    "out": {
     "deliveries": 8,
-    "items": 10,
-    "weightTon": 0.24,
-    "unidentified": 1
+    "items": 11,
+    "weightTon": 0.26,
+    "unidentified": 0
    }
   },
   "שגב שלום": {
    "out": {
     "deliveries": 77,
-    "items": 79,
-    "weightTon": 1.6,
-    "unidentified": 21
+    "items": 93,
+    "weightTon": 1.67,
+    "unidentified": 7
    }
   },
   "רהט": {
    "out": {
     "deliveries": 544,
-    "items": 712,
-    "weightTon": 14.67,
-    "unidentified": 82
+    "items": 761,
+    "weightTon": 15.56,
+    "unidentified": 33
    }
   },
   "חורה": {
    "out": {
     "deliveries": 76,
-    "items": 131,
-    "weightTon": 2.95,
-    "unidentified": 11
+    "items": 139,
+    "weightTon": 3.07,
+    "unidentified": 5
    }
   },
   "ערד": {
@@ -89,9 +89,9 @@
   "תל שבע": {
    "out": {
     "deliveries": 126,
-    "items": 163,
-    "weightTon": 3.01,
-    "unidentified": 27
+    "items": 183,
+    "weightTon": 3.26,
+    "unidentified": 11
    }
   },
   "להבים": {
@@ -127,5 +127,5 @@
    }
   }
  },
- "updated": "2026-11-18T09:29:57.167Z"
+ "updated": "2026-11-18T09:40:13.471Z"
 }
