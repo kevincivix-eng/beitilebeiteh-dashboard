@@ -14,8 +14,13 @@
  * mechanism as WhatsApp Web), so it reads and never sends.
  *
  * Usage:
- *   node collector.js            # scan the QR once, then it reconnects by itself
+ *   node collector.js                      # shows a QR to scan from the phone
+ *   WA_PAIR=9725XXXXXXXX node collector.js # prints an 8-character code instead
  *   WA_DATA_DIR=~/wa-data node collector.js
+ *
+ * The pairing code matters when the collector runs ON the phone whose account
+ * it links: a QR shown on that screen cannot be scanned by that same screen.
+ * Enter the code in WhatsApp -> Linked devices -> Link with phone number.
  */
 const path = require('path');
 const { Boom } = require('@hapi/boom');
@@ -44,6 +49,7 @@ const MEDIA_TYPES = {
 
 /** The groups we follow, resolved at connect time: jid -> { name, slug }. */
 const groups = new Map();
+let pairingAsked = false;
 const counters = { messages: 0, media: 0, deleted: 0, joined: 0, left: 0 };
 
 const slugFor = (name) => {
@@ -187,9 +193,25 @@ async function start() {
 
   sock.ev.on('creds.update', saveCreds);
 
+  // Pairing by code instead of by QR. Must be asked for after the socket opens
+  // its connection but before it is registered, and only once.
+  if (process.env.WA_PAIR && !state.creds.registered && !pairingAsked) {
+    pairingAsked = true;
+    setTimeout(async () => {
+      try {
+        const code = await sock.requestPairingCode(process.env.WA_PAIR.replace(/\D/g, ''));
+        console.log(`\n🔑 Pairing code: ${code.match(/.{1,4}/g).join('-')}`);
+        console.log('   WhatsApp -> Settings -> Linked devices -> Link a device');
+        console.log('   -> "Link with phone number instead" -> type this code\n');
+      } catch (err) {
+        log('⚠️  could not request a pairing code:', err.message);
+      }
+    }, 3000);
+  }
+
   sock.ev.on('connection.update', async (u) => {
     const { connection, lastDisconnect, qr } = u;
-    if (qr) {
+    if (qr && !process.env.WA_PAIR) {
       console.log('\n📱 Scan this from the phone: WhatsApp → Settings → Linked devices → Link a device\n');
       qrcode.generate(qr, { small: true });
     }
