@@ -53,11 +53,14 @@ let pairingAsked = false;
 const counters = { messages: 0, media: 0, deleted: 0, joined: 0, left: 0 };
 
 const slugFor = (name) => {
-  // The group names differ only by a leading keycap digit (1️⃣…6️⃣); that digit
-  // is the stable identity, and it survives a rename of the rest of the name.
+  // The branch group is ALSO called "1️⃣…" — "من بيتي لبيتك المركز" — so it has
+  // to be recognised before the keycap digit, or it lands in group 1's files
+  // and the two groups look like a single one to the dedupe.
+  if (/المركز/.test(name)) return 'group-center';
+  // Otherwise the names differ only by that leading keycap digit (1️⃣…6️⃣), which
+  // is the stable identity and survives a rename of the rest of the name.
   const m = name.match(/([1-9])️?⃣/);
   if (m) return `group-${m[1]}`;
-  if (/المركز/.test(name)) return 'group-center';
   return 'group-' + name.replace(/[^\p{L}\p{N}]+/gu, '-').slice(0, 24).toLowerCase();
 };
 
