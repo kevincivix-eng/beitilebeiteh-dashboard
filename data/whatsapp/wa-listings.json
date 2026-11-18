@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-18T09:40:06.871Z",
- "blocks": 6231,
- "listings": 3444,
- "nonListings": 2787,
- "cityResolved": 2235,
- "cityInherited": 576,
- "itemsResolved": 2524,
- "unidentified": 920,
+ "generated": "2026-11-18T13:01:26.679Z",
+ "blocks": 6237,
+ "listings": 3449,
+ "nonListings": 2788,
+ "cityResolved": 2240,
+ "cityInherited": 579,
+ "itemsResolved": 2526,
+ "unidentified": 923,
  "lexiconEntries": 65,
  "data": [
   {
@@ -177827,6 +177827,199 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "كيسن اواعي التل [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-141922-2",
+   "date": "2026-11-18",
+   "time": "14:19:22",
+   "city": "רהט",
+   "cityInherited": false,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 10,
+   "rawText": "رهط [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142015-1",
+   "date": "2026-11-18",
+   "time": "14:20:15",
+   "city": "שגב שלום",
+   "cityInherited": false,
+   "cityResolved": true,
+   "items": [
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كراسي"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone",
+    "text"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "في كراسي شقيب الي ودهياهن تجي تاخذهن [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142202-1",
+   "date": "2026-11-18",
+   "time": "14:22:02",
+   "city": "שגב שלום",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone",
+    "text"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "[טלפון] بدون اتصال لو سمحتي قولي لهن [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142326-1",
+   "date": "2026-11-18",
+   "time": "14:23:26",
+   "city": "רהט",
+   "cityInherited": false,
+   "cityResolved": true,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "ملابس"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone",
+    "text"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "مساء الخير في عندي ملابس بنت شتوي من صفر ل سنه شتوي رهط متحام ٣ في منهن كيسين هدوم بنات من يوم لسنه [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142438-1",
+   "date": "2026-11-18",
+   "time": "14:24:38",
+   "city": "רהט",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "למסירה, איסוף ליד האוניברסיטה מזנון קטן לטלוויזיה של איקאה [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-145304-1",
+   "date": "2026-11-18",
+   "time": "14:53:04",
+   "city": "רהט",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "text"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "🌸 تنبيه لصاحبات المشاريع 🌸 يا صبايا مجموعة المبادرة مخصّصة لتبادل الأغراض بين الصبايا وليست للبيع أو للترويج للمشاريع لذلك ممنوع إزعاج الصباي بالرسائل الخاصة أو عرض وبيع أغراض المشاريع داخل المجموعة نرجو الالتزام بقوانين المجموعة واحترام راحة الجميع"
   }
  ]
 }

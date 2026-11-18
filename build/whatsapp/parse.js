@@ -18,6 +18,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { loadLive } = require('./live-source');
 
 const ROOT = path.join(__dirname, '..', '..');
 const OUT_DIR = path.join(ROOT, 'data', 'whatsapp');
@@ -346,7 +347,13 @@ class DSU {
 
 const dayNum = (d) => Math.floor(Date.parse(d + 'T00:00:00Z') / 86400000);
 
-function dedupe(blocks) {
+/**
+ * @param deleted  liveId -> ISO time the post was withdrawn. In these groups a
+ *   listing is taken down once the item is handed over, so a withdrawal is the
+ *   closest thing we have to a confirmed delivery — and it is only ever visible
+ *   to the live collector, never to an export taken afterwards.
+ */
+function dedupe(blocks, deleted = new Map()) {
   const dsu = new DSU(blocks.length);
   const stats = { media: 0, phone: 0, text: 0, simultaneous: 0, blacklistedHashes: 0 };
   const mergedBy = blocks.map(() => new Set());
@@ -505,6 +512,11 @@ function dedupe(blocks) {
       (a.date + a.time).localeCompare(b.date + b.time))[0];
     const by = new Set();
     idxs.forEach((i) => mergedBy[i].forEach((x) => by.add(x)));
+    // A withdrawal in ANY of the groups counts: the moderator deletes the post
+    // group by group, and the first deletion is when the item went.
+    const takenDown = idxs
+      .flatMap((i) => (blocks[i].liveIds || []).map((id) => deleted.get(id)))
+      .filter(Boolean).sort();
     listings.push({
       id: `wa-${earliest.date}-${earliest.time.replace(/:/g, '')}-${earliest.group}`,
       date: earliest.date,          // earliest posting = when the item was offered
@@ -520,6 +532,8 @@ function dedupe(blocks) {
       // real numbers stay in memory for dedupe only — never serialized
       phoneCount: new Set(idxs.flatMap((i) => blocks[i].phones)).size,
       reserved: idxs.some((i) => blocks[i].reserved),
+      ...(blocks[sorted[0]].live ? { live: true } : {}),
+      ...(takenDown.length ? { withdrawnAt: takenDown[0], withdrawnInGroups: takenDown.length } : {}),
       seenInGroups: [...new Set(idxs.map((i) => blocks[i].group))].sort(),
       mergedBy: [...by].sort(),
       blockCount: idxs.length,
@@ -539,13 +553,147 @@ function dedupe(blocks) {
   return { listings, stats };
 }
 
+// Where one live listing ends and the next begins.
+//
+// One moderator relays almost everything into these groups, forwarding an offer
+// to all six in a burst and then pausing to pick up the next. That rhythm is
+// the boundary, and live timestamps are accurate to the second, so it is
+// visible: measured over a full afternoon, messages inside one offer arrive at
+// most 15s apart (a caption typed after the photos), while consecutive offers
+// are never closer than 21s. 20s sits in that gap.
+//
+// The tempting rule — "the donor's phone number ends the offer" — is wrong, and
+// the data says so: in group 6 she posted the number after the FIRST of ten
+// photos and carried on. Cutting there put nine clothing photos into the next
+// offer's block, whose matching photos then chained two unrelated listings into
+// one. Splitting too eagerly is recoverable (the dedupe rejoins copies);
+// merging two offers is not.
+const LIVE_GAP_SEC = 20;
+
+/**
+ * Same contract as toBlocks(), with the live-only gap above. Kept separate on
+ * purpose: the exports are minute-resolution and already parsed into 6,231
+ * listings, and re-cutting them on a rule derived from live seconds would
+ * silently reshape a year of published history.
+ */
+function liveToBlocks(msgs) {
+  const blocks = [];
+  let cur = null;
+  for (const m of msgs) {
+    if (cur && m.sender === cur.sender && m.date === cur.date && m.sec - cur.lastSec <= LIVE_GAP_SEC) {
+      cur.msgs.push(m);
+      cur.lastSec = m.sec;
+    } else {
+      if (cur) blocks.push(cur);
+      cur = { sender: m.sender, date: m.date, group: m.group, time: m.time, sec: m.sec, lastSec: m.sec, msgs: [m] };
+    }
+  }
+  if (cur) blocks.push(cur);
+  return blocks;
+}
+
+/**
+ * Blocks from the live collector, in the same shape the exports produce.
+ *
+ * Exports and live days meet at a seam — the last exported day is the day
+ * before the collector was linked — and from there on the live feed is the only
+ * source. It is also the better one: it holds the listings that were deleted
+ * after delivery, which an export taken days later can no longer see.
+ */
+function liveBlocks(mediaHashes) {
+  const live = loadLive(SINCE);
+  if (!live.msgs.length) return { blocks: [], live };
+
+  // Media hashes come from the bundle, not from a folder on disk: the photo
+  // itself never leaves the phone, only its md5.
+  Object.entries(live.mediaHashes).forEach(([group, byName]) => {
+    mediaHashes[group] = Object.assign(mediaHashes[group] || {}, byName);
+  });
+
+  // One group at a time. toBlocks joins consecutive messages from one sender,
+  // and the live feed interleaves all seven groups — without the split, a
+  // moderator forwarding one listing to six groups would come out as a single
+  // block instead of the six copies the dedupe is meant to collapse.
+  const byGroup = new Map();
+  live.msgs.forEach((m) => {
+    if (!byGroup.has(m.group)) byGroup.set(m.group, []);
+    byGroup.get(m.group).push(m);
+  });
+
+  const blocks = [];
+  for (const [, msgs] of [...byGroup.entries()].sort((a, b) => a[0] - b[0])) {
+    msgs.sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
+    liveToBlocks(msgs).map((b) => enrichBlock(b, mediaHashes)).forEach((b) => {
+      // The text reached us already masked, so there is no number left in it to
+      // find. The salted hashes stand in for the numbers: equality is all the
+      // dedupe ever asked of them.
+      b.phones = [...new Set(b.msgs.flatMap((m) => m.phoneHashes || []))];
+      b.live = true;
+      b.liveIds = b.msgs.map((m) => m.liveId).filter(Boolean);
+      blocks.push(b);
+    });
+  }
+  return { blocks: blocks.filter((b) => b.text.length >= 15 || b.mediaCount > 0), live };
+}
+
 // ---------------------------------------------------------------------- main
+/**
+ * Live-only mode: re-cut the live tail, keep the exported history as it is.
+ *
+ * The daily build runs on GitHub, where the chat exports do not exist and never
+ * will — they are gigabytes of private media and are gitignored. What IS in the
+ * repo is the result of the last full run, so the exported listings are treated
+ * as settled history and only the collector's days are parsed again. Nothing is
+ * lost by it: the exports stopped the day the collector was linked, so the two
+ * sources touch at a single seam and never overlap.
+ */
+function frozenHistory() {
+  const file = path.join(OUT_DIR, 'wa-blocks.json');
+  if (!fs.existsSync(file)) {
+    throw new Error('--live-only needs a previous data/whatsapp/wa-blocks.json to build on');
+  }
+  const prev = JSON.parse(fs.readFileSync(file, 'utf8'));
+  return {
+    listings: (prev.data || []).filter((l) => !l.live),
+    coverage: (prev.coverage || []).filter((c) => c.group !== 'live'),
+    source: prev.source,
+  };
+}
+
 function main() {
+  const liveOnly = process.argv.includes('--live-only') || process.env.WA_LIVE_ONLY === '1';
+  const mediaHashes = {};   // group -> filename -> md5
+  let allBlocks = [];
+  let coverage = [];
+  let frozen = { listings: [], coverage: [], source: '' };
+
+  if (liveOnly) {
+    frozen = frozenHistory();
+    coverage = frozen.coverage;
+    console.log(`📚 keeping ${frozen.listings.length} listings from the exported history as-is`);
+  } else {
+    ({ allBlocks, coverage } = parseExports(mediaHashes));
+  }
+
+  const { blocks: liveCand, live } = liveBlocks(mediaHashes);
+  if (liveCand.length) {
+    console.log(`\n⏳ live collector: ${live.msgs.length} msgs over ${live.days.length} day(s) `
+      + `${live.from}→${live.to}, ${live.photos} photos → ${liveCand.length} candidates`);
+    coverage = coverage.concat([{ source: 'wa-live (collector on the phone)', group: 'live', format: 'live',
+      from: live.from, to: live.to, messages: live.msgs.length, candidates: liveCand.length }]);
+    allBlocks = allBlocks.concat(liveCand);
+  } else if (liveOnly) {
+    console.log('ℹ️  no live bundles yet — nothing to add');
+  }
+
+  finish({ allBlocks, coverage, live, frozen, liveOnly });
+}
+
+function parseExports(mediaHashes) {
   const sources = discoverGroups();
   if (!sources.length) throw new Error(`no chat exports found under ${SOURCE_DIRS.join(', ')}`);
 
   console.log('⏳ hashing media…');
-  const mediaHashes = {};   // group -> filename -> md5
   const mediaStamps = {};   // group -> "date time" -> [filename]
   sources.forEach((src) => {
     mediaHashes[src.group] = mediaHashes[src.group] || {};
@@ -566,6 +714,7 @@ function main() {
   let allBlocks = [];
   const coverage = [];
   sources.forEach((src) => {
+    mediaHashes[src.group] = mediaHashes[src.group] || {};
     const { msgs, sysLines } = parseChat(src, mediaStamps[src.group]);
     const blocks = toBlocks(msgs).map((b) => enrichBlock(b, mediaHashes));
     // a candidate listing has either real text or media attached
@@ -580,12 +729,41 @@ function main() {
     allBlocks = allBlocks.concat(cand);
   });
 
+  return { allBlocks, coverage, sources };
+}
+
+function finish({ allBlocks, coverage, live, frozen, liveOnly }) {
   const ann = dropAnnouncements(allBlocks);
   console.log(`\n⏳ dropped ${ann.removed} announcement blocks (${ann.templates} recurring templates)`);
   allBlocks = ann.kept;
 
   console.log(`⏳ deduplicating ${allBlocks.length} candidate blocks…`);
-  const { listings, stats } = dedupe(allBlocks);
+  // A deletion means the item went — UNLESS it follows the post immediately,
+  // which is the moderator fixing a mistyped number: seen today, a number
+  // deleted 5 seconds after it was sent and reposted a moment later. A real
+  // withdrawal comes minutes or hours later, once someone has collected.
+  const CORRECTION_SEC = 120;
+  const postedAt = new Map();
+  (live.msgs || []).forEach((m) => { if (m.liveId) postedAt.set(m.liveId, m); });
+  const corrections = [];
+  const deleted = new Map();
+  (live.deletions || []).forEach((d) => {
+    if (!d.targetId) return;
+    const post = postedAt.get(d.targetId);
+    const [hh, mm, ss] = (d.time || '00:00:00').split(':').map(Number);
+    const after = post && post.date === d.date ? (hh * 3600 + mm * 60 + ss) - post.sec : Infinity;
+    if (after >= 0 && after < CORRECTION_SEC) { corrections.push(after); return; }
+    deleted.set(d.targetId, d.at);
+  });
+  if (corrections.length) {
+    console.log(`   (${corrections.length} deletion(s) within ${CORRECTION_SEC}s of posting treated as corrections, not deliveries)`);
+  }
+  const fresh = dedupe(allBlocks, deleted);
+  const stats = fresh.stats;
+  // In live-only mode the exported listings were never re-cut, so they come
+  // through untouched and only the collector's days are new.
+  const listings = frozen.listings.concat(fresh.listings)
+    .sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
 
   const inGroups = {};
   listings.forEach((l) => {
@@ -595,7 +773,12 @@ function main() {
 
   const out = {
     generated: new Date().toISOString(),
-    source: `whatsapp exports (${sources.length} chats, groups ${[...new Set(sources.map((x) => x.group))].sort((a, b) => a - b).join(',')})`,
+    source: [
+      coverage.filter((c) => c.group !== 'live').length
+        ? `whatsapp exports (${coverage.filter((c) => c.group !== 'live').length} chats)` : null,
+      coverage.some((c) => c.group === 'live') ? 'live collector' : null,
+    ].filter(Boolean).join(' + '),
+    mode: liveOnly ? 'live-only (exported history kept as-is)' : 'full re-parse',
     coverage: coverage,
     since: SINCE,
     candidateBlocks: allBlocks.length,
@@ -608,6 +791,14 @@ function main() {
         .filter(([n]) => Number(n) >= 3).reduce((a, [, v]) => a + v, 0),
       needsReview: listings.filter((l) => l.needsReview).length,
     },
+    liveFeed: live.days.length ? {
+      from: live.from, to: live.to, days: live.days.length,
+      messages: live.msgs.length, photos: live.photos,
+      listings: listings.filter((l) => l.live).length,
+      // listings taken down after the item was handed over — invisible to an export
+      withdrawn: listings.filter((l) => l.withdrawnAt).length,
+      membershipEvents: live.membership.length,
+    } : null,
     data: listings,
   };
 
@@ -619,6 +810,10 @@ function main() {
   console.log(`   blacklisted boilerplate hashes: ${stats.blacklistedHashes}`);
   console.log(`   posted in 1 group: ${inGroups[1] || 0} | 2: ${inGroups[2] || 0} | 3+: ${out.spread.postedInThreeOrMore}`);
   console.log(`   clusters needing manual review (a group with two copies): ${out.spread.needsReview}`);
+  if (out.liveFeed) {
+    console.log(`   live feed: ${out.liveFeed.listings} listings, `
+      + `${out.liveFeed.withdrawn} of them withdrawn after delivery`);
+  }
   console.log(`📝 data/whatsapp/wa-blocks.json`);
 }
 

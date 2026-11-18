@@ -2,14 +2,14 @@
  "source": "whatsapp",
  "period": {
   "from": "2026-06-01",
-  "to": "2026-11-17"
+  "to": "2026-11-18"
  },
- "deliveries": 1840,
- "items": 2499,
- "weightTon": 48.94,
+ "deliveries": 1845,
+ "items": 2501,
+ "weightTon": 48.96,
  "weightEstimatedTon": 0,
  "weightEstimatedPct": 0,
- "unidentifiedListings": 159,
+ "unidentifiedListings": 162,
  "unidentifiedPct": 9,
  "cities": 14,
  "reservedCount": 431,
@@ -56,18 +56,18 @@
   },
   "שגב שלום": {
    "out": {
-    "deliveries": 77,
-    "items": 93,
-    "weightTon": 1.67,
-    "unidentified": 7
+    "deliveries": 79,
+    "items": 94,
+    "weightTon": 1.68,
+    "unidentified": 8
    }
   },
   "רהט": {
    "out": {
-    "deliveries": 544,
-    "items": 761,
-    "weightTon": 15.56,
-    "unidentified": 33
+    "deliveries": 547,
+    "items": 762,
+    "weightTon": 15.57,
+    "unidentified": 35
    }
   },
   "חורה": {
@@ -127,5 +127,5 @@
    }
   }
  },
- "updated": "2026-11-18T09:40:13.471Z"
+ "updated": "2026-11-18T13:01:31.392Z"
 }

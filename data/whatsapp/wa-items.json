@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-18T09:40:13.478Z",
- "count": 1840,
+ "generated": "2026-11-18T13:01:31.399Z",
+ "count": 1845,
  "data": [
   {
    "id": "wa-2026-06-01-092700-3",
@@ -80286,6 +80286,184 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "كيسن اواعي التل [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-141922-2",
+   "date": "2026-11-18",
+   "time": "14:19:22",
+   "city": "רהט",
+   "cityInherited": false,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 10,
+   "rawText": "رهط [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142015-1",
+   "date": "2026-11-18",
+   "time": "14:20:15",
+   "city": "שגב שלום",
+   "cityInherited": false,
+   "cityResolved": true,
+   "items": [
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كراسي",
+     "category": "רהיטים",
+     "unitKg": 6,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 6,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone",
+    "text"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "في كراسي شقيب الي ودهياهن تجي تاخذهن [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142202-1",
+   "date": "2026-11-18",
+   "time": "14:22:02",
+   "city": "שגב שלום",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone",
+    "text"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "[טלפון] بدون اتصال لو سمحتي قولي لهن [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142326-1",
+   "date": "2026-11-18",
+   "time": "14:23:26",
+   "city": "רהט",
+   "cityInherited": false,
+   "cityResolved": true,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "ملابس",
+     "category": "בגדים",
+     "unitKg": 12,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 12,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media",
+    "phone",
+    "text"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "مساء الخير في عندي ملابس بنت شتوي من صفر ل سنه شتوي رهط متحام ٣ في منهن كيسين هدوم بنات من يوم لسنه [טלפון]"
+  },
+  {
+   "id": "wa-2026-11-18-142438-1",
+   "date": "2026-11-18",
+   "time": "14:24:38",
+   "city": "רהט",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": true,
+   "reserved": false,
+   "sender": "m:8e2a6825b6",
+   "seenInGroups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "mergedBy": [
+    "media"
+   ],
+   "blockCount": 6,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "למסירה, איסוף ליד האוניברסיטה מזנון קטן לטלוויזיה של איקאה [טלפון]"
   }
  ]
 }
