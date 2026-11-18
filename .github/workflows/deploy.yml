@@ -32,6 +32,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # The collector on the phone pushes a bundle per day into
+      # data/whatsapp/live/. The chat exports are NOT in the repo — they are
+      # gigabytes of private media — so this re-cuts only the live days and
+      # keeps the exported listings exactly as the last local full run left
+      # them. Nothing is committed back; the rebuilt files go straight into the
+      # published site.
+      - name: Rebuild WhatsApp listings from the live feed
+        run: |
+          node build/whatsapp/parse.js --live-only
+          node build/whatsapp/extract.js
+          node build/whatsapp/build-exp.js
+
       - name: Fetch fresh data (Airtable + SharePoint + Meta social)
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}

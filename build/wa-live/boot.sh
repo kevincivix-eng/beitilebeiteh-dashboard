@@ -20,3 +20,8 @@ pgrep -x sshd >/dev/null || sshd
 # would also match this script, and killing or counting ourselves is how the
 # first restart attempt silently did nothing.
 pgrep -x node >/dev/null || (cd "$HOME/wa-live" && setsid nohup ./run.sh >/dev/null 2>&1 < /dev/null &)
+
+# The hourly publisher. Matched on the script path because it is a bash loop,
+# not a node process, so `pgrep -x` would match every other shell on the phone.
+pgrep -f "wa-live/push-loop.sh" >/dev/null \
+  || (cd "$HOME/wa-live" && setsid nohup ./push-loop.sh >/dev/null 2>&1 < /dev/null &)
