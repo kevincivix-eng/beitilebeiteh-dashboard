@@ -35,7 +35,34 @@ function mergeMembers(series) {
       return { date: r.date, joined: r.joined, left: null, inGroup: null, cumulative: cum, source: 'whatsapp' };
     });
 
-  return { series: rows.concat(extra), added: extra.length, from: lastRecorded.date, cumulative: cum };
+  const merged = rows.concat(extra);
+  assertOnlyGrows(merged);
+  return { series: merged, added: extra.length, from: lastRecorded.date, cumulative: cum };
+}
+
+/**
+ * The published figure counts everyone who ever joined. Leavers are recorded —
+ * 8,314 of them so far — but are never subtracted, so the line can only ever
+ * go up. It is a count of women the initiative reached, not of who is in a
+ * group today, and the two answer different questions.
+ *
+ * This is checked rather than trusted because the mistake is invisible: a
+ * series that quietly nets out leavers still looks like a plausible chart, and
+ * nobody would notice until the number went down one day.
+ */
+function assertOnlyGrows(series) {
+  for (let i = 1; i < series.length; i++) {
+    const step = (series[i].cumulative || 0) - (series[i - 1].cumulative || 0);
+    if (step < 0) {
+      throw new Error(`members: cumulative fell on ${series[i].date} `
+        + `(${series[i - 1].cumulative} → ${series[i].cumulative}). `
+        + 'The published total counts joiners only and must never net out leavers.');
+    }
+    if (series[i].joined != null && step !== series[i].joined) {
+      throw new Error(`members: ${series[i].date} moved the total by ${step} `
+        + `but only ${series[i].joined} joined that day.`);
+    }
+  }
 }
 
 module.exports = { mergeMembers };
