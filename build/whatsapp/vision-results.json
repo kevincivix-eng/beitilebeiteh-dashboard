@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-18T09:40:06.656Z",
+ "generated": "2026-11-19T06:42:07.154Z",
  "note": "Keyed by the representative photo filename, which survives re-clustering.",
- "count": 911,
+ "count": 934,
  "results": {
   "00000059-PHOTO-2026-06-08-13-39-35.jpg": {
    "items": [
@@ -7146,6 +7146,146 @@
      "qty": 1
     }
    ]
+  },
+  "00003129-PHOTO-2026-09-05-15-29-55.jpg": {
+   "items": [
+    {
+     "nameHe": "כורסה",
+     "qty": 2
+    }
+   ]
+  },
+  "00003171-PHOTO-2026-09-06-08-00-39.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003223-PHOTO-2026-09-10-11-03-14.jpg": {
+   "items": [
+    {
+     "nameHe": "בגדי ילדים",
+     "qty": 1
+    }
+   ]
+  },
+  "00003229-PHOTO-2026-09-11-09-27-15.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003236-PHOTO-2026-09-11-10-28-36.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003319-PHOTO-2026-09-15-11-50-17.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003330-PHOTO-2026-09-16-13-38-22.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003342-PHOTO-2026-09-16-17-14-05.jpg": {
+   "items": [
+    {
+     "nameHe": "מזנון",
+     "qty": 1
+    }
+   ]
+  },
+  "00003354-PHOTO-2026-09-18-13-14-55.jpg": {
+   "items": [
+    {
+     "nameHe": "שידה",
+     "qty": 2
+    }
+   ]
+  },
+  "00003380-PHOTO-2026-09-21-11-17-04.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003460-PHOTO-2026-09-23-07-23-33.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003486-PHOTO-2026-09-29-19-48-55.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003491-PHOTO-2026-09-30-17-02-06.jpg": {
+   "items": [
+    {
+     "nameHe": "סלקל",
+     "qty": 1
+    }
+   ]
+  },
+  "00003492-PHOTO-2026-09-30-17-06-57.jpg": {
+   "items": [
+    {
+     "nameHe": "הליכון לתינוק",
+     "qty": 1
+    }
+   ]
+  },
+  "00003510-PHOTO-2026-10-04-14-28-12.jpg": {
+   "items": [
+    {
+     "nameHe": "בגדי ילדים",
+     "qty": 4
+    }
+   ]
+  },
+  "00003531-PHOTO-2026-10-09-17-52-55.jpg": {
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1
+    }
+   ]
+  },
+  "00003550-PHOTO-2026-10-14-20-02-15.jpg": {
+   "items": [
+    {
+     "nameHe": "חיתולים",
+     "qty": 1
+    }
+   ]
+  },
+  "00003555-PHOTO-2026-10-15-17-24-35.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003583-PHOTO-2026-10-18-13-02-57.jpg": {
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1
+    }
+   ]
+  },
+  "00003592-PHOTO-2026-10-23-11-29-10.jpg": {
+   "items": [
+    {
+     "nameHe": "תנור חימום",
+     "qty": 1
+    },
+    {
+     "nameHe": "מאוורר",
+     "qty": 1
+    }
+   ]
+  },
+  "00003601-PHOTO-2026-10-26-17-51-38.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003636-PHOTO-2026-11-03-20-50-35.jpg": {
+   "items": [],
+   "notAnItem": true
+  },
+  "00003654-PHOTO-2026-11-13-11-44-41.jpg": {
+   "items": [],
+   "notAnItem": true
   }
  }
 }

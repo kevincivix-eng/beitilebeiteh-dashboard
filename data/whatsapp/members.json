@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-18T13:08:53.148Z",
+ "generated": "2026-11-19T06:39:49.662Z",
  "note": "Counted from the chat exports. Only covers days inside each chat's own window — see coverage.",
  "totals": {
-  "joined": 13488,
-  "left": 8911,
-  "undatedJoined": 62,
-  "undatedLeft": 14
+  "joined": 13661,
+  "left": 8952,
+  "undatedJoined": 15,
+  "undatedLeft": 0
  },
  "coverage": [
   {
@@ -57,12 +57,12 @@
    "left": 1193
   },
   {
-   "source": "whatsapp 111126/‏צ'אט WhatsApp עם 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠.txt",
+   "source": "whatsapp 1811/_chat 8.txt",
    "group": 7,
    "from": "2026-09-05",
-   "to": "2026-11-11",
-   "joined": 6,
-   "left": 5
+   "to": "2026-11-17",
+   "joined": 179,
+   "left": 46
   }
  ],
  "undated": [
@@ -86,20 +86,6 @@
    "date": "2026-07-16",
    "kind": "joined",
    "people": 5
-  },
-  {
-   "group": 7,
-   "source": "whatsapp 111126/‏צ'אט WhatsApp עם 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠.txt",
-   "date": "2026-11-11",
-   "kind": "joined",
-   "people": 47
-  },
-  {
-   "group": 7,
-   "source": "whatsapp 111126/‏צ'אט WhatsApp עם 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠.txt",
-   "date": "2026-11-11",
-   "kind": "left",
-   "people": 14
   }
  ],
  "data": [
@@ -4215,133 +4201,142 @@
   },
   {
    "date": "2026-09-05",
-   "joined": 28,
-   "left": 32,
-   "cumulative": 12597,
+   "joined": 88,
+   "left": 34,
+   "cumulative": 12657,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-06",
-   "joined": 20,
+   "joined": 28,
    "left": 30,
-   "cumulative": 12617,
+   "cumulative": 12685,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-07",
-   "joined": 17,
+   "joined": 19,
    "left": 23,
-   "cumulative": 12634,
+   "cumulative": 12704,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-08",
-   "joined": 16,
+   "joined": 18,
    "left": 22,
-   "cumulative": 12650,
+   "cumulative": 12722,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-09",
-   "joined": 9,
-   "left": 11,
-   "cumulative": 12659,
+   "joined": 16,
+   "left": 12,
+   "cumulative": 12738,
    "groups": [
     1,
     2,
     3,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-10",
-   "joined": 8,
-   "left": 17,
-   "cumulative": 12667,
+   "joined": 9,
+   "left": 20,
+   "cumulative": 12747,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-11",
-   "joined": 8,
-   "left": 9,
-   "cumulative": 12675,
+   "joined": 34,
+   "left": 15,
+   "cumulative": 12781,
    "groups": [
     1,
     2,
     3,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-12",
-   "joined": 11,
-   "left": 26,
-   "cumulative": 12686,
+   "joined": 14,
+   "left": 27,
+   "cumulative": 12795,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-13",
    "joined": 5,
-   "left": 17,
-   "cumulative": 12691,
+   "left": 18,
+   "cumulative": 12800,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-14",
-   "joined": 18,
+   "joined": 19,
    "left": 15,
-   "cumulative": 12709,
+   "cumulative": 12819,
    "groups": [
     1,
     2,
@@ -4356,7 +4351,7 @@
    "date": "2026-09-15",
    "joined": 8,
    "left": 22,
-   "cumulative": 12717,
+   "cumulative": 12827,
    "groups": [
     1,
     2,
@@ -4371,7 +4366,7 @@
    "date": "2026-09-16",
    "joined": 22,
    "left": 22,
-   "cumulative": 12739,
+   "cumulative": 12849,
    "groups": [
     2,
     3,
@@ -4383,107 +4378,114 @@
   },
   {
    "date": "2026-09-17",
-   "joined": 5,
+   "joined": 9,
    "left": 12,
-   "cumulative": 12744,
+   "cumulative": 12858,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-18",
    "joined": 9,
-   "left": 17,
-   "cumulative": 12753,
+   "left": 19,
+   "cumulative": 12867,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-19",
-   "joined": 18,
-   "left": 20,
-   "cumulative": 12771,
+   "joined": 19,
+   "left": 21,
+   "cumulative": 12886,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-20",
-   "joined": 23,
+   "joined": 24,
    "left": 26,
-   "cumulative": 12794,
+   "cumulative": 12910,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-21",
-   "joined": 14,
-   "left": 21,
-   "cumulative": 12808,
+   "joined": 15,
+   "left": 22,
+   "cumulative": 12925,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-22",
-   "joined": 16,
-   "left": 19,
-   "cumulative": 12824,
+   "joined": 49,
+   "left": 21,
+   "cumulative": 12974,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-23",
    "joined": 8,
-   "left": 16,
-   "cumulative": 12832,
+   "left": 20,
+   "cumulative": 12982,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-24",
    "joined": 9,
    "left": 17,
-   "cumulative": 12841,
+   "cumulative": 12991,
    "groups": [
     1,
     2,
@@ -4495,37 +4497,39 @@
   },
   {
    "date": "2026-09-25",
-   "joined": 11,
+   "joined": 12,
    "left": 25,
-   "cumulative": 12852,
+   "cumulative": 13003,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-26",
-   "joined": 8,
+   "joined": 9,
    "left": 24,
-   "cumulative": 12860,
+   "cumulative": 13012,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-27",
    "joined": 13,
    "left": 23,
-   "cumulative": 12873,
+   "cumulative": 13025,
    "groups": [
     1,
     2,
@@ -4537,65 +4541,69 @@
   },
   {
    "date": "2026-09-28",
-   "joined": 12,
-   "left": 11,
-   "cumulative": 12885,
+   "joined": 13,
+   "left": 13,
+   "cumulative": 13038,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-29",
-   "joined": 33,
+   "joined": 35,
    "left": 17,
-   "cumulative": 12918,
+   "cumulative": 13073,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-09-30",
-   "joined": 19,
-   "left": 23,
-   "cumulative": 12937,
+   "joined": 20,
+   "left": 24,
+   "cumulative": 13093,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-01",
    "joined": 15,
-   "left": 20,
-   "cumulative": 12952,
+   "left": 21,
+   "cumulative": 13108,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-02",
    "joined": 17,
    "left": 21,
-   "cumulative": 12969,
+   "cumulative": 13125,
    "groups": [
     1,
     2,
@@ -4607,65 +4615,69 @@
   },
   {
    "date": "2026-10-03",
-   "joined": 10,
+   "joined": 13,
    "left": 10,
-   "cumulative": 12979,
+   "cumulative": 13138,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-04",
-   "joined": 17,
-   "left": 18,
-   "cumulative": 12996,
+   "joined": 18,
+   "left": 19,
+   "cumulative": 13156,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-05",
-   "joined": 12,
+   "joined": 13,
    "left": 16,
-   "cumulative": 13008,
+   "cumulative": 13169,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-06",
-   "joined": 7,
+   "joined": 8,
    "left": 11,
-   "cumulative": 13015,
+   "cumulative": 13177,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-07",
    "joined": 15,
    "left": 13,
-   "cumulative": 13030,
+   "cumulative": 13192,
    "groups": [
     1,
     2,
@@ -4679,7 +4691,7 @@
    "date": "2026-10-08",
    "joined": 3,
    "left": 22,
-   "cumulative": 13033,
+   "cumulative": 13195,
    "groups": [
     1,
     2,
@@ -4692,22 +4704,23 @@
   {
    "date": "2026-10-09",
    "joined": 9,
-   "left": 22,
-   "cumulative": 13042,
+   "left": 23,
+   "cumulative": 13204,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-10",
    "joined": 43,
    "left": 18,
-   "cumulative": 13085,
+   "cumulative": 13247,
    "groups": [
     1,
     2,
@@ -4720,22 +4733,23 @@
   {
    "date": "2026-10-11",
    "joined": 24,
-   "left": 17,
-   "cumulative": 13109,
+   "left": 18,
+   "cumulative": 13271,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-12",
    "joined": 4,
    "left": 13,
-   "cumulative": 13113,
+   "cumulative": 13275,
    "groups": [
     1,
     2,
@@ -4748,7 +4762,7 @@
    "date": "2026-10-13",
    "joined": 1,
    "left": 16,
-   "cumulative": 13114,
+   "cumulative": 13276,
    "groups": [
     1,
     2,
@@ -4761,21 +4775,22 @@
   {
    "date": "2026-10-14",
    "joined": 4,
-   "left": 11,
-   "cumulative": 13118,
+   "left": 13,
+   "cumulative": 13280,
    "groups": [
     1,
     2,
     3,
     4,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-15",
    "joined": 12,
    "left": 16,
-   "cumulative": 13130,
+   "cumulative": 13292,
    "groups": [
     1,
     2,
@@ -4789,7 +4804,7 @@
    "date": "2026-10-16",
    "joined": 6,
    "left": 13,
-   "cumulative": 13136,
+   "cumulative": 13298,
    "groups": [
     1,
     2,
@@ -4801,23 +4816,24 @@
   },
   {
    "date": "2026-10-17",
-   "joined": 23,
-   "left": 18,
-   "cumulative": 13159,
+   "joined": 26,
+   "left": 19,
+   "cumulative": 13324,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-18",
    "joined": 9,
    "left": 8,
-   "cumulative": 13168,
+   "cumulative": 13333,
    "groups": [
     1,
     2,
@@ -4830,7 +4846,7 @@
    "date": "2026-10-19",
    "joined": 4,
    "left": 24,
-   "cumulative": 13172,
+   "cumulative": 13337,
    "groups": [
     1,
     2,
@@ -4842,22 +4858,23 @@
   },
   {
    "date": "2026-10-20",
-   "joined": 9,
+   "joined": 10,
    "left": 10,
-   "cumulative": 13181,
+   "cumulative": 13347,
    "groups": [
     1,
     2,
     3,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-21",
    "joined": 28,
    "left": 15,
-   "cumulative": 13209,
+   "cumulative": 13375,
    "groups": [
     1,
     2,
@@ -4871,7 +4888,7 @@
    "date": "2026-10-22",
    "joined": 2,
    "left": 11,
-   "cumulative": 13211,
+   "cumulative": 13377,
    "groups": [
     1,
     2,
@@ -4884,7 +4901,7 @@
    "date": "2026-10-23",
    "joined": 8,
    "left": 8,
-   "cumulative": 13219,
+   "cumulative": 13385,
    "groups": [
     1,
     2,
@@ -4897,22 +4914,23 @@
   {
    "date": "2026-10-24",
    "joined": 12,
-   "left": 13,
-   "cumulative": 13231,
+   "left": 14,
+   "cumulative": 13397,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-25",
    "joined": 2,
    "left": 21,
-   "cumulative": 13233,
+   "cumulative": 13399,
    "groups": [
     1,
     2,
@@ -4926,7 +4944,7 @@
    "date": "2026-10-26",
    "joined": 21,
    "left": 10,
-   "cumulative": 13254,
+   "cumulative": 13420,
    "groups": [
     1,
     2,
@@ -4939,21 +4957,22 @@
   {
    "date": "2026-10-27",
    "joined": 5,
-   "left": 6,
-   "cumulative": 13259,
+   "left": 7,
+   "cumulative": 13425,
    "groups": [
     1,
     2,
     3,
     4,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-10-28",
    "joined": 16,
    "left": 17,
-   "cumulative": 13275,
+   "cumulative": 13441,
    "groups": [
     1,
     2,
@@ -4967,7 +4986,7 @@
    "date": "2026-10-29",
    "joined": 4,
    "left": 11,
-   "cumulative": 13279,
+   "cumulative": 13445,
    "groups": [
     1,
     2,
@@ -4981,7 +5000,7 @@
    "date": "2026-10-30",
    "joined": 18,
    "left": 16,
-   "cumulative": 13297,
+   "cumulative": 13463,
    "groups": [
     1,
     2,
@@ -4995,7 +5014,7 @@
    "date": "2026-10-31",
    "joined": 24,
    "left": 15,
-   "cumulative": 13321,
+   "cumulative": 13487,
    "groups": [
     1,
     2,
@@ -5007,37 +5026,39 @@
   },
   {
    "date": "2026-11-01",
-   "joined": 2,
-   "left": 21,
-   "cumulative": 13323,
+   "joined": 4,
+   "left": 22,
+   "cumulative": 13491,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-11-02",
-   "joined": 29,
-   "left": 22,
-   "cumulative": 13352,
+   "joined": 30,
+   "left": 24,
+   "cumulative": 13521,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-11-03",
    "joined": 0,
    "left": 15,
-   "cumulative": 13352,
+   "cumulative": 13521,
    "groups": [
     1,
     2,
@@ -5050,7 +5071,7 @@
    "date": "2026-11-04",
    "joined": 10,
    "left": 12,
-   "cumulative": 13362,
+   "cumulative": 13531,
    "groups": [
     1,
     2,
@@ -5063,21 +5084,22 @@
   {
    "date": "2026-11-05",
    "joined": 3,
-   "left": 12,
-   "cumulative": 13365,
+   "left": 13,
+   "cumulative": 13534,
    "groups": [
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-11-06",
    "joined": 8,
    "left": 8,
-   "cumulative": 13373,
+   "cumulative": 13542,
    "groups": [
     1,
     2,
@@ -5091,7 +5113,7 @@
    "date": "2026-11-07",
    "joined": 28,
    "left": 24,
-   "cumulative": 13401,
+   "cumulative": 13570,
    "groups": [
     1,
     2,
@@ -5105,7 +5127,7 @@
    "date": "2026-11-08",
    "joined": 25,
    "left": 24,
-   "cumulative": 13426,
+   "cumulative": 13595,
    "groups": [
     1,
     2,
@@ -5117,22 +5139,23 @@
   },
   {
    "date": "2026-11-09",
-   "joined": 0,
+   "joined": 1,
    "left": 12,
-   "cumulative": 13426,
+   "cumulative": 13596,
    "groups": [
     1,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-11-10",
    "joined": 12,
    "left": 13,
-   "cumulative": 13438,
+   "cumulative": 13608,
    "groups": [
     1,
     2,
@@ -5146,7 +5169,7 @@
    "date": "2026-11-11",
    "joined": 15,
    "left": 12,
-   "cumulative": 13453,
+   "cumulative": 13623,
    "groups": [
     1,
     3,
@@ -5159,7 +5182,7 @@
    "date": "2026-11-12",
    "joined": 1,
    "left": 10,
-   "cumulative": 13454,
+   "cumulative": 13624,
    "groups": [
     1,
     2,
@@ -5171,23 +5194,24 @@
   },
   {
    "date": "2026-11-13",
-   "joined": 4,
-   "left": 17,
-   "cumulative": 13458,
+   "joined": 7,
+   "left": 18,
+   "cumulative": 13631,
    "groups": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
    ]
   },
   {
    "date": "2026-11-14",
    "joined": 5,
    "left": 13,
-   "cumulative": 13463,
+   "cumulative": 13636,
    "groups": [
     1,
     2,
@@ -5200,7 +5224,7 @@
    "date": "2026-11-15",
    "joined": 6,
    "left": 10,
-   "cumulative": 13469,
+   "cumulative": 13642,
    "groups": [
     1,
     2,
@@ -5214,7 +5238,7 @@
    "date": "2026-11-16",
    "joined": 11,
    "left": 13,
-   "cumulative": 13480,
+   "cumulative": 13653,
    "groups": [
     1,
     2,
@@ -5228,7 +5252,7 @@
    "date": "2026-11-17",
    "joined": 7,
    "left": 8,
-   "cumulative": 13487,
+   "cumulative": 13660,
    "groups": [
     1,
     3,
@@ -5241,7 +5265,7 @@
    "date": "2026-11-18",
    "joined": 1,
    "left": 3,
-   "cumulative": 13488,
+   "cumulative": 13661,
    "groups": [
     2,
     4,

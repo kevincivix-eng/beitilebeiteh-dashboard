@@ -4,15 +4,15 @@
   "from": "2026-06-01",
   "to": "2026-11-18"
  },
- "deliveries": 1845,
- "items": 2501,
- "weightTon": 48.96,
+ "deliveries": 1872,
+ "items": 2552,
+ "weightTon": 50.56,
  "weightEstimatedTon": 0,
  "weightEstimatedPct": 0,
- "unidentifiedListings": 162,
- "unidentifiedPct": 9,
+ "unidentifiedListings": 159,
+ "unidentifiedPct": 8,
  "cities": 14,
- "reservedCount": 431,
+ "reservedCount": 432,
  "byCity": {
   "לקיה": {
    "out": {
@@ -32,10 +32,10 @@
   },
   "אחר": {
    "out": {
-    "deliveries": 543,
-    "items": 665,
-    "weightTon": 12.18,
-    "unidentified": 66
+    "deliveries": 570,
+    "items": 716,
+    "weightTon": 13.78,
+    "unidentified": 63
    }
   },
   "ערערה בנגב": {
@@ -127,5 +127,5 @@
    }
   }
  },
- "updated": "2026-11-18T13:01:31.392Z"
+ "updated": "2026-11-19T06:42:12.867Z"
 }

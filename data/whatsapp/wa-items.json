@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-18T13:01:31.399Z",
- "count": 1845,
+ "generated": "2026-11-19T06:42:12.873Z",
+ "count": 1872,
  "data": [
   {
    "id": "wa-2026-06-01-092700-3",
@@ -56383,9 +56383,9 @@
    "rawText": "وهاذ كرسي لتاعت الميكاج رانيا مساء الخير شو الاخبار خزائن للاستلام غداً مفضل لوحده عن جد محتاجة جداً الاستلام غداً الصبح عرعره الاستلام اليوم صباحك فل يا رب ثلاجه وغساله وفرن وعقلاه لاجيل سنه سنتين الي بدها ياهن استلام اليوم فقط لازم تجيب عقلاه معاها تحملهن وشباب ما عندي حدا يشيلهم[טלפון]"
   },
   {
-   "id": "wa-2026-09-05-113534-2",
+   "id": "wa-2026-09-05-113517-7",
    "date": "2026-09-05",
-   "time": "11:35:34",
+   "time": "11:35:17",
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
@@ -56413,14 +56413,14 @@
     3,
     4,
     5,
-    6
+    6,
+    7
    ],
    "mergedBy": [
-    "media",
     "text"
    ],
-   "blockCount": 5,
-   "needsReview": false,
+   "blockCount": 7,
+   "needsReview": true,
    "mediaCount": 5,
    "rawText": "خشب مقصوص وجاهز بس بدو تركيب لكرسي الإستلام مجاني من عرعرة الي معها سيارة ومعايه فيهن تبعثلي عالخاص أنا ما معي سيارة وما بوصل لحدا"
   },
@@ -56794,6 +56794,41 @@
    "needsReview": false,
    "mediaCount": 7,
    "rawText": "انحجزن [טלפון] تل السبع"
+  },
+  {
+   "id": "wa-2026-09-05-152955-7",
+   "date": "2026-09-05",
+   "time": "15:29:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "כורסה",
+     "qty": 2,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 2,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "عندي ثنتين الطيبة [טלפון]"
   },
   {
    "id": "wa-2026-09-05-155814-6",
@@ -58806,6 +58841,41 @@
    "rawText": "في هاض التخت مع فرشتين الي ودها اياه ياريت لبكرا تيجي تاخذه انا من رهط عندي هدوم ولادي جيل 4 سنين وجيل 8 سنين وضعهن ممتاز في اشياء جديده يمكن لبسه مش اكثر كيس كبير المعنيه اتجي تأخذه انحجز"
   },
   {
+   "id": "wa-2026-09-09-191251-7",
+   "date": "2026-09-09",
+   "time": "19:12:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "الفساتين",
+     "category": "בגדים",
+     "unitKg": 12,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 12,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 8,
+   "rawText": "مرحبا، يعطيكي العافية 🌷 عندي هاي الفساتين، فساتين رسمية ومناسبة للمناسبات، وكلها بوضع ممتاز جدًا [טלפון] رقم الصبيه من قلنسوة"
+  },
+  {
    "id": "wa-2026-09-10-093255-4",
    "date": "2026-09-10",
    "time": "09:32:55",
@@ -58847,6 +58917,41 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "مساء الخير كيفكك عندي متيرنا شلاف 2 اخذت منه معلقه بس لولدي وما نفع عليه وعندي سيملاك شلاف 1 كمان اخذت منه معلقه وما نفع يريت تبعثيها ع المجموعه وجزاكي الله الف خير"
+  },
+  {
+   "id": "wa-2026-09-10-110314-7",
+   "date": "2026-09-10",
+   "time": "11:03:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "בגדי ילדים",
+     "qty": 1,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ 💕💜",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "لبسة كراتيه لجيل ٨_١٠ المعنيه تتواصل معي"
   },
   {
    "id": "wa-2026-09-10-145045-5",
@@ -59105,14 +59210,15 @@
     3,
     4,
     5,
-    6
+    6,
+    7
    ],
    "mergedBy": [
     "media",
     "phone",
     "text"
    ],
-   "blockCount": 6,
+   "blockCount": 7,
    "needsReview": false,
    "mediaCount": 2,
    "rawText": "✨ صباح النور والمحبة ✨ يوم جمعة وفرصة نعمل مساحة ببيوتنا ومساحة بقلوبنا 🌿💛 إذا عندِك أي غرض بعده بحالة جيدة وانتي مش بحاجة إله مثل: 👗 ملابس 🛋️ أثاث بسيط ⚡ أدوات كهربائية 🍼 مستلزمات أطفال 🎒 أو أي شي قابل للاستعمال ☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון] ☎️ أم بكر[טלפון]"
@@ -59287,6 +59393,41 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "כרטיס איש קשר הושמט رهط"
+  },
+  {
+   "id": "wa-2026-09-11-192756-7",
+   "date": "2026-09-11",
+   "time": "19:27:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "فساتين",
+     "category": "בגדים",
+     "unitKg": 12,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 12,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "مرحبا عندي ثلث فساتين اثنين نمره 36 والازرق 34 هني كثير حلوات ومظلومات بالتصوير لانه فش كيف اصور من الطيبه الرقم[טלפון]"
   },
   {
    "id": "wa-2026-09-12-104550-3",
@@ -59721,6 +59862,89 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "في هاض التخت مع فرشتين الي ودها اياه ياريت لبكرا تيجي تاخذه انا من رهط"
+  },
+  {
+   "id": "wa-2026-09-13-122438-7",
+   "date": "2026-09-13",
+   "time": "12:24:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "matched": "غساله",
+     "category": "אלקטרוניקה",
+     "unitKg": 70,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 70,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מקרר",
+     "qty": 1,
+     "matched": "ثلاجه",
+     "category": "אלקטרוניקה",
+     "unitKg": 80,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 80,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "תנור",
+     "qty": 1,
+     "matched": "فرن",
+     "category": "אלקטרוניקה",
+     "unitKg": 50,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 50,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت",
+     "category": "רהיטים",
+     "unitKg": 45,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 45,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه",
+     "category": "רהיטים",
+     "unitKg": 30,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 30,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "סרטון הווידאו הושמט بحالة ممتازة وشغالات * غسالة * ⁠نشافة * ⁠فرن * ⁠ثلاجة * ⁠تخت مفرد مع فرشة سبب التمرير שיפוץ بالبيت [טלפון] صبحية - ام وليد الطيبة"
   },
   {
    "id": "wa-2026-09-13-132756-2",
@@ -60972,9 +61196,9 @@
    "rawText": "[טלפון]"
   },
   {
-   "id": "wa-2026-09-15-172500-7",
+   "id": "wa-2026-09-15-172522-7",
    "date": "2026-09-15",
-   "time": "17:25:00",
+   "time": "17:25:22",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -61008,7 +61232,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -61016,21 +61240,46 @@
    "blockCount": 1,
    "needsReview": false,
    "mediaCount": 1,
-   "rawText": "ثلاجة وفرن بحالة ممتازة الطيبة ‪[טלפון]"
+   "rawText": "ثلاجة وفرن بحالة ممتازة الطيبة [טלפון]"
   },
   {
-   "id": "wa-2026-09-15-172600-7",
+   "id": "wa-2026-09-15-172653-7",
    "date": "2026-09-15",
-   "time": "17:26:00",
+   "time": "17:26:53",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מקרר",
+     "qty": 1,
+     "matched": "ثلاجه",
+     "category": "אלקטרוניקה",
+     "unitKg": 80,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 80,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "חלון",
+     "qty": 1,
+     "matched": "والشباك",
+     "category": "רהיטים",
+     "unitKg": 15,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 15,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "~ doha",
    "seenInGroups": [
     7
    ],
@@ -61038,7 +61287,7 @@
    "blockCount": 1,
    "needsReview": false,
    "mediaCount": 2,
-   "rawText": ""
+   "rawText": "ثلاجه بوضع ممتاز والشباك شباك مطبخ جديد انا من قلنسوه ام أمجد لداوي [טלפון] <ההודעה נערכה>"
   },
   {
    "id": "wa-2026-09-15-184004-2",
@@ -61573,18 +61822,31 @@
    "rawText": ""
   },
   {
-   "id": "wa-2026-09-16-171400-7",
+   "id": "wa-2026-09-16-171405-7",
    "date": "2026-09-16",
-   "time": "17:14:00",
+   "time": "17:14:05",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מזנון",
+     "qty": 1,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "~ doha",
    "seenInGroups": [
     7
    ],
@@ -61592,7 +61854,7 @@
    "blockCount": 1,
    "needsReview": false,
    "mediaCount": 1,
-   "rawText": ""
+   "rawText": "مزنون بوضع منيح من تحت خزاين ومن فوق خزاين كزاز من الطيبة [טלפון] <ההודעה נערכה>"
   },
   {
    "id": "wa-2026-09-17-144831-2",
@@ -61940,6 +62202,53 @@
    "rawText": "وفي كيس جرابين"
   },
   {
+   "id": "wa-2026-09-18-121256-7",
+   "date": "2026-09-18",
+   "time": "12:12:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت",
+     "category": "רהיטים",
+     "unitKg": 45,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 45,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه",
+     "category": "רהיטים",
+     "unitKg": 30,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 30,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "فرشة تخت مفرد بحاله جيده جدا الي معنيه تبعث[טלפון] الطيبه <ההודעה נערכה>"
+  },
+  {
    "id": "wa-2026-09-18-123214-4",
    "date": "2026-09-18",
    "time": "12:32:14",
@@ -62110,6 +62419,41 @@
    "needsReview": false,
    "mediaCount": 6,
    "rawText": "ملابس سنتين واربعه وملابس كبار وكنادر جاكيتات شتويه ثقيله بتجنن شنتات جديده وألعاب دبب احجام كبيره بسكليت ومرجيحه ومخدات وفرشات جديده وكلو بحاله جيده جدا اللي معنيه وجديه معها سياره تتواصل على الرقم :[טלפון]"
+  },
+  {
+   "id": "wa-2026-09-18-131455-7",
+   "date": "2026-09-18",
+   "time": "13:14:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שידה",
+     "qty": 2,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 2,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": true,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "اسكملات كبار مع المناظر الي عليهن الطيبة انحجزت"
   },
   {
    "id": "wa-2026-09-19-104033-4",
@@ -62396,6 +62740,53 @@
    "rawText": "في جلي وبطانيات وشراشف والحافات"
   },
   {
+   "id": "wa-2026-09-19-175134-7",
+   "date": "2026-09-19",
+   "time": "17:51:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت",
+     "category": "רהיטים",
+     "unitKg": 45,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 45,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "مكتبه",
+     "category": "רהיטים",
+     "unitKg": 35,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 35,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 2,
+   "rawText": "السلام عليكم 🌷 للتبرع مجانًا لمن بحاجة: تخت مع جرارين + فـرشتين + مكتبة بحالة جيدة. الأولوية لمن هو فعلًا بحاجة"
+  },
+  {
    "id": "wa-2026-09-19-182505-2",
    "date": "2026-09-19",
    "time": "18:25:05",
@@ -62636,6 +63027,53 @@
    "needsReview": false,
    "mediaCount": 16,
    "rawText": "ההודעה נמחקה על ידי ראניה בלאל, מנהל/ת הקבוצה."
+  },
+  {
+   "id": "wa-2026-09-20-132251-7",
+   "date": "2026-09-20",
+   "time": "13:22:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كرسي",
+     "category": "רהיטים",
+     "unitKg": 6,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 6,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "للمكتبه",
+     "category": "רהיטים",
+     "unitKg": 35,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 35,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "مرحبا 🌸 في كرسي للمكتبه بحاله منيح اذا بنفع توديها علجروب الي بدو اياها[טלפון] من قلنسوه"
   },
   {
    "id": "wa-2026-09-20-134943-2",
@@ -63464,6 +63902,53 @@
    "rawText": "انحجز انحجز [טלפון]"
   },
   {
+   "id": "wa-2026-09-21-194851-7",
+   "date": "2026-09-21",
+   "time": "19:48:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שולחן",
+     "qty": 1,
+     "matched": "الطاوله",
+     "category": "רהיטים",
+     "unitKg": 70,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 70,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كراسي",
+     "category": "רהיטים",
+     "unitKg": 6,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 6,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 4,
+   "rawText": "للتواصل 0523044253 ٦ كراسي من الطيبه الطاوله مع الست كراسي هاذ الرقم للتواصل"
+  },
+  {
    "id": "wa-2026-09-22-112840-2",
    "date": "2026-09-22",
    "time": "11:28:40",
@@ -63744,6 +64229,41 @@
    "needsReview": true,
    "mediaCount": 11,
    "rawText": "اخت زوجي بدون فرشه شقيب [טלפון] وفي كمان كيس كبابي شاي من رهط صباح الخير عندي لبس لولد وبنت من جيل 0-6 شهور بحالة ممتازة عرعرة النقب סרטון הווידאו הושמט [טלפון] انحجزن لا تبعثن للصبيه عندي كثير أغراض من البيت حقات شتويه بحاله ممتازه وأدوات مطبخ طناجر وصحون وكثير أغرض قولي هالمجموعه ياخذنهن ببعث مكوم [טלפון] عرعره انحجزن"
+  },
+  {
+   "id": "wa-2026-09-22-132919-7",
+   "date": "2026-09-22",
+   "time": "13:29:19",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كرسي",
+     "category": "רהיטים",
+     "unitKg": 6,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 6,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 4,
+   "rawText": "[טלפון] الطيبه بحالة ممتازة كرسي اكل وסלקל"
   },
   {
    "id": "wa-2026-09-22-151209-3",
@@ -65960,6 +66480,41 @@
    "rawText": "ملابس رجالي لارج اكس لارج استلام من كسيفة[טלפון] استلام فوري اغراض مطبخ استلام من كسيفة[טלפון] استلام فوري الرجاء عدم الاحراج..اللي ما بتقدر تجي اليوم فالساعات القريبة لا تبعث"
   },
   {
+   "id": "wa-2026-09-28-174336-7",
+   "date": "2026-09-28",
+   "time": "17:43:36",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "وتخوت",
+     "category": "רהיטים",
+     "unitKg": 45,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 45,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "[טלפון] شرين الطيبه المثلث موجود كمان عندها غرف نوم وتخوت كل الموجود بالصور - نقلت دار جديده"
+  },
+  {
    "id": "wa-2026-09-28-183232-1",
    "date": "2026-09-28",
    "time": "18:32:32",
@@ -66695,6 +67250,76 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "[טלפון]"
+  },
+  {
+   "id": "wa-2026-09-30-170206-7",
+   "date": "2026-09-30",
+   "time": "17:02:06",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "סלקל",
+     "qty": 1,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ 💕💜",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
+  },
+  {
+   "id": "wa-2026-09-30-170657-7",
+   "date": "2026-09-30",
+   "time": "17:06:57",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "הליכון לתינוק",
+     "qty": 1,
+     "source": "vision",
+     "category": "ילדים/תינוקות",
+     "unitKg": 6,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 6,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ 💕💜",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
   },
   {
    "id": "wa-2026-09-30-170950-1",
@@ -68447,6 +69072,41 @@
    "rawText": "قصر السر [טלפון]"
   },
   {
+   "id": "wa-2026-10-04-142812-7",
+   "date": "2026-10-04",
+   "time": "14:28:12",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "בגדי ילדים",
+     "qty": 4,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 4,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "في اربع بلاطين جداد نمره 6 اذا حدا معني فيهن اجن هديه لبنتي وهي عمرها ٤ سنين كبار كثير [טלפון] من الطيبة"
+  },
+  {
    "id": "wa-2026-10-04-150808-2",
    "date": "2026-10-04",
    "time": "15:08:08",
@@ -69643,6 +70303,41 @@
    "rawText": "انحجز"
   },
   {
+   "id": "wa-2026-10-08-075638-7",
+   "date": "2026-10-08",
+   "time": "07:56:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه",
+     "category": "רהיטים",
+     "unitKg": 30,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 30,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "فرشة مفرد ونص بحالة ممتازة [טלפון] الطيبة"
+  },
+  {
    "id": "wa-2026-10-08-091545-1",
    "date": "2026-10-08",
    "time": "09:15:45",
@@ -70257,6 +70952,76 @@
    "rawText": "مخدات وسندين بجوده كويسه والفرشات ضغطهن كويس شاشات للحجات كويسات السلام عليكم يعطيها العافيه ام احمد امانه بعثت الكي صور اغراض جديده ابعثيهن على المجموعه اسمي مريم من كسيفه رقم الهاتف[טלפון]"
   },
   {
+   "id": "wa-2026-10-09-173848-7",
+   "date": "2026-10-09",
+   "time": "17:38:48",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "matched": "تخت بيبي",
+     "category": "רהיטים",
+     "unitKg": 20,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 20,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "تخت بيبي بوضع ممتاز [טלפון] الطيبة"
+  },
+  {
+   "id": "wa-2026-10-09-175255-7",
+   "date": "2026-10-09",
+   "time": "17:52:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "source": "vision",
+     "category": "אלקטרוניקה",
+     "unitKg": 70,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 70,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "الطيبه[טלפון]"
+  },
+  {
    "id": "wa-2026-10-09-182637-1",
    "date": "2026-10-09",
    "time": "18:26:37",
@@ -70767,6 +71532,41 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "انحجز حوض للمطبخ للاستلام اليوم"
+  },
+  {
+   "id": "wa-2026-10-11-125924-7",
+   "date": "2026-10-11",
+   "time": "12:59:24",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "matched": "غساله",
+     "category": "אלקטרוניקה",
+     "unitKg": 70,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 70,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "غساله ونشافه ومتكان مي ورادياتور كلو شغال من الطيبه الي بحاجه لالهن يجي يوخدهن[טלפון]"
   },
   {
    "id": "wa-2026-10-11-144705-2",
@@ -71540,6 +72340,41 @@
    "rawText": "من شقيب اليوم يتاخذن يلي مش متاكده لا تحجز 🙏 بس بدهن تنظيف"
   },
   {
+   "id": "wa-2026-10-14-200215-7",
+   "date": "2026-10-14",
+   "time": "20:02:15",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "חיתולים",
+     "qty": 1,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "مرحبا حبيبتي شو الاخبار في عندي بامبز كلسون نمره ٦ من جيل سنتين الطيبة [טלפון]"
+  },
+  {
    "id": "wa-2026-10-15-140417-2",
    "date": "2026-10-15",
    "time": "14:04:17",
@@ -71935,6 +72770,124 @@
    "rawText": "يعطيكي العافيه[טלפון] عندي هدوم ل بنت 3تشهر ل سته مخلطاتت وفيهن شتوي تل السبع مفي توصيل [טלפון]"
   },
   {
+   "id": "wa-2026-10-17-091029-7",
+   "date": "2026-10-17",
+   "time": "09:10:29",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "matched": "تخت بيبي",
+     "category": "רהיטים",
+     "unitKg": 20,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 20,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت",
+     "category": "רהיטים",
+     "unitKg": 45,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 45,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه",
+     "category": "רהיטים",
+     "unitKg": 30,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 30,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 4,
+   "rawText": "تواليت تخت بدون فرشه تخت بيبي מעבר نشافه كله لحاله ممتازه رامي مصاروه [טלפון] الطيبه"
+  },
+  {
+   "id": "wa-2026-10-17-102422-7",
+   "date": "2026-10-17",
+   "time": "10:24:22",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "matched": "غساله",
+     "category": "אלקטרוניקה",
+     "unitKg": 70,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 70,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "טלוויזיה",
+     "qty": 1,
+     "matched": "وشاشه",
+     "category": "אלקטרוניקה",
+     "unitKg": 15,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 15,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מדיח כלים",
+     "qty": 1,
+     "matched": "جلايه",
+     "category": "אלקטרוניקה",
+     "unitKg": 45,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 45,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 7,
+   "rawText": "غساله ونشافه ومتكان مي ورادياتور كلو شغال من الطيبه الي بحاجه لالهن يجي يوخدهن[טלפון] جلايه شغاله وبحاله منيحه بس بدها تنزيل من الطابق الثالث وشاشه شغاله بس بدون نترنت"
+  },
+  {
    "id": "wa-2026-10-17-121019-5",
    "date": "2026-10-17",
    "time": "12:10:19",
@@ -71964,13 +72917,14 @@
     1,
     3,
     5,
-    6
+    6,
+    7
    ],
    "mergedBy": [
     "media",
     "text"
    ],
-   "blockCount": 4,
+   "blockCount": 5,
    "needsReview": false,
    "mediaCount": 4,
    "rawText": "مكوى بخار شغال الي معنيه في تبعث رساله عرعرة📍للاستلام اليوم مكوى بخار شغال الي معنيه في تبعث رساله عرعرة📍للاستلام اليوم عندي توست شغال ١٠٠٪؜ بس مكسوره البلاستيك السمره عرعرة📍 عندي توست شغال ١٠٠٪؜ بس مكسوره البلاستيك السمره عرعرة📍"
@@ -72125,6 +73079,41 @@
    "needsReview": false,
    "mediaCount": 3,
    "rawText": "رهط يلبسن نمره 38-40"
+  },
+  {
+   "id": "wa-2026-10-18-130256-7",
+   "date": "2026-10-18",
+   "time": "13:02:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1,
+     "source": "vision",
+     "category": "רהיטים",
+     "unitKg": 130,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 130,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 5,
+   "rawText": "[טלפון]"
   },
   {
    "id": "wa-2026-10-18-133019-4",
@@ -72707,6 +73696,41 @@
    "rawText": "[טלפון] عرعره סרטון הווידאו הושמט"
   },
   {
+   "id": "wa-2026-10-20-151014-7",
+   "date": "2026-10-20",
+   "time": "15:10:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "matched": "صالون",
+     "category": "רהיטים",
+     "unitKg": 100,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 100,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "كنبايتين صالون بحالة جيدة الطيبة"
+  },
+  {
    "id": "wa-2026-10-21-100158-4",
    "date": "2026-10-21",
    "time": "10:01:58",
@@ -72932,6 +73956,53 @@
    "needsReview": false,
    "mediaCount": 4,
    "rawText": "من رهط حارة 17بيت4 من رهط حارة 17بيت4 لسه ما حليتها المعنيه تجيب سيارة وتجي توردها [טלפון]"
+  },
+  {
+   "id": "wa-2026-10-23-112910-7",
+   "date": "2026-10-23",
+   "time": "11:29:10",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "תנור חימום",
+     "qty": 1,
+     "source": "vision",
+     "category": "אלקטרוניקה",
+     "unitKg": 8,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 8,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "מאוורר",
+     "qty": 1,
+     "source": "vision",
+     "category": "אחר",
+     "unitKg": null,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": null,
+     "weightEstimated": true
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 2,
+   "rawText": "دفاي وهواي شغالات وبحالة جيدة الطيبة"
   },
   {
    "id": "wa-2026-10-23-130956-2",
@@ -74234,6 +75305,53 @@
    "rawText": "انحجز ملابس نسائيه وسدينيم للتسليم اليوم رهط"
   },
   {
+   "id": "wa-2026-10-28-180447-7",
+   "date": "2026-10-28",
+   "time": "18:04:47",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "وتخت",
+     "category": "רהיטים",
+     "unitKg": 45,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 45,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "مكتبه",
+     "category": "רהיטים",
+     "unitKg": 35,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 35,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "مكتبه وتخت بحاله جيدة جداً الطيبة [טלפון]"
+  },
+  {
    "id": "wa-2026-10-28-190606-2",
    "date": "2026-10-28",
    "time": "19:06:06",
@@ -74733,6 +75851,53 @@
    "rawText": "نمرتهن بتلبس اكس لارج ولارج والاحذيه نمرة 38 والي ودها تاخذهن تاخذهن كلهن مع بعض عندي كثير اشياء كمان مناديل شالات بس الي ودها تتواصل معي بصورلها كلشي [טלפון] تل السبع"
   },
   {
+   "id": "wa-2026-10-30-102123-7",
+   "date": "2026-10-30",
+   "time": "10:21:23",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "matched": "صالون",
+     "category": "רהיטים",
+     "unitKg": 100,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 100,
+     "weightEstimated": false
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "ومكتبه",
+     "category": "רהיטים",
+     "unitKg": 35,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 35,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 6,
+   "rawText": "صالون ومكتبه الطيبه +972 54‑580‑7749 15 متر الطيبه [טלפון]"
+  },
+  {
    "id": "wa-2026-10-30-115802-5",
    "date": "2026-10-30",
    "time": "11:58:02",
@@ -75217,9 +76382,9 @@
    "rawText": "صباح الخير فساتين نمره 36/38 تل السبع[טלפון] استلام من المنزل"
   },
   {
-   "id": "wa-2026-11-01-123400-7",
+   "id": "wa-2026-11-01-123426-7",
    "date": "2026-11-01",
-   "time": "12:34:00",
+   "time": "12:34:26",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -75253,7 +76418,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -76277,28 +77442,6 @@
    "rawText": "غاز بيشتغل الاستلام من رهط متحام خمسة"
   },
   {
-   "id": "wa-2026-11-03-205000-7",
-   "date": "2026-11-03",
-   "time": "20:50:00",
-   "city": "אחר",
-   "cityInherited": false,
-   "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
-   "isListing": true,
-   "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
-   "seenInGroups": [
-    7
-   ],
-   "mergedBy": [],
-   "blockCount": 1,
-   "needsReview": false,
-   "mediaCount": 1,
-   "rawText": ""
-  },
-  {
    "id": "wa-2026-11-04-102033-1",
    "date": "2026-11-04",
    "time": "10:20:33",
@@ -76472,9 +77615,9 @@
    "rawText": "[טלפון] رهط لي ودها ياها تاجي تاخذهت"
   },
   {
-   "id": "wa-2026-11-05-085600-7",
+   "id": "wa-2026-11-05-085638-7",
    "date": "2026-11-05",
-   "time": "08:56:00",
+   "time": "08:56:38",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -76496,7 +77639,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -77930,9 +79073,9 @@
    "rawText": "[טלפון] رهط"
   },
   {
-   "id": "wa-2026-11-09-111500-7",
+   "id": "wa-2026-11-09-111537-7",
    "date": "2026-11-09",
-   "time": "11:15:00",
+   "time": "11:15:37",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -77978,7 +79121,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -79095,6 +80238,41 @@
    "needsReview": false,
    "mediaCount": 3,
    "rawText": "رهط"
+  },
+  {
+   "id": "wa-2026-11-13-152346-7",
+   "date": "2026-11-13",
+   "time": "15:23:46",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "فستان",
+     "category": "בגדים",
+     "unitKg": 12,
+     "countsObjects": false,
+     "objectLabel": null,
+     "units": 1,
+     "weightKg": 12,
+     "weightEstimated": false
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "فستان خياطه التبس مرتين مش اكثر بلبس نمره 38/40 وفي كمان اواعي /قمصان /جاكيتات نمره ميديم لارج لصبيه . الطيبة الي معنيه تتواصل"
   },
   {
    "id": "wa-2026-11-13-160726-6",

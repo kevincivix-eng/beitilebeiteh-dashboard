@@ -1,431 +1,7 @@
 {
- "generated": "2026-11-18T09:37:24.999Z",
- "count": 218,
+ "generated": "2026-11-19T06:40:57.921Z",
+ "count": 35,
  "data": [
-  {
-   "id": "wa-2026-06-09-113452-2",
-   "date": "2026-06-09",
-   "city": "חורה",
-   "mediaCount": 3,
-   "text": "[טלפון] حورة",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000172-PHOTO-2026-06-09-11-35-42.jpg"
-  },
-  {
-   "id": "wa-2026-06-09-154058-1",
-   "date": "2026-06-09",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000207-PHOTO-2026-06-09-15-40-59.jpg"
-  },
-  {
-   "id": "wa-2026-06-10-194534-2",
-   "date": "2026-06-10",
-   "city": "כסיפה",
-   "mediaCount": 6,
-   "text": "كسيفة [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000265-PHOTO-2026-06-10-19-45-40.jpg"
-  },
-  {
-   "id": "wa-2026-06-11-142824-4",
-   "date": "2026-06-11",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "يعطيكم العافية 🌷",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000279-PHOTO-2026-06-11-14-28-24.jpg"
-  },
-  {
-   "id": "wa-2026-06-12-131438-2",
-   "date": "2026-06-12",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000302-PHOTO-2026-06-12-13-14-40.jpg"
-  },
-  {
-   "id": "wa-2026-06-13-105411-2",
-   "date": "2026-06-13",
-   "city": "שגב שלום",
-   "mediaCount": 2,
-   "text": "انحجزو لا تبعثن للصبيه شقيب سلام [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000530-PHOTO-2026-06-13-10-56-27.jpg"
-  },
-  {
-   "id": "wa-2026-06-14-124825-4",
-   "date": "2026-06-14",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000923-PHOTO-2026-06-14-12-48-25.jpg"
-  },
-  {
-   "id": "wa-2026-06-14-131021-1",
-   "date": "2026-06-14",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "بين عرعره وشقيب صبايا يعطيكن العافية في رقم تحت الصوره تواصن معها",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00000931-PHOTO-2026-06-14-13-10-27.jpg"
-  },
-  {
-   "id": "wa-2026-06-17-103731-1",
-   "date": "2026-06-17",
-   "city": "ערערה בנגב",
-   "mediaCount": 5,
-   "text": "قصر السر الهواشله",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00001410-PHOTO-2026-06-17-10-37-35.jpg"
-  },
-  {
-   "id": "wa-2026-06-17-174657-4",
-   "date": "2026-06-17",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00001469-PHOTO-2026-06-17-17-46-57.jpg"
-  },
-  {
-   "id": "wa-2026-06-20-120054-1",
-   "date": "2026-06-20",
-   "city": "ערערה בנגב",
-   "mediaCount": 5,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00001636-PHOTO-2026-06-20-12-00-58.jpg"
-  },
-  {
-   "id": "wa-2026-06-20-120758-1",
-   "date": "2026-06-20",
-   "city": "ערערה בנגב",
-   "mediaCount": 2,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00001642-PHOTO-2026-06-20-12-07-59.jpg"
-  },
-  {
-   "id": "wa-2026-06-20-171408-2",
-   "date": "2026-06-20",
-   "city": "נווה מדבר",
-   "mediaCount": 1,
-   "text": "ابو تلول انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00001708-PHOTO-2026-06-20-17-14-11.jpg"
-  },
-  {
-   "id": "wa-2026-06-21-200522-2",
-   "date": "2026-06-21",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "[טלפון] عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00001844-PHOTO-2026-06-21-20-05-23.jpg"
-  },
-  {
-   "id": "wa-2026-06-22-083926-1",
-   "date": "2026-06-22",
-   "city": "חורה",
-   "mediaCount": 1,
-   "text": "هي هيه حورة، بر",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00001865-PHOTO-2026-06-22-08-39-28.jpg"
-  },
-  {
-   "id": "wa-2026-06-23-103318-1",
-   "date": "2026-06-23",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "ارجعي بعثي واكتبي ما حدا اتقول أنا باجي اخذهن خليهن الي الي بدها اتروح دغري [טלפ",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00002006-PHOTO-2026-06-23-10-33-21.jpg"
-  },
-  {
-   "id": "wa-2026-06-23-113427-3",
-   "date": "2026-06-23",
-   "city": "תל שבע",
-   "mediaCount": 1,
-   "text": "סרטון הווידאו הושמט تل السبع انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00002015-PHOTO-2026-06-23-11-35-55.jpg"
-  },
-  {
-   "id": "wa-2026-06-24-201502-1",
-   "date": "2026-06-24",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "السلام عليكم استلام من عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00002113-PHOTO-2026-06-24-20-15-03.jpg"
-  },
-  {
-   "id": "wa-2026-06-27-115327-1",
-   "date": "2026-06-27",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "انحجزن[טלפון] رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00002909-PHOTO-2026-06-27-11-55-24.jpg"
-  },
-  {
-   "id": "wa-2026-06-27-184443-4",
-   "date": "2026-06-27",
-   "city": "רהט",
-   "mediaCount": 4,
-   "text": "رهط[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00002989-PHOTO-2026-06-27-18-44-43.jpg"
-  },
-  {
-   "id": "wa-2026-06-28-151827-2",
-   "date": "2026-06-28",
-   "city": "חורה",
-   "mediaCount": 1,
-   "text": "حوره الموقع",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003150-PHOTO-2026-06-28-15-18-35.jpg"
-  },
-  {
-   "id": "wa-2026-06-29-081049-3",
-   "date": "2026-06-29",
-   "city": "אחר",
-   "mediaCount": 3,
-   "text": "ابعثن رساله للرقم تحت الصوره ممنوع الاتصال بس رساله واتس اب",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003177-PHOTO-2026-06-29-08-10-57.jpg"
-  },
-  {
-   "id": "wa-2026-06-29-082142-1",
-   "date": "2026-06-29",
-   "city": "אחר",
-   "mediaCount": 5,
-   "text": "[טלפון] انحجزو لا تبعثن للصبيه",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003191-PHOTO-2026-06-29-08-22-19.jpg"
-  },
-  {
-   "id": "wa-2026-06-29-084411-5",
-   "date": "2026-06-29",
-   "city": "לקיה",
-   "mediaCount": 2,
-   "text": "انحجز انحجزن انحجز انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003211-PHOTO-2026-06-29-08-47-03.jpg"
-  },
-  {
-   "id": "wa-2026-06-29-091643-1",
-   "date": "2026-06-29",
-   "city": "ערערה בנגב",
-   "mediaCount": 3,
-   "text": "عرعره المعنيه تتواصل معي انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003231-PHOTO-2026-06-29-09-17-21.jpg"
-  },
-  {
-   "id": "wa-2026-06-29-093403-3",
-   "date": "2026-06-29",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003241-PHOTO-2026-06-29-09-34-08.jpg"
-  },
-  {
-   "id": "wa-2026-06-29-104156-3",
-   "date": "2026-06-29",
-   "city": "תל שבע",
-   "mediaCount": 9,
-   "text": "اكتبي تل السبع [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003265-PHOTO-2026-06-29-10-42-00.jpg"
-  },
-  {
-   "id": "wa-2026-07-01-124521-5",
-   "date": "2026-07-01",
-   "city": "שגב שלום",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003529-PHOTO-2026-07-01-12-45-40.jpg"
-  },
-  {
-   "id": "wa-2026-07-01-140242-2",
-   "date": "2026-07-01",
-   "city": "שגב שלום",
-   "mediaCount": 1,
-   "text": "[טלפון] شقيب",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003548-PHOTO-2026-07-01-14-03-00.jpg"
-  },
-  {
-   "id": "wa-2026-07-01-140733-5",
-   "date": "2026-07-01",
-   "city": "לקיה",
-   "mediaCount": 1,
-   "text": "اللقيه",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003551-PHOTO-2026-07-01-14-07-51.jpg"
-  },
-  {
-   "id": "wa-2026-07-01-172734-5",
-   "date": "2026-07-01",
-   "city": "אחר",
-   "mediaCount": 5,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003566-PHOTO-2026-07-01-17-33-52.jpg"
-  },
-  {
-   "id": "wa-2026-07-01-204854-1",
-   "date": "2026-07-01",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "وهط [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003600-PHOTO-2026-07-01-20-49-22.jpg"
-  },
-  {
-   "id": "wa-2026-07-03-144144-1",
-   "date": "2026-07-03",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "رهط[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003839-PHOTO-2026-07-03-14-41-50.jpg"
-  },
-  {
-   "id": "wa-2026-07-03-150007-3",
-   "date": "2026-07-03",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "مدرسة الأفق رهط [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003844-PHOTO-2026-07-03-15-00-13.jpg"
-  },
-  {
-   "id": "wa-2026-07-04-171620-2",
-   "date": "2026-07-04",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "استلام من عرعره زي ما هي (مركّبه)",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00003964-PHOTO-2026-07-04-17-16-22.jpg"
-  },
-  {
-   "id": "wa-2026-07-04-171802-1",
-   "date": "2026-07-04",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004017-PHOTO-2026-07-05-09-57-06.jpg"
-  },
-  {
-   "id": "wa-2026-07-05-111847-2",
-   "date": "2026-07-05",
-   "city": "אחר",
-   "mediaCount": 6,
-   "text": "[טלפון] هذول كلهن تبرعات من عند وحده",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004054-PHOTO-2026-07-05-11-20-21.jpg"
-  },
-  {
-   "id": "wa-2026-07-05-121422-1",
-   "date": "2026-07-05",
-   "city": "שגב שלום",
-   "mediaCount": 5,
-   "text": "متخام 5 شقيب اذا في مجال اليوم يخذوهم סרטון הווידאו הושמט סרטון הווידאו הושמט סר",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004070-PHOTO-2026-07-05-12-14-40.jpg"
-  },
-  {
-   "id": "wa-2026-07-05-154346-3",
-   "date": "2026-07-05",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004122-PHOTO-2026-07-05-15-43-54.jpg"
-  },
-  {
-   "id": "wa-2026-07-06-084759-1",
-   "date": "2026-07-06",
-   "city": "תל שבע",
-   "mediaCount": 4,
-   "text": "تل السبع",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004208-PHOTO-2026-07-06-08-48-02.jpg"
-  },
-  {
-   "id": "wa-2026-07-07-185323-2",
-   "date": "2026-07-07",
-   "city": "רהט",
-   "mediaCount": 7,
-   "text": "العافيه عندي البسه هيذ ودي اعطيها لحد الي بحب البسس وبيعطني فيهن يجي ياخذها اليو",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004531-PHOTO-2026-07-07-18-53-29.jpg"
-  },
-  {
-   "id": "wa-2026-07-08-174615-1",
-   "date": "2026-07-08",
-   "city": "רהט",
-   "mediaCount": 6,
-   "text": "رهط تواصلن على الرقم صاحيه الغرض مش معي",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004656-PHOTO-2026-07-08-17-46-38.jpg"
-  },
-  {
-   "id": "wa-2026-07-08-194900-3",
-   "date": "2026-07-08",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004676-PHOTO-2026-07-08-19-49-04.jpg"
-  },
-  {
-   "id": "wa-2026-07-09-085958-1",
-   "date": "2026-07-09",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "صباح الخير كيف الحال",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004688-PHOTO-2026-07-09-09-00-01.jpg"
-  },
-  {
-   "id": "wa-2026-07-09-103421-2",
-   "date": "2026-07-09",
-   "city": "שגב שלום",
-   "mediaCount": 3,
-   "text": "شقيب",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004714-PHOTO-2026-07-09-10-34-23.jpg"
-  },
-  {
-   "id": "wa-2026-07-09-163511-4",
-   "date": "2026-07-09",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "طول وسط السلام عليكم رهط انحجز انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004778-PHOTO-2026-07-09-16-35-11.jpg"
-  },
-  {
-   "id": "wa-2026-07-09-180331-2",
-   "date": "2026-07-09",
-   "city": "תל שבע",
-   "mediaCount": 5,
-   "text": "بير المشاش",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004839-PHOTO-2026-07-09-18-03-35.jpg"
-  },
-  {
-   "id": "wa-2026-07-09-182410-2",
-   "date": "2026-07-09",
-   "city": "תל שבע",
-   "mediaCount": 2,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00004847-PHOTO-2026-07-09-18-24-17.jpg"
-  },
-  {
-   "id": "wa-2026-07-10-135712-4",
-   "date": "2026-07-10",
-   "city": "רהט",
-   "mediaCount": 5,
-   "text": "انحجز كسيفه رهط [טלפון] سلام عليكم انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005000-PHOTO-2026-07-10-14-00-01.jpg"
-  },
-  {
-   "id": "wa-2026-07-10-194452-2",
-   "date": "2026-07-10",
-   "city": "תל שבע",
-   "mediaCount": 3,
-   "text": "طاولتين خشب من لهافيم، اللي بدها اياها الحين تاجي تاخذها امانه انشرهيها عندك بلك",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005107-PHOTO-2026-07-10-19-44-54.jpg"
-  },
-  {
-   "id": "wa-2026-07-11-160610-1",
-   "date": "2026-07-11",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005245-PHOTO-2026-07-11-16-06-13.jpg"
-  },
-  {
-   "id": "wa-2026-07-12-091341-2",
-   "date": "2026-07-12",
-   "city": "שגב שלום",
-   "mediaCount": 11,
-   "text": "مرحبا شقيب السلام [טלפון] انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005359-PHOTO-2026-07-12-09-13-49.jpg"
-  },
-  {
-   "id": "wa-2026-07-12-102033-2",
-   "date": "2026-07-12",
-   "city": "תל שבע",
-   "mediaCount": 2,
-   "text": "صباح الخير كيف الحال [טלפון] عندي هيذ لبيبي شبه جديده الي معنيه فيها تجي تاخذها ",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005382-PHOTO-2026-07-12-10-20-38.jpg"
-  },
   {
    "id": "wa-2026-07-14-133936-1",
    "date": "2026-07-14",
@@ -433,126 +9,6 @@
    "mediaCount": 6,
    "text": "[טלפון] مغسولات ونصهن مش ملبوس لولد وبنت [טלפון] شقيب السلام علبه سيميلاك جديده ",
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00004075-PHOTO-2026-07-14-13-39-41.jpg"
-  },
-  {
-   "id": "wa-2026-07-14-170514-1",
-   "date": "2026-07-14",
-   "city": "אחר",
-   "mediaCount": 4,
-   "text": "مدرسه ابوقويدر [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00004119-PHOTO-2026-07-14-17-05-40.jpg"
-  },
-  {
-   "id": "wa-2026-07-14-192844-1",
-   "date": "2026-07-14",
-   "city": "ערערה בנגב",
-   "mediaCount": 2,
-   "text": "عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00004182-PHOTO-2026-07-14-19-28-47.jpg"
-  },
-  {
-   "id": "wa-2026-07-15-150235-2",
-   "date": "2026-07-15",
-   "city": "אחר",
-   "mediaCount": 4,
-   "text": "مستعمله بس ناقصها شاحن بينفع تتعبا بشاحن التلفون شفاط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00004275-PHOTO-2026-07-15-15-02-54.jpg"
-  },
-  {
-   "id": "wa-2026-07-16-104701-6",
-   "date": "2026-07-16",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00000058-PHOTO-2026-07-16-10-47-01.jpg"
-  },
-  {
-   "id": "wa-2026-07-16-133530-3",
-   "date": "2026-07-16",
-   "city": "תל שבע",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00004386-PHOTO-2026-07-16-13-35-34.jpg"
-  },
-  {
-   "id": "wa-2026-07-16-145139-1",
-   "date": "2026-07-16",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00004396-PHOTO-2026-07-16-14-51-48.jpg"
-  },
-  {
-   "id": "wa-2026-07-17-102039-3",
-   "date": "2026-07-17",
-   "city": "אחר",
-   "mediaCount": 5,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005866-PHOTO-2026-07-17-10-20-41.jpg"
-  },
-  {
-   "id": "wa-2026-07-17-132315-1",
-   "date": "2026-07-17",
-   "city": "תל שבע",
-   "mediaCount": 1,
-   "text": "السلام عليكم تل السبع انحجز انحجز <ההודעה נערכה>",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005890-PHOTO-2026-07-17-13-23-42.jpg"
-  },
-  {
-   "id": "wa-2026-07-17-161152-2",
-   "date": "2026-07-17",
-   "city": "תל שבע",
-   "mediaCount": 4,
-   "text": "الاستلام فوري [טלפון] تل السبع",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005920-PHOTO-2026-07-17-16-11-56.jpg"
-  },
-  {
-   "id": "wa-2026-07-17-185925-2",
-   "date": "2026-07-17",
-   "city": "רהט",
-   "mediaCount": 3,
-   "text": "رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00005936-PHOTO-2026-07-17-18-59-38.jpg"
-  },
-  {
-   "id": "wa-2026-07-17-185942-6",
-   "date": "2026-07-17",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00000282-PHOTO-2026-07-17-18-59-42.jpg"
-  },
-  {
-   "id": "wa-2026-07-18-120251-2",
-   "date": "2026-07-18",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "السلام عليكم [טלפון] انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00006023-PHOTO-2026-07-18-12-02-52.jpg"
-  },
-  {
-   "id": "wa-2026-07-18-190902-4",
-   "date": "2026-07-18",
-   "city": "אחר",
-   "mediaCount": 3,
-   "text": "[טלפון] الصف الخامس والثالث مساء الخير ابعثي لي على المجموعة اللي بدي إياهم",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00006104-PHOTO-2026-07-18-19-09-02.jpg"
-  },
-  {
-   "id": "wa-2026-07-19-121846-2",
-   "date": "2026-07-19",
-   "city": "תל שבע",
-   "mediaCount": 2,
-   "text": "انشري عندكي الي ودها اياهن اليوم اجي تاخذهن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00006164-PHOTO-2026-07-19-12-18-47.jpg"
-  },
-  {
-   "id": "wa-2026-07-19-135236-3",
-   "date": "2026-07-19",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "السلام عليكم انشري ثاني لان اللي حجزت قالت جايه من البارح وما اجت بس المعنيه صدق",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00006198-PHOTO-2026-07-19-13-53-37.jpg"
   },
   {
    "id": "wa-2026-07-19-180813-2",
@@ -563,588 +19,12 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00006263-PHOTO-2026-07-19-18-08-15.jpg"
   },
   {
-   "id": "wa-2026-07-21-102929-6",
-   "date": "2026-07-21",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00006475-PHOTO-2026-07-21-10-29-36.jpg"
-  },
-  {
-   "id": "wa-2026-07-22-170505-1",
-   "date": "2026-07-22",
-   "city": "אחר",
-   "mediaCount": 16,
-   "text": "ההודעה נמחקה על ידי ראניה בלאל, מנהל/ת הקבוצה. انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00006666-PHOTO-2026-07-22-17-05-18.jpg"
-  },
-  {
-   "id": "wa-2026-07-25-193700-2",
-   "date": "2026-07-25",
-   "city": "תל שבע",
-   "mediaCount": 1,
-   "text": "تل السبع انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007199-PHOTO-2026-07-25-19-37-01.jpg"
-  },
-  {
-   "id": "wa-2026-07-26-103017-2",
-   "date": "2026-07-26",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "السلام وعليكم סרטון הווידאו הושמט",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007248-PHOTO-2026-07-26-10-30-20.jpg"
-  },
-  {
-   "id": "wa-2026-07-27-103232-3",
-   "date": "2026-07-27",
-   "city": "ערערה בנגב",
-   "mediaCount": 12,
-   "text": "نمره Lوفي نمرهSوفي نمررXL عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007395-PHOTO-2026-07-27-10-32-37.jpg"
-  },
-  {
-   "id": "wa-2026-07-27-103239-5",
-   "date": "2026-07-27",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00005975-PHOTO-2026-07-27-10-32-39.jpg"
-  },
-  {
-   "id": "wa-2026-07-28-082809-3",
-   "date": "2026-07-28",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007507-PHOTO-2026-07-28-08-28-14.jpg"
-  },
-  {
-   "id": "wa-2026-07-28-104708-1",
-   "date": "2026-07-28",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007529-PHOTO-2026-07-28-10-47-08.jpg"
-  },
-  {
-   "id": "wa-2026-07-28-105951-6",
-   "date": "2026-07-28",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון] *📌بنذكركن*..*ارقام مشرفات* *النشر👆🏼.. ابعث",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007530-PHOTO-2026-07-28-10-59-57.jpg"
-  },
-  {
-   "id": "wa-2026-07-29-120135-3",
-   "date": "2026-07-29",
-   "city": "ערערה בנגב",
-   "mediaCount": 2,
-   "text": "عرعرة النقب",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007696-PHOTO-2026-07-29-12-01-36.jpg"
-  },
-  {
-   "id": "wa-2026-07-29-124154-2",
-   "date": "2026-07-29",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007710-PHOTO-2026-07-29-12-42-00.jpg"
-  },
-  {
-   "id": "wa-2026-07-29-162916-4",
-   "date": "2026-07-29",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "من رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007756-PHOTO-2026-07-29-16-29-16.jpg"
-  },
-  {
-   "id": "wa-2026-07-29-185712-3",
-   "date": "2026-07-29",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "من رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007793-PHOTO-2026-07-29-18-57-13.jpg"
-  },
-  {
-   "id": "wa-2026-07-30-185545-1",
-   "date": "2026-07-30",
-   "city": "אחר",
-   "mediaCount": 6,
-   "text": "ثوب لبسه وحده وضعه ممتاز مع منديل ثوب لبسه وحده وضعه ممتاز مع منديل",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007917-PHOTO-2026-07-30-18-55-55.jpg"
-  },
-  {
-   "id": "wa-2026-07-31-084845-1",
-   "date": "2026-07-31",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון] *📌بنذكركن*..*ارقام مشرفات* *النشر👆🏼.. ابعث",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00007947-PHOTO-2026-07-31-08-49-10.jpg"
-  },
-  {
-   "id": "wa-2026-07-31-183720-1",
-   "date": "2026-07-31",
-   "city": "ערערה בנגב",
-   "mediaCount": 5,
-   "text": "هضول سلات كبار وصغار סרטון הווידאו הושמט",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008063-PHOTO-2026-07-31-18-37-21.jpg"
-  },
-  {
-   "id": "wa-2026-08-02-141332-2",
-   "date": "2026-08-02",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008249-PHOTO-2026-08-02-14-13-36.jpg"
-  },
-  {
-   "id": "wa-2026-08-02-192949-2",
-   "date": "2026-08-02",
-   "city": "רהט",
-   "mediaCount": 4,
-   "text": "[טלפון] انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008334-PHOTO-2026-08-02-19-29-51.jpg"
-  },
-  {
-   "id": "wa-2026-08-03-102143-2",
-   "date": "2026-08-03",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008433-PHOTO-2026-08-03-10-21-45.jpg"
-  },
-  {
-   "id": "wa-2026-08-03-115829-2",
-   "date": "2026-08-03",
-   "city": "רהט",
-   "mediaCount": 8,
-   "text": "[טלפון] كسيفه رهط[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008448-PHOTO-2026-08-03-11-58-35.jpg"
-  },
-  {
-   "id": "wa-2026-08-03-151426-1",
-   "date": "2026-08-03",
-   "city": "חורה",
-   "mediaCount": 9,
-   "text": "السلام عليكم الاستلام من حوره للي معنيه استلام فوري لليوم [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008472-PHOTO-2026-08-03-15-14-31.jpg"
-  },
-  {
-   "id": "wa-2026-08-04-142014-2",
-   "date": "2026-08-04",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008578-PHOTO-2026-08-04-14-20-15.jpg"
-  },
-  {
-   "id": "wa-2026-08-04-153000-1",
-   "date": "2026-08-04",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008582-PHOTO-2026-08-04-15-30-06.jpg"
-  },
-  {
-   "id": "wa-2026-08-04-160916-1",
-   "date": "2026-08-04",
-   "city": "רהט",
-   "mediaCount": 4,
-   "text": "ثوب لبسه وحده وضعه ممتاز مع منديل",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008589-PHOTO-2026-08-04-16-09-49.jpg"
-  },
-  {
-   "id": "wa-2026-08-04-193605-1",
-   "date": "2026-08-04",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "رهط الي بدها ياه تجي تفكه وتاخذه ما عندي حد يفك",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008667-PHOTO-2026-08-04-19-36-33.jpg"
-  },
-  {
-   "id": "wa-2026-08-05-112324-6",
-   "date": "2026-08-05",
-   "city": "אחר",
-   "mediaCount": 3,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00004277-PHOTO-2026-08-05-11-23-24.jpg"
-  },
-  {
-   "id": "wa-2026-08-05-192521-2",
-   "date": "2026-08-05",
-   "city": "רהט",
-   "mediaCount": 3,
-   "text": "صبايا بدون اتصال بس ابعثن رساله",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008851-PHOTO-2026-08-05-19-25-22.jpg"
-  },
-  {
-   "id": "wa-2026-08-06-133058-6",
-   "date": "2026-08-06",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "رهط انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008942-PHOTO-2026-08-06-13-31-11.jpg"
-  },
-  {
-   "id": "wa-2026-08-06-164805-2",
-   "date": "2026-08-06",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008985-PHOTO-2026-08-06-16-48-15.jpg"
-  },
-  {
-   "id": "wa-2026-08-06-175734-2",
-   "date": "2026-08-06",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "مرحبا رانيا حطي هذول وعندي فلاين لولد لجيل عشر سنين بوضع ممتاز بس المعنيه تحكي م",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00008990-PHOTO-2026-08-06-17-57-36.jpg"
-  },
-  {
-   "id": "wa-2026-08-07-133033-1",
-   "date": "2026-08-07",
-   "city": "לקיה",
-   "mediaCount": 12,
-   "text": "اللقيه [טלפון] [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00009068-PHOTO-2026-08-07-13-30-56.jpg"
-  },
-  {
-   "id": "wa-2026-08-08-153035-2",
-   "date": "2026-08-08",
-   "city": "רהט",
-   "mediaCount": 6,
-   "text": "[טלפון] جاطات للسلطه [טלפון] موجود شناتي بوضع ممتاز في رهط المعنيه!!! تحكي معي ا",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00009251-PHOTO-2026-08-08-15-30-39.jpg"
-  },
-  {
-   "id": "wa-2026-08-09-114525-3",
-   "date": "2026-08-09",
-   "city": "רהט",
-   "mediaCount": 3,
-   "text": "السلام عليكم ورحمة الله وبركاته عندي مجموعة أغراض حالة معظمهم ممتازة. إلي حابة: ",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00009382-PHOTO-2026-08-09-11-45-28.jpg"
-  },
-  {
-   "id": "wa-2026-08-12-093806-2",
-   "date": "2026-08-12",
-   "city": "ערערה בנגב",
-   "mediaCount": 1,
-   "text": "[טלפון]عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00009703-PHOTO-2026-08-12-09-38-20.jpg"
-  },
-  {
-   "id": "wa-2026-08-12-154833-3",
-   "date": "2026-08-12",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "يعطيكي العافيه من سكان رهط[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00009765-PHOTO-2026-08-12-15-48-33.jpg"
-  },
-  {
-   "id": "wa-2026-08-12-182636-4",
-   "date": "2026-08-12",
-   "city": "רהט",
-   "mediaCount": 10,
-   "text": "انحجز [טלפון] السلام عليكمفي زيهن كثير جداد[טלפון] [טלפון] في عندي هذوال لحد رجل",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00009849-PHOTO-2026-08-12-18-27-40.jpg"
-  },
-  {
-   "id": "wa-2026-08-14-161822-3",
-   "date": "2026-08-14",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "صباح الخير",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00010068-PHOTO-2026-08-14-16-18-33.jpg"
-  },
-  {
-   "id": "wa-2026-08-15-185153-1",
-   "date": "2026-08-15",
-   "city": "אחר",
-   "mediaCount": 23,
-   "text": "لجيل 11,6,8 [טלפון] انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00010261-PHOTO-2026-08-15-18-51-54.jpg"
-  },
-  {
-   "id": "wa-2026-08-16-094521-1",
-   "date": "2026-08-16",
-   "city": "ערערה בנגב",
-   "mediaCount": 18,
-   "text": "صباح الخير موجودات عندي صباح الخير موجودات عندي عرعره📍",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00010340-PHOTO-2026-08-16-09-45-52.jpg"
-  },
-  {
-   "id": "wa-2026-08-17-192946-5",
-   "date": "2026-08-17",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "[טלפון] انحجز رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00010687-PHOTO-2026-08-17-19-29-57.jpg"
-  },
-  {
-   "id": "wa-2026-08-18-081605-2",
-   "date": "2026-08-18",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00010708-PHOTO-2026-08-18-08-16-59.jpg"
-  },
-  {
-   "id": "wa-2026-08-18-112053-1",
-   "date": "2026-08-18",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "السلام عليكم انحجزو",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00009277-PHOTO-2026-08-18-11-21-01.jpg"
-  },
-  {
-   "id": "wa-2026-08-18-125408-2",
-   "date": "2026-08-18",
-   "city": "שגב שלום",
-   "mediaCount": 3,
-   "text": "סרטון הווידאו הושמט عالعافيه جداد موجودات عندي في شقيب",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00010715-PHOTO-2026-08-18-12-54-10.jpg"
-  },
-  {
-   "id": "wa-2026-08-19-095222-6",
-   "date": "2026-08-19",
-   "city": "אחר",
-   "mediaCount": 5,
-   "text": "[שם] אמירה [נייד][טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00007133-PHOTO-2026-08-19-09-52-22.jpg"
-  },
-  {
-   "id": "wa-2026-08-19-181923-4",
-   "date": "2026-08-19",
-   "city": "כסיפה",
-   "mediaCount": 4,
-   "text": "انحجز اللقية عندي هذول جداد لبسة وحدة انحجز واحد فاتح ما له كم يوم واحد مسكر كسي",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00010967-PHOTO-2026-08-19-18-22-25.jpg"
-  },
-  {
-   "id": "wa-2026-08-20-105605-1",
-   "date": "2026-08-20",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "*نظام مجموعات تبادل الاغراض في مبادرة من بيتي لبيتك 🏡*",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011036-PHOTO-2026-08-20-10-56-09.jpg"
-  },
-  {
-   "id": "wa-2026-08-20-164348-2",
-   "date": "2026-08-20",
-   "city": "לקיה",
-   "mediaCount": 3,
-   "text": "اللقيه[טלפון] [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00009710-PHOTO-2026-08-20-16-43-50.jpg"
-  },
-  {
-   "id": "wa-2026-08-21-135509-4",
-   "date": "2026-08-21",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "[טלפון] السلام عليكم ورحمة الله وبركاته כרטיס איש קשר הושמט",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011203-PHOTO-2026-08-21-13-55-09.jpg"
-  },
-  {
-   "id": "wa-2026-08-21-144822-3",
-   "date": "2026-08-21",
-   "city": "רהט",
-   "mediaCount": 6,
-   "text": "انحجز مرحبا ההודעה נמחקה על ידי אמירה אלטורי, מנהל/ת הקבוצה. رهط סרטון הווידאו ה",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011223-PHOTO-2026-08-21-14-50-17.jpg"
-  },
-  {
-   "id": "wa-2026-08-22-145709-2",
-   "date": "2026-08-22",
-   "city": "כסיפה",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011354-PHOTO-2026-08-22-14-57-11.jpg"
-  },
-  {
-   "id": "wa-2026-08-22-165602-2",
-   "date": "2026-08-22",
-   "city": "אחר",
-   "mediaCount": 6,
-   "text": "[טלפון] استلام اليوم[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011368-PHOTO-2026-08-22-16-56-09.jpg"
-  },
-  {
-   "id": "wa-2026-08-22-165957-6",
-   "date": "2026-08-22",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00007721-PHOTO-2026-08-22-16-59-57.jpg"
-  },
-  {
-   "id": "wa-2026-08-22-184334-5",
-   "date": "2026-08-22",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011385-PHOTO-2026-08-22-18-43-49.jpg"
-  },
-  {
-   "id": "wa-2026-08-22-190659-4",
-   "date": "2026-08-22",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "راهط[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011401-PHOTO-2026-08-22-19-06-59.jpg"
-  },
-  {
-   "id": "wa-2026-08-22-190837-5",
-   "date": "2026-08-22",
-   "city": "לקיה",
-   "mediaCount": 1,
-   "text": "أنا من اللقيه[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011404-PHOTO-2026-08-22-19-08-59.jpg"
-  },
-  {
-   "id": "wa-2026-08-23-093322-2",
-   "date": "2026-08-23",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "الي بحاجتهن مش تحجز وما تاخد ההודעה נמחקה על ידי אם סלאמה, מנהל/ת הקבוצה.",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011422-PHOTO-2026-08-23-09-33-27.jpg"
-  },
-  {
-   "id": "wa-2026-08-23-115019-3",
-   "date": "2026-08-23",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011460-PHOTO-2026-08-23-11-50-27.jpg"
-  },
-  {
-   "id": "wa-2026-08-24-113524-1",
-   "date": "2026-08-24",
-   "city": "ערערה בנגב",
-   "mediaCount": 12,
-   "text": "تل السبع بس الي متاكده تحجز عندي عده لبيبي اولاد وبنات وكثير أشياء عرعره النقب [",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011615-PHOTO-2026-08-24-11-35-36.jpg"
-  },
-  {
-   "id": "wa-2026-08-24-115752-1",
-   "date": "2026-08-24",
-   "city": "רהט",
-   "mediaCount": 8,
-   "text": "סרטון הווידאו הושמט [טלפון] رهط انحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011633-PHOTO-2026-08-24-11-57-52.jpg"
-  },
-  {
-   "id": "wa-2026-08-24-184234-1",
-   "date": "2026-08-24",
-   "city": "כסיפה",
-   "mediaCount": 3,
-   "text": "كسيفه شغاله 100 ل 100 عربي عبراني حساب انجليزي خمس علب جلادات انحجزت",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011722-PHOTO-2026-08-24-18-42-55.jpg"
-  },
-  {
-   "id": "wa-2026-08-26-104911-1",
-   "date": "2026-08-26",
-   "city": "ערערה בנגב",
-   "mediaCount": 3,
-   "text": "ما في توصيل",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00011882-PHOTO-2026-08-26-10-49-12.jpg"
-  },
-  {
-   "id": "wa-2026-08-27-134654-5",
-   "date": "2026-08-27",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "عالعافية كيف الحال[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00012066-PHOTO-2026-08-27-13-47-00.jpg"
-  },
-  {
    "id": "wa-2026-08-27-142000-4",
    "date": "2026-08-27",
    "city": "ערערה בנגב",
    "mediaCount": 10,
    "text": "[טלפון] عرعره📍 [טלפון] عرعره📍",
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00012069-PHOTO-2026-08-27-14-20-00.jpg"
-  },
-  {
-   "id": "wa-2026-08-27-185859-1",
-   "date": "2026-08-27",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "رقم هاتف[טלפון] ام ابطين. (ابوكف )",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00010760-PHOTO-2026-08-27-18-59-16.jpg"
-  },
-  {
-   "id": "wa-2026-08-28-180952-1",
-   "date": "2026-08-28",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "عالعافيه [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00012196-PHOTO-2026-08-28-18-09-55.jpg"
-  },
-  {
-   "id": "wa-2026-08-28-181811-1",
-   "date": "2026-08-28",
-   "city": "חורה",
-   "mediaCount": 5,
-   "text": "حوره [טלפון] شقيب السلام [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00012198-PHOTO-2026-08-28-18-18-36.jpg"
-  },
-  {
-   "id": "wa-2026-08-28-192904-5",
-   "date": "2026-08-28",
-   "city": "רהט",
-   "mediaCount": 9,
-   "text": "[טלפון] رهط انحجز مدرسه الحياه عرعره [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00010835-PHOTO-2026-08-28-19-29-04.jpg"
-  },
-  {
-   "id": "wa-2026-08-30-192439-2",
-   "date": "2026-08-30",
-   "city": "תל שבע",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00012432-PHOTO-2026-08-30-19-24-40.jpg"
-  },
-  {
-   "id": "wa-2026-08-31-120856-1",
-   "date": "2026-08-31",
-   "city": "ערערה בנגב",
-   "mediaCount": 2,
-   "text": "انحجزو [טלפון] عرعره بدون اتصال بس ابعثن رساله",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00012474-PHOTO-2026-08-31-12-10-21.jpg"
-  },
-  {
-   "id": "wa-2026-08-31-145603-1",
-   "date": "2026-08-31",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp/WhatsApp Chat - 4️⃣من بيتي لبيتك؛ مُبادرة نسائيّة 🏡/00012520-PHOTO-2026-08-31-14-56-18.jpg"
-  },
-  {
-   "id": "wa-2026-08-31-172310-2",
-   "date": "2026-08-31",
-   "city": "אחר",
-   "mediaCount": 3,
-   "text": "بس المحتاجهتهن تجي تاخذ اانحجزن",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011203-PHOTO-2026-08-31-17-23-12.jpg"
-  },
-  {
-   "id": "wa-2026-09-01-182456-2",
-   "date": "2026-09-01",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "[טלפון] عرعره وفساطين رهط متحام خ",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011297-PHOTO-2026-09-01-18-24-59.jpg"
-  },
-  {
-   "id": "wa-2026-09-02-105022-5",
-   "date": "2026-09-02",
-   "city": "אחר",
-   "mediaCount": 9,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011322-PHOTO-2026-09-02-10-50-22.jpg"
   },
   {
    "id": "wa-2026-09-02-122459-5",
@@ -1163,20 +43,20 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011376-PHOTO-2026-09-03-13-35-42.jpg"
   },
   {
-   "id": "wa-2026-09-05-122319-3",
+   "id": "wa-2026-09-05-152955-7",
    "date": "2026-09-05",
-   "city": "רהט",
-   "mediaCount": 6,
-   "text": "انحجز رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011591-PHOTO-2026-09-05-12-23-23.jpg"
+   "city": "אחר",
+   "mediaCount": 1,
+   "text": "عندي ثنتين الطيبة [טלפון]",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003129-PHOTO-2026-09-05-15-29-55.jpg"
   },
   {
-   "id": "wa-2026-09-05-125401-2",
-   "date": "2026-09-05",
-   "city": "שגב שלום",
-   "mediaCount": 2,
-   "text": "شقيب السلام",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011610-PHOTO-2026-09-05-12-54-03.jpg"
+   "id": "wa-2026-09-06-080020-7",
+   "date": "2026-09-06",
+   "city": "אחר",
+   "mediaCount": 5,
+   "text": "أهلاً وسهلاً ويسعد صباحكن عزيزاتي 🙋‍♀️ المجموعة مُخصصة لتبادل أغراض مُستعملة بح",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003171-PHOTO-2026-09-06-08-00-39.jpg"
   },
   {
    "id": "wa-2026-09-06-123918-1",
@@ -1187,180 +67,76 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011768-PHOTO-2026-09-06-12-39-33.jpg"
   },
   {
-   "id": "wa-2026-09-07-084747-6",
-   "date": "2026-09-07",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011820-PHOTO-2026-09-07-08-47-53.jpg"
-  },
-  {
-   "id": "wa-2026-09-07-193838-3",
-   "date": "2026-09-07",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "انشري لو سمحتي كمان مرة وفقط الجدية تتواصل معي",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00011888-PHOTO-2026-09-07-19-38-41.jpg"
-  },
-  {
-   "id": "wa-2026-09-10-145045-5",
+   "id": "wa-2026-09-10-110314-7",
    "date": "2026-09-10",
    "city": "אחר",
    "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012032-PHOTO-2026-09-10-14-50-45.jpg"
+   "text": "لبسة كراتيه لجيل ٨_١٠ المعنيه تتواصل معي",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003223-PHOTO-2026-09-10-11-03-14.jpg"
   },
   {
-   "id": "wa-2026-09-10-175833-3",
-   "date": "2026-09-10",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "متخام 2 0522469491",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00009821-PHOTO-2026-09-10-17-58-33.jpg"
-  },
-  {
-   "id": "wa-2026-09-11-155247-5",
+   "id": "wa-2026-09-11-092715-7",
    "date": "2026-09-11",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "صندوق للبسه رهط 052838116 هاجيز نمره ١ واحد مسكر وواحد مستعمل كم واحد بس[טלפון] ",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012061-PHOTO-2026-09-11-15-52-47.jpg"
+   "city": "אחר",
+   "mediaCount": 1,
+   "text": "☎️ ضُحى[טלפון] ☎️ ريم[טלפון]",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003229-PHOTO-2026-09-11-09-27-15.jpg"
   },
   {
-   "id": "wa-2026-09-12-115546-2",
-   "date": "2026-09-12",
-   "city": "תל שבע",
-   "mediaCount": 4,
-   "text": "تل السبع",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012096-PHOTO-2026-09-12-11-55-47.jpg"
+   "id": "wa-2026-09-11-102836-7",
+   "date": "2026-09-11",
+   "city": "אחר",
+   "mediaCount": 1,
+   "text": "ليش نرميها إذا ممكن غيرنا يحتاجها؟ 💗 عندك غرض بالبيت ما عاد تستعمليه؟ يمكن يكون",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003236-PHOTO-2026-09-11-10-28-36.jpg"
   },
   {
-   "id": "wa-2026-09-13-135929-2",
-   "date": "2026-09-13",
+   "id": "wa-2026-09-15-115017-7",
+   "date": "2026-09-15",
    "city": "אחר",
    "mediaCount": 1,
    "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012185-PHOTO-2026-09-13-13-59-31.jpg"
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003319-PHOTO-2026-09-15-11-50-17.jpg"
   },
   {
-   "id": "wa-2026-09-14-140623-5",
-   "date": "2026-09-14",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012237-PHOTO-2026-09-14-14-06-23.jpg"
-  },
-  {
-   "id": "wa-2026-09-15-095749-3",
-   "date": "2026-09-15",
-   "city": "שגב שלום",
-   "mediaCount": 3,
-   "text": "شقيب [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012265-PHOTO-2026-09-15-09-57-50.jpg"
-  },
-  {
-   "id": "wa-2026-09-15-125553-2",
-   "date": "2026-09-15",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון] ☎️ أم بكر[טלפון] *🌷 يسعد اوقاتكن صبايا🌷* مج",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012284-PHOTO-2026-09-15-12-55-54.jpg"
-  },
-  {
-   "id": "wa-2026-09-15-130703-2",
-   "date": "2026-09-15",
-   "city": "אחר",
-   "mediaCount": 3,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012286-PHOTO-2026-09-15-13-07-07.jpg"
-  },
-  {
-   "id": "wa-2026-09-15-150800-1",
-   "date": "2026-09-15",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012304-PHOTO-2026-09-15-15-08-11.jpg"
-  },
-  {
-   "id": "wa-2026-09-16-151703-2",
+   "id": "wa-2026-09-16-133822-7",
    "date": "2026-09-16",
    "city": "אחר",
    "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012349-PHOTO-2026-09-16-15-17-05.jpg"
+   "text": "السعر؟ ولا شي 🤍 لأنه مش للبيع… هو بس جاهز ينتقل من بيت لبيت ويبدأ قصة جديدة. اد",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003330-PHOTO-2026-09-16-13-38-22.jpg"
   },
   {
-   "id": "wa-2026-09-16-171043-2",
+   "id": "wa-2026-09-16-171405-7",
    "date": "2026-09-16",
    "city": "אחר",
    "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012362-PHOTO-2026-09-16-17-10-49.jpg"
+   "text": "مزنون بوضع منيح من تحت خزاين ومن فوق خزاين كزاز من الطيبة [טלפון] <ההודעה נערכה>",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003342-PHOTO-2026-09-16-17-14-05.jpg"
   },
   {
-   "id": "wa-2026-09-19-190457-1",
-   "date": "2026-09-19",
+   "id": "wa-2026-09-18-131455-7",
+   "date": "2026-09-18",
    "city": "אחר",
    "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012554-PHOTO-2026-09-19-19-05-06.jpg"
+   "text": "اسكملات كبار مع المناظر الي عليهن الطيبة انحجزت",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003354-PHOTO-2026-09-18-13-14-55.jpg"
   },
   {
-   "id": "wa-2026-09-20-181608-2",
-   "date": "2026-09-20",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012651-PHOTO-2026-09-20-18-16-11.jpg"
-  },
-  {
-   "id": "wa-2026-09-21-192805-2",
+   "id": "wa-2026-09-21-111505-7",
    "date": "2026-09-21",
    "city": "אחר",
-   "mediaCount": 16,
-   "text": "انحجز انحجز [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012717-PHOTO-2026-09-21-19-30-57.jpg"
-  },
-  {
-   "id": "wa-2026-09-22-113308-1",
-   "date": "2026-09-22",
-   "city": "תל שבע",
    "mediaCount": 1,
-   "text": "تل السبع",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012755-PHOTO-2026-09-22-11-33-15.jpg"
+   "text": "صبايا يعطيكن العافية، إن شاء الله تكونن بأحسن حال ♥️ نقطتين مهمات جدًا جداً *الم",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003380-PHOTO-2026-09-21-11-17-04.jpg"
   },
   {
-   "id": "wa-2026-09-22-151209-3",
-   "date": "2026-09-22",
-   "city": "לקיה",
-   "mediaCount": 2,
-   "text": "للقيه[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012780-PHOTO-2026-09-22-15-12-33.jpg"
-  },
-  {
-   "id": "wa-2026-09-24-085744-5",
-   "date": "2026-09-24",
-   "city": "לקיה",
+   "id": "wa-2026-09-23-072333-7",
+   "date": "2026-09-23",
+   "city": "אחר",
    "mediaCount": 1,
-   "text": "اللقيه ورقم هذا[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012872-PHOTO-2026-09-24-08-57-44.jpg"
-  },
-  {
-   "id": "wa-2026-09-24-194401-1",
-   "date": "2026-09-24",
-   "city": "אחר",
-   "mediaCount": 2,
-   "text": "رقم التواصل[טלפון] رجاء خاص بس الجديه",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012921-PHOTO-2026-09-24-19-44-04.jpg"
-  },
-  {
-   "id": "wa-2026-09-25-131421-6",
-   "date": "2026-09-25",
-   "city": "אחר",
-   "mediaCount": 5,
-   "text": "انحجزن سلام عليكم موجود عندي مرقبه المعنية تجي تأخذها اليوم",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00012969-PHOTO-2026-09-25-13-15-39.jpg"
+   "text": "قبل ما تختاري «أرميها»… تذكّري إنها ممكن تكون القطعة الناقصة ببيتٍ ثاني. صورة وا",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003460-PHOTO-2026-09-23-07-23-33.jpg"
   },
   {
    "id": "wa-2026-09-27-120459-5",
@@ -1371,60 +147,36 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013106-PHOTO-2026-09-27-12-04-59.jpg"
   },
   {
-   "id": "wa-2026-09-29-104238-2",
+   "id": "wa-2026-09-29-194855-7",
    "date": "2026-09-29",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "شقبب السلام حاره أ وفي سكملات وحوضين سمك واحد كبير واحد وسط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013250-PHOTO-2026-09-29-10-42-40.jpg"
-  },
-  {
-   "id": "wa-2026-10-01-123833-1",
-   "date": "2026-10-01",
-   "city": "רהט",
+   "city": "אחר",
    "mediaCount": 1,
-   "text": "من رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013389-PHOTO-2026-10-01-12-38-41.jpg"
+   "text": "يمكن عندك غرض مركون، وعند غيرك مكان إله 💓 هيك منلتقي في «من بيتي لبيتك»بنشارك أ",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003486-PHOTO-2026-09-29-19-48-55.jpg"
   },
   {
-   "id": "wa-2026-10-01-152124-1",
-   "date": "2026-10-01",
-   "city": "רהט",
-   "mediaCount": 4,
-   "text": "مرحبا يسعد اوقاتك🥰 كسيفه رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013397-PHOTO-2026-10-01-15-21-32.jpg"
+   "id": "wa-2026-09-30-170206-7",
+   "date": "2026-09-30",
+   "city": "אחר",
+   "mediaCount": 1,
+   "text": "",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003491-PHOTO-2026-09-30-17-02-06.jpg"
   },
   {
-   "id": "wa-2026-10-02-095956-2",
-   "date": "2026-10-02",
-   "city": "כסיפה",
-   "mediaCount": 2,
-   "text": "جديده اذا في اخد ياخذها يصلحها كسيفه",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013466-PHOTO-2026-10-02-09-59-58.jpg"
+   "id": "wa-2026-09-30-170657-7",
+   "date": "2026-09-30",
+   "city": "אחר",
+   "mediaCount": 1,
+   "text": "",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003492-PHOTO-2026-09-30-17-06-57.jpg"
   },
   {
-   "id": "wa-2026-10-04-085750-6",
+   "id": "wa-2026-10-04-142812-7",
    "date": "2026-10-04",
    "city": "אחר",
    "mediaCount": 1,
-   "text": "انحجزت",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00011700-PHOTO-2026-10-04-08-57-50.jpg"
-  },
-  {
-   "id": "wa-2026-10-04-102558-2",
-   "date": "2026-10-04",
-   "city": "לקיה",
-   "mediaCount": 2,
-   "text": "للقيه",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00011708-PHOTO-2026-10-04-10-26-01.jpg"
-  },
-  {
-   "id": "wa-2026-10-04-121631-2",
-   "date": "2026-10-04",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "قصر السر [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013616-PHOTO-2026-10-04-12-16-41.jpg"
+   "text": "في اربع بلاطين جداد نمره 6 اذا حدا معني فيهن اجن هديه لبنتي وهي عمرها ٤ سنين كبا",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003510-PHOTO-2026-10-04-14-28-12.jpg"
   },
   {
    "id": "wa-2026-10-04-151522-6",
@@ -1435,22 +187,6 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00011736-PHOTO-2026-10-04-15-15-22.jpg"
   },
   {
-   "id": "wa-2026-10-04-152636-3",
-   "date": "2026-10-04",
-   "city": "אחר",
-   "mediaCount": 3,
-   "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013629-PHOTO-2026-10-04-15-26-36.jpg"
-  },
-  {
-   "id": "wa-2026-10-06-123201-2",
-   "date": "2026-10-06",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "قصر السر [טלפון] بس الي متاكده انها رح تأخذها",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013704-PHOTO-2026-10-06-12-32-06.jpg"
-  },
-  {
    "id": "wa-2026-10-06-130528-1",
    "date": "2026-10-06",
    "city": "רהט",
@@ -1459,92 +195,44 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013711-PHOTO-2026-10-06-13-06-01.jpg"
   },
   {
-   "id": "wa-2026-10-07-111709-1",
-   "date": "2026-10-07",
-   "city": "ערערה בנגב",
-   "mediaCount": 2,
-   "text": "المعنيه تتواصل معي عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013762-PHOTO-2026-10-07-11-17-50.jpg"
-  },
-  {
-   "id": "wa-2026-10-07-143559-2",
-   "date": "2026-10-07",
-   "city": "ערערה בנגב",
-   "mediaCount": 2,
-   "text": "[טלפון] عرعرة",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013770-PHOTO-2026-10-07-14-36-21.jpg"
-  },
-  {
-   "id": "wa-2026-10-07-144110-1",
-   "date": "2026-10-07",
-   "city": "ערערה בנגב",
-   "mediaCount": 3,
-   "text": "انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013776-PHOTO-2026-10-07-14-43-20.jpg"
-  },
-  {
-   "id": "wa-2026-10-10-103132-6",
-   "date": "2026-10-10",
-   "city": "חורה",
+   "id": "wa-2026-10-09-175255-7",
+   "date": "2026-10-09",
+   "city": "אחר",
    "mediaCount": 1,
-   "text": "انحجز انحجزو",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00013965-PHOTO-2026-10-10-10-33-09.jpg"
+   "text": "الطيبه[טלפון]",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003531-PHOTO-2026-10-09-17-52-55.jpg"
   },
   {
-   "id": "wa-2026-10-13-180911-2",
-   "date": "2026-10-13",
+   "id": "wa-2026-10-14-200215-7",
+   "date": "2026-10-14",
+   "city": "אחר",
+   "mediaCount": 1,
+   "text": "مرحبا حبيبتي شو الاخبار في عندي بامبز كلسون نمره ٦ من جيل سنتين الطيبة [טלפון]",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003550-PHOTO-2026-10-14-20-02-15.jpg"
+  },
+  {
+   "id": "wa-2026-10-15-172435-7",
+   "date": "2026-10-15",
    "city": "אחר",
    "mediaCount": 1,
    "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014124-PHOTO-2026-10-13-18-09-13.jpg"
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003555-PHOTO-2026-10-15-17-24-35.jpg"
   },
   {
-   "id": "wa-2026-10-14-180711-2",
-   "date": "2026-10-14",
-   "city": "שגב שלום",
-   "mediaCount": 5,
-   "text": "من شقيب اليوم يتاخذن يلي مش متاكده لا تحجز 🙏 بس بدهن تنظيف",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014150-PHOTO-2026-10-14-18-07-18.jpg"
-  },
-  {
-   "id": "wa-2026-10-15-173258-1",
-   "date": "2026-10-15",
-   "city": "שגב שלום",
-   "mediaCount": 5,
-   "text": "يلي بدها اياه من شقيب السلام للتوضيح واليوم يتاخذن ما في توصيل وما في حجز ع الفا",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014177-PHOTO-2026-10-15-17-33-00.jpg"
-  },
-  {
-   "id": "wa-2026-10-15-184757-2",
-   "date": "2026-10-15",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "رهط [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014184-PHOTO-2026-10-15-18-48-00.jpg"
-  },
-  {
-   "id": "wa-2026-10-17-145035-3",
-   "date": "2026-10-17",
+   "id": "wa-2026-10-18-130256-7",
+   "date": "2026-10-18",
    "city": "אחר",
-   "mediaCount": 4,
+   "mediaCount": 5,
    "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014239-PHOTO-2026-10-17-14-50-35.jpg"
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003583-PHOTO-2026-10-18-13-02-57.jpg"
   },
   {
-   "id": "wa-2026-10-21-100158-4",
-   "date": "2026-10-21",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "انا من رهط [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014407-PHOTO-2026-10-21-10-02-52.jpg"
-  },
-  {
-   "id": "wa-2026-10-26-115448-4",
-   "date": "2026-10-26",
-   "city": "רהט",
+   "id": "wa-2026-10-23-112910-7",
+   "date": "2026-10-23",
+   "city": "אחר",
    "mediaCount": 2,
-   "text": "انا من رهط [טלפון] نمره m[טלפון] رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014589-PHOTO-2026-10-26-11-54-56.jpg"
+   "text": "دفاي وهواي شغالات وبحالة جيدة الطيبة",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003592-PHOTO-2026-10-23-11-29-10.jpg"
   },
   {
    "id": "wa-2026-10-26-174907-4",
@@ -1555,44 +243,12 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014617-PHOTO-2026-10-26-17-49-08.jpg"
   },
   {
-   "id": "wa-2026-10-29-124345-4",
-   "date": "2026-10-29",
+   "id": "wa-2026-10-26-175138-7",
+   "date": "2026-10-26",
    "city": "אחר",
    "mediaCount": 1,
    "text": "",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014707-PHOTO-2026-10-29-12-43-48.jpg"
-  },
-  {
-   "id": "wa-2026-10-29-193653-4",
-   "date": "2026-10-29",
-   "city": "לקיה",
-   "mediaCount": 1,
-   "text": "هدومي بناتي للمعنيه [טלפון] اللقيه",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00012974-PHOTO-2026-10-29-19-36-56.jpg"
-  },
-  {
-   "id": "wa-2026-10-31-130600-1",
-   "date": "2026-10-31",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "ההודעה נמחקה על ידי ראניה בלאל, מנהל/ת הקבוצה.",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00013081-PHOTO-2026-10-31-13-06-26.jpg"
-  },
-  {
-   "id": "wa-2026-10-31-174138-6",
-   "date": "2026-10-31",
-   "city": "שגב שלום",
-   "mediaCount": 1,
-   "text": "السلام عليكم شقيب السلام[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014790-PHOTO-2026-10-31-17-41-51.jpg"
-  },
-  {
-   "id": "wa-2026-11-01-151040-2",
-   "date": "2026-11-01",
-   "city": "רהט",
-   "mediaCount": 19,
-   "text": "كسيفه[טלפון] ابواط بنات من نمره ٢٢-٢٥ راهطط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00014836-PHOTO-2026-11-01-15-10-42.jpg"
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003601-PHOTO-2026-10-26-17-51-38.jpg"
   },
   {
    "id": "wa-2026-11-03-095053-2",
@@ -1603,140 +259,20 @@
    "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015000-PHOTO-2026-11-03-09-50-55.jpg"
   },
   {
-   "id": "wa-2026-11-04-104004-1",
-   "date": "2026-11-04",
+   "id": "wa-2026-11-03-205035-7",
+   "date": "2026-11-03",
    "city": "אחר",
    "mediaCount": 1,
-   "text": "مرحبا",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015021-PHOTO-2026-11-04-10-40-05.jpg"
+   "text": "إعادة التدوير أسلوب حياة… وغرضك ممكن ينَوّر بيت غيرك ..💡 *انضمّي لمبادرتنا من ب",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003636-PHOTO-2026-11-03-20-50-35.jpg"
   },
   {
-   "id": "wa-2026-11-05-095223-1",
-   "date": "2026-11-05",
-   "city": "תל שבע",
-   "mediaCount": 5,
-   "text": "رسايل بدون الاتصال بس المعنيه تبعث تل السبع",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015046-PHOTO-2026-11-05-09-53-34.jpg"
-  },
-  {
-   "id": "wa-2026-11-07-083837-6",
-   "date": "2026-11-07",
-   "city": "אחר",
-   "mediaCount": 1,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015108-PHOTO-2026-11-07-08-38-45.jpg"
-  },
-  {
-   "id": "wa-2026-11-07-155618-1",
-   "date": "2026-11-07",
-   "city": "שגב שלום",
-   "mediaCount": 3,
-   "text": "المعنيه تجي تاخذهن من الدار شقيب السلام وحده تاخذ ولادي لحال ووحده بناتي[טלפון] ",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015155-PHOTO-2026-11-07-15-56-41.jpg"
-  },
-  {
-   "id": "wa-2026-11-08-093935-2",
-   "date": "2026-11-08",
-   "city": "רהט",
-   "mediaCount": 1,
-   "text": "رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015192-PHOTO-2026-11-08-09-39-37.jpg"
-  },
-  {
-   "id": "wa-2026-11-09-091250-1",
-   "date": "2026-11-09",
-   "city": "רהט",
-   "mediaCount": 6,
-   "text": "[טלפון] رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015323-PHOTO-2026-11-09-09-12-58.jpg"
-  },
-  {
-   "id": "wa-2026-11-10-150739-3",
-   "date": "2026-11-10",
-   "city": "אחר",
-   "mediaCount": 3,
-   "text": "[טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015415-PHOTO-2026-11-10-15-07-40.jpg"
-  },
-  {
-   "id": "wa-2026-11-10-152427-2",
-   "date": "2026-11-10",
-   "city": "שגב שלום",
-   "mediaCount": 8,
-   "text": "الي ودها شي منهن تجي تاخذهن اليوم شقيب السلام[טלפון] وبس الجديه ومعنيه فيهن تتوا",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015419-PHOTO-2026-11-10-15-24-28.jpg"
-  },
-  {
-   "id": "wa-2026-11-11-160346-2",
-   "date": "2026-11-11",
-   "city": "ערערה בנגב",
-   "mediaCount": 2,
-   "text": "[טלפון] عرعره",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015460-PHOTO-2026-11-11-16-03-47.jpg"
-  },
-  {
-   "id": "wa-2026-11-12-125255-3",
-   "date": "2026-11-12",
-   "city": "לקיה",
-   "mediaCount": 1,
-   "text": "اللقيه انحجز",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015477-PHOTO-2026-11-12-12-53-00.jpg"
-  },
-  {
-   "id": "wa-2026-11-13-160726-6",
+   "id": "wa-2026-11-13-114441-7",
    "date": "2026-11-13",
-   "city": "רהט",
-   "mediaCount": 4,
-   "text": "رجاءا بنات الي حابة شي تختار شي واحد حابة اعطي مجال للي ما اخذن قبل مني شكرا حبي",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015527-PHOTO-2026-11-13-16-07-27.jpg"
-  },
-  {
-   "id": "wa-2026-11-14-125057-2",
-   "date": "2026-11-14",
    "city": "אחר",
-   "mediaCount": 4,
-   "text": "هلا التل[טלפון] ההודעה נמחקה על ידי ראניה בלאל, מנהל/ת הקבוצה.",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 6️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡/00014005-PHOTO-2026-11-14-12-51-00.jpg"
-  },
-  {
-   "id": "wa-2026-11-14-174043-1",
-   "date": "2026-11-14",
-   "city": "רהט",
-   "mediaCount": 5,
-   "text": "[טלפון] رهط.",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015568-PHOTO-2026-11-14-17-40-49.jpg"
-  },
-  {
-   "id": "wa-2026-11-15-112656-2",
-   "date": "2026-11-15",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015593-PHOTO-2026-11-15-11-26-57.jpg"
-  },
-  {
-   "id": "wa-2026-11-15-194037-3",
-   "date": "2026-11-15",
-   "city": "רהט",
-   "mediaCount": 2,
-   "text": "رهط حاره ٩ بس الجديه ومعنيه ومعها سياره تتواصل مع الصبيه [טלפון] [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015613-PHOTO-2026-11-15-19-40-38.jpg"
-  },
-  {
-   "id": "wa-2026-11-16-102510-2",
-   "date": "2026-11-16",
-   "city": "אחר",
-   "mediaCount": 11,
-   "text": "نمره سمول [טלפון] انحجز عندي غراض واعي جديده من سنه اربع سنين [טלפון]",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015626-PHOTO-2026-11-16-10-25-11.jpg"
-  },
-  {
-   "id": "wa-2026-11-16-122119-6",
-   "date": "2026-11-16",
-   "city": "רהט",
-   "mediaCount": 4,
-   "text": "[טלפון] رهط",
-   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 5️⃣من بيتي لبيتك؛ مُبادرة نسائية 🏡 (1)/00015652-PHOTO-2026-11-16-12-23-05.jpg"
+   "mediaCount": 1,
+   "text": "",
+   "file": "/Users/kevinf/Documents/Claude/Projects/מביתי לביתך/whatsapp 1811/WhatsApp Chat - 1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠 (1)/00003654-PHOTO-2026-11-13-11-44-41.jpg"
   },
   {
    "id": "wa-2026-11-17-104525-1",

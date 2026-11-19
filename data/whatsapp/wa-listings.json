@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-18T13:01:26.679Z",
- "blocks": 6237,
- "listings": 3449,
- "nonListings": 2788,
+ "generated": "2026-11-19T06:42:10.028Z",
+ "blocks": 6447,
+ "listings": 3476,
+ "nonListings": 2971,
  "cityResolved": 2240,
- "cityInherited": 579,
- "itemsResolved": 2526,
- "unidentified": 923,
+ "cityInherited": 583,
+ "itemsResolved": 2556,
+ "unidentified": 920,
  "lexiconEntries": 65,
  "data": [
   {
@@ -133611,6 +133611,138 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ الاعسم‬"
   },
   {
+   "id": "wa-2026-09-05-095242-7",
+   "date": "2026-09-05",
+   "time": "09:52:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "אמירה אלטורי",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫הקבוצה \"1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠\" נוצרה על ידי אמירה אלטורי‬"
+  },
+  {
+   "id": "wa-2026-09-05-095242-7",
+   "date": "2026-09-05",
+   "time": "09:52:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫צורפת על ידי אמירה אלטורי‬"
+  },
+  {
+   "id": "wa-2026-09-05-095254-7",
+   "date": "2026-09-05",
+   "time": "09:52:54",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "אמירה אלטורי",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫תמונת הקבוצה הוחלפה על ידי אמירה אלטורי‬ ‫תיאור הקבוצה שונה על ידי אמירה אלטורי‬"
+  },
+  {
+   "id": "wa-2026-09-05-095446-7",
+   "date": "2026-09-05",
+   "time": "09:54:46",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "1️⃣من بيتي لبيتك المركز،مُبادرة نسائية🏠",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫עכשיו הקבוצה בניהולך‬"
+  },
+  {
+   "id": "wa-2026-09-05-103225-7",
+   "date": "2026-09-05",
+   "time": "10:32:25",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ lanasanad❤️",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ lanasanad❤️‬ ‫בקשת הצטרפות נשלחה על ידי ~ lanasanad❤️‬"
+  },
+  {
+   "id": "wa-2026-09-05-104323-7",
+   "date": "2026-09-05",
+   "time": "10:43:23",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫הגדרות הקבוצה שונו על ידי מונא מסארוה שחקנית מביתי לביתך כך שרק המנהלים יוכלו לשלוח בה הודעות‬ ‫הגדרות הקבוצה שונו על ידי מונא מסארוה שחקנית מביתי לביתך כך שרק המנהלים יוכלו לצרף אליה משתמשים אחרים.‬ ‫מונא מסארוה שחקנית מביתי לביתך איפס/ה את קישור ההזמנה לקבוצה זו‬ ‫הגדרות הקבוצה שונו על ידי מונא מסארוה שחקנית מביתי לביתך ועכשיו כל החברים יכולים להזמין אליה אנשים באמצעות הקישור שלה.‬ ‫הגדרות הקבוצה שונו על ידי מונא מסארוה שחקנית מביתי לביתך ועכשיו רק המנהלים יכולים לשלוח את היסטוריית ההודעות לחברים חדשים.‬ ‫הגדרות הקבוצה שונו על ידי מונא מסארוה שחקנית מביתי לביתך ועכשיו רק המנהלים יכולים להזמין אליה אנשים באמצעות הקישור שלה.‬ ‫הגדרות הקבוצה שונו על ידי מונא מסארוה שחקנית מביתי לביתך כך שכל החברים יוכלו לצרף אליה אנשים.‬"
+  },
+  {
    "id": "wa-2026-09-05-110217-6",
    "date": "2026-09-05",
    "time": "11:02:17",
@@ -133644,6 +133776,28 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "عندي كتب صف خامس الي ودها تستلم من حوره[טלפון]"
+  },
+  {
+   "id": "wa-2026-09-05-110322-7",
+   "date": "2026-09-05",
+   "time": "11:03:22",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אסראא",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אסראא‬"
   },
   {
    "id": "wa-2026-09-05-110415-1",
@@ -133720,9 +133874,361 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ اللهم صل على محمد ...‬"
   },
   {
-   "id": "wa-2026-09-05-113534-2",
+   "id": "wa-2026-09-05-111022-7",
    "date": "2026-09-05",
-   "time": "11:35:34",
+   "time": "11:10:22",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ A",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ A‬"
+  },
+  {
+   "id": "wa-2026-09-05-111032-7",
+   "date": "2026-09-05",
+   "time": "11:10:32",
+   "city": "ערערה בנגב",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "ראניה בלאל",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ראניה בלאל‬"
+  },
+  {
+   "id": "wa-2026-09-05-111348-7",
+   "date": "2026-09-05",
+   "time": "11:13:48",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ רדוה עבד אל קאדר",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ רדוה עבד אל קאדר‬"
+  },
+  {
+   "id": "wa-2026-09-05-111403-7",
+   "date": "2026-09-05",
+   "time": "11:14:03",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Adan Talleh",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Adan Talleh‬"
+  },
+  {
+   "id": "wa-2026-09-05-111605-7",
+   "date": "2026-09-05",
+   "time": "11:16:05",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Kamar Masoud",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Kamar Masoud‬ ‫בקשת הצטרפות נשלחה על ידי ~ Kamar Masoud‬"
+  },
+  {
+   "id": "wa-2026-09-05-112219-7",
+   "date": "2026-09-05",
+   "time": "11:22:19",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ نبض حياتي اولادي",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ نبض حياتي اولادي‬"
+  },
+  {
+   "id": "wa-2026-09-05-112259-7",
+   "date": "2026-09-05",
+   "time": "11:22:59",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Najat Shek Yousef",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Najat Shek Yousef‬"
+  },
+  {
+   "id": "wa-2026-09-05-112300-7",
+   "date": "2026-09-05",
+   "time": "11:23:00",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ نهايه حاج يحيى",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ نهايه حاج يحيى‬"
+  },
+  {
+   "id": "wa-2026-09-05-112301-7",
+   "date": "2026-09-05",
+   "time": "11:23:01",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ الحمدالله",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ الحمدالله‬"
+  },
+  {
+   "id": "wa-2026-09-05-112314-7",
+   "date": "2026-09-05",
+   "time": "11:23:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ zenab❤️",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ zenab❤️‬"
+  },
+  {
+   "id": "wa-2026-09-05-112314-7",
+   "date": "2026-09-05",
+   "time": "11:23:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אם כרים ❤️ מילה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אם כרים ❤️ מילה‬"
+  },
+  {
+   "id": "wa-2026-09-05-112604-7",
+   "date": "2026-09-05",
+   "time": "11:26:04",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ויסאם",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ויסאם‬"
+  },
+  {
+   "id": "wa-2026-09-05-112753-7",
+   "date": "2026-09-05",
+   "time": "11:27:53",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Emtiaz khlil",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Emtiaz khlil‬"
+  },
+  {
+   "id": "wa-2026-09-05-113118-7",
+   "date": "2026-09-05",
+   "time": "11:31:18",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Abeer Abbas",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Abeer Abbas‬"
+  },
+  {
+   "id": "wa-2026-09-05-113244-7",
+   "date": "2026-09-05",
+   "time": "11:32:44",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ميلا♥️",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ميلا♥️‬"
+  },
+  {
+   "id": "wa-2026-09-05-113447-7",
+   "date": "2026-09-05",
+   "time": "11:34:47",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אם סראג עאזם",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אם סראג עאזם‬"
+  },
+  {
+   "id": "wa-2026-09-05-113517-7",
+   "date": "2026-09-05",
+   "time": "11:35:17",
    "city": "ערערה בנגב",
    "cityInherited": false,
    "cityResolved": true,
@@ -133743,16 +134249,170 @@
     3,
     4,
     5,
-    6
+    6,
+    7
    ],
    "mergedBy": [
-    "media",
     "text"
    ],
-   "blockCount": 5,
-   "needsReview": false,
+   "blockCount": 7,
+   "needsReview": true,
    "mediaCount": 5,
    "rawText": "خشب مقصوص وجاهز بس بدو تركيب لكرسي الإستلام مجاني من عرعرة الي معها سيارة ومعايه فيهن تبعثلي عالخاص أنا ما معي سيارة وما بوصل لحدا"
+  },
+  {
+   "id": "wa-2026-09-05-113640-7",
+   "date": "2026-09-05",
+   "time": "11:36:40",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Hayat Taya",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Hayat Taya‬"
+  },
+  {
+   "id": "wa-2026-09-05-113816-7",
+   "date": "2026-09-05",
+   "time": "11:38:16",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Rawan",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Rawan‬"
+  },
+  {
+   "id": "wa-2026-09-05-113906-7",
+   "date": "2026-09-05",
+   "time": "11:39:06",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ שימאא איהאב פהמי",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ שימאא איהאב פהמי‬"
+  },
+  {
+   "id": "wa-2026-09-05-113945-7",
+   "date": "2026-09-05",
+   "time": "11:39:45",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ שיראז",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ שיראז‬"
+  },
+  {
+   "id": "wa-2026-09-05-114059-7",
+   "date": "2026-09-05",
+   "time": "11:40:59",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אסמאא רביע",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אסמאא רביע‬"
+  },
+  {
+   "id": "wa-2026-09-05-114318-7",
+   "date": "2026-09-05",
+   "time": "11:43:18",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Ghoroob🩷",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Ghoroob🩷‬"
+  },
+  {
+   "id": "wa-2026-09-05-114350-7",
+   "date": "2026-09-05",
+   "time": "11:43:50",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ רשא פרוגה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ רשא פרוגה‬"
   },
   {
    "id": "wa-2026-09-05-114411-6",
@@ -133775,6 +134435,292 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ 𝓡𝓮𝓽𝓪𝓳 𝓶𝓸𝓾𝓼𝓪🤍‬"
+  },
+  {
+   "id": "wa-2026-09-05-114508-7",
+   "date": "2026-09-05",
+   "time": "11:45:08",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Rana Haj Yihea",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Rana Haj Yihea‬"
+  },
+  {
+   "id": "wa-2026-09-05-114719-7",
+   "date": "2026-09-05",
+   "time": "11:47:19",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ עדן מצארוה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ עדן מצארוה‬"
+  },
+  {
+   "id": "wa-2026-09-05-114946-7",
+   "date": "2026-09-05",
+   "time": "11:49:46",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ʀᴀʏᴀɴ",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ʀᴀʏᴀɴ‬"
+  },
+  {
+   "id": "wa-2026-09-05-115224-7",
+   "date": "2026-09-05",
+   "time": "11:52:24",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 💛",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 💛‬"
+  },
+  {
+   "id": "wa-2026-09-05-115234-7",
+   "date": "2026-09-05",
+   "time": "11:52:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Enas Azem",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Enas Azem‬"
+  },
+  {
+   "id": "wa-2026-09-05-115524-7",
+   "date": "2026-09-05",
+   "time": "11:55:24",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ معالجه للطب البديل💆‍♀️💆",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ معالجه للطب البديل💆‍♀️💆‬"
+  },
+  {
+   "id": "wa-2026-09-05-115847-7",
+   "date": "2026-09-05",
+   "time": "11:58:47",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ هبات خضير",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ هبات خضير‬"
+  },
+  {
+   "id": "wa-2026-09-05-120044-7",
+   "date": "2026-09-05",
+   "time": "12:00:44",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Hams",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Hams‬"
+  },
+  {
+   "id": "wa-2026-09-05-120138-7",
+   "date": "2026-09-05",
+   "time": "12:01:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ רחמה חגאגרה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ רחמה חגאגרה‬"
+  },
+  {
+   "id": "wa-2026-09-05-120447-7",
+   "date": "2026-09-05",
+   "time": "12:04:47",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Anwar Wasem Khadija",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Anwar Wasem Khadija‬"
+  },
+  {
+   "id": "wa-2026-09-05-120517-7",
+   "date": "2026-09-05",
+   "time": "12:05:17",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ שרה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ שרה‬"
+  },
+  {
+   "id": "wa-2026-09-05-120519-7",
+   "date": "2026-09-05",
+   "time": "12:05:19",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ קריסטינה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ קריסטינה‬"
+  },
+  {
+   "id": "wa-2026-09-05-120944-7",
+   "date": "2026-09-05",
+   "time": "12:09:44",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ لمى حاج يحيى",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ لمى حاج يحيى‬"
   },
   {
    "id": "wa-2026-09-05-121547-1",
@@ -133836,6 +134782,28 @@
    "needsReview": true,
    "mediaCount": 6,
    "rawText": "انحجز رهط"
+  },
+  {
+   "id": "wa-2026-09-05-122353-7",
+   "date": "2026-09-05",
+   "time": "12:23:53",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Bayan Abu Zayid",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Bayan Abu Zayid‬"
   },
   {
    "id": "wa-2026-09-05-122727-2",
@@ -133915,6 +134883,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ الـــريـــم🦌♥️. ‬"
   },
   {
+   "id": "wa-2026-09-05-123918-7",
+   "date": "2026-09-05",
+   "time": "12:39:18",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Rian",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Rian‬"
+  },
+  {
    "id": "wa-2026-09-05-124404-1",
    "date": "2026-09-05",
    "time": "12:44:04",
@@ -133987,6 +134977,50 @@
    "rawText": "شقيب السلام"
   },
   {
+   "id": "wa-2026-09-05-132152-7",
+   "date": "2026-09-05",
+   "time": "13:21:52",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Daleen",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Daleen‬"
+  },
+  {
+   "id": "wa-2026-09-05-134206-7",
+   "date": "2026-09-05",
+   "time": "13:42:06",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام وديع",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام وديع‬"
+  },
+  {
    "id": "wa-2026-09-05-135422-2",
    "date": "2026-09-05",
    "time": "13:54:22",
@@ -134043,6 +135077,28 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "رهط صبايا ممنوع الاتصال بس ابعثن رساله انحجز"
+  },
+  {
+   "id": "wa-2026-09-05-140649-7",
+   "date": "2026-09-05",
+   "time": "14:06:49",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Kholod💕💎",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Kholod💕💎‬"
   },
   {
    "id": "wa-2026-09-05-141005-2",
@@ -134103,6 +135159,28 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ أم عَلي🩵.‬"
   },
   {
+   "id": "wa-2026-09-05-141246-7",
+   "date": "2026-09-05",
+   "time": "14:12:46",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Wagiha 🪡",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Wagiha 🪡‬"
+  },
+  {
    "id": "wa-2026-09-05-141411-6",
    "date": "2026-09-05",
    "time": "14:14:11",
@@ -134123,6 +135201,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ♥️(وَلَسَوْفَ يُعْطِيكَ رَ‬ ‫בקשת הצטרפות נשלחה על ידי ~ ♥️(وَلَسَوْفَ يُعْطِيكَ رَ‬"
+  },
+  {
+   "id": "wa-2026-09-05-141434-7",
+   "date": "2026-09-05",
+   "time": "14:14:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 👑am aws👑",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 👑am aws👑‬"
   },
   {
    "id": "wa-2026-09-05-141831-6",
@@ -134167,6 +135267,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام وهيب‬"
+  },
+  {
+   "id": "wa-2026-09-05-142252-7",
+   "date": "2026-09-05",
+   "time": "14:22:52",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ☺️",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ☺️‬"
   },
   {
    "id": "wa-2026-09-05-142458-2",
@@ -134344,6 +135466,144 @@
    "rawText": "انحجزن [טלפון] تل السبع"
   },
   {
+   "id": "wa-2026-09-05-152714-7",
+   "date": "2026-09-05",
+   "time": "15:27:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ أَم وَتين زيادنه",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ أَم وَتين زيادنه ‬"
+  },
+  {
+   "id": "wa-2026-09-05-152754-7",
+   "date": "2026-09-05",
+   "time": "15:27:54",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "أهلاً وسهلاً عزيزاتي 🙋‍♀️ المجموعة مُخصصة لتبادل أغراض مُستعملة بحالة جيدة مجاناً مثل ملابس، أحذية، أدوات مطبخ، العاب أطفال، أدوات كهربا، معدّات أطفال وغيرو 🤍 📌 قواعد بسيطة: 🔖كل شي معروض بالمجموعة مجاني. 🔖يتم نشر فقط الأغراض اللي صالحة للإستعمال. 🔖كل وحدة بتطلب غرض تتحمّل مسؤولية تيجي تاخده بنفسها. 🔖خلينا نحافظ على الاحترام والجدية. 🔖عدم نشر اي مُحتوى لا يتعلّق بالمجموعة مثل دعايات وأدعية وغيرها 🔖الهدف: مساعدة، تدوير واستفادة جماعية. *#خلّونا نخلّي الخير يدور من بيت لبيت 🏠 ♻️"
+  },
+  {
+   "id": "wa-2026-09-05-152955-7",
+   "date": "2026-09-05",
+   "time": "15:29:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "כורסה",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "عندي ثنتين الطيبة [טלפון]"
+  },
+  {
+   "id": "wa-2026-09-05-152956-7",
+   "date": "2026-09-05",
+   "time": "15:29:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "סרטון הווידאו הושמט"
+  },
+  {
+   "id": "wa-2026-09-05-153117-7",
+   "date": "2026-09-05",
+   "time": "15:31:17",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ .,",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ .,‬"
+  },
+  {
+   "id": "wa-2026-09-05-153228-7",
+   "date": "2026-09-05",
+   "time": "15:32:28",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ .",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ .‬"
+  },
+  {
    "id": "wa-2026-09-05-155814-6",
    "date": "2026-09-05",
    "time": "15:58:14",
@@ -134483,6 +135743,28 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬, ‪[טלפון]‬ נשלחה על ידי ~ ام الليث‬"
   },
   {
+   "id": "wa-2026-09-05-164255-7",
+   "date": "2026-09-05",
+   "time": "16:42:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ KHADIJA",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ KHADIJA ‬"
+  },
+  {
    "id": "wa-2026-09-05-164313-1",
    "date": "2026-09-05",
    "time": "16:43:13",
@@ -134604,6 +135886,72 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ام ايسر💘‬"
+  },
+  {
+   "id": "wa-2026-09-05-174501-7",
+   "date": "2026-09-05",
+   "time": "17:45:01",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ > *هي فانية..* *فلا يحزنك مرّها، ولا يلهيك حلوها!*",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ > *هي فانية..* *فلا يحزنك مرّها، ولا يلهيك حلوها!*‬"
+  },
+  {
+   "id": "wa-2026-09-05-180545-7",
+   "date": "2026-09-05",
+   "time": "18:05:45",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ By@n Hajjaj",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ By@n Hajjaj‬"
+  },
+  {
+   "id": "wa-2026-09-05-180937-7",
+   "date": "2026-09-05",
+   "time": "18:09:37",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام كرم",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام كرم‬"
   },
   {
    "id": "wa-2026-09-05-182148-3",
@@ -134738,6 +136086,28 @@
    "rawText": "انحجز كل الاغراض"
   },
   {
+   "id": "wa-2026-09-05-194539-7",
+   "date": "2026-09-05",
+   "time": "19:45:39",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ❤️❤️",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ❤️❤️‬"
+  },
+  {
    "id": "wa-2026-09-05-195205-5",
    "date": "2026-09-05",
    "time": "19:52:05",
@@ -134782,6 +136152,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ﴿ الْحَمْدُ لِلَّهِ رَبِّ‬"
   },
   {
+   "id": "wa-2026-09-05-205258-7",
+   "date": "2026-09-05",
+   "time": "20:52:58",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ דימא מסארןה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ דימא מסארןה‬ ‫בקשת הצטרפות נשלחה על ידי ~ דימא מסארןה‬"
+  },
+  {
    "id": "wa-2026-09-05-205305-4",
    "date": "2026-09-05",
    "time": "20:53:05",
@@ -134802,6 +136194,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🌸‬"
+  },
+  {
+   "id": "wa-2026-09-05-211937-7",
+   "date": "2026-09-05",
+   "time": "21:19:37",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אתאר",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אתאר‬"
   },
   {
    "id": "wa-2026-09-05-212553-5",
@@ -134826,6 +136240,72 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 💕‬"
   },
   {
+   "id": "wa-2026-09-06-000608-7",
+   "date": "2026-09-06",
+   "time": "00:06:08",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 𝒔𝒖𝒋𝒐𝒐𝒅 𝒎𝒂𝒔𝒂𝒓𝒘𝒆",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 𝒔𝒖𝒋𝒐𝒐𝒅 𝒎𝒂𝒔𝒂𝒓𝒘𝒆‬"
+  },
+  {
+   "id": "wa-2026-09-06-001130-7",
+   "date": "2026-09-06",
+   "time": "00:11:30",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Fidaa",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Fidaa‬"
+  },
+  {
+   "id": "wa-2026-09-06-030839-7",
+   "date": "2026-09-06",
+   "time": "03:08:39",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Ninoo🐆.",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Ninoo🐆.‬"
+  },
+  {
    "id": "wa-2026-09-06-062809-2",
    "date": "2026-09-06",
    "time": "06:28:09",
@@ -134846,6 +136326,50 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ..‬"
+  },
+  {
+   "id": "wa-2026-09-06-070511-7",
+   "date": "2026-09-06",
+   "time": "07:05:11",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام جميل",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام جميل‬"
+  },
+  {
+   "id": "wa-2026-09-06-080020-7",
+   "date": "2026-09-06",
+   "time": "08:00:20",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ hala khateb✨️🦋",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 5,
+   "rawText": "أهلاً وسهلاً ويسعد صباحكن عزيزاتي 🙋‍♀️ المجموعة مُخصصة لتبادل أغراض مُستعملة بحالة جيدة مجاناً مثل ملابس، أحذية، أدوات مطبخ، العاب أطفال، أدوات كهربا، معدّات أطفال وغيرو 🤍 📌 قواعد بسيطة: 🔖كل شي معروض بالمجموعة مجاني. 🔖يتم نشر فقط الأغراض اللي صالحة للإستعمال. 🔖كل وحدة بتطلب غرض تتحمّل مسؤولية تيجي تاخده بنفسها. 🔖خلينا نحافظ على الاحترام والجدية. 🔖عدم نشر اي مُحتوى لا يتعلّق بالمجموعة مثل دعايات وأدعية وغيرها 🔖الهدف: مساعدة، تدوير واستفادة جماعية. *#خلّونا نخلّي الخير يدور من بيت لبيت 🏠 ♻️"
   },
   {
    "id": "wa-2026-09-06-080346-2",
@@ -135052,6 +136576,28 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "עברית לדרך الجزء الأول صف ثالث حسابي الجزء الاول صف ثالث حسابي الجزء الثاني صف ثالث حسابي هندسه صف ثالث عربي الغيث الجزء الاول عربي الغيث الجزء الثاني صف ثالث انجليزي click l صف ثالث التربيه الإسلامية صف ثالث انجليزي Here and now صف ثالث انا وموطني صف ثالث المعينه بالكتب تتواصل معي انا من عرعره"
+  },
+  {
+   "id": "wa-2026-09-06-093803-7",
+   "date": "2026-09-06",
+   "time": "09:38:03",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ عجنة حنى",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ عجنة حنى‬"
   },
   {
    "id": "wa-2026-09-06-104920-2",
@@ -135319,6 +136865,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ .‬"
+  },
+  {
+   "id": "wa-2026-09-06-143823-7",
+   "date": "2026-09-06",
+   "time": "14:38:23",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ جوان🎀",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ جوان🎀‬ ‫בקשת הצטרפות נשלחה על ידי ~ جوان🎀‬"
   },
   {
    "id": "wa-2026-09-06-162111-6",
@@ -136153,6 +137721,28 @@
    "rawText": "احذية كعب متوسط، النمرة بجانب كل واحد للجدية، العنوان حورة"
   },
   {
+   "id": "wa-2026-09-07-142108-7",
+   "date": "2026-09-07",
+   "time": "14:21:08",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אמנה מסארוה ميمي",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אמנה מסארוה ميمي‬"
+  },
+  {
    "id": "wa-2026-09-07-153730-3",
    "date": "2026-09-07",
    "time": "15:37:30",
@@ -136346,6 +137936,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ لالا‬ ‫בקשת הצטרפות נשלחה על ידי ~ لالا‬ ‫בקשת הצטרפות נשלחה על ידי ~ لالا‬"
+  },
+  {
+   "id": "wa-2026-09-07-193504-7",
+   "date": "2026-09-07",
+   "time": "19:35:04",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Hanan🎨",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Hanan🎨‬"
   },
   {
    "id": "wa-2026-09-07-193838-3",
@@ -136662,6 +138274,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام غازي‬ ‫בקשת הצטרפות נשלחה על ידי ~ ام غازي‬ ‫בקשת הצטרפות נשלחה על ידי ~ ام غازي‬"
   },
   {
+   "id": "wa-2026-09-08-020255-7",
+   "date": "2026-09-08",
+   "time": "02:02:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ לילא ❤️ דיאא",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ לילא ❤️ דיאא‬"
+  },
+  {
    "id": "wa-2026-09-08-065853-6",
    "date": "2026-09-08",
    "time": "06:58:53",
@@ -136717,6 +138351,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "نبدأ نهارها بصلاه على النبي يصبحكن بانوار النبي حبوبات نهاركن سعيد وموفق بإذن الله 🌞💚🍀☘️ ❌⭕ملاحظه قصه الحجز صبايا حاول انكن تكونن متأكدات من الحجز وبالاخص لما يكون الغرض شي ثقيل زي خزاين وتخوت قبل ما تحجزي تأكدي انه رح تقدري تاخذيه ❌⭕"
+  },
+  {
+   "id": "wa-2026-09-08-103346-7",
+   "date": "2026-09-08",
+   "time": "10:33:46",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "مين عندها إشي بالبيت ما بتستعمله… بس حرام ينرمي؟ 👀🏡 يمكن بالنسبة إلك زايد، وبالنسبة لوحدة ثانية كنز 🤍 يلا نحرّك مجموعة «من بيتي لبيتك» 🔄✨ صوّري غرض واحد اليوم بطل يلزمك🤩 وابعثي للمشرفات وخلي الخير يلف بين بيوتنا 🌷 مين بتبلّش؟ 🙋🏻‍♀️🔥 סרטון הווידאו הושמט"
   },
   {
    "id": "wa-2026-09-08-120702-2",
@@ -137615,6 +139271,210 @@
    "rawText": "في هاض التخت مع فرشتين الي ودها اياه ياريت لبكرا تيجي تاخذه انا من رهط عندي هدوم ولادي جيل 4 سنين وجيل 8 سنين وضعهن ممتاز في اشياء جديده يمكن لبسه مش اكثر كيس كبير المعنيه اتجي تأخذه انحجز"
   },
   {
+   "id": "wa-2026-09-09-190134-7",
+   "date": "2026-09-09",
+   "time": "19:01:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ הודא",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ הודא‬"
+  },
+  {
+   "id": "wa-2026-09-09-190134-7",
+   "date": "2026-09-09",
+   "time": "19:01:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ הודא",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ הודא‬"
+  },
+  {
+   "id": "wa-2026-09-09-190244-7",
+   "date": "2026-09-09",
+   "time": "19:02:44",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Shahd 🤍",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Shahd 🤍‬"
+  },
+  {
+   "id": "wa-2026-09-09-190244-7",
+   "date": "2026-09-09",
+   "time": "19:02:44",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Shahd 🤍",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Shahd 🤍‬"
+  },
+  {
+   "id": "wa-2026-09-09-191251-7",
+   "date": "2026-09-09",
+   "time": "19:12:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "الفساتين"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 8,
+   "rawText": "مرحبا، يعطيكي العافية 🌷 عندي هاي الفساتين، فساتين رسمية ومناسبة للمناسبات، وكلها بوضع ممتاز جدًا [טלפון] رقم الصبيه من قلنسوة"
+  },
+  {
+   "id": "wa-2026-09-09-192444-7",
+   "date": "2026-09-09",
+   "time": "19:24:44",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🌹ام كريم جابر🌹",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🌹ام كريم جابر🌹‬"
+  },
+  {
+   "id": "wa-2026-09-09-205357-7",
+   "date": "2026-09-09",
+   "time": "20:53:57",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🍒rema7 tayah maree🍒",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🍒rema7 tayah maree🍒‬"
+  },
+  {
+   "id": "wa-2026-09-09-210620-7",
+   "date": "2026-09-09",
+   "time": "21:06:20",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ دعاء جبارة",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ دعاء جبارة‬"
+  },
+  {
+   "id": "wa-2026-09-10-053614-7",
+   "date": "2026-09-10",
+   "time": "05:36:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ תגריד אחמד",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ תגריד אחמד‬"
+  },
+  {
    "id": "wa-2026-09-10-093255-4",
    "date": "2026-09-10",
    "time": "09:32:55",
@@ -137677,6 +139537,62 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "اه وحطيلهم انه اللبس كل النمر فيه اكثر من نمره مشان ما يصرعني"
+  },
+  {
+   "id": "wa-2026-09-10-105923-7",
+   "date": "2026-09-10",
+   "time": "10:59:23",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "תיק בית ספר",
+     "qty": 1,
+     "matched": "شنطه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 💕💜",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "סרטון הווידאו הושמט شنطه للبيبي للي بدها من الطيبه"
+  },
+  {
+   "id": "wa-2026-09-10-110314-7",
+   "date": "2026-09-10",
+   "time": "11:03:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "בגדי ילדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ 💕💜",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "لبسة كراتيه لجيل ٨_١٠ المعنيه تتواصل معي"
   },
   {
    "id": "wa-2026-09-10-113004-3",
@@ -138134,17 +140050,150 @@
     3,
     4,
     5,
-    6
+    6,
+    7
    ],
    "mergedBy": [
     "media",
     "phone",
     "text"
    ],
-   "blockCount": 6,
+   "blockCount": 7,
    "needsReview": false,
    "mediaCount": 2,
    "rawText": "✨ صباح النور والمحبة ✨ يوم جمعة وفرصة نعمل مساحة ببيوتنا ومساحة بقلوبنا 🌿💛 إذا عندِك أي غرض بعده بحالة جيدة وانتي مش بحاجة إله مثل: 👗 ملابس 🛋️ أثاث بسيط ⚡ أدوات كهربائية 🍼 مستلزمات أطفال 🎒 أو أي شي قابل للاستعمال ☎️ رانيا[טלפון] ☎️ أم سلامة[טלפון] ☎️ أم بكر[טלפון]"
+  },
+  {
+   "id": "wa-2026-09-11-092715-7",
+   "date": "2026-09-11",
+   "time": "09:27:15",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "☎️ ضُحى[טלפון] ☎️ ريم[טלפון]"
+  },
+  {
+   "id": "wa-2026-09-11-094723-7",
+   "date": "2026-09-11",
+   "time": "09:47:23",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "‪[טלפון]‬",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ‪[טלפון]‬‬"
+  },
+  {
+   "id": "wa-2026-09-11-102836-7",
+   "date": "2026-09-11",
+   "time": "10:28:36",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "ليش نرميها إذا ممكن غيرنا يحتاجها؟ 💗 عندك غرض بالبيت ما عاد تستعمليه؟ يمكن يكون بالضبط الشي اللي وحدة ثانية محتاجته 🌷 انضمي لمجموعتنا «من بيتي لبيتك – منطقة المركز» https://chat.whatsapp.com/Jf8sy5qyUFLLK1svl680gB?s=cl&p=i&mlu=4&ilr=4 مساحة نسائية للتبادل، العطاء والاستفادة من أغراض موجودة عنا بدل ما تضل بدون استعمال. ♻️💞"
+  },
+  {
+   "id": "wa-2026-09-11-103347-7",
+   "date": "2026-09-11",
+   "time": "10:33:47",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "סימא אם אשרף ב״ש",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי סימא אם אשרף ב״ש‬"
+  },
+  {
+   "id": "wa-2026-09-11-104031-7",
+   "date": "2026-09-11",
+   "time": "10:40:31",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ roaa",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ roaa‬"
+  },
+  {
+   "id": "wa-2026-09-11-113843-7",
+   "date": "2026-09-11",
+   "time": "11:38:43",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Bailasan Mansour",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Bailasan Mansour‬"
   },
   {
    "id": "wa-2026-09-11-114141-3",
@@ -138167,6 +140216,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ إسلAم✨‬"
+  },
+  {
+   "id": "wa-2026-09-11-122826-7",
+   "date": "2026-09-11",
+   "time": "12:28:26",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🙂🙂",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🙂🙂‬ ‫בקשת הצטרפות נשלחה על ידי ~ 🙂🙂‬"
   },
   {
    "id": "wa-2026-09-11-124939-1",
@@ -138203,6 +140274,94 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "السلام عليكم هذول اواعي مولوده من ٠ ل ٣ اشهر [טלפון]"
+  },
+  {
+   "id": "wa-2026-09-11-133305-7",
+   "date": "2026-09-11",
+   "time": "13:33:05",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ anwar Haj",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ anwar Haj‬"
+  },
+  {
+   "id": "wa-2026-09-11-133542-7",
+   "date": "2026-09-11",
+   "time": "13:35:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ג'דיר",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ג'דיר‬"
+  },
+  {
+   "id": "wa-2026-09-11-133712-7",
+   "date": "2026-09-11",
+   "time": "13:37:12",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ SaMaR KaSeM",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ SaMaR KaSeM‬"
+  },
+  {
+   "id": "wa-2026-09-11-133759-7",
+   "date": "2026-09-11",
+   "time": "13:37:59",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Mona Jayyusi Khadija",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Mona Jayyusi Khadija‬"
   },
   {
    "id": "wa-2026-09-11-134046-6",
@@ -138261,6 +140420,182 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ألحمد لله‬"
+  },
+  {
+   "id": "wa-2026-09-11-134645-7",
+   "date": "2026-09-11",
+   "time": "13:46:45",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Hiba Odeh",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Hiba Odeh‬"
+  },
+  {
+   "id": "wa-2026-09-11-140220-7",
+   "date": "2026-09-11",
+   "time": "14:02:20",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام مصطفى وامين",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام مصطفى وامين‬"
+  },
+  {
+   "id": "wa-2026-09-11-140501-7",
+   "date": "2026-09-11",
+   "time": "14:05:01",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אימאן בלעום",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אימאן בלעום‬"
+  },
+  {
+   "id": "wa-2026-09-11-140610-7",
+   "date": "2026-09-11",
+   "time": "14:06:10",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ שירין מסארוה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ שירין מסארוה‬"
+  },
+  {
+   "id": "wa-2026-09-11-140638-7",
+   "date": "2026-09-11",
+   "time": "14:06:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ מיסון",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ מיסון‬"
+  },
+  {
+   "id": "wa-2026-09-11-141421-7",
+   "date": "2026-09-11",
+   "time": "14:14:21",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ نيفين علي",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ نيفين علي‬"
+  },
+  {
+   "id": "wa-2026-09-11-141513-7",
+   "date": "2026-09-11",
+   "time": "14:15:13",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ شيماء ماهر",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ شيماء ماهر ‬"
+  },
+  {
+   "id": "wa-2026-09-11-151429-7",
+   "date": "2026-09-11",
+   "time": "15:14:29",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Fatima",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Fatima‬"
   },
   {
    "id": "wa-2026-09-11-155247-5",
@@ -138373,6 +140708,28 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ام شادي‬"
   },
   {
+   "id": "wa-2026-09-11-164140-7",
+   "date": "2026-09-11",
+   "time": "16:41:40",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Kiram",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Kiram‬"
+  },
+  {
    "id": "wa-2026-09-11-172014-3",
    "date": "2026-09-11",
    "time": "17:20:14",
@@ -138429,6 +140786,72 @@
    "rawText": "כרטיס איש קשר הושמט رهط"
   },
   {
+   "id": "wa-2026-09-11-174212-7",
+   "date": "2026-09-11",
+   "time": "17:42:12",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Wafaa",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Wafaa‬"
+  },
+  {
+   "id": "wa-2026-09-11-181956-7",
+   "date": "2026-09-11",
+   "time": "18:19:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ L A",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ L A‬"
+  },
+  {
+   "id": "wa-2026-09-11-183314-7",
+   "date": "2026-09-11",
+   "time": "18:33:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ תחריר",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ תחריר‬"
+  },
+  {
    "id": "wa-2026-09-11-191627-6",
    "date": "2026-09-11",
    "time": "19:16:27",
@@ -138449,6 +140872,56 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ חנאן אחמד‬"
+  },
+  {
+   "id": "wa-2026-09-11-192756-7",
+   "date": "2026-09-11",
+   "time": "19:27:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "فساتين"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "مرحبا عندي ثلث فساتين اثنين نمره 36 والازرق 34 هني كثير حلوات ومظلومات بالتصوير لانه فش كيف اصور من الطيبه الرقم[טלפון]"
+  },
+  {
+   "id": "wa-2026-09-11-193508-7",
+   "date": "2026-09-11",
+   "time": "19:35:08",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ .::",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ .::‬ ‫בקשת הצטרפות נשלחה על ידי ~ .::‬ ‫בקשת הצטרפות נשלחה על ידי ~ .::‬"
   },
   {
    "id": "wa-2026-09-11-210859-4",
@@ -138493,6 +140966,72 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ 💕OM Nadaa💕‬"
+  },
+  {
+   "id": "wa-2026-09-11-235800-7",
+   "date": "2026-09-11",
+   "time": "23:58:00",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ غزة لنا ونحن لها",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ غزة لنا ونحن لها‬"
+  },
+  {
+   "id": "wa-2026-09-12-000419-7",
+   "date": "2026-09-12",
+   "time": "00:04:19",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Sh,m",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Sh,m‬"
+  },
+  {
+   "id": "wa-2026-09-12-001313-7",
+   "date": "2026-09-12",
+   "time": "00:13:13",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ سميحه",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ سميحه‬"
   },
   {
    "id": "wa-2026-09-12-051702-6",
@@ -138625,6 +141164,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "🌸 تنبيه لصاحبات المشاريع 🌸 يا صبايا مجموعة المبادرة مخصّصة لتبادل الأغراض بين الصبايا وليست للبيع أو للترويج للمشاريع لذلك ممنوع إزعاج الصبايا بالرسائل الخاصة أو عرض وبيع أغراض المشاريع داخل المجموعة نرجو الالتزام بقوانين المجموعة واحترام راحة الجميع وأي مخالفة سيتم التعامل معها حسب قوانين المجموعة شكراً لتفهمكن والتزامكن 🤍"
+  },
+  {
+   "id": "wa-2026-09-12-095004-7",
+   "date": "2026-09-12",
+   "time": "09:50:04",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Siwar",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Siwar‬"
   },
   {
    "id": "wa-2026-09-12-104550-3",
@@ -139218,6 +141779,28 @@
    "rawText": "في هاض التخت مع فرشتين الي ودها اياه ياريت لبكرا تيجي تاخذه انا من رهط"
   },
   {
+   "id": "wa-2026-09-12-192821-7",
+   "date": "2026-09-12",
+   "time": "19:28:21",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام جميل",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ام جميل‬"
+  },
+  {
    "id": "wa-2026-09-12-202034-3",
    "date": "2026-09-12",
    "time": "20:20:34",
@@ -139348,6 +141931,54 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ام محمد‬"
+  },
+  {
+   "id": "wa-2026-09-13-122438-7",
+   "date": "2026-09-13",
+   "time": "12:24:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "matched": "غساله"
+    },
+    {
+     "nameHe": "מקרר",
+     "qty": 1,
+     "matched": "ثلاجه"
+    },
+    {
+     "nameHe": "תנור",
+     "qty": 1,
+     "matched": "فرن"
+    },
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت"
+    },
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "סרטון הווידאו הושמט بحالة ممتازة وشغالات * غسالة * ⁠نشافة * ⁠فرن * ⁠ثلاجة * ⁠تخت مفرد مع فرشة سبب التمرير שיפוץ بالبيت [טלפון] صبحية - ام وليد الطيبة"
   },
   {
    "id": "wa-2026-09-13-132756-2",
@@ -140567,6 +143198,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ))))‬ ‫בקשת הצטרפות נשלחה על ידי ~ ))))‬"
   },
   {
+   "id": "wa-2026-09-14-201241-7",
+   "date": "2026-09-14",
+   "time": "20:12:41",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ محمود قعدان",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ محمود قعدان‬"
+  },
+  {
    "id": "wa-2026-09-15-095749-3",
    "date": "2026-09-15",
    "time": "09:57:49",
@@ -140748,6 +143401,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ נעמה מוסטפא קאשור‬"
+  },
+  {
+   "id": "wa-2026-09-15-115017-7",
+   "date": "2026-09-15",
+   "time": "11:50:17",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
   },
   {
    "id": "wa-2026-09-15-115146-3",
@@ -141160,9 +143835,9 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ אם אמיר ♥️♥️‬"
   },
   {
-   "id": "wa-2026-09-15-172500-7",
+   "id": "wa-2026-09-15-172522-7",
    "date": "2026-09-15",
-   "time": "17:25:00",
+   "time": "17:25:22",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -141182,7 +143857,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -141190,21 +143865,32 @@
    "blockCount": 1,
    "needsReview": false,
    "mediaCount": 1,
-   "rawText": "ثلاجة وفرن بحالة ممتازة الطيبة ‪[טלפון]"
+   "rawText": "ثلاجة وفرن بحالة ممتازة الطيبة [טלפון]"
   },
   {
-   "id": "wa-2026-09-15-172600-7",
+   "id": "wa-2026-09-15-172653-7",
    "date": "2026-09-15",
-   "time": "17:26:00",
+   "time": "17:26:53",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מקרר",
+     "qty": 1,
+     "matched": "ثلاجه"
+    },
+    {
+     "nameHe": "חלון",
+     "qty": 1,
+     "matched": "والشباك"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "~ doha",
    "seenInGroups": [
     7
    ],
@@ -141212,7 +143898,7 @@
    "blockCount": 1,
    "needsReview": false,
    "mediaCount": 2,
-   "rawText": ""
+   "rawText": "ثلاجه بوضع ممتاز والشباك شباك مطبخ جديد انا من قلنسوه ام أمجد لداوي [טלפון] <ההודעה נערכה>"
   },
   {
    "id": "wa-2026-09-15-175232-6",
@@ -141235,6 +143921,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ masa‬"
+  },
+  {
+   "id": "wa-2026-09-15-175431-7",
+   "date": "2026-09-15",
+   "time": "17:54:31",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🫵لا فرق بين اعجمى واعرابى",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ 🫵لا فرق بين اعجمى واعرابى‬"
   },
   {
    "id": "wa-2026-09-15-184004-2",
@@ -141271,6 +143979,28 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "[טלפון] شقيب السلام"
+  },
+  {
+   "id": "wa-2026-09-15-215010-7",
+   "date": "2026-09-15",
+   "time": "21:50:10",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 💙",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 💙‬"
   },
   {
    "id": "wa-2026-09-16-073609-6",
@@ -141609,6 +144339,94 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ هي ما هانت انا الي تعودت‬"
   },
   {
+   "id": "wa-2026-09-16-133822-7",
+   "date": "2026-09-16",
+   "time": "13:38:22",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "السعر؟ ولا شي 🤍 لأنه مش للبيع… هو بس جاهز ينتقل من بيت لبيت ويبدأ قصة جديدة. ادخلي صفحتنا وتعرّفي على مبادرة «من بيتي لبيتك» 🌿 للنساء فقط🙋🏼‍♀️"
+  },
+  {
+   "id": "wa-2026-09-16-135657-7",
+   "date": "2026-09-16",
+   "time": "13:56:57",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ريم",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ريم‬"
+  },
+  {
+   "id": "wa-2026-09-16-141419-7",
+   "date": "2026-09-16",
+   "time": "14:14:19",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ דוחא",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ דוחא‬"
+  },
+  {
+   "id": "wa-2026-09-16-142227-7",
+   "date": "2026-09-16",
+   "time": "14:22:27",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Braa",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Braa‬"
+  },
+  {
    "id": "wa-2026-09-16-151703-2",
    "date": "2026-09-16",
    "time": "15:17:03",
@@ -141644,6 +144462,28 @@
    "rawText": ""
   },
   {
+   "id": "wa-2026-09-16-154350-7",
+   "date": "2026-09-16",
+   "time": "15:43:50",
+   "city": "חורה",
+   "cityInherited": false,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "פידאא חורה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי פידאא חורה‬"
+  },
+  {
    "id": "wa-2026-09-16-154856-6",
    "date": "2026-09-16",
    "time": "15:48:56",
@@ -141669,9 +144509,9 @@
    "id": "wa-2026-09-16-154901-6",
    "date": "2026-09-16",
    "time": "15:49:01",
-   "city": "אחר",
-   "cityInherited": false,
-   "cityResolved": false,
+   "city": "חורה",
+   "cityInherited": true,
+   "cityResolved": true,
    "items": [],
    "unidentified": true,
    "itemSource": null,
@@ -142398,6 +145238,28 @@
    "rawText": "رهط ההודעה נמחקה על ידי ראניה בלאל, מנהל/ת הקבוצה."
   },
   {
+   "id": "wa-2026-09-16-170640-7",
+   "date": "2026-09-16",
+   "time": "17:06:40",
+   "city": "רהט",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "אם בקר מתנדבת מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי אם בקר מתנדבת מביתי לביתך‬"
+  },
+  {
    "id": "wa-2026-09-16-171043-2",
    "date": "2026-09-16",
    "time": "17:10:43",
@@ -142434,18 +145296,24 @@
    "rawText": ""
   },
   {
-   "id": "wa-2026-09-16-171400-7",
+   "id": "wa-2026-09-16-171405-7",
    "date": "2026-09-16",
-   "time": "17:14:00",
+   "time": "17:14:05",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
+   "items": [
+    {
+     "nameHe": "מזנון",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "~ doha",
    "seenInGroups": [
     7
    ],
@@ -142453,7 +145321,7 @@
    "blockCount": 1,
    "needsReview": false,
    "mediaCount": 1,
-   "rawText": ""
+   "rawText": "مزنون بوضع منيح من تحت خزاين ومن فوق خزاين كزاز من الطيبة [טלפון] <ההודעה נערכה>"
   },
   {
    "id": "wa-2026-09-16-172501-6",
@@ -142476,6 +145344,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام محمد🌹‬"
+  },
+  {
+   "id": "wa-2026-09-16-172708-7",
+   "date": "2026-09-16",
+   "time": "17:27:08",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ مركز علاج البشرة",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ مركز علاج البشرة‬"
   },
   {
    "id": "wa-2026-09-16-173827-6",
@@ -143315,6 +146205,39 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ❤️‬"
   },
   {
+   "id": "wa-2026-09-18-121256-7",
+   "date": "2026-09-18",
+   "time": "12:12:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت"
+    },
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "فرشة تخت مفرد بحاله جيده جدا الي معنيه تبعث[טלפון] الطيبه <ההודעה נערכה>"
+  },
+  {
    "id": "wa-2026-09-18-123214-4",
    "date": "2026-09-18",
    "time": "12:32:14",
@@ -143468,6 +146391,34 @@
    "rawText": "ملابس سنتين واربعه وملابس كبار وكنادر جاكيتات شتويه ثقيله بتجنن شنتات جديده وألعاب دبب احجام كبيره بسكليت ومرجيحه ومخدات وفرشات جديده وكلو بحاله جيده جدا اللي معنيه وجديه معها سياره تتواصل على الرقم :[טלפון]"
   },
   {
+   "id": "wa-2026-09-18-131455-7",
+   "date": "2026-09-18",
+   "time": "13:14:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שידה",
+     "qty": 2,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": true,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "اسكملات كبار مع المناظر الي عليهن الطيبة انحجزت"
+  },
+  {
    "id": "wa-2026-09-18-132810-6",
    "date": "2026-09-18",
    "time": "13:28:10",
@@ -143583,6 +146534,28 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ..‬ ‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ..‬"
   },
   {
+   "id": "wa-2026-09-18-173807-7",
+   "date": "2026-09-18",
+   "time": "17:38:07",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ الحمدلله دائما وابدا 🙏",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ الحمدلله دائما وابدا 🙏‬"
+  },
+  {
    "id": "wa-2026-09-18-175824-2",
    "date": "2026-09-18",
    "time": "17:58:24",
@@ -143655,6 +146628,50 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ سليمان‬"
+  },
+  {
+   "id": "wa-2026-09-18-204418-7",
+   "date": "2026-09-18",
+   "time": "20:44:18",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🫵لا فرق بين اعجمى واعرابى",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬, ‪[טלפון]‬ נשלחה על ידי ~ 🫵لا فرق بين اعجمى واعرابى‬"
+  },
+  {
+   "id": "wa-2026-09-19-012429-7",
+   "date": "2026-09-19",
+   "time": "01:24:29",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🌺🌺",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🌺🌺‬"
   },
   {
    "id": "wa-2026-09-19-013829-6",
@@ -144141,6 +147158,39 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Adam💕Ameer💕Meera💕Malak💕Ay‬"
   },
   {
+   "id": "wa-2026-09-19-175134-7",
+   "date": "2026-09-19",
+   "time": "17:51:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت"
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "مكتبه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 2,
+   "rawText": "السلام عليكم 🌷 للتبرع مجانًا لمن بحاجة: تخت مع جرارين + فـرشتين + مكتبة بحالة جيدة. الأولوية لمن هو فعلًا بحاجة"
+  },
+  {
    "id": "wa-2026-09-19-181010-6",
    "date": "2026-09-19",
    "time": "18:10:10",
@@ -144161,6 +147211,50 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام عثمان🌱🎶‬"
+  },
+  {
+   "id": "wa-2026-09-19-182417-7",
+   "date": "2026-09-19",
+   "time": "18:24:17",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "[טלפון] من الطيبة"
+  },
+  {
+   "id": "wa-2026-09-19-182437-7",
+   "date": "2026-09-19",
+   "time": "18:24:37",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ʀᴀʏᴀɴ",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ʀᴀʏᴀɴ‬"
   },
   {
    "id": "wa-2026-09-19-182505-2",
@@ -144387,6 +147481,28 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ Mlak‬"
   },
   {
+   "id": "wa-2026-09-19-205645-7",
+   "date": "2026-09-19",
+   "time": "20:56:45",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ إم لكنان🧿🩵",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ إم لكنان🧿🩵‬"
+  },
+  {
    "id": "wa-2026-09-19-211209-2",
    "date": "2026-09-19",
    "time": "21:12:09",
@@ -144515,6 +147631,72 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי אם מחמד אלתראבין שגב שלום‬"
   },
   {
+   "id": "wa-2026-09-20-093800-7",
+   "date": "2026-09-20",
+   "time": "09:38:00",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Najafroji",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Najafroji‬"
+  },
+  {
+   "id": "wa-2026-09-20-094511-7",
+   "date": "2026-09-20",
+   "time": "09:45:11",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ كفاح فروجة",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ كفاح فروجة‬"
+  },
+  {
+   "id": "wa-2026-09-20-103425-7",
+   "date": "2026-09-20",
+   "time": "10:34:25",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ إمہ مہهديہ",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ إمہ مہهديہ‬"
+  },
+  {
    "id": "wa-2026-09-20-104807-2",
    "date": "2026-09-20",
    "time": "10:48:07",
@@ -144611,6 +147793,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام كريم‬"
   },
   {
+   "id": "wa-2026-09-20-115120-7",
+   "date": "2026-09-20",
+   "time": "11:51:20",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ רחמה חגאגרה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ רחמה חגאגרה‬"
+  },
+  {
    "id": "wa-2026-09-20-132228-1",
    "date": "2026-09-20",
    "time": "13:22:28",
@@ -144638,6 +147842,39 @@
    "needsReview": false,
    "mediaCount": 16,
    "rawText": "ההודעה נמחקה על ידי ראניה בלאל, מנהל/ת הקבוצה."
+  },
+  {
+   "id": "wa-2026-09-20-132251-7",
+   "date": "2026-09-20",
+   "time": "13:22:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كرسي"
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "للمكتبه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "مرحبا 🌸 في كرسي للمكتبه بحاله منيح اذا بنفع توديها علجروب الي بدو اياها[טלפון] من قلنسوه"
   },
   {
    "id": "wa-2026-09-20-134206-5",
@@ -145551,6 +148788,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ …..‬"
   },
   {
+   "id": "wa-2026-09-21-111505-7",
+   "date": "2026-09-21",
+   "time": "11:15:05",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "صبايا يعطيكن العافية، إن شاء الله تكونن بأحسن حال ♥️ نقطتين مهمات جدًا جداً *المجموعة ما شاء الله عندها اقبال رهيب والاغراض الي بتنبعث غيرنا بستفيد منها* 🤩 *بس مهم جدا جدا جدا* : ❌ ممنوع أي وحدة تحجز غرض إلا إذا كانت متأكدة انها رح توخذو. ❌ ممنوع تطلبي من صاحبة الغرض توصلو إلك مسؤولية التوصيل والاستلام بتكون على اللي حجزت الغرض. في كثير توجهات انو بنحجز الغرض ومنعدش نرد ع الرسائل او الاتصال فش فيها اشي اذا بعثتي انو ما بدي اياه او م عارفه كيف اجي اخذو !! رجاءً نتقيد بقوانين المجموعة، عشان نضل مرتاحات ويكون التعامل بين الكل واضح ومرتب 🙏🏻♥️ اسكملات كبار مع المناظر الي عليهن الطيبة المناظر اخذوهن ، الاسكملات موجودات"
+  },
+  {
    "id": "wa-2026-09-21-113302-1",
    "date": "2026-09-21",
    "time": "11:33:02",
@@ -145759,6 +149018,28 @@
    "needsReview": false,
    "mediaCount": 11,
    "rawText": "الثلاجة بتصقع احيانا وأحيانا لا. ناقصها غاز او هواية [טלפון] خزانة حمام وضع كويس للمعنيه انحجز انا من قصر السر"
+  },
+  {
+   "id": "wa-2026-09-21-135012-7",
+   "date": "2026-09-21",
+   "time": "13:50:12",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "يعطيكي العافية قلبيم طمنيني عنك طالبتك بخدمة بتامل تقدري تساعديني لاني بحاجة للاشي بأسرع وقت إذا بنفع تساليلي الصحاب والقرايب عن دار موجودة بطيبة او الطيرة للإيجار ملائمة لعيلة كبيرة يعني لسبع أشخاص ويكون الايجار يعني مليح نسبيا وتكون لحالها او طابق اول بكون ممنونة كثير الك يعطيكن الف عافيه يا غاليات الي عندها معلومات عن دار للايجار لعيلة محترمة تتواصل معي"
   },
   {
    "id": "wa-2026-09-21-155828-2",
@@ -146016,6 +149297,39 @@
    "rawText": "انحجز انحجز [טלפון]"
   },
   {
+   "id": "wa-2026-09-21-194851-7",
+   "date": "2026-09-21",
+   "time": "19:48:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שולחן",
+     "qty": 1,
+     "matched": "الطاوله"
+    },
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كراسي"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 4,
+   "rawText": "للتواصل 0523044253 ٦ كراسي من الطيبه الطاوله مع الست كراسي هاذ الرقم للتواصل"
+  },
+  {
    "id": "wa-2026-09-21-194956-1",
    "date": "2026-09-21",
    "time": "19:49:56",
@@ -146036,6 +149350,358 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام محمود‬ ‫בקשת הצטרפות נשלחה על ידי ~ ام محمود‬"
+  },
+  {
+   "id": "wa-2026-09-21-203038-7",
+   "date": "2026-09-21",
+   "time": "20:30:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام سامر",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام سامر‬"
+  },
+  {
+   "id": "wa-2026-09-21-203451-7",
+   "date": "2026-09-21",
+   "time": "20:34:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ שאדיה מתאני",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ שאדיה מתאני‬"
+  },
+  {
+   "id": "wa-2026-09-21-233108-7",
+   "date": "2026-09-21",
+   "time": "23:31:08",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אור כוכב 💫",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אור כוכב 💫‬"
+  },
+  {
+   "id": "wa-2026-09-21-233414-7",
+   "date": "2026-09-21",
+   "time": "23:34:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ --",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ --‬"
+  },
+  {
+   "id": "wa-2026-09-21-234158-7",
+   "date": "2026-09-21",
+   "time": "23:41:58",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ داليا فادي",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ داليا فادي‬"
+  },
+  {
+   "id": "wa-2026-09-21-235815-7",
+   "date": "2026-09-21",
+   "time": "23:58:15",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Shahd",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Shahd‬ ‫בקשת הצטרפות נשלחה על ידי ~ Shahd‬"
+  },
+  {
+   "id": "wa-2026-09-22-013459-7",
+   "date": "2026-09-22",
+   "time": "01:34:59",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ לילא אלהרוש",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ לילא אלהרוש‬"
+  },
+  {
+   "id": "wa-2026-09-22-045723-7",
+   "date": "2026-09-22",
+   "time": "04:57:23",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ❤️",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ❤️‬"
+  },
+  {
+   "id": "wa-2026-09-22-060531-7",
+   "date": "2026-09-22",
+   "time": "06:05:31",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام وهيب",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام وهيب‬"
+  },
+  {
+   "id": "wa-2026-09-22-062620-7",
+   "date": "2026-09-22",
+   "time": "06:26:20",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🌹",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🌹‬"
+  },
+  {
+   "id": "wa-2026-09-22-063752-7",
+   "date": "2026-09-22",
+   "time": "06:37:52",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ haneen",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ haneen‬"
+  },
+  {
+   "id": "wa-2026-09-22-065132-7",
+   "date": "2026-09-22",
+   "time": "06:51:32",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🥰",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🥰‬"
+  },
+  {
+   "id": "wa-2026-09-22-071542-7",
+   "date": "2026-09-22",
+   "time": "07:15:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ .",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ .‬"
+  },
+  {
+   "id": "wa-2026-09-22-080242-7",
+   "date": "2026-09-22",
+   "time": "08:02:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ كل مآيأتي من الله هو جميل",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ كل مآيأتي من الله هو جميل‬"
+  },
+  {
+   "id": "wa-2026-09-22-085052-7",
+   "date": "2026-09-22",
+   "time": "08:50:52",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ لما",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ لما‬"
+  },
+  {
+   "id": "wa-2026-09-22-101228-7",
+   "date": "2026-09-22",
+   "time": "10:12:28",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Shahinaz Aldgamin❤️🌹",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Shahinaz Aldgamin❤️🌹‬"
   },
   {
    "id": "wa-2026-09-22-101913-5",
@@ -146166,6 +149832,28 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "انحجز هذي الفرشه جديده رهط כרטיס איש קשר הושמט"
+  },
+  {
+   "id": "wa-2026-09-22-120534-7",
+   "date": "2026-09-22",
+   "time": "12:05:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Ranen",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Ranen‬"
   },
   {
    "id": "wa-2026-09-22-120941-3",
@@ -146306,6 +149994,56 @@
    "needsReview": true,
    "mediaCount": 11,
    "rawText": "اخت زوجي بدون فرشه شقيب [טלפון] وفي كمان كيس كبابي شاي من رهط صباح الخير عندي لبس لولد وبنت من جيل 0-6 شهور بحالة ممتازة عرعرة النقب סרטון הווידאו הושמט [טלפון] انحجزن لا تبعثن للصبيه عندي كثير أغراض من البيت حقات شتويه بحاله ممتازه وأدوات مطبخ طناجر وصحون وكثير أغرض قولي هالمجموعه ياخذنهن ببعث مكوم [טלפון] عرعره انحجزن"
+  },
+  {
+   "id": "wa-2026-09-22-132919-7",
+   "date": "2026-09-22",
+   "time": "13:29:19",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "כיסאות",
+     "qty": 1,
+     "matched": "كرسي"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 4,
+   "rawText": "[טלפון] الطيبه بحالة ممتازة كرسي اكل وסלקל"
+  },
+  {
+   "id": "wa-2026-09-22-133442-7",
+   "date": "2026-09-22",
+   "time": "13:34:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ שימאא איהאב פהמי",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ שימאא איהאב פהמי‬"
   },
   {
    "id": "wa-2026-09-22-141231-6",
@@ -146670,6 +150408,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ حياتي انااا😘‬"
   },
   {
+   "id": "wa-2026-09-22-173918-7",
+   "date": "2026-09-22",
+   "time": "17:39:18",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام جلال",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام جلال‬"
+  },
+  {
    "id": "wa-2026-09-22-173950-6",
    "date": "2026-09-22",
    "time": "17:39:50",
@@ -146690,6 +150450,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ حياتي انااا😘‬"
+  },
+  {
+   "id": "wa-2026-09-22-174537-7",
+   "date": "2026-09-22",
+   "time": "17:45:37",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام الامين",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام الامين‬"
   },
   {
    "id": "wa-2026-09-22-183252-6",
@@ -146780,6 +150562,50 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ 🖤‬"
   },
   {
+   "id": "wa-2026-09-22-211042-7",
+   "date": "2026-09-22",
+   "time": "21:10:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ أم احمد",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ أم احمد‬"
+  },
+  {
+   "id": "wa-2026-09-22-211532-7",
+   "date": "2026-09-22",
+   "time": "21:15:32",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ام الجود والكرم",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام الجود والكرم‬"
+  },
+  {
    "id": "wa-2026-09-22-232007-6",
    "date": "2026-09-22",
    "time": "23:20:07",
@@ -146800,6 +150626,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ انا‬"
+  },
+  {
+   "id": "wa-2026-09-23-072333-7",
+   "date": "2026-09-23",
+   "time": "07:23:33",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ hala khateb✨️🦋",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "قبل ما تختاري «أرميها»… تذكّري إنها ممكن تكون القطعة الناقصة ببيتٍ ثاني. صورة واحدة بالمجموعة ممكن تغيّر مصيرها. اختاري لها حياة ثانية مع «من بيتي لبيتك» 🤍♻ https://chat.whatsapp.com/Jf8sy5qyUFLLK1svl680gB?s=cl&p=i&mlu=4&ilr=4"
   },
   {
    "id": "wa-2026-09-23-091532-3",
@@ -146939,6 +150787,28 @@
    "needsReview": false,
    "mediaCount": 1,
    "rawText": "السلام عليكم عندي لول خشب مع فرشه والمتساب تبعه كويس اللي معنيه في تحكي تجي تاخذه من عندي يافا_تل ابيب[טלפון]"
+  },
+  {
+   "id": "wa-2026-09-23-114042-7",
+   "date": "2026-09-23",
+   "time": "11:40:42",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ 🎀אבתיהאל נגאר 🎀",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 🎀אבתיהאל נגאר 🎀‬"
   },
   {
    "id": "wa-2026-09-23-123435-3",
@@ -150309,6 +154179,56 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ Am adwan‬"
   },
   {
+   "id": "wa-2026-09-28-174336-7",
+   "date": "2026-09-28",
+   "time": "17:43:36",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "وتخوت"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "[טלפון] شرين الطيبه المثلث موجود كمان عندها غرف نوم وتخوت كل الموجود بالصور - نقلت دار جديده"
+  },
+  {
+   "id": "wa-2026-09-28-174617-7",
+   "date": "2026-09-28",
+   "time": "17:46:17",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ إمہ مہهديہ",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ إمہ مہهديہ‬"
+  },
+  {
    "id": "wa-2026-09-28-183232-1",
    "date": "2026-09-28",
    "time": "18:32:32",
@@ -151499,6 +155419,28 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ Am Watan‬"
   },
   {
+   "id": "wa-2026-09-29-122914-7",
+   "date": "2026-09-29",
+   "time": "12:29:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ إمہ مہهديہ",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ إمہ مہهديہ‬"
+  },
+  {
    "id": "wa-2026-09-29-122936-2",
    "date": "2026-09-29",
    "time": "12:29:36",
@@ -151809,6 +155751,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ الاء الزيادنة‬"
   },
   {
+   "id": "wa-2026-09-29-194855-7",
+   "date": "2026-09-29",
+   "time": "19:48:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ hala khateb✨️🦋",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "يمكن عندك غرض مركون، وعند غيرك مكان إله 💓 هيك منلتقي في «من بيتي لبيتك»بنشارك أغراض بحالة منيحة ..وكل واحدة فينا بتقدر تعطي وتأخذ..♻️ وصار الوقت تصيري جزء من المُبادرة وتشاركي الرابط مع صاحباتك زميلاتك عيلتك 💓"
+  },
+  {
    "id": "wa-2026-09-29-200837-6",
    "date": "2026-09-29",
    "time": "20:08:37",
@@ -151829,6 +155793,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Braa‬"
+  },
+  {
+   "id": "wa-2026-09-29-211038-7",
+   "date": "2026-09-29",
+   "time": "21:10:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אמאני",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אמאני‬"
   },
   {
    "id": "wa-2026-09-29-211507-3",
@@ -152253,6 +156239,28 @@
    "rawText": "صبايا يعطيكن العافية 🪷🌸 بالنسبه للصبايا الي بطلبو توصيل من صاحبه الغرض ممنوع تطلبي من صاحب الغرض توصيل⭕⭕ انتِ ابتحجز الغرض مجبوره انت تروحي تستلميه رجاءا صبايا لا تطلبن توصيل من صاحبه الغرض"
   },
   {
+   "id": "wa-2026-09-30-155746-7",
+   "date": "2026-09-30",
+   "time": "15:57:46",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "laila",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי laila‬"
+  },
+  {
    "id": "wa-2026-09-30-160355-4",
    "date": "2026-09-30",
    "time": "16:03:55",
@@ -152317,6 +156325,62 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام محمد‬ ‫בקשת הצטרפות נשלחה על ידי ~ ام محمد‬ ‫בקשת הצטרפות נשלחה על ידי ~ ام محمد‬ ‫בקשת הצטרפות נשלחה על ידי ~ ام محمد‬ ‫בקשת הצטרפות נשלחה על ידי ~ ام محمد‬"
+  },
+  {
+   "id": "wa-2026-09-30-170206-7",
+   "date": "2026-09-30",
+   "time": "17:02:06",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "סלקל",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ 💕💜",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
+  },
+  {
+   "id": "wa-2026-09-30-170657-7",
+   "date": "2026-09-30",
+   "time": "17:06:57",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "הליכון לתינוק",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ 💕💜",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
   },
   {
    "id": "wa-2026-09-30-170950-1",
@@ -153638,6 +157702,100 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ 🨭حجره ورقه مقص‬"
   },
   {
+   "id": "wa-2026-10-02-135855-7",
+   "date": "2026-10-02",
+   "time": "13:58:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מקרר",
+     "qty": 1,
+     "matched": "ثلاجه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "סרטון הווידאו הושמט ثلاجة شغاله وبحالة منيحه الطيبة للتواصل [טלפון]"
+  },
+  {
+   "id": "wa-2026-10-02-141751-7",
+   "date": "2026-10-02",
+   "time": "14:17:51",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אסלאם עלאמה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אסלאם עלאמה‬"
+  },
+  {
+   "id": "wa-2026-10-02-143557-7",
+   "date": "2026-10-02",
+   "time": "14:35:57",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ חנאן עלאמה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ חנאן עלאמה‬"
+  },
+  {
+   "id": "wa-2026-10-02-143756-7",
+   "date": "2026-10-02",
+   "time": "14:37:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ אם עמרי🤍",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ אם עמרי🤍‬"
+  },
+  {
    "id": "wa-2026-10-02-143803-2",
    "date": "2026-10-02",
    "time": "14:38:03",
@@ -153759,6 +157917,28 @@
    "needsReview": false,
    "mediaCount": 3,
    "rawText": "في قسم شتوي لعمر 18-20 والباقي صيفي لصابيا بعمر 15-20 ويلي ودها تحجز تبعث رساله مش اتصال[טלפון] هذا رقمي بير السبع _حوره"
+  },
+  {
+   "id": "wa-2026-10-02-171740-7",
+   "date": "2026-10-02",
+   "time": "17:17:40",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ yasmenfadelafadela",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ yasmenfadelafadela‬"
   },
   {
    "id": "wa-2026-10-02-174059-1",
@@ -154759,6 +158939,28 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ 𝓡𝓸𝓪𝔂𝓪18‬"
   },
   {
+   "id": "wa-2026-10-03-181825-7",
+   "date": "2026-10-03",
+   "time": "18:18:25",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ חנאן עלאמה",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ חנאן עלאמה‬"
+  },
+  {
    "id": "wa-2026-10-03-182332-1",
    "date": "2026-10-03",
    "time": "18:23:32",
@@ -155245,6 +159447,34 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ עאישה אלצאנע‬"
   },
   {
+   "id": "wa-2026-10-04-142812-7",
+   "date": "2026-10-04",
+   "time": "14:28:12",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "בגדי ילדים",
+     "qty": 4,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "~ doha",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "في اربع بلاطين جداد نمره 6 اذا حدا معني فيهن اجن هديه لبنتي وهي عمرها ٤ سنين كبار كثير [טלפון] من الطيبة"
+  },
+  {
    "id": "wa-2026-10-04-150808-2",
    "date": "2026-10-04",
    "time": "15:08:08",
@@ -155589,6 +159819,28 @@
    "needsReview": false,
    "mediaCount": 2,
    "rawText": "[טלפון] رهط"
+  },
+  {
+   "id": "wa-2026-10-04-211421-7",
+   "date": "2026-10-04",
+   "time": "21:14:21",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ Thanaa",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Thanaa‬"
   },
   {
    "id": "wa-2026-10-05-090544-6",
@@ -156604,6 +160856,34 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ..‬"
   },
   {
+   "id": "wa-2026-10-07-075604-7",
+   "date": "2026-10-07",
+   "time": "07:56:04",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "אופניים",
+     "qty": 1,
+     "matched": "دراجه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ hala khateb✨️🦋",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "كبروا عليها… بس الفرحة اللي فيها بعدها قدّامها عمر ..🤍🚲 يمكن طفلك صار بدّه درّاجة أكبر، وطفل ثاني بستنى أول لفّة. مرّريها… وخلي الحكاية تكمل. عندك أغراض كبروا عليها أولادك ولسّه بحالة منيحة؟ ابعثيلنا صورها ومنطقتك عالخاص، لننشرها مجانًا. من بيتي لبيتك ♻️🤍 סרטון הווידאו הושמט كبروا عليها… بس الفرحة اللي فيها بعدها قدّامها عمر ..🤍🚲 يمكن طفلك صار بدّه درّاجة أكبر، وطفل ثاني بستنى أول لفّة. مرّريها… وخلي الحكاية تكمل. عندك أغراض كبروا عليها أولادك ولسّه بحالة منيحة؟ ابعثيلنا صورها ومنطقتك عالخاص، لننشرها مجانًا. من بيتي لبيتك ♻️🤍 סרטון הווידאו הושמט"
+  },
+  {
    "id": "wa-2026-10-07-083917-4",
    "date": "2026-10-07",
    "time": "08:39:17",
@@ -157522,6 +161802,34 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ alhmdllahalhmdllah42‬"
   },
   {
+   "id": "wa-2026-10-08-075638-7",
+   "date": "2026-10-08",
+   "time": "07:56:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "فرشة مفرد ونص بحالة ممتازة [טלפון] الطيبة"
+  },
+  {
    "id": "wa-2026-10-08-091545-1",
    "date": "2026-10-08",
    "time": "09:15:45",
@@ -158368,6 +162676,62 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ❤️‬"
   },
   {
+   "id": "wa-2026-10-09-173848-7",
+   "date": "2026-10-09",
+   "time": "17:38:48",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "matched": "تخت بيبي"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "تخت بيبي بوضع ممتاز [טלפון] الطيبة"
+  },
+  {
+   "id": "wa-2026-10-09-175255-7",
+   "date": "2026-10-09",
+   "time": "17:52:55",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "الطيبه[טלפון]"
+  },
+  {
    "id": "wa-2026-10-09-180215-2",
    "date": "2026-10-09",
    "time": "18:02:15",
@@ -158512,6 +162876,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ .‬"
+  },
+  {
+   "id": "wa-2026-10-09-213334-7",
+   "date": "2026-10-09",
+   "time": "21:33:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "https://www.instagram.com/p/DeR7-G8MzOZ/?xtok=MWowangweG83M3lvMQ=="
   },
   {
    "id": "wa-2026-10-10-081504-1",
@@ -159329,6 +163715,56 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام محمد من كسيفه‬"
+  },
+  {
+   "id": "wa-2026-10-11-125924-7",
+   "date": "2026-10-11",
+   "time": "12:59:24",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "matched": "غساله"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "غساله ونشافه ومتكان مي ورادياتور كلو شغال من الطيبه الي بحاجه لالهن يجي يوخدهن[טלפון]"
+  },
+  {
+   "id": "wa-2026-10-11-131234-7",
+   "date": "2026-10-11",
+   "time": "13:12:34",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": true,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "صبابا انحجزن الاغراض ما حد يبعث للصبية"
   },
   {
    "id": "wa-2026-10-11-144705-2",
@@ -160751,6 +165187,34 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ very authentic‬ ‫בקשת הצטרפות נשלחה על ידי ~ very authentic‬"
   },
   {
+   "id": "wa-2026-10-14-200215-7",
+   "date": "2026-10-14",
+   "time": "20:02:15",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "חיתולים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "مرحبا حبيبتي شو الاخبار في عندي بامبز كلسون نمره ٦ من جيل سنتين الطيبة [טלפון]"
+  },
+  {
    "id": "wa-2026-10-14-203239-3",
    "date": "2026-10-14",
    "time": "20:32:39",
@@ -160959,6 +165423,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Asya Arar‬"
+  },
+  {
+   "id": "wa-2026-10-15-172435-7",
+   "date": "2026-10-15",
+   "time": "17:24:35",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ hala khateb✨️🦋",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
   },
   {
    "id": "wa-2026-10-15-173258-1",
@@ -161478,6 +165964,104 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Jomana_alamrani♥️🫰🏻‬"
   },
   {
+   "id": "wa-2026-10-17-091029-7",
+   "date": "2026-10-17",
+   "time": "09:10:29",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטת תינוק",
+     "qty": 1,
+     "matched": "تخت بيبي"
+    },
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "تخت"
+    },
+    {
+     "nameHe": "מזרן",
+     "qty": 1,
+     "matched": "فرشه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 4,
+   "rawText": "تواليت تخت بدون فرشه تخت بيبي מעבר نشافه كله لحاله ممتازه رامي مصاروه [טלפון] الطيبه"
+  },
+  {
+   "id": "wa-2026-10-17-092718-7",
+   "date": "2026-10-17",
+   "time": "09:27:18",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "انجزن الاغراض صبايا"
+  },
+  {
+   "id": "wa-2026-10-17-102422-7",
+   "date": "2026-10-17",
+   "time": "10:24:22",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מכונת כביסה",
+     "qty": 1,
+     "matched": "غساله"
+    },
+    {
+     "nameHe": "טלוויזיה",
+     "qty": 1,
+     "matched": "وشاشه"
+    },
+    {
+     "nameHe": "מדיח כלים",
+     "qty": 1,
+     "matched": "جلايه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 7,
+   "rawText": "غساله ونشافه ومتكان مي ورادياتور كلو شغال من الطيبه الي بحاجه لالهن يجي يوخدهن[טלפון] جلايه شغاله وبحاله منيحه بس بدها تنزيل من الطابق الثالث وشاشه شغاله بس بدون نترنت"
+  },
+  {
    "id": "wa-2026-10-17-113516-1",
    "date": "2026-10-17",
    "time": "11:35:16",
@@ -161742,13 +166326,14 @@
     1,
     3,
     5,
-    6
+    6,
+    7
    ],
    "mergedBy": [
     "media",
     "text"
    ],
-   "blockCount": 4,
+   "blockCount": 5,
    "needsReview": false,
    "mediaCount": 4,
    "rawText": "مكوى بخار شغال الي معنيه في تبعث رساله عرعرة📍للاستلام اليوم مكوى بخار شغال الي معنيه في تبعث رساله عرعرة📍للاستلام اليوم عندي توست شغال ١٠٠٪؜ بس مكسوره البلاستيك السمره عرعرة📍 عندي توست شغال ١٠٠٪؜ بس مكسوره البلاستيك السمره عرعرة📍"
@@ -162354,6 +166939,34 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ لا اله الا الله‬"
+  },
+  {
+   "id": "wa-2026-10-18-130256-7",
+   "date": "2026-10-18",
+   "time": "13:02:56",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "ארון בגדים",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 5,
+   "rawText": "[טלפון]"
   },
   {
    "id": "wa-2026-10-18-133019-4",
@@ -163599,6 +168212,34 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬ ‫בקשת הצטרפות נשלחה על ידי ~ 0‬"
   },
   {
+   "id": "wa-2026-10-20-151014-7",
+   "date": "2026-10-20",
+   "time": "15:10:14",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "matched": "صالون"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "كنبايتين صالون بحالة جيدة الطيبة"
+  },
+  {
    "id": "wa-2026-10-20-154000-1",
    "date": "2026-10-20",
    "time": "15:40:00",
@@ -163641,6 +168282,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ اركان‬"
+  },
+  {
+   "id": "wa-2026-10-20-195736-7",
+   "date": "2026-10-20",
+   "time": "19:57:36",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ ‏Dr.Mirna Uw",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ Dr.Mirna Uw‬"
   },
   {
    "id": "wa-2026-10-20-195810-3",
@@ -164376,6 +169039,39 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ חנאן אבו עסא ‬"
+  },
+  {
+   "id": "wa-2026-10-23-112910-7",
+   "date": "2026-10-23",
+   "time": "11:29:10",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "תנור חימום",
+     "qty": 1,
+     "source": "vision"
+    },
+    {
+     "nameHe": "מאוורר",
+     "qty": 1,
+     "source": "vision"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "vision",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 2,
+   "rawText": "دفاي وهواي شغالات وبحالة جيدة الطيبة"
   },
   {
    "id": "wa-2026-10-23-130956-2",
@@ -165418,6 +170114,34 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ ام مجد‬"
+  },
+  {
+   "id": "wa-2026-10-25-072738-7",
+   "date": "2026-10-25",
+   "time": "07:27:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שקית נעלים",
+     "qty": 1,
+     "matched": "بوت"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "بوت ايكون بالكرتونه نمره 41 الطيبة المعنيه تتواصل معي סרטון הווידאו הושמט"
   },
   {
    "id": "wa-2026-10-25-080527-2",
@@ -166641,6 +171365,28 @@
    "rawText": ""
   },
   {
+   "id": "wa-2026-10-26-175138-7",
+   "date": "2026-10-26",
+   "time": "17:51:38",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ hala khateb✨️🦋",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
+  },
+  {
    "id": "wa-2026-10-26-202757-1",
    "date": "2026-10-26",
    "time": "20:27:57",
@@ -167452,6 +172198,39 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ☺️‬"
   },
   {
+   "id": "wa-2026-10-28-180447-7",
+   "date": "2026-10-28",
+   "time": "18:04:47",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "מיטה",
+     "qty": 1,
+     "matched": "وتخت"
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "مكتبه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 3,
+   "rawText": "مكتبه وتخت بحاله جيدة جداً الطيبة [טלפון]"
+  },
+  {
    "id": "wa-2026-10-28-190606-2",
    "date": "2026-10-28",
    "time": "19:06:06",
@@ -168123,26 +172902,37 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ Bayan‬"
   },
   {
-   "id": "wa-2026-10-30-102400-7",
+   "id": "wa-2026-10-30-102123-7",
    "date": "2026-10-30",
-   "time": "10:24:00",
+   "time": "10:21:23",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
-   "items": [],
-   "unidentified": true,
-   "itemSource": null,
-   "isListing": false,
+   "items": [
+    {
+     "nameHe": "סט ספות",
+     "qty": 1,
+     "matched": "صالون"
+    },
+    {
+     "nameHe": "ספריית ילדים",
+     "qty": 1,
+     "matched": "ومكتبه"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
    "mergedBy": [],
    "blockCount": 1,
    "needsReview": false,
-   "mediaCount": 0,
-   "rawText": "בהמתנה להודעה זו בהמתנה להודעה זו 15 متر الطيبه [טלפון]"
+   "mediaCount": 6,
+   "rawText": "صالون ومكتبه الطيبه +972 54‑580‑7749 15 متر الطيبه [טלפון]"
   },
   {
    "id": "wa-2026-10-30-111512-1",
@@ -169846,9 +174636,9 @@
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ فريال ابو العسل‬"
   },
   {
-   "id": "wa-2026-11-01-123400-7",
+   "id": "wa-2026-11-01-123426-7",
    "date": "2026-11-01",
-   "time": "12:34:00",
+   "time": "12:34:26",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -169868,7 +174658,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -170074,9 +174864,9 @@
    "rawText": "في عندي هدوم للبنات من جيل مولود لجيل سنه في شتوي وفي صيفي سنة الي معنية تجي تاخذهن اليوم اربع كياس كبار رهط [טלפון]"
   },
   {
-   "id": "wa-2026-11-01-140400-7",
+   "id": "wa-2026-11-01-140425-7",
    "date": "2026-11-01",
-   "time": "14:04:00",
+   "time": "14:04:25",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -170085,7 +174875,7 @@
    "itemSource": null,
    "isListing": false,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -170597,9 +175387,9 @@
    "rawText": "[טלפון] بير السبع"
   },
   {
-   "id": "wa-2026-11-02-094900-7",
+   "id": "wa-2026-11-02-094918-7",
    "date": "2026-11-02",
-   "time": "09:49:00",
+   "time": "09:49:18",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -170608,7 +175398,7 @@
    "itemSource": null,
    "isListing": false,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -170702,6 +175492,28 @@
    "needsReview": false,
    "mediaCount": 0,
    "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ أُم البرّاء❤️.‬"
+  },
+  {
+   "id": "wa-2026-11-02-103036-7",
+   "date": "2026-11-02",
+   "time": "10:30:36",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "~ أمم فهد❤️",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ~ أمم فهد❤️‬"
   },
   {
    "id": "wa-2026-11-02-103531-6",
@@ -171342,18 +176154,18 @@
    "rawText": "غاز بيشتغل الاستلام من رهط متحام خمسة"
   },
   {
-   "id": "wa-2026-11-03-205000-7",
+   "id": "wa-2026-11-03-205035-7",
    "date": "2026-11-03",
-   "time": "20:50:00",
+   "time": "20:50:35",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
    "items": [],
    "unidentified": true,
    "itemSource": null,
-   "isListing": true,
+   "isListing": false,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "~ hala khateb✨️🦋",
    "seenInGroups": [
     7
    ],
@@ -171361,7 +176173,7 @@
    "blockCount": 1,
    "needsReview": false,
    "mediaCount": 1,
-   "rawText": ""
+   "rawText": "إعادة التدوير أسلوب حياة… وغرضك ممكن ينَوّر بيت غيرك ..💡 *انضمّي لمبادرتنا من بيتي لبيتك* ..وخلي أغراضك تكمّل حكايتها ببيت جديد♻️🏠 انضمي معنا وشاركي صاحباتك رابط المبادرة📲"
   },
   {
    "id": "wa-2026-11-04-005533-5",
@@ -171729,9 +176541,9 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام سند‬"
   },
   {
-   "id": "wa-2026-11-05-085600-7",
+   "id": "wa-2026-11-05-085638-7",
    "date": "2026-11-05",
-   "time": "08:56:00",
+   "time": "08:56:38",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -171746,7 +176558,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -174492,9 +179304,9 @@
    "rawText": "[טלפון] رهط"
   },
   {
-   "id": "wa-2026-11-09-111500-7",
+   "id": "wa-2026-11-09-111537-7",
    "date": "2026-11-09",
-   "time": "11:15:00",
+   "time": "11:15:37",
    "city": "אחר",
    "cityInherited": false,
    "cityResolved": false,
@@ -174519,7 +179331,7 @@
    "itemSource": "text",
    "isListing": true,
    "reserved": false,
-   "sender": "‏‪[טלפון]‬‏",
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
    "seenInGroups": [
     7
    ],
@@ -175350,6 +180162,28 @@
    "rawText": "‫בקשת הצטרפות נשלחה על ידי ~ ام.مجد ابو عصا‬"
   },
   {
+   "id": "wa-2026-11-11-143112-7",
+   "date": "2026-11-11",
+   "time": "14:31:12",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "ראניה בלאל",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪[טלפון]‬ נשלחה על ידי ראניה בלאל‬"
+  },
+  {
    "id": "wa-2026-11-11-145537-1",
    "date": "2026-11-11",
    "time": "14:55:37",
@@ -175457,6 +180291,28 @@
    "needsReview": false,
    "mediaCount": 2,
    "rawText": "[טלפון] عرعره"
+  },
+  {
+   "id": "wa-2026-11-11-162822-7",
+   "date": "2026-11-11",
+   "time": "16:28:22",
+   "city": "ערערה בנגב",
+   "cityInherited": true,
+   "cityResolved": true,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "ראניה בלאל",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 0,
+   "rawText": "‫בקשה לצירוף של ‪+970 568 657 902‬ נשלחה על ידי ראניה בלאל‬"
   },
   {
    "id": "wa-2026-11-11-165919-2",
@@ -175988,6 +180844,28 @@
    "rawText": ""
   },
   {
+   "id": "wa-2026-11-13-114441-7",
+   "date": "2026-11-13",
+   "time": "11:44:41",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [],
+   "unidentified": true,
+   "itemSource": null,
+   "isListing": false,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": ""
+  },
+  {
    "id": "wa-2026-11-13-115732-2",
    "date": "2026-11-13",
    "time": "11:57:32",
@@ -176116,6 +180994,34 @@
    "needsReview": false,
    "mediaCount": 3,
    "rawText": "رهط"
+  },
+  {
+   "id": "wa-2026-11-13-152346-7",
+   "date": "2026-11-13",
+   "time": "15:23:46",
+   "city": "אחר",
+   "cityInherited": false,
+   "cityResolved": false,
+   "items": [
+    {
+     "nameHe": "שקית בגדים",
+     "qty": 1,
+     "matched": "فستان"
+    }
+   ],
+   "unidentified": false,
+   "itemSource": "text",
+   "isListing": true,
+   "reserved": false,
+   "sender": "מונא מסארוה שחקנית מביתי לביתך",
+   "seenInGroups": [
+    7
+   ],
+   "mergedBy": [],
+   "blockCount": 1,
+   "needsReview": false,
+   "mediaCount": 1,
+   "rawText": "فستان خياطه التبس مرتين مش اكثر بلبس نمره 38/40 وفي كمان اواعي /قمصان /جاكيتات نمره ميديم لارج لصبيه . الطيبة الي معنيه تتواصل"
   },
   {
    "id": "wa-2026-11-13-154338-6",
