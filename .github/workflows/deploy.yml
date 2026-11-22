@@ -11,6 +11,8 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  # The wait step below asks this run which artifacts it has.
+  actions: read
 
 concurrency:
   group: pages
@@ -62,6 +64,29 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
+      # GitHub's artifact API is eventually consistent, and deploy-pages asks
+      # it for the artifact the step above just finished uploading. Twice today
+      # it was told there were none and failed the deploy — while the artifact
+      # was in fact there, listed under this very run, moments later. The site
+      # was fine both times because the next hourly push rebuilt it, but a
+      # deploy that fails for a reason that was never true is noise that hides
+      # the failures that matter. So wait until the API admits it exists.
+      - name: Wait for the artifact to be listed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 30); do
+            n=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" \
+                  --jq '[.artifacts[] | select(.name == "github-pages")] | length')
+            if [ "${n:-0}" -ge 1 ]; then
+              echo "artifact listed after $i check(s)"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "the artifact was never listed — not a lag, something really failed" >&2
+          exit 1
 
       - id: deployment
         uses: actions/deploy-pages@v4
