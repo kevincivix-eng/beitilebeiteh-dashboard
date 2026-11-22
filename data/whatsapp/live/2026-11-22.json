@@ -6785,6 +6785,252 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "ACAA22C68DF265C5C5728FB95C480C5D",
+   "group": 2,
+   "time": "17:56:22",
+   "sec": 64582,
+   "sender": "m:8e2a6825b6",
+   "text": "عنديذفساتين جداد وعبايات مقاس 42 وفي كمان جلي للي حابه تستلم فوري",
+   "media": [
+    {
+     "sha256": "d96aee4b92202b5556a4d61f9a3bc5a88f47226327829b49207cae1eab2dba02",
+     "md5": "d236890858714a0b9651e1c76221e204",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7CEF646E63C0B216E283FAAD1FBE5A",
+   "group": 1,
+   "time": "17:56:23",
+   "sec": 64583,
+   "sender": "m:8e2a6825b6",
+   "text": "عنديذفساتين جداد وعبايات مقاس 42 وفي كمان جلي للي حابه تستلم فوري",
+   "media": [
+    {
+     "sha256": "d96aee4b92202b5556a4d61f9a3bc5a88f47226327829b49207cae1eab2dba02",
+     "md5": "d236890858714a0b9651e1c76221e204",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1782480BD7A2F3D92D0CB7AE927D21",
+   "group": 3,
+   "time": "17:56:23",
+   "sec": 64583,
+   "sender": "m:8e2a6825b6",
+   "text": "عنديذفساتين جداد وعبايات مقاس 42 وفي كمان جلي للي حابه تستلم فوري",
+   "media": [
+    {
+     "sha256": "d96aee4b92202b5556a4d61f9a3bc5a88f47226327829b49207cae1eab2dba02",
+     "md5": "d236890858714a0b9651e1c76221e204",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC487D4E7858C2CB23F4E2CB1920EC2E",
+   "group": 1,
+   "time": "17:56:24",
+   "sec": 64584,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "ACABDB3F11531A938BF1A47C6BCFFE80",
+   "group": 2,
+   "time": "17:56:24",
+   "sec": 64584,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC0BFC903D99D69929A5EC9168699B3A",
+   "group": 5,
+   "time": "17:56:24",
+   "sec": 64584,
+   "sender": "m:8e2a6825b6",
+   "text": "عنديذفساتين جداد وعبايات مقاس 42 وفي كمان جلي للي حابه تستلم فوري",
+   "media": [
+    {
+     "sha256": "d96aee4b92202b5556a4d61f9a3bc5a88f47226327829b49207cae1eab2dba02",
+     "md5": "d236890858714a0b9651e1c76221e204",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB28D81589425235E76DAF2F1422DCB",
+   "group": 2,
+   "time": "17:56:25",
+   "sec": 64585,
+   "sender": "m:8e2a6825b6",
+   "text": "وفي كمان جلي جديد",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2505CF3882CA4E0ECA4DEEC302670C",
+   "group": 3,
+   "time": "17:56:25",
+   "sec": 64585,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC4040919A735957098CCD882AECCF5F",
+   "group": 5,
+   "time": "17:56:25",
+   "sec": 64585,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC4C5D050119DC53110547E75D168EDB",
+   "group": 1,
+   "time": "17:56:26",
+   "sec": 64586,
+   "sender": "m:8e2a6825b6",
+   "text": "وفي كمان جلي جديد",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC210FA89EFA9AC96BA2DC3DACDA6C46",
+   "group": 3,
+   "time": "17:56:26",
+   "sec": 64586,
+   "sender": "m:8e2a6825b6",
+   "text": "وفي كمان جلي جديد",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6A9F771629728AA63B19F8DF7D1853",
+   "group": 5,
+   "time": "17:56:26",
+   "sec": 64586,
+   "sender": "m:8e2a6825b6",
+   "text": "وفي كمان جلي جديد",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1E72C83A1F660FADAAF06D2AA182BD",
+   "group": 4,
+   "time": "17:56:28",
+   "sec": 64588,
+   "sender": "m:8e2a6825b6",
+   "text": "عنديذفساتين جداد وعبايات مقاس 42 وفي كمان جلي للي حابه تستلم فوري",
+   "media": [
+    {
+     "sha256": "d96aee4b92202b5556a4d61f9a3bc5a88f47226327829b49207cae1eab2dba02",
+     "md5": "d236890858714a0b9651e1c76221e204",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC03264B970D508A6AF29B6EC2A5D94A",
+   "group": 4,
+   "time": "17:56:29",
+   "sec": 64589,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC0ACB3F87FE6AA39A3212AB4D3036A5",
+   "group": 4,
+   "time": "17:56:29",
+   "sec": 64589,
+   "sender": "m:8e2a6825b6",
+   "text": "وفي كمان جلي جديد",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7BEC9DAD7A1BE0253E84FA33FDDF3F",
+   "group": 6,
+   "time": "17:56:32",
+   "sec": 64592,
+   "sender": "m:8e2a6825b6",
+   "text": "عنديذفساتين جداد وعبايات مقاس 42 وفي كمان جلي للي حابه تستلم فوري",
+   "media": [
+    {
+     "sha256": "d96aee4b92202b5556a4d61f9a3bc5a88f47226327829b49207cae1eab2dba02",
+     "md5": "d236890858714a0b9651e1c76221e204",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD774FB0B48339BF0A8B45C55CAC359",
+   "group": 6,
+   "time": "17:56:33",
+   "sec": 64593,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "ACB440468EB5DC5DED1F9B9BA75F639F",
+   "group": 6,
+   "time": "17:56:34",
+   "sec": 64594,
+   "sender": "m:8e2a6825b6",
+   "text": "وفي كمان جلي جديد",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -7387,6 +7633,36 @@
    "at": "2026-11-22T14:53:08.000Z",
    "time": "16:53:08",
    "targetId": "ACF42DE7C36F1593B705011C46FA3F4F"
+  },
+  {
+   "type": "left",
+   "group": 6,
+   "at": "2026-11-22T15:23:49.557Z",
+   "time": "17:23:49",
+   "count": 1,
+   "whoHashes": [
+    "0feebcc703a63f77"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 2,
+   "at": "2026-11-22T15:54:38.702Z",
+   "time": "17:54:38",
+   "count": 1,
+   "whoHashes": [
+    "272df8f1af84602a"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 1,
+   "at": "2026-11-22T15:57:55.920Z",
+   "time": "17:57:55",
+   "count": 1,
+   "whoHashes": [
+    "c4ebd104a8770b8d"
+   ]
   }
  ]
 }
