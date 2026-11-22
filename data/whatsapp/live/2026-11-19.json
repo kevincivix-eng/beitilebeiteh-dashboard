@@ -1,0 +1,1169 @@
+{
+ "date": "2026-11-19",
+ "source": "wa-live",
+ "tz": "Asia/Jerusalem",
+ "messages": [
+  {
+   "id": "AC6B37AE6165D9CE4BE07A87CC1CFF61",
+   "group": 6,
+   "time": "08:50:34",
+   "sec": 31834,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "f510252257f9a62a9c21ec3e0d24e31d0e2774bf9f40ff27acc4943e86f93230",
+     "md5": "19139a42f7b02ebf2f4a91e8b73fa6f0",
+     "kind": "videoMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE0F474A4888796C0E4EE1158F4E285",
+   "group": 6,
+   "time": "08:50:35",
+   "sec": 31835,
+   "sender": "m:458935bf01",
+   "text": "تخت مزوج مع فرشته \nفي حاله ممتازه \nبس الي معها توصيل وجديه تحكي معي \n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "15c7421ea8e42814"
+   ]
+  },
+  {
+   "id": "ACD746024B711E306BAB9C562C7C22BC",
+   "group": 1,
+   "time": "08:50:44",
+   "sec": 31844,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "f510252257f9a62a9c21ec3e0d24e31d0e2774bf9f40ff27acc4943e86f93230",
+     "md5": "19139a42f7b02ebf2f4a91e8b73fa6f0",
+     "kind": "videoMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6C4E3C5F2DBD0982428187BE5F10E3",
+   "group": 1,
+   "time": "08:50:45",
+   "sec": 31845,
+   "sender": "m:458935bf01",
+   "text": "تخت مزوج مع فرشته \nفي حاله ممتازه \nبس الي معها توصيل وجديه تحكي معي \n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "15c7421ea8e42814"
+   ]
+  },
+  {
+   "id": "ACCE684FD60920BCA3B441DF100EEB99",
+   "group": 2,
+   "time": "08:50:54",
+   "sec": 31854,
+   "sender": "m:458935bf01",
+   "text": "تخت مزوج مع فرشته \nفي حاله ممتازه \nبس الي معها توصيل وجديه تحكي معي \n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "15c7421ea8e42814"
+   ]
+  },
+  {
+   "id": "ACD2F6665B3C76FCCFB8AC2887F966AE",
+   "group": 2,
+   "time": "08:50:54",
+   "sec": 31854,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "f510252257f9a62a9c21ec3e0d24e31d0e2774bf9f40ff27acc4943e86f93230",
+     "md5": "19139a42f7b02ebf2f4a91e8b73fa6f0",
+     "kind": "videoMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4491D700A8EA56A553049A3BBF8D30",
+   "group": 3,
+   "time": "08:51:04",
+   "sec": 31864,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "f510252257f9a62a9c21ec3e0d24e31d0e2774bf9f40ff27acc4943e86f93230",
+     "md5": "19139a42f7b02ebf2f4a91e8b73fa6f0",
+     "kind": "videoMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC78B04990B90A5631AB4CFC1FCF8FE9",
+   "group": 3,
+   "time": "08:51:05",
+   "sec": 31865,
+   "sender": "m:458935bf01",
+   "text": "تخت مزوج مع فرشته \nفي حاله ممتازه \nبس الي معها توصيل وجديه تحكي معي \n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "15c7421ea8e42814"
+   ]
+  },
+  {
+   "id": "AC1474E835764ECD98F6C25349C1767A",
+   "group": 5,
+   "time": "08:51:14",
+   "sec": 31874,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "f510252257f9a62a9c21ec3e0d24e31d0e2774bf9f40ff27acc4943e86f93230",
+     "md5": "19139a42f7b02ebf2f4a91e8b73fa6f0",
+     "kind": "videoMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC29CA077E0F457860F84C3239850799",
+   "group": 5,
+   "time": "08:51:15",
+   "sec": 31875,
+   "sender": "m:458935bf01",
+   "text": "تخت مزوج مع فرشته \nفي حاله ممتازه \nبس الي معها توصيل وجديه تحكي معي \n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "15c7421ea8e42814"
+   ]
+  },
+  {
+   "id": "AC3B665E4CC8CF64710E78A7BD8CD790",
+   "group": 4,
+   "time": "08:51:58",
+   "sec": 31918,
+   "sender": "m:458935bf01",
+   "text": "تخت مزوج مع فرشته \nفي حاله ممتازه \nبس الي معها توصيل وجديه تحكي معي \n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "15c7421ea8e42814"
+   ]
+  },
+  {
+   "id": "AC5AB99DE5367D21E80DEF054239F473",
+   "group": 4,
+   "time": "08:51:58",
+   "sec": 31918,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "f510252257f9a62a9c21ec3e0d24e31d0e2774bf9f40ff27acc4943e86f93230",
+     "md5": "19139a42f7b02ebf2f4a91e8b73fa6f0",
+     "kind": "videoMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC27857FAB2C2706DEB188B96E236717",
+   "group": 4,
+   "time": "09:26:03",
+   "sec": 33963,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6F88B67992EF38B43997A99F1CCB84",
+   "group": 5,
+   "time": "09:26:12",
+   "sec": 33972,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC81F9EC8EDDCD3B7CB8D87880124824",
+   "group": 3,
+   "time": "09:26:18",
+   "sec": 33978,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC566D85EBEAFC19681F60E4724D6CD8",
+   "group": 2,
+   "time": "09:26:25",
+   "sec": 33985,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1BF6E25C60F3FDA913A4496083A44E",
+   "group": 1,
+   "time": "09:26:31",
+   "sec": 33991,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDFDB10830CA2A1D2E59720910597D4",
+   "group": 6,
+   "time": "09:26:40",
+   "sec": 34000,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC56C673889F7EAE72518C05395CA852",
+   "group": 1,
+   "time": "17:02:32",
+   "sec": 61352,
+   "sender": "m:8e2a6825b6",
+   "text": "مسالخير\nكيف الحال\nعندي كسين هدوم وفي اكمن سندل وكندره اذا بدكي اياهن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC06268612514B60B1DC3EC56D8D2B6A",
+   "group": 1,
+   "time": "17:02:32",
+   "sec": 61352,
+   "sender": "m:8e2a6825b6",
+   "text": "في عابيتين نمره لارج",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1286339B8B7BDD0D50461BA083BFDD",
+   "group": 1,
+   "time": "17:02:33",
+   "sec": 61353,
+   "sender": "m:8e2a6825b6",
+   "text": "وباقي هدوم من جيل سنتين لخمس سنين",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD95CF0C13905F0F03246E319861043",
+   "group": 1,
+   "time": "17:02:33",
+   "sec": 61353,
+   "sender": "m:8e2a6825b6",
+   "text": "بناتي",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCDAA34BC3065FD8B9197E56BC2B9B5",
+   "group": 1,
+   "time": "17:02:34",
+   "sec": 61354,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "92f004a5b5d6280ca743ba1e88e137b6d5fe733dfaadde0b4054c0055a9fca5e",
+     "md5": "ecb22fb8914bfb6f98b2bdaf07d6954d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEA71A3E575BDAF7639A0C7736D8CC9",
+   "group": 1,
+   "time": "17:02:34",
+   "sec": 61354,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3459caae106a8dd2813e53e060b6595539cc462dd49390d77b36be0e94b8e3d1",
+     "md5": "73d618eb28084a092ebbd8f029dc7025",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC91A317E6A5EF0F15BB32036FF51D71",
+   "group": 1,
+   "time": "17:02:35",
+   "sec": 61355,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]\nرهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "415b8de6966aaed1"
+   ]
+  },
+  {
+   "id": "AC254AACE0A67E418A36D60828B2B1B5",
+   "group": 2,
+   "time": "17:02:39",
+   "sec": 61359,
+   "sender": "m:8e2a6825b6",
+   "text": "مسالخير\nكيف الحال\nعندي كسين هدوم وفي اكمن سندل وكندره اذا بدكي اياهن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8B28F8C51DE15E0DFCF7BCEC2B1399",
+   "group": 2,
+   "time": "17:02:40",
+   "sec": 61360,
+   "sender": "m:8e2a6825b6",
+   "text": "في عابيتين نمره لارج",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC488EA3B13B9EA3613F45CFF26DBF98",
+   "group": 2,
+   "time": "17:02:40",
+   "sec": 61360,
+   "sender": "m:8e2a6825b6",
+   "text": "وباقي هدوم من جيل سنتين لخمس سنين",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4FAAAF6C9857D41C5ACCB4376C050D",
+   "group": 2,
+   "time": "17:02:41",
+   "sec": 61361,
+   "sender": "m:8e2a6825b6",
+   "text": "بناتي",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4188842285D32F91FCF5BEB1DDCFF7",
+   "group": 2,
+   "time": "17:02:41",
+   "sec": 61361,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "92f004a5b5d6280ca743ba1e88e137b6d5fe733dfaadde0b4054c0055a9fca5e",
+     "md5": "ecb22fb8914bfb6f98b2bdaf07d6954d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC26C42D2F6EC2EC6780A066159A09F3",
+   "group": 2,
+   "time": "17:02:42",
+   "sec": 61362,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]\nرهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "415b8de6966aaed1"
+   ]
+  },
+  {
+   "id": "AC5362F29FC10C63C938F5003B3BFE73",
+   "group": 2,
+   "time": "17:02:42",
+   "sec": 61362,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3459caae106a8dd2813e53e060b6595539cc462dd49390d77b36be0e94b8e3d1",
+     "md5": "73d618eb28084a092ebbd8f029dc7025",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6BFBBB0315E73B7355FCF647CDAD28",
+   "group": 3,
+   "time": "17:02:50",
+   "sec": 61370,
+   "sender": "m:8e2a6825b6",
+   "text": "مسالخير\nكيف الحال\nعندي كسين هدوم وفي اكمن سندل وكندره اذا بدكي اياهن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFFABD06E176C09230A96CF4D43F500",
+   "group": 3,
+   "time": "17:02:51",
+   "sec": 61371,
+   "sender": "m:8e2a6825b6",
+   "text": "في عابيتين نمره لارج",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC30CA23401CF5BD6F2FA16AAAB8A103",
+   "group": 3,
+   "time": "17:02:51",
+   "sec": 61371,
+   "sender": "m:8e2a6825b6",
+   "text": "وباقي هدوم من جيل سنتين لخمس سنين",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1D7E637ABE76691C5E4917EA298181",
+   "group": 3,
+   "time": "17:02:52",
+   "sec": 61372,
+   "sender": "m:8e2a6825b6",
+   "text": "بناتي",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC446DAFC91851CF39DC92DA0BED528D",
+   "group": 3,
+   "time": "17:02:52",
+   "sec": 61372,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "92f004a5b5d6280ca743ba1e88e137b6d5fe733dfaadde0b4054c0055a9fca5e",
+     "md5": "ecb22fb8914bfb6f98b2bdaf07d6954d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF08108DBA2EE9EB368050B8827943C",
+   "group": 3,
+   "time": "17:02:53",
+   "sec": 61373,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]\nرهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "415b8de6966aaed1"
+   ]
+  },
+  {
+   "id": "ACAA9E6E7CE584BC6A95F21B8F52EAD1",
+   "group": 3,
+   "time": "17:02:53",
+   "sec": 61373,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3459caae106a8dd2813e53e060b6595539cc462dd49390d77b36be0e94b8e3d1",
+     "md5": "73d618eb28084a092ebbd8f029dc7025",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3CD28459C859C0BF90D8EE60A21909",
+   "group": 4,
+   "time": "17:03:03",
+   "sec": 61383,
+   "sender": "m:8e2a6825b6",
+   "text": "مسالخير\nكيف الحال\nعندي كسين هدوم وفي اكمن سندل وكندره اذا بدكي اياهن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC95AF005C59CD664ECF7D000C7D4250",
+   "group": 4,
+   "time": "17:03:04",
+   "sec": 61384,
+   "sender": "m:8e2a6825b6",
+   "text": "في عابيتين نمره لارج",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC50DD15E86131008077AFF1053C0451",
+   "group": 4,
+   "time": "17:03:05",
+   "sec": 61385,
+   "sender": "m:8e2a6825b6",
+   "text": "وباقي هدوم من جيل سنتين لخمس سنين",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC50F1B704B0488A51A627D290532385",
+   "group": 4,
+   "time": "17:03:05",
+   "sec": 61385,
+   "sender": "m:8e2a6825b6",
+   "text": "بناتي",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC167C28F933BCEFC67685A32A1F5D3",
+   "group": 4,
+   "time": "17:03:05",
+   "sec": 61385,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "92f004a5b5d6280ca743ba1e88e137b6d5fe733dfaadde0b4054c0055a9fca5e",
+     "md5": "ecb22fb8914bfb6f98b2bdaf07d6954d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5FFCD37A9BDEF8B1000F2758807EB9",
+   "group": 4,
+   "time": "17:03:06",
+   "sec": 61386,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]\nرهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "415b8de6966aaed1"
+   ]
+  },
+  {
+   "id": "AC93AEEE6359B47130E9EB425BBAE9B1",
+   "group": 4,
+   "time": "17:03:06",
+   "sec": 61386,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3459caae106a8dd2813e53e060b6595539cc462dd49390d77b36be0e94b8e3d1",
+     "md5": "73d618eb28084a092ebbd8f029dc7025",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD86967E425A5E46C67A6546889C623",
+   "group": 6,
+   "time": "17:03:10",
+   "sec": 61390,
+   "sender": "m:8e2a6825b6",
+   "text": "مسالخير\nكيف الحال\nعندي كسين هدوم وفي اكمن سندل وكندره اذا بدكي اياهن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0B4DF113BB1511B644A721FE0A867A",
+   "group": 6,
+   "time": "17:03:11",
+   "sec": 61391,
+   "sender": "m:8e2a6825b6",
+   "text": "في عابيتين نمره لارج",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD99427CB61C48E41B69C53A766782E",
+   "group": 6,
+   "time": "17:03:12",
+   "sec": 61392,
+   "sender": "m:8e2a6825b6",
+   "text": "وباقي هدوم من جيل سنتين لخمس سنين",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC57FB3BE1CB9B9CA566B0DD8B825D4E",
+   "group": 6,
+   "time": "17:03:13",
+   "sec": 61393,
+   "sender": "m:8e2a6825b6",
+   "text": "بناتي",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA93B8F26ACF38A3A493A86485FAA60",
+   "group": 6,
+   "time": "17:03:13",
+   "sec": 61393,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "92f004a5b5d6280ca743ba1e88e137b6d5fe733dfaadde0b4054c0055a9fca5e",
+     "md5": "ecb22fb8914bfb6f98b2bdaf07d6954d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1011628C6639D97A9B002E9CEFE7B7",
+   "group": 6,
+   "time": "17:03:14",
+   "sec": 61394,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]\nرهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "415b8de6966aaed1"
+   ]
+  },
+  {
+   "id": "AC0C26166A50E546F79B2AB1BEF28815",
+   "group": 6,
+   "time": "17:03:14",
+   "sec": 61394,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3459caae106a8dd2813e53e060b6595539cc462dd49390d77b36be0e94b8e3d1",
+     "md5": "73d618eb28084a092ebbd8f029dc7025",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC68BA5F6E2095B914142F5A10C064F2",
+   "group": 5,
+   "time": "17:03:30",
+   "sec": 61410,
+   "sender": "m:8e2a6825b6",
+   "text": "مسالخير\nكيف الحال\nعندي كسين هدوم وفي اكمن سندل وكندره اذا بدكي اياهن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACAAAFB1E37B5FA68FA3D2E976B1E5E5",
+   "group": 5,
+   "time": "17:03:31",
+   "sec": 61411,
+   "sender": "m:8e2a6825b6",
+   "text": "في عابيتين نمره لارج",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6982ED2A6038D0D7DBF40D84DDCB1F",
+   "group": 5,
+   "time": "17:03:31",
+   "sec": 61411,
+   "sender": "m:8e2a6825b6",
+   "text": "وباقي هدوم من جيل سنتين لخمس سنين",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8A5EA0F62B38560604B5E00856C6D9",
+   "group": 5,
+   "time": "17:03:32",
+   "sec": 61412,
+   "sender": "m:8e2a6825b6",
+   "text": "بناتي",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE18B767478006DC0CD4F15C95FDAE7",
+   "group": 5,
+   "time": "17:03:32",
+   "sec": 61412,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "92f004a5b5d6280ca743ba1e88e137b6d5fe733dfaadde0b4054c0055a9fca5e",
+     "md5": "ecb22fb8914bfb6f98b2bdaf07d6954d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA92268B4496656D78096E653893B7D",
+   "group": 5,
+   "time": "17:03:32",
+   "sec": 61412,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3459caae106a8dd2813e53e060b6595539cc462dd49390d77b36be0e94b8e3d1",
+     "md5": "73d618eb28084a092ebbd8f029dc7025",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8D94E2736EA4FC03DF3F2DE907DD3C",
+   "group": 5,
+   "time": "17:03:33",
+   "sec": 61413,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]\nرهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "415b8de6966aaed1"
+   ]
+  },
+  {
+   "id": "AC8981410D0661913F5D4FB47A6C1E45",
+   "group": 2,
+   "time": "18:45:13",
+   "sec": 67513,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9dd73e24ee58a397eaabce3060077b212173ea4f40ff18c634c80cb11f8b0f8c",
+     "md5": "d02b03388de3ede09186797bcdc30294",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD86C13E6D693AFB01E3A4B12416F82",
+   "group": 5,
+   "time": "18:45:18",
+   "sec": 67518,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9dd73e24ee58a397eaabce3060077b212173ea4f40ff18c634c80cb11f8b0f8c",
+     "md5": "d02b03388de3ede09186797bcdc30294",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCD649A1E76E5A62222F4016A39AAE3",
+   "group": 2,
+   "time": "18:45:19",
+   "sec": 67519,
+   "sender": "m:458935bf01",
+   "text": "موجود هليخون بيبي ولبس اولاد صيفي وشتوي نمره ٤-٥ ولبس ستاتي صيفي وشتوي 38-40\nالاستلام بعراد عند البريد .\n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "1f4a9dc1352c39da"
+   ]
+  },
+  {
+   "id": "AC18C99E7A8B2AB5D9F5768F26AC148C",
+   "group": 6,
+   "time": "18:45:22",
+   "sec": 67522,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9dd73e24ee58a397eaabce3060077b212173ea4f40ff18c634c80cb11f8b0f8c",
+     "md5": "d02b03388de3ede09186797bcdc30294",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3832AE7285B757324BA59C7EFEBDFE",
+   "group": 1,
+   "time": "18:45:26",
+   "sec": 67526,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9dd73e24ee58a397eaabce3060077b212173ea4f40ff18c634c80cb11f8b0f8c",
+     "md5": "d02b03388de3ede09186797bcdc30294",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC68AE05B81FB4AA21565206DED37619",
+   "group": 3,
+   "time": "18:45:30",
+   "sec": 67530,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9dd73e24ee58a397eaabce3060077b212173ea4f40ff18c634c80cb11f8b0f8c",
+     "md5": "d02b03388de3ede09186797bcdc30294",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC643413834E0A8C42C5E6877249B687",
+   "group": 1,
+   "time": "18:45:31",
+   "sec": 67531,
+   "sender": "m:458935bf01",
+   "text": "موجود هليخون بيبي ولبس اولاد صيفي وشتوي نمره ٤-٥ ولبس ستاتي صيفي وشتوي 38-40\nالاستلام بعراد عند البريد .\n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "1f4a9dc1352c39da"
+   ]
+  },
+  {
+   "id": "ACB7CCF63DC7122DD79FAF68EB78FEDB",
+   "group": 3,
+   "time": "18:45:31",
+   "sec": 67531,
+   "sender": "m:458935bf01",
+   "text": "موجود هليخون بيبي ولبس اولاد صيفي وشتوي نمره ٤-٥ ولبس ستاتي صيفي وشتوي 38-40\nالاستلام بعراد عند البريد .\n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "1f4a9dc1352c39da"
+   ]
+  },
+  {
+   "id": "AC0FEFEC69EBBD11BEB161106C2FC568",
+   "group": 5,
+   "time": "18:45:31",
+   "sec": 67531,
+   "sender": "m:458935bf01",
+   "text": "موجود هليخون بيبي ولبس اولاد صيفي وشتوي نمره ٤-٥ ولبس ستاتي صيفي وشتوي 38-40\nالاستلام بعراد عند البريد .\n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "1f4a9dc1352c39da"
+   ]
+  },
+  {
+   "id": "ACF1AD2DFC9083C9D0A5DCEF6B6D9519",
+   "group": 6,
+   "time": "18:45:31",
+   "sec": 67531,
+   "sender": "m:458935bf01",
+   "text": "موجود هليخون بيبي ولبس اولاد صيفي وشتوي نمره ٤-٥ ولبس ستاتي صيفي وشتوي 38-40\nالاستلام بعراد عند البريد .\n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "1f4a9dc1352c39da"
+   ]
+  },
+  {
+   "id": "AC71A1D7BAAC907A3A69CE4AEAEB0D42",
+   "group": 4,
+   "time": "18:45:39",
+   "sec": 67539,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9dd73e24ee58a397eaabce3060077b212173ea4f40ff18c634c80cb11f8b0f8c",
+     "md5": "d02b03388de3ede09186797bcdc30294",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA5EC543DAC59519236B113E1FBB2DD",
+   "group": 4,
+   "time": "18:45:41",
+   "sec": 67541,
+   "sender": "m:458935bf01",
+   "text": "موجود هليخون بيبي ولبس اولاد صيفي وشتوي نمره ٤-٥ ولبس ستاتي صيفي وشتوي 38-40\nالاستلام بعراد عند البريد .\n[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "1f4a9dc1352c39da"
+   ]
+  },
+  {
+   "id": "AC2653BC1D3B989024AB6BDEC2877747",
+   "group": 4,
+   "time": "19:11:27",
+   "sec": 69087,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC808952357090134F68E93898042D47",
+   "group": 3,
+   "time": "19:11:51",
+   "sec": 69111,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB933C43EA8D74D135BE46634155E1A",
+   "group": 5,
+   "time": "19:12:33",
+   "sec": 69153,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC33A4BF027B5E0EDBB95D76EAF76F56",
+   "group": 1,
+   "time": "19:12:41",
+   "sec": 69161,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFAA60356DEEE5AB061D2404484676B",
+   "group": 6,
+   "time": "19:12:58",
+   "sec": 69178,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC081385ED51F2D5DC8A3501788CFACA",
+   "group": 2,
+   "time": "19:14:45",
+   "sec": 69285,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  }
+ ],
+ "events": [
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-19T06:54:15.103Z",
+   "time": "08:54:15",
+   "count": 1,
+   "whoHashes": [
+    "0f73e5c94b8719db"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-19T07:27:35.295Z",
+   "time": "09:27:35",
+   "count": 1,
+   "whoHashes": [
+    "7563e3b38851c630"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-19T07:47:06.403Z",
+   "time": "09:47:06",
+   "count": 1,
+   "whoHashes": [
+    "caef6b030e414aee"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-19T07:49:09.072Z",
+   "time": "09:49:09",
+   "count": 1,
+   "whoHashes": [
+    "02049363dde9cf27"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 4,
+   "at": "2026-11-19T10:58:07.133Z",
+   "time": "12:58:07",
+   "count": 1,
+   "whoHashes": [
+    "a57650544fc21a88"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 6,
+   "at": "2026-11-19T16:28:05.916Z",
+   "time": "18:28:05",
+   "count": 1,
+   "whoHashes": [
+    "07c021b2273a6f5d"
+   ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-19T17:11:23.000Z",
+   "time": "19:11:23",
+   "targetId": "ACA5EC543DAC59519236B113E1FBB2DD"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-19T17:11:50.000Z",
+   "time": "19:11:50",
+   "targetId": "ACB7CCF63DC7122DD79FAF68EB78FEDB"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-19T17:12:30.000Z",
+   "time": "19:12:30",
+   "targetId": "AC0FEFEC69EBBD11BEB161106C2FC568"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-19T17:12:30.000Z",
+   "time": "19:12:30",
+   "targetId": "AC643413834E0A8C42C5E6877249B687"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-19T17:12:53.000Z",
+   "time": "19:12:53",
+   "targetId": "ACF1AD2DFC9083C9D0A5DCEF6B6D9519"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-19T17:14:43.000Z",
+   "time": "19:14:43",
+   "targetId": "ACCD649A1E76E5A62222F4016A39AAE3"
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-19T19:30:17.063Z",
+   "time": "21:30:17",
+   "count": 1,
+   "whoHashes": [
+    "ea7677f1d4a7b298"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-19T19:31:31.097Z",
+   "time": "21:31:31",
+   "count": 1,
+   "whoHashes": [
+    "fd2bb55e32352974"
+   ]
+  }
+ ]
+}
