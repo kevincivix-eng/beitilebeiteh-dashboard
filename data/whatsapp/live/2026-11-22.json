@@ -3710,6 +3710,99 @@
    ],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC719AD22C918D5D9583DA85CA7AA710",
+   "group": 1,
+   "time": "13:29:53",
+   "sec": 48593,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "acac2e656d13eab0"
+   ]
+  },
+  {
+   "id": "ACCC44AD440A37F62251AC279DE15674",
+   "group": 3,
+   "time": "13:29:53",
+   "sec": 48593,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "190551181615843260a6d298a3b2e5dc9c631c0ab151791e2d2933f2a382f67d",
+     "md5": "104db27e43e73924ea2973b7ecababc2",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDA1DCE235E0931B838AC1A3823BF89",
+   "group": 2,
+   "time": "13:29:54",
+   "sec": 48594,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "acac2e656d13eab0"
+   ]
+  },
+  {
+   "id": "ACA1F2A962F7DA817185DECF4DE12575",
+   "group": 3,
+   "time": "13:29:54",
+   "sec": 48594,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC67E4174AD05F15BCD02176AA58ED94",
+   "group": 3,
+   "time": "13:29:55",
+   "sec": 48595,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "acac2e656d13eab0"
+   ]
+  },
+  {
+   "id": "ACF690CF16EB88D5DA5E460B55B09D3D",
+   "group": 4,
+   "time": "13:29:55",
+   "sec": 48595,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "acac2e656d13eab0"
+   ]
+  },
+  {
+   "id": "AC7ABC3DC946119E5D7C972CFC892C4B",
+   "group": 5,
+   "time": "13:29:56",
+   "sec": 48596,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "acac2e656d13eab0"
+   ]
   }
  ],
  "events": [
