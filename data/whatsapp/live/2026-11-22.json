@@ -3951,6 +3951,36 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC70B9F8F8554F220E29027473CD043D",
+   "group": 4,
+   "time": "13:30:46",
+   "sec": 48646,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [
+    {
+     "sha256": "f736857d2776191feb086ba3b581e5c43765c5b8ae4e22c452878c9680d2ba06",
+     "md5": "f68c652f151902d020618167b11937f1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "0bb531c4d33cdb8b"
+   ]
+  },
+  {
+   "id": "AC12AD2675BCE634803CE8EB18C4275C",
+   "group": 4,
+   "time": "13:30:46",
+   "sec": 48646,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
