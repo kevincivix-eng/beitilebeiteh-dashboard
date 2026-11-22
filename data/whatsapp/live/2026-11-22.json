@@ -4419,6 +4419,34 @@
    "at": "2026-11-22T11:46:40.000Z",
    "time": "13:46:40",
    "targetId": "AC666E0742C91FD646430E0F090E46FB"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-22T11:46:45.000Z",
+   "time": "13:46:45",
+   "targetId": "ACDE53CDE108875AEF0D2BF660D2BFFA"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-22T11:46:46.000Z",
+   "time": "13:46:46",
+   "targetId": "AC70B9F8F8554F220E29027473CD043D"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-22T11:46:49.000Z",
+   "time": "13:46:49",
+   "targetId": "ACF77CA558073BED059F16DAE39EB927"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-22T11:46:50.000Z",
+   "time": "13:46:50",
+   "targetId": "AC4D6A6879714E034364FA5376A39A0B"
   }
  ]
 }
