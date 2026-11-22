@@ -4447,6 +4447,20 @@
    "at": "2026-11-22T11:46:50.000Z",
    "time": "13:46:50",
    "targetId": "AC4D6A6879714E034364FA5376A39A0B"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-22T11:46:54.000Z",
+   "time": "13:46:54",
+   "targetId": "AC63F825F4192E8F5EE9C4586DEC972B"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-22T11:46:55.000Z",
+   "time": "13:46:55",
+   "targetId": "AC65F6919268EE596BB9FBE4718F55D3"
   }
  ]
 }
