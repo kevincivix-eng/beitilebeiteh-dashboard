@@ -7211,6 +7211,72 @@
    ],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "ACCFA5D7C3859E106673BE3DB5362AFA",
+   "group": 6,
+   "time": "20:17:36",
+   "sec": 73056,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجزت",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC91C8A8D21DEEF8988C7CA9B098A28C",
+   "group": 4,
+   "time": "20:17:41",
+   "sec": 73061,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجزت",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE8EF2AA90E17C9F509B6B9EAF744B3",
+   "group": 3,
+   "time": "20:17:51",
+   "sec": 73071,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC534132276BEE0585B10AC7FD3E9F4F",
+   "group": 5,
+   "time": "20:17:56",
+   "sec": 73076,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCE2265BFA33AA562EC523502B897CE",
+   "group": 2,
+   "time": "20:18:05",
+   "sec": 73085,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6EBECBE5BB509CD9EB7EC9123A2958",
+   "group": 1,
+   "time": "20:18:15",
+   "sec": 73095,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -7863,6 +7929,48 @@
    "whoHashes": [
     "e3ee4fdbca1f7a31"
    ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-22T18:17:35.000Z",
+   "time": "20:17:35",
+   "targetId": "ACE95DCD853776CAD9F92DA5DB7ECE60"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-22T18:17:38.000Z",
+   "time": "20:17:38",
+   "targetId": "ACA81A9D99EA725D0F0CB93D073CDD7C"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-22T18:17:50.000Z",
+   "time": "20:17:50",
+   "targetId": "AC298A81AC02BB8A28B9A07B46A7099B"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-22T18:17:55.000Z",
+   "time": "20:17:55",
+   "targetId": "AC687D468466DB893DF0ED7904C03C79"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-22T18:18:02.000Z",
+   "time": "20:18:02",
+   "targetId": "ACD0DF1F30DDEC38AF5A914A69AC80CE"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-22T18:18:09.000Z",
+   "time": "20:18:09",
+   "targetId": "AC8ECBA76B520F9A80FAFF05C99A01DE"
   }
  ]
 }
