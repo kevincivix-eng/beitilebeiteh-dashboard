@@ -11,8 +11,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  # The wait step below asks this run which artifacts it has.
-  actions: read
 
 concurrency:
   group: pages
@@ -25,9 +23,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 20
 
@@ -59,34 +57,16 @@ jobs:
           META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
         run: node build/fetch_data.js
 
-      - uses: actions/configure-pages@v4
+      # These three move together and were a major version behind. deploy-pages@v4
+      # was built for Node 20, which the runners have retired, so it was being
+      # forced onto Node 24 — and it answered "Found 0 artifact(s)" about an
+      # artifact that had just uploaded successfully and that the REST API was
+      # listing at that same second. Three of today's deploys died that way.
+      - uses: actions/configure-pages@v6
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: .
 
-      # GitHub's artifact API is eventually consistent, and deploy-pages asks
-      # it for the artifact the step above just finished uploading. Twice today
-      # it was told there were none and failed the deploy — while the artifact
-      # was in fact there, listed under this very run, moments later. The site
-      # was fine both times because the next hourly push rebuilt it, but a
-      # deploy that fails for a reason that was never true is noise that hides
-      # the failures that matter. So wait until the API admits it exists.
-      - name: Wait for the artifact to be listed
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          for i in $(seq 1 30); do
-            n=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" \
-                  --jq '[.artifacts[] | select(.name == "github-pages")] | length')
-            if [ "${n:-0}" -ge 1 ]; then
-              echo "artifact listed after $i check(s)"
-              exit 0
-            fi
-            sleep 5
-          done
-          echo "the artifact was never listed — not a lag, something really failed" >&2
-          exit 1
-
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
