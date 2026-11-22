@@ -963,6 +963,367 @@
    "phoneHashes": [
     "ce55f25889a08530"
    ]
+  },
+  {
+   "id": "AC108643125D7EAAD2F4D9E0146E028B",
+   "group": 2,
+   "time": "10:51:17",
+   "sec": 39077,
+   "sender": "m:8e2a6825b6",
+   "text": "عندي كميه فساتين سهره فيهن ميدوت لارج اكس لارج \nوفي كمان اكم واحد لبنت صف ثاني دتتبرع فيهن \nاول وحده بتحجز تجي تاخذهن من تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC898741F7F5E44922B40483CEC7B39B",
+   "group": 4,
+   "time": "10:51:17",
+   "sec": 39077,
+   "sender": "m:8e2a6825b6",
+   "text": "عندي كميه فساتين سهره فيهن ميدوت لارج اكس لارج \nوفي كمان اكم واحد لبنت صف ثاني دتتبرع فيهن \nاول وحده بتحجز تجي تاخذهن من تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0A7588EBD53B1C815E902C96ABEA38",
+   "group": 2,
+   "time": "10:51:18",
+   "sec": 39078,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "bcea817d5338adf95dd88b9e0f398b07e12dbd45ed8cf9edbd14e309d081b2ca",
+     "md5": "8c3ed73ea10a68b1d9a10c5e0b26d460",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC52DFCCF0B2192A0FA88EA45222B195",
+   "group": 3,
+   "time": "10:51:18",
+   "sec": 39078,
+   "sender": "m:8e2a6825b6",
+   "text": "عندي كميه فساتين سهره فيهن ميدوت لارج اكس لارج \nوفي كمان اكم واحد لبنت صف ثاني دتتبرع فيهن \nاول وحده بتحجز تجي تاخذهن من تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC62F4B38B738BA1B31620408210FB50",
+   "group": 5,
+   "time": "10:51:18",
+   "sec": 39078,
+   "sender": "m:8e2a6825b6",
+   "text": "عندي كميه فساتين سهره فيهن ميدوت لارج اكس لارج \nوفي كمان اكم واحد لبنت صف ثاني دتتبرع فيهن \nاول وحده بتحجز تجي تاخذهن من تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFA7777EABE816841B829CC91213753",
+   "group": 3,
+   "time": "10:51:19",
+   "sec": 39079,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "bcea817d5338adf95dd88b9e0f398b07e12dbd45ed8cf9edbd14e309d081b2ca",
+     "md5": "8c3ed73ea10a68b1d9a10c5e0b26d460",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7E928FADA51D74092BF1C07EA42604",
+   "group": 4,
+   "time": "10:51:19",
+   "sec": 39079,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "bcea817d5338adf95dd88b9e0f398b07e12dbd45ed8cf9edbd14e309d081b2ca",
+     "md5": "8c3ed73ea10a68b1d9a10c5e0b26d460",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC76DDEFB61A93801DFD90643BBA1D20",
+   "group": 5,
+   "time": "10:51:19",
+   "sec": 39079,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "bcea817d5338adf95dd88b9e0f398b07e12dbd45ed8cf9edbd14e309d081b2ca",
+     "md5": "8c3ed73ea10a68b1d9a10c5e0b26d460",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5AC460E259A83340E9BD9227883DE8",
+   "group": 1,
+   "time": "10:51:20",
+   "sec": 39080,
+   "sender": "m:8e2a6825b6",
+   "text": "عندي كميه فساتين سهره فيهن ميدوت لارج اكس لارج \nوفي كمان اكم واحد لبنت صف ثاني دتتبرع فيهن \nاول وحده بتحجز تجي تاخذهن من تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEB951DFF958F410060019E584C1F02",
+   "group": 2,
+   "time": "10:51:20",
+   "sec": 39080,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c8cbbc0d08bc279e618154ba1d016636301a556d1064340a3a9d683e5a73cbd4",
+     "md5": "99c82f8e5ccc09a82ea6795074201f7d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD537CBE39E6A7B2FFE7FDB1813FB7F",
+   "group": 4,
+   "time": "10:51:20",
+   "sec": 39080,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c8cbbc0d08bc279e618154ba1d016636301a556d1064340a3a9d683e5a73cbd4",
+     "md5": "99c82f8e5ccc09a82ea6795074201f7d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC86F988A7AE16F095C18AE102EF9EDC",
+   "group": 1,
+   "time": "10:51:21",
+   "sec": 39081,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "bcea817d5338adf95dd88b9e0f398b07e12dbd45ed8cf9edbd14e309d081b2ca",
+     "md5": "8c3ed73ea10a68b1d9a10c5e0b26d460",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC231EEC296291522C61D368B62D4454",
+   "group": 2,
+   "time": "10:51:21",
+   "sec": 39081,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "ae25447df7cd4a42315edf3bd7798432b987150a8cf1f1a224e8a004c580158d",
+     "md5": "549f4ad34536a81c195ea8df57a4fdf7",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC88AC8FBFAC358EA4B5C2F8BF6ED3F0",
+   "group": 3,
+   "time": "10:51:21",
+   "sec": 39081,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c8cbbc0d08bc279e618154ba1d016636301a556d1064340a3a9d683e5a73cbd4",
+     "md5": "99c82f8e5ccc09a82ea6795074201f7d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1E46B45294F4A0374ADC50A5948B3D",
+   "group": 5,
+   "time": "10:51:21",
+   "sec": 39081,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c8cbbc0d08bc279e618154ba1d016636301a556d1064340a3a9d683e5a73cbd4",
+     "md5": "99c82f8e5ccc09a82ea6795074201f7d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC53B2E6B3B70E467DBF958511392094",
+   "group": 3,
+   "time": "10:51:22",
+   "sec": 39082,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "ae25447df7cd4a42315edf3bd7798432b987150a8cf1f1a224e8a004c580158d",
+     "md5": "549f4ad34536a81c195ea8df57a4fdf7",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDA750F652327787F80B0B5A385ED31",
+   "group": 4,
+   "time": "10:51:22",
+   "sec": 39082,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "ae25447df7cd4a42315edf3bd7798432b987150a8cf1f1a224e8a004c580158d",
+     "md5": "549f4ad34536a81c195ea8df57a4fdf7",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0FB0453F467D4FFF90F208AB0A979E",
+   "group": 5,
+   "time": "10:51:22",
+   "sec": 39082,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "ae25447df7cd4a42315edf3bd7798432b987150a8cf1f1a224e8a004c580158d",
+     "md5": "549f4ad34536a81c195ea8df57a4fdf7",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2B7C4B853CE26C2963F36C6C9CCD99",
+   "group": 1,
+   "time": "10:51:23",
+   "sec": 39083,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c8cbbc0d08bc279e618154ba1d016636301a556d1064340a3a9d683e5a73cbd4",
+     "md5": "99c82f8e5ccc09a82ea6795074201f7d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC37D76124CE3F9C7FF5239E8C4836E0",
+   "group": 2,
+   "time": "10:51:23",
+   "sec": 39083,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "4a7e95a144ffd9837cb95adc8b6d549c8a45d76937e01eb9e4cc8f5504274f4b",
+     "md5": "41c5c8af5b52746d2c5e59fdc4f85b50",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE34D797297EEC5125216EB44748A7F",
+   "group": 3,
+   "time": "10:51:23",
+   "sec": 39083,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "4a7e95a144ffd9837cb95adc8b6d549c8a45d76937e01eb9e4cc8f5504274f4b",
+     "md5": "41c5c8af5b52746d2c5e59fdc4f85b50",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC01ED81038E11D7CB1DD78C75F5C47E",
+   "group": 4,
+   "time": "10:51:23",
+   "sec": 39083,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "4a7e95a144ffd9837cb95adc8b6d549c8a45d76937e01eb9e4cc8f5504274f4b",
+     "md5": "41c5c8af5b52746d2c5e59fdc4f85b50",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4916C04AF3B806B396D70AAD264DD7",
+   "group": 5,
+   "time": "10:51:24",
+   "sec": 39084,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "4a7e95a144ffd9837cb95adc8b6d549c8a45d76937e01eb9e4cc8f5504274f4b",
+     "md5": "41c5c8af5b52746d2c5e59fdc4f85b50",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -1069,6 +1430,96 @@
    "at": "2026-11-22T07:51:07.000Z",
    "time": "09:51:07",
    "targetId": "ACB880FBA41D0222B3D73CB664D020E5"
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-22T11:20:15.677Z",
+   "time": "13:20:15",
+   "count": 1,
+   "whoHashes": [
+    "685b84c4042fd6bc"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 6,
+   "at": "2026-11-22T11:23:08.442Z",
+   "time": "13:23:08",
+   "count": 1,
+   "whoHashes": [
+    "7dc31944e462642d"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 5,
+   "at": "2026-11-22T11:23:08.526Z",
+   "time": "13:23:08",
+   "count": 1,
+   "whoHashes": [
+    "f69ef48923866c1c"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-22T11:23:09.459Z",
+   "time": "13:23:09",
+   "count": 1,
+   "whoHashes": [
+    "7e37a51282383f9c"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 5,
+   "at": "2026-11-22T11:23:09.487Z",
+   "time": "13:23:09",
+   "count": 1,
+   "whoHashes": [
+    "20df32877ca9042c"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-22T11:23:09.746Z",
+   "time": "13:23:09",
+   "count": 1,
+   "whoHashes": [
+    "ce5b96bb95224057"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-22T11:23:10.097Z",
+   "time": "13:23:10",
+   "count": 1,
+   "whoHashes": [
+    "cf2e6b02017a66c6"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-22T11:23:10.492Z",
+   "time": "13:23:10",
+   "count": 1,
+   "whoHashes": [
+    "962425303fc87f6f"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 5,
+   "at": "2026-11-22T11:23:10.497Z",
+   "time": "13:23:10",
+   "count": 1,
+   "whoHashes": [
+    "4e8e1d3d1f3fdc4b"
+   ]
   }
  ]
 }
