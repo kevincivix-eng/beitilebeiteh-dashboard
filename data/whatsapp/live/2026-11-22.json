@@ -4569,6 +4569,386 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "ACDEC5AB990F6DF89D54C73D2A53E580",
+   "group": 4,
+   "time": "15:19:45",
+   "sec": 55185,
+   "sender": "m:458935bf01",
+   "text": "غاز شايش بحالة ممتازة \nحارة 7\n0526838116",
+   "media": [
+    {
+     "sha256": "8d133f22286dc854880f6b4583663a6d5587225bc39bf5d3e1573f48c8a996a2",
+     "md5": "ac13baa9a438caf1bbcaedd548b92959",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0EE3D8950A1553D57E8BDD21714170",
+   "group": 5,
+   "time": "15:19:45",
+   "sec": 55185,
+   "sender": "m:458935bf01",
+   "text": "غاز شايش بحالة ممتازة \nحارة 7\n0526838116",
+   "media": [
+    {
+     "sha256": "8d133f22286dc854880f6b4583663a6d5587225bc39bf5d3e1573f48c8a996a2",
+     "md5": "ac13baa9a438caf1bbcaedd548b92959",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDEC5AB990F6DF89D54C73D2A53E580",
+   "group": 4,
+   "time": "15:19:48",
+   "sec": 55188,
+   "sender": "m:458935bf01",
+   "text": "غاز شايش بحالة ممتازة \nحارة 7\n0526838116",
+   "media": [
+    {
+     "sha256": "8d133f22286dc854880f6b4583663a6d5587225bc39bf5d3e1573f48c8a996a2",
+     "md5": "ac13baa9a438caf1bbcaedd548b92959",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA840F0011F25D6216A7C495EA8C051",
+   "group": 6,
+   "time": "15:19:49",
+   "sec": 55189,
+   "sender": "m:458935bf01",
+   "text": "غاز شايش بحالة ممتازة \nحارة 7\n0526838116",
+   "media": [
+    {
+     "sha256": "8d133f22286dc854880f6b4583663a6d5587225bc39bf5d3e1573f48c8a996a2",
+     "md5": "ac13baa9a438caf1bbcaedd548b92959",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC22656EA84097A8B8F28D04C4F0A1FF",
+   "group": 2,
+   "time": "15:19:52",
+   "sec": 55192,
+   "sender": "m:458935bf01",
+   "text": "غاز شايش بحالة ممتازة \nحارة 7\n0526838116",
+   "media": [
+    {
+     "sha256": "8d133f22286dc854880f6b4583663a6d5587225bc39bf5d3e1573f48c8a996a2",
+     "md5": "ac13baa9a438caf1bbcaedd548b92959",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2DCE768BA1A873AE6E72E7AE538096",
+   "group": 3,
+   "time": "15:19:55",
+   "sec": 55195,
+   "sender": "m:458935bf01",
+   "text": "غاز شايش بحالة ممتازة \nحارة 7\n0526838116",
+   "media": [
+    {
+     "sha256": "8d133f22286dc854880f6b4583663a6d5587225bc39bf5d3e1573f48c8a996a2",
+     "md5": "ac13baa9a438caf1bbcaedd548b92959",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1C45AE5C89946D503EBF74A7760B5E",
+   "group": 1,
+   "time": "15:19:59",
+   "sec": 55199,
+   "sender": "m:458935bf01",
+   "text": "غاز شايش بحالة ممتازة \nحارة 7\n0526838116",
+   "media": [
+    {
+     "sha256": "8d133f22286dc854880f6b4583663a6d5587225bc39bf5d3e1573f48c8a996a2",
+     "md5": "ac13baa9a438caf1bbcaedd548b92959",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6628E7F2F9099AE059EC45431CA109",
+   "group": 4,
+   "time": "15:49:48",
+   "sec": 56988,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD96EE9AB5EE9FE81D459306E93E7C0",
+   "group": 1,
+   "time": "15:49:52",
+   "sec": 56992,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1B70DC6B71F24FD68644194C3B7F27",
+   "group": 6,
+   "time": "15:49:59",
+   "sec": 56999,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6B6412262B924C746C36B94AB5511C",
+   "group": 2,
+   "time": "15:50:06",
+   "sec": 57006,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE50D1F4B088EAF15768B951283D17E",
+   "group": 3,
+   "time": "15:50:14",
+   "sec": 57014,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3135C9B971B429527215BB8CE7E138",
+   "group": 5,
+   "time": "15:50:19",
+   "sec": 57019,
+   "sender": "m:458935bf01",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A7CD424FE5B056A0160",
+   "group": 4,
+   "time": "15:59:05",
+   "sec": 57545,
+   "sender": "m:89ecf743f6",
+   "text": "السلام عليكم فرشة مجوز كبيره جديده بحالة ممتازة",
+   "media": [
+    {
+     "sha256": "944c3943496c4f7374e1ec1418b0f38b0dc20d959a4f99795e699eac5c4c3855",
+     "md5": "d63ad634c46dda9b1321d5e06c885085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A8F1BE7F737744571AE",
+   "group": 6,
+   "time": "15:59:05",
+   "sec": 57545,
+   "sender": "m:89ecf743f6",
+   "text": "السلام عليكم فرشة مجوز كبيره جديده بحالة ممتازة",
+   "media": [
+    {
+     "sha256": "944c3943496c4f7374e1ec1418b0f38b0dc20d959a4f99795e699eac5c4c3855",
+     "md5": "d63ad634c46dda9b1321d5e06c885085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A534A4CAE3D075CD628",
+   "group": 3,
+   "time": "15:59:06",
+   "sec": 57546,
+   "sender": "m:89ecf743f6",
+   "text": "السلام عليكم فرشة مجوز كبيره جديده بحالة ممتازة",
+   "media": [
+    {
+     "sha256": "944c3943496c4f7374e1ec1418b0f38b0dc20d959a4f99795e699eac5c4c3855",
+     "md5": "d63ad634c46dda9b1321d5e06c885085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A9D3DEFDCD967E4452E",
+   "group": 4,
+   "time": "15:59:06",
+   "sec": 57546,
+   "sender": "m:89ecf743f6",
+   "text": "الي ودها اياها تجي تاخذها اليوم",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A46492D4B37E276232B",
+   "group": 2,
+   "time": "15:59:07",
+   "sec": 57547,
+   "sender": "m:89ecf743f6",
+   "text": "السلام عليكم فرشة مجوز كبيره جديده بحالة ممتازة",
+   "media": [
+    {
+     "sha256": "944c3943496c4f7374e1ec1418b0f38b0dc20d959a4f99795e699eac5c4c3855",
+     "md5": "d63ad634c46dda9b1321d5e06c885085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A782AC1AA1F447E5F08",
+   "group": 6,
+   "time": "15:59:07",
+   "sec": 57547,
+   "sender": "m:89ecf743f6",
+   "text": "الي ودها اياها تجي تاخذها اليوم",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A67E24855392B4CA38D",
+   "group": 1,
+   "time": "15:59:08",
+   "sec": 57548,
+   "sender": "m:89ecf743f6",
+   "text": "السلام عليكم فرشة مجوز كبيره جديده بحالة ممتازة",
+   "media": [
+    {
+     "sha256": "944c3943496c4f7374e1ec1418b0f38b0dc20d959a4f99795e699eac5c4c3855",
+     "md5": "d63ad634c46dda9b1321d5e06c885085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A56951DA688B6D7B7ED",
+   "group": 3,
+   "time": "15:59:09",
+   "sec": 57549,
+   "sender": "m:89ecf743f6",
+   "text": "الي ودها اياها تجي تاخذها اليوم",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AE244A545BDB807796B",
+   "group": 4,
+   "time": "15:59:09",
+   "sec": 57549,
+   "sender": "m:89ecf743f6",
+   "text": "رهط حاره 25",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A59AEE01D1BCA8A0651",
+   "group": 6,
+   "time": "15:59:09",
+   "sec": 57549,
+   "sender": "m:89ecf743f6",
+   "text": "رهط حاره 25",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A023DE1830D87522EEB",
+   "group": 1,
+   "time": "15:59:10",
+   "sec": 57550,
+   "sender": "m:89ecf743f6",
+   "text": "الي ودها اياها تجي تاخذها اليوم",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AA0056694E56B76A201",
+   "group": 2,
+   "time": "15:59:10",
+   "sec": 57550,
+   "sender": "m:89ecf743f6",
+   "text": "الي ودها اياها تجي تاخذها اليوم",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3ACEF10D1B479B848F94",
+   "group": 2,
+   "time": "15:59:11",
+   "sec": 57551,
+   "sender": "m:89ecf743f6",
+   "text": "رهط حاره 25",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A035A3E351063F98AC7",
+   "group": 1,
+   "time": "15:59:12",
+   "sec": 57552,
+   "sender": "m:89ecf743f6",
+   "text": "رهط حاره 25",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AAF0997134EA857FB76",
+   "group": 3,
+   "time": "15:59:15",
+   "sec": 57555,
+   "sender": "m:89ecf743f6",
+   "text": "رهط حاره 25",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -5079,6 +5459,26 @@
    "at": "2026-11-22T12:53:59.000Z",
    "time": "14:53:59",
    "targetId": "ACC0E362EE23D725E7C85B51E52D5685"
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-22T13:23:21.723Z",
+   "time": "15:23:21",
+   "count": 1,
+   "whoHashes": [
+    "e1903c053bc86166"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-22T13:24:49.064Z",
+   "time": "15:24:49",
+   "count": 1,
+   "whoHashes": [
+    "f095b3eab917c278"
+   ]
   }
  ]
 }
