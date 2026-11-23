@@ -1362,6 +1362,96 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "3A6EF6BCF2F566B80A33",
+   "group": 5,
+   "time": "15:39:35",
+   "sec": 56375,
+   "sender": "m:8ff2f7ab6d",
+   "text": "",
+   "media": [
+    {
+     "sha256": "73a68cf778b93a6808464074c9e8e4ec4ff5877e19919a6bd82fd6350fce1e60",
+     "md5": "a4678eb01295bebfd5709e9b412bbd46",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AA92A23C93CBD3FA827",
+   "group": 5,
+   "time": "15:39:36",
+   "sec": 56376,
+   "sender": "m:8ff2f7ab6d",
+   "text": "السلام عليكم موجود تخت مع شيداه بوضع ممتاز بس بدهم تركيب \nالاستلام من رهط حارة١٣ بيت ٥٧\nالمعنيه تبعت عهاذا الرقم [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "d75349e1bba75c23"
+   ]
+  },
+  {
+   "id": "3AB955F41B5825DB6000",
+   "group": 2,
+   "time": "15:39:55",
+   "sec": 56395,
+   "sender": "m:8ff2f7ab6d",
+   "text": "السلام عليكم موجود تخت مع شيداه بوضع ممتاز بس بدهم تركيب \nالاستلام من رهط حارة١٣ بيت ٥٧\nالمعنيه تبعت عهاذا الرقم [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "d75349e1bba75c23"
+   ]
+  },
+  {
+   "id": "3AB6A2D472D4D8D56728",
+   "group": 2,
+   "time": "15:39:55",
+   "sec": 56395,
+   "sender": "m:8ff2f7ab6d",
+   "text": "",
+   "media": [
+    {
+     "sha256": "73a68cf778b93a6808464074c9e8e4ec4ff5877e19919a6bd82fd6350fce1e60",
+     "md5": "a4678eb01295bebfd5709e9b412bbd46",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AF2FC9E1D366C5F9F41",
+   "group": 1,
+   "time": "15:40:21",
+   "sec": 56421,
+   "sender": "m:8ff2f7ab6d",
+   "text": "",
+   "media": [
+    {
+     "sha256": "73a68cf778b93a6808464074c9e8e4ec4ff5877e19919a6bd82fd6350fce1e60",
+     "md5": "a4678eb01295bebfd5709e9b412bbd46",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A0171774B3E8F61B1DC",
+   "group": 1,
+   "time": "15:40:22",
+   "sec": 56422,
+   "sender": "m:8ff2f7ab6d",
+   "text": "السلام عليكم موجود تخت مع شيداه بوضع ممتاز بس بدهم تركيب \nالاستلام من رهط حارة١٣ بيت ٥٧\nالمعنيه تبعت عهاذا الرقم [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "d75349e1bba75c23"
+   ]
   }
  ],
  "events": [
@@ -1697,6 +1787,16 @@
    "count": 1,
    "whoHashes": [
     "09d64cc6f549db69"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 3,
+   "at": "2026-11-23T13:18:27.136Z",
+   "time": "15:18:27",
+   "count": 1,
+   "whoHashes": [
+    "62129d00530c9865"
    ]
   }
  ]
