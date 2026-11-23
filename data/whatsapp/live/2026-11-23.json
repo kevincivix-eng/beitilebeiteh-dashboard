@@ -1258,6 +1258,16 @@
    "whoHashes": [
     "67b7d6af0fd000f7"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 1,
+   "at": "2026-11-23T08:34:18.246Z",
+   "time": "10:34:18",
+   "count": 1,
+   "whoHashes": [
+    "8debc9be02fe4a38"
+   ]
   }
  ]
 }
