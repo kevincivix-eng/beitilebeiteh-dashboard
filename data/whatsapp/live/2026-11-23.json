@@ -2688,6 +2688,16 @@
    "whoHashes": [
     "b8149c06dba6a88f"
    ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-23T20:20:27.912Z",
+   "time": "22:20:27",
+   "count": 1,
+   "whoHashes": [
+    "59ba9239db91b523"
+   ]
   }
  ]
 }
