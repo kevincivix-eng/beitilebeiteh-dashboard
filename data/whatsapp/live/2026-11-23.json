@@ -2132,6 +2132,72 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC253ABB779E6E9D457F84B1676F9A49",
+   "group": 5,
+   "time": "17:30:31",
+   "sec": 63031,
+   "sender": "m:8e2a6825b6",
+   "text": "انحج",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB1986C6125207B5D1984083E684E94",
+   "group": 1,
+   "time": "17:30:50",
+   "sec": 63050,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5240EC7BE8334E622E4751C910245F",
+   "group": 2,
+   "time": "17:31:06",
+   "sec": 63066,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD78984D656249171F0DF966D6E9027",
+   "group": 4,
+   "time": "17:31:16",
+   "sec": 63076,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1BAC01248546717619589CF08C773A",
+   "group": 3,
+   "time": "17:31:24",
+   "sec": 63084,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFCEE5DAAE77FCA1D5E9906E6C38D90",
+   "group": 6,
+   "time": "17:31:36",
+   "sec": 63096,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -2513,6 +2579,48 @@
    "at": "2026-11-23T14:30:09.000Z",
    "time": "16:30:09",
    "targetId": "ACE2A65B88E6AAA7BC8848EE46128FE5"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-23T15:30:27.000Z",
+   "time": "17:30:27",
+   "targetId": "ACD7B1B1E9B3AD7B92D2AD3B72A34D3C"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-23T15:30:40.000Z",
+   "time": "17:30:40",
+   "targetId": "AC962B0767E3D29166B58CCF7F97AE9C"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-23T15:30:58.000Z",
+   "time": "17:30:58",
+   "targetId": "ACCC8BBB84CB7E96B731614B04E20DE9"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-23T15:31:14.000Z",
+   "time": "17:31:14",
+   "targetId": "AC71EDF54A829D290344C85F039E3071"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-23T15:31:21.000Z",
+   "time": "17:31:21",
+   "targetId": "AC528306F6814DAA975F14D9A271E755"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-23T15:31:35.000Z",
+   "time": "17:31:35",
+   "targetId": "AC372AE0832A0EBF013C04FB0EDA39BD"
   }
  ]
 }
