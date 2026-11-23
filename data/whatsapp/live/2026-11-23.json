@@ -1452,6 +1452,686 @@
    "phoneHashes": [
     "d75349e1bba75c23"
    ]
+  },
+  {
+   "id": "AC1C0EC489C5F6F7D86ABE0610A4C241",
+   "group": 2,
+   "time": "16:27:08",
+   "sec": 59228,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC738EC4857D074493579D472DAA708F",
+   "group": 2,
+   "time": "16:27:08",
+   "sec": 59228,
+   "sender": "m:8e2a6825b6",
+   "text": "هدوم ولادي بلبسن 12-18 شهر",
+   "media": [
+    {
+     "sha256": "f9c2e0075a98dc6a24846a4458378b89a1a0050150922ee62bd94344cf4c340c",
+     "md5": "0dca5eae34e50ac55c69fc0bfd297497",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEBF7446D673F4B8AB802E32C08674F",
+   "group": 4,
+   "time": "16:27:09",
+   "sec": 59229,
+   "sender": "m:8e2a6825b6",
+   "text": "هدوم ولادي بلبسن 12-18 شهر",
+   "media": [
+    {
+     "sha256": "f9c2e0075a98dc6a24846a4458378b89a1a0050150922ee62bd94344cf4c340c",
+     "md5": "0dca5eae34e50ac55c69fc0bfd297497",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC45EE6681D97DC35A463E57E72D1F58",
+   "group": 2,
+   "time": "16:27:10",
+   "sec": 59230,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "42fe71070b5c6b77"
+   ]
+  },
+  {
+   "id": "AC140C018672D1E4313B232A91CBE9CE",
+   "group": 4,
+   "time": "16:27:10",
+   "sec": 59230,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4E0B0E1D2821C0CB8C7A34606583B3",
+   "group": 3,
+   "time": "16:27:14",
+   "sec": 59234,
+   "sender": "m:8e2a6825b6",
+   "text": "هدوم ولادي بلبسن 12-18 شهر",
+   "media": [
+    {
+     "sha256": "f9c2e0075a98dc6a24846a4458378b89a1a0050150922ee62bd94344cf4c340c",
+     "md5": "0dca5eae34e50ac55c69fc0bfd297497",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFF2A08B157C2268F0E069E1A91266A",
+   "group": 1,
+   "time": "16:27:15",
+   "sec": 59235,
+   "sender": "m:8e2a6825b6",
+   "text": "هدوم ولادي بلبسن 12-18 شهر",
+   "media": [
+    {
+     "sha256": "f9c2e0075a98dc6a24846a4458378b89a1a0050150922ee62bd94344cf4c340c",
+     "md5": "0dca5eae34e50ac55c69fc0bfd297497",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA351BCAC2B287A1C041D88A9931D5D",
+   "group": 3,
+   "time": "16:27:16",
+   "sec": 59236,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2FFA4ED2217F05D85CEA25AFDFA760",
+   "group": 5,
+   "time": "16:27:16",
+   "sec": 59236,
+   "sender": "m:8e2a6825b6",
+   "text": "هدوم ولادي بلبسن 12-18 شهر",
+   "media": [
+    {
+     "sha256": "f9c2e0075a98dc6a24846a4458378b89a1a0050150922ee62bd94344cf4c340c",
+     "md5": "0dca5eae34e50ac55c69fc0bfd297497",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5D412D24A4A00F48F0C017D103D833",
+   "group": 1,
+   "time": "16:27:17",
+   "sec": 59237,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5A5AE947603F13613CDA908AD379BB",
+   "group": 5,
+   "time": "16:27:17",
+   "sec": 59237,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE2A65B88E6AAA7BC8848EE46128FE5",
+   "group": 1,
+   "time": "16:27:18",
+   "sec": 59238,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "42fe71070b5c6b77"
+   ]
+  },
+  {
+   "id": "AC975E22095CF04B2E70B53C1B08196C",
+   "group": 3,
+   "time": "16:27:18",
+   "sec": 59238,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "42fe71070b5c6b77"
+   ]
+  },
+  {
+   "id": "AC2EC3A1939267CCAB13E6A595715FCA",
+   "group": 5,
+   "time": "16:27:19",
+   "sec": 59239,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "42fe71070b5c6b77"
+   ]
+  },
+  {
+   "id": "AC2C08E3EAA0498E53FC37D959AEB2D0",
+   "group": 4,
+   "time": "16:27:20",
+   "sec": 59240,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "42fe71070b5c6b77"
+   ]
+  },
+  {
+   "id": "ACE1D8362F357ADD1735718CFABC481E",
+   "group": 6,
+   "time": "16:27:28",
+   "sec": 59248,
+   "sender": "m:8e2a6825b6",
+   "text": "هدوم ولادي بلبسن 12-18 شهر",
+   "media": [
+    {
+     "sha256": "f9c2e0075a98dc6a24846a4458378b89a1a0050150922ee62bd94344cf4c340c",
+     "md5": "0dca5eae34e50ac55c69fc0bfd297497",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8B430ADE8335833F6CC661A6CC8D5C",
+   "group": 6,
+   "time": "16:27:29",
+   "sec": 59249,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC13EA78A875E69691F03A1920CD2995",
+   "group": 2,
+   "time": "16:28:26",
+   "sec": 59306,
+   "sender": "m:8e2a6825b6",
+   "text": "جداد .. وفي كمان فساتين ولبس بنت ثمن سنوات … بس المعنيه مو تحجز وبعدين تطلع بحجه مشش حلون",
+   "media": [
+    {
+     "sha256": "c588d7da64c6034a3fe0b4a77311fb9a58e697e81e9f0c0c59810f7ba67ae9df",
+     "md5": "c2496bc34fe8c6bc75c840429840f570",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0413DED2F1A7E42F6CF8F6FF2594D6",
+   "group": 3,
+   "time": "16:28:27",
+   "sec": 59307,
+   "sender": "m:8e2a6825b6",
+   "text": "جداد .. وفي كمان فساتين ولبس بنت ثمن سنوات … بس المعنيه مو تحجز وبعدين تطلع بحجه مشش حلون",
+   "media": [
+    {
+     "sha256": "c588d7da64c6034a3fe0b4a77311fb9a58e697e81e9f0c0c59810f7ba67ae9df",
+     "md5": "c2496bc34fe8c6bc75c840429840f570",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC57BDAC7D5AF8AA043727B031DA8B38",
+   "group": 1,
+   "time": "16:28:28",
+   "sec": 59308,
+   "sender": "m:8e2a6825b6",
+   "text": "جداد .. وفي كمان فساتين ولبس بنت ثمن سنوات … بس المعنيه مو تحجز وبعدين تطلع بحجه مشش حلون",
+   "media": [
+    {
+     "sha256": "c588d7da64c6034a3fe0b4a77311fb9a58e697e81e9f0c0c59810f7ba67ae9df",
+     "md5": "c2496bc34fe8c6bc75c840429840f570",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0F8C8877731BAB0300E4C7C3CA9371",
+   "group": 2,
+   "time": "16:28:28",
+   "sec": 59308,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "8ee824f26a6ed8615aafde377cc1761f73865bcf490ccc32e17f799fdb4c0449",
+     "md5": "e59a9c7aa46798f7c80ad40f3b4d9ead",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE8D05AFD699AB9154958C20C89C94A",
+   "group": 4,
+   "time": "16:28:28",
+   "sec": 59308,
+   "sender": "m:8e2a6825b6",
+   "text": "جداد .. وفي كمان فساتين ولبس بنت ثمن سنوات … بس المعنيه مو تحجز وبعدين تطلع بحجه مشش حلون",
+   "media": [
+    {
+     "sha256": "c588d7da64c6034a3fe0b4a77311fb9a58e697e81e9f0c0c59810f7ba67ae9df",
+     "md5": "c2496bc34fe8c6bc75c840429840f570",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDA5EA7088EE7CC92ED12E292B8A3AC",
+   "group": 3,
+   "time": "16:28:29",
+   "sec": 59309,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "8ee824f26a6ed8615aafde377cc1761f73865bcf490ccc32e17f799fdb4c0449",
+     "md5": "e59a9c7aa46798f7c80ad40f3b4d9ead",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC035678077D3B1F3E2ECD4F0D29B5ED",
+   "group": 5,
+   "time": "16:28:29",
+   "sec": 59309,
+   "sender": "m:8e2a6825b6",
+   "text": "جداد .. وفي كمان فساتين ولبس بنت ثمن سنوات … بس المعنيه مو تحجز وبعدين تطلع بحجه مشش حلون",
+   "media": [
+    {
+     "sha256": "c588d7da64c6034a3fe0b4a77311fb9a58e697e81e9f0c0c59810f7ba67ae9df",
+     "md5": "c2496bc34fe8c6bc75c840429840f570",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF2569F4FCD0B48745F531EFE414CB1",
+   "group": 1,
+   "time": "16:28:30",
+   "sec": 59310,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "8ee824f26a6ed8615aafde377cc1761f73865bcf490ccc32e17f799fdb4c0449",
+     "md5": "e59a9c7aa46798f7c80ad40f3b4d9ead",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD9560F6B1B9F37A4EB7F7D325F65C4",
+   "group": 4,
+   "time": "16:28:30",
+   "sec": 59310,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "8ee824f26a6ed8615aafde377cc1761f73865bcf490ccc32e17f799fdb4c0449",
+     "md5": "e59a9c7aa46798f7c80ad40f3b4d9ead",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE8338FF8EC1FA7E2777F2C705ABFD2",
+   "group": 5,
+   "time": "16:28:30",
+   "sec": 59310,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "8ee824f26a6ed8615aafde377cc1761f73865bcf490ccc32e17f799fdb4c0449",
+     "md5": "e59a9c7aa46798f7c80ad40f3b4d9ead",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC962B0767E3D29166B58CCF7F97AE9C",
+   "group": 1,
+   "time": "16:28:31",
+   "sec": 59311,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "ACFC6A5FD76728A845D47B194D9396D4",
+   "group": 1,
+   "time": "16:28:31",
+   "sec": 59311,
+   "sender": "m:8e2a6825b6",
+   "text": "عرعره",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCC8BBB84CB7E96B731614B04E20DE9",
+   "group": 2,
+   "time": "16:28:39",
+   "sec": 59319,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC528306F6814DAA975F14D9A271E755",
+   "group": 3,
+   "time": "16:28:39",
+   "sec": 59319,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC2A5DF3E23794E1E66A1768769F9706",
+   "group": 2,
+   "time": "16:28:40",
+   "sec": 59320,
+   "sender": "m:8e2a6825b6",
+   "text": "عرعره",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC349ABDD94E55A01555E50B41D2BB59",
+   "group": 3,
+   "time": "16:28:40",
+   "sec": 59320,
+   "sender": "m:8e2a6825b6",
+   "text": "عرعره",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD7B1B1E9B3AD7B92D2AD3B72A34D3C",
+   "group": 5,
+   "time": "16:28:40",
+   "sec": 59320,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC71EDF54A829D290344C85F039E3071",
+   "group": 4,
+   "time": "16:28:41",
+   "sec": 59321,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC2F2643B603E3043E25338DE15B0CB1",
+   "group": 4,
+   "time": "16:28:41",
+   "sec": 59321,
+   "sender": "m:8e2a6825b6",
+   "text": "عرعره",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACED58CD6B72C7D5CBA6FAA553F9529C",
+   "group": 5,
+   "time": "16:28:41",
+   "sec": 59321,
+   "sender": "m:8e2a6825b6",
+   "text": "عرعره",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC372AE0832A0EBF013C04FB0EDA39BD",
+   "group": 6,
+   "time": "16:28:45",
+   "sec": 59325,
+   "sender": "m:8e2a6825b6",
+   "text": "عالرقم  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "94c2ffc052176c8f"
+   ]
+  },
+  {
+   "id": "AC5B8588224FC5F1AD1574974C898638",
+   "group": 6,
+   "time": "16:28:46",
+   "sec": 59326,
+   "sender": "m:8e2a6825b6",
+   "text": "عرعره",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC35758064BC0459CBE201D26CFB4484",
+   "group": 6,
+   "time": "16:28:47",
+   "sec": 59327,
+   "sender": "m:8e2a6825b6",
+   "text": "جداد .. وفي كمان فساتين ولبس بنت ثمن سنوات … بس المعنيه مو تحجز وبعدين تطلع بحجه مشش حلون",
+   "media": [
+    {
+     "sha256": "c588d7da64c6034a3fe0b4a77311fb9a58e697e81e9f0c0c59810f7ba67ae9df",
+     "md5": "c2496bc34fe8c6bc75c840429840f570",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEAE8D98FE7EADA7328B3CE8D023823",
+   "group": 6,
+   "time": "16:28:48",
+   "sec": 59328,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "8ee824f26a6ed8615aafde377cc1761f73865bcf490ccc32e17f799fdb4c0449",
+     "md5": "e59a9c7aa46798f7c80ad40f3b4d9ead",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA0507D7F710477E5B506C0F81C951E",
+   "group": 6,
+   "time": "16:29:22",
+   "sec": 59362,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1B818746270B430E0D393BBAE95FA5",
+   "group": 2,
+   "time": "16:29:31",
+   "sec": 59371,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7DC6E0B729BFB4A72B5675954E45C0",
+   "group": 3,
+   "time": "16:29:39",
+   "sec": 59379,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB29EC47A18B1ECA91F56D8FD439D3B",
+   "group": 4,
+   "time": "16:29:50",
+   "sec": 59390,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC14325B26AC4A4FD0C14E387AFC2AD3",
+   "group": 5,
+   "time": "16:30:02",
+   "sec": 59402,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC63FE341E9A417012E94BAF23B3DB9A",
+   "group": 1,
+   "time": "16:30:12",
+   "sec": 59412,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A3AD7CA0DC6D79FAD55",
+   "group": 2,
+   "time": "17:01:51",
+   "sec": 61311,
+   "sender": "m:8ff2f7ab6d",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AE69FDDFA3FD63212AE",
+   "group": 1,
+   "time": "17:01:56",
+   "sec": 61316,
+   "sender": "m:8ff2f7ab6d",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A14C7551368E16D79F8",
+   "group": 5,
+   "time": "17:02:03",
+   "sec": 61323,
+   "sender": "m:8ff2f7ab6d",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -1798,6 +2478,41 @@
    "whoHashes": [
     "62129d00530c9865"
    ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-23T14:29:29.000Z",
+   "time": "16:29:29",
+   "targetId": "AC45EE6681D97DC35A463E57E72D1F58"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-23T14:29:37.000Z",
+   "time": "16:29:37",
+   "targetId": "AC975E22095CF04B2E70B53C1B08196C"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-23T14:29:47.000Z",
+   "time": "16:29:47",
+   "targetId": "AC2C08E3EAA0498E53FC37D959AEB2D0"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-23T14:29:59.000Z",
+   "time": "16:29:59",
+   "targetId": "AC2EC3A1939267CCAB13E6A595715FCA"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-23T14:30:09.000Z",
+   "time": "16:30:09",
+   "targetId": "ACE2A65B88E6AAA7BC8848EE46128FE5"
   }
  ]
 }
