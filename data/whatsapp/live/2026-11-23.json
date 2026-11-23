@@ -1688,6 +1688,16 @@
    "whoHashes": [
     "995ef491e48935ca"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 5,
+   "at": "2026-11-23T12:33:04.449Z",
+   "time": "14:33:04",
+   "count": 1,
+   "whoHashes": [
+    "09d64cc6f549db69"
+   ]
   }
  ]
 }
