@@ -1668,6 +1668,26 @@
    "whoHashes": [
     "8debc9be02fe4a38"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-23T11:25:38.609Z",
+   "time": "13:25:38",
+   "count": 1,
+   "whoHashes": [
+    "55d613d74884b918"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-23T11:25:43.519Z",
+   "time": "13:25:43",
+   "count": 1,
+   "whoHashes": [
+    "995ef491e48935ca"
+   ]
   }
  ]
 }
