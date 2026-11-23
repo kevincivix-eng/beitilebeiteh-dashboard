@@ -2198,6 +2198,23 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC950FFC801E07EFD3EB721A7009BCEA",
+   "group": 7,
+   "time": "18:14:20",
+   "sec": 65660,
+   "sender": "m:76e149f5c7",
+   "text": "اللي بحاجه تتواصل معي",
+   "media": [
+    {
+     "sha256": "53e1499f479dd41011686cfd7e23d686ab637d5539b3554e950324a66ccb0e59",
+     "md5": "9ee9109f756400ca0abe07413982791a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -2621,6 +2638,16 @@
    "at": "2026-11-23T15:31:35.000Z",
    "time": "17:31:35",
    "targetId": "AC372AE0832A0EBF013C04FB0EDA39BD"
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-23T16:46:36.291Z",
+   "time": "18:46:36",
+   "count": 1,
+   "whoHashes": [
+    "94ecfec3a733f2b5"
+   ]
   }
  ]
 }
