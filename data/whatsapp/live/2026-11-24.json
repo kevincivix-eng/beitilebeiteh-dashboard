@@ -1140,6 +1140,36 @@
    "whoHashes": [
     "f0167bbdad606688"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-24T13:39:20.681Z",
+   "time": "15:39:20",
+   "count": 1,
+   "whoHashes": [
+    "d733beb286a515dc"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-24T14:06:12.270Z",
+   "time": "16:06:12",
+   "count": 1,
+   "whoHashes": [
+    "059522b4d6312bdf"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 6,
+   "at": "2026-11-24T14:06:12.284Z",
+   "time": "16:06:12",
+   "count": 1,
+   "whoHashes": [
+    "059522b4d6312bdf"
+   ]
   }
  ]
 }
