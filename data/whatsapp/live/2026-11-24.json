@@ -752,6 +752,26 @@
    "at": "2026-11-24T08:30:13.000Z",
    "time": "10:30:13",
    "targetId": "AC8FDF6FD910B84C9DD715B96F7B0475"
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-24T10:18:21.826Z",
+   "time": "12:18:21",
+   "count": 1,
+   "whoHashes": [
+    "9f07e6f69782bd7e"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 7,
+   "at": "2026-11-24T10:53:34.376Z",
+   "time": "12:53:34",
+   "count": 1,
+   "whoHashes": [
+    "2e576bbaf551a22c"
+   ]
   }
  ]
 }
