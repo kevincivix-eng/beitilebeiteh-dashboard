@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deploy_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
 
@@ -57,16 +57,31 @@ jobs:
           META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
         run: node build/fetch_data.js
 
-      # These three move together and were a major version behind. deploy-pages@v4
-      # was built for Node 20, which the runners have retired, so it was being
-      # forced onto Node 24 — and it answered "Found 0 artifact(s)" about an
-      # artifact that had just uploaded successfully and that the REST API was
-      # listing at that same second. Three of today's deploys died that way.
+      # These three move together, and are kept on current majors so that a
+      # retired Node on the runners is never one of the things to rule out.
       - uses: actions/configure-pages@v6
 
       - uses: actions/upload-pages-artifact@v5
         with:
           path: .
 
+      # deploy-pages intermittently reports "Found 0 artifact(s)" about the
+      # artifact that uploaded seconds earlier — the one the REST API happily
+      # lists under this very run. It is a fault on GitHub's side and it clears
+      # by itself. Two attempts to name the cause were disproved by the runs
+      # that followed: waiting for the API to list the artifact (it was listed,
+      # the deploy failed anyway) and the actions being a major version behind
+      # (upgraded, it still failed). So this does not explain it, it retries it,
+      # which is the honest response to a fault that is intermittent and not
+      # ours. If both attempts fail, the run goes red and means it.
       - id: deployment
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+
+      - name: Second attempt
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - id: deploy_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
