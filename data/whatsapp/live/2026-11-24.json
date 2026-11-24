@@ -772,6 +772,16 @@
    "whoHashes": [
     "2e576bbaf551a22c"
    ]
+  },
+  {
+   "type": "left",
+   "group": 2,
+   "at": "2026-11-24T11:54:50.593Z",
+   "time": "13:54:50",
+   "count": 1,
+   "whoHashes": [
+    "0ab83536380cd233"
+   ]
   }
  ]
 }
