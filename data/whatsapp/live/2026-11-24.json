@@ -1170,6 +1170,26 @@
    "whoHashes": [
     "059522b4d6312bdf"
    ]
+  },
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-24T15:40:51.714Z",
+   "time": "17:40:51",
+   "count": 1,
+   "whoHashes": [
+    "396bcf60da44dd0e"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-24T15:49:35.795Z",
+   "time": "17:49:35",
+   "count": 1,
+   "whoHashes": [
+    "4cf33db1937148f3"
+   ]
   }
  ]
 }
