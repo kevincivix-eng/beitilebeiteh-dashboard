@@ -2378,6 +2378,83 @@
    ],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC600C94633B860A1F4BABB50FBDE69D",
+   "group": 4,
+   "time": "11:40:26",
+   "sec": 42026,
+   "sender": "m:458935bf01",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACED72EFA8333B5697B371AB1995AC9F",
+   "group": 5,
+   "time": "11:40:31",
+   "sec": 42031,
+   "sender": "m:458935bf01",
+   "text": "لنحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF34606712B64D146B1BCCF6074B7D9",
+   "group": 3,
+   "time": "11:40:36",
+   "sec": 42036,
+   "sender": "m:458935bf01",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2ABD3921516E728B493556B01315CE",
+   "group": 2,
+   "time": "11:40:42",
+   "sec": 42042,
+   "sender": "m:458935bf01",
+   "text": "تنحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC92BE20B451263793868054CC53DF44",
+   "group": 1,
+   "time": "11:40:47",
+   "sec": 42047,
+   "sender": "m:458935bf01",
+   "text": "انحجزم",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC601AB7346C679CE7DA6FC50489E1BB",
+   "group": 1,
+   "time": "11:40:50",
+   "sec": 42050,
+   "sender": "m:458935bf01",
+   "text": "ن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7D83F8D4FB09E54789C2E08B36F39A",
+   "group": 6,
+   "time": "11:40:57",
+   "sec": 42057,
+   "sender": "m:458935bf01",
+   "text": "لنحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
