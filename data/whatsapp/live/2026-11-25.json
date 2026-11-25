@@ -3349,6 +3349,600 @@
    "phoneHashes": [
     "632afd9a69894f42"
    ]
+  },
+  {
+   "id": "AC48DE420010A1E9E6F1C06CA6132FF8",
+   "group": 4,
+   "time": "16:32:21",
+   "sec": 59541,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "6b59f2cece5145b29463b4caf5f68434a95444b1917645d7b4d6cdf0b15b2b0e",
+     "md5": "4e6370ea81b9b927574c69c48d1fbf18",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC307CD8E1926A691E24DFA3796338F6",
+   "group": 1,
+   "time": "16:32:22",
+   "sec": 59542,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "6b59f2cece5145b29463b4caf5f68434a95444b1917645d7b4d6cdf0b15b2b0e",
+     "md5": "4e6370ea81b9b927574c69c48d1fbf18",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC40385BF6E4AF71F00529FD9513FEB2",
+   "group": 3,
+   "time": "16:32:22",
+   "sec": 59542,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "6b59f2cece5145b29463b4caf5f68434a95444b1917645d7b4d6cdf0b15b2b0e",
+     "md5": "4e6370ea81b9b927574c69c48d1fbf18",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0A19FE7AB08ED42262621B8B2ED4A8",
+   "group": 4,
+   "time": "16:32:22",
+   "sec": 59542,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "be3189b15da13c551ec0e1d20d12c93c21c4dd6ab8bb5f18312b8c06e7e3918f",
+     "md5": "416e891206ce2efcf013233087585cc1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB598B799B5EA9834AAAAE356E8080D",
+   "group": 1,
+   "time": "16:32:23",
+   "sec": 59543,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "be3189b15da13c551ec0e1d20d12c93c21c4dd6ab8bb5f18312b8c06e7e3918f",
+     "md5": "416e891206ce2efcf013233087585cc1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1F474E5AEB4CE667BA1213B7842B28",
+   "group": 3,
+   "time": "16:32:23",
+   "sec": 59543,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "be3189b15da13c551ec0e1d20d12c93c21c4dd6ab8bb5f18312b8c06e7e3918f",
+     "md5": "416e891206ce2efcf013233087585cc1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC33E40469157010AEEB394903222D99",
+   "group": 4,
+   "time": "16:32:23",
+   "sec": 59543,
+   "sender": "m:8e2a6825b6",
+   "text": "مرحبا \nمتوفر طاوله سفره مترين وبتفتح بتصير 3 متر  \nمع كراسيها \nللاستلام الفوري  من تل  السبع \n*ما في  توصيل*\nومفضل الي  ياخذها ييجي  بسياره كبيره \n❗️الطاوله ثقيله بتحتاج اكثر من شخص  يحملها  \n\nالتواصل ع الرقم :  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6353229f809e965a"
+   ]
+  },
+  {
+   "id": "AC2C6B528BB5BC9E816E5D78BDABCE3B",
+   "group": 1,
+   "time": "16:32:24",
+   "sec": 59544,
+   "sender": "m:8e2a6825b6",
+   "text": "مرحبا \nمتوفر طاوله سفره مترين وبتفتح بتصير 3 متر  \nمع كراسيها \nللاستلام الفوري  من تل  السبع \n*ما في  توصيل*\nومفضل الي  ياخذها ييجي  بسياره كبيره \n❗️الطاوله ثقيله بتحتاج اكثر من شخص  يحملها  \n\nالتواصل ع الرقم :  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6353229f809e965a"
+   ]
+  },
+  {
+   "id": "AC9056A4182FBEB7005060939AE02729",
+   "group": 3,
+   "time": "16:32:24",
+   "sec": 59544,
+   "sender": "m:8e2a6825b6",
+   "text": "مرحبا \nمتوفر طاوله سفره مترين وبتفتح بتصير 3 متر  \nمع كراسيها \nللاستلام الفوري  من تل  السبع \n*ما في  توصيل*\nومفضل الي  ياخذها ييجي  بسياره كبيره \n❗️الطاوله ثقيله بتحتاج اكثر من شخص  يحملها  \n\nالتواصل ع الرقم :  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6353229f809e965a"
+   ]
+  },
+  {
+   "id": "AC6FF7701A97B383ACCD1476F0A08A8D",
+   "group": 2,
+   "time": "16:32:27",
+   "sec": 59547,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "6b59f2cece5145b29463b4caf5f68434a95444b1917645d7b4d6cdf0b15b2b0e",
+     "md5": "4e6370ea81b9b927574c69c48d1fbf18",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6CF98628C67DF0CC5588898BAB251C",
+   "group": 5,
+   "time": "16:32:28",
+   "sec": 59548,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "6b59f2cece5145b29463b4caf5f68434a95444b1917645d7b4d6cdf0b15b2b0e",
+     "md5": "4e6370ea81b9b927574c69c48d1fbf18",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCF713F1B6A42BC0A4F02ED5528E246",
+   "group": 2,
+   "time": "16:32:29",
+   "sec": 59549,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "be3189b15da13c551ec0e1d20d12c93c21c4dd6ab8bb5f18312b8c06e7e3918f",
+     "md5": "416e891206ce2efcf013233087585cc1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC11872B57DAB8C4729910073989CC27",
+   "group": 2,
+   "time": "16:32:30",
+   "sec": 59550,
+   "sender": "m:8e2a6825b6",
+   "text": "مرحبا \nمتوفر طاوله سفره مترين وبتفتح بتصير 3 متر  \nمع كراسيها \nللاستلام الفوري  من تل  السبع \n*ما في  توصيل*\nومفضل الي  ياخذها ييجي  بسياره كبيره \n❗️الطاوله ثقيله بتحتاج اكثر من شخص  يحملها  \n\nالتواصل ع الرقم :  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6353229f809e965a"
+   ]
+  },
+  {
+   "id": "ACFAF3C1EBC0C79C721EAF8158910011",
+   "group": 5,
+   "time": "16:32:30",
+   "sec": 59550,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "be3189b15da13c551ec0e1d20d12c93c21c4dd6ab8bb5f18312b8c06e7e3918f",
+     "md5": "416e891206ce2efcf013233087585cc1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC75D157311227C5C66CDEAA2A65B2FC",
+   "group": 5,
+   "time": "16:32:30",
+   "sec": 59550,
+   "sender": "m:8e2a6825b6",
+   "text": "مرحبا \nمتوفر طاوله سفره مترين وبتفتح بتصير 3 متر  \nمع كراسيها \nللاستلام الفوري  من تل  السبع \n*ما في  توصيل*\nومفضل الي  ياخذها ييجي  بسياره كبيره \n❗️الطاوله ثقيله بتحتاج اكثر من شخص  يحملها  \n\nالتواصل ع الرقم :  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6353229f809e965a"
+   ]
+  },
+  {
+   "id": "ACBAE6D088999AC32F77F68CAE907596",
+   "group": 6,
+   "time": "16:32:40",
+   "sec": 59560,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "6b59f2cece5145b29463b4caf5f68434a95444b1917645d7b4d6cdf0b15b2b0e",
+     "md5": "4e6370ea81b9b927574c69c48d1fbf18",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC09AB7539A91F9B06D16FEFE1D2FB7C",
+   "group": 6,
+   "time": "16:32:40",
+   "sec": 59560,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "be3189b15da13c551ec0e1d20d12c93c21c4dd6ab8bb5f18312b8c06e7e3918f",
+     "md5": "416e891206ce2efcf013233087585cc1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACAE064751CA0C5B783ED438F8307F2D",
+   "group": 6,
+   "time": "16:32:41",
+   "sec": 59561,
+   "sender": "m:8e2a6825b6",
+   "text": "مرحبا \nمتوفر طاوله سفره مترين وبتفتح بتصير 3 متر  \nمع كراسيها \nللاستلام الفوري  من تل  السبع \n*ما في  توصيل*\nومفضل الي  ياخذها ييجي  بسياره كبيره \n❗️الطاوله ثقيله بتحتاج اكثر من شخص  يحملها  \n\nالتواصل ع الرقم :  [טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6353229f809e965a"
+   ]
+  },
+  {
+   "id": "AC76B184DA2896A98BE6FFE61DA5DBDF",
+   "group": 1,
+   "time": "16:32:48",
+   "sec": 59568,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACAF6A3A30BDF84801E373DEDB4ACCAF",
+   "group": 2,
+   "time": "16:32:48",
+   "sec": 59568,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC378734C10A4E28A61A8FB7118CF503",
+   "group": 3,
+   "time": "16:32:49",
+   "sec": 59569,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3CCD72E40750022DA1B905294F64D0",
+   "group": 4,
+   "time": "16:32:49",
+   "sec": 59569,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACAD2F610690F2188480A2D6E6F297F5",
+   "group": 5,
+   "time": "16:32:49",
+   "sec": 59569,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5B344A506477A3A9DD50360ED51B66",
+   "group": 1,
+   "time": "16:32:50",
+   "sec": 59570,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "AC61B622DF741365F4A1D8D93F80A504",
+   "group": 2,
+   "time": "16:32:56",
+   "sec": 59576,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "ACE6B28D03198E288C4D4D2F2FA4D9E2",
+   "group": 3,
+   "time": "16:32:56",
+   "sec": 59576,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "ACF7A28C134F041011D7D1F76F548639",
+   "group": 4,
+   "time": "16:32:56",
+   "sec": 59576,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "ACB5BB018ED3E62AFD00301C1994FBD8",
+   "group": 5,
+   "time": "16:32:56",
+   "sec": 59576,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "AC10CEF93957D779DFBCFAE3B7C6FB76",
+   "group": 6,
+   "time": "16:33:01",
+   "sec": 59581,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "AC3267E90005DC5A83BCDC3DE0722795",
+   "group": 6,
+   "time": "16:33:01",
+   "sec": 59581,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC62EDAB2B9AF28587B420E900CCDEB",
+   "group": 6,
+   "time": "16:34:43",
+   "sec": 59683,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجزت",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFB9C3EB047FC578EF22E7D5D4C5CE2",
+   "group": 4,
+   "time": "16:34:51",
+   "sec": 59691,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجزت",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9378C2A51CAE787DA2043B093FCD55",
+   "group": 5,
+   "time": "16:35:00",
+   "sec": 59700,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC20F2F4A70A89DF1AB75A4B18D84EB0",
+   "group": 2,
+   "time": "16:35:15",
+   "sec": 59715,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF968F6A9CE81DF047F54CAD0474D2A",
+   "group": 3,
+   "time": "16:35:28",
+   "sec": 59728,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2B3E17D1F7E08567D6D559C1B366F2",
+   "group": 1,
+   "time": "16:35:34",
+   "sec": 59734,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC80268E4703DFD6C15B45CE511DBD1B",
+   "group": 6,
+   "time": "17:06:47",
+   "sec": 61607,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC93E428B391D765C2675A1BBF4DA53E",
+   "group": 4,
+   "time": "17:06:54",
+   "sec": 61614,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC013A67472DCCC32D846230BB13EAFF",
+   "group": 5,
+   "time": "17:07:05",
+   "sec": 61625,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1E55E8E3A685605278099DA9E99492",
+   "group": 2,
+   "time": "17:07:12",
+   "sec": 61632,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC767911C846B43C16F34687A2904BE1",
+   "group": 3,
+   "time": "17:07:22",
+   "sec": 61642,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC75D59D5896ABBC1EC2FAB94D7F700D",
+   "group": 1,
+   "time": "17:07:29",
+   "sec": 61649,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -3621,6 +4215,90 @@
    "whoHashes": [
     "3756af4adbb36398"
    ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T14:34:40.000Z",
+   "time": "16:34:40",
+   "targetId": "ACAE064751CA0C5B783ED438F8307F2D"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T14:34:48.000Z",
+   "time": "16:34:48",
+   "targetId": "AC33E40469157010AEEB394903222D99"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T14:34:57.000Z",
+   "time": "16:34:57",
+   "targetId": "AC75D157311227C5C66CDEAA2A65B2FC"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T14:35:12.000Z",
+   "time": "16:35:12",
+   "targetId": "AC11872B57DAB8C4729910073989CC27"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T14:35:25.000Z",
+   "time": "16:35:25",
+   "targetId": "AC9056A4182FBEB7005060939AE02729"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T14:35:32.000Z",
+   "time": "16:35:32",
+   "targetId": "AC2C6B528BB5BC9E816E5D78BDABCE3B"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T15:06:47.000Z",
+   "time": "17:06:47",
+   "targetId": "AC10CEF93957D779DFBCFAE3B7C6FB76"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T15:06:52.000Z",
+   "time": "17:06:52",
+   "targetId": "ACF7A28C134F041011D7D1F76F548639"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T15:07:04.000Z",
+   "time": "17:07:04",
+   "targetId": "ACB5BB018ED3E62AFD00301C1994FBD8"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T15:07:11.000Z",
+   "time": "17:07:11",
+   "targetId": "AC61B622DF741365F4A1D8D93F80A504"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T15:07:19.000Z",
+   "time": "17:07:19",
+   "targetId": "ACE6B28D03198E288C4D4D2F2FA4D9E2"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T15:07:27.000Z",
+   "time": "17:07:27",
+   "targetId": "AC5B344A506477A3A9DD50360ED51B66"
   }
  ]
 }
