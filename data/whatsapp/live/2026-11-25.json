@@ -3943,6 +3943,498 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC2762A0A059496A432F2E1AA475F080",
+   "group": 1,
+   "time": "17:52:00",
+   "sec": 64320,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC24118CBFE7785E07DFC4ACBB269D20",
+   "group": 3,
+   "time": "17:52:00",
+   "sec": 64320,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC96ED3D452EE81F8D0EB9A69BF8761C",
+   "group": 4,
+   "time": "17:52:01",
+   "sec": 64321,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB5A8F94002AFD4E9E9F8C34312BBE5",
+   "group": 5,
+   "time": "17:52:01",
+   "sec": 64321,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC4C958AF8A14E3BEDC527637A297A0",
+   "group": 4,
+   "time": "17:52:03",
+   "sec": 64323,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "ACFBC9444AF00DEF61CD7802BB57CF8A",
+   "group": 2,
+   "time": "17:52:04",
+   "sec": 64324,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9695DA907717EE9A40612393706775",
+   "group": 2,
+   "time": "17:52:09",
+   "sec": 64329,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "ACE6E9300995E6846E733D6FA728F2A1",
+   "group": 3,
+   "time": "17:52:09",
+   "sec": 64329,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "ACD750DAD7E6F854DF7DFFEF04E8FC46",
+   "group": 1,
+   "time": "17:52:10",
+   "sec": 64330,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "AC7DE48F20A9FD1F83CDE9E16BF3704E",
+   "group": 5,
+   "time": "17:52:10",
+   "sec": 64330,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "AC6FC9983F0D7DA5BD4F0516E14BA43F",
+   "group": 6,
+   "time": "17:52:18",
+   "sec": 64338,
+   "sender": "m:8e2a6825b6",
+   "text": "مرايا بوضع كويس شقيب السلام",
+   "media": [
+    {
+     "sha256": "ca6ba840a23e823a0abeec7268e1f146ffba7505accd4c644628a6060ef34111",
+     "md5": "f620cb24cc90e0744f73d9fb282a281a",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6AA5B5E2CE1EA7027770E472A5EF2E",
+   "group": 6,
+   "time": "17:52:19",
+   "sec": 64339,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "57b8780fa6b0f8b0"
+   ]
+  },
+  {
+   "id": "AC8BB51A27390AB01D321CD08FC62EA0",
+   "group": 2,
+   "time": "17:53:30",
+   "sec": 64410,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "797c70149e7078a2eaa1af44a68c49012399bdc648fff364912534d54bf72234",
+     "md5": "7ef4829debc85c292a7b24f571e8b085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC56273C9E50AE9A147409E9FDACCBC3",
+   "group": 1,
+   "time": "17:53:31",
+   "sec": 64411,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "797c70149e7078a2eaa1af44a68c49012399bdc648fff364912534d54bf72234",
+     "md5": "7ef4829debc85c292a7b24f571e8b085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2BA43196992EA7EF5704695F29FAD7",
+   "group": 3,
+   "time": "17:53:31",
+   "sec": 64411,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "797c70149e7078a2eaa1af44a68c49012399bdc648fff364912534d54bf72234",
+     "md5": "7ef4829debc85c292a7b24f571e8b085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC718D0EE78FA434ECDCC6C3D76FF600",
+   "group": 4,
+   "time": "17:53:31",
+   "sec": 64411,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "797c70149e7078a2eaa1af44a68c49012399bdc648fff364912534d54bf72234",
+     "md5": "7ef4829debc85c292a7b24f571e8b085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7FF936BDDEAC8C887BB928B780EC2C",
+   "group": 2,
+   "time": "17:53:32",
+   "sec": 64412,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC736D9C41797242367A37305187B43D",
+   "group": 3,
+   "time": "17:53:32",
+   "sec": 64412,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB09600D378818681E3A535C889043D",
+   "group": 5,
+   "time": "17:53:32",
+   "sec": 64412,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "797c70149e7078a2eaa1af44a68c49012399bdc648fff364912534d54bf72234",
+     "md5": "7ef4829debc85c292a7b24f571e8b085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC082352B535CCB454600F1618C44A7B",
+   "group": 1,
+   "time": "17:53:33",
+   "sec": 64413,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8B30CD8601B5BA350B8FDFC28B9890",
+   "group": 4,
+   "time": "17:53:33",
+   "sec": 64413,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACBB5055E420376C8E58ADFE45AF5381",
+   "group": 5,
+   "time": "17:53:33",
+   "sec": 64413,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5936E77FA474F953F6A13016AADAF7",
+   "group": 1,
+   "time": "17:53:40",
+   "sec": 64420,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "298dc6bec1187305"
+   ]
+  },
+  {
+   "id": "ACF2F5559E05B933E478DC3591BAE14F",
+   "group": 2,
+   "time": "17:53:46",
+   "sec": 64426,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "298dc6bec1187305"
+   ]
+  },
+  {
+   "id": "AC18135FEDA060A35F3140F6D6C793D4",
+   "group": 3,
+   "time": "17:53:46",
+   "sec": 64426,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "298dc6bec1187305"
+   ]
+  },
+  {
+   "id": "AC1F9116556879CEAA24420D59372E47",
+   "group": 4,
+   "time": "17:53:46",
+   "sec": 64426,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "298dc6bec1187305"
+   ]
+  },
+  {
+   "id": "AC00DC04A8F14C343802B9DE52DCF6BA",
+   "group": 5,
+   "time": "17:53:47",
+   "sec": 64427,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "298dc6bec1187305"
+   ]
+  },
+  {
+   "id": "AC9623FDE3CC2F1FB0F8D8E6A5896F75",
+   "group": 6,
+   "time": "17:53:51",
+   "sec": 64431,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "797c70149e7078a2eaa1af44a68c49012399bdc648fff364912534d54bf72234",
+     "md5": "7ef4829debc85c292a7b24f571e8b085",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0C4DC7B6877B2238527F4AA8D90D2B",
+   "group": 6,
+   "time": "17:53:52",
+   "sec": 64432,
+   "sender": "m:8e2a6825b6",
+   "text": "اللقيه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0406FE3B5759FA2D8B236A10E54FF4",
+   "group": 6,
+   "time": "17:53:52",
+   "sec": 64432,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "298dc6bec1187305"
+   ]
+  },
+  {
+   "id": "AC778E6B29C7B29EE7216BC5800E6B16",
+   "group": 2,
+   "time": "18:11:25",
+   "sec": 65485,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDB26527CE45DB83FD7FB464E1815D1",
+   "group": 5,
+   "time": "18:11:33",
+   "sec": 65493,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEBBF233A2317A5206798A1C48419C7",
+   "group": 4,
+   "time": "18:11:43",
+   "sec": 65503,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5E3F47244C178B65E91684839F31A7",
+   "group": 3,
+   "time": "18:11:50",
+   "sec": 65510,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA9B80D3344C1DA0852D7767EFE41BC",
+   "group": 6,
+   "time": "18:11:58",
+   "sec": 65518,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2D54529682D4DCC5F018DC74A7417B",
+   "group": 1,
+   "time": "18:12:09",
+   "sec": 65529,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -4299,6 +4791,78 @@
    "at": "2026-11-25T15:07:27.000Z",
    "time": "17:07:27",
    "targetId": "AC5B344A506477A3A9DD50360ED51B66"
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-25T15:55:03.343Z",
+   "time": "17:55:03",
+   "count": 1,
+   "whoHashes": [
+    "eb9b942480b4d8cc"
+   ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T16:11:24.000Z",
+   "time": "18:11:24",
+   "targetId": "ACF2F5559E05B933E478DC3591BAE14F"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T16:11:32.000Z",
+   "time": "18:11:32",
+   "targetId": "AC00DC04A8F14C343802B9DE52DCF6BA"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T16:11:42.000Z",
+   "time": "18:11:42",
+   "targetId": "AC1F9116556879CEAA24420D59372E47"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T16:11:49.000Z",
+   "time": "18:11:49",
+   "targetId": "AC18135FEDA060A35F3140F6D6C793D4"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T16:11:56.000Z",
+   "time": "18:11:56",
+   "targetId": "AC0406FE3B5759FA2D8B236A10E54FF4"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T16:12:08.000Z",
+   "time": "18:12:08",
+   "targetId": "AC5936E77FA474F953F6A13016AADAF7"
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-25T16:17:50.313Z",
+   "time": "18:17:50",
+   "count": 1,
+   "whoHashes": [
+    "3b873c26c1d7df6f"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-25T16:23:11.805Z",
+   "time": "18:23:11",
+   "count": 1,
+   "whoHashes": [
+    "bdb8e71e3297a1c1"
+   ]
   }
  ]
 }
