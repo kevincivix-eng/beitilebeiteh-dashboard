@@ -22,3 +22,8 @@ EVENT-*.csv
 # Live collector: auth keys, raw messages and media stay on the machine that runs it
 /build/wa-live/auth/
 wa-live-data/
+
+# The photo mailbox: a clone of the PRIVATE repo the phone mails listing photos
+# to, so they can be identified. This repo is published in full by
+# upload-pages-artifact (path: .) — anything here would land on the open web.
+/wa-live-photos/

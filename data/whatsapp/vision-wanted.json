@@ -1,0 +1,46 @@
+{
+ "generated": "2026-11-25T11:26:32.863Z",
+ "note": "Photos the live collector holds that the parser needs to identify. Fetched by the phone; contains hashes only.",
+ "count": 3,
+ "files": [
+  "cdf3781c13b508b025f1a067e10e96e0fc17c0dd9bd8a65942be3610a2570159.jpg",
+  "3fc61d1853659cb2bf778f529dae785963484548d421df2cb4bf8e99cc5c35f0.jpg",
+  "4232fa23be9d6a51a472b7d4054086f55df97f8a94eceb58af32486df96e28bd.jpg"
+ ],
+ "data": [
+  {
+   "id": "wa-2026-11-18-141922-2",
+   "date": "2026-11-18",
+   "city": "רהט",
+   "mediaCount": 10,
+   "text": "رهط [טלפון]",
+   "file": "cdf3781c13b508b025f1a067e10e96e0fc17c0dd9bd8a65942be3610a2570159.jpg",
+   "alternates": [
+    "c0774a1ed3ac0c22f1bef458c04adab9c5c67b0adecdf136c8fdbb79a334f3a5.jpg",
+    "1114bb82ce0bffee9b218f27499af40e2da14163342170da8c914e7e9ec0b46a.jpg",
+    "4c21de449417f9e3bd819fda620b12fe9527e86ad6b4cbb62aaa9834029343c2.jpg"
+   ]
+  },
+  {
+   "id": "wa-2026-11-18-142202-1",
+   "date": "2026-11-18",
+   "city": "שגב שלום",
+   "mediaCount": 3,
+   "text": "[טלפון] بدون اتصال لو سمحتي قولي لهن [טלפון]",
+   "file": "3fc61d1853659cb2bf778f529dae785963484548d421df2cb4bf8e99cc5c35f0.jpg",
+   "alternates": [
+    "9948e7e097a2644a8b1d0d52f7f71599ce65f77ec89a3146fe87fa34414b604b.jpg",
+    "2fd462bc23e6b0b599d7931c2a9996e647abb1cac7f4b18ce5cfb2e7138091d6.jpg"
+   ]
+  },
+  {
+   "id": "wa-2026-11-18-142438-1",
+   "date": "2026-11-18",
+   "city": "רהט",
+   "mediaCount": 1,
+   "text": "למסירה, איסוף ליד האוניברסיטה מזנון קטן לטלוויזיה של איקאה [טלפון]",
+   "file": "4232fa23be9d6a51a472b7d4054086f55df97f8a94eceb58af32486df96e28bd.jpg",
+   "alternates": []
+  }
+ ]
+}

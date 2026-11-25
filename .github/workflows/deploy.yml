@@ -44,6 +44,7 @@ jobs:
           node build/whatsapp/members.js --live-only
           node build/whatsapp/extract.js
           node build/whatsapp/build-exp.js
+          node build/whatsapp/vision-wanted.js
 
       - name: Fetch fresh data (Airtable + SharePoint + Meta social)
         env:

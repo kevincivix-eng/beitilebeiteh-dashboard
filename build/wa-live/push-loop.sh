@@ -23,5 +23,9 @@ flock -n 9 || { echo "$(date '+%F %T') another push-loop already holds the lock 
 
 while true; do
   ./push.sh >/dev/null 2>&1 || true
+  # Answer the build's request for the photos it could not identify. Separate
+  # script, separate repo, separate key: a failure here must not touch the
+  # bundle push, which is the thing the dashboard actually depends on.
+  [ -x ./photos.sh ] && ./photos.sh >/dev/null 2>&1 || true
   sleep "$INTERVAL"
 done

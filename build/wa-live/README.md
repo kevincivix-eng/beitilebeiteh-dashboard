@@ -73,12 +73,79 @@ parse --live-only → members --live-only → extract → build-exp
 פרסום שנמחק בשש הקבוצות אחת-עשרה דקות אחרי שפורסם הוא חפץ שנמסר. פרסום שנמחק
 חמש שניות אחרי — זה מספר שהוקלד לא נכון, ולא נספר.
 
-## שלוש הרצות על הטלפון
+## תיבת הדואר של התמונות
+
+כמחצית מהפרסומים הם תמונה שבכתובית שלה רק עיר ומספר טלפון. את אלה מזהים מהתמונה
+(`build/whatsapp/README.md` → "זיהוי מהתמונות"), ומכיוון שהתמונות נשארות בטלפון,
+מ-18.11.2026 הם נספרו כמסירות עם אפס פריטים ואפס משקל.
+
+הזיהוי עצמו לא עלה כלום ולא נשבר — מה שנשבר הוא שהתמונה לא הגיעה למחשב. לכן:
+
+```
+collector.js → ~/wa-data/media/<sha256>.jpg          נשאר בטלפון
+                     ↑
+   הבנייה מפרסמת:  data/whatsapp/vision-wanted.json   (גיבובים בלבד)
+                     ↓  כל שעה, אחרי push.sh
+photos.sh  →  repo פרטי  →  git pull  →  wa-live-photos/photos/
+                     ↓
+make-sheets.js → גיליונות מגע → vision-results.json → extract.js
+```
+
+הטלפון לא מחליט מה מעניין; הוא עונה לבקשה של אותו פרסר שעושה את הספירה. ברגע
+שתמונה זוהתה היא יוצאת מהרשימה והתסריט מוחק אותה מהתיבה.
+
+### הקמה (פעם אחת)
+
+1. לפתוח ב-GitHub repo **פרטי** חדש, למשל `beitilebeiteh-photos`, עם ענף `main`.
+2. להתקין את הקוד בטלפון. `~/wa-live` אינו קלון של גיט — הקבצים מגיעים לשם
+   ב-scp או ב-curl מה-repo הציבורי. `mv` אטומי כדי שהעתק שרץ כרגע ימשיך לקרוא
+   את ה-inode שלו ולא קובץ שמשתנה תחתיו, ואחר כך הורגים את המפרסם כדי שיעלה
+   מחדש עם הקוד החדש (הנעילה מבטיחה עותק אחד):
+
+   ```bash
+   cd ~/wa-live && B=https://raw.githubusercontent.com/kevincivix-eng/beitilebeiteh-dashboard/main/build/wa-live && for f in photos.sh push-loop.sh; do curl -fsSL "$B/$f" -o "$f.new" && chmod +x "$f.new" && mv -f "$f.new" "$f"; done && pkill -f "[p]ush-loop" ; ~/.termux/boot/start-collector.sh
+   ```
+
+3. בטלפון — מפתח נפרד לתיבה, ומדפיס את החלק הציבורי שלו:
+
+   ```bash
+   ssh-keygen -t ed25519 -N '' -C wa-photos -f ~/.ssh/id_ed25519_wa_photos >/dev/null && cat ~/.ssh/id_ed25519_wa_photos.pub
+   ```
+
+   את הפלט מדביקים ב-repo הפרטי תחת **Settings → Deploy keys → Add deploy key**,
+   עם **Allow write access** מסומן. מפתח deploy משויך ל-repo אחד, ולכן זה מפתח
+   חדש ולא זה שדוחף את הבאנדלים.
+4. להצביע על ה-repo ולהריץ פעם אחת ידנית:
+
+   ```bash
+   echo 'WA_PHOTOS_REPO=git@github.com:<user>/<repo>.git' > ~/wa-live/photos.env && ~/wa-live/photos.sh; tail -3 ~/wa-data/photos.log
+   ```
+
+5. במחשב, פעם אחת:
+
+   ```bash
+   git clone git@github.com:<user>/<repo>.git wa-live-photos
+   ```
+
+מכאן `photos.sh` רץ מתוך `push-loop.sh` כל שעה. בלי `photos.env` הוא יוצא בשקט,
+כך שהעדכון הזה לא יכול לשבור את האיסוף.
+
+### מחזור העבודה מכאן
+
+```bash
+cd wa-live-photos && git pull && cd ..
+node build/whatsapp/make-sheets.js
+python3 build/whatsapp/make_sheets.py /tmp/wa-sheets   # → זיהוי בצ'אט
+# התוצאות נכנסות ל-build/whatsapp/vision-results.json ונדחפות
+```
+
+## ארבע הרצות על הטלפון
 
 | | מה זה עושה | מי מרים אותו |
 |---|---|---|
 | `run.sh` | שומר על `collector.js` חי | `boot.sh` |
 | `push-loop.sh` | מפרסם לגיטהאב כל שעה | `boot.sh` |
+| `photos.sh` | שולח תמונות שהבנייה ביקשה לזיהוי | `push-loop.sh` |
 | `sshd` | גישה מרחוק לתיקון | `boot.sh` |
 
 `boot.sh` מותקן ב-`~/.termux/boot/start-collector.sh` ורץ בכל הפעלה מחדש. מריצים
