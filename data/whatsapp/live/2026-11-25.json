@@ -2060,6 +2060,324 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC7D69180BBA7B42C75D3BE556F00345",
+   "group": 6,
+   "time": "10:55:20",
+   "sec": 39320,
+   "sender": "m:458935bf01",
+   "text": "ثلاجتين وغاز بحاله جيده .                بعرعره النقب حاره 10                        المعنيه وجديه تتواصل على رقم [טלפון]",
+   "media": [
+    {
+     "sha256": "b14ec7cc8f7ffb70e90f2b58719ddde8545a597dddaa754c5711edf1d7496e39",
+     "md5": "8a27e0cb82fc0752559a13a7fac7b8fb",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6599eaf5fc8b0c4e"
+   ]
+  },
+  {
+   "id": "AC5672111FAAA7D82AE4262A2B8F126C",
+   "group": 6,
+   "time": "10:55:21",
+   "sec": 39321,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "fa29182a7a9e9557e69e5e601e5c3b3d09a49740cd844da7ae5c761e23fabafd",
+     "md5": "e6086fe0d8208ee44a17f5dbf0967143",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9BD217C6164C1D724C3EF117ACF071",
+   "group": 6,
+   "time": "10:55:22",
+   "sec": 39322,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c08ebfbf006158efe1f87201524e37ec36a3b86e17d1e9e098420c2000d3a9ae",
+     "md5": "4ddf806d4ac4807a8d28101c367048f5",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC46CD144B4CD5365F75C2CF2FD7B024",
+   "group": 1,
+   "time": "10:55:28",
+   "sec": 39328,
+   "sender": "m:458935bf01",
+   "text": "ثلاجتين وغاز بحاله جيده .                بعرعره النقب حاره 10                        المعنيه وجديه تتواصل على رقم [טלפון]",
+   "media": [
+    {
+     "sha256": "b14ec7cc8f7ffb70e90f2b58719ddde8545a597dddaa754c5711edf1d7496e39",
+     "md5": "8a27e0cb82fc0752559a13a7fac7b8fb",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6599eaf5fc8b0c4e"
+   ]
+  },
+  {
+   "id": "AC4BF4120CFE5D72CD2AF679AE3766F0",
+   "group": 1,
+   "time": "10:55:29",
+   "sec": 39329,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "fa29182a7a9e9557e69e5e601e5c3b3d09a49740cd844da7ae5c761e23fabafd",
+     "md5": "e6086fe0d8208ee44a17f5dbf0967143",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDCC5A3BC71C67A08322CB1962719C2",
+   "group": 1,
+   "time": "10:55:29",
+   "sec": 39329,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c08ebfbf006158efe1f87201524e37ec36a3b86e17d1e9e098420c2000d3a9ae",
+     "md5": "4ddf806d4ac4807a8d28101c367048f5",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4786F63D7070EEAD2038BB8432EA68",
+   "group": 2,
+   "time": "10:55:41",
+   "sec": 39341,
+   "sender": "m:458935bf01",
+   "text": "ثلاجتين وغاز بحاله جيده .                بعرعره النقب حاره 10                        المعنيه وجديه تتواصل على رقم [טלפון]",
+   "media": [
+    {
+     "sha256": "b14ec7cc8f7ffb70e90f2b58719ddde8545a597dddaa754c5711edf1d7496e39",
+     "md5": "8a27e0cb82fc0752559a13a7fac7b8fb",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6599eaf5fc8b0c4e"
+   ]
+  },
+  {
+   "id": "AC99103981CEA6268E92318B37526792",
+   "group": 2,
+   "time": "10:55:41",
+   "sec": 39341,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "fa29182a7a9e9557e69e5e601e5c3b3d09a49740cd844da7ae5c761e23fabafd",
+     "md5": "e6086fe0d8208ee44a17f5dbf0967143",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC47BD081E1BDB4492C2E822C00DBA2A",
+   "group": 2,
+   "time": "10:55:42",
+   "sec": 39342,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c08ebfbf006158efe1f87201524e37ec36a3b86e17d1e9e098420c2000d3a9ae",
+     "md5": "4ddf806d4ac4807a8d28101c367048f5",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0F0989B0207084FAB3398244B1B498",
+   "group": 3,
+   "time": "10:55:52",
+   "sec": 39352,
+   "sender": "m:458935bf01",
+   "text": "ثلاجتين وغاز بحاله جيده .                بعرعره النقب حاره 10                        المعنيه وجديه تتواصل على رقم [טלפון]",
+   "media": [
+    {
+     "sha256": "b14ec7cc8f7ffb70e90f2b58719ddde8545a597dddaa754c5711edf1d7496e39",
+     "md5": "8a27e0cb82fc0752559a13a7fac7b8fb",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6599eaf5fc8b0c4e"
+   ]
+  },
+  {
+   "id": "ACC96D72B693F845C37A191D28642CF6",
+   "group": 3,
+   "time": "10:55:53",
+   "sec": 39353,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "fa29182a7a9e9557e69e5e601e5c3b3d09a49740cd844da7ae5c761e23fabafd",
+     "md5": "e6086fe0d8208ee44a17f5dbf0967143",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3ABBAE4E417E35E65FD9CF0C704F8E",
+   "group": 3,
+   "time": "10:55:53",
+   "sec": 39353,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c08ebfbf006158efe1f87201524e37ec36a3b86e17d1e9e098420c2000d3a9ae",
+     "md5": "4ddf806d4ac4807a8d28101c367048f5",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4460437EFE33E43B1EEECFE6E93695",
+   "group": 5,
+   "time": "10:56:01",
+   "sec": 39361,
+   "sender": "m:458935bf01",
+   "text": "ثلاجتين وغاز بحاله جيده .                بعرعره النقب حاره 10                        المعنيه وجديه تتواصل على رقم [טלפון]",
+   "media": [
+    {
+     "sha256": "b14ec7cc8f7ffb70e90f2b58719ddde8545a597dddaa754c5711edf1d7496e39",
+     "md5": "8a27e0cb82fc0752559a13a7fac7b8fb",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6599eaf5fc8b0c4e"
+   ]
+  },
+  {
+   "id": "ACDA8B3FFEDAEBE086D4D491A36CBD20",
+   "group": 5,
+   "time": "10:56:01",
+   "sec": 39361,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "fa29182a7a9e9557e69e5e601e5c3b3d09a49740cd844da7ae5c761e23fabafd",
+     "md5": "e6086fe0d8208ee44a17f5dbf0967143",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB66CEF53E7CB9867CFB56070EDF9E2",
+   "group": 5,
+   "time": "10:56:02",
+   "sec": 39362,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c08ebfbf006158efe1f87201524e37ec36a3b86e17d1e9e098420c2000d3a9ae",
+     "md5": "4ddf806d4ac4807a8d28101c367048f5",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACBD5BBCF3A9E6333F5561E458CA829E",
+   "group": 4,
+   "time": "10:56:19",
+   "sec": 39379,
+   "sender": "m:458935bf01",
+   "text": "ثلاجتين وغاز بحاله جيده .                بعرعره النقب حاره 10                        المعنيه وجديه تتواصل على رقم [טלפון]",
+   "media": [
+    {
+     "sha256": "b14ec7cc8f7ffb70e90f2b58719ddde8545a597dddaa754c5711edf1d7496e39",
+     "md5": "8a27e0cb82fc0752559a13a7fac7b8fb",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "6599eaf5fc8b0c4e"
+   ]
+  },
+  {
+   "id": "AC7D0027525D050380394914919072AD",
+   "group": 4,
+   "time": "10:56:20",
+   "sec": 39380,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "fa29182a7a9e9557e69e5e601e5c3b3d09a49740cd844da7ae5c761e23fabafd",
+     "md5": "e6086fe0d8208ee44a17f5dbf0967143",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5DFBDEC1B318C61BD5D52C19A3EEDB",
+   "group": 4,
+   "time": "10:56:20",
+   "sec": 39380,
+   "sender": "m:458935bf01",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c08ebfbf006158efe1f87201524e37ec36a3b86e17d1e9e098420c2000d3a9ae",
+     "md5": "4ddf806d4ac4807a8d28101c367048f5",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
