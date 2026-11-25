@@ -5021,6 +5021,26 @@
    "whoHashes": [
     "d3739492577f4c94"
    ]
+  },
+  {
+   "type": "left",
+   "group": 1,
+   "at": "2026-11-25T19:38:29.105Z",
+   "time": "21:38:29",
+   "count": 1,
+   "whoHashes": [
+    "21a038f785b6ae3d"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-25T19:56:12.726Z",
+   "time": "21:56:12",
+   "count": 1,
+   "whoHashes": [
+    "09d64cc6f549db69"
+   ]
   }
  ]
 }
