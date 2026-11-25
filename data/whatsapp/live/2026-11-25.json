@@ -1544,6 +1544,522 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC28078E73AB401B24C7928D229CD596",
+   "group": 6,
+   "time": "09:21:30",
+   "sec": 33690,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE7A91A725B7D486CD363D692367218",
+   "group": 4,
+   "time": "09:21:38",
+   "sec": 33698,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB68D35CBC6D1BA4E8304F04ECB5304",
+   "group": 3,
+   "time": "09:21:48",
+   "sec": 33708,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC74F94FC29FACD2DDBC02FE0D8501DB",
+   "group": 5,
+   "time": "09:21:55",
+   "sec": 33715,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3413FE40CD5531BA5A4458EA6E597E",
+   "group": 2,
+   "time": "09:22:02",
+   "sec": 33722,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8BD3D4CC4449720E1E635CA8AED7DD",
+   "group": 1,
+   "time": "09:22:12",
+   "sec": 33732,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6BA0F8E7E9D908475E86D424ECBBF8",
+   "group": 2,
+   "time": "09:32:20",
+   "sec": 34340,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "5bafbd92d3aa75a68e1bb8246df268673e28250d938abca7c9a792e9518eda5e",
+     "md5": "c39ecf98bff3d7a7a99b504104984b15",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC262B0A09758E23387CC4533B48BD1E",
+   "group": 3,
+   "time": "09:32:21",
+   "sec": 34341,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "5bafbd92d3aa75a68e1bb8246df268673e28250d938abca7c9a792e9518eda5e",
+     "md5": "c39ecf98bff3d7a7a99b504104984b15",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9D585342384880B2DE07924FF91FEE",
+   "group": 4,
+   "time": "09:32:21",
+   "sec": 34341,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "5bafbd92d3aa75a68e1bb8246df268673e28250d938abca7c9a792e9518eda5e",
+     "md5": "c39ecf98bff3d7a7a99b504104984b15",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC40FFF29D1F442C1122A0ADF17F0F7A",
+   "group": 5,
+   "time": "09:32:21",
+   "sec": 34341,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "5bafbd92d3aa75a68e1bb8246df268673e28250d938abca7c9a792e9518eda5e",
+     "md5": "c39ecf98bff3d7a7a99b504104984b15",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFF9CD92172E9D55CDBE82443DACB58",
+   "group": 1,
+   "time": "09:32:22",
+   "sec": 34342,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "5bafbd92d3aa75a68e1bb8246df268673e28250d938abca7c9a792e9518eda5e",
+     "md5": "c39ecf98bff3d7a7a99b504104984b15",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD7E3F60443A54DA42FB16F8F0CA21E",
+   "group": 2,
+   "time": "09:32:22",
+   "sec": 34342,
+   "sender": "m:8e2a6825b6",
+   "text": "حابه أتبرع بثلاث فساتين ثنين منهم ولا مره التبسن.و الاحمر مره وحده نمره44 \nرقمي [טלפון]",
+   "media": [
+    {
+     "sha256": "7c9e99c3148df75b358d59aae47fdf5eaef073e8732e8290789cbbe2e2b5f9ea",
+     "md5": "f93e480d0b7bfd7cc4b1d7e4f8b5e183",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e14d6f9dbc05edcd"
+   ]
+  },
+  {
+   "id": "ACF3509A2CB9A1B027DB2E7DF2FBEB27",
+   "group": 3,
+   "time": "09:32:23",
+   "sec": 34343,
+   "sender": "m:8e2a6825b6",
+   "text": "حابه أتبرع بثلاث فساتين ثنين منهم ولا مره التبسن.و الاحمر مره وحده نمره44 \nرقمي [טלפון]",
+   "media": [
+    {
+     "sha256": "7c9e99c3148df75b358d59aae47fdf5eaef073e8732e8290789cbbe2e2b5f9ea",
+     "md5": "f93e480d0b7bfd7cc4b1d7e4f8b5e183",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e14d6f9dbc05edcd"
+   ]
+  },
+  {
+   "id": "AC34CB61656431BCFC6E0E9EA9D33797",
+   "group": 4,
+   "time": "09:32:23",
+   "sec": 34343,
+   "sender": "m:8e2a6825b6",
+   "text": "حابه أتبرع بثلاث فساتين ثنين منهم ولا مره التبسن.و الاحمر مره وحده نمره44 \nرقمي [טלפון]",
+   "media": [
+    {
+     "sha256": "7c9e99c3148df75b358d59aae47fdf5eaef073e8732e8290789cbbe2e2b5f9ea",
+     "md5": "f93e480d0b7bfd7cc4b1d7e4f8b5e183",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e14d6f9dbc05edcd"
+   ]
+  },
+  {
+   "id": "AC92918C979D514DCFE80E13F2A57611",
+   "group": 2,
+   "time": "09:32:24",
+   "sec": 34344,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "04ee674e2610f9dbc4059d80ac36538bf131c349ffefe2bdaa381cd5de6e6727",
+     "md5": "6e03155243d3825be0b701cb7eb36e80",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC61A180AE0CF7201BD3E679495E0D0F",
+   "group": 5,
+   "time": "09:32:24",
+   "sec": 34344,
+   "sender": "m:8e2a6825b6",
+   "text": "حابه أتبرع بثلاث فساتين ثنين منهم ولا مره التبسن.و الاحمر مره وحده نمره44 \nرقمي [טלפון]",
+   "media": [
+    {
+     "sha256": "7c9e99c3148df75b358d59aae47fdf5eaef073e8732e8290789cbbe2e2b5f9ea",
+     "md5": "f93e480d0b7bfd7cc4b1d7e4f8b5e183",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e14d6f9dbc05edcd"
+   ]
+  },
+  {
+   "id": "ACF843E951EF1EF7A5963391B6C6C199",
+   "group": 1,
+   "time": "09:32:25",
+   "sec": 34345,
+   "sender": "m:8e2a6825b6",
+   "text": "حابه أتبرع بثلاث فساتين ثنين منهم ولا مره التبسن.و الاحمر مره وحده نمره44 \nرقمي [טלפון]",
+   "media": [
+    {
+     "sha256": "7c9e99c3148df75b358d59aae47fdf5eaef073e8732e8290789cbbe2e2b5f9ea",
+     "md5": "f93e480d0b7bfd7cc4b1d7e4f8b5e183",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e14d6f9dbc05edcd"
+   ]
+  },
+  {
+   "id": "AC8D4780702027B89FCA2C6A8164579A",
+   "group": 3,
+   "time": "09:32:25",
+   "sec": 34345,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "04ee674e2610f9dbc4059d80ac36538bf131c349ffefe2bdaa381cd5de6e6727",
+     "md5": "6e03155243d3825be0b701cb7eb36e80",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACED8185A32D82BA85775CC0BCCF33FD",
+   "group": 4,
+   "time": "09:32:25",
+   "sec": 34345,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "04ee674e2610f9dbc4059d80ac36538bf131c349ffefe2bdaa381cd5de6e6727",
+     "md5": "6e03155243d3825be0b701cb7eb36e80",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD1DE5E75D8C23D2C890539364DC4F2",
+   "group": 1,
+   "time": "09:32:26",
+   "sec": 34346,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "04ee674e2610f9dbc4059d80ac36538bf131c349ffefe2bdaa381cd5de6e6727",
+     "md5": "6e03155243d3825be0b701cb7eb36e80",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCC83D4261975020375BFDB4F3ED788",
+   "group": 2,
+   "time": "09:32:26",
+   "sec": 34346,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC328AABDEBFA5F12756C8BB78621818",
+   "group": 5,
+   "time": "09:32:26",
+   "sec": 34346,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "04ee674e2610f9dbc4059d80ac36538bf131c349ffefe2bdaa381cd5de6e6727",
+     "md5": "6e03155243d3825be0b701cb7eb36e80",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC77CF4A214DAE32528E85CA2F55FBDA",
+   "group": 3,
+   "time": "09:32:27",
+   "sec": 34347,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA11BC42615CE029913421CF14EF4D8",
+   "group": 4,
+   "time": "09:32:27",
+   "sec": 34347,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6877C4FE7E457BFB4148ACF01C0E4B",
+   "group": 5,
+   "time": "09:32:27",
+   "sec": 34347,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF909E0831084968550200364D751AF",
+   "group": 1,
+   "time": "09:32:28",
+   "sec": 34348,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC0BE5D2CA81EB5A3BDF7A5B15A2976",
+   "group": 6,
+   "time": "09:32:33",
+   "sec": 34353,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "5bafbd92d3aa75a68e1bb8246df268673e28250d938abca7c9a792e9518eda5e",
+     "md5": "c39ecf98bff3d7a7a99b504104984b15",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8F2B9E8E86F3F8F70AA589C50815BF",
+   "group": 6,
+   "time": "09:32:35",
+   "sec": 34355,
+   "sender": "m:8e2a6825b6",
+   "text": "حابه أتبرع بثلاث فساتين ثنين منهم ولا مره التبسن.و الاحمر مره وحده نمره44 \nرقمي [טלפון]",
+   "media": [
+    {
+     "sha256": "7c9e99c3148df75b358d59aae47fdf5eaef073e8732e8290789cbbe2e2b5f9ea",
+     "md5": "f93e480d0b7bfd7cc4b1d7e4f8b5e183",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e14d6f9dbc05edcd"
+   ]
+  },
+  {
+   "id": "ACAC69871D6366AB5AD762DC623C72C9",
+   "group": 6,
+   "time": "09:32:35",
+   "sec": 34355,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "04ee674e2610f9dbc4059d80ac36538bf131c349ffefe2bdaa381cd5de6e6727",
+     "md5": "6e03155243d3825be0b701cb7eb36e80",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6D17A1CDBAE59F15C90B9300560B5D",
+   "group": 6,
+   "time": "09:32:36",
+   "sec": 34356,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEC11275A74C9D0C54D0D46F9058849",
+   "group": 6,
+   "time": "09:34:12",
+   "sec": 34452,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACAABDFD91F7410EDDB337EABA152841",
+   "group": 1,
+   "time": "09:34:20",
+   "sec": 34460,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8E131D04CDA60AA65D6F51F542E715",
+   "group": 2,
+   "time": "09:34:28",
+   "sec": 34468,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB85C44E74728D7BB6D64348C9C869A",
+   "group": 3,
+   "time": "09:34:37",
+   "sec": 34477,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4E4B3332AFB43D707B6A53ED36B4A1",
+   "group": 4,
+   "time": "09:34:45",
+   "sec": 34485,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9DD725CDDB68F62EC13EEA29663AAF",
+   "group": 5,
+   "time": "09:35:00",
+   "sec": 34500,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -1628,6 +2144,132 @@
    "at": "2026-11-25T07:15:33.000Z",
    "time": "09:15:33",
    "targetId": "AC3357EAE30C4AB29EBB660C72D742E6"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T07:21:27.000Z",
+   "time": "09:21:27",
+   "targetId": "AC4FD01FDEB7754DD3C8B6FC392B396B"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T07:21:36.000Z",
+   "time": "09:21:36",
+   "targetId": "ACA20358A8B004AE525B2EB439AE154D"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T07:21:52.000Z",
+   "time": "09:21:52",
+   "targetId": "AC8490B7882D82AEEB1A0821295AB0E9"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T07:21:53.000Z",
+   "time": "09:21:53",
+   "targetId": "AC70A43E70152579D3DBA82CB4F7E52E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T07:22:00.000Z",
+   "time": "09:22:00",
+   "targetId": "ACD58DCB3D400FC098B1439F789ADE21"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T07:22:10.000Z",
+   "time": "09:22:10",
+   "targetId": "ACF271D25F26A75B85D4A99F0C6AD775"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T07:34:07.000Z",
+   "time": "09:34:07",
+   "targetId": "ACAB8EDABDE95CB074B55EDF12F5B037"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T07:34:08.000Z",
+   "time": "09:34:08",
+   "targetId": "AC8F2B9E8E86F3F8F70AA589C50815BF"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T07:34:17.000Z",
+   "time": "09:34:17",
+   "targetId": "ACB2CA024A50F01253A0E3564537587E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T07:34:18.000Z",
+   "time": "09:34:18",
+   "targetId": "ACF843E951EF1EF7A5963391B6C6C199"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T07:34:26.000Z",
+   "time": "09:34:26",
+   "targetId": "ACD4C9F3AC1DE19ED00A4E2B95120D1A"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T07:34:26.000Z",
+   "time": "09:34:26",
+   "targetId": "ACD7E3F60443A54DA42FB16F8F0CA21E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T07:34:33.000Z",
+   "time": "09:34:33",
+   "targetId": "AC44EFDFFC167B4A300218C3DF5541A6"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T07:34:34.000Z",
+   "time": "09:34:34",
+   "targetId": "ACF3509A2CB9A1B027DB2E7DF2FBEB27"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T07:34:42.000Z",
+   "time": "09:34:42",
+   "targetId": "ACA2F3D6A3156C127F74854D7729D41E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T07:34:43.000Z",
+   "time": "09:34:43",
+   "targetId": "AC34CB61656431BCFC6E0E9EA9D33797"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T07:34:58.000Z",
+   "time": "09:34:58",
+   "targetId": "AC6442276559B525D3C98984D5F6139A"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T07:34:58.000Z",
+   "time": "09:34:58",
+   "targetId": "AC61A180AE0CF7201BD3E679495E0D0F"
   }
  ]
 }
