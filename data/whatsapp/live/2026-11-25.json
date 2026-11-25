@@ -4435,6 +4435,72 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC47E549CE0C6DE03229EBE2C68BA32C",
+   "group": 3,
+   "time": "18:53:05",
+   "sec": 67985,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACACCDE64F809F30AF2E49D562FF7554",
+   "group": 4,
+   "time": "18:53:19",
+   "sec": 67999,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6B4C7DFFA8A1025961968E11358779",
+   "group": 1,
+   "time": "18:53:27",
+   "sec": 68007,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA9360911E9602EF5C44ED07BDF32B5",
+   "group": 6,
+   "time": "18:53:35",
+   "sec": 68015,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD97E4406AB1DC067208817DBCE5B6C",
+   "group": 5,
+   "time": "18:53:43",
+   "sec": 68023,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE76E2099ABD90EE116926EF444E503",
+   "group": 2,
+   "time": "18:54:00",
+   "sec": 68040,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -4863,6 +4929,88 @@
    "whoHashes": [
     "bdb8e71e3297a1c1"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 4,
+   "at": "2026-11-25T16:27:01.026Z",
+   "time": "18:27:01",
+   "count": 1,
+   "whoHashes": [
+    "af47347c33f7ae05"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 4,
+   "at": "2026-11-25T16:27:04.148Z",
+   "time": "18:27:04",
+   "count": 1,
+   "whoHashes": [
+    "595dc846a292c3e9"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-25T16:29:42.355Z",
+   "time": "18:29:42",
+   "count": 1,
+   "whoHashes": [
+    "37009cf26cbab405"
+   ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T16:53:03.000Z",
+   "time": "18:53:03",
+   "targetId": "ACE6E9300995E6846E733D6FA728F2A1"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T16:53:16.000Z",
+   "time": "18:53:16",
+   "targetId": "ACC4C958AF8A14E3BEDC527637A297A0"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T16:53:25.000Z",
+   "time": "18:53:25",
+   "targetId": "ACD750DAD7E6F854DF7DFFEF04E8FC46"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T16:53:32.000Z",
+   "time": "18:53:32",
+   "targetId": "AC6AA5B5E2CE1EA7027770E472A5EF2E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T16:53:41.000Z",
+   "time": "18:53:41",
+   "targetId": "AC7DE48F20A9FD1F83CDE9E16BF3704E"
+  },
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-25T16:53:57.470Z",
+   "time": "18:53:57",
+   "count": 1,
+   "whoHashes": [
+    "176cb9b02eef6886"
+   ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T16:53:57.000Z",
+   "time": "18:53:57",
+   "targetId": "AC9695DA907717EE9A40612393706775"
   }
  ]
 }
