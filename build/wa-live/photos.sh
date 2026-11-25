@@ -52,7 +52,24 @@ mkdir -p "$WA_DATA_DIR"
 export GIT_SSH_COMMAND="ssh -i $KEY -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
 
 WANTED="$WA_DATA_DIR/vision-wanted.json"
-curl -fsS --max-time 60 "$WANTED_URL" -o "$WANTED.tmp" 2>>"$LOG" || { say "— could not fetch the wanted list (offline? not deployed yet?)"; exit 0; }
+# curl is not guaranteed on a Termux install, and node certainly is — it is
+# what runs the collector. Either one, whichever the phone actually has.
+fetch_wanted() {
+  if command -v curl >/dev/null; then
+    curl -fsS --max-time 60 "$WANTED_URL" -o "$WANTED.tmp" 2>>"$LOG"
+  else
+    node -e '
+      const fs = require("fs");
+      const ac = new AbortController();
+      const t = setTimeout(() => ac.abort(), 60000);
+      fetch(process.argv[1], { signal: ac.signal })
+        .then((r) => (r.ok ? r.text() : Promise.reject(new Error("HTTP " + r.status))))
+        .then((b) => { fs.writeFileSync(process.argv[2], b); clearTimeout(t); })
+        .catch((e) => { console.error(e.message); process.exit(1); });
+    ' "$WANTED_URL" "$WANTED.tmp" 2>>"$LOG"
+  fi
+}
+fetch_wanted || { say "— could not fetch the wanted list (offline? not deployed yet?)"; exit 0; }
 mv -f "$WANTED.tmp" "$WANTED"
 
 # Validate here, in one place, so nothing downstream handles an unchecked name.
@@ -96,11 +113,20 @@ while IFS= read -r f; do
 done < "$NAMES"
 
 # Drop what is no longer wanted: identified, or no longer read as a listing.
+#
+# The membership test is pure bash on purpose. It was `grep -qxF … || rm`, and
+# in a shell whose PATH had no grep that reads as "no match" for every file and
+# deletes the entire mailbox — a missing tool must never be the same answer as
+# "not wanted". A `case` against the newline-delimited list cannot fail that way.
+WANTSET=$'\n'"$(cat "$NAMES")"$'\n'
 REMOVED=0
 for p in photos/*; do
   [ -f "$p" ] || continue
-  b=$(basename "$p")
-  grep -qxF "$b" "$NAMES" || { rm -f "$p" && REMOVED=$((REMOVED + 1)); }
+  b=${p##*/}
+  case "$WANTSET" in
+    *$'\n'"$b"$'\n'*) ;;
+    *) rm -f "$p" && REMOVED=$((REMOVED + 1)) ;;
+  esac
 done
 
 MISSING=0
@@ -111,7 +137,15 @@ done < "$NAMES"
 
 git add -A photos
 if git diff --cached --quiet; then
-  say "nothing to mail ($COUNT wanted, all present)"
+  if [ "$MISSING" -gt 0 ]; then
+    # Wanted, not in the mailbox, and not in the store either: the photo was
+    # captured before this phone's media store existed, or the download failed
+    # at capture time. Nothing here can fix that, and it must not look like
+    # success.
+    say "⚠ $MISSING of $COUNT wanted photo(s) are not in the store — cannot be identified"
+  else
+    say "nothing to mail ($COUNT wanted, all already sent)"
+  fi
   exit 0
 fi
 git commit --quiet -m "Photos for identification: +$ADDED -$REMOVED ($COUNT open)" || exit 1
