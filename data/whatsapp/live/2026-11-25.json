@@ -2,7 +2,1550 @@
  "date": "2026-11-25",
  "source": "wa-live",
  "tz": "Asia/Jerusalem",
- "messages": [],
+ "messages": [
+  {
+   "id": "AC7574419FC8AFF9150CD4517D42A1E1",
+   "group": 4,
+   "time": "08:27:47",
+   "sec": 30467,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a1eea01e40501a39049224a9639caff1111a3d58a17592e3cd890f4f88d8ac0a",
+     "md5": "039c62413a80ebaf18d06431c2577213",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9CE762DC1CC78189B7797C21632AEF",
+   "group": 2,
+   "time": "08:27:48",
+   "sec": 30468,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a1eea01e40501a39049224a9639caff1111a3d58a17592e3cd890f4f88d8ac0a",
+     "md5": "039c62413a80ebaf18d06431c2577213",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFE7D654ED062B89BDDA1A9BA46C7C3",
+   "group": 3,
+   "time": "08:27:49",
+   "sec": 30469,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a1eea01e40501a39049224a9639caff1111a3d58a17592e3cd890f4f88d8ac0a",
+     "md5": "039c62413a80ebaf18d06431c2577213",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5F77553B872889A5558FC75F49B669",
+   "group": 5,
+   "time": "08:27:49",
+   "sec": 30469,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a1eea01e40501a39049224a9639caff1111a3d58a17592e3cd890f4f88d8ac0a",
+     "md5": "039c62413a80ebaf18d06431c2577213",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF2135FA809DB08017EDD500E19518B",
+   "group": 1,
+   "time": "08:27:50",
+   "sec": 30470,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a1eea01e40501a39049224a9639caff1111a3d58a17592e3cd890f4f88d8ac0a",
+     "md5": "039c62413a80ebaf18d06431c2577213",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC32948A15FC5C7B55ACD0584E4DD6AF",
+   "group": 4,
+   "time": "08:27:50",
+   "sec": 30470,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0246c986de0a4b9f6d0c234fd6941b7c68cb5fa908308eca384a9008d042ba36",
+     "md5": "548d152f3b815d9bd057420726b55e3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC98D00C2173545E08CC02CF0A9C7B6",
+   "group": 2,
+   "time": "08:27:51",
+   "sec": 30471,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0246c986de0a4b9f6d0c234fd6941b7c68cb5fa908308eca384a9008d042ba36",
+     "md5": "548d152f3b815d9bd057420726b55e3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC12859D67D78091E5C9276DE478AB00",
+   "group": 3,
+   "time": "08:27:51",
+   "sec": 30471,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0246c986de0a4b9f6d0c234fd6941b7c68cb5fa908308eca384a9008d042ba36",
+     "md5": "548d152f3b815d9bd057420726b55e3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC43EDD8BA80CF6C8D0D71CF01692D4A",
+   "group": 5,
+   "time": "08:27:51",
+   "sec": 30471,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0246c986de0a4b9f6d0c234fd6941b7c68cb5fa908308eca384a9008d042ba36",
+     "md5": "548d152f3b815d9bd057420726b55e3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC77EB5976A883DC47AE3D00ACCFA4E",
+   "group": 1,
+   "time": "08:27:52",
+   "sec": 30472,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0246c986de0a4b9f6d0c234fd6941b7c68cb5fa908308eca384a9008d042ba36",
+     "md5": "548d152f3b815d9bd057420726b55e3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA52D98166FFEC9BC26B56CF1A362A4",
+   "group": 4,
+   "time": "08:27:52",
+   "sec": 30472,
+   "sender": "m:8e2a6825b6",
+   "text": "سراويل ابيض لحجاج كبار 11قطعه وثلاثه مفتوحا مو ملبسات",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4F5256712D636BEA704C1589EAA1B5",
+   "group": 2,
+   "time": "08:27:53",
+   "sec": 30473,
+   "sender": "m:8e2a6825b6",
+   "text": "سراويل ابيض لحجاج كبار 11قطعه وثلاثه مفتوحا مو ملبسات",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCE984EBA37505A3997EF5DB11ED389",
+   "group": 3,
+   "time": "08:27:53",
+   "sec": 30473,
+   "sender": "m:8e2a6825b6",
+   "text": "سراويل ابيض لحجاج كبار 11قطعه وثلاثه مفتوحا مو ملبسات",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACBECA0F435B206D118AF92F34636452",
+   "group": 1,
+   "time": "08:27:54",
+   "sec": 30474,
+   "sender": "m:8e2a6825b6",
+   "text": "سراويل ابيض لحجاج كبار 11قطعه وثلاثه مفتوحا مو ملبسات",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC76D40E9636829071DAE3E1D1C09F5C",
+   "group": 5,
+   "time": "08:27:54",
+   "sec": 30474,
+   "sender": "m:8e2a6825b6",
+   "text": "سراويل ابيض لحجاج كبار 11قطعه وثلاثه مفتوحا مو ملبسات",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFA4009C80128F621B9366EA98B89B8",
+   "group": 2,
+   "time": "08:27:55",
+   "sec": 30475,
+   "sender": "m:8e2a6825b6",
+   "text": "وهذا46 ولا لبسه",
+   "media": [
+    {
+     "sha256": "9c5b4e6fa9ec2c4e1959fc99e46fa6117145eeded503956c06e0b38dde772f47",
+     "md5": "00351a6c20781ff7b8d1c78af8062200",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD8CF15F5E9B4E4B47E1C68E551FEEC",
+   "group": 4,
+   "time": "08:27:55",
+   "sec": 30475,
+   "sender": "m:8e2a6825b6",
+   "text": "وهذا46 ولا لبسه",
+   "media": [
+    {
+     "sha256": "9c5b4e6fa9ec2c4e1959fc99e46fa6117145eeded503956c06e0b38dde772f47",
+     "md5": "00351a6c20781ff7b8d1c78af8062200",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC65DD94320B773D628C6E3AD01EC5E5",
+   "group": 1,
+   "time": "08:27:56",
+   "sec": 30476,
+   "sender": "m:8e2a6825b6",
+   "text": "وهذا46 ولا لبسه",
+   "media": [
+    {
+     "sha256": "9c5b4e6fa9ec2c4e1959fc99e46fa6117145eeded503956c06e0b38dde772f47",
+     "md5": "00351a6c20781ff7b8d1c78af8062200",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7B533CE8D54F3D8521E4545F861D5F",
+   "group": 3,
+   "time": "08:27:56",
+   "sec": 30476,
+   "sender": "m:8e2a6825b6",
+   "text": "وهذا46 ولا لبسه",
+   "media": [
+    {
+     "sha256": "9c5b4e6fa9ec2c4e1959fc99e46fa6117145eeded503956c06e0b38dde772f47",
+     "md5": "00351a6c20781ff7b8d1c78af8062200",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC88884273D372D5F4981E424005925A",
+   "group": 5,
+   "time": "08:27:56",
+   "sec": 30476,
+   "sender": "m:8e2a6825b6",
+   "text": "وهذا46 ولا لبسه",
+   "media": [
+    {
+     "sha256": "9c5b4e6fa9ec2c4e1959fc99e46fa6117145eeded503956c06e0b38dde772f47",
+     "md5": "00351a6c20781ff7b8d1c78af8062200",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD58DCB3D400FC098B1439F789ADE21",
+   "group": 2,
+   "time": "08:27:57",
+   "sec": 30477,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3ed56f9d3f7706fd"
+   ]
+  },
+  {
+   "id": "AC8490B7882D82AEEB1A0821295AB0E9",
+   "group": 3,
+   "time": "08:27:57",
+   "sec": 30477,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3ed56f9d3f7706fd"
+   ]
+  },
+  {
+   "id": "ACA20358A8B004AE525B2EB439AE154D",
+   "group": 4,
+   "time": "08:27:57",
+   "sec": 30477,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3ed56f9d3f7706fd"
+   ]
+  },
+  {
+   "id": "ACF271D25F26A75B85D4A99F0C6AD775",
+   "group": 1,
+   "time": "08:27:58",
+   "sec": 30478,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3ed56f9d3f7706fd"
+   ]
+  },
+  {
+   "id": "AC70A43E70152579D3DBA82CB4F7E52E",
+   "group": 5,
+   "time": "08:27:58",
+   "sec": 30478,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3ed56f9d3f7706fd"
+   ]
+  },
+  {
+   "id": "AC50BB0BF90A114FB6D2FBD458D52A72",
+   "group": 6,
+   "time": "08:28:08",
+   "sec": 30488,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a1eea01e40501a39049224a9639caff1111a3d58a17592e3cd890f4f88d8ac0a",
+     "md5": "039c62413a80ebaf18d06431c2577213",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC28AD2C9EBBC0DFE67FA62AB5FFFD81",
+   "group": 6,
+   "time": "08:28:09",
+   "sec": 30489,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0246c986de0a4b9f6d0c234fd6941b7c68cb5fa908308eca384a9008d042ba36",
+     "md5": "548d152f3b815d9bd057420726b55e3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACABC2F28DA5D1CB02D0317FED93388A",
+   "group": 6,
+   "time": "08:28:09",
+   "sec": 30489,
+   "sender": "m:8e2a6825b6",
+   "text": "سراويل ابيض لحجاج كبار 11قطعه وثلاثه مفتوحا مو ملبسات",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC905D75631C3104A8DF6C2A51819AC0",
+   "group": 6,
+   "time": "08:28:10",
+   "sec": 30490,
+   "sender": "m:8e2a6825b6",
+   "text": "وهذا46 ولا لبسه",
+   "media": [
+    {
+     "sha256": "9c5b4e6fa9ec2c4e1959fc99e46fa6117145eeded503956c06e0b38dde772f47",
+     "md5": "00351a6c20781ff7b8d1c78af8062200",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4FD01FDEB7754DD3C8B6FC392B396B",
+   "group": 6,
+   "time": "08:28:12",
+   "sec": 30492,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3ed56f9d3f7706fd"
+   ]
+  },
+  {
+   "id": "AC4CDCCB2AD0DBF01560A820B860AA79",
+   "group": 2,
+   "time": "09:08:19",
+   "sec": 32899,
+   "sender": "m:8e2a6825b6",
+   "text": "الي ودها اياهن نمره 38 و40",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8A6641665DF327B2E6E600A01CD5A5",
+   "group": 4,
+   "time": "09:08:20",
+   "sec": 32900,
+   "sender": "m:8e2a6825b6",
+   "text": "الي ودها اياهن نمره 38 و40",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA33AF08E7C3385D59D9692123C8F10",
+   "group": 5,
+   "time": "09:08:20",
+   "sec": 32900,
+   "sender": "m:8e2a6825b6",
+   "text": "الي ودها اياهن نمره 38 و40",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC167B452A7BA5E90C9F7C89006BEEE2",
+   "group": 2,
+   "time": "09:08:21",
+   "sec": 32901,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCA9A38ABA1F7F898F23DBB948A66FD",
+   "group": 4,
+   "time": "09:08:22",
+   "sec": 32902,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC96878D2C8494FFF7C38FAF805A1FD0",
+   "group": 2,
+   "time": "09:08:23",
+   "sec": 32903,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "94e37c820b1cac4ec02084bff73ccb4ea4c1a2b7e6eb10b00d61e5e82c05adbd",
+     "md5": "323e8996a7943261fc189ac706bf4930",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACBEE5DCD5EDDC0C3885B344C31CBE7F",
+   "group": 4,
+   "time": "09:08:23",
+   "sec": 32903,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "94e37c820b1cac4ec02084bff73ccb4ea4c1a2b7e6eb10b00d61e5e82c05adbd",
+     "md5": "323e8996a7943261fc189ac706bf4930",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC966B5CFDADFD5D5A26178853BB6671",
+   "group": 5,
+   "time": "09:08:23",
+   "sec": 32903,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEC1F81D2C10DD342F2CF3F08A3A646",
+   "group": 3,
+   "time": "09:08:25",
+   "sec": 32905,
+   "sender": "m:8e2a6825b6",
+   "text": "الي ودها اياهن نمره 38 و40",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3CD3D602C56DE24EDE9B9872A26729",
+   "group": 5,
+   "time": "09:08:25",
+   "sec": 32905,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "94e37c820b1cac4ec02084bff73ccb4ea4c1a2b7e6eb10b00d61e5e82c05adbd",
+     "md5": "323e8996a7943261fc189ac706bf4930",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0B5D2D898BA59BB4CF53B34F5285D7",
+   "group": 1,
+   "time": "09:08:26",
+   "sec": 32906,
+   "sender": "m:8e2a6825b6",
+   "text": "الي ودها اياهن نمره 38 و40",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB5B03D4E610785A128AE588FDE1FA1",
+   "group": 2,
+   "time": "09:08:26",
+   "sec": 32906,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a90e81752dfab4604d88191a373e46e2a940cddbf42091d07f113ee48d3a174a",
+     "md5": "d6108d81eb2298b755704c670985e6e4",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC6A598CE0C2E2928AC418BD1A6EDB71",
+   "group": 4,
+   "time": "09:08:26",
+   "sec": 32906,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a90e81752dfab4604d88191a373e46e2a940cddbf42091d07f113ee48d3a174a",
+     "md5": "d6108d81eb2298b755704c670985e6e4",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA8B34342C37FAE26219BFFE676ECBC",
+   "group": 5,
+   "time": "09:08:27",
+   "sec": 32907,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a90e81752dfab4604d88191a373e46e2a940cddbf42091d07f113ee48d3a174a",
+     "md5": "d6108d81eb2298b755704c670985e6e4",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC521D88106A70BBFE67DCD36E690915",
+   "group": 2,
+   "time": "09:08:28",
+   "sec": 32908,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "549a792eb0e471719756ef121842570954a232eacfea5f328a06441a104dfe06",
+     "md5": "2c9bfbce7a891bb115a46bca38596f3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA2069029F6AE0D5390044FB750D313",
+   "group": 3,
+   "time": "09:08:28",
+   "sec": 32908,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC24FDCC3C77BB5C47E6570DBAECFB80",
+   "group": 4,
+   "time": "09:08:28",
+   "sec": 32908,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "549a792eb0e471719756ef121842570954a232eacfea5f328a06441a104dfe06",
+     "md5": "2c9bfbce7a891bb115a46bca38596f3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8B481603D1EF6AA416F82C61DB4FD5",
+   "group": 5,
+   "time": "09:08:29",
+   "sec": 32909,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "549a792eb0e471719756ef121842570954a232eacfea5f328a06441a104dfe06",
+     "md5": "2c9bfbce7a891bb115a46bca38596f3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC701D3E8C09C43DC0500D4AEC53D4FE",
+   "group": 2,
+   "time": "09:08:30",
+   "sec": 32910,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "263e3145b41784a81920f446d65687449924f378a8fe79d2dff1bb940c34dbfb",
+     "md5": "ec7646abcb905f8ea5c90b5734c97b33",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8D4AC97551CAD6AD897798D5D067FD",
+   "group": 4,
+   "time": "09:08:30",
+   "sec": 32910,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "263e3145b41784a81920f446d65687449924f378a8fe79d2dff1bb940c34dbfb",
+     "md5": "ec7646abcb905f8ea5c90b5734c97b33",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC73BDE2B5C4400B1566EEB0D15A4FA4",
+   "group": 1,
+   "time": "09:08:31",
+   "sec": 32911,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC275029884DCE0794E848D639F8D7B2",
+   "group": 3,
+   "time": "09:08:31",
+   "sec": 32911,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "94e37c820b1cac4ec02084bff73ccb4ea4c1a2b7e6eb10b00d61e5e82c05adbd",
+     "md5": "323e8996a7943261fc189ac706bf4930",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5BD0DA8DE43584AA70267A688670D0",
+   "group": 2,
+   "time": "09:08:32",
+   "sec": 32912,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "54cad74e3a528b15950cc921f2db8249c62d22d13f0d351e8433d6f78cdd5438",
+     "md5": "561e7a7ca84fdd8396757d160fcd625d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACAA767FF120710318750F1D52F0D246",
+   "group": 4,
+   "time": "09:08:32",
+   "sec": 32912,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "54cad74e3a528b15950cc921f2db8249c62d22d13f0d351e8433d6f78cdd5438",
+     "md5": "561e7a7ca84fdd8396757d160fcd625d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0BF96DEA24F82BD7DE3CF020543823",
+   "group": 5,
+   "time": "09:08:32",
+   "sec": 32912,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "263e3145b41784a81920f446d65687449924f378a8fe79d2dff1bb940c34dbfb",
+     "md5": "ec7646abcb905f8ea5c90b5734c97b33",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1332BF076D7C40287C62D8362C2A9F",
+   "group": 1,
+   "time": "09:08:33",
+   "sec": 32913,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "94e37c820b1cac4ec02084bff73ccb4ea4c1a2b7e6eb10b00d61e5e82c05adbd",
+     "md5": "323e8996a7943261fc189ac706bf4930",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC97DD416C8F8AC1F52D502BC19273F7",
+   "group": 5,
+   "time": "09:08:33",
+   "sec": 32913,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "54cad74e3a528b15950cc921f2db8249c62d22d13f0d351e8433d6f78cdd5438",
+     "md5": "561e7a7ca84fdd8396757d160fcd625d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8991C76D8F65E5601F0539057070EC",
+   "group": 1,
+   "time": "09:08:34",
+   "sec": 32914,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a90e81752dfab4604d88191a373e46e2a940cddbf42091d07f113ee48d3a174a",
+     "md5": "d6108d81eb2298b755704c670985e6e4",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC70AAD4B8267FAD1BE2D362D213F7A2",
+   "group": 2,
+   "time": "09:08:34",
+   "sec": 32914,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9ea82d03681027e712b422c2f5a89989a95b07f606d3593d88910fea410135c3",
+     "md5": "3db8e8668402c1de1424c921a5623238",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2B48142ED51C05E9C12055C0EC26CC",
+   "group": 4,
+   "time": "09:08:34",
+   "sec": 32914,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9ea82d03681027e712b422c2f5a89989a95b07f606d3593d88910fea410135c3",
+     "md5": "3db8e8668402c1de1424c921a5623238",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC972A060395542BE68D7C70F8715A35",
+   "group": 2,
+   "time": "09:08:35",
+   "sec": 32915,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0634443881755bd493675e4bfafb2fc3f0d5f823c7b6f6a47c6051ca41405c6d",
+     "md5": "af11eeadcf17c56c312a55b33192fdae",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC53E5822EEDFA6F7ED33CFE407EFB4C",
+   "group": 4,
+   "time": "09:08:35",
+   "sec": 32915,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0634443881755bd493675e4bfafb2fc3f0d5f823c7b6f6a47c6051ca41405c6d",
+     "md5": "af11eeadcf17c56c312a55b33192fdae",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC50327AA1C3025C525031702CEA039F",
+   "group": 1,
+   "time": "09:08:36",
+   "sec": 32916,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "549a792eb0e471719756ef121842570954a232eacfea5f328a06441a104dfe06",
+     "md5": "2c9bfbce7a891bb115a46bca38596f3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC549FE9C7B139BEF04DF5D844744CB5",
+   "group": 2,
+   "time": "09:08:36",
+   "sec": 32916,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c6589e78d1a3f3142e8ef1aad6ee1233e273b580eda04483bac698ade6fc8782",
+     "md5": "0a0ed50901ac7c9e319719d6f8dbe146",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF63D628DA175D4F3C1C5B74E6026A2",
+   "group": 5,
+   "time": "09:08:36",
+   "sec": 32916,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9ea82d03681027e712b422c2f5a89989a95b07f606d3593d88910fea410135c3",
+     "md5": "3db8e8668402c1de1424c921a5623238",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD036B921EDE8664FAE2AE311D7A8EF",
+   "group": 3,
+   "time": "09:08:37",
+   "sec": 32917,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a90e81752dfab4604d88191a373e46e2a940cddbf42091d07f113ee48d3a174a",
+     "md5": "d6108d81eb2298b755704c670985e6e4",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC03EA1904E75072CA34EA50E57ABD48",
+   "group": 4,
+   "time": "09:08:37",
+   "sec": 32917,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c6589e78d1a3f3142e8ef1aad6ee1233e273b580eda04483bac698ade6fc8782",
+     "md5": "0a0ed50901ac7c9e319719d6f8dbe146",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC00045DC5C29C2DAD8843136D12129",
+   "group": 1,
+   "time": "09:08:38",
+   "sec": 32918,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "263e3145b41784a81920f446d65687449924f378a8fe79d2dff1bb940c34dbfb",
+     "md5": "ec7646abcb905f8ea5c90b5734c97b33",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE1670C28ED2DE27F6EA0F53C26CD91",
+   "group": 3,
+   "time": "09:08:38",
+   "sec": 32918,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "549a792eb0e471719756ef121842570954a232eacfea5f328a06441a104dfe06",
+     "md5": "2c9bfbce7a891bb115a46bca38596f3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC503178B2A59E0B61FD64CB565849F0",
+   "group": 5,
+   "time": "09:08:38",
+   "sec": 32918,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0634443881755bd493675e4bfafb2fc3f0d5f823c7b6f6a47c6051ca41405c6d",
+     "md5": "af11eeadcf17c56c312a55b33192fdae",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCFCE7268F34911CD8A3F675F7D79A1",
+   "group": 3,
+   "time": "09:08:39",
+   "sec": 32919,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "263e3145b41784a81920f446d65687449924f378a8fe79d2dff1bb940c34dbfb",
+     "md5": "ec7646abcb905f8ea5c90b5734c97b33",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7FCB6D169B70C615AB084BFC8C00B1",
+   "group": 5,
+   "time": "09:08:39",
+   "sec": 32919,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c6589e78d1a3f3142e8ef1aad6ee1233e273b580eda04483bac698ade6fc8782",
+     "md5": "0a0ed50901ac7c9e319719d6f8dbe146",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC653C90BF91478E060B60098C549EBD",
+   "group": 3,
+   "time": "09:08:40",
+   "sec": 32920,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "54cad74e3a528b15950cc921f2db8249c62d22d13f0d351e8433d6f78cdd5438",
+     "md5": "561e7a7ca84fdd8396757d160fcd625d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDFAFA01ADBC329722D537BBA6A9704",
+   "group": 1,
+   "time": "09:08:41",
+   "sec": 32921,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "54cad74e3a528b15950cc921f2db8249c62d22d13f0d351e8433d6f78cdd5438",
+     "md5": "561e7a7ca84fdd8396757d160fcd625d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7D667F928BFEB734E4C7FE8B83B047",
+   "group": 3,
+   "time": "09:08:41",
+   "sec": 32921,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9ea82d03681027e712b422c2f5a89989a95b07f606d3593d88910fea410135c3",
+     "md5": "3db8e8668402c1de1424c921a5623238",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3E653116E5A87E474694FC1E50CE26",
+   "group": 3,
+   "time": "09:08:41",
+   "sec": 32921,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0634443881755bd493675e4bfafb2fc3f0d5f823c7b6f6a47c6051ca41405c6d",
+     "md5": "af11eeadcf17c56c312a55b33192fdae",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC28460FB2AD26F2B5057AF298BFF9DC",
+   "group": 1,
+   "time": "09:08:42",
+   "sec": 32922,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9ea82d03681027e712b422c2f5a89989a95b07f606d3593d88910fea410135c3",
+     "md5": "3db8e8668402c1de1424c921a5623238",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2942D99983D611C6899D51B08C9C8F",
+   "group": 2,
+   "time": "09:08:42",
+   "sec": 32922,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "c057334c9373e54a"
+   ]
+  },
+  {
+   "id": "ACF336617A8F2201E1DC866E7ADD12AB",
+   "group": 1,
+   "time": "09:08:43",
+   "sec": 32923,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0634443881755bd493675e4bfafb2fc3f0d5f823c7b6f6a47c6051ca41405c6d",
+     "md5": "af11eeadcf17c56c312a55b33192fdae",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4EDCAE1897C0FC611DB33BF845B06F",
+   "group": 3,
+   "time": "09:08:43",
+   "sec": 32923,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c6589e78d1a3f3142e8ef1aad6ee1233e273b580eda04483bac698ade6fc8782",
+     "md5": "0a0ed50901ac7c9e319719d6f8dbe146",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC77DCC568037ED80CD2F122272F486E",
+   "group": 4,
+   "time": "09:08:43",
+   "sec": 32923,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "c057334c9373e54a"
+   ]
+  },
+  {
+   "id": "AC3C7D9CC08EC14458FB4F824E511E30",
+   "group": 1,
+   "time": "09:08:44",
+   "sec": 32924,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c6589e78d1a3f3142e8ef1aad6ee1233e273b580eda04483bac698ade6fc8782",
+     "md5": "0a0ed50901ac7c9e319719d6f8dbe146",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC449701C7485AE75C8E51749A3CD25F",
+   "group": 5,
+   "time": "09:08:44",
+   "sec": 32924,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "c057334c9373e54a"
+   ]
+  },
+  {
+   "id": "ACE4A947740FAD03B0B7E81456AAF56E",
+   "group": 1,
+   "time": "09:08:45",
+   "sec": 32925,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "c057334c9373e54a"
+   ]
+  },
+  {
+   "id": "AC82FE5DBC09725EA36C2141EFB82E2C",
+   "group": 3,
+   "time": "09:08:46",
+   "sec": 32926,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "c057334c9373e54a"
+   ]
+  },
+  {
+   "id": "ACFA2365C1E6F235310142F6E3264563",
+   "group": 6,
+   "time": "09:08:52",
+   "sec": 32932,
+   "sender": "m:8e2a6825b6",
+   "text": "الي ودها اياهن نمره 38 و40",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA427A8642F20B6BEF44CA0FA0491E9",
+   "group": 6,
+   "time": "09:08:53",
+   "sec": 32933,
+   "sender": "m:8e2a6825b6",
+   "text": "رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3357EAE30C4AB29EBB660C72D742E6",
+   "group": 6,
+   "time": "09:08:54",
+   "sec": 32934,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "c057334c9373e54a"
+   ]
+  },
+  {
+   "id": "ACDE9A20D2CBC97642A05D97F5B95423",
+   "group": 6,
+   "time": "09:08:55",
+   "sec": 32935,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "94e37c820b1cac4ec02084bff73ccb4ea4c1a2b7e6eb10b00d61e5e82c05adbd",
+     "md5": "323e8996a7943261fc189ac706bf4930",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC878C1E70AA36B0B0E08DE3CC735A1B",
+   "group": 6,
+   "time": "09:08:55",
+   "sec": 32935,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "a90e81752dfab4604d88191a373e46e2a940cddbf42091d07f113ee48d3a174a",
+     "md5": "d6108d81eb2298b755704c670985e6e4",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC85DDFE15BBAC321C52FCD0022C0CF7",
+   "group": 6,
+   "time": "09:08:56",
+   "sec": 32936,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "549a792eb0e471719756ef121842570954a232eacfea5f328a06441a104dfe06",
+     "md5": "2c9bfbce7a891bb115a46bca38596f3c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC189541E2A643E69DA5B29A4D947D67",
+   "group": 6,
+   "time": "09:08:56",
+   "sec": 32936,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "263e3145b41784a81920f446d65687449924f378a8fe79d2dff1bb940c34dbfb",
+     "md5": "ec7646abcb905f8ea5c90b5734c97b33",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3FE385B6BE47E4AA35BA20C2EB7CA9",
+   "group": 6,
+   "time": "09:08:57",
+   "sec": 32937,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "54cad74e3a528b15950cc921f2db8249c62d22d13f0d351e8433d6f78cdd5438",
+     "md5": "561e7a7ca84fdd8396757d160fcd625d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC750C985D696927BB84258E75155B89",
+   "group": 6,
+   "time": "09:08:57",
+   "sec": 32937,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "9ea82d03681027e712b422c2f5a89989a95b07f606d3593d88910fea410135c3",
+     "md5": "3db8e8668402c1de1424c921a5623238",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDE746765A7308922EDD90F569BC324",
+   "group": 6,
+   "time": "09:08:58",
+   "sec": 32938,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "0634443881755bd493675e4bfafb2fc3f0d5f823c7b6f6a47c6051ca41405c6d",
+     "md5": "af11eeadcf17c56c312a55b33192fdae",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA18C8740A3BEE461E9F2EF9F68277A",
+   "group": 6,
+   "time": "09:08:58",
+   "sec": 32938,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c6589e78d1a3f3142e8ef1aad6ee1233e273b580eda04483bac698ade6fc8782",
+     "md5": "0a0ed50901ac7c9e319719d6f8dbe146",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACFE79FEBF91F0D001DAF3D368D6AB92",
+   "group": 1,
+   "time": "09:15:03",
+   "sec": 33303,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC209A0A3214258A6D22B32B2FE13BBC",
+   "group": 2,
+   "time": "09:15:09",
+   "sec": 33309,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9D7C5E1719A01F7922D44043BBE93F",
+   "group": 5,
+   "time": "09:15:15",
+   "sec": 33315,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0ECDB6CFE7B146320D7C616BCEBCE5",
+   "group": 3,
+   "time": "09:15:21",
+   "sec": 33321,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC578E49F33B3B486562BE216DF46A92",
+   "group": 4,
+   "time": "09:15:29",
+   "sec": 33329,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF3A92D00B415813D027227EA1BB0E2",
+   "group": 6,
+   "time": "09:15:36",
+   "sec": 33336,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  }
+ ],
  "events": [
   {
    "type": "left",
@@ -23,6 +1566,68 @@
    "whoHashes": [
     "47aff23789114e37"
    ]
+  },
+  {
+   "type": "left",
+   "group": 1,
+   "at": "2026-11-25T06:31:11.068Z",
+   "time": "08:31:11",
+   "count": 1,
+   "whoHashes": [
+    "c7348de29da7c7d7"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-25T06:58:24.870Z",
+   "time": "08:58:24",
+   "count": 1,
+   "whoHashes": [
+    "6f8a735ab8b2c797"
+   ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-25T07:15:00.000Z",
+   "time": "09:15:00",
+   "targetId": "ACE4A947740FAD03B0B7E81456AAF56E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-25T07:15:07.000Z",
+   "time": "09:15:07",
+   "targetId": "AC2942D99983D611C6899D51B08C9C8F"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-25T07:15:13.000Z",
+   "time": "09:15:13",
+   "targetId": "AC449701C7485AE75C8E51749A3CD25F"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-25T07:15:19.000Z",
+   "time": "09:15:19",
+   "targetId": "AC82FE5DBC09725EA36C2141EFB82E2C"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-25T07:15:27.000Z",
+   "time": "09:15:27",
+   "targetId": "AC77DCC568037ED80CD2F122272F486E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-25T07:15:33.000Z",
+   "time": "09:15:33",
+   "targetId": "AC3357EAE30C4AB29EBB660C72D742E6"
   }
  ]
 }
