@@ -194,6 +194,351 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "3A585499970A7A35DE62",
+   "group": 3,
+   "time": "14:47:46",
+   "sec": 53266,
+   "sender": "m:89ecf743f6",
+   "text": "مرحبا \nمعنية اعطي طقم كنبيات للمعنية \nتكون جدية \nوتستلم مكسيموم لبكرا الصبح\nمندون الطاولان",
+   "media": [
+    {
+     "sha256": "511b817fee615f6b4d528f1fc273ce446ef9247d26e12e2a24ee5986dcb37df7",
+     "md5": "0fe73b29fb793a05990e4d5785cdbd74",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A80161A6C1469628482",
+   "group": 4,
+   "time": "14:47:46",
+   "sec": 53266,
+   "sender": "m:89ecf743f6",
+   "text": "مرحبا \nمعنية اعطي طقم كنبيات للمعنية \nتكون جدية \nوتستلم مكسيموم لبكرا الصبح\nمندون الطاولان",
+   "media": [
+    {
+     "sha256": "511b817fee615f6b4d528f1fc273ce446ef9247d26e12e2a24ee5986dcb37df7",
+     "md5": "0fe73b29fb793a05990e4d5785cdbd74",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A273A8BE16C25200112",
+   "group": 4,
+   "time": "14:47:47",
+   "sec": 53267,
+   "sender": "m:89ecf743f6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "11821aabeb3f62edeeced6f2d8613e8e60de927a52ccc7e9123913a85fc5d09d",
+     "md5": "8f2e00623c0f779375132eb447df13d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AD095586C896D45DCF6",
+   "group": 6,
+   "time": "14:47:47",
+   "sec": 53267,
+   "sender": "m:89ecf743f6",
+   "text": "مرحبا \nمعنية اعطي طقم كنبيات للمعنية \nتكون جدية \nوتستلم مكسيموم لبكرا الصبح\nمندون الطاولان",
+   "media": [
+    {
+     "sha256": "511b817fee615f6b4d528f1fc273ce446ef9247d26e12e2a24ee5986dcb37df7",
+     "md5": "0fe73b29fb793a05990e4d5785cdbd74",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A7F6133D909ACD152FD",
+   "group": 2,
+   "time": "14:47:48",
+   "sec": 53268,
+   "sender": "m:89ecf743f6",
+   "text": "مرحبا \nمعنية اعطي طقم كنبيات للمعنية \nتكون جدية \nوتستلم مكسيموم لبكرا الصبح\nمندون الطاولان",
+   "media": [
+    {
+     "sha256": "511b817fee615f6b4d528f1fc273ce446ef9247d26e12e2a24ee5986dcb37df7",
+     "md5": "0fe73b29fb793a05990e4d5785cdbd74",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A464B413CCDACF9A707",
+   "group": 3,
+   "time": "14:47:48",
+   "sec": 53268,
+   "sender": "m:89ecf743f6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "11821aabeb3f62edeeced6f2d8613e8e60de927a52ccc7e9123913a85fc5d09d",
+     "md5": "8f2e00623c0f779375132eb447df13d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A580F27B9BF052A1DED",
+   "group": 4,
+   "time": "14:47:49",
+   "sec": 53269,
+   "sender": "m:89ecf743f6",
+   "text": "من رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AF1B541BB918BE90E36",
+   "group": 6,
+   "time": "14:47:49",
+   "sec": 53269,
+   "sender": "m:89ecf743f6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "11821aabeb3f62edeeced6f2d8613e8e60de927a52ccc7e9123913a85fc5d09d",
+     "md5": "8f2e00623c0f779375132eb447df13d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A745FC8EF90FA6C8119",
+   "group": 2,
+   "time": "14:47:50",
+   "sec": 53270,
+   "sender": "m:89ecf743f6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "11821aabeb3f62edeeced6f2d8613e8e60de927a52ccc7e9123913a85fc5d09d",
+     "md5": "8f2e00623c0f779375132eb447df13d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A68901D4293AA5339CA",
+   "group": 4,
+   "time": "14:47:50",
+   "sec": 53270,
+   "sender": "m:89ecf743f6",
+   "text": "[טלפון]-ام انس",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "31f14bff5ee51729"
+   ]
+  },
+  {
+   "id": "3A750AA8AA4B73D4ACCD",
+   "group": 6,
+   "time": "14:47:50",
+   "sec": 53270,
+   "sender": "m:89ecf743f6",
+   "text": "من رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A8350229D2C82353B71",
+   "group": 2,
+   "time": "14:47:51",
+   "sec": 53271,
+   "sender": "m:89ecf743f6",
+   "text": "من رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A6DD8617797F15038AB",
+   "group": 1,
+   "time": "14:47:53",
+   "sec": 53273,
+   "sender": "m:89ecf743f6",
+   "text": "مرحبا \nمعنية اعطي طقم كنبيات للمعنية \nتكون جدية \nوتستلم مكسيموم لبكرا الصبح\nمندون الطاولان",
+   "media": [
+    {
+     "sha256": "511b817fee615f6b4d528f1fc273ce446ef9247d26e12e2a24ee5986dcb37df7",
+     "md5": "0fe73b29fb793a05990e4d5785cdbd74",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A08C1BE32F8D6CD774E",
+   "group": 3,
+   "time": "14:47:55",
+   "sec": 53275,
+   "sender": "m:89ecf743f6",
+   "text": "من رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A385DA6FC807403234A",
+   "group": 6,
+   "time": "14:47:56",
+   "sec": 53276,
+   "sender": "m:89ecf743f6",
+   "text": "[טלפון]-ام انس",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "31f14bff5ee51729"
+   ]
+  },
+  {
+   "id": "3ACB9997A04CBBA43DCD",
+   "group": 1,
+   "time": "14:47:57",
+   "sec": 53277,
+   "sender": "m:89ecf743f6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "11821aabeb3f62edeeced6f2d8613e8e60de927a52ccc7e9123913a85fc5d09d",
+     "md5": "8f2e00623c0f779375132eb447df13d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A6838F89013CD3452EE",
+   "group": 2,
+   "time": "14:47:58",
+   "sec": 53278,
+   "sender": "m:89ecf743f6",
+   "text": "[טלפון]-ام انس",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "31f14bff5ee51729"
+   ]
+  },
+  {
+   "id": "3A934C6E5B7CFEFA7637",
+   "group": 1,
+   "time": "14:47:59",
+   "sec": 53279,
+   "sender": "m:89ecf743f6",
+   "text": "من رهط",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A3292B0F2865D57261C",
+   "group": 3,
+   "time": "14:47:59",
+   "sec": 53279,
+   "sender": "m:89ecf743f6",
+   "text": "[טלפון]-ام انس",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "31f14bff5ee51729"
+   ]
+  },
+  {
+   "id": "3A361237060D60B7C61A",
+   "group": 1,
+   "time": "14:48:01",
+   "sec": 53281,
+   "sender": "m:89ecf743f6",
+   "text": "[טלפון]-ام انس",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "31f14bff5ee51729"
+   ]
+  },
+  {
+   "id": "3A278112C1C4784124B5",
+   "group": 1,
+   "time": "14:52:23",
+   "sec": 53543,
+   "sender": "m:89ecf743f6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AEFEA2C499ABB0F0CB8",
+   "group": 6,
+   "time": "14:52:37",
+   "sec": 53557,
+   "sender": "m:89ecf743f6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AFE692B808A91AC7CDE",
+   "group": 2,
+   "time": "14:53:01",
+   "sec": 53581,
+   "sender": "m:89ecf743f6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A591D1CADCB06143D2E",
+   "group": 3,
+   "time": "14:53:22",
+   "sec": 53602,
+   "sender": "m:89ecf743f6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AB3AC96286C60F92A9C",
+   "group": 4,
+   "time": "14:53:31",
+   "sec": 53611,
+   "sender": "m:89ecf743f6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -315,6 +660,46 @@
    "count": 1,
    "whoHashes": [
     "c2ca91e2557a7549"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-26T12:36:55.250Z",
+   "time": "14:36:55",
+   "count": 1,
+   "whoHashes": [
+    "3850c7ac8c48e623"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-26T12:52:27.306Z",
+   "time": "14:52:27",
+   "count": 1,
+   "whoHashes": [
+    "ef9f72fb8ec1ac64"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-26T13:08:51.371Z",
+   "time": "15:08:51",
+   "count": 1,
+   "whoHashes": [
+    "e049458968a9e820"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-26T13:10:14.418Z",
+   "time": "15:10:14",
+   "count": 1,
+   "whoHashes": [
+    "b7905aaf556da968"
    ]
   }
  ]
