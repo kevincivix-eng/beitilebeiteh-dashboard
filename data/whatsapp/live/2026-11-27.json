@@ -1,0 +1,18 @@
+{
+ "date": "2026-11-27",
+ "source": "wa-live",
+ "tz": "Asia/Jerusalem",
+ "messages": [],
+ "events": [
+  {
+   "type": "left",
+   "group": 2,
+   "at": "2026-11-26T22:16:40.754Z",
+   "time": "00:16:40",
+   "count": 1,
+   "whoHashes": [
+    "b60fa256f8be3acc"
+   ]
+  }
+ ]
+}
