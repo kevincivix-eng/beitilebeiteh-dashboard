@@ -539,6 +539,61 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "3A591364853086A04A11",
+   "group": 2,
+   "time": "16:13:57",
+   "sec": 58437,
+   "sender": "m:89ecf743f6",
+   "text": "الكنب انحجز لا ترنن على صاحبيتو",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A0D92DC924BF3473C92",
+   "group": 4,
+   "time": "16:14:10",
+   "sec": 58450,
+   "sender": "m:89ecf743f6",
+   "text": "الكنب انحجز لا ترنن على صاحبيتو",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A83519E29103DF33BC7",
+   "group": 2,
+   "time": "16:14:11",
+   "sec": 58451,
+   "sender": "m:89ecf743f6",
+   "text": "الكنب انحجز لا ترنن على صاحبيتو",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A9EE8D8EAEF88B7299C",
+   "group": 3,
+   "time": "16:14:11",
+   "sec": 58451,
+   "sender": "m:89ecf743f6",
+   "text": "الكنب انحجز لا ترنن على صاحبيتو",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A17426F0F1D4FDB69B3",
+   "group": 6,
+   "time": "16:14:12",
+   "sec": 58452,
+   "sender": "m:89ecf743f6",
+   "text": "الكنب انحجز لا ترنن على صاحبيتو",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -701,6 +756,13 @@
    "whoHashes": [
     "b7905aaf556da968"
    ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-26T14:14:18.000Z",
+   "time": "16:14:18",
+   "targetId": "3A591364853086A04A11"
   }
  ]
 }
