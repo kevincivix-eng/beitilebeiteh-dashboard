@@ -23,6 +23,86 @@
    "whoHashes": [
     "9573f7322ceced9b"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-26T10:15:05.863Z",
+   "time": "12:15:05",
+   "count": 1,
+   "whoHashes": [
+    "961697ad0c2da8a5"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 4,
+   "at": "2026-11-26T10:15:46.610Z",
+   "time": "12:15:46",
+   "count": 1,
+   "whoHashes": [
+    "3e97c2f8c0a16929"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 4,
+   "at": "2026-11-26T10:16:35.680Z",
+   "time": "12:16:35",
+   "count": 1,
+   "whoHashes": [
+    "56c376dac53cb909"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 4,
+   "at": "2026-11-26T10:17:03.414Z",
+   "time": "12:17:03",
+   "count": 1,
+   "whoHashes": [
+    "973569739e2c2058"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 1,
+   "at": "2026-11-26T10:20:01.750Z",
+   "time": "12:20:01",
+   "count": 1,
+   "whoHashes": [
+    "7d4ab05651d17430"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 3,
+   "at": "2026-11-26T10:20:41.119Z",
+   "time": "12:20:41",
+   "count": 1,
+   "whoHashes": [
+    "40fadbd8b0853f07"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 3,
+   "at": "2026-11-26T10:21:18.395Z",
+   "time": "12:21:18",
+   "count": 1,
+   "whoHashes": [
+    "8fcdecddd73b6539"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 1,
+   "at": "2026-11-26T10:23:11.446Z",
+   "time": "12:23:11",
+   "count": 1,
+   "whoHashes": [
+    "01d3bb94b4d1152f"
+   ]
   }
  ]
 }
