@@ -1736,6 +1736,252 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "AC364D38F76E50C415CFC17A564163D1",
+   "group": 3,
+   "time": "10:32:20",
+   "sec": 37940,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم حطي هضول في المجموعه",
+   "media": [
+    {
+     "sha256": "98781933e3ce71143563ce7b6d50203f581a5c3a9b4edbdacd1720e4cddce8b0",
+     "md5": "be5aeb17b0038fb9561def68e84faf90",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0D2C913615D066E72A3AF425BE853C",
+   "group": 2,
+   "time": "10:32:21",
+   "sec": 37941,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم حطي هضول في المجموعه",
+   "media": [
+    {
+     "sha256": "98781933e3ce71143563ce7b6d50203f581a5c3a9b4edbdacd1720e4cddce8b0",
+     "md5": "be5aeb17b0038fb9561def68e84faf90",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC311DC09099332C8B1AAAA9ACD8B8D",
+   "group": 4,
+   "time": "10:32:21",
+   "sec": 37941,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم حطي هضول في المجموعه",
+   "media": [
+    {
+     "sha256": "98781933e3ce71143563ce7b6d50203f581a5c3a9b4edbdacd1720e4cddce8b0",
+     "md5": "be5aeb17b0038fb9561def68e84faf90",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCC33A95BB3A46DFC23E342F8A5EB2E",
+   "group": 5,
+   "time": "10:32:21",
+   "sec": 37941,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم حطي هضول في المجموعه",
+   "media": [
+    {
+     "sha256": "98781933e3ce71143563ce7b6d50203f581a5c3a9b4edbdacd1720e4cddce8b0",
+     "md5": "be5aeb17b0038fb9561def68e84faf90",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC38AE77D43E6574D5884E31D141A230",
+   "group": 2,
+   "time": "10:32:22",
+   "sec": 37942,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9159AA9618F6E8FE58B86B817CE4D3",
+   "group": 3,
+   "time": "10:32:22",
+   "sec": 37942,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD5FEED92529A7F58C771FDD1C447B7",
+   "group": 4,
+   "time": "10:32:22",
+   "sec": 37942,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC174BB52F3374EB4F64D2B57F612D35",
+   "group": 5,
+   "time": "10:32:22",
+   "sec": 37942,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0559B083A8B7A2022C2DD1EFDB0C60",
+   "group": 1,
+   "time": "10:32:24",
+   "sec": 37944,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم حطي هضول في المجموعه",
+   "media": [
+    {
+     "sha256": "98781933e3ce71143563ce7b6d50203f581a5c3a9b4edbdacd1720e4cddce8b0",
+     "md5": "be5aeb17b0038fb9561def68e84faf90",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE60501DD3014821D15529B89C0BD73",
+   "group": 1,
+   "time": "10:32:24",
+   "sec": 37944,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC524FC73E3F11B055313FCA49A3023C",
+   "group": 1,
+   "time": "10:32:26",
+   "sec": 37946,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "9751370c38555bb4"
+   ]
+  },
+  {
+   "id": "AC02E61D10D1230480D996944C93666E",
+   "group": 2,
+   "time": "10:32:28",
+   "sec": 37948,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "9751370c38555bb4"
+   ]
+  },
+  {
+   "id": "AC9A4FBC2ED1A3CBF30A17EF92871F85",
+   "group": 3,
+   "time": "10:32:28",
+   "sec": 37948,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "9751370c38555bb4"
+   ]
+  },
+  {
+   "id": "AC5153B5263662F1AF2310AB2930DF40",
+   "group": 4,
+   "time": "10:32:28",
+   "sec": 37948,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "9751370c38555bb4"
+   ]
+  },
+  {
+   "id": "ACA73966B73CAED9E153B01F115DE021",
+   "group": 5,
+   "time": "10:32:28",
+   "sec": 37948,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "9751370c38555bb4"
+   ]
+  },
+  {
+   "id": "AC2382C12A15F4AECBBAEC4636D7C803",
+   "group": 6,
+   "time": "10:32:37",
+   "sec": 37957,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC481C326E4D11388572B4615A192E9",
+   "group": 6,
+   "time": "10:32:37",
+   "sec": 37957,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم حطي هضول في المجموعه",
+   "media": [
+    {
+     "sha256": "98781933e3ce71143563ce7b6d50203f581a5c3a9b4edbdacd1720e4cddce8b0",
+     "md5": "be5aeb17b0038fb9561def68e84faf90",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0B13A16208C860FD2E672CA7720855",
+   "group": 6,
+   "time": "10:32:38",
+   "sec": 37958,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "9751370c38555bb4"
+   ]
   }
  ],
  "events": [
@@ -1923,6 +2169,46 @@
    "count": 1,
    "whoHashes": [
     "06e48f9053162d0f"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 2,
+   "at": "2026-11-27T08:30:20.232Z",
+   "time": "10:30:20",
+   "count": 1,
+   "whoHashes": [
+    "92bda93e239ee1a7"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 1,
+   "at": "2026-11-27T08:30:35.487Z",
+   "time": "10:30:35",
+   "count": 1,
+   "whoHashes": [
+    "696bbe5c9aba4dc8"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-27T08:50:08.565Z",
+   "time": "10:50:08",
+   "count": 1,
+   "whoHashes": [
+    "9e747169df182416"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-27T08:55:51.119Z",
+   "time": "10:55:51",
+   "count": 1,
+   "whoHashes": [
+    "1f0c5b4012c1796d"
    ]
   }
  ]
