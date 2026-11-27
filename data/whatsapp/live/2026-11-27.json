@@ -3573,6 +3573,48 @@
    "whoHashes": [
     "b091ab280ec7f08a"
    ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-27T11:52:02.000Z",
+   "time": "13:52:02",
+   "targetId": "AC5DB6DA18CBE08160A4736A997C56B8"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-27T11:52:14.000Z",
+   "time": "13:52:14",
+   "targetId": "AC4266BAAD27C4143899C2CEF2566888"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-27T11:52:41.000Z",
+   "time": "13:52:41",
+   "targetId": "AC515947BA4781D8FA9BAD538CFEE6D9"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-27T11:52:42.000Z",
+   "time": "13:52:42",
+   "targetId": "AC8BF37178A9B104AE10719D251E0E1D"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-27T11:53:10.000Z",
+   "time": "13:53:10",
+   "targetId": "ACA725EB325422C611446953131013F0"
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-27T11:53:15.000Z",
+   "time": "13:53:15",
+   "targetId": "ACDA6CCD9635BD4918F78C4AE6A2A029"
   }
  ]
 }
