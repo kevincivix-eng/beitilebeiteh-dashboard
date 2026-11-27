@@ -1982,6 +1982,1297 @@
    "phoneHashes": [
     "9751370c38555bb4"
    ]
+  },
+  {
+   "id": "AC83FF97450DFE2FBC7EB4D93FF0F0FD",
+   "group": 6,
+   "time": "11:29:58",
+   "sec": 41398,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC9FDA88D5909B0528F103CC87591BE3",
+   "group": 5,
+   "time": "11:30:46",
+   "sec": 41446,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA32BF3D56C6EB2EC866750F5543351",
+   "group": 2,
+   "time": "11:31:46",
+   "sec": 41506,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC55127E8FD196060ECB7110B25C5D7B",
+   "group": 3,
+   "time": "11:31:51",
+   "sec": 41511,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF73F7246174F8614E24C6FF2274397",
+   "group": 4,
+   "time": "11:38:06",
+   "sec": 41886,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA124E153DCD7B7FB1A66B52CE2D510",
+   "group": 1,
+   "time": "11:42:36",
+   "sec": 42156,
+   "sender": "m:8e2a6825b6",
+   "text": "انحجز",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC515947BA4781D8FA9BAD538CFEE6D9",
+   "group": 2,
+   "time": "12:06:11",
+   "sec": 43571,
+   "sender": "m:8e2a6825b6",
+   "text": "قمصان وبلايز بناتي بحاله ممتازه جيل 13/14\nراهط\n[טלפון]",
+   "media": [
+    {
+     "sha256": "f73a2804d662ce0d8578f47b48b21b973d3b60533dfcff1a63a752f4c370bd93",
+     "md5": "078677d5be462279c602e3ad74bba01c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3b3577ff5766d1b0"
+   ]
+  },
+  {
+   "id": "AC5DB6DA18CBE08160A4736A997C56B8",
+   "group": 1,
+   "time": "12:06:12",
+   "sec": 43572,
+   "sender": "m:8e2a6825b6",
+   "text": "قمصان وبلايز بناتي بحاله ممتازه جيل 13/14\nراهط\n[טלפון]",
+   "media": [
+    {
+     "sha256": "f73a2804d662ce0d8578f47b48b21b973d3b60533dfcff1a63a752f4c370bd93",
+     "md5": "078677d5be462279c602e3ad74bba01c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3b3577ff5766d1b0"
+   ]
+  },
+  {
+   "id": "AC4266BAAD27C4143899C2CEF2566888",
+   "group": 3,
+   "time": "12:06:30",
+   "sec": 43590,
+   "sender": "m:8e2a6825b6",
+   "text": "قمصان وبلايز بناتي بحاله ممتازه جيل 13/14\nراهط\n[טלפון]",
+   "media": [
+    {
+     "sha256": "f73a2804d662ce0d8578f47b48b21b973d3b60533dfcff1a63a752f4c370bd93",
+     "md5": "078677d5be462279c602e3ad74bba01c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3b3577ff5766d1b0"
+   ]
+  },
+  {
+   "id": "AC8BF37178A9B104AE10719D251E0E1D",
+   "group": 4,
+   "time": "12:06:31",
+   "sec": 43591,
+   "sender": "m:8e2a6825b6",
+   "text": "قمصان وبلايز بناتي بحاله ممتازه جيل 13/14\nراهط\n[טלפון]",
+   "media": [
+    {
+     "sha256": "f73a2804d662ce0d8578f47b48b21b973d3b60533dfcff1a63a752f4c370bd93",
+     "md5": "078677d5be462279c602e3ad74bba01c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3b3577ff5766d1b0"
+   ]
+  },
+  {
+   "id": "ACA725EB325422C611446953131013F0",
+   "group": 5,
+   "time": "12:06:31",
+   "sec": 43591,
+   "sender": "m:8e2a6825b6",
+   "text": "قمصان وبلايز بناتي بحاله ممتازه جيل 13/14\nراهط\n[טלפון]",
+   "media": [
+    {
+     "sha256": "f73a2804d662ce0d8578f47b48b21b973d3b60533dfcff1a63a752f4c370bd93",
+     "md5": "078677d5be462279c602e3ad74bba01c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3b3577ff5766d1b0"
+   ]
+  },
+  {
+   "id": "ACDA6CCD9635BD4918F78C4AE6A2A029",
+   "group": 6,
+   "time": "12:06:35",
+   "sec": 43595,
+   "sender": "m:8e2a6825b6",
+   "text": "قمصان وبلايز بناتي بحاله ممتازه جيل 13/14\nراهط\n[טלפון]",
+   "media": [
+    {
+     "sha256": "f73a2804d662ce0d8578f47b48b21b973d3b60533dfcff1a63a752f4c370bd93",
+     "md5": "078677d5be462279c602e3ad74bba01c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "3b3577ff5766d1b0"
+   ]
+  },
+  {
+   "id": "ACC495CCEDAB195E93886A12B9B6C98E",
+   "group": 3,
+   "time": "12:07:44",
+   "sec": 43664,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم موجوده عندي هذه بحاله ممتازه وشغاله ، موجود معهن ملابس لطفل ولد من عمر يوم لست شهور بحاله ممتازه لبسه وحده بس مع حرامات ومقاطات",
+   "media": [
+    {
+     "sha256": "2d46734c688a2463a9baa1b98eb1b3f80b382cd2422cb39a8d698e65b58f847e",
+     "md5": "df0039c4dde61e23cb180e9de119ec4b",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC08E5BE17C7578D7B693883D1AFCBE0",
+   "group": 1,
+   "time": "12:07:45",
+   "sec": 43665,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم موجوده عندي هذه بحاله ممتازه وشغاله ، موجود معهن ملابس لطفل ولد من عمر يوم لست شهور بحاله ممتازه لبسه وحده بس مع حرامات ومقاطات",
+   "media": [
+    {
+     "sha256": "2d46734c688a2463a9baa1b98eb1b3f80b382cd2422cb39a8d698e65b58f847e",
+     "md5": "df0039c4dde61e23cb180e9de119ec4b",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5CD9E4FA68081C263838A514C778AE",
+   "group": 2,
+   "time": "12:07:45",
+   "sec": 43665,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم موجوده عندي هذه بحاله ممتازه وشغاله ، موجود معهن ملابس لطفل ولد من عمر يوم لست شهور بحاله ممتازه لبسه وحده بس مع حرامات ومقاطات",
+   "media": [
+    {
+     "sha256": "2d46734c688a2463a9baa1b98eb1b3f80b382cd2422cb39a8d698e65b58f847e",
+     "md5": "df0039c4dde61e23cb180e9de119ec4b",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDFB79D4A2D03A3064114CFD19C684D",
+   "group": 4,
+   "time": "12:07:45",
+   "sec": 43665,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم موجوده عندي هذه بحاله ممتازه وشغاله ، موجود معهن ملابس لطفل ولد من عمر يوم لست شهور بحاله ممتازه لبسه وحده بس مع حرامات ومقاطات",
+   "media": [
+    {
+     "sha256": "2d46734c688a2463a9baa1b98eb1b3f80b382cd2422cb39a8d698e65b58f847e",
+     "md5": "df0039c4dde61e23cb180e9de119ec4b",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF61D153A09770F1AF3C33A813E1560",
+   "group": 3,
+   "time": "12:07:46",
+   "sec": 43666,
+   "sender": "m:8e2a6825b6",
+   "text": "برضو معهن الشنته هذه",
+   "media": [
+    {
+     "sha256": "972b92381c791dc48ad9ef55bd659014cfb93ac801b4e76b9d9ce62b46a63c10",
+     "md5": "ba12deaa1bac830a2b82efb33ec7368c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC89B567B8785FC0838C2725E365CBDA",
+   "group": 5,
+   "time": "12:07:46",
+   "sec": 43666,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم موجوده عندي هذه بحاله ممتازه وشغاله ، موجود معهن ملابس لطفل ولد من عمر يوم لست شهور بحاله ممتازه لبسه وحده بس مع حرامات ومقاطات",
+   "media": [
+    {
+     "sha256": "2d46734c688a2463a9baa1b98eb1b3f80b382cd2422cb39a8d698e65b58f847e",
+     "md5": "df0039c4dde61e23cb180e9de119ec4b",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8815E2B8EFA7D36725F8BD9DA57E3F",
+   "group": 2,
+   "time": "12:07:48",
+   "sec": 43668,
+   "sender": "m:8e2a6825b6",
+   "text": "برضو معهن الشنته هذه",
+   "media": [
+    {
+     "sha256": "972b92381c791dc48ad9ef55bd659014cfb93ac801b4e76b9d9ce62b46a63c10",
+     "md5": "ba12deaa1bac830a2b82efb33ec7368c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC3376490A12D61FAA854AB002B494AE",
+   "group": 1,
+   "time": "12:07:51",
+   "sec": 43671,
+   "sender": "m:8e2a6825b6",
+   "text": "برضو معهن الشنته هذه",
+   "media": [
+    {
+     "sha256": "972b92381c791dc48ad9ef55bd659014cfb93ac801b4e76b9d9ce62b46a63c10",
+     "md5": "ba12deaa1bac830a2b82efb33ec7368c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEE6D6975F80EC6D78CFAB75850E1AD",
+   "group": 4,
+   "time": "12:07:51",
+   "sec": 43671,
+   "sender": "m:8e2a6825b6",
+   "text": "برضو معهن الشنته هذه",
+   "media": [
+    {
+     "sha256": "972b92381c791dc48ad9ef55bd659014cfb93ac801b4e76b9d9ce62b46a63c10",
+     "md5": "ba12deaa1bac830a2b82efb33ec7368c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEA57F74C163C79E5F7D7E1A454710E",
+   "group": 3,
+   "time": "12:07:53",
+   "sec": 43673,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1465C764E3EBDED5E157C4694CE972",
+   "group": 5,
+   "time": "12:07:53",
+   "sec": 43673,
+   "sender": "m:8e2a6825b6",
+   "text": "برضو معهن الشنته هذه",
+   "media": [
+    {
+     "sha256": "972b92381c791dc48ad9ef55bd659014cfb93ac801b4e76b9d9ce62b46a63c10",
+     "md5": "ba12deaa1bac830a2b82efb33ec7368c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8C3B616F681A086D88A5A1BFE08666",
+   "group": 1,
+   "time": "12:07:54",
+   "sec": 43674,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD2211B6974212DB8FFA2E0BD1AD664",
+   "group": 2,
+   "time": "12:07:54",
+   "sec": 43674,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC99F34FDC926E098A0577C54BF17EFB",
+   "group": 4,
+   "time": "12:07:54",
+   "sec": 43674,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEB719451753E8DC239519A1DF7DBB9",
+   "group": 5,
+   "time": "12:07:55",
+   "sec": 43675,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8B5B4E30F3375B417E6A81DC33E742",
+   "group": 6,
+   "time": "12:08:57",
+   "sec": 43737,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم موجوده عندي هذه بحاله ممتازه وشغاله ، موجود معهن ملابس لطفل ولد من عمر يوم لست شهور بحاله ممتازه لبسه وحده بس مع حرامات ومقاطات",
+   "media": [
+    {
+     "sha256": "2d46734c688a2463a9baa1b98eb1b3f80b382cd2422cb39a8d698e65b58f847e",
+     "md5": "df0039c4dde61e23cb180e9de119ec4b",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB9E5FD7E88DC377361D6AE318517C8",
+   "group": 2,
+   "time": "12:08:58",
+   "sec": 43738,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "AC4A01B6EC97561213D8E0B33888B6FD",
+   "group": 3,
+   "time": "12:08:58",
+   "sec": 43738,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "AC4A01B6EC97561213D8E0B33888B6FD",
+   "group": 3,
+   "time": "12:09:07",
+   "sec": 43747,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "ACB9E5FD7E88DC377361D6AE318517C8",
+   "group": 2,
+   "time": "12:09:17",
+   "sec": 43757,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "AC8B5B4E30F3375B417E6A81DC33E742",
+   "group": 6,
+   "time": "12:09:32",
+   "sec": 43772,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم موجوده عندي هذه بحاله ممتازه وشغاله ، موجود معهن ملابس لطفل ولد من عمر يوم لست شهور بحاله ممتازه لبسه وحده بس مع حرامات ومقاطات",
+   "media": [
+    {
+     "sha256": "2d46734c688a2463a9baa1b98eb1b3f80b382cd2422cb39a8d698e65b58f847e",
+     "md5": "df0039c4dde61e23cb180e9de119ec4b",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1627C138C2F4A47EF38D04DBAEFADD",
+   "group": 1,
+   "time": "12:09:33",
+   "sec": 43773,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "ACC367E45A1374EFD68C5784564E95C0",
+   "group": 6,
+   "time": "12:09:41",
+   "sec": 43781,
+   "sender": "m:8e2a6825b6",
+   "text": "برضو معهن الشنته هذه",
+   "media": [
+    {
+     "sha256": "972b92381c791dc48ad9ef55bd659014cfb93ac801b4e76b9d9ce62b46a63c10",
+     "md5": "ba12deaa1bac830a2b82efb33ec7368c",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD844CAC561CAAF790299894E71ACC8",
+   "group": 4,
+   "time": "12:09:42",
+   "sec": 43782,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "ACBF6BB6F950348813B6AD377D55839B",
+   "group": 5,
+   "time": "12:09:42",
+   "sec": 43782,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "AC30EEF238B8C4341F10BE043B89921F",
+   "group": 6,
+   "time": "12:09:42",
+   "sec": 43782,
+   "sender": "m:8e2a6825b6",
+   "text": "تل السبع",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD468BA8DA15BF139B0E6FB3B7BB293",
+   "group": 6,
+   "time": "12:09:43",
+   "sec": 43783,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "e57519bcef9e8145"
+   ]
+  },
+  {
+   "id": "AC1F4F72FAB16F84495AF8A3ADF8CAC2",
+   "group": 1,
+   "time": "12:11:10",
+   "sec": 43870,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "68753d5fdde43089061e0507f32ff49f576a73ee8e33ae03bface92fa361affa",
+     "md5": "b319276e856ed615aec93cf154261f78",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC57CE680A3E2ADAD3919FE75D8DF5BD",
+   "group": 1,
+   "time": "12:11:20",
+   "sec": 43880,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3eace4af778105c0a4c004ea2234c1d0bb29366a7e33088f703eff4307b68a4e",
+     "md5": "1976aa068c420b36e274ab96afd4b3c9",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC80F11CA9210DA252EEC57F1EE3A3F1",
+   "group": 3,
+   "time": "12:12:11",
+   "sec": 43931,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "68753d5fdde43089061e0507f32ff49f576a73ee8e33ae03bface92fa361affa",
+     "md5": "b319276e856ed615aec93cf154261f78",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF1ACD0DCE4644A0947640A02487B38",
+   "group": 6,
+   "time": "12:12:11",
+   "sec": 43931,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "68753d5fdde43089061e0507f32ff49f576a73ee8e33ae03bface92fa361affa",
+     "md5": "b319276e856ed615aec93cf154261f78",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC072ED7DDAC11362C5B13023505FDB",
+   "group": 1,
+   "time": "12:12:12",
+   "sec": 43932,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "06a5c87ae2009022d6ffc998c891f66d35031fda42d11410a8e89bde5f53fe6f",
+     "md5": "ed738ef7a7a40f041025d14b716db2d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4C0BD1EE0C5B493A8EE98BA749D6EA",
+   "group": 4,
+   "time": "12:12:12",
+   "sec": 43932,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "68753d5fdde43089061e0507f32ff49f576a73ee8e33ae03bface92fa361affa",
+     "md5": "b319276e856ed615aec93cf154261f78",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC975E555111B53AAF301953935C8B3B",
+   "group": 5,
+   "time": "12:12:13",
+   "sec": 43933,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "68753d5fdde43089061e0507f32ff49f576a73ee8e33ae03bface92fa361affa",
+     "md5": "b319276e856ed615aec93cf154261f78",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC07A9A16A09656F3242EB815ABD6303",
+   "group": 2,
+   "time": "12:12:35",
+   "sec": 43955,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "68753d5fdde43089061e0507f32ff49f576a73ee8e33ae03bface92fa361affa",
+     "md5": "b319276e856ed615aec93cf154261f78",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC98713C253DA4A22CEC60E405F20ACC",
+   "group": 1,
+   "time": "12:12:36",
+   "sec": 43956,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c59d40dbf06313466898350c5908fa8fa0a570c54478359c438995178005c601",
+     "md5": "e5705a1e7b0aeffefe7929d85fd4c35d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC2CE99BB11CE88F5B1EA226365019E2",
+   "group": 3,
+   "time": "12:12:36",
+   "sec": 43956,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3eace4af778105c0a4c004ea2234c1d0bb29366a7e33088f703eff4307b68a4e",
+     "md5": "1976aa068c420b36e274ab96afd4b3c9",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC0A06CE0E5B97CEA09A5E6A300968BE",
+   "group": 6,
+   "time": "12:12:36",
+   "sec": 43956,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3eace4af778105c0a4c004ea2234c1d0bb29366a7e33088f703eff4307b68a4e",
+     "md5": "1976aa068c420b36e274ab96afd4b3c9",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACCCA2A036BDCE03DD370AD29B93CA4F",
+   "group": 4,
+   "time": "12:12:37",
+   "sec": 43957,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3eace4af778105c0a4c004ea2234c1d0bb29366a7e33088f703eff4307b68a4e",
+     "md5": "1976aa068c420b36e274ab96afd4b3c9",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF6BACCC99204F841B17C0ADC7C7911",
+   "group": 5,
+   "time": "12:12:37",
+   "sec": 43957,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3eace4af778105c0a4c004ea2234c1d0bb29366a7e33088f703eff4307b68a4e",
+     "md5": "1976aa068c420b36e274ab96afd4b3c9",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB769343B61592748DDD01BB066FC47",
+   "group": 1,
+   "time": "12:12:38",
+   "sec": 43958,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "606a560c542a2c4de6904f99b4aa84af62e120a76773393d1c41d916c23925e5",
+     "md5": "4adbf5f0e9aeccc77ebbbbbe2dd20197",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4B2BE83B1E4CE12E42D71A788D228D",
+   "group": 2,
+   "time": "12:12:38",
+   "sec": 43958,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "3eace4af778105c0a4c004ea2234c1d0bb29366a7e33088f703eff4307b68a4e",
+     "md5": "1976aa068c420b36e274ab96afd4b3c9",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC1F3A44732114ED374771F5DB8EC06F",
+   "group": 3,
+   "time": "12:12:38",
+   "sec": 43958,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "06a5c87ae2009022d6ffc998c891f66d35031fda42d11410a8e89bde5f53fe6f",
+     "md5": "ed738ef7a7a40f041025d14b716db2d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC348BD15CB95AA0559E6FECB1FC2B10",
+   "group": 6,
+   "time": "12:12:38",
+   "sec": 43958,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "06a5c87ae2009022d6ffc998c891f66d35031fda42d11410a8e89bde5f53fe6f",
+     "md5": "ed738ef7a7a40f041025d14b716db2d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC238304CB9A5BD597AD949D52176AA9",
+   "group": 4,
+   "time": "12:12:39",
+   "sec": 43959,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "06a5c87ae2009022d6ffc998c891f66d35031fda42d11410a8e89bde5f53fe6f",
+     "md5": "ed738ef7a7a40f041025d14b716db2d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACC4CB3D801BF37584888822C2896CDB",
+   "group": 5,
+   "time": "12:12:39",
+   "sec": 43959,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "06a5c87ae2009022d6ffc998c891f66d35031fda42d11410a8e89bde5f53fe6f",
+     "md5": "ed738ef7a7a40f041025d14b716db2d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC7CEE051C580AEF633A44F7BE780F0D",
+   "group": 2,
+   "time": "12:12:40",
+   "sec": 43960,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "06a5c87ae2009022d6ffc998c891f66d35031fda42d11410a8e89bde5f53fe6f",
+     "md5": "ed738ef7a7a40f041025d14b716db2d1",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC22B267AA8B3E229964A6869FC28A0E",
+   "group": 3,
+   "time": "12:12:40",
+   "sec": 43960,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c59d40dbf06313466898350c5908fa8fa0a570c54478359c438995178005c601",
+     "md5": "e5705a1e7b0aeffefe7929d85fd4c35d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC259462C8EBE0C8F7D841A5C5C18C55",
+   "group": 6,
+   "time": "12:12:40",
+   "sec": 43960,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c59d40dbf06313466898350c5908fa8fa0a570c54478359c438995178005c601",
+     "md5": "e5705a1e7b0aeffefe7929d85fd4c35d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC11057524F35167642DC66CB5592A54",
+   "group": 1,
+   "time": "12:12:41",
+   "sec": 43961,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم هذول عبايات وجاكيتات ومناديل\nوفي كمان فرن ومكروقال وجوارير عليهن شوية غبره عشانهن برا الجوارير اعرضيهن للمعنيه امانه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACEF07A328EC33A6478878043BFBA953",
+   "group": 4,
+   "time": "12:12:41",
+   "sec": 43961,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c59d40dbf06313466898350c5908fa8fa0a570c54478359c438995178005c601",
+     "md5": "e5705a1e7b0aeffefe7929d85fd4c35d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACE234E0CE58F46707B2B1CA8404EE6C",
+   "group": 2,
+   "time": "12:12:42",
+   "sec": 43962,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c59d40dbf06313466898350c5908fa8fa0a570c54478359c438995178005c601",
+     "md5": "e5705a1e7b0aeffefe7929d85fd4c35d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACB6262B2417C8C3A439C88BBFA6E24D",
+   "group": 5,
+   "time": "12:12:42",
+   "sec": 43962,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "c59d40dbf06313466898350c5908fa8fa0a570c54478359c438995178005c601",
+     "md5": "e5705a1e7b0aeffefe7929d85fd4c35d",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACDEEC11E48F82ED3E69EA678DEA7411",
+   "group": 6,
+   "time": "12:12:42",
+   "sec": 43962,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "606a560c542a2c4de6904f99b4aa84af62e120a76773393d1c41d916c23925e5",
+     "md5": "4adbf5f0e9aeccc77ebbbbbe2dd20197",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC124C27A63781AF5B0D8A9B56CAB5B8",
+   "group": 1,
+   "time": "12:12:43",
+   "sec": 43963,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "99f758c864aa7cb4"
+   ]
+  },
+  {
+   "id": "AC3DF73E7D037E0B7C4B68FFE3B6F38E",
+   "group": 3,
+   "time": "12:12:43",
+   "sec": 43963,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "606a560c542a2c4de6904f99b4aa84af62e120a76773393d1c41d916c23925e5",
+     "md5": "4adbf5f0e9aeccc77ebbbbbe2dd20197",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC69C2D99B4843F05A7BC997A406673F",
+   "group": 4,
+   "time": "12:12:43",
+   "sec": 43963,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "606a560c542a2c4de6904f99b4aa84af62e120a76773393d1c41d916c23925e5",
+     "md5": "4adbf5f0e9aeccc77ebbbbbe2dd20197",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4FFAD8FF9F40C65975D58EC0329733",
+   "group": 2,
+   "time": "12:12:44",
+   "sec": 43964,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "606a560c542a2c4de6904f99b4aa84af62e120a76773393d1c41d916c23925e5",
+     "md5": "4adbf5f0e9aeccc77ebbbbbe2dd20197",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC4B83189F46784480B65EFA61A11CE5",
+   "group": 5,
+   "time": "12:12:44",
+   "sec": 43964,
+   "sender": "m:8e2a6825b6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "606a560c542a2c4de6904f99b4aa84af62e120a76773393d1c41d916c23925e5",
+     "md5": "4adbf5f0e9aeccc77ebbbbbe2dd20197",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC8C6F63969D5FBFCA95DFC7B17961E7",
+   "group": 6,
+   "time": "12:12:44",
+   "sec": 43964,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم هذول عبايات وجاكيتات ومناديل\nوفي كمان فرن ومكروقال وجوارير عليهن شوية غبره عشانهن برا الجوارير اعرضيهن للمعنيه امانه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC5C2E35E39096B319B8BC36B5A2F935",
+   "group": 3,
+   "time": "12:12:45",
+   "sec": 43965,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم هذول عبايات وجاكيتات ومناديل\nوفي كمان فرن ومكروقال وجوارير عليهن شوية غبره عشانهن برا الجوارير اعرضيهن للمعنيه امانه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACF57CE1E664AC71725B5D5F8A76471C",
+   "group": 2,
+   "time": "12:12:51",
+   "sec": 43971,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم هذول عبايات وجاكيتات ومناديل\nوفي كمان فرن ومكروقال وجوارير عليهن شوية غبره عشانهن برا الجوارير اعرضيهن للمعنيه امانه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC53ADA8DA238F0EB91D0D78A5B4BB00",
+   "group": 4,
+   "time": "12:12:51",
+   "sec": 43971,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم هذول عبايات وجاكيتات ومناديل\nوفي كمان فرن ومكروقال وجوارير عليهن شوية غبره عشانهن برا الجوارير اعرضيهن للمعنيه امانه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC06681FDA6B308897A23E585005EABB",
+   "group": 5,
+   "time": "12:12:51",
+   "sec": 43971,
+   "sender": "m:8e2a6825b6",
+   "text": "السلام عليكم هذول عبايات وجاكيتات ومناديل\nوفي كمان فرن ومكروقال وجوارير عليهن شوية غبره عشانهن برا الجوارير اعرضيهن للمعنيه امانه",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACA116E6AC55DD92942181D84FF52622",
+   "group": 6,
+   "time": "12:12:58",
+   "sec": 43978,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "99f758c864aa7cb4"
+   ]
+  },
+  {
+   "id": "AC806097E1BB6EA089E3579FB4AE66B7",
+   "group": 3,
+   "time": "12:12:59",
+   "sec": 43979,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "99f758c864aa7cb4"
+   ]
+  },
+  {
+   "id": "AC9966FCE2D4C119D5B13EE54E886E2B",
+   "group": 2,
+   "time": "12:13:01",
+   "sec": 43981,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "99f758c864aa7cb4"
+   ]
+  },
+  {
+   "id": "ACA9F3BFF31E3B65727579C2A52A0594",
+   "group": 4,
+   "time": "12:13:01",
+   "sec": 43981,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "99f758c864aa7cb4"
+   ]
+  },
+  {
+   "id": "AC7225093A6ACA3DB5871037852D786E",
+   "group": 5,
+   "time": "12:13:01",
+   "sec": 43981,
+   "sender": "m:8e2a6825b6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "99f758c864aa7cb4"
+   ]
+  },
+  {
+   "id": "AC99919878E1F5722438779442EAF4B4",
+   "group": 3,
+   "time": "12:13:02",
+   "sec": 43982,
+   "sender": "m:8e2a6825b6",
+   "text": "الشقيب",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC752D76D0A6927D4436CB3964B64D5A",
+   "group": 6,
+   "time": "12:13:02",
+   "sec": 43982,
+   "sender": "m:8e2a6825b6",
+   "text": "الشقيب",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC47C968C960516A5B4D6147170D04AB",
+   "group": 2,
+   "time": "12:13:03",
+   "sec": 43983,
+   "sender": "m:8e2a6825b6",
+   "text": "الشقيب",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACD147C46B8AF14442139B1E461FBF64",
+   "group": 4,
+   "time": "12:13:03",
+   "sec": 43983,
+   "sender": "m:8e2a6825b6",
+   "text": "الشقيب",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "ACBEB1C8E8FD233D2A3D73EB70C9F857",
+   "group": 5,
+   "time": "12:13:03",
+   "sec": 43983,
+   "sender": "m:8e2a6825b6",
+   "text": "الشقيب",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "AC56BBE6B041ADDDD0628CAD99A8163E",
+   "group": 1,
+   "time": "12:20:17",
+   "sec": 44417,
+   "sender": "m:8e2a6825b6",
+   "text": "الشقيب",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
@@ -2209,6 +3500,58 @@
    "count": 1,
    "whoHashes": [
     "1f0c5b4012c1796d"
+   ]
+  },
+  {
+   "type": "message-deleted",
+   "group": 6,
+   "at": "2026-11-27T09:29:37.000Z",
+   "time": "11:29:37",
+   "targetId": "AC0B13A16208C860FD2E672CA7720855"
+  },
+  {
+   "type": "message-deleted",
+   "group": 3,
+   "at": "2026-11-27T09:29:58.000Z",
+   "time": "11:29:58",
+   "targetId": "AC9A4FBC2ED1A3CBF30A17EF92871F85"
+  },
+  {
+   "type": "message-deleted",
+   "group": 5,
+   "at": "2026-11-27T09:30:00.000Z",
+   "time": "11:30:00",
+   "targetId": "ACA73966B73CAED9E153B01F115DE021"
+  },
+  {
+   "type": "message-deleted",
+   "group": 2,
+   "at": "2026-11-27T09:30:10.000Z",
+   "time": "11:30:10",
+   "targetId": "AC02E61D10D1230480D996944C93666E"
+  },
+  {
+   "type": "message-deleted",
+   "group": 4,
+   "at": "2026-11-27T09:30:34.000Z",
+   "time": "11:30:34",
+   "targetId": "AC5153B5263662F1AF2310AB2930DF40"
+  },
+  {
+   "type": "message-deleted",
+   "group": 1,
+   "at": "2026-11-27T09:42:34.000Z",
+   "time": "11:42:34",
+   "targetId": "AC524FC73E3F11B055313FCA49A3023C"
+  },
+  {
+   "type": "left",
+   "group": 2,
+   "at": "2026-11-27T10:09:19.986Z",
+   "time": "12:09:19",
+   "count": 1,
+   "whoHashes": [
+    "9f07e6f69782bd7e"
    ]
   }
  ]
