@@ -5387,6 +5387,16 @@
    "whoHashes": [
     "11841cc7a232b21e"
    ]
+  },
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-27T15:49:15.500Z",
+   "time": "17:49:15",
+   "count": 1,
+   "whoHashes": [
+    "806659876bcadbce"
+   ]
   }
  ]
 }
