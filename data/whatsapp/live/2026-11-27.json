@@ -5397,6 +5397,36 @@
    "whoHashes": [
     "806659876bcadbce"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-27T16:32:26.769Z",
+   "time": "18:32:26",
+   "count": 1,
+   "whoHashes": [
+    "96e1fdef461aea38"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-27T16:32:29.086Z",
+   "time": "18:32:29",
+   "count": 1,
+   "whoHashes": [
+    "7ccdf36c14d51939"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-27T16:32:32.827Z",
+   "time": "18:32:32",
+   "count": 1,
+   "whoHashes": [
+    "232532b658a786b2"
+   ]
   }
  ]
 }
