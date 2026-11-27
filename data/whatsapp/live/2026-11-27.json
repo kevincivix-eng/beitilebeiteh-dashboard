@@ -5427,6 +5427,26 @@
    "whoHashes": [
     "232532b658a786b2"
    ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-27T18:28:39.194Z",
+   "time": "20:28:39",
+   "count": 1,
+   "whoHashes": [
+    "76b2908b48bd74f3"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 6,
+   "at": "2026-11-27T18:28:41.453Z",
+   "time": "20:28:41",
+   "count": 1,
+   "whoHashes": [
+    "ee7e6c7055f23f99"
+   ]
   }
  ]
 }
