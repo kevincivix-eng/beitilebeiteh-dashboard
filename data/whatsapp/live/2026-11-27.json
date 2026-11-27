@@ -5367,6 +5367,26 @@
    "whoHashes": [
     "2fb30d07f486d92a"
    ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-27T14:38:47.469Z",
+   "time": "16:38:47",
+   "count": 1,
+   "whoHashes": [
+    "936580a8b26b110c"
+   ]
+  },
+  {
+   "type": "joined",
+   "group": 1,
+   "at": "2026-11-27T14:51:30.966Z",
+   "time": "16:51:30",
+   "count": 1,
+   "whoHashes": [
+    "11841cc7a232b21e"
+   ]
   }
  ]
 }
