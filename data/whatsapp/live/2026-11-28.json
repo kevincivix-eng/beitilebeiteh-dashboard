@@ -303,6 +303,58 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "3A025C6963F361C9A383",
+   "group": 1,
+   "time": "17:30:43",
+   "sec": 63043,
+   "sender": "m:89ecf743f6",
+   "text": "",
+   "media": [
+    {
+     "sha256": "cc789739b2a72ccd309d488a180ede3c20d14377515cd24d0cc4a599aba4609b",
+     "md5": "e93b62d2553cb158e835694f2d4a6338",
+     "kind": "imageMessage"
+    }
+   ],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3AFED6CDD9EBB10A1A2C",
+   "group": 1,
+   "time": "17:30:44",
+   "sec": 63044,
+   "sender": "m:89ecf743f6",
+   "text": "[טלפון]",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": [
+    "4161a5417b7257b8"
+   ]
+  },
+  {
+   "id": "3A58567592B76620C403",
+   "group": 1,
+   "time": "17:30:57",
+   "sec": 63057,
+   "sender": "m:89ecf743f6",
+   "text": "خزانتين مع تلفزيونات ٢",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A881F4AAE02D284E5E0",
+   "group": 1,
+   "time": "17:31:05",
+   "sec": 63065,
+   "sender": "m:89ecf743f6",
+   "text": "بس بدها تركيب",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
