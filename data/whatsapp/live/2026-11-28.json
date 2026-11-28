@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-28",
+ "source": "wa-live",
+ "tz": "Asia/Jerusalem",
+ "messages": [],
+ "events": [
+  {
+   "type": "left",
+   "group": 4,
+   "at": "2026-11-28T03:39:46.109Z",
+   "time": "05:39:46",
+   "count": 1,
+   "whoHashes": [
+    "8e2a6825b67a704f"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 5,
+   "at": "2026-11-28T03:40:05.461Z",
+   "time": "05:40:05",
+   "count": 1,
+   "whoHashes": [
+    "8e2a6825b67a704f"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 3,
+   "at": "2026-11-28T03:40:34.028Z",
+   "time": "05:40:34",
+   "count": 1,
+   "whoHashes": [
+    "8e2a6825b67a704f"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 2,
+   "at": "2026-11-28T03:40:54.299Z",
+   "time": "05:40:54",
+   "count": 1,
+   "whoHashes": [
+    "8e2a6825b67a704f"
+   ]
+  },
+  {
+   "type": "left",
+   "group": 6,
+   "at": "2026-11-28T03:41:28.097Z",
+   "time": "05:41:28",
+   "count": 1,
+   "whoHashes": [
+    "8e2a6825b67a704f"
+   ]
+  }
+ ]
+}
