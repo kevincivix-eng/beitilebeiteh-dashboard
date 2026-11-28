@@ -281,6 +281,28 @@
    "media": [],
    "mediaFailed": 0,
    "phoneHashes": []
+  },
+  {
+   "id": "3AE0A7184D7209D3B9EF",
+   "group": 6,
+   "time": "13:53:54",
+   "sec": 50034,
+   "sender": "m:89ecf743f6",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
+  },
+  {
+   "id": "3A2A1454974013493564",
+   "group": 1,
+   "time": "13:54:57",
+   "sec": 50097,
+   "sender": "m:89ecf743f6",
+   "text": "انحجزن",
+   "media": [],
+   "mediaFailed": 0,
+   "phoneHashes": []
   }
  ],
  "events": [
